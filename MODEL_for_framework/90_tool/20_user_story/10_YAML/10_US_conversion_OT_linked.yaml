@@ -1,0 +1,51 @@
+title: "User Story: Automatic Conversion of Linked Documents"
+id: "US_MSHCOL_CONVERSION_OT_LINKED"
+priority: "MEDIUM"
+
+metadata:
+  version: "V0.1.0"
+  status: "DRAFT"
+  date: "2026-01-10"
+
+story: >
+  As a Framework Documenter,
+  I want the HTML conversion tool to automatically find and convert
+  any linked Markdown documents that it references,
+  so that I can be confident all local links will work correctly
+  in the final HTML output without having to convert each file manually.
+
+acceptance_criteria:
+  - id: "01"
+    steps:
+      - "Given I convert a single Markdown file (A.md),"
+      - "And A.md contains a relative link to another Markdown file (B.md),"
+      - "When the conversion process runs,"
+      - "Then both A.html and B.html should be generated in the correct output directory."
+  - id: "02"
+    steps:
+      - "Given a linked document (B.md) has already been converted in the same process (e.g., it was also linked from another file),"
+      - "When the converter encounters the link to B.md again,"
+      - "Then it should not re-convert it, to avoid redundant processing."
+  - id: "03"
+    steps:
+      - "Given a file contains a link to a non-Markdown file (e.g., an image or a PDF),"
+      - "When the conversion process runs,"
+      - "Then the link should be preserved in the final HTML, but no conversion should be attempted on the linked file."
+  - id: "04"
+    steps:
+      - "Given a file contains a link to an external website (e.g., https://...),"
+      - "When the conversion process runs,"
+      - "Then the external link should be preserved without any processing."
+  - id: "05"
+    steps:
+      - "Given this feature is active,"
+      - "When I use the existing --recursive flag on a directory,"
+      - "Then both the recursive directory scan and the linked-document scan should work together, ensuring all documents are found and converted."
+
+related_documents:
+  - type: "Tool"
+    path: "../converter_OT_html.py"
+  - type: "User Story"
+    path: "./conversion_OT_recursive.md"
+  - type: "Test Case"
+    path: "./20_test_yaml_file.yaml"

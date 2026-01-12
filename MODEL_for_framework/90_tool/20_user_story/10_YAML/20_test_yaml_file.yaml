@@ -1,0 +1,31 @@
+title: "Test YAML User Story"
+id: "US_TEST_YAML"
+priority: "LOW"
+
+metadata:
+  version: "V1.0.0"
+  status: "TEST"
+  date: "2026-01-10"
+
+story: >
+  As a Test User,
+  I want to verify that the YAML to HTML converter works correctly,
+  so that I can ensure the tool handles various YAML structures properly.
+
+acceptance_criteria:
+  - id: "TC-01"
+    steps:
+      - "Given I have a valid YAML file,"
+      - "When I run the YAML to HTML converter,"
+      - "Then it should generate a properly formatted HTML file."
+  - id: "TC-02"
+    steps:
+      - "Given the YAML contains all required fields,"
+      - "When the HTML is generated,"
+      - "Then all fields should be displayed correctly."
+
+related_documents:
+  - type: "Test Document"
+    path: "./test_document.md"
+  - type: "Reference"
+    path: "../converter_OT_html.py"
