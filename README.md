@@ -1,7 +1,7 @@
 # Markdown Repository
 
 This repository contains a framework model for a "Living Documentation Ecosystem" and a compliant  "Stakeholder AI collaboration" framework.
-The frameworks gets maintained by the community/stakeholders and divers AI assistants.
+The frameworks gets maintained by the community/stakeholders and by using divers AI assistants.
 
 ## Models
 
