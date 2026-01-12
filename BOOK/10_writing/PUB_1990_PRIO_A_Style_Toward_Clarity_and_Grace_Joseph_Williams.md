@@ -1,6 +1,14 @@
 # Style: Toward Clarity and Grace by Joseph M. Williams
 
-## Overview
+## Book Overview
+
+- **Publication**: 1990
+- **Author**: Joseph M. Williams
+- **Pages**: 208
+- **Genre**: Writing Guide, Academic Writing
+- **Impact**: Influential guide for academic and professional writing, emphasizing clarity and coherence
+- **Kindle URL**: https://www.amazon.com/Style-Toward-Clarity-Grace-Joseph/dp/0226899152
+
 "Style: Toward Clarity and Grace" is a seminal work on academic and professional writing by Joseph M. Williams, published in 1990. This book provides practical strategies for transforming complex ideas into clear, readable prose. It's particularly valuable for philosophical and technical writing, offering systematic approaches to improve clarity, coherence, and elegance in professional communication.
 
 The book emphasizes that good style is not about following rules, but about making strategic choices that help readers understand complex ideas more easily.

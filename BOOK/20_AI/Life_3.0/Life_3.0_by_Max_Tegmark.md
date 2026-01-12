@@ -1,5 +1,14 @@
 # Life 3.0: A Comprehensive Analysis of Max Tegmark's Vision for AI and Humanity
 
+## Book Details
+
+- **Publication**: 2017
+- **Author**: Max Tegmark
+- **Pages**: 384
+- **Genre**: Technology, Artificial Intelligence, Philosophy
+- **Impact**: Influential framework for understanding AI's societal impact and the need for beneficial AI governance
+- **Kindle URL**: https://www.amazon.com/Life-3-0-Being-Artificial-Intelligence/dp/1101946598
+
 ## Overview
 
 **Life 3.0: What Will Life Look Like in the 21st Century?** is a groundbreaking book by Max Tegmark, published in 2017, that explores the transformative impact of artificial intelligence on human society. Tegmark, a physicist and AI researcher at MIT, presents a compelling framework for understanding and navigating the AI revolution, emphasizing the need for proactive governance to ensure beneficial outcomes.

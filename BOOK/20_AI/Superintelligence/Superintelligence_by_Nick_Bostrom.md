@@ -1,5 +1,14 @@
 # Superintelligence: A Comprehensive Analysis of Nick Bostrom's Framework for AI Safety
 
+## Book Details
+
+- **Publication**: 2014
+- **Author**: Nick Bostrom
+- **Pages**: 352
+- **Genre**: Technology, Artificial Intelligence, Philosophy
+- **Impact**: Foundational text for AI safety research and existential risk studies
+- **Kindle URL**: https://www.amazon.com/Superintelligence-Dangers-Strategies-Nick-Bostrom/dp/0199678111
+
 ## Overview
 
 **Superintelligence: Paths, Dangers, Strategies** is a seminal work by Nick Bostrom, published in 2014, that established the modern field of AI safety research. As the founding director of the Future of Humanity Institute at Oxford University, Bostrom provides a rigorous, philosophical framework for understanding the implications of artificial superintelligence and strategies for ensuring beneficial outcomes.

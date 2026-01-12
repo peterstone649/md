@@ -1,5 +1,14 @@
 # Weapons of Math Destruction: A Comprehensive Analysis of Cathy O'Neil's Framework for Algorithmic Accountability
 
+## Book Details
+
+- **Publication**: 2016
+- **Author**: Cathy O'Neil
+- **Pages**: 272
+- **Genre**: Technology, Data Science, Social Criticism
+- **Impact**: Popularized concerns about algorithmic bias and the need for algorithmic accountability
+- **Kindle URL**: https://www.amazon.com/Weapons-Math-Destruction-Increases-Inequality/dp/0553418815
+
 ## Overview
 
 **Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy** is a groundbreaking critique by Cathy O'Neil, published in 2016, that exposes the dangers of opaque mathematical models in society. As a former quantitative analyst at D.E. Shaw and founder of ORCAA (Observatory on Social Media), O'Neil provides a compelling framework for understanding how algorithms can perpetuate bias, inequality, and social harm.

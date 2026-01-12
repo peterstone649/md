@@ -2,12 +2,13 @@
 
 ## Book Overview
 
-**Publication**: 1959 (4th edition with E.B. White's updates)
-**Original Author**: William Strunk Jr. (1918)
-**Reviser**: E.B. White (1959)
-**Pages**: 105
-**Genre**: Writing Guide, Style Manual
-**Impact**: One of the most influential writing guides in English, selling millions of copies
+- **Publication**: 1959 (4th edition with E.B. White's updates)
+- **Original Author**: William Strunk Jr. (1918)
+- **Reviser**: E.B. White (1959)
+- **Pages**: 105
+- **Genre**: Writing Guide, Style Manual
+- **Impact**: One of the most influential writing guides in English, selling millions of copies
+- **Kindle URL**: https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X
 
 ## Historical Context
 
