@@ -8,6 +8,15 @@
 | **Status** | Active | Active, Deprecated, Proposed, Experimental |
 | **Stability Index** | 0.85 | Scale from 0.0 (Fluid/Trend) to 1.0 (Eternal/Fundamental) |
 
+### Evolution Control Configuration
+
+**Evolution Control Parameters:**
+
+- **Stability Index**: `0.85` - Current system stability rating (0.0-1.0 scale)
+- **Evolution Gate Protocol**: [Safe Progress Protocol](../50_layer_for_evolution/evol_001_protocoll_for_progress_OT_safe.md) - Path to evolution governance protocol
+- **Rollback Authority**: `Biological_Root_User` - Entity authorized to initiate rollbacks
+- **Last Stable Version**: `v1.2.0` - Most recent verified stable moral configuration
+
 ## Patch Protocol
 
 ### Update Mechanism

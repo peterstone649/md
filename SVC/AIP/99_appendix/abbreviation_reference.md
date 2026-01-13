@@ -27,6 +27,7 @@
 | **AIM** | AI Model |
 | **CEV** | Coherent Extrapolated Volition |
 | **CO** | Company |
+| **EVOL** | Evolution |
 | **API** | Application Programming Interface |
 | **REST** | Representational State Transfer |
 | **JSON** | JavaScript Object Notation |
