@@ -75,8 +75,8 @@ This **MODEL_for_framework** embraces **open science principles** while protecti
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V0.1.1 | 2026-01-09 | paradigm update | Framework Steward| title line & minors | refine
-| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundation |
+| V0.1.1 | 2026-01-13 | paradigm update | Framework Steward| title line & minors | refine
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundation for CN |
 
 **Version History Guidelines:**
 - **Stakeholder**: Document the person or role responsible for the change

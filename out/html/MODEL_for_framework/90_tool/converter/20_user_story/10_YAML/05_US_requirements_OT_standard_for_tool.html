@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Framework Requirements - US_MFR_STANDARD_REQUIREMENTS</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .header h1 {
+            color: #007bff;
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .header .subheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .story-id {
+            font-weight: bold;
+            color: #6c757d;
+        }
+        .priority-badge {
+            background-color: #ffc107;
+            color: #212529;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .priority-high {
+            background-color: #dc3545;
+            color: white;
+        }
+        .priority-medium {
+            background-color: #ffc107;
+            color: #212529;
+        }
+        .priority-low {
+            background-color: #28a745;
+            color: white;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #007bff;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+        .metadata-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .metadata-table th, .metadata-table td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .metadata-table th {
+            background-color: #f8f9fa;
+            width: 20%;
+        }
+        .story-content {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+        .acceptance-criteria {
+            counter-reset: criterion-counter;
+        }
+        .criterion {
+            counter-increment: criterion-counter;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .criterion-title {
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 8px;
+        }
+        .criterion-steps {
+            margin-left: 20px;
+        }
+        .criterion-steps li {
+            margin-bottom: 5px;
+        }
+        .related-documents {
+            list-style: none;
+            padding: 0;
+        }
+        .related-documents li {
+            margin-bottom: 8px;
+            padding-left: 1.2em;
+        }
+        .related-documents li:before {
+            content: "📄";
+            margin-right: 8px;
+            color: #007bff;
+        }
+        .related-documents a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .related-documents a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+            font-size: 0.9em;
+            color: #6c757d;
+            text-align: center;
+        }
+        .success-badge {
+            background-color: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Standard Framework Requirements</h1>
+            <div class="subheader">
+                <span class="story-id">ID: US_MFR_STANDARD_REQUIREMENTS</span>
+                <span class="priority-badge priority-high">HIGH</span>
+            </div>
+        </div>
+
+        
+<div class="section">
+    <h2>Metadata</h2>
+    <table class="metadata-table">
+        <tr><th>Version</th><td>V1.0.0</td></tr><tr><th>Status</th><td>ACTIVE</td></tr><tr><th>Date</th><td>2026-01-10</td></tr><tr><th>Author</th><td>AI Framework Steward</td></tr><tr><th>Category</th><td>Framework Standards</td></tr><tr><th>Tags</th><td>['standards', 'conventions', 'best practices', 'architecture']</td></tr>
+    </table>
+</div>
+
+        
+<div class="section">
+    <h2>User Story</h2>
+    <div class="story-content">
+        As a Framework Developer, I want all tools and components to follow standard framework requirements, so that I can ensure consistency, maintainability, and proper integration across the entire framework.
+    </div>
+</div>
+
+        
+<div class="section acceptance-criteria">
+    <h2>Acceptance Criteria</h2>
+    
+<div class="criterion">
+    <div class="criterion-title">Criterion AC-01</div>
+    <ul class="criterion-steps">
+        <li>Given a new tool or component is added to the framework</li><li>When it is implemented</li><li>Then it should follow the established folder structure with source code in appropriate tool directories, tests in corresponding tests/ subdirectories, documentation in 20_user_story/ with YAML files, and HTML output in parallel html/ directory structure</li>
+    </ul>
+</div>
+
+<div class="criterion">
+    <div class="criterion-title">Criterion AC-02</div>
+    <ul class="criterion-steps">
+        <li>Given HTML files are generated from Markdown or YAML</li><li>When the conversion process runs</li><li>Then the HTML files should be organized in a parallel directory structure maintaining the same relative path structure</li>
+    </ul>
+</div>
+
+<div class="criterion">
+    <div class="criterion-title">Criterion AC-03</div>
+    <ul class="criterion-steps">
+        <li>Given tools require project base path configuration</li><li>When the tool is executed</li><li>Then it should read PROJECT_BASE_PATH from the .env file with default E:/2025_11/_29/ and use this as the root path for all file operations</li>
+    </ul>
+</div>
+
+<div class="criterion">
+    <div class="criterion-title">Criterion AC-04</div>
+    <ul class="criterion-steps">
+        <li>Given tools need configuration</li><li>When configuration files are required</li><li>Then they should follow these standards using .env for environment variables, .yaml or .json for structured configuration, support both absolute and relative paths, and provide sensible defaults</li>
+    </ul>
+</div>
+
+<div class="criterion">
+    <div class="criterion-title">Criterion AC-05</div>
+    <ul class="criterion-steps">
+        <li>Given tools encounter errors</li><li>When errors occur during execution</li><li>Then they should log detailed error messages with context, provide user-friendly error messages, include stack traces for debugging, support different log levels, and write logs to appropriate output</li>
+    </ul>
+</div>
+
+<div class="criterion">
+    <div class="criterion-title">Criterion AC-06</div>
+    <ul class="criterion-steps">
+        <li>Given the framework runs on different platforms</li><li>When tools are developed</li><li>Then they should use cross-platform path handling, support both Windows and Unix path separators, handle line endings appropriately, and use platform-independent file operations</li>
+    </ul>
+</div>
+
+<div class="criterion">
+    <div class="criterion-title">Criterion AC-07</div>
+    <ul class="criterion-steps">
+        <li>Given new features or tools are added</li><li>When they are implemented</li><li>Then they should include comprehensive user stories, code documentation, usage examples, changelog entries for all modifications, and related documents references</li>
+    </ul>
+</div>
+
+<div class="criterion">
+    <div class="criterion-title">Criterion AC-08</div>
+    <ul class="criterion-steps">
+        <li>Given new functionality is added</li><li>When it is implemented</li><li>Then it should include unit tests for core functionality, integration tests for workflows, edge case testing, performance benchmarks where applicable, and test coverage reporting</li>
+    </ul>
+</div>
+
+<div class="criterion">
+    <div class="criterion-title">Criterion AC-09</div>
+    <ul class="criterion-steps">
+        <li>Given components are modified</li><li>When changes are made</li><li>Then they should follow semantic versioning, update changelog with version date changes, document stakeholder and rationale, and maintain version history</li>
+    </ul>
+</div>
+
+<div class="criterion">
+    <div class="criterion-title">Criterion AC-10</div>
+    <ul class="criterion-steps">
+        <li>Given tools are part of the framework</li><li>When they are developed</li><li>Then they should use consistent naming conventions, follow established patterns, integrate with existing framework components, support framework-wide configuration, and maintain consistency with other tools</li>
+    </ul>
+</div>
+
+</div>
+
+        
+<div class="section">
+    <h2>Related Documents</h2>
+    <ul class="related-documents">
+        <li><a href="../../15_template/18_template_for_user_story.md" target="_blank">Template: ../../15_template/18_template_for_user_story.md</a></li><li><a href="../../.env" target="_blank">Environment Configuration: ../../.env</a></li><li><a href="../../20_convention/12_convention_for_formal_notation.md" target="_blank">Convention Documentation: ../../20_convention/12_convention_for_formal_notation.md</a></li><li><a href="../tests/test_integration.py" target="_blank">Testing Standards: ../tests/test_integration.py</a></li>
+    </ul>
+</div>
+
+
+        <footer>
+            <p>Generated from YAML on 2026-01-13 09:35:41 by YAMLToHTMLConverter v1.1.0</p>
+        </footer>
+    </div>
+</body>
+</html>

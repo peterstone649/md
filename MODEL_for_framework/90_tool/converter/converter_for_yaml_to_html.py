@@ -15,8 +15,9 @@ import yaml
 import logging
 from datetime import datetime
 from typing import Dict, List, Any, Optional
+from dotenv import load_dotenv
 
-__version__ = "1.0.0"
+__version__ = "1.2.0"
 __status__ = "ACTIVE"
 
 """
@@ -24,9 +25,14 @@ CHANGELOG
 
 | Version | Date       | Changes | Stakeholder | Rationale/Motivation |
 |---------|------------|---------|-------------|----------------------|
+| V1.2.0  | 2026-01-13 | Renamed file from yaml_to_html_converter.py to converter_for_yaml_to_html.py and updated class name from YAMLToHTMLConverter to ConverterForYamlToHtml | Framework Steward | Align with framework naming conventions and improve consistency |
+| V1.1.0  | 2026-01-13 | Adapted fixed output directory structure <PROJECT_BASE_PATH>\out\html | Framework Steward | Standardize HTML output location for consistent deployment and easier maintenance |
 | V1.0.0  | 2026-01-10 | Initial release with full YAML to HTML conversion functionality | AI Coder | Provide comprehensive YAML to HTML conversion for MODEL_for_framework user stories |
 | V0.1.1  | 2026-01-10 | Updated template metadata to include Framework Version and use list format | AI Coder | To provide more detailed and consistently formatted metadata in new documents |
 """
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Setup basic logging
 logging.basicConfig(
@@ -34,13 +40,17 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
-class YAMLToHTMLConverter:
+class ConverterForYamlToHtml:
     """Converts YAML files to styled HTML documents."""
 
-    def __init__(self, input_path: str, output_root: str, project_base: str = r"E:\2025_11\_29"):
+    def __init__(self, input_path: str, project_base: str = None):
         self.input_path = os.path.abspath(input_path)
-        self.output_root = os.path.abspath(output_root)
+        # Use environment variable if available, otherwise use default
+        if project_base is None:
+            project_base = os.getenv('PROJECT_BASE_PATH', r"E:\2025_11\_29")
         self.project_base = os.path.abspath(project_base)
+        # Fixed output directory: <PROJECT_BASE_PATH>\out\html
+        self.output_root = os.path.join(self.project_base, "out", "html")
         self.stats = {
             'success': 0,
             'failed': 0,
@@ -253,7 +263,7 @@ class YAMLToHTMLConverter:
         {related_docs_html}
 
         <footer>
-            <p>Generated from YAML on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} by YAMLToHTMLConverter v{__version__}</p>
+            <p>Generated from YAML on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} by ConverterForYamlToHtml v{__version__}</p>
         </footer>
     </div>
 </body>
@@ -419,11 +429,10 @@ class YAMLToHTMLConverter:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Converts YAML files to styled HTML documents for MODEL_for_framework.",
+        description="Converts YAML files to styled HTML documents with fixed output directory for MODEL_for_framework.",
         formatter_class=argparse.RawTextHelpFormatter
     )
     parser.add_argument("input_path", help="Path to a YAML file or a directory containing YAML files.")
-    parser.add_argument("output_dir", help="The root directory for output HTML files.")
     parser.add_argument(
         "-r", "--recursive",
         action="store_true",
@@ -431,8 +440,8 @@ def main():
     )
     parser.add_argument(
         "--project-base",
-        default=r"E:\2025_11\_29",
-        help=r"The project base path for calculating relative output paths. Defaults to 'E:\2025_11\_29'."
+        default=None,
+        help="The project base path for calculating relative output paths. Defaults to PROJECT_BASE_PATH from .env file or 'E:\\2025_11\\_29'."
     )
     parser.add_argument(
         "--summary",
@@ -442,7 +451,7 @@ def main():
 
     args = parser.parse_args()
 
-    converter = YAMLToHTMLConverter(args.input_path, args.output_dir, args.project_base)
+    converter = ConverterForYamlToHtml(args.input_path, args.project_base)
 
     if os.path.isdir(args.input_path):
         if not args.recursive:

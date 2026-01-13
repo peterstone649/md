@@ -6,7 +6,7 @@ import logging
 from datetime import datetime
 from dotenv import load_dotenv
 
-__version__ = "1.2.0"
+__version__ = "1.5.0"
 __status__ = "ACTIVE"
 
 """
@@ -14,10 +14,15 @@ CHANGELOG
 
 | Version | Date       | Changes | Stakeholder | Rationale/Motivation |
 |---------|------------|---------|-------------|----------------------|
+| V1.5.0  | 2026-01-13 | Renamed file from md_to_html_converter.py to converter_for_md_to_html.py | Framework Steward | Align with framework naming conventions and improve consistency |
+| V1.4.0  | 2026-01-13 | Restructured tool directory from 90_tool to 90_tool\converter | Framework Steward | Improve code organization and separate converter tools into dedicated subdirectory |
+| V1.3.0  | 2026-01-13 | Adapted fixed output directory structure <PROJECT_BASE_PATH>\out\html | Framework Steward | Standardize HTML output location for consistent deployment and easier maintenance |
 | V1.2.0  | 2026-01-10 | Added .env support for PROJECT_BASE_PATH configuration | AI Coder | Enable environment-based configuration for different deployment scenarios |
 | V1.1.0  | 2026-01-10 | Enhanced Markdown processing with fenced_code and tables extensions | AI Coder | Improve support for code blocks and tables in Markdown documents |
 | V1.0.0  | 2026-01-10 | Initial release with basic Markdown to HTML conversion | AI Coder | Provide foundational Markdown conversion capabilities |
 | V0.1.1  | 2026-01-10 | Updated template metadata to include Framework Version and use list format | AI Coder | To provide more detailed and consistently formatted metadata in new documents |
+
+mfw_tool.svg pulled from https://game-icons.net/1x1/lorc/gear-hammer.html
 """
 
 # Load environment variables from .env file
@@ -34,18 +39,19 @@ class HTMLConverter:
     A modernized tool to convert Markdown files to HTML, aligning with
     the standards of MODEL_for_framework.
     """
-    def __init__(self, input_path, output_root, project_base=None):
+    def __init__(self, input_path, project_base=None):
         self.input_path = os.path.abspath(input_path)
-        self.output_root = os.path.abspath(output_root)
         # Use environment variable if available, otherwise use default
         if project_base is None:
             project_base = os.getenv('PROJECT_BASE_PATH', r"E:\2025_11\_29")
         self.project_base = os.path.abspath(project_base)
+        # Fixed output directory: <PROJECT_BASE_PATH>\out\html
+        self.output_root = os.path.join(self.project_base, "out", "html")
 
     def _generate_html_path(self):
         """
         Generates the output HTML path, mirroring the source directory structure
-        relative to the project base.
+        relative to the project base within the fixed output directory.
         """
         try:
             relative_path = os.path.relpath(self.input_path, self.project_base)
@@ -161,19 +167,18 @@ class HTMLConverter:
 </head>
 <body>
     {body}
-    <footer>
-        <p>Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} by HTMLConverter v{__version__}</p>
-    </footer>
+        <footer>
+            <p>Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} by MDToHTMLConverter v{__version__}</p>
+        </footer>
 </body>
 </html>"""
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Converts Markdown files to styled HTML.",
+        description="Converts Markdown files to styled HTML with fixed output directory.",
         formatter_class=argparse.RawTextHelpFormatter
     )
     parser.add_argument("input_path", help="Path to a Markdown file or a directory.")
-    parser.add_argument("output_dir", help="The root directory for output files.")
     parser.add_argument(
         "-r", "--recursive",
         action="store_true",
@@ -190,13 +195,13 @@ def main():
         if not args.recursive:
             print("Error: Input path is a directory, but --recursive flag was not provided.")
             sys.exit(1)
-        
+
         logging.info(f"Starting recursive conversion in directory: {args.input_path}")
         for root, _, files in os.walk(args.input_path):
             for file in files:
                 if file.endswith((".md", ".markdown")):
                     input_file = os.path.join(root, file)
-                    converter = HTMLConverter(input_file, args.output_dir, args.project_base)
+                    converter = HTMLConverter(input_file, args.project_base)
                     converter.convert()
         logging.info("Recursive conversion complete.")
 
@@ -204,8 +209,8 @@ def main():
         if not args.input_path.endswith((".md", ".markdown")):
             print("Error: Input file does not appear to be a Markdown file.")
             sys.exit(1)
-        
-        converter = HTMLConverter(args.input_path, args.output_dir, args.project_base)
+
+        converter = HTMLConverter(args.input_path, args.project_base)
         converter.convert()
     else:
         print(f"Error: Input path not found: {args.input_path}")

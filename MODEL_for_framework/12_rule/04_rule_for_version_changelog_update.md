@@ -123,6 +123,7 @@ Maintain reverse chronological order:
 - [ ] Rationale explains why change was made
 - [ ] No duplicate version entries
 - [ ] Initial creation properly documented
+- [ ] if py code __version__ = [VERSION] then also update this!
 
 ---
 

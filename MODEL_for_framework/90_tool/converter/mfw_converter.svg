@@ -1,0 +1,25 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" fill="none"/>
+  <!-- Input -->
+  <rect x="10" y="48" width="24" height="32" rx="4" fill="none" stroke="#3B82F6" stroke-width="3"/>
+  <!-- Arrow to converter -->
+  <path d="M34 56 L54 56 L48 50 M54 56 L48 62" fill="none" stroke="#1D4ED8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Converter gear -->
+  <circle cx="72" cy="64" r="20" fill="none" stroke="url(#grad)" stroke-width="4" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" values="0 72 64; 360 72 64" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M72 34 L78 34 M72 44 L82 44 M92 44 L92 54 M92 64 L82 64 M72 74 L72 84 M62 84 L62 74 M52 64 L52 54 M52 44 L62 44" fill="none" stroke="url(#grad)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Output arrow -->
+  <path d="M92 56 L112 56 L106 50 M112 56 L106 62" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Output -->
+  <rect x="106" y="48" width="12" height="32" rx="2" fill="none" stroke="#10B981" stroke-width="2"/>
+  <!-- Tool label -->
+  <text x="64" y="118" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0F766E" text-anchor="middle">Conv</text>
+</svg>
+
