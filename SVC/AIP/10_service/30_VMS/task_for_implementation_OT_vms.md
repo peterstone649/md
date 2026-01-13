@@ -1,5 +1,7 @@
 # Task for VMS Implementation
 
+**Status:** OPEN
+
 ## Overview
 This task file outlines the implementation steps for the Value Management System (VMS) within the SVC/AIP framework.
 

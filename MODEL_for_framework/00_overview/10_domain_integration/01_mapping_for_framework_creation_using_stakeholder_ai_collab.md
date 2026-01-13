@@ -1,4 +1,4 @@
-# Domain Integration Mapping: Framework Building and Maintenance **[MAPPING_FW_BUILD_MAINTAIN]** **[PRIO: HIGH]**
+# Domain Integration Mapping: Framework Building and Maintenance **[MAPPING_MFW_BUILD_MAINTAIN]** **[PRIO: HIGH]**
 
 **Version: V1.0.0** **Date: 2026-01-10**
 
@@ -45,3 +45,10 @@ This mapping documents the inheritance relationship where MODEL_for_STKHLD_AI_CO
 **Mapping Status:** Active
 **Estimation:** 1 story point
 **Sprint:** Framework Foundation
+
+##  Changelog
+
+| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.1 | 2026-01-13 | update | Framework Steward | mini review changes|
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward | To formally establish accessibility as a core principle of the framework. |

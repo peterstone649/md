@@ -61,7 +61,7 @@ This principle applies to all aspects of the framework, including but not limite
 
 ---
 
-## 10. Changelog
+##  Changelog
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|

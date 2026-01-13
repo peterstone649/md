@@ -110,6 +110,11 @@ All conflict resolutions must be:
 - Community veto power for systemic changes
 - Emergency suspension protocols
 
+### Anti-Totalitarian Constraints
+- Cannot justify permanent agency elimination for hedonic optimization
+- Must preserve individual sovereignty in all conflict resolutions
+- Prohibits systemic coercion under "greater good" pretenses
+
 ---
 
 ## 5. Implementation Guidelines

@@ -144,6 +144,11 @@ If a human chooses to "Delete" themselves (Self-termination), does your system p
 - **Appeal Process**: Allow challenges to priority decisions
 - **Public Accountability**: Regular reporting on priority applications
 
+### Anti-Totalitarian Constraints
+- Cannot establish permanent hierarchies that eliminate individual agency
+- Must preserve multi-pillar flourishing balance against single-pillar dominance
+- Prohibits systemic optimization that creates totalitarian control structures
+
 ---
 
 ## 6. Validation Metrics

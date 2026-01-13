@@ -1,4 +1,4 @@
-# Stakeholder Definitions [STAKEHOLDERS] [PRIO: MEDIUM]
+# Stakeholder Definitions [STAKEHOLDER_MFW_LIST] [PRIO: MEDIUM]
 
 **Purpose:** This document provides a consolidated overview of the key stakeholders involved in the creation, maintenance, and application of the framework.
 
@@ -92,3 +92,10 @@ The stakeholders collaborate in a continuous cycle:
 5.  **Reviewers** ensure that all outputs meet the required quality and ethical standards, providing feedback to all other stakeholders.
 
 This collaborative process ensures the framework remains robust, relevant, and trustworthy.
+
+##  Changelog
+
+| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.1 | 2026-01-13 | update | Framework Steward | mini review changes|
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward | To formally establish accessibility as a core principle of the framework. |

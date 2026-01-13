@@ -1,4 +1,4 @@
-# 1. Convention for version (CONV_FOR_MODELFW_VERSION) [PRIO: HIGH]
+# Convention for version [CONV_FOR_MODELFW_VERSION] [PRIO: HIGH]
 >
 **Version:** V1.0.0 **Status:** APPROVED **Date:** 2026-01-09
 **Integration Field:** MODEL_for_framework_ecosystem
@@ -266,16 +266,7 @@ When updating to follow this convention:
 
 ---
 
-## 10. Changelog
-
-| Version | Date | Changes |
-|---------|------|---------|
-| V0.2.0 | 2026-01-08 | Enhanced with full template structure; added examples and implementation notes |
-| V0.1.0 | 2026-01-08 | Initial creation from SWmeth conventions |
-
----
-
-## 11. Appendices
+## Appendices
 
 ### Appendix A: Version Format Reference
 | Format | Example | Usage |
@@ -296,6 +287,10 @@ When updating to follow this convention:
 | V1.0.0 | Review | Compatible | Migrate |
 | V2.0.0 | Migrate | Migrate | Compatible |
 
----
+## Changelog
 
-**End of Convention**
+| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.1 | 2026-01-13 | update | Framework Steward | add changelog | refine |
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish  |
+

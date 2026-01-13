@@ -1,6 +1,4 @@
-# Rule for Wikimedia Links **[RULE_FW_WIKIMEDIA_LINKS]** **[PRIO: MEDIUM]**
-
-**Version: V1.0.0** **Status: ACTIVE** **Date: 2026-01-13**
+# Rule for Wikimedia Links [RULE_MFW_WIKIMEDIA_LINKS] [PRIO: MEDIUM]
 
 **Rule ID:** RULE_WIKIMEDIA_LINKS
 **Applies to:** All framework documentation containing Wikimedia references

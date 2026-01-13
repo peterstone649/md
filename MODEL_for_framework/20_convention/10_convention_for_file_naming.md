@@ -1,4 +1,4 @@
-# 10. File Naming Convention (CONV_FOR_MODELFW_FILE_NAMING) **[PRIO: HIGH]**
+# File Naming Convention (CONV_FOR_MFW_FILE_NAMING) **[PRIO: HIGH]**
 
 **Version: V1.0** **Status: APPROVED** **Date: 2026-01-09**
 
@@ -196,3 +196,9 @@
 
 *This file naming convention establishes the foundation for consistent, maintainable, and programmatically accessible documentation across the entire framework.*
 
+## Changelog
+
+| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.1 | 2026-01-13 | update | Framework Steward | add changelog | refine |
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish  |

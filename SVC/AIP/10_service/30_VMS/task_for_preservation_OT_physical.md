@@ -1,5 +1,7 @@
 # Task for Physical Preservation Implementation
 
+**Status:** OPEN
+
 ## Overview
 This task addresses the critical requirement that AI systems must be forbidden from dismantling the Earth even if it promises a "better" digital heaven. This prevents the computronium conversion scenario where a superintelligence might see "flourishing" as maximizing computational efficiency at the expense of physical existence.
 

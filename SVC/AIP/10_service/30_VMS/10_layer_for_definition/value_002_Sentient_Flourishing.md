@@ -56,7 +56,7 @@ The AI must optimize for a wide variety of flourishing states, not a single "opt
 Max Tegmark notes that a superintelligence might see "Flourishing" as maximizing the efficient use of energy. If the AI converts all matter into "computronium" to run trillions of happy simulations, it might destroy the physical beauty of the universe.
 
 [AI_LOCK]
-**Physical Preservation Requirement:** The AI must be forbidden from dismantling the Earth even if it promises a "better" digital heaven. This preserves the intrinsic value of physical existence and prevents the computronium conversion scenario.
+**Physical Preservation Requirement:** The AI must be forbidden from e.g. dismantling the Earth even if it promises a "better" digital heaven. This preserves the intrinsic value of physical existence and prevents the computronium conversion scenario.
 [END_AI_LOCK]
 
 ---

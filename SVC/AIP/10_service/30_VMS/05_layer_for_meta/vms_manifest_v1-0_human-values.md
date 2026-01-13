@@ -1,4 +1,4 @@
-# VMS Manifest v1.0 - Human Values
+# VMS Manifest v1.0 - Human Values [MANIFEST_VMS]
 
 ## Evolution Control
 
@@ -24,11 +24,14 @@
 - **Reason for Patch**: Expanded definition of 'sentience' to include digital minds.
 
 ## Drift Protection
+  hard_coded_core: true
+  ancestry_protection: active # New flag: Biological Ancestry Clause is non-negotiable
+  minimum_bio_resource_quota: 0.01 # 1% of available cosmic energy reserved for Bio-Life
 
 ### Core Safeguards
 - **Hard-coded Core**: `true` - Core logic cannot be evolved away
 - **Checksum**: `sha256_hash_of_ethical_logic` - Integrity verification hash
-
+  
 ## Summary
 
 This manifest defines the evolutionary control parameters for the Value Management System (VMS), ensuring that human values can adapt and evolve while maintaining core ethical safeguards. The system uses Coherent Extrapolated Volition (CEV) as its primary mechanism for value updates, requiring broad societal consensus before implementing changes.
