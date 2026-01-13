@@ -1,9 +1,11 @@
 # 00. Framework Overview **[FRAMEWORK_OVERVIEW]** **[PRIO: CRITICAL]**
 
-**Version: V0.1.1** **Status: ACTIVE** **Date: YYYY-MM-DD**
+**Version: V0.1.1** **Status: ACTIVE** **Date: 2026-01-13**
 
 **Purpose:** Foundational overview establishing legal framework, AI collaboration transparency, and framework development principles.
 
+- Information presented may contain AI-generated inaccuracies, biases, or hallucinations
+— always verify independently
 ---
 
 ## 📋 Directory Overview
