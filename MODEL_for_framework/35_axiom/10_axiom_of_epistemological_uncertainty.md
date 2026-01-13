@@ -106,6 +106,21 @@ Uncertainty in Human Interactions:
 └── Relationship Building → Development of trust through uncertainty acknowledgment
 ```
 
+## Uncertainty Acknowledgment Example
+
+### **Human Stakeholder Uncertainty Assessment**
+
+```
+[STATEMENT]: The project will complete by Q2 2026
+[CONFIDENCE]: 65%
+[KNOWN_LIMITATIONS]: Resource availability uncertain, dependency on stakeholder approval
+[POTENTIAL_BIASES]: Optimism bias in timeline estimation, limited visibility into stakeholder decisions
+[CONTEXT_BOUNDARY]: Assumes current team size and no major obstacles
+[REQUIRES_VERIFICATION]: Yes - monthly review needed
+```
+
+This example demonstrates systematic uncertainty acknowledgment in project planning, replacing vendor dependency with stakeholder dependency to reflect collaborative decision-making realities.
+
 ## Philosophical Foundations
 
 ### **Gödel's Incompleteness Theorems**
