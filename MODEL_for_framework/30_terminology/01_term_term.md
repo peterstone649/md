@@ -6,7 +6,7 @@
 *   **Type Classification:** CONCEPTUAL
 *   **Priority Level:** HIGHEST
 *   **Scientific Acceptance:** High (Fundamental to philosophy of language, knowledge representation, and formal systems).
-*   **Reference:** [Terminology](https://en.wikipedia.org/wiki/Terminology), [Conceptual framework](https://en.wikipedia.org/wiki/Conceptual_framework)
+*   **Reference:** [Terminology](https://en.wikipedia.org/wiki/Terminology) (accessed 2026-01-13), [Conceptual framework](https://en.wikipedia.org/wiki/Conceptual_framework) (accessed 2026-01-13)
 *   **Key Theories:** Philosophy of Language (Wittgenstein), Knowledge Representation (Sowa), Formal Concept Analysis (Ganter), Terminology Science (ISO 1087)
 *   **Context:** In this scientific framework, terms serve as the atomic units of knowledge construction, providing the foundation for building complex conceptual systems. They enable precise communication, systematic analysis, and the development of rigorous theoretical frameworks that support scientific and philosophical inquiry.
 
@@ -167,5 +167,6 @@ Terms represent the fundamental units of precise thought and communication withi
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V0.1.2 | 2026-01-13 | Add access dates to Wikipedia references | Framework Steward | Comply with Wikimedia links rule requiring access date documentation |
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
 | V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward | To formally define the role and responsibilities of the Framework Steward. |
