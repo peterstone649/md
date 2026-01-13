@@ -73,6 +73,9 @@
 | **SYST** | System of Type |
 | **US** | User Story |
 | **AC** | Acceptance Criteria |
+| **WP** | Wikipedia |
+| **WD** | Wikidata |
+| **WMF** | Wikimedia Foundation |
 
 ---
 
