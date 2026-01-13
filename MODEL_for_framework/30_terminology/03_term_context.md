@@ -1,4 +1,4 @@
-# 3. Context (DEF_FOR_MFW_CONTEXT) **[PRIO: HIGH]**
+# Context [[DEF_FOR_CONTEXT]] [PRIO: HIGH]
 
 *   **Context:** The comprehensive framework of situational, relational, and environmental factors that shape the meaning, interpretation, and application of concepts, terms, and systems within specific domains of knowledge and practice.
 *   **Description:** In this scientific framework, context represents the essential relational and situational grounding that prevents concepts from becoming isolated abstractions. Context encompasses the broader framework of relationships, historical development, disciplinary boundaries, and situational factors that influence how terms, concepts, and systems function within specific knowledge domains. It transforms theoretical constructs into practical, applicable knowledge by providing the necessary background, relationships, and environmental factors that shape understanding and implementation.
@@ -264,4 +264,4 @@ Context represents the essential relational and situational grounding that trans
 | Version | Date | Changes | Stakeholder | Rationale/Motivation  |
 |---------|------|---------|-------------|-----------------------|
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
-| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  | 
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  |

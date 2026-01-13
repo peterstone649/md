@@ -1,4 +1,4 @@
-# Superintelligence: A Comprehensive Analysis of Nick Bostrom's Framework for AI Safety
+# Superintelligence: A Comprehensive AI Analysis of Nick Bostrom's Framework for AI Safety
 
 ## Book Details
 

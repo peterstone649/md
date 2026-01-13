@@ -1,4 +1,4 @@
-# 08. Relation (DEF_FOR_MFW_RELATION) **[PRIO: HIGH]**
+# Relation [DEF_FOR_RELATION] [PRIO: HIGH]
 
 *   **Relation:** A fundamental concept representing the connection, association, or linkage between entities, concepts, or components within a system or framework
 *   **Description:** Relations establish meaningful connections between elements, enabling the formation of complex structures, dependencies, and interactions that define system behavior and functionality
@@ -188,4 +188,4 @@ Relation represents the fundamental connective tissue of systems, frameworks, an
 | Version | Date | Changes | Stakeholder | Rationale/Motivation  |
 |---------|------|---------|-------------|-----------------------|
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
-| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  | 
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  |

@@ -1,4 +1,4 @@
-# 📄 01. EUPL v1.2 License **[CN_EUPL_MFW_MODEL_FOR_FRAMEWORK]**
+# 📄 01. EUPL v1.2 License [CN_EUPL_MFW_MODEL_FOR_FRAMEWORK]
 
 ## 🏛️ Copyright Notice
 

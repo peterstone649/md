@@ -1,4 +1,4 @@
-# 59. Defect Reference (REF_FOR_MFW_TERM_DEFECT)
+# Defect Reference [REF_FOR_DEFECT] [PRIO: MEDIUM]
 
 ## Term Reference
 
@@ -98,4 +98,4 @@ The defect term in MODEL_for_framework context builds upon the comprehensive SWm
 | Version | Date | Changes | Stakeholder | Rationale/Motivation  |
 |---------|------|---------|-------------|-----------------------|
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
-| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  | 
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  |

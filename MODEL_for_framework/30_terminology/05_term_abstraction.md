@@ -1,4 +1,4 @@
-# 5. Abstraction (DEF_FOR_MFW_ABSTRACTION) **[PRIO: HIGH]**
+# Abstraction [DEF_FOR_ABSTRACTION] [PRIO: HIGH]
 
 *   **Abstraction:** The cognitive and epistemological process of selectively focusing on essential characteristics while systematically omitting irrelevant details, enabling the creation of simplified yet meaningful representations that facilitate understanding, communication, and systematic reasoning across different levels of complexity.
 *   **Description:** In this scientific framework, abstraction represents the fundamental cognitive mechanism that transforms overwhelming complexity into manageable understanding. It is the essential process that enables humans and systems to create mental models, conceptual frameworks, and systematic representations by identifying what matters most and filtering out what doesn't. Abstraction is both a psychological process and an epistemological tool that makes complex systems comprehensible and actionable. Without abstraction, the complexity of reality would be cognitively overwhelming and practically unmanageable.
@@ -284,4 +284,4 @@ Abstraction represents the essential cognitive bridge between overwhelming compl
 | Version | Date | Changes | Stakeholder | Rationale/Motivation  |
 |---------|------|---------|-------------|-----------------------|
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
-| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  | 
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  |

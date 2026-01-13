@@ -1,4 +1,4 @@
-# MODEL_for_framework Vision: The Living Documentation Ecosystem (MFW_VISION)
+# MODEL_for_framework Vision: The Living Documentation Ecosystem [VISION_MFW]
 
 ## Vision Statement
 

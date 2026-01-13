@@ -1,6 +1,4 @@
-# 14. Principle of Framework Stewardship (PRINC_MFR_STEWARDSHIP) **[PRIO: HIGH]**
-
-**Version: V0.1.2** **Status: ACTIVE** **Date: 2026-01-12**
+# Principle of Framework Stewardship [PRINC_MFW_STEWARDSHIP] [PRIO: HIGH]
 
 **We establish Framework Stewardship as a core principle defining a neutral guardian role whose primary responsibility is to the long-term health, consistency, and usability of the framework for all users.**
 

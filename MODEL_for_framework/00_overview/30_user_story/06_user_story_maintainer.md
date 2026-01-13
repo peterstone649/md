@@ -1,4 +1,4 @@
-# User Story: Maintainer **[US_MFW_MAINTAINER]** **[PRIO: HIGH]**
+# User Story: Maintainer [US_MFW_MAINTAINER] [PRIO: HIGH]
 
 **Version: V1.0.0** **Date: 2026-01-10**
 

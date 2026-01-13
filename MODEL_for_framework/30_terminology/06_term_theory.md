@@ -1,4 +1,4 @@
-# 06. Theory (DEF_FOR_MFW_THEORY) **[PRIO: HIGH]**
+# Theory [DEF_FOR_THEORY] [PRIO: HIGH]
 
 *   **Theory:** A comprehensive and coherent system of concepts, principles, and relationships that provides systematic explanations for observed phenomena, enabling prediction, understanding, and control of complex systems through logically interconnected propositions and empirical validation.
 *   **Description:** In this scientific framework, a theory represents the highest level of systematic knowledge organization, providing comprehensive explanations that unify diverse observations into coherent frameworks. Theories are the intellectual scaffolding that enables deep understanding, predictive capability, and systematic intervention in complex domains. They transform isolated facts into meaningful knowledge systems that support both explanation and control. Without theories, knowledge remains fragmented and practical application becomes impossible.
@@ -292,4 +292,4 @@ Theories represent the pinnacle of systematic human understanding, providing com
 | Version | Date | Changes | Stakeholder | Rationale/Motivation  |
 |---------|------|---------|-------------|-----------------------|
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
-| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  | 
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  |

@@ -1,6 +1,4 @@
-# 04. Rule of Epistemological Uncertainty Acknowledgment **[RULE_EPISTEMOLOGICAL_ACKNOWLEDGMENT]** **[PRIO: CRITICAL]**
-
-**Version: V0.1.0** **Date: 2026-01-09**
+# 04. Rule of Epistemological Uncertainty Acknowledgment **[RULE_MFW_EPISTEMOLOGICAL_ACKNOWLEDGMENT]** **[PRIO: CRITICAL]**
 
 *Based on: [10_axiom_of_epistemological_uncertainty.md](../35_axiom/10_axiom_of_epistemological_uncertainty.md)*
 
@@ -58,8 +56,8 @@ All stakeholders and AI systems MUST acknowledge the inherent uncertainty in all
 ```
 [STATEMENT]: The project will complete by Q2 2026
 [CONFIDENCE]: 65%
-[KNOWN_LIMITATIONS]: Resource availability uncertain, dependency on external vendor
-[POTENTIAL_BIASES]: Optimism bias in timeline estimation, limited visibility into vendor delays
+[KNOWN_LIMITATIONS]: Resource availability uncertain, dependency on stakeholder approval
+[POTENTIAL_BIASES]: Optimism bias in timeline estimation, limited visibility into stakeholder decisions
 [CONTEXT_BOUNDARY]: Assumes current team size and no major obstacles
 [REQUIRES_VERIFICATION]: Yes - monthly review needed
 ```
@@ -169,7 +167,7 @@ Based on:
 ---
 
 **Framework:** MODEL_for_framework
-**Version:** V0.1.0
+**Framework Version:** V0.1.0
 **Date:** 2026-01-09
 **Priority:** CRITICAL
 **Compliance:** Mandatory for all stakeholders and AI systems

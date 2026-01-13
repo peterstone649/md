@@ -1,4 +1,4 @@
-# User Story: Developer **[US_MFW_DEVELOPER]** **[PRIO: HIGH]**
+# User Story: Developer [US_MFW_DEVELOPER] [PRIO: HIGH]
 
 **Version: V1.0.0** **Date: 2026-01-09**
 

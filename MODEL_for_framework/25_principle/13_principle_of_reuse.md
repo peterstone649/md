@@ -1,6 +1,4 @@
-# 13. Principle of Reuse (PRINC_MFR_REUSE) **[PRIO: HIGH]**
-
-**Version: V0.1.1** **Status: ACTIVE** **Date: 2026-01-12**
+# Principle of Reuse [PRINC_MFW_REUSE] [PRIO: HIGH]
 
 **We establish Reuse as a core principle requiring that framework components, documentation, and patterns be designed for maximum reusability to enhance efficiency, consistency, and quality.**
 

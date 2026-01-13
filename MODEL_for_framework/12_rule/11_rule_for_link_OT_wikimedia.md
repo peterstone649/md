@@ -53,12 +53,12 @@ Every Wikimedia reference MUST include:
 
 **For Wikipedia Articles:**
 ```markdown
-[Artificial Intelligence (WP)](https://en.wikipedia.org/wiki/Artificial_intelligence) (accessed 2026-01-13)
+[Artificial Intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence) (WP)
 ```
 
 **For Wikimedia Commons Files:**
 ```markdown
-[Framework Architecture Diagram](https://commons.wikimedia.org/wiki/File:Example_diagram.svg)
+[Framework Architecture Diagram](https://commons.wikimedia.org/wiki/File:Example_diagram.svg)(WM)
 *Diagram by [Creator Name](https://commons.wikimedia.org/wiki/User:Username) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) via Wikimedia Commons*
 ```
 

@@ -1,15 +1,12 @@
-# Abbreviation Reference
+# Abbreviation Reference (ABBREV_REF_MFW)
  
 > **Quick Reference Guide for Framework Abbreviations**
->
-> **Version:** V0.1.0  **Status:** DRAFT **Date:** 2026-01-08
-
----
 
 ## 1. Core Prefix Abbreviations
 
 | Prefix | Full Term | Example |
 |--------|-----------|---------|
+| **mfw** | Model Framework | `mfw_id`, `mfw_version` |
 | **fw** | Framework | `fw_id`, `fw_version` |
 | **model** | Model | `model_name`, `model_type` |
 | **tpl** | Template | `tpl_id`, `tpl_category` |
@@ -102,4 +99,11 @@
 
 **See Also:** [CONV_FOR_ABBREVIATIONS](../20_convention/15_convention_for_abbreviations.md) for full documentation.
 
-**End of Reference**
+
+## Changelog
+
+| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.2 | 2026-01-13 | version log | Framework Steward | =>maintainer story 
+| V0.1.1 | 2026-01-13 | add wikimedia | Framework Steward |  
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish  |

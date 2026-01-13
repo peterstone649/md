@@ -1,4 +1,4 @@
-# Quick Feedback Example **[FB_MFW_FEEDBACK_OT_QUICK]** **[PRIO: HIGH]**
+# Quick Feedback Example [FB_MFW_FEEDBACK_OT_QUICK] [PRIO: HIGH]
 
 **Version: V0.1.1** **Date: 2026-01-12**
 

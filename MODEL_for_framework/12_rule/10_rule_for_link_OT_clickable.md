@@ -1,4 +1,4 @@
-# Rule for Clickable Links **[RULE_FOR_MFW_LINK_OT_CLICKABLE]** **[PRIO: HIGH]**
+# Rule for Clickable Links **[RULE_FW_CLICKABLE_LINKS]** **[PRIO: HIGH]**
 
 **Version: V1.0.0** **Status: ACTIVE** **Date: 2026-01-09**
 

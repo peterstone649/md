@@ -1,4 +1,4 @@
-# 1. Term (DEF_FOR_TERM) **[PRIO: HIGHEST]**
+# Term [DEF_FOR_TERM] [PRIO: HIGHEST]
 
 *   **Term:** A precisely defined conceptual unit that represents a specific idea, concept, or entity within a knowledge domain, characterized by clear boundaries, consistent usage, and established relationships to other terms in the conceptual framework.
 *   **Description:** In this scientific framework, a term represents the fundamental building block of knowledge organization and communication. Terms establish precise conceptual boundaries that enable clear thinking, consistent communication, and systematic knowledge development. Each term serves as a standardized reference point that connects ideas, enables rigorous analysis, and supports the construction of complex conceptual frameworks. Terms transform ambiguous language into precise conceptual tools.
@@ -6,7 +6,7 @@
 *   **Type Classification:** CONCEPTUAL
 *   **Priority Level:** HIGHEST
 *   **Scientific Acceptance:** High (Fundamental to philosophy of language, knowledge representation, and formal systems).
-*   **Reference:** [Terminology](https://en.wikipedia.org/wiki/Terminology) (WP accessed 2026-01-13), [Conceptual framework](https://en.wikipedia.org/wiki/Conceptual_framework) (WP accessed 2026-01-13)
+*   **Reference:** [Terminology](https://en.wikipedia.org/wiki/Terminology) (WP), [Conceptual framework](https://en.wikipedia.org/wiki/Conceptual_framework) (WP)
 *   **Key Theories:** Philosophy of Language (Wittgenstein), Knowledge Representation (Sowa), Formal Concept Analysis (Ganter), Terminology Science (ISO 1087)
 *   **Context:** In this scientific framework, terms serve as the atomic units of knowledge construction, providing the foundation for building complex conceptual systems. They enable precise communication, systematic analysis, and the development of rigorous theoretical frameworks that support scientific and philosophical inquiry.
 

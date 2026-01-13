@@ -1,4 +1,4 @@
-# Writing Fundamentals Terminology **[DEF_FOR_MFW_WRITING_TERMS]** **[PRIO: HIGH]**
+# Writing Fundamentals Terminology [DEF_FOR_WRITING_TERMS] [PRIO: HIGH]
 
 **Framework Integration:** Writing fundamentals terminology establishes precise definitions for writing concepts essential to professional framework documentation, integrating principles from authoritative writing sources.
 
@@ -341,4 +341,4 @@ Writing Fundamentals
 | Version | Date | Changes | Stakeholder | Rationale/Motivation  |
 |---------|------|---------|-------------|-----------------------|
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
-| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  | 
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  |

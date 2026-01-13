@@ -1,4 +1,4 @@
-# Weapons of Math Destruction: A Comprehensive Analysis of Cathy O'Neil's Framework for Algorithmic Accountability
+# Weapons of Math Destruction: A Comprehensive AI Analysis of Cathy O'Neil's Framework for Algorithmic Accountability
 
 ## Book Details
 

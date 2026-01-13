@@ -1,4 +1,4 @@
-# 71. Framework (DEF_FOR_MFW_FRAMEWORK) **[PRIO: HIGH]**
+# Framework [DEF_FOR_FRAMEWORK] [PRIO: HIGH]
 
 *   **Framework:** A structured conceptual system that provides a foundation for understanding, organizing, and implementing complex concepts, processes, or systems through interrelated components, principles, and methodologies.
 *   **Description:** A framework represents a comprehensive conceptual architecture that establishes the boundaries, relationships, and operational principles for addressing complex domains. It provides systematic approaches to problem-solving, decision-making, and implementation by defining core components, their interactions, and the underlying principles that guide their application. Frameworks transform abstract concepts into actionable systems through structured methodologies and validated approaches.
@@ -53,4 +53,4 @@
 | Version | Date | Changes | Stakeholder | Rationale/Motivation  |
 |---------|------|---------|-------------|-----------------------|
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
-| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  | 
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  |

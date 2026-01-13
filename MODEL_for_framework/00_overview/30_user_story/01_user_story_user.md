@@ -1,4 +1,4 @@
-# User Story: User **[US_MFW_USER]** **[PRIO: MEDIUM]**
+# User Story: User [US_MFW_USER] [PRIO: MEDIUM]
 
 **Version: V1.0.0** **Date: 2026-01-09**
 

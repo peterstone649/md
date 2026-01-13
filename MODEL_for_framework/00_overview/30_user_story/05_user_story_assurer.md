@@ -1,4 +1,4 @@
-# User Story: Assurer **[US_MFW_ASSURER]** **[PRIO: HIGH]**
+# User Story: Assurer [US_MFW_ASSURER] [PRIO: HIGH]
 
 **Version: V1.0.0** **Date: 2026-01-09**
 

@@ -1,4 +1,4 @@
-# Rule for AI_LOCK Content Protection **[RULE_FW_AI_LOCK_PROTECTION]**
+# Rule for AI_LOCK Content Protection **[RULE_MFW_AI_LOCK_PROTECTION]**
 **Version: V0.1.0** **Date: 2026-01-09**
 
 **Rule ID:** RULE_AI_LOCK_PROTECTION

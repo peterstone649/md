@@ -1,4 +1,4 @@
-# 4. Model (DEF_FOR_MFW_MODEL) **[PRIO: HIGHEST]**
+# Model [DEF_FOR_MODEL] [PRIO: HIGHEST]
 
 *   **Model:** A simplified representation or abstraction of a complex system, concept, or framework that captures essential characteristics and relationships while omitting unnecessary details, enabling understanding, analysis, communication, and prediction of the modeled entity's behavior.
 *   **Description:** In this scientific framework, a model represents a purposeful abstraction that distills complex reality into manageable, analyzable forms. Models serve as cognitive tools that make the incomprehensible comprehensible, the complex simple, and the invisible visible. They are the bridge between theoretical concepts and practical application, providing structured representations that support reasoning, decision-making, and system understanding. Models transform overwhelming complexity into actionable knowledge.
@@ -284,4 +284,4 @@ Models represent the essential cognitive instruments that make complexity compre
 | Version | Date | Changes | Stakeholder | Rationale/Motivation  |
 |---------|------|---------|-------------|-----------------------|
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
-| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  | 
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  |

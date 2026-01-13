@@ -1,4 +1,4 @@
-# User Story: Implementer **[US_MFW_IMPLEMENTER]** **[PRIO: MEDIUM]**
+# User Story: Implementer [US_MFW_IMPLEMENTER] [PRIO: MEDIUM]
 
 **Version: V1.0.0** **Date: 2026-01-09**
 

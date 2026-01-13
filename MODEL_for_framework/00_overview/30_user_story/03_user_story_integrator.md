@@ -1,4 +1,4 @@
-# User Story: Integrator **[US_MFW_INTEGRATOR]** **[PRIO: HIGH]**
+# User Story: Integrator [US_MFW_INTEGRATOR] [PRIO: HIGH]
 
 **Version: V1.0.0** **Date: 2026-01-09**
 

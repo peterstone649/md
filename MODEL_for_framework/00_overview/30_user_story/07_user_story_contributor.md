@@ -1,4 +1,4 @@
-# User Story: Contributor **[US_MFW_CONTRIBUTOR]** **[PRIO: HIGH]**
+# User Story: Contributor [US_MFW_CONTRIBUTOR] [PRIO: HIGH]
 
 **Version: V1.0.0** **Date: 2026-01-10**
 

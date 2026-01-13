@@ -1,4 +1,4 @@
-# Life 3.0: A Comprehensive Analysis of Max Tegmark's Vision for AI and Humanity
+# Life 3.0: A Comprehensive AI Analysis of Max Tegmark's Vision for AI and Humanity
 
 ## Book Details
 

@@ -1,4 +1,4 @@
-# User Story: Reuser **[US_MFW_PRINC_REUSE]** **[PRIO: HIGH]**
+# User Story: Reuser [US_MFW_PRINC_REUSE] [PRIO: HIGH]
 
 **Version: V1.0.0** **Date: 2026-01-10**
 

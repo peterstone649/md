@@ -1,11 +1,11 @@
-# MODEL_for_framework Framework Overview **[MFW_FRAMEWORK_OVERVIEW]** **[PRIO: CRITICAL]**
+# MODEL_for_framework Framework Overview [MFW_FRAMEWORK_OVERVIEW] [PRIO: HIGH]
 
 **Version: V0.1.1** **Status: ACTIVE** **Date: 2026-01-13**
 
 **Purpose:** Foundational overview establishing legal framework, AI collaboration transparency, and framework development principles.
 
-- Information presented may contain AI-generated inaccuracies, biases, or hallucinations
-— always verify independently
+Information presented may contain AI-generated inaccuracies, biases, or hallucinations
+— please always verify independently
 ---
 
 ## 📋 Directory Overview

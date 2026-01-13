@@ -1,4 +1,4 @@
-# GitHub Feedback Example **[FB_GITHUB]** **[PRIO: HIGH]**
+# GitHub Feedback Example [FB_MFW_GITHUB] [PRIO: HIGH]
 
 **Version: V1.0.0** **Date: 2026-01-12**
 

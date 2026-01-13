@@ -1,4 +1,4 @@
-# Cross-References to FIELDCphilosophy (CROSS_REF_FOR_MFW_PHILO)
+# Cross-References to FIELDCphilosophy [CROSS_REF_FOR_PHILOSOPHY] [PRIO: LOW]
 
 ## Term Mappings
 
@@ -25,4 +25,4 @@
 | Version | Date | Changes | Stakeholder | Rationale/Motivation  |
 |---------|------|---------|-------------|-----------------------|
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
-| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  | 
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  |
