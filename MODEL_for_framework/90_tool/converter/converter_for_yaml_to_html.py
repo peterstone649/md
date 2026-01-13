@@ -15,7 +15,7 @@ import yaml
 import logging
 from datetime import datetime
 from typing import Dict, List, Any, Optional
-from dotenv import load_dotenv
+from manager_for_dir_OT_base import ManagerForDirOTBase
 
 __version__ = "1.2.0"
 __status__ = "ACTIVE"
@@ -31,9 +31,6 @@ CHANGELOG
 | V0.1.1  | 2026-01-10 | Updated template metadata to include Framework Version and use list format | AI Coder | To provide more detailed and consistently formatted metadata in new documents |
 """
 
-# Load environment variables from .env file
-load_dotenv()
-
 # Setup basic logging
 logging.basicConfig(
     level=logging.INFO,
@@ -45,12 +42,10 @@ class ConverterForYamlToHtml:
 
     def __init__(self, input_path: str, project_base: str = None):
         self.input_path = os.path.abspath(input_path)
-        # Use environment variable if available, otherwise use default
-        if project_base is None:
-            project_base = os.getenv('PROJECT_BASE_PATH', r"E:\2025_11\_29")
-        self.project_base = os.path.abspath(project_base)
+        # Use the shared base directory manager
+        self.dir_manager = ManagerForDirOTBase(project_base)
         # Fixed output directory: <PROJECT_BASE_PATH>\out\html
-        self.output_root = os.path.join(self.project_base, "out", "html")
+        self.output_root = self.dir_manager.get_output_root()
         self.stats = {
             'success': 0,
             'failed': 0,
@@ -59,19 +54,9 @@ class ConverterForYamlToHtml:
 
     def _generate_html_path(self) -> str:
         """
-        Generates the output HTML path, mirroring the source directory structure
-        relative to the project base.
+        Generates the output HTML path using the shared directory manager.
         """
-        try:
-            # Calculate relative path from project base and maintain directory structure
-            relative_path = os.path.relpath(self.input_path, self.project_base)
-            base, _ = os.path.splitext(relative_path)
-            return os.path.join(self.output_root, f"{base}.html")
-        except ValueError:
-            # Handle case where paths are on different drives
-            # Use just the filename in this case
-            base = os.path.splitext(os.path.basename(self.input_path))[0]
-            return os.path.join(self.output_root, f"{base}.html")
+        return self.dir_manager.generate_html_path(self.input_path)
 
     def _generate_yaml_html_template(self, yaml_data: Dict[str, Any], file_name: str) -> str:
         """

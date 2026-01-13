@@ -58,6 +58,7 @@
 
 | Abbreviation | Full Field |
 |--------------|------------|
+| **dir** | Directory |
 | **OT** | "of type" |
 | **EX** | Example |
 | **FIELDC** | Field of type core |

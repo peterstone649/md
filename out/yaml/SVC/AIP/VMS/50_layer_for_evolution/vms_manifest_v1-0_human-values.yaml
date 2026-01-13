@@ -1,0 +1,51 @@
+document_info:
+  title: "VMS Manifest v1.0 - Human Values"
+  source_file: "vms_manifest_v1-0_human-values.md"
+  conversion_date: "2026-01-13T15:39:00"
+  converter_version: "1.0.0"
+content:
+  sections:
+  - level: 1
+    title: "Evolution Control"
+    content: []
+  - level: 1
+    title: "Patch Protocol"
+    content: []
+  - level: 1
+    title: "Historical Context"
+    content: []
+  - level: 1
+    title: "Drift Protection"
+    content: []
+  - level: 1
+    title: "Summary"
+    content:
+    - "This manifest defines the evolutionary control parameters for the Value Management System (VMS), ensuring that human values can adapt and evolve while maintaining core ethical safeguards. The system uses Coherent Extrapolated Volition (CEV) as its primary mechanism for value updates, requiring broad societal consensus before implementing changes."
+  tables:
+  - headers:
+    - "Parameter"
+    - "Value"
+    - "Description"
+    rows:
+    - - "Version"
+      - "1.2.0"
+      - "Current manifest version"
+    - - "Status"
+      - "Active"
+      - "Active, Deprecated, Proposed, Experimental"
+    - - "Stability Index"
+      - "0.85"
+      - "Scale from 0.0 (Fluid/Trend) to 1.0 (Eternal/Fundamental)"
+  lists:
+  - items:
+    - "Method: Coherent Extrapolated Volition (CEV)"
+    - "Trigger: Societal Consensus > 75%"
+    - "Veto Conditions:"
+    - "  - Reduces sentient flourishing"
+    - "  - Violates Priority 1 Safety"
+  - items:
+    - "Supersedes: VALUE_001_v1.1.0"
+    - "Reason for Patch: Expanded definition of 'sentience' to include digital minds."
+  - items:
+    - "Hard-coded Core: true - Core logic cannot be evolved away"
+    - "Checksum: sha256_hash_of_ethical_logic - Integrity verification hash"
