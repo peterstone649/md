@@ -1,8 +1,8 @@
-# 📄 01. EUPL v1.2 License **[CN_EUPL_MODELFW_MODEL_FOR_FRAMEWORK]**
+# 📄 01. EUPL v1.2 License **[CN_EUPL_MFW_MODEL_FOR_FRAMEWORK]**
 
 ## 🏛️ Copyright Notice
 
-**© 2026 Raoul Menzel. Licensed under the EUPL v1.2.**
+**© 2026 MODEL_for_Framework Team. Licensed under the EUPL v1.2.**
 
 ---
 
@@ -69,13 +69,14 @@ This **MODEL_for_framework** embraces **open science principles** while protecti
 - **🔍 Transparency** — Open development and peer review
 - **⚖️ Share-Alike** — Derivatives maintain framework compatibility
 
-**MODEL_for_framework enables systematic knowledge organization and complex system understanding through a reusable framework model.** 🧠⚡🔧
+**MODEL_for_framework constitutes an innovative methodological paradigm for systematic knowledge organization, integrating rigorous analytical frameworks with AI-assisted cognitive augmentation to facilitate comprehensive system analysis and implementation.** 🧠⚡🔧
 
 ## Changelog
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V0.1.1 | 2026-01-09 | Initial creation | AI Framework Steward & AUTH| Establish foundational human sovereignty structure |
+| V0.1.1 | 2026-01-09 | paradigm update | Framework Steward| title line & minors | refine
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundation |
 
 **Version History Guidelines:**
 - **Stakeholder**: Document the person or role responsible for the change
