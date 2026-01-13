@@ -53,7 +53,7 @@ Every Wikimedia reference MUST include:
 
 **For Wikipedia Articles:**
 ```markdown
-[Artificial Intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence) (accessed 2026-01-13)
+[Artificial Intelligence (WP)](https://en.wikipedia.org/wiki/Artificial_intelligence) (accessed 2026-01-13)
 ```
 
 **For Wikimedia Commons Files:**

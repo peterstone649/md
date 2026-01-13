@@ -6,7 +6,7 @@
 *   **Type Classification:** CONCEPTUAL
 *   **Priority Level:** HIGHEST
 *   **Scientific Acceptance:** High (Fundamental to philosophy of language, knowledge representation, and formal systems).
-*   **Reference:** [Terminology](https://en.wikipedia.org/wiki/Terminology) (accessed 2026-01-13), [Conceptual framework](https://en.wikipedia.org/wiki/Conceptual_framework) (accessed 2026-01-13)
+*   **Reference:** [Terminology](https://en.wikipedia.org/wiki/Terminology) (WP accessed 2026-01-13), [Conceptual framework](https://en.wikipedia.org/wiki/Conceptual_framework) (WP accessed 2026-01-13)
 *   **Key Theories:** Philosophy of Language (Wittgenstein), Knowledge Representation (Sowa), Formal Concept Analysis (Ganter), Terminology Science (ISO 1087)
 *   **Context:** In this scientific framework, terms serve as the atomic units of knowledge construction, providing the foundation for building complex conceptual systems. They enable precise communication, systematic analysis, and the development of rigorous theoretical frameworks that support scientific and philosophical inquiry.
 
