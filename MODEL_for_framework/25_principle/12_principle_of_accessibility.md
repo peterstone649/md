@@ -1,4 +1,4 @@
-# Principle of Accessibility [PRINC_ACCESSIBILITY] [PRIO: CRITICAL]
+# Principle of Accessibility [PRINC_MFW_ACCESSIBILITY] [PRIO: CRITICAL]
 
 **Version: V0.1.1** **Status: ACTIVE** **Date: 2026-01-12**
 

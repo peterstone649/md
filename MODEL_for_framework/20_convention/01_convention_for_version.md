@@ -1,4 +1,4 @@
-# 1. Convention for version (CONV_FOR_MODELFW_VERSION) **[PRIO: HIGH]**
+# 1. Convention for version (CONV_FOR_MODELFW_VERSION) [PRIO: HIGH]
 >
 **Version:** V1.0.0 **Status:** APPROVED **Date:** 2026-01-09
 **Integration Field:** MODEL_for_framework_ecosystem

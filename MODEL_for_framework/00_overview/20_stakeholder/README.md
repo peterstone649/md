@@ -1,6 +1,4 @@
-# Stakeholder Definitions **[STAKEHOLDERS]** **[PRIO: MEDIUM]**
-
-**Version: V1.0.0** **Date: 2026-01-10**
+# Stakeholder Definitions [STAKEHOLDERS] [PRIO: MEDIUM]
 
 **Purpose:** This document provides a consolidated overview of the key stakeholders involved in the creation, maintenance, and application of the framework.
 
