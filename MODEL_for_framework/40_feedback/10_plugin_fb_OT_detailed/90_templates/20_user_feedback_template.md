@@ -1,4 +1,4 @@
-# User Feedback Template **[USER_FEEDBACK_TEMPLATE]** **[PRIO: MEDIUM]**
+# User Feedback Template [TEMPLATE_USER_FB] [PRIO: MEDIUM]
 
 **Version: V1.0.0** **Date: 2026-01-12**
 

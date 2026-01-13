@@ -1,4 +1,4 @@
-# Quality Feedback Template **[QUALITY_FEEDBACK_TEMPLATE]** **[PRIO: CRITICAL]**
+# Quality Feedback Template [TEMPLATE_QUALITY_FB] [PRIO: CRITICAL]
 
 **Version: V1.0.0** **Date: 2026-01-12**
 

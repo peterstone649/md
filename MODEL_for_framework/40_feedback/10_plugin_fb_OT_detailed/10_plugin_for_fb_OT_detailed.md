@@ -1,4 +1,4 @@
-# Feedback Detail Plugin **[FB_DETAIL_PLUGIN]** **[PRIO: HIGH]**
+# Feedback Detail Plugin [PLUGIN_MFW_FB_OT_DETAIL] [PRIO: HIGH]
 
 **Version: V1.0.0** **Date: 2026-01-12**
 

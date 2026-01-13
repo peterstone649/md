@@ -1,4 +1,4 @@
-# Feedback Template **[FEEDBACK_TEMPLATE]** **[PRIO: HIGH]**
+# Feedback Template [TEMPLATE_FB_DETAIL] [PRIO: HIGH]
 
 **Version: V1.0.0** **Date: 2026-01-12**
 

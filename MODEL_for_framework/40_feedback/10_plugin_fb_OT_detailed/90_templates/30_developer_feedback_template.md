@@ -1,4 +1,4 @@
-# Developer Feedback Template **[DEVELOPER_FEEDBACK_TEMPLATE]** **[PRIO: HIGH]**
+# Developer Feedback Template [TEMPLATE_DEV_FB] [PRIO: HIGH]
 
 **Version: V1.0.0** **Date: 2026-01-12**
 
