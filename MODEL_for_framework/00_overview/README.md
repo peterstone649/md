@@ -1,4 +1,4 @@
-# 00. Framework Overview **[FRAMEWORK_OVERVIEW]** **[PRIO: CRITICAL]**
+# MODEL_for_framework Framework Overview **[MFW_FRAMEWORK_OVERVIEW]** **[PRIO: CRITICAL]**
 
 **Version: V0.1.1** **Status: ACTIVE** **Date: 2026-01-13**
 
@@ -10,7 +10,7 @@
 
 ## 📋 Directory Overview
 
-This overview section provides the foundational context and legal framework for the entire **MODEL_for_framework** ecosystem. It establishes the legal boundaries, documents the extensive AI-human collaboration methodology, and sets the transparency standards for all framework development.
+This overview section provides the foundational context and legal framework for the entire **MODEL_for_framework** ecosystem. It establishes the legal boundaries, documents the used AI-human collaboration methodology, and sets transparency standards for all framework related development.
 
 ### 📁 Directory Structure
 
@@ -311,10 +311,11 @@ Ongoing Commitments:
 
 ## 📝 Changelog
 
-| Version | Date | Changes |
-|---------|------|---------|
-| V1.0.0 | 2026-01-09 | Initial comprehensive overview documentation |
-| V0.1.0 | 2026-01-08 | Basic structure and legal foundation established |
+| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.1 | 2026-01-13 | minor update "Directory Overview" & last sentence| Framework Steward | refine |
+| V0.1.0b | 2026-01-09 | Basic structure and legal foundation updated | Framework Steward |
+| V0.1.0a | 2026-01-08 | Basic structure and legal foundation established | AI Framework Steward |
 
 ---
 
@@ -323,4 +324,4 @@ Ongoing Commitments:
 **AI Integration:** Full transparency documented
 **Community:** Open collaboration encouraged
 
-**MODEL_for_framework represents a pioneering approach to systematic knowledge organization, combining rigorous methodological frameworks with responsible AI integration to enable complex system understanding and implementation.** 🧠⚡🔧🤖🧑‍🤝‍🧑
+**MODEL_for_framework constitutes an innovative methodological paradigm for systematic knowledge organization, integrating rigorous analytical frameworks with AI-assisted cognitive augmentation to facilitate comprehensive system analysis and implementation.** 🧠⚡🔧🤖🧑‍🤝‍🧑
