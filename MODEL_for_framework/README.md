@@ -2,6 +2,9 @@
 
 A methodological Markdown framework for systematic framework development and documentation.
 
+![MODEL_for_framework Overview](./00_overview/mfw_model_for_framework.svg)
+*Figure 1: MODEL_for_framework - Logo*
+
 ## Overview
 
 MODEL_for_framework provides the core infrastructure, standards, and templates for building robust and scalable framework ecosystems. It establishes methodological foundations for consistent documentation, validation, and evolution across framework components.

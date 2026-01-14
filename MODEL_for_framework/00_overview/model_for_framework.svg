@@ -1,0 +1,31 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wingGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5F6D" />
+      <stop offset="100%" stop-color="#FFC371" />
+    </linearGradient>
+    <linearGradient id="blueWing" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2193b0" />
+      <stop offset="100%" stop-color="#6dd5ed" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <path d="M200 250 C120 200 80 280 100 320 C120 280 180 300 210 280 Z" fill="url(#wingGradient)" />
+  <path d="M190 230 C100 180 50 260 80 300 C100 260 160 280 200 260 Z" fill="#FF5F6D" opacity="0.6" />
+
+  <path d="M300 250 C380 200 420 280 400 320 C380 280 320 300 290 280 Z" fill="url(#blueWing)" />
+  
+  <path d="M250 180 L265 150 L235 150 L250 180 Z" fill="#E2E8F0" />
+  <circle cx="250" cy="250" r="70" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="8" />
+  <circle cx="250" cy="250" r="50" fill="#1E293B" />
+  
+  <path d="M230 270 L230 230 L250 250 L270 230 L270 270" stroke="#FBBF24" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M240 280 L255 260 M260 280 L275 260" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" />
+  
+  <rect x="80" y="240" width="30" height="6" rx="3" fill="#FF5F6D" opacity="0.8" />
+  <rect x="60" y="260" width="40" height="6" rx="3" fill="#FFC371" opacity="0.6" />
+</svg>

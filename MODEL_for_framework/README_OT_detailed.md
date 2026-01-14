@@ -26,6 +26,9 @@
 
 ## Overview
 
+![MODEL_for_framework Architecture Model](./mfw_model_for_framework.png)
+*Figure 1: MODEL_for_framework - Logo*
+
 **MODEL_for_framework** is the foundational directory that establishes the methodological standards, templates, conventions, and terminology that govern systematic framework development. This directory serves as the methodological backbone, providing the essential tools and standards that ensure consistency, quality, and evolutionary capability across all framework components.
 
 ### **Core Purpose**
