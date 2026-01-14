@@ -1,5 +1,8 @@
 # MODEL_for_framework Framework Overview [MFW_FRAMEWORK_OVERVIEW] [PRIO: HIGH]
 
+![MODEL_for_framework Logo](mfw_model_for_framework.svg)
+*Figure 1: MODEL_for_framework - Logo*
+
 **Version: V0.1.1** **Status: ACTIVE** **Date: 2026-01-13**
 
 **Purpose:** Foundational overview establishing legal framework, AI collaboration transparency, and framework development principles.

@@ -2,7 +2,7 @@
 
 A methodological Markdown framework for systematic framework development and documentation.
 
-![MODEL_for_framework Overview](./00_overview/mfw_model_for_framework.svg)
+![MODEL_for_framework Overview](./00_overview/mfw_model_for_framework_OT_simple.svg)
 *Figure 1: MODEL_for_framework - Logo*
 
 ## Overview

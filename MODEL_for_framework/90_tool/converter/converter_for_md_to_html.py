@@ -3,10 +3,12 @@ import sys
 import argparse
 import markdown
 import logging
+import re
+import shutil
 from datetime import datetime
 from dotenv import load_dotenv
 
-__version__ = "1.5.0"
+__version__ = "1.6.0"
 __status__ = "ACTIVE"
 
 """
@@ -14,6 +16,7 @@ CHANGELOG
 
 | Version | Date       | Changes | Stakeholder | Rationale/Motivation |
 |---------|------------|---------|-------------|----------------------|
+| V1.6.0  | 2026-01-14 | Added automatic image copying for SVG and other image files | Framework Steward | Ensure images are properly included in HTML output |
 | V1.5.0  | 2026-01-13 | Renamed file from md_to_html_converter.py to converter_for_md_to_html.py | Framework Steward | Align with framework naming conventions and improve consistency |
 | V1.4.0  | 2026-01-13 | Restructured tool directory from 90_tool to 90_tool\converter | Framework Steward | Improve code organization and separate converter tools into dedicated subdirectory |
 | V1.3.0  | 2026-01-13 | Adapted fixed output directory structure <PROJECT_BASE_PATH>\out\html | Framework Steward | Standardize HTML output location for consistent deployment and easier maintenance |
@@ -63,6 +66,46 @@ class HTMLConverter:
             base = os.path.splitext(os.path.basename(self.input_path))[0]
             return os.path.join(self.output_root, f"{base}.html")
 
+    def _copy_images(self, md_content, input_dir, output_dir):
+        """
+        Copies image files referenced in markdown content to the output directory
+        and updates the content with new relative paths.
+        """
+        # Find all image references in markdown: ![alt](path)
+        image_pattern = r'!\[([^\]]*)\]\(([^)]+)\)'
+        updated_content = md_content
+
+        for match in re.finditer(image_pattern, md_content):
+            alt_text = match.group(1)
+            image_path = match.group(2)
+
+            # Skip external URLs (http/https)
+            if image_path.startswith(('http://', 'https://')):
+                continue
+
+            # Resolve relative path from markdown file location
+            abs_image_path = os.path.abspath(os.path.join(input_dir, image_path))
+
+            if os.path.isfile(abs_image_path):
+                # Create relative path from output directory to image
+                try:
+                    rel_image_path = os.path.relpath(abs_image_path, output_dir)
+                    # Copy image to output directory
+                    output_image_path = os.path.join(output_dir, os.path.basename(image_path))
+                    shutil.copy2(abs_image_path, output_image_path)
+                    logging.info(f"Copied image '{abs_image_path}' to '{output_image_path}'")
+
+                    # Update the markdown content with the new relative path
+                    old_ref = f'![{alt_text}]({image_path})'
+                    new_ref = f'![{alt_text}]({os.path.basename(image_path)})'
+                    updated_content = updated_content.replace(old_ref, new_ref)
+                except Exception as e:
+                    logging.warning(f"Failed to copy image '{abs_image_path}': {e}")
+            else:
+                logging.warning(f"Image file not found: '{abs_image_path}'")
+
+        return updated_content
+
     def convert(self):
         """
         Executes the conversion from Markdown to a styled HTML file.
@@ -73,6 +116,7 @@ class HTMLConverter:
 
         html_path = self._generate_html_path()
         output_dir = os.path.dirname(html_path)
+        input_dir = os.path.dirname(self.input_path)
 
         try:
             os.makedirs(output_dir, exist_ok=True)
@@ -81,6 +125,9 @@ class HTMLConverter:
         except IOError as e:
             logging.error(f"Error reading input file {self.input_path}: {e}")
             return False
+
+        # Copy images and update content
+        md_content = self._copy_images(md_content, input_dir, output_dir)
 
         # Use markdown extensions for better formatting
         html_content = markdown.markdown(
