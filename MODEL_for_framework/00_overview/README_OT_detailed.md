@@ -75,7 +75,7 @@ This overview section provides the foundational context and legal framework for 
 ├── Scope: 25+ major framework components developed
 ├── AI Contribution: 85-90% initial drafting and structuring
 ├── Human Oversight: 100% strategic direction and final validation
-├── Tools Used: Grok, Claude, Perplexity, GitHub Copilot, ChatGPT
+├── Tools Used: Grok, Claude, Perplexity, ChatGPT
 ├── Quality Assurance: Multi-stage validation and cross-referencing
 └── Transparency: Full disclosure of AI involvement and processes
 ```
@@ -108,7 +108,6 @@ AI-Human Collaboration Framework:
 | **Grok (xAI)** | Content generation, analysis, structuring | 80% framework development | Human review of 60% content |
 | **Claude (Anthropic)** | Supplementary analysis, verification | 20% cross-checking | Independent validation |
 | **Perplexity AI** | Research verification, source validation | 10% fact-checking | Human verification required |
-| **GitHub Copilot** | Structural elements, formatting | 60% templates | Automated consistency |
 | **ChatGPT (OpenAI)** | Creative exploration, alternatives | 30% brainstorming | Human critical review |
 
 ### **Quality Assurance Process**

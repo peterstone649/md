@@ -1,142 +1,62 @@
-# Template for Rule **[TEMPLATE_RULE]** **[PRIO: [PRIORITY_LEVEL]]**
+# Template for Rule [TEMPLATE_RULE] [PRIO: HIGH]
 
-**Version: V[VERSION]** **Status: [STATUS]** **Date: YYYY-MM-DD**
-
-**Rule ID:** RULE_[IDENTIFIER]
-**Applies to:** [TARGET_AUDIENCE]
-**Priority:** [CRITICAL | HIGH | MEDIUM | LOW]
-**Status:** [OPEN | REVIEW | APPROVED | CLOSED]
-
----
+**Rule ID:** <RULE_TEMPLATE_ID_FROM_TITLE>
+**Priority:** HIGH
+**Applies to:** All framework rules
 
 ## Rule Statement
 
 **Clear, concise statement of what this rule requires or prohibits.**
 
-*   **Formal Statement (Optional):** `∀x∃y (Condition(x) → Requirement(y))`
+## Rule Requirements
+/* can be more requirements if needed !*/
+- **[R1]**: Description of requirement with ID for compliance tracking
+- **[R2]**: Description of requirement with ID for compliance tracking
+- **[R3]**: Description of requirement with ID for compliance tracking
 
----
+**Formal Statement:**
+```
+e.g.
+∀s∀a∀stakeholder (Statement(s) ∧ Actor(a) ∧ (Human(stakeholder) ∨ AI(a)))
+    → MustAcknowledge(a, Uncertainty(s)) ∧ MustIdentify(a, Limitations(s))
+    ∧ MustDeclare(a, BiasPotential(s)))
+```
 
 ## Rationale
 
-Explain WHY this rule exists:
+Brief explanation of why this rule exists and its benefits.
 
-- Benefit 1
-- Benefit 2
-- Benefit 3
-- Alignment with framework principles
+*Based on: [document.md](../path/to/document.md)*
 
----
+## Uncertainty Declaration
 
-## Core Requirements
+*If applicable: This rule acknowledges inherent uncertainties in [specific domain/area]. Key limitations include: [list key uncertainties or limitations].*
 
-### 1. [Requirement Category 1]
-
-- [ ] Requirement item 1
-- [ ] Requirement item 2
-- [ ] Requirement item 3
-
-### 2. [Requirement Category 2]
-
-- [ ] Requirement item 1
-- [ ] Requirement item 2
-
----
-
-## Implementation Guidelines
-
-### Structure/Pattern
-```
-[ACTOR] + [ACTION] + [OBJECT]
-```
-
-### Examples
-
-| ❌ Incorrect | ✅ Correct |
-|-------------|-----------|
-| Example wrong | Example right |
-| Example wrong | Example right |
-
----
-
-## Validation Checklist
-
-- [ ] **R1**: First validation requirement
-- [ ] **R2**: Second validation requirement
-- [ ] **R3**: Third validation requirement
-- [ ] **R4**: Fourth validation requirement
-
----
-
-## Enforcement
-
-| Phase | Action | Responsible |
-|-------|--------|-------------|
-| Writing | [Action] | [Role] |
-| Review | [Action] | [Role] |
-| Approval | [Action] | [Role] |
-
-### Consequences of Non-Compliance
-
-| Severity | Violation | Consequence |
-|----------|-----------|-------------|
-| **CRITICAL** | [Violation] | [Action] |
-| **HIGH** | [Violation] | [Action] |
-| **MEDIUM** | [Violation] | [Action] |
-| **LOW** | [Violation] | [Action] |
-
----
-
-## Integration with Framework
+## Integration with Other Framework Components
 
 ### Related Rules
-- **[RULE_REFERENCE.md](path/to/rule.md)** - Description of relationship
+- **[rule_name.md](path/to/rule.md)** - Description of relationship
 
 ### Related Axioms
-- **[##_axiom_[name].md](path/to/axiom.md)** - Foundation for this rule
+- **[axiom_name.md](path/to/axiom.md)** - Foundation for this rule
 
-### Related Principles (MODEL_for_stakeholder_AI_collab)
-- [##_principle_[name].md](../MODEL_for_stakeholder_AI_collab/30_principle/##_principle_[name].md) - Description
+### Related Principles
+- **[principle_name.md](../path/to/principle.md)** - Description of relationship
 
----
+## Changelog
 
-## Scientific/Foundation References
+| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.1 | 2026-01-15 | Added extended footer section with Rule Owner, Enforcement Authority, Framework metadata | Framework Steward | Provide comprehensive rule documentation template |
+| V0.1.0 | YYYY-MM-DD | Initial template creation | Framework Steward | Establish rule template standard |
 
-- **Source 1:** [Description and relevance]
-- **Source 2:** [Description and relevance]
-
----
-
-## References
-
-- [01_rule_for_active_voice.md](12_rule/01_rule_for_active_voice.md)
-- [02_rule_for_ai_lock_protection.md](12_rule/02_rule_for_ai_lock_protection.md)
-- [03_rule_for_version_changelog_update.md](12_rule/03_rule_for_version_changelog_update.md)
-- External Reference: [Title](URL)
-
----
-
-## Version Changelog
-
-| Version | Date | Stakeholder | Changes |
-|---------|------|-------------|---------|
-| V0.1.0 | YYYY-MM-DD | [Author] | Initial creation |
-
----
-
-**Rule Steward:** [Role/Committee]
-**Approval Status:** [Status]
+**Rule Steward:** Framework Steward
+**Approval Status:** Template
 **Effective Date:** YYYY-MM-DD
-**Review Cycle:** [Frequency]
-
----
-
-**End of Rule**
-
----
+**Review Cycle:** Annual
 
 **Framework:** MODEL_for_framework
-**Version:** V0.1.0
+**Framework Version:** V[VERSION]
 **Date:** YYYY-MM-DD
 **Priority:** [PRIORITY]
 **Compliance:** [Mandatory | Recommended]

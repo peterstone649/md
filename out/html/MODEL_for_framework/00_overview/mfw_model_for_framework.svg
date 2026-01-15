@@ -1,0 +1,60 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Topic 1: Mechanical Rotation */
+    @keyframes rotate-gear {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    /* Topic 2: Aerodynamic Breathing */
+    @keyframes wing-float {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-10px) scale(1.02); }
+    }
+
+    #gear-main {
+      transform-origin: 400px 440px;
+      animation: rotate-gear 10s linear infinite;
+    }
+    
+    #wing-left, #wing-right {
+      transform-origin: 400px 440px;
+      animation: wing-float 3s ease-in-out infinite;
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="warm-wing" x1="170" y1="350" x2="350" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E63946"/>
+      <stop offset="50%" stop-color="#F4A261"/>
+      <stop offset="100%" stop-color="#FFD166"/>
+    </linearGradient>
+    <linearGradient id="cool-wing" x1="630" y1="350" x2="450" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0077B6"/>
+      <stop offset="50%" stop-color="#48CAE4"/>
+      <stop offset="100%" stop-color="#ADE8F4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <g id="wing-left">
+    <path d="M350 380C300 320 180 300 160 380C150 440 250 520 360 500L350 420Z" fill="url(#warm-wing)"/>
+    <path d="M360 440C320 450 220 460 200 520C240 560 340 540 370 480Z" fill="#F4A261" opacity="0.8"/>
+  </g>
+
+  <g id="wing-right">
+    <path d="M450 380C500 320 620 300 640 380C650 440 550 520 440 500L450 420Z" fill="url(#cool-wing)"/>
+    <path d="M440 440C480 450 580 460 600 520C560 560 460 540 430 480Z" fill="#48CAE4" opacity="0.8"/>
+  </g>
+
+  <g id="gear-main" filter="url(#shadow)">
+    <path d="M400 330 L415 330 L425 350 L445 352 L455 365 L475 375 L480 395 L495 405 L495 425 L505 440 L495 455 L495 475 L480 485 L475 505 L455 515 L445 528 L425 530 L415 550 L385 550 L375 530 L355 528 L345 515 L325 505 L320 485 L305 475 L305 455 L295 440 L305 425 L305 405 L320 395 L325 375 L345 365 L355 352 L375 350 L385 330 Z" fill="#F2F2F2" stroke="#D1D1D1" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="400" cy="440" r="65" fill="#24292E"/>
+    <circle cx="400" cy="440" r="55" stroke="#444C56" stroke-width="3" fill="none"/>
+    <path d="M385 430C385 424.477 389.477 420 395 420H410C415.523 420 420 424.477 420 430V445C420 450.523 415.523 455 410 455H395L385 465V430Z" stroke="#FFD166" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <path d="M400 355 L412 378 H388 Z" fill="#24292E"/>
+</svg>
