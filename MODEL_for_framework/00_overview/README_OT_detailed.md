@@ -1,6 +1,7 @@
 # MODEL_for_framework Framework Overview [MFW_FRAMEWORK_OVERVIEW] [PRIO: HIGH]
 
-![MODEL_for_framework Logo](mfw_model_for_framework.svg)
+<img src="mfw_model_for_framework.svg" width="20%" alt="MODEL_for_framework Logo">
+
 *Figure 1: MODEL_for_framework - Logo*
 
 **Version: V0.1.1** **Status: ACTIVE** **Date: 2026-01-13**

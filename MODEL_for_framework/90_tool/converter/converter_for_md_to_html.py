@@ -8,14 +8,15 @@ import shutil
 from datetime import datetime
 from dotenv import load_dotenv
 
-__version__ = "1.6.0"
+__version__ = "1.6.1"
 __status__ = "ACTIVE"
 
-"""
+r"""
 CHANGELOG
 
 | Version | Date       | Changes | Stakeholder | Rationale/Motivation |
 |---------|------------|---------|-------------|----------------------|
+| V1.6.1  | 2026-01-15 | Fixed syntax warning by making docstring a raw string | Framework Steward | Resolve Python syntax warning for invalid escape sequences in docstring table formatting |
 | V1.6.0  | 2026-01-14 | Added automatic image copying for SVG and other image files | Framework Steward | Ensure images are properly included in HTML output |
 | V1.5.0  | 2026-01-13 | Renamed file from md_to_html_converter.py to converter_for_md_to_html.py | Framework Steward | Align with framework naming conventions and improve consistency |
 | V1.4.0  | 2026-01-13 | Restructured tool directory from 90_tool to 90_tool\converter | Framework Steward | Improve code organization and separate converter tools into dedicated subdirectory |

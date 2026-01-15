@@ -1,5 +1,5 @@
 # Rule for Version Changelog Update **[RULE_FW_DOC_VERSION_CHANGELOG]**
-**Version: V0.1.0** **Date: 2026-01-09**
+**Version: V0.1.1** **Date: 2026-01-15**
 
 **Rule ID:** RULE_VERSION_CHANGELOG
 **Priority:** HIGH
@@ -42,13 +42,19 @@ A comprehensive changelog:
 Place the changelog section at the end of the document before the footer:
 
 ```markdown
-## 7. Changelog
+## Changelog
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V0.1.1 | 2026-01-09 | Updated cross-references | AI Framework Steward | clickable principle files on author request |
+| V0.1.1 | 2026-01-15 | Added Version Uniqueness section and header format requirements | Framework Steward | Strengthen changelog integrity and consistency |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational structure |
 ```
+
+### Changelog Header Format
+
+- Use `## Changelog` (without numbering)
+- Do not use numbered headers like `## 7. Changelog`
+- Maintain consistent header level (typically `##`) across all framework documents
 
 ---
 
@@ -75,6 +81,12 @@ Place the changelog section at the end of the document before the footer:
 - Describe what changed, not how
 - Include affected sections when relevant
 - Reference related principles or conventions
+
+### 5. Version Uniqueness
+- Each version number MUST be unique within the changelog
+- No duplicate entries for the same version are permitted
+- If multiple changes occur for the same version, consolidate them into a single entry
+- Version increments are required for any substantive changes
 
 ---
 
@@ -118,6 +130,7 @@ Maintain reverse chronological order:
 - [ ] All 5 columns present (Version, Date, Changes, Stakeholder, Rationale/Motivation)
 - [ ] Entries in reverse chronological order
 - [ ] Date format is ISO 8601 (YYYY-MM-DD)
+- [ ] Date reflects current operating system date at time of change
 - [ ] Version format is V[major].[minor].[patch]
 - [ ] Stakeholder identifies responsible person/role
 - [ ] Rationale explains why change was made
@@ -142,6 +155,15 @@ Maintain reverse chronological order:
 - Convention for Version (20_convention/01_convention_for_version.md)
 - Convention for Writing Style (20_convention/03_convention_for_writing_style.md)
 - Template for Principle (15_template/17_template_for_principle.md)
+
+---
+
+## Changelog
+
+| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.1 | 2026-01-15 | Added Version Uniqueness section to Changelog Entry Requirements | Framework Steward | Strengthen changelog integrity by preventing duplicate version entries |
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational structure |
 
 ---
 
