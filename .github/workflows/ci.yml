@@ -34,33 +34,33 @@ jobs:
 
     - name: Install MODEL_for_framework
       run: |
-        cd _29
+        cd .
         pip install -e .
 
     - name: Run unit tests
       run: |
-        cd _29
+        cd .
         python -m pytest MODEL_for_framework/90_tool/tests/test_converters.py -v
 
     - name: Run integration tests
       run: |
-        cd _29
+        cd .
         python -m pytest MODEL_for_framework/90_tool/tests/test_integration.py -v
 
     - name: Run simple tests
       run: |
-        cd _29
+        cd .
         python MODEL_for_framework/90_tool/tests/test_simple.py
 
     - name: Test YAML to HTML conversion
       run: |
-        cd _29
+        cd .
         python MODEL_for_framework/90_tool/yaml_to_html_converter.py MODEL_for_framework/90_tool/20_user_story/10_YAML/20_test_yaml_file.yaml html_output --recursive
         ls -la html_output
 
     - name: Test Markdown to HTML conversion
       run: |
-        cd _29
+        cd .
         echo "# Test Markdown" > test_input.md
         echo "This is a test." >> test_input.md
         python MODEL_for_framework/90_tool/md_to_html_converter.py test_input.md html_output
@@ -69,7 +69,7 @@ jobs:
 
     - name: Check HTML output
       run: |
-        cd _29
+        cd .
         find html_output -name "*.html" | head -5 | xargs -I {} sh -c 'echo "Checking {}"; head -20 {}'
         rm -rf html_output
 
@@ -92,17 +92,17 @@ jobs:
 
     - name: Run flake8
       run: |
-        cd _29
+        cd .
         flake8 MODEL_for_framework/90_tool/ --max-line-length=120 --extend-ignore=E203
 
     - name: Run black (check only)
       run: |
-        cd _29
+        cd .
         black --check MODEL_for_framework/90_tool/
 
     - name: Run isort (check only)
       run: |
-        cd _29
+        cd .
         isort --check-only MODEL_for_framework/90_tool/
 
   documentation:
@@ -124,7 +124,7 @@ jobs:
 
     - name: Check docstrings
       run: |
-        cd _29
+        cd .
         pydocstyle MODEL_for_framework/90_tool/yaml_to_html_converter.py
         pydocstyle MODEL_for_framework/90_tool/md_to_html_converter.py
 
@@ -147,5 +147,5 @@ jobs:
 
     - name: Run performance tests
       run: |
-        cd _29
+        cd .
         python -m pytest MODEL_for_framework/90_tool/tests/test_integration.py::TestPerformance -v
