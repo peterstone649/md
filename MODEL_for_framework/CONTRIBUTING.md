@@ -2,6 +2,10 @@
 
 [![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![License: EUPL v1.2](https://img.shields.io/badge/License-EUPL%20v1.2-blue.svg)](https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12)
+[![GitHub issues](https://img.shields.io/github/issues/peterstone649/md.svg)](https://github.com/peterstone649/md/issues)
+[![GitHub stars](https://img.shields.io/github/stars/peterstone649/md.svg)](https://github.com/peterstone649/md/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/peterstone649/md.svg)](https://github.com/peterstone649/md/network)
 
 We **enthusiastically welcome contributions** from anyone interested in improving framework development methodologies! Whether you're a seasoned developer, documentation expert, or just getting started with open source - your input matters.
 
