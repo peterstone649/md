@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_US_standard_requirements</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Story: Standard Framework Requirements (US_MFR_STANDARD_REQUIREMENTS) <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.0</strong> <strong>Status: ACTIVE</strong> <strong>Date: 2026-01-10</strong></p>
+<p><strong>As a</strong> Framework Developer,
+<strong>I want</strong> all tools and components to follow standard framework requirements,
+<strong>so that</strong> I can ensure consistency, maintainability, and proper integration across the entire framework.</p>
+<hr />
+<h2>Acceptance Criteria</h2>
+<h3>1. Folder Structure Standards</h3>
+<ul>
+<li><strong>Given</strong> a new tool or component is added to the framework,</li>
+<li><strong>When</strong> it is implemented,</li>
+<li><strong>Then</strong> it should follow the established folder structure:</li>
+<li>Source code in appropriate tool directories</li>
+<li>Tests in corresponding <code>tests/</code> subdirectories</li>
+<li>Documentation in <code>20_user_story/</code> with YAML files</li>
+<li>HTML output in parallel <code>html/</code> directory structure</li>
+</ul>
+<h3>2. HTML Output Organization</h3>
+<ul>
+<li><strong>Given</strong> HTML files are generated from Markdown or YAML,</li>
+<li><strong>When</strong> the conversion process runs,</li>
+<li><strong>Then</strong> the HTML files should be organized in a parallel directory structure:</li>
+<li>Input: <code>_29/MODEL_for_framework/90_tool/20_user_story/10_YAML/file.yaml</code></li>
+<li>Output: <code>_29/html/MODEL_for_framework/90_tool/20_user_story/10_YAML/file.html</code></li>
+<li>Maintaining the same relative path structure</li>
+</ul>
+<h3>3. .env Configuration Support</h3>
+<ul>
+<li><strong>Given</strong> tools require project base path configuration,</li>
+<li><strong>When</strong> the tool is executed,</li>
+<li><strong>Then</strong> it should read <code>PROJECT_BASE_PATH</code> from the <code>.env</code> file:</li>
+<li>Default: <code>PROJECT_BASE_PATH=E:/2025_11/_29/</code></li>
+<li>Tools should use this as the root path for all file operations</li>
+<li>Relative paths should be resolved against this base path</li>
+</ul>
+<h3>4. Configuration File Handling</h3>
+<ul>
+<li><strong>Given</strong> tools need configuration,</li>
+<li><strong>When</strong> configuration files are required,</li>
+<li><strong>Then</strong> they should follow these standards:</li>
+<li>Use <code>.env</code> for environment variables</li>
+<li>Use <code>.yaml</code> or <code>.json</code> for structured configuration</li>
+<li>Support both absolute and relative paths</li>
+<li>Provide sensible defaults for all configuration options</li>
+</ul>
+<h3>5. Error Handling and Logging</h3>
+<ul>
+<li><strong>Given</strong> tools encounter errors,</li>
+<li><strong>When</strong> errors occur during execution,</li>
+<li><strong>Then</strong> they should:</li>
+<li>Log detailed error messages with context</li>
+<li>Provide user-friendly error messages</li>
+<li>Include stack traces for debugging</li>
+<li>Support different log levels (INFO, WARNING, ERROR)</li>
+<li>Write logs to appropriate output (console and/or files)</li>
+</ul>
+<h3>6. Cross-Platform Compatibility</h3>
+<ul>
+<li><strong>Given</strong> the framework runs on different platforms,</li>
+<li><strong>When</strong> tools are developed,</li>
+<li><strong>Then</strong> they should:</li>
+<li>Use cross-platform path handling (pathlib)</li>
+<li>Support both Windows and Unix path separators</li>
+<li>Handle line endings appropriately</li>
+<li>Use platform-independent file operations</li>
+</ul>
+<h3>7. Documentation Standards</h3>
+<ul>
+<li><strong>Given</strong> new features or tools are added,</li>
+<li><strong>When</strong> they are implemented,</li>
+<li><strong>Then</strong> they should include:</li>
+<li>Comprehensive user stories (Markdown + YAML)</li>
+<li>Code documentation (docstrings, comments)</li>
+<li>Usage examples and documentation</li>
+<li>Changelog entries for all modifications</li>
+<li>Related documents references</li>
+</ul>
+<h3>8. Testing Requirements</h3>
+<ul>
+<li><strong>Given</strong> new functionality is added,</li>
+<li><strong>When</strong> it is implemented,</li>
+<li><strong>Then</strong> it should include:</li>
+<li>Unit tests for core functionality</li>
+<li>Integration tests for workflows</li>
+<li>Edge case testing</li>
+<li>Performance benchmarks where applicable</li>
+<li>Test coverage reporting</li>
+</ul>
+<h3>9. Versioning and Changelog</h3>
+<ul>
+<li><strong>Given</strong> components are modified,</li>
+<li><strong>When</strong> changes are made,</li>
+<li><strong>Then</strong> they should:</li>
+<li>Follow semantic versioning (MAJOR.MINOR.PATCH)</li>
+<li>Update changelog with version, date, changes</li>
+<li>Document stakeholder and rationale</li>
+<li>Maintain version history</li>
+</ul>
+<h3>10. Framework Integration</h3>
+<ul>
+<li><strong>Given</strong> tools are part of the framework,</li>
+<li><strong>When</strong> they are developed,</li>
+<li><strong>Then</strong> they should:</li>
+<li>Use consistent naming conventions</li>
+<li>Follow established patterns and conventions</li>
+<li>Integrate with existing framework components</li>
+<li>Support framework-wide configuration</li>
+<li>Maintain consistency with other tools</li>
+</ul>
+<hr />
+<h2>Related Documents</h2>
+<ul>
+<li><strong>Template:</strong> <a href="../../15_template/18_template_for_user_story.md">18_template_for_user_story.md</a></li>
+<li><strong>Environment Configuration:</strong> <a href="../../.env">../../.env</a></li>
+<li><strong>Convention Documentation:</strong> <a href="../../20_convention/12_convention_for_formal_notation.md">../../20_convention/12_convention_for_formal_notation.md</a></li>
+<li><strong>Testing Standards:</strong> <a href="../tests/test_integration.py">../tests/test_integration.py</a></li>
+</ul>
+<hr />
+<h2>Implementation Notes</h2>
+<ul>
+<li>All tools should be designed with these standards in mind from the beginning</li>
+<li>Existing tools should be gradually migrated to comply with these standards</li>
+<li>Standards should be documented and easily accessible to all developers</li>
+<li>Compliance with standards should be part of code review process</li>
+<li>Standards may evolve over time but should maintain backward compatibility</li>
+</ul>
+<hr />
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.0</td>
+<td>2026-01-10</td>
+<td>Initial creation with comprehensive standard requirements</td>
+<td>AI Framework Steward</td>
+<td>To establish consistent standards across the framework for better maintainability and integration</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:06 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

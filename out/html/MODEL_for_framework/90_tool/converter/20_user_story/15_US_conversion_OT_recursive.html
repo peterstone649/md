@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15_US_conversion_OT_recursive</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Story: Bulk Conversion of Documentation (US_MSHCOL_CONVERSION_OT_RECURSIVE) <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0</strong> <strong>Status: DRAFT</strong> <strong>Date: 2026-01-10</strong></p>
+<p><strong>As a</strong> Framework Documenter,
+<strong>I want to</strong> run a single command to convert an entire directory of Markdown files into styled HTML documents,
+<strong>so that</strong> I can efficiently publish the complete set of framework documentation without having to convert each file one by one.</p>
+<hr />
+<h2>Acceptance Criteria</h2>
+<ol>
+<li>
+<p><strong>Given</strong> I have a directory containing multiple Markdown files and subdirectories with more Markdown files,
+    <strong>When</strong> I run the <code>html_converter.py</code> script with a <code>--recursive</code> flag, pointing to that directory,
+    <strong>Then</strong> the script should find and convert every <code>.md</code> file within that directory tree.</p>
+</li>
+<li>
+<p><strong>Given</strong> the script is run recursively,
+    <strong>When</strong> the HTML files are generated,
+    <strong>Then</strong> they should be placed in the specified output directory, maintaining the same subdirectory structure as the source.</p>
+</li>
+<li>
+<p><strong>Given</strong> I run the script on a directory without the <code>--recursive</code> flag,
+    <strong>When</strong> the script executes,
+    <strong>Then</strong> it should show an error message and exit, preventing accidental misuse.</p>
+</li>
+<li>
+<p><strong>Given</strong> I run the script on a single file,
+    <strong>When</strong> the script executes,
+    <strong>Then</strong> it should convert only that single file as it did before.</p>
+</li>
+<li>
+<p><strong>Given</strong> any conversion is performed,
+    <strong>When</strong> the HTML is generated,
+    <strong>Then</strong> it should use the standard, colorful styling defined in the tool.</p>
+</li>
+</ol>
+<hr />
+<h2>Related Documents</h2>
+<ul>
+<li><strong>Tool:</strong> <a href="../converter_OT_html.py">converter_OT_html.py</a></li>
+<li><strong>Rule:</strong> <a href="../../12_rule/03_rule_for_version_changelog_update.md">RULE_FW_DOC_VERSION_CHANGELOG</a></li>
+</ul>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:06 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

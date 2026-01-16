@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_user_story_integrator</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Story: Integrator [US_MFW_INTEGRATOR] [PRIO: HIGH]</h1>
+<p><strong>Version: V1.0.0</strong> <strong>Date: 2026-01-09</strong></p>
+<p><strong>Story ID:</strong> US_MFW_INTEGRATOR
+<strong>Stakeholder:</strong> Integrator</p>
+<hr />
+<h2>User Story</h2>
+<p><strong>As an</strong> Integrator working with AI tools,</p>
+<p><strong>I want to</strong> create and enhance framework content using AI assistance while respecting AI_LOCK protection,</p>
+<p><strong>So that</strong> I can leverage AI capabilities to produce high-quality framework documents efficiently.</p>
+<hr />
+<h2>Description</h2>
+<p>Integrators use AI tools (LLMs, AI assistants) to create and improve framework content. They combine human oversight with AI capabilities. Key responsibilities include: generating drafts, enhancing existing content, maintaining AI_LOCK boundaries, and ensuring human validation of all AI-assisted work.</p>
+<hr />
+<h2>Goals</h2>
+<ol>
+<li><strong>Generate</strong> high-quality first drafts using AI tools</li>
+<li><strong>Enhance</strong> existing documents with AI-assisted improvements</li>
+<li><strong>Protect</strong> AI_LOCK sections from AI modification</li>
+<li><strong>Validate</strong> all AI-generated content through human review</li>
+<li><strong>Maintain</strong> transparency about AI involvement</li>
+</ol>
+<hr />
+<h2>Acceptance Criteria</h2>
+<ul>
+<li>[ ] Integrator can generate framework content using AI</li>
+<li>[ ] AI_LOCK markers protect core content from modification</li>
+<li>[ ] All AI-generated content undergoes human review</li>
+<li>[ ] Changelog documents AI involvement</li>
+<li>[ ] Quality standards are met for AI-assisted content</li>
+<li>[ ] Transparency about AI tools used</li>
+</ul>
+<hr />
+<h2>Integrator Workflow</h2>
+<pre><code>1. PREPARATION
+   └── Identify content need
+   └── Mark AI_LOCK sections if creating new document
+   └── Define clear prompts for AI
+
+2. AI GENERATION
+   └── Use AI tools to generate content
+   └── Apply framework conventions to prompts
+   └── Request active voice and proper structure
+
+3. HUMAN REVIEW
+   └── Verify AI_LOCK sections intact
+   └── Check active voice compliance
+   └── Validate clickable links
+   └── Assess content quality
+
+4. REFINEMENT
+   └── Edit AI-generated content
+   └── Add cross-references
+   └── Apply final polish
+
+5. DOCUMENTATION
+   └── Note AI assistance in methodology
+   └── Update changelog with Stakeholder=&quot;AI_Assistant&quot;
+   └── Document Rationale/Motivation
+</code></pre>
+<hr />
+<h2>AI Integration Principles</h2>
+<table>
+<thead>
+<tr>
+<th>Principle</th>
+<th>Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Human Sovereignty</strong></td>
+<td>Human makes final decisions on AI content</td>
+</tr>
+<tr>
+<td><strong>Transparency</strong></td>
+<td>Disclose AI tools and methods used</td>
+</tr>
+<tr>
+<td><strong>Iterative Validation</strong></td>
+<td>Review AI output at multiple checkpoints</td>
+</tr>
+<tr>
+<td><strong>Context Preservation</strong></td>
+<td>Maintain framework context in AI prompts</td>
+</tr>
+<tr>
+<td><strong>Reversibility</strong></td>
+<td>Keep human-authored backup of AI content</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>AI_LOCK Protection</h2>
+<p><strong>[AI_LOCK]</strong>
+Core framework abstracts and fundamental principles MUST NOT be modified by AI.
+<strong>[END_AI_LOCK]</strong></p>
+<p>Integrators MUST:
+- Identify content requiring AI_LOCK protection
+- Ensure AI tools do not modify protected sections
+- Verify AI_LOCK integrity after AI assistance</p>
+<hr />
+<h2>Quality Standards for AI Content</h2>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Standard</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Active Voice</strong></td>
+<td>100% compliance (RULE_ACTIVE_VOICE)</td>
+</tr>
+<tr>
+<td><strong>Clickable Links</strong></td>
+<td>All cross-references functional (RULE_CLICKABLE_LINKS)</td>
+</tr>
+<tr>
+<td><strong>Template Compliance</strong></td>
+<td>Follows standardized structures</td>
+</tr>
+<tr>
+<td><strong>Human Review</strong></td>
+<td>All AI content reviewed by human</td>
+</tr>
+<tr>
+<td><strong>Transparency</strong></td>
+<td>AI involvement documented</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Example Use Cases</h2>
+<ol>
+<li>
+<p><strong>AI Draft Generation</strong></p>
+<blockquote>
+<p>"I need a new principle document. I'll use an LLM to generate a first draft, then carefully review it for active voice, add cross-references, and ensure AI_LOCK sections are protected."</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Content Enhancement</strong></p>
+<blockquote>
+<p>"This principle document needs improvement. I'll use AI to suggest enhancements while keeping the AI_LOCK abstract intact."</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Bulk Template Population</strong></p>
+<blockquote>
+<p>"We need consistent metadata across documents. I'll use AI to help, but verify each result manually."</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h2>Tools and Resources</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Purpose</th>
+<th>Documentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI Assistants</td>
+<td>Content generation</td>
+<td><code>MODEL_for_STKHLD_AI_COLLAB/00_overview/01_legal/02_methodology_ai_assistance.md</code></td>
+</tr>
+<tr>
+<td>Principle Template</td>
+<td>Structure AI output</td>
+<td><code>15_template/17_template_for_principle.md</code></td>
+</tr>
+<tr>
+<td>Active Voice Rule</td>
+<td>Quality standard</td>
+<td><code>12_rule/01_rule_for_active_voice.md</code></td>
+</tr>
+<tr>
+<td>Clickable Links Rule</td>
+<td>Navigation standard</td>
+<td><code>12_rule/02_rule_for_clickable_links.md</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Success Metrics</h2>
+<ul>
+<li>AI-assisted content meets same quality standards as human-written</li>
+<li>Zero AI_LOCK violations</li>
+<li>Human review covers 100% of AI-generated content</li>
+<li>AI involvement transparently documented</li>
+</ul>
+<hr />
+<p><strong>Story Status:</strong> Ready
+<strong>Estimation:</strong> 5 story points
+<strong>Sprint:</strong> TBD</p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:02 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

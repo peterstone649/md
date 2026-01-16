@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abbreviation_reference</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Abbreviation Reference (ABBREV_REF_MFW)</h1>
+<blockquote>
+<p><strong>Quick Reference Guide for Framework Abbreviations</strong></p>
+</blockquote>
+<h2>1. Core Prefix Abbreviations</h2>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>Full Term</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>mfw</strong></td>
+<td>Model Framework</td>
+<td><code>mfw_id</code>, <code>mfw_version</code></td>
+</tr>
+<tr>
+<td><strong>fw</strong></td>
+<td>Framework</td>
+<td><code>fw_id</code>, <code>fw_version</code></td>
+</tr>
+<tr>
+<td><strong>model</strong></td>
+<td>Model</td>
+<td><code>model_name</code>, <code>model_type</code></td>
+</tr>
+<tr>
+<td><strong>tpl</strong></td>
+<td>Template</td>
+<td><code>tpl_id</code>, <code>tpl_category</code></td>
+</tr>
+<tr>
+<td><strong>con</strong></td>
+<td>Convention</td>
+<td><code>con_id</code>, <code>con_status</code></td>
+</tr>
+<tr>
+<td><strong>val</strong></td>
+<td>Validation</td>
+<td><code>val_score</code>, <code>val_result</code></td>
+</tr>
+<tr>
+<td><strong>sys</strong></td>
+<td>System</td>
+<td><code>sys_name</code>, <code>sys_version</code></td>
+</tr>
+<tr>
+<td><strong>evo</strong></td>
+<td>Evolution</td>
+<td><code>evo_phase</code>, <code>evo_status</code></td>
+</tr>
+<tr>
+<td><strong>axiom</strong></td>
+<td>Axiom</td>
+<td><code>axiom_id</code>, <code>axi_type</code></td>
+</tr>
+<tr>
+<td><strong>integ</strong></td>
+<td>Integration</td>
+<td><code>integ_type</code>, <code>integ_status</code></td>
+</tr>
+<tr>
+<td><strong>prop</strong></td>
+<td>Property</td>
+<td><code>prop_name</code>, <code>prop_value</code></td>
+</tr>
+<tr>
+<td><strong>term</strong></td>
+<td>Term</td>
+<td><code>term_id</code>, <code>term_name</code></td>
+</tr>
+<tr>
+<td><strong>princ</strong></td>
+<td>Principle</td>
+<td><code>princ_id</code>, <code>princ_reuse</code>, <code>PRINC_MFR_REUSE</code></td>
+</tr>
+<tr>
+<td><strong>def</strong></td>
+<td>Definition</td>
+<td><code>def_id</code>, <code>def_text</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. Status Abbreviations</h2>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DRAFT</strong></td>
+<td>Initial creation, pending review</td>
+</tr>
+<tr>
+<td><strong>OPEN</strong></td>
+<td>Task identified, not started</td>
+</tr>
+<tr>
+<td><strong>IN PROGRESS</strong></td>
+<td>Active work being conducted</td>
+</tr>
+<tr>
+<td><strong>PAUSED</strong></td>
+<td>Work temporarily halted</td>
+</tr>
+<tr>
+<td><strong>REVIEW</strong></td>
+<td>Pending validation/approval</td>
+</tr>
+<tr>
+<td><strong>DONE</strong></td>
+<td>All work complete and validated</td>
+</tr>
+<tr>
+<td><strong>ARCHIVED</strong></td>
+<td>Historical reference</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. Document Type Abbreviations</h2>
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Full Term</th>
+<th>File Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>doc</strong></td>
+<td>Document</td>
+<td><code>*.md</code>, <code>*.doc</code></td>
+</tr>
+<tr>
+<td><strong>axiom</strong></td>
+<td>Axiom</td>
+<td><code>##_axiom_*.md</code></td>
+</tr>
+<tr>
+<td><strong>convention</strong></td>
+<td>Convention</td>
+<td><code>##_convention_*.md</code></td>
+</tr>
+<tr>
+<td><strong>principle</strong></td>
+<td>Principle</td>
+<td><code>##_principle_*.md</code></td>
+</tr>
+<tr>
+<td><strong>template</strong></td>
+<td>Template</td>
+<td><code>##_template_*.md</code></td>
+</tr>
+<tr>
+<td><strong>strategy</strong></td>
+<td>Strategy</td>
+<td><code>##_strategy_*.md</code></td>
+</tr>
+<tr>
+<td><strong>thesis</strong></td>
+<td>Thesis</td>
+<td><code>##_thesis_*.md</code></td>
+</tr>
+<tr>
+<td><strong>term</strong></td>
+<td>Term</td>
+<td><code>##_term_*.md</code></td>
+</tr>
+<tr>
+<td><strong>rule</strong></td>
+<td>Rule</td>
+<td><code>##_rule_*.md</code></td>
+</tr>
+<tr>
+<td><strong>task</strong></td>
+<td>Task</td>
+<td><code>task_*.md</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4. Field/Category Abbreviations</h2>
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Full Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>dir</strong></td>
+<td>Directory</td>
+</tr>
+<tr>
+<td><strong>OT</strong></td>
+<td>"of type"</td>
+</tr>
+<tr>
+<td><strong>EX</strong></td>
+<td>Example</td>
+</tr>
+<tr>
+<td><strong>FIELDC</strong></td>
+<td>Field of type core</td>
+</tr>
+<tr>
+<td><strong>FIELDM</strong></td>
+<td>Field of type major</td>
+</tr>
+<tr>
+<td><strong>Ethosys</strong></td>
+<td>Ethical System</td>
+</tr>
+<tr>
+<td><strong>IMPLE</strong></td>
+<td>Implementation</td>
+</tr>
+<tr>
+<td><strong>SAFe</strong></td>
+<td>Scaled Agile Framework</td>
+</tr>
+<tr>
+<td><strong>PROGL</strong></td>
+<td>Programming Language</td>
+</tr>
+<tr>
+<td><strong>METH</strong></td>
+<td>Methodology</td>
+</tr>
+<tr>
+<td><strong>SYST</strong></td>
+<td>System of Type</td>
+</tr>
+<tr>
+<td><strong>US</strong></td>
+<td>User Story</td>
+</tr>
+<tr>
+<td><strong>AC</strong></td>
+<td>Acceptance Criteria</td>
+</tr>
+<tr>
+<td><strong>WP</strong></td>
+<td>Wikipedia</td>
+</tr>
+<tr>
+<td><strong>WD</strong></td>
+<td>Wikidata</td>
+</tr>
+<tr>
+<td><strong>WMF</strong></td>
+<td>Wikimedia Foundation</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Convention Constants</h2>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CONV_FOR_</strong></td>
+<td>Standard prefix for convention constants</td>
+</tr>
+<tr>
+<td><strong>CONV_VERSION</strong></td>
+<td>Current convention version</td>
+</tr>
+<tr>
+<td><strong>CONV_STATUS</strong></td>
+<td>Current convention status</td>
+</tr>
+<tr>
+<td><strong>CONV_DATE</strong></td>
+<td>Date of last update</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6. Validation Abbreviations</h2>
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Full Term</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CONF_SCORE</strong></td>
+<td>Confidence Score</td>
+<td>0-100 or 1-5</td>
+</tr>
+<tr>
+<td><strong>VAL_STATUS</strong></td>
+<td>Validation Status</td>
+<td>PASS/FAIL/PENDING</td>
+</tr>
+<tr>
+<td><strong>QC</strong></td>
+<td>Quality Check</td>
+<td>Numeric/Categorical</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>See Also:</strong> <a href="../20_convention/15_convention_for_abbreviations.md">CONV_FOR_ABBREVIATIONS</a> for full documentation.</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.2</td>
+<td>2026-01-13</td>
+<td>version log</td>
+<td>Framework Steward</td>
+<td>=&gt;maintainer story</td>
+</tr>
+<tr>
+<td>V0.1.1</td>
+<td>2026-01-13</td>
+<td>add wikimedia</td>
+<td>Framework Steward</td>
+<td></td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-09</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>Establish</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:06 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

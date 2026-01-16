@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_convention_for_confidence_scoring</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>11. Convention for Confidence Scoring <strong>[CONV_FOR_MODELFW_CONFIDENCE_SCORING]</strong> <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V0.1.0</strong> <strong>Date: 2026-01-08</strong></p>
+<p><strong>Purpose:</strong> Establish standardized confidence scoring criteria for framework components to ensure credible, differentiated, and evidence-based confidence assessments.</p>
+<hr />
+<h2>Confidence Score Scale</h2>
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Level</th>
+<th>Evidence Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0.95+</strong></td>
+<td>Very High</td>
+<td>Strong empirical validation, multiple independent confirmations, peer-reviewed consensus</td>
+</tr>
+<tr>
+<td><strong>0.85-0.94</strong></td>
+<td>High</td>
+<td>Theoretical foundation + some empirical support, limited independent validation</td>
+</tr>
+<tr>
+<td><strong>0.70-0.84</strong></td>
+<td>Moderate</td>
+<td>Theoretical foundation only, limited empirical validation</td>
+</tr>
+<tr>
+<td><strong>0.50-0.69</strong></td>
+<td>Low</td>
+<td>Preliminary, significant uncertainty, emerging theoretical support</td>
+</tr>
+<tr>
+<td><strong>&lt;0.50</strong></td>
+<td>Very Low</td>
+<td>Speculative, limited theoretical basis, no empirical validation</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Confidence Assessment Criteria</h2>
+<h3>For Axioms:</h3>
+<ul>
+<li><strong>0.93-0.95</strong>: Strong philosophical foundation, multiple supporting frameworks, extensive logical analysis</li>
+<li><strong>0.85-0.92</strong>: Solid theoretical basis, some empirical correlation, limited validation studies</li>
+<li><strong>0.70-0.84</strong>: Conceptual framework, theoretical rationale, minimal validation</li>
+<li><strong>0.50-0.69</strong>: Emerging hypothesis, limited supporting evidence</li>
+</ul>
+<h3>For Terms:</h3>
+<ul>
+<li><strong>0.90-0.95</strong>: Well-established in literature, widely accepted definition</li>
+<li><strong>0.80-0.89</strong>: Standard definition, multiple authoritative sources</li>
+<li><strong>0.65-0.79</strong>: Emerging usage, limited consensus</li>
+<li><strong>0.50-0.64</strong>: Novel or contested concept</li>
+</ul>
+<h3>For Strategies:</h3>
+<ul>
+<li><strong>0.85-0.93</strong>: Proven methodology, multiple successful implementations</li>
+<li><strong>0.75-0.84</strong>: Established approach, some case studies</li>
+<li><strong>0.60-0.74</strong>: Theoretical framework, limited practice</li>
+<li><strong>0.45-0.59</strong>: Novel approach, experimental</li>
+</ul>
+<hr />
+<h2>Confidence Assessment Format</h2>
+<pre><code>**Component Confidence:** [SCORE] ([LEVEL])
+- **Rationale:** [2-3 sentences explaining evidence basis]
+- **Validation:** [Description of validation methods]
+- **Contextual Stability:** [How stable is this assessment]
+- **Practical Application:** [Relevance for practitioners]
+</code></pre>
+<hr />
+<h2>Differentiation Guidelines</h2>
+<p><strong>Do NOT assign the same confidence score to all components.</strong>
+- Base scores on actual evidence available
+- Higher scores require stronger justification
+- Acknowledge uncertainty where evidence is limited
+- Differentiate between theoretical and empirical support</p>
+<hr />
+<p><strong>Convention Reference:</strong> Apply to all axiom, term, and strategy documents in MODEL_for_framework.</p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:03 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

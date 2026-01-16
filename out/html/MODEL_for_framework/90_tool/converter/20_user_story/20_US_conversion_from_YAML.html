@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20_US_conversion_from_YAML</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Story: Generate HTML from YAML Files (US_MFR_CONVERSION_FROM_YAML) <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V0.2.0</strong> <strong>Status: ACTIVE</strong> <strong>Date: 2026-01-10</strong></p>
+<p><strong>As a</strong> Framework Maintainer,
+<strong>I want to</strong> automatically generate styled HTML documents from all YAML files in the framework,
+<strong>so that</strong> I can ensure consistent formatting and automate the publication of structured documentation from YAML sources.</p>
+<hr />
+<h2>Acceptance Criteria</h2>
+<p>1.
+    - <strong>Given</strong> I have one or more YAML files in a directory,
+    - <strong>When</strong> I run the conversion script with the path to the directory or specific YAML file,
+    - <strong>Then</strong> styled HTML documents should be created in the specified output directory for each YAML file.</p>
+<p>2.
+    - <strong>Given</strong> a YAML file is converted,
+    - <strong>When</strong> the HTML is generated,
+    - <strong>Then</strong> it should correctly display all structured fields including <code>title</code>, <code>id</code>, <code>priority</code>, <code>metadata</code>, <code>story</code>, <code>acceptance_criteria</code>, and <code>related_documents</code> in a readable format.</p>
+<p>3.
+    - <strong>Given</strong> the YAML file has <code>acceptance_criteria</code> with nested steps,
+    - <strong>When</strong> the HTML is generated,
+    - <strong>Then</strong> the criteria should be rendered as a styled, numbered list with nested bullets, preserving the hierarchical structure.</p>
+<p>4.
+    - <strong>Given</strong> the YAML file has <code>related_documents</code> with paths,
+    - <strong>When</strong> the HTML is generated,
+    - <strong>Then</strong> these should be rendered as a list of clickable HTML links with proper relative paths.</p>
+<p>5.
+    - <strong>Given</strong> I run the conversion script with recursive flag,
+    - <strong>When</strong> I specify a directory containing YAML files,
+    - <strong>Then</strong> it should process all YAML files recursively through subdirectories.</p>
+<p>6.
+    - <strong>Given</strong> I run the conversion script,
+    - <strong>When</strong> I provide no arguments or invalid arguments,
+    - <strong>Then</strong> it should display a comprehensive help message explaining usage, required parameters, and available options.</p>
+<p>7.
+    - <strong>Given</strong> the conversion process,
+    - <strong>When</strong> generating HTML from YAML,
+    - <strong>Then</strong> the output should include proper CSS styling, semantic HTML structure, and metadata preservation.</p>
+<p>8.
+    - <strong>Given</strong> multiple YAML files are processed,
+    - <strong>When</strong> the conversion completes,
+    - <strong>Then</strong> a summary report should be generated showing success/failure status for each file processed.</p>
+<hr />
+<h2>Related Documents</h2>
+<ul>
+<li><strong>Template:</strong> <a href="../../15_template/18_template_for_user_story.md">18_template_for_user_story.md</a></li>
+<li><strong>Example YAML:</strong> <a href="./10_YAML/10_US_conversion_OT_linked.yaml">10_US_conversion_OT_linked.yaml</a></li>
+<li><strong>Converter Tool:</strong> <a href="../converter_OT_html.py">converter_OT_html.py</a></li>
+<li><strong>HTML Generator:</strong> <a href="../../../80_utility/html_generator/html_generator.py">../../../80_utility/html_generator/html_generator.py</a></li>
+</ul>
+<hr />
+<h2>Implementation Notes</h2>
+<ul>
+<li>The solution should leverage the existing <code>converter_OT_html.py</code> tool and extend it to handle YAML file parsing</li>
+<li>YAML parsing should use PyYAML or similar library for robust YAML handling</li>
+<li>HTML templates should be designed to properly render YAML structured data</li>
+<li>Error handling should be comprehensive for malformed YAML files</li>
+<li>The tool should maintain consistency with existing HTML generation patterns in the framework</li>
+</ul>
+<hr />
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.2.0</td>
+<td>2026-01-10</td>
+<td>Enhanced to handle multiple YAML files, added recursive processing, improved acceptance criteria</td>
+<td>AI Framework Steward</td>
+<td>To enable comprehensive YAML to HTML conversion across the entire framework</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-10</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>To capture the feature request for generating HTML from YAML.</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:06 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

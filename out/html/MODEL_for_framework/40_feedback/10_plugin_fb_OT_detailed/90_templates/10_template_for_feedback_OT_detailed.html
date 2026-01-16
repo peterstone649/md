@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_template_for_feedback_OT_detailed</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback Template [TEMPLATE_FB_DETAIL] [PRIO: HIGH]</h1>
+<p><strong>Version: V1.0.0</strong> <strong>Date: 2026-01-12</strong></p>
+<p><strong>Purpose:</strong> Standardized template for providing structured feedback across all stakeholder types.</p>
+<hr />
+<h2>📝 Feedback Submission Template</h2>
+<pre><code class="language-markdown"># [Feedback Type] Feedback **[FEEDBACK_ID]** **[PRIO: MEDIUM/HIGH/CRITICAL]**
+
+**Version: V1.0.0** **Date: [YYYY-MM-DD]**
+
+**Stakeholder Type:** [User/Developer/Integrator/Implementer/Assurer/Maintainer/Contributor]
+**Stakeholder Name:** [Your Name/Organization]
+**Contact Information:** [Email/Contact Method]
+
+---
+
+## 📋 Feedback Details
+
+### **Feedback Category**
+- [ ] User Experience
+- [ ] Technical Implementation
+- [ ] Documentation
+- [ ] Framework Structure
+- [ ] Process Improvement
+- [ ] Bug Report
+- [ ] Feature Request
+- [ ] Other: [Specify]
+
+### **Affected Component**
+- **Component Type:** [Principle/Rule/Convention/Template/Tool/Other]
+- **Component Location:** [File path or URL]
+- **Component Version:** [If applicable]
+
+---
+
+## 🎯 Feedback Content
+
+### **Description**
+[Provide a clear, concise description of the feedback, issue, or suggestion]
+
+### **Current Behavior** (For bugs/issues)
+[Describe what currently happens]
+
+### **Expected Behavior** (For bugs/issues)
+[Describe what should happen]
+
+### **Proposed Solution** (For suggestions)
+[Describe your proposed solution or improvement]
+
+### **Impact Assessment**
+- **Scope:** [Minor/Major/Critical]
+- **Affected Stakeholders:** [List stakeholder types impacted]
+- **Urgency:** [Low/Medium/High]
+
+---
+
+## 🔍 Context and Examples
+
+### **Reproduction Steps** (For bugs)
+```mermaid
+graph TD
+    A[Step 1] --&gt; B[Step 2]
+    B --&gt; C[Step 3]
+    C --&gt; D[Issue Occurs]
+</code></pre>
+<h3><strong>Code/Content Examples</strong></h3>
+<pre><code class="language-markdown">[Provide relevant code snippets, configuration examples, or content samples]
+</code></pre>
+<h3><strong>Screenshots/Attachments</strong></h3>
+<ul>
+<li>[ ] Screenshot attached</li>
+<li>[ ] Log files attached</li>
+<li>[ ] Configuration files attached</li>
+<li>[ ] Other attachments: [List]</li>
+</ul>
+<hr />
+<h2>📊 Evaluation Criteria</h2>
+<h3><strong>Alignment with Framework Principles</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Principle</th>
+<th>Alignment Score (1-5)</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Human Sovereignty</td>
+<td>[1-5]</td>
+<td>[Explanation]</td>
+</tr>
+<tr>
+<td>Transparency</td>
+<td>[1-5]</td>
+<td>[Explanation]</td>
+</tr>
+<tr>
+<td>Proportionality</td>
+<td>[1-5]</td>
+<td>[Explanation]</td>
+</tr>
+<tr>
+<td>Accountability</td>
+<td>[1-5]</td>
+<td>[Explanation]</td>
+</tr>
+<tr>
+<td>Iterative Validation</td>
+<td>[1-5]</td>
+<td>[Explanation]</td>
+</tr>
+<tr>
+<td>Context Preservation</td>
+<td>[1-5]</td>
+<td>[Explanation]</td>
+</tr>
+</tbody>
+</table>
+<h3><strong>Implementation Feasibility</strong></h3>
+<ul>
+<li><strong>Complexity:</strong> [Low/Medium/High]</li>
+<li><strong>Estimated Effort:</strong> [Hours/Days/Weeks]</li>
+<li><strong>Dependencies:</strong> [List any dependencies]</li>
+<li><strong>Risk Assessment:</strong> [Low/Medium/High]</li>
+</ul>
+<hr />
+<h2>🎯 Success Metrics</h2>
+<p><strong>Proposed Success Criteria:</strong>
+1. [Metric 1 with target value]
+2. [Metric 2 with target value]
+3. [Metric 3 with target value]</p>
+<p><strong>Measurement Method:</strong>
+[Describe how success will be measured]</p>
+<hr />
+<h2>🔗 Related Framework Elements</h2>
+<ul>
+<li><strong>Related Principles:</strong> [List relevant principles]</li>
+<li><strong>Related Rules:</strong> [List relevant rules]</li>
+<li><strong>Related Conventions:</strong> [List relevant conventions]</li>
+<li><strong>Related Templates:</strong> [List relevant templates]</li>
+<li><strong>Related User Stories:</strong> [List relevant user stories]</li>
+</ul>
+<hr />
+<h2>📝 Additional Information</h2>
+<h3><strong>Stakeholder Impact Analysis</strong></h3>
+<p>[Describe how this feedback affects different stakeholder types]</p>
+<h3><strong>Alternative Solutions Considered</strong></h3>
+<ol>
+<li>[Alternative 1 with pros/cons]</li>
+<li>[Alternative 2 with pros/cons]</li>
+</ol>
+<h3><strong>References</strong></h3>
+<ul>
+<li>[ ] Existing documentation</li>
+<li>[ ] External resources</li>
+<li>[ ] Research papers</li>
+<li>[ ] Industry standards</li>
+</ul>
+<hr />
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>License:</strong> EUPL v1.2
+<strong>Status:</strong> [Draft/Submitted/In Review/Implemented/Rejected]
+<strong>Feedback ID:</strong> [Auto-generated or assigned]</p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:05 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

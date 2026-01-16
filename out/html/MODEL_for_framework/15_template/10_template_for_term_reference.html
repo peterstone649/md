@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_template_for_term_reference</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <p><strong>Template Version:</strong> V0.1.0 <strong>Template Status:</strong> DONE <strong>Date:</strong> YYYY-MM-DD</p>
+<h1>10. Term Reference Template (TERM_REFERENCE_TEMPLATE)</h1>
+<p><strong>We create term reference files that establish inheritance relationships between terminology across different frameworks, ensuring consistent term usage and clear cross-references.</strong></p>
+<p><strong>Scope:</strong>
+- Term reference templates ensure consistent referencing of terms.</p>
+<hr />
+<h2>Term Reference Creation Guidelines</h2>
+<h3>Core Reference Structure:</h3>
+<ol>
+<li><strong>Title with Reference</strong>: <code># [NUMBER]. [TERM_NAME] Reference ([TERM_REFERENCE_CONSTANT])</code></li>
+</ol>
+<p><strong>Version: <Version></strong> <strong>Date: YYYY-MM-DD</strong></p>
+<ol>
+<li><strong>Primary Source Declaration</strong>: <code>**Primary Definition Source:** [SOURCE_PATH]</code></li>
+<li><strong>Context-Specific Application</strong>: Framework-specific usage and adaptations</li>
+<li><strong>Reference Relationship</strong>: How the term inherits and extends from source</li>
+<li><strong>Cross-Reference Links</strong>: Links to related terms in both source and current contexts</li>
+<li><strong>Usage Guidelines</strong>: When to use source vs. adapted definitions</li>
+</ol>
+<h3>Required Reference Elements:</h3>
+<ul>
+<li><strong>[TERM_REFERENCE_CONSTANT]</strong>: TERM_REF format (e.g., DEFECT_REF)</li>
+<li><strong>Primary Source Path</strong>: Full relative path to source term definition</li>
+<li><strong>Framework Context</strong>: How term applies in current framework layer</li>
+<li><strong>Inheritance Relationship</strong>: What is inherited, adapted, extended</li>
+<li><strong>Cross-References</strong>: Links to related terms in both frameworks</li>
+<li><strong>Usage Guidelines</strong>: Clear guidance on when to reference each definition</li>
+</ul>
+<h3>Term Reference Naming Convention:</h3>
+<ul>
+<li>Use the format: <code>[NUMBER]_term_[TERM_NAME]_ref.md</code></li>
+<li>Examples:</li>
+<li><code>59_term_defect_ref.md</code> (defect term reference)</li>
+<li><code>71_term_framework_ref.md</code> (framework term reference)</li>
+<li><code>34_term_validation_ref.md</code> (validation term reference)</li>
+</ul>
+<h3>Reference File Structure:</h3>
+<pre><code># [NUMBER]. [TERM_NAME] Reference ([CONSTANT])
+## Term Reference
+**Primary Definition Source:** [SOURCE_PATH]
+
+## [FRAMEWORK_NAME] Context
+[Framework-specific applications and adaptations]
+
+## Reference Relationship
+[Inheritance, adaptation, extension details]
+
+## Cross-Reference Links
+[Links to related terms]
+
+## Usage Guidelines
+[When to use source vs. adapted definitions]
+
+## [FRAMEWORK_NAME]-Specific [TOPIC]
+[Framework-specific implementations and details]
+
+## Quality Assurance Integration
+[Framework-specific quality metrics]
+
+## Conclusion
+[Summary of reference relationship and usage]
+</code></pre>
+<h3>Quality Assurance for References:</h3>
+<ol>
+<li><strong>Source Validity</strong>: Primary source file exists and is accessible</li>
+<li><strong>Inheritance Clarity</strong>: Clear explanation of what is inherited vs. adapted</li>
+<li><strong>Cross-Reference Accuracy</strong>: All linked files exist and are relevant</li>
+<li><strong>Usage Clarity</strong>: Guidelines are unambiguous and practical</li>
+<li><strong>Context Appropriateness</strong>: Framework-specific content is relevant and accurate</li>
+</ol>
+<h3>Version Requirements:</h3>
+<ul>
+<li><strong>Version Number</strong>: Every reference must include a version number (e.g., v1.0, v2.1)</li>
+<li><strong>Version Format</strong>: Use semantic versioning (MAJOR.MINOR.PATCH)</li>
+<li><strong>Version Location</strong>: Place version information prominently at the top of the document</li>
+<li><strong>Version Tracking</strong>: Document changes between versions with rationale</li>
+<li><strong>Compatibility</strong>: Specify which framework versions the reference supports</li>
+</ul>
+<hr />
+<h2>Example: Defect Term Reference</h2>
+<p>Based on the defect reference file (<code>_29/MODEL_for_framework/30_terminology/59_term_defect_ref.md</code>), here is how the template extracts and structures information:</p>
+<h3><strong>Extracted Information Structure:</strong></h3>
+<ol>
+<li><strong>Primary Source</strong>: <code>_29/SWmeth/30_terminology/59_term_defect.md</code></li>
+<li><strong>Framework Context</strong>: FWmeth-specific defect applications (template defects, convention defects, integration defects)</li>
+<li><strong>Reference Relationship</strong>: Inherits core concepts, adapts for framework contexts, extends for methodology compliance</li>
+<li><strong>Cross-References</strong>: Links to Framework, Template, Convention, Validation terms</li>
+<li><strong>Usage Guidelines</strong>: When to reference SWmeth vs. apply FWmeth context</li>
+<li><strong>Framework-Specific Management</strong>: Template validation, convention auditing, integration testing</li>
+<li><strong>Quality Assurance</strong>: Template defect rates, convention compliance rates, integration success rates</li>
+</ol>
+<h3><strong>Template Application Benefits:</strong></h3>
+<ul>
+<li><strong>Consistency</strong>: Standardized format across all term references</li>
+<li><strong>Clarity</strong>: Clear separation between source and adapted definitions</li>
+<li><strong>Maintainability</strong>: Easy to update when source terms change</li>
+<li><strong>Navigation</strong>: Framework users can easily find appropriate term definitions</li>
+<li><strong>Evolution</strong>: Framework can evolve while maintaining term relationships</li>
+</ul>
+<hr />
+<p><em>This template establishes the methodology for creating term reference files that extract and adapt terminology from source frameworks, ensuring clear inheritance relationships and consistent usage across framework layers.</em></p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:03 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

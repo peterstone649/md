@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_rule_for_version_changelog_update</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rule for Version Changelog Update <strong>[RULE_FW_DOC_VERSION_CHANGELOG]</strong></h1>
+<p><strong>Version: V0.1.1</strong> <strong>Date: 2026-01-15</strong></p>
+<p><strong>Rule ID:</strong> RULE_VERSION_CHANGELOG
+<strong>Priority:</strong> HIGH
+<strong>Applies to:</strong> All framework documents with changelog sections</p>
+<hr />
+<h2>Rule Statement</h2>
+<p><strong>All framework documents MUST maintain an accurate and complete version changelog with Stakeholder and Rationale/Motivation columns for every version entry.</strong></p>
+<hr />
+<h2>Rationale</h2>
+<p>A comprehensive changelog:
+- Provides traceability for all document changes
+- Documents decision rationale for future reference
+- Identifies responsible stakeholders for each modification
+- Enables audit of framework evolution
+- Supports version rollback and impact analysis
+- Aligns with principle of transparency in documentation</p>
+<hr />
+<h2>Changelog Structure</h2>
+<h3>Required Columns</h3>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Version</strong></td>
+<td>Semantic version number</td>
+<td>V0.1.0, V1.0.0</td>
+</tr>
+<tr>
+<td><strong>Date</strong></td>
+<td>ISO format date of change</td>
+<td>2026-01-09</td>
+</tr>
+<tr>
+<td><strong>Changes</strong></td>
+<td>Description of modifications</td>
+<td>"Added clickable cross-references"</td>
+</tr>
+<tr>
+<td><strong>Stakeholder</strong></td>
+<td>Person or role responsible</td>
+<td>"AI Framework Steward"</td>
+</tr>
+<tr>
+<td><strong>Rationale/Motivation</strong></td>
+<td>Why the change was made</td>
+<td>"Based on stakeholder feedback"</td>
+</tr>
+</tbody>
+</table>
+<h3>Changelog Location</h3>
+<p>Place the changelog section at the end of the document before the footer:</p>
+<pre><code class="language-markdown">## Changelog
+
+| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.1 | 2026-01-15 | Added Version Uniqueness section and header format requirements | Framework Steward | Strengthen changelog integrity and consistency |
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational structure |
+</code></pre>
+<h3>Changelog Header Format</h3>
+<ul>
+<li>Use <code>## Changelog</code> (without numbering)</li>
+<li>Do not use numbered headers like <code>## 7. Changelog</code></li>
+<li>Maintain consistent header level (typically <code>##</code>) across all framework documents</li>
+</ul>
+<hr />
+<h2>Changelog Entry Requirements</h2>
+<h3>1. Version Numbering</h3>
+<ul>
+<li>Follow semantic versioning (V[major].[minor].[patch])</li>
+<li>Increment version according to change significance</li>
+<li>Document initial version as V0.1.0</li>
+</ul>
+<h3>2. Stakeholder Identification</h3>
+<ul>
+<li>Use role titles (e.g., "AI Framework Steward")</li>
+<li>Include team name for team decisions</li>
+<li>Reference external stakeholders when applicable</li>
+</ul>
+<h3>3. Rationale Documentation</h3>
+<ul>
+<li>Explain the business need for change</li>
+<li>Reference related issues or decisions</li>
+<li>Describe expected benefits or outcomes</li>
+<li>Link to stakeholder requests when available</li>
+</ul>
+<h3>4. Change Description</h3>
+<ul>
+<li>Use concise, action-oriented language</li>
+<li>Describe what changed, not how</li>
+<li>Include affected sections when relevant</li>
+<li>Reference related principles or conventions</li>
+</ul>
+<h3>5. Version Uniqueness</h3>
+<ul>
+<li>Each version number MUST be unique within the changelog</li>
+<li>No duplicate entries for the same version are permitted</li>
+<li>If multiple changes occur for the same version, consolidate them into a single entry</li>
+<li>Version increments are required for any substantive changes</li>
+</ul>
+<hr />
+<h2>Update Triggers</h2>
+<p>Update the changelog when:</p>
+<ol>
+<li><strong>Content Changes</strong></li>
+<li>Add, remove, or modify substantive content</li>
+<li>Update examples or definitions</li>
+<li>
+<p>Change scope or applicability</p>
+</li>
+<li>
+<p><strong>Structural Changes</strong></p>
+</li>
+<li>Reorganize sections</li>
+<li>Add new sections</li>
+<li>
+<p>Modify section numbering</p>
+</li>
+<li>
+<p><strong>Template Updates</strong></p>
+</li>
+<li>Adopt new template version</li>
+<li>
+<p>Align with updated conventions</p>
+</li>
+<li>
+<p><strong>Compliance Updates</strong></p>
+</li>
+<li>Address feedback from reviews</li>
+<li>Fix validation errors</li>
+<li>Resolve audit findings</li>
+</ol>
+<hr />
+<h2>Entry Order</h2>
+<p>Maintain reverse chronological order:
+- Newest entries at the TOP of the table
+- Oldest entries at the BOTTOM
+- Each entry on its own line</p>
+<hr />
+<h2>Validation Checklist</h2>
+<ul>
+<li>[ ] Changelog section exists in document</li>
+<li>[ ] All 5 columns present (Version, Date, Changes, Stakeholder, Rationale/Motivation)</li>
+<li>[ ] Entries in reverse chronological order</li>
+<li>[ ] Date format is ISO 8601 (YYYY-MM-DD)</li>
+<li>[ ] Date reflects current operating system date at time of change</li>
+<li>[ ] Version format is V[major].[minor].[patch]</li>
+<li>[ ] Stakeholder identifies responsible person/role</li>
+<li>[ ] Rationale explains why change was made</li>
+<li>[ ] No duplicate version entries</li>
+<li>[ ] Initial creation properly documented</li>
+<li>[ ] if py code <strong>version</strong> = [VERSION] then also update this!</li>
+</ul>
+<hr />
+<h2>Enforcement</h2>
+<ol>
+<li><strong>Document Creation:</strong> Include empty changelog structure with initial version</li>
+<li><strong>Review Phase:</strong> Verify changelog completeness and accuracy</li>
+<li><strong>Template Validation:</strong> Check for required columns in automated checks</li>
+<li><strong>Commit Gates:</strong> Reject commits without changelog updates for document changes</li>
+</ol>
+<hr />
+<h2>References</h2>
+<ul>
+<li><a href="../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md">PRIN_PROPORTIONALITY</a></li>
+<li>Convention for Version (20_convention/01_convention_for_version.md)</li>
+<li>Convention for Writing Style (20_convention/03_convention_for_writing_style.md)</li>
+<li>Template for Principle (15_template/17_template_for_principle.md)</li>
+</ul>
+<hr />
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.1</td>
+<td>2026-01-15</td>
+<td>Added Version Uniqueness section to Changelog Entry Requirements</td>
+<td>Framework Steward</td>
+<td>Strengthen changelog integrity by preventing duplicate version entries</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-09</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>Establish foundational structure</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Rule Steward:</strong> Documentation Standards Committee
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-09
+<strong>Review Cycle:</strong> Annual</p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:02 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

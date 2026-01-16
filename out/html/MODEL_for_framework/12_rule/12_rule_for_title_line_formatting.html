@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_rule_for_title_line_formatting</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rule for Title Line Formatting [RULE_FW_TITLE_FORMAT] [PRIO: MEDIUM]</h1>
+<p><strong>Rule ID:</strong> RULE_TITLE_FORMAT
+<strong>Applies to:</strong> All framework document title lines</p>
+<hr />
+<h2>Rule Statement</h2>
+<p><strong>All framework document title lines should follow the standardized format: # <title><Document Title>[TYPE_FRAMEWORK_ABBREV] [PRIO: XXX]</strong></p>
+<hr />
+<h2>Rationale</h2>
+<p>Standardized title formatting:
+- Ensures consistent document identification across the framework
+- Provides clear priority indication for content organization
+- Enables automated processing and categorization
+- Supports framework navigation and search functionality
+- Maintains professional presentation standards</p>
+<hr />
+<h2>Title Line Format Specification</h2>
+<h3>Required Structure</h3>
+<pre><code># &lt;Document Title&gt; [TYPE_FRAMEWORK_ABBREV] [PRIO: XXX]
+</code></pre>
+<h3>Components Breakdown</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>#</code></td>
+<td>Markdown header level 1</td>
+<td><code>#</code></td>
+</tr>
+<tr>
+<td><code>&lt;Document Title&gt;</code></td>
+<td>Descriptive title of the document</td>
+<td><code>Term Definition</code></td>
+</tr>
+<tr>
+<td><code>[TYPE_FRAMEWORK_ABBREV]</code></td>
+<td>Combined type and framework abbreviation</td>
+<td><code>[DEF_FOR_TERM]</code></td>
+</tr>
+<tr>
+<td><code>[PRIO: XXX]</code></td>
+<td>Priority level indicator</td>
+<td><code>[PRIO: HIGHEST]</code></td>
+</tr>
+</tbody>
+</table>
+<h3>Complete Format Example</h3>
+<pre><code class="language-markdown"># Term [DEF_FOR_TERM] [PRIO: HIGHEST]
+</code></pre>
+<h3>TYPE Component Examples</h3>
+<p>The TYPE component indicates the document category and can be:</p>
+<table>
+<thead>
+<tr>
+<th>TYPE Value</th>
+<th>Meaning</th>
+<th>Example Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RULE</strong></td>
+<td>Framework rules and guidelines</td>
+<td><code>[RULE_FW_TITLE_FORMAT]</code></td>
+</tr>
+<tr>
+<td><strong>DEF_FOR</strong></td>
+<td>Definitions and terminology</td>
+<td><code>[DEF_FOR_TERM]</code></td>
+</tr>
+<tr>
+<td><strong>VISION</strong></td>
+<td>Vision and strategic documents</td>
+<td><code>[VISION_FRAMEWORK]</code></td>
+</tr>
+<tr>
+<td><strong>PRINC</strong></td>
+<td>Principles and core values</td>
+<td><code>[PRINC_ACCESSIBILITY]</code></td>
+</tr>
+<tr>
+<td><strong>AXIOM</strong></td>
+<td>Fundamental axioms</td>
+<td><code>[AXIOM_VALIDATION]</code></td>
+</tr>
+<tr>
+<td><strong>CONV_FOR</strong></td>
+<td>Conventions and standards</td>
+<td><code>[CONV_FOR_VERSION]</code></td>
+</tr>
+<tr>
+<td><strong>TPL_FOR</strong></td>
+<td>Templates and patterns</td>
+<td><code>[TPL_FOR_DOCUMENT]</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Framework Abbreviations</h2>
+<h3>Core Framework Abbreviations</h3>
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Full Term</th>
+<th>Usage Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DEF_FOR_</strong></td>
+<td>Definition for</td>
+<td>Document definitions</td>
+</tr>
+<tr>
+<td><strong>RULE_FW_</strong></td>
+<td>Rule Framework</td>
+<td>Framework rules</td>
+</tr>
+<tr>
+<td><strong>PRINC_</strong></td>
+<td>Principle</td>
+<td>Framework principles</td>
+</tr>
+<tr>
+<td><strong>AXIOM_</strong></td>
+<td>Axiom</td>
+<td>Framework axioms</td>
+</tr>
+<tr>
+<td><strong>CONV_FOR_</strong></td>
+<td>Convention for</td>
+<td>Framework conventions</td>
+</tr>
+<tr>
+<td><strong>TPL_FOR_</strong></td>
+<td>Template for</td>
+<td>Framework templates</td>
+</tr>
+</tbody>
+</table>
+<h3>Priority Levels</h3>
+<table>
+<thead>
+<tr>
+<th>Priority Code</th>
+<th>Meaning</th>
+<th>Color Coding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HIGHEST</strong></td>
+<td>Critical framework components</td>
+<td>🔴 Red</td>
+</tr>
+<tr>
+<td><strong>HIGH</strong></td>
+<td>Important operational elements</td>
+<td>🟠 Orange</td>
+</tr>
+<tr>
+<td><strong>MEDIUM</strong></td>
+<td>Standard framework elements</td>
+<td>🟡 Yellow</td>
+</tr>
+<tr>
+<td><strong>LOW</strong></td>
+<td>Supplementary materials</td>
+<td>🟢 Green</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Implementation Guidelines</h2>
+<h3>Title Construction Process</h3>
+<ol>
+<li><strong>Identify Document Type</strong> - Determine the primary category</li>
+<li><strong>Select Appropriate Abbreviation</strong> - Use standard framework abbreviations</li>
+<li><strong>Determine Priority Level</strong> - Assess document importance</li>
+<li><strong>Format Complete Title</strong> - Combine all elements in specified order</li>
+</ol>
+<h3>Document Type Mapping</h3>
+<table>
+<thead>
+<tr>
+<th>Document Type</th>
+<th>Abbreviation Pattern</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rules</td>
+<td><code>RULE_FW_</code></td>
+<td><code>RULE_FW_TITLE_FORMAT</code></td>
+</tr>
+<tr>
+<td>Principles</td>
+<td><code>PRINC_</code></td>
+<td><code>PRINC_ACCESSIBILITY</code></td>
+</tr>
+<tr>
+<td>Definitions</td>
+<td><code>DEF_FOR_</code></td>
+<td><code>DEF_FOR_TERM</code></td>
+</tr>
+<tr>
+<td>Conventions</td>
+<td><code>CONV_FOR_</code></td>
+<td><code>CONV_FOR_VERSION</code></td>
+</tr>
+<tr>
+<td>Templates</td>
+<td><code>TPL_FOR_</code></td>
+<td><code>TPL_FOR_DOCUMENT</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Validation Checklist</h2>
+<ul>
+<li>[ ] Title starts with single <code>#</code> for level 1 header</li>
+<li>[ ] Document title is descriptive and clear</li>
+<li>[ ] Framework abbreviation uses correct format <code>[ABBREV]</code></li>
+<li>[ ] Priority level uses valid code (HIGHEST/HIGH/MEDIUM/LOW)</li>
+<li>[ ] Priority format follows <code>[PRIO: XXX]</code> exactly</li>
+<li>[ ] No extra spaces or formatting variations</li>
+<li>[ ] Abbreviation corresponds to document content</li>
+</ul>
+<hr />
+<h2>Common Issues and Corrections</h2>
+<h3>Incorrect Abbreviation Format</h3>
+<p><strong>Problem:</strong> <code># Title ABBREV [PRIO: HIGH]</code>
+<strong>Correction:</strong> <code># Title [ABBREV] [PRIO: HIGH]</code></p>
+<h3>Missing Priority</h3>
+<p><strong>Problem:</strong> <code># Title [ABBREV]</code>
+<strong>Correction:</strong> <code># Title [ABBREV] [PRIO: MEDIUM]</code></p>
+<h3>Wrong Header Level</h3>
+<p><strong>Problem:</strong> <code>## Title [ABBREV] [PRIO: HIGH]</code>
+<strong>Correction:</strong> <code># Title [ABBREV] [PRIO: HIGH]</code></p>
+<h3>Invalid Priority Code</h3>
+<p><strong>Problem:</strong> <code># Title [ABBREV] [PRIO: IMPORTANT]</code>
+<strong>Correction:</strong> <code># Title [ABBREV] [PRIO: HIGH]</code></p>
+<hr />
+<h2>Enforcement</h2>
+<ol>
+<li><strong>Document Creation:</strong> Apply correct format during initial drafting</li>
+<li><strong>Template Validation:</strong> Automated checks verify format compliance</li>
+<li><strong>Review Process:</strong> Manual verification during document reviews</li>
+<li><strong>Bulk Updates:</strong> Periodic audits ensure consistency across framework</li>
+</ol>
+<hr />
+<h2>Automation Support</h2>
+<h3>Regex Pattern for Validation</h3>
+<pre><code class="language-regex">^# .+\[.*\]\s+\[PRIO:\s+(HIGHEST|HIGH|MEDIUM|LOW)\]$
+</code></pre>
+<h3>Automated Processing</h3>
+<ul>
+<li><strong>Search/Indexing:</strong> Standardized format enables reliable document discovery</li>
+<li><strong>Priority Filtering:</strong> Automated sorting by priority level</li>
+<li><strong>Cross-References:</strong> Consistent abbreviations support linking systems</li>
+</ul>
+<hr />
+<h2>References</h2>
+<ul>
+<li>Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)</li>
+<li>Document Naming Convention (20_convention/10_convention_for_file_naming.md)</li>
+<li>Abbreviation Reference (99_appendix/abbreviation_reference.md)</li>
+<li>Active Voice Rule (12_rule/03_rule_for_active_voice.md)</li>
+</ul>
+<hr />
+<p><strong>Rule Steward:</strong> Documentation Standards Committee
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-13
+<strong>Review Cycle:</strong> Annual</p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:03 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

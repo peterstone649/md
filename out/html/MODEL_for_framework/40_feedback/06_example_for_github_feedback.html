@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_example_for_github_feedback</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>GitHub Feedback Example [FB_MFW_GITHUB] [PRIO: HIGH]</h1>
+<p><strong>Version: V1.0.0</strong> <strong>Date: 2026-01-12</strong></p>
+<p><strong>Purpose:</strong> Specialized feedback template designed for GitHub integration, allowing users to provide feedback with full GitHub feature support including issues, pull requests, discussions, and GitHub-specific formatting.</p>
+<hr />
+<h2>📝 GitHub Feedback Submission</h2>
+<pre><code class="language-markdown"># GitHub Feedback **[GITHUB_[YYYYMMDD]_[ISSUE_TYPE]]**
+
+**Date:** [YYYY-MM-DD]
+**From:** [Your GitHub Username] (@[username])
+**Repository:** [Repository Name]
+**Issue Type:** [bug/enhancement/question/discussion/documentation]
+
+---
+
+## 🎯 Your Feedback
+
+[Write your GitHub-specific feedback here]
+
+**GitHub Features Supported:**
+- **Issue References**: Use `#123` to reference issues
+- **Pull Request References**: Use `PR #456` to reference PRs
+- **User Mentions**: Use `@username` to mention users
+- **Code References**: Use backticks for `inline code`
+- **Emoji Support**: Use GitHub emoji shortcuts like `:tada:`
+- **Markdown Formatting**: Full GitHub Flavored Markdown support
+
+---
+
+## 📌 GitHub-Specific Details
+
+### **Issue Information** (if applicable)
+- **Issue Number:** #[number]
+- **Issue URL:** [https://github.com/...]
+- **Related Issues:** #[number1], #[number2]
+
+### **Pull Request Information** (if applicable)
+- **PR Number:** #PR[number]
+- **PR URL:** [https://github.com/...]
+- **Review Status:** [draft/ready/approved/merged]
+
+### **Code References**
+```markdown
+**File:** `path/to/file.ext`
+**Line:** [line number]
+**Commit:** [commit hash]
+**Branch:** [branch name]
+</code></pre>
+<hr />
+<h2>🔍 GitHub Integration Features</h2>
+<h3><strong>GitHub Flavored Markdown Examples</strong></h3>
+<pre><code class="language-markdown">- [x] Task lists
+- [ ] Incomplete task
+- [x] Completed task
+
+```javascript
+// Code blocks with syntax highlighting
+function example() {
+  return &quot;GitHub syntax highlighting&quot;;
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th>Are</th>
+<th>Supported</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Column 1</td>
+<td>Column 2</td>
+<td>Column 3</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Blockquotes for emphasis</p>
+<p>Multiple lines supported</p>
+</blockquote>
+<pre><code>
+### **GitHub Actions &amp; Workflows**
+```yaml
+# Example workflow reference
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm test
+</code></pre>
+<hr />
+<h2>📋 GitHub Feedback Guidelines</h2>
+<h3><strong>Best Practices for GitHub Feedback</strong></h3>
+<ol>
+<li><strong>Reference Related Issues</strong>: Always link to relevant GitHub issues/PRs</li>
+<li><strong>Use Proper Formatting</strong>: Leverage GitHub Flavored Markdown</li>
+<li><strong>Mention Relevant Users</strong>: Use <code>@mentions</code> for stakeholders</li>
+<li><strong>Include Context</strong>: Provide repository, branch, commit info</li>
+<li><strong>Use Labels Appropriately</strong>: Suggest relevant labels</li>
+</ol>
+<h3><strong>Feedback Types</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>GitHub Equivalent</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bug Report</strong></td>
+<td>Issue (bug)</td>
+<td><code>#123 [bug] Template rendering issue</code></td>
+</tr>
+<tr>
+<td><strong>Feature Request</strong></td>
+<td>Issue (enhancement)</td>
+<td><code>#456 [enhancement] Add dark mode</code></td>
+</tr>
+<tr>
+<td><strong>Question</strong></td>
+<td>Discussion</td>
+<td><code>Discussion #789: Template usage</code></td>
+</tr>
+<tr>
+<td><strong>Documentation</strong></td>
+<td>Issue (docs)</td>
+<td><code>#234 [docs] Update README</code></td>
+</tr>
+<tr>
+<td><strong>Pull Request</strong></td>
+<td>PR</td>
+<td><code>PR #567: Fix template validation</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>🚀 GitHub Workflow Integration</h2>
+<h3><strong>Feedback → GitHub Issue Creation</strong></h3>
+<pre><code class="language-mermaid">graph TD
+    A[GitHub Feedback Submitted] --&gt; B[Review &amp; Classification]
+    B --&gt; C{Requires New Issue?}
+    C --&gt;|Yes| D[Create GitHub Issue]
+    C --&gt;|No| E[Link to Existing Issue]
+    D --&gt; F[Add Labels &amp; Assignees]
+    E --&gt; F[Add Labels &amp; Assignees]
+    F --&gt; G[Notify Stakeholders]
+    G --&gt; H[Track in Project Board]
+</code></pre>
+<h3><strong>Automated GitHub Actions</strong></h3>
+<pre><code class="language-markdown">**Automated Processing:**
+1. Feedback received → Auto-create GitHub issue
+2. Apply appropriate labels based on content
+3. Assign to relevant team members
+4. Link to project boards
+5. Set milestones when applicable
+
+**Example Automation:**
+```yaml
+- name: Process GitHub Feedback
+  uses: actions/github-feedback-processor@v1
+  with:
+    repo-token: ${{ secrets.GITHUB_TOKEN }}
+    labels: &quot;feedback, needs-triage&quot;
+    assignees: &quot;team-lead, framework-maintainer&quot;
+</code></pre>
+<pre><code>
+---
+
+## 📊 GitHub Feedback Metrics
+
+### **Integration Success Metrics**
+| Metric | Target | Current |
+|--------|--------|---------|
+| **Issue Creation Time** | ≤ 24h | [Value] |
+| **PR Response Time** | ≤ 48h | [Value] |
+| **Label Accuracy** | ≥ 90% | [Value] |
+| **Stakeholder Notification** | 100% | [Value] |
+| **GitHub API Success Rate** | ≥ 99% | [Value] |
+
+### **GitHub-Specific Metrics**
+- **Issue Resolution Rate**: ≥ 85% within 7 days
+- **PR Merge Rate**: ≥ 70% acceptance
+- **Label Accuracy**: ≥ 90% correct classification
+- **User Satisfaction**: ≥ 4.5/5 for GitHub integration
+
+---
+
+## 🔗 Related GitHub Resources
+
+- **GitHub Documentation**: [https://docs.github.com](https://docs.github.com)
+- **GitHub API**: [https://developer.github.com/v3](https://developer.github.com/v3)
+- **GitHub Actions**: [https://github.com/features/actions](https://github.com/features/actions)
+- **GitHub Flavored Markdown**: [https://github.github.com/gfm](https://github.github.com/gfm)
+
+---
+
+## 📝 Example GitHub Feedback
+
+```markdown
+# GitHub Feedback **[GITHUB_20260112_TEMPLATE_ISSUE]**
+
+**Date:** 2026-01-12
+**From:** @framework-user
+**Repository:** MODEL_for_framework
+**Issue Type:** enhancement
+
+---
+
+## 🎯 Your Feedback
+
+I love the new template system! It would be great if we could integrate it more deeply with GitHub Actions. Specifically, I'd like to see:
+
+1. **Automatic Issue Creation**: When feedback is submitted, auto-create GitHub issues
+2. **PR Template Validation**: Validate PRs against our template standards
+3. **Action-Based Workflows**: Trigger workflows based on feedback type
+
+**Related Issues:** #123, #456
+**Mentioning:** @framework-maintainer @docs-team
+
+---
+
+## 📌 GitHub-Specific Details
+
+### **Proposed Implementation**
+```yaml
+name: Template Feedback Processor
+on:
+  issues:
+    types: [opened, labeled]
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  process-feedback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: framework/template-validator@v1
+        with:
+          feedback-file: ${{ github.event.issue.body }}
+          labels: &quot;feedback, template, needs-review&quot;
+</code></pre>
+<h3><strong>Code References</strong></h3>
+<pre><code class="language-markdown">**File:** `40_feedback/10_plugin_fb_OT_detailed/10_plugin_for_fb_OT_detailed.md`
+**Line:** 42-58
+**Commit:** a1b2c3d
+**Branch:** main
+</code></pre>
+<hr />
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Status:</strong> ACTIVE
+<strong>GitHub Integration:</strong> Full support for GitHub features
+<strong>Related:</strong> <a href="05_quick_feedback_example.md">Quick Feedback Example</a></p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:05 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

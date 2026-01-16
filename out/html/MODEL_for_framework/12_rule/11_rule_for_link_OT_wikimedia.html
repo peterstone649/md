@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_rule_for_link_OT_wikimedia</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rule for Wikimedia Links [RULE_MFW_WIKIMEDIA_LINKS] [PRIO: MEDIUM]</h1>
+<p><strong>Rule ID:</strong> RULE_WIKIMEDIA_LINKS
+<strong>Applies to:</strong> All framework documentation containing Wikimedia references</p>
+<hr />
+<h2>Rule Statement</h2>
+<p><strong>All references to Wikimedia Commons and Wikipedia resources MUST include proper attribution, licensing information, and direct links to source materials.</strong></p>
+<hr />
+<h2>Rationale</h2>
+<p>Proper Wikimedia linking:
+- Ensures compliance with Creative Commons licensing requirements
+- Provides transparency about source materials
+- Enables proper attribution to original creators
+- Supports academic and research integrity
+- Facilitates verification of referenced information
+- Aligns with framework principles of transparency and accountability</p>
+<hr />
+<h2>Wikimedia Link Requirements</h2>
+<h3>Required Elements</h3>
+<p>Every Wikimedia reference MUST include:</p>
+<ol>
+<li><strong>Direct Link</strong> - Functional URL to the specific Wikimedia page</li>
+<li><strong>Attribution</strong> - Creator/artist name when available</li>
+<li><strong>License Information</strong> - Specific Creative Commons license</li>
+<li><strong>Access Date</strong> - When the resource was accessed</li>
+</ol>
+<h3>Link Format Pattern</h3>
+<pre><code class="language-markdown">[![Alt Text](link-to-image)](link-to-wikimedia-page)
+*Image by [Creator Name](link-to-creator-profile) / [License Name](link-to-license) via Wikimedia Commons*
+</code></pre>
+<h3>Complete Attribution Examples</h3>
+<p><strong>For Images:</strong></p>
+<pre><code class="language-markdown">[![Game Hammer Icon](https://game-icons.net/icons/ffffff/000000/gear-hammer/000000/64.png)](https://game-icons.net/1x1/lorc/gear-hammer.html)
+*Icon by [Lorc](https://game-icons.net/about.html#lorc) / [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) via Game-Icons.net*
+</code></pre>
+<p><strong>For Wikipedia Articles:</strong></p>
+<pre><code class="language-markdown">[Artificial Intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence) (WP)
+</code></pre>
+<p><strong>For Wikimedia Commons Files:</strong></p>
+<pre><code class="language-markdown">[Framework Architecture Diagram](https://commons.wikimedia.org/wiki/File:Example_diagram.svg)(WM)
+*Diagram by [Creator Name](https://commons.wikimedia.org/wiki/User:Username) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) via Wikimedia Commons*
+</code></pre>
+<hr />
+<h2>Attribution Standards</h2>
+<h3>License Identification</h3>
+<table>
+<thead>
+<tr>
+<th>License Code</th>
+<th>Full Name</th>
+<th>Attribution Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC BY 3.0</td>
+<td>Creative Commons Attribution 3.0</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>CC BY-SA 4.0</td>
+<td>Creative Commons Attribution-ShareAlike 4.0</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>CC0</td>
+<td>Creative Commons Zero (Public Domain)</td>
+<td>Recommended</td>
+</tr>
+<tr>
+<td>Public Domain</td>
+<td>Public Domain</td>
+<td>Recommended</td>
+</tr>
+</tbody>
+</table>
+<h3>Creator Attribution</h3>
+<ul>
+<li>Include creator name when available from Wikimedia metadata</li>
+<li>Link to creator's profile page when possible</li>
+<li>Use "Anonymous" or "Unknown" if creator information is not available</li>
+<li>Preserve original attribution chains for derivative works</li>
+</ul>
+<h3>Access Documentation</h3>
+<ul>
+<li>Include access date in ISO format (YYYY-MM-DD)</li>
+<li>Place access date in parentheses after the link</li>
+<li>Update access date when content is verified or refreshed</li>
+</ul>
+<hr />
+<h2>Implementation Guidelines</h2>
+<h3>Image Usage</h3>
+<ol>
+<li><strong>Select Appropriate License</strong> - Prefer CC BY-SA or CC0 for maximum compatibility</li>
+<li><strong>Download Original Resolution</strong> - Use highest quality available</li>
+<li><strong>Preserve Metadata</strong> - Keep EXIF data for attribution tracking</li>
+<li><strong>Create Alt Text</strong> - Descriptive text for accessibility</li>
+</ol>
+<h3>Content References</h3>
+<ol>
+<li><strong>Cite Specific Sections</strong> - Link to relevant article sections when possible</li>
+<li><strong>Include Context</strong> - Explain why the reference supports the framework content</li>
+<li><strong>Regular Verification</strong> - Check links periodically for continued availability</li>
+</ol>
+<h3>Framework Integration</h3>
+<ol>
+<li><strong>Consistent Placement</strong> - Place attributions immediately after referenced content</li>
+<li><strong>Visual Separation</strong> - Use italics or smaller text for attribution blocks</li>
+<li><strong>Grouping</strong> - Group multiple attributions from same source when appropriate</li>
+</ol>
+<hr />
+<h2>Validation Checklist</h2>
+<ul>
+<li>[ ] All Wikimedia links include direct URLs</li>
+<li>[ ] Attribution information is complete and accurate</li>
+<li>[ ] License information is specified and correct</li>
+<li>[ ] Access dates are included and current</li>
+<li>[ ] Links are functional and accessible</li>
+<li>[ ] Alt text is provided for images</li>
+<li>[ ] Attribution format follows established patterns</li>
+</ul>
+<hr />
+<h2>Enforcement</h2>
+<ol>
+<li><strong>Content Creation:</strong> Include complete attribution during initial drafting</li>
+<li><strong>Review Process:</strong> Verify all Wikimedia references meet attribution requirements</li>
+<li><strong>Automated Checks:</strong> Tools can validate link syntax and presence of attribution elements</li>
+<li><strong>Regular Audits:</strong> Periodic review of all Wikimedia references for accuracy</li>
+</ol>
+<hr />
+<h2>Common Issues and Solutions</h2>
+<h3>Missing Attribution</h3>
+<p><strong>Problem:</strong> Link present but no creator/license information
+<strong>Solution:</strong> Research original source and add complete attribution block</p>
+<h3>Broken Links</h3>
+<p><strong>Problem:</strong> Wikimedia page has moved or been deleted
+<strong>Solution:</strong> Find updated location or replace with alternative resource</p>
+<h3>Incomplete License Info</h3>
+<p><strong>Problem:</strong> License mentioned but not linked
+<strong>Solution:</strong> Add direct link to license text on Creative Commons website</p>
+<hr />
+<h2>References</h2>
+<ul>
+<li><a href="https://creativecommons.org/choose/">Creative Commons License Chooser</a></li>
+<li><a href="https://commons.wikimedia.org/wiki/Commons:Licensing">Wikimedia Commons Licensing</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Wikipedia:Citing_Wikipedia">Wikipedia Citation Guidelines</a></li>
+<li>Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)</li>
+<li>Clickable Links Rule (12_rule/10_rule_for_clickable_links.md)</li>
+</ul>
+<hr />
+<p><strong>Rule Steward:</strong> Documentation Standards Committee
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-13
+<strong>Review Cycle:</strong> Annual</p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:03 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

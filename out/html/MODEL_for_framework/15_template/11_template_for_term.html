@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_template_for_term</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>11. Term Template (TERM_TEMPLATE)</h1>
+<p><strong>Version: V0.1</strong>
+<strong>Date: 2026-01-07</strong></p>
+<p><strong>Scope:</strong>
+- Templates ensure consistent term documentation across all framework components
+- Standardized structure improves term clarity and discoverability
+- Template-based creation reduces ambiguity and enhances precision
+- Consistent term definitions enable programmatic processing and validation
+- Templates support automated cross-referencing and relationship mapping
+- Framework evolution is supported through systematic term development</p>
+<hr />
+<h2>Term Template Structure</h2>
+<h3>Core Template Elements:</h3>
+<ol>
+<li><strong>Title with Reference</strong>: <code># [NUMBER]. [TERM_NAME] ([CONSTANT_REFERENCE]) **[PRIO: [LEVEL]]**</code></li>
+</ol>
+<p><strong>Version: V<Version></strong> <strong>Date: YYYY-MM-DD</strong></p>
+<ol>
+<li><strong>Term Definition Block</strong>: Structured definition with multiple fields</li>
+<li><strong>Content Sections</strong>: 4-6 main sections with detailed term analysis</li>
+<li><strong>Application Section</strong>: <code>**AI Safety Application:**</code> or <code>**Application in AI Safety:**</code></li>
+<li><strong>Conclusion</strong>: Summary statement about the term's significance</li>
+</ol>
+<h3>Required Term Fields:</h3>
+<ul>
+<li><strong>[CONSTANT_REFERENCE]</strong>: UPPER_CASE_WITH_UNDERSCORES format (e.g., DEF_FOR_TERM)</li>
+<li><strong>[TERM_NAME]</strong>: Clear, descriptive term name</li>
+<li><strong>[PRIO_LEVEL]</strong>: HIGHEST, HIGH, MEDIUM, or LOW priority designation</li>
+<li><strong>Definition Fields</strong>: Term, Description, Formal Definition, Type Classification, Priority Level, Scientific Acceptance, Reference, Key Theories, Context</li>
+</ul>
+<h3>Term Definition Block Format:</h3>
+<pre><code>*   **Term:** [ONE_LINE_DEFINITION]
+*   **Description:** [DETAILED_DESCRIPTION_PARAGRAPH]
+*   **Formal Definition:** ∀x ([TERM_NAME](x) ↔ ∃[components] ([Component1]([c1]) ∧ [Component2]([c2]) ∧ [Component3]([c3]) ∧ [Component4]([c4]) ∧ [Component5]([c5]) ∧ Provides[Function](x,[c1],[c2],[c3],[c4],[c5])))
+*   **Type Classification:** [CONCEPTUAL/OPERATIONAL/RELATIONAL/etc.]
+*   **Priority Level:** [HIGHEST/HIGH/MEDIUM/LOW]
+*   **Scientific Acceptance:** [LEVEL] ([RATIONALE])
+*   **Reference:** [[LINKS]](URLs)
+*   **Key Theories:** [MAJOR_THEORETICAL_FOUNDATIONS]
+*   **Context:** [FRAMEWORK_SPECIFIC_CONTEXT]
+</code></pre>
+<p><strong>[Called:]</strong> [alternative_names_synonyms]
+- [List alternative names, synonyms, or related terms that may be used interchangeably]</p>
+<h2>Types of [TERM_NAME]</h2>
+<h3><strong>[Type_Category_1]</strong></h3>
+<ul>
+<li><strong>[Subtype_1]</strong>: [Description of subtype and its characteristics]</li>
+<li><strong>[Subtype_2]</strong>: [Description of subtype and its characteristics]</li>
+</ul>
+<h3><strong>[Type_Category_2]</strong></h3>
+<ul>
+<li><strong>[Subtype_3]</strong>: [Description of subtype and its characteristics]</li>
+<li><strong>[Subtype_4]</strong>: [Description of subtype and its characteristics]</li>
+</ul>
+<h3><strong>[Type_Category_3]</strong></h3>
+<ul>
+<li><strong>[Subtype_5]</strong>: [Description of subtype and its characteristics]</li>
+<li><strong>[Subtype_6]</strong>: [Description of subtype and its characteristics]</li>
+</ul>
+<h2>Integration with Framework Components</h2>
+<h3><strong>[Component_Type_1] Relationships</strong></h3>
+<pre><code>[TERM_NAME] + [Relation_Type] = [Integration_Result]
+├── [TERM_NAME] provides → [Functionality_A]
+├── [Relation_Type] defines → [Interaction_Pattern]
+├── Together enable → [Emergent_Behavior]
+└── Result → [System_Functionality]
+</code></pre>
+<h3><strong>[Component_Type_2] Relationships</strong></h3>
+<pre><code>[Model_Type] + [TERM_NAME] = [Framework_Result]
+├── [Model_Type] represents → [Domain_Concepts]
+├── [TERM_NAME] connects → [Conceptual_Elements]
+├── Together form → [Knowledge_Structure]
+└── Result → [Framework_Understanding]
+</code></pre>
+<h3><strong>[Component_Type_3] Relationships</strong></h3>
+<pre><code>[Term_Type] + [TERM_NAME] = [Concept_Result]
+├── [Term_Type] denotes → [Specific_Meaning]
+├── [TERM_NAME] links → [Related_Concepts]
+├── Together create → [Semantic_Network]
+└── Result → [Conceptual_Framework]
+</code></pre>
+<h3>Content Section Guidelines:</h3>
+<ol>
+<li><strong>[Called:]</strong> Section: List alternative names, synonyms, or related terms</li>
+<li><strong>Types of [TERM_NAME]</strong>: Provide detailed type classifications with specific categories and subtypes</li>
+<li><strong>Integration with Framework Components</strong>: Show specific integration patterns with ASCII diagrams for Component, Model, and Term relationships</li>
+<li><strong>Characteristics Section</strong>: Define key properties and attributes</li>
+<li><strong>Development Framework</strong>: Describe term lifecycle and evolution</li>
+<li><strong>Practical Applications</strong>: Demonstrate real-world usage scenarios</li>
+<li><strong>Challenges and Solutions</strong>: Address common issues and resolutions</li>
+</ol>
+<h3>Quality Assurance Standards:</h3>
+<ul>
+<li><strong>Definitional Clarity</strong>: Terms must have precise, unambiguous definitions</li>
+<li><strong>Relational Mapping</strong>: Clear connections to prerequisite and dependent terms</li>
+<li><strong>Contextual Appropriateness</strong>: Relevance to framework domain and objectives</li>
+<li><strong>Scientific Rigor</strong>: Support from established theories and methodologies</li>
+<li><strong>Practical Utility</strong>: Value for framework implementation and application</li>
+</ul>
+<h3>Term Template Naming Convention:</h3>
+<ul>
+<li>Use the format: <code>[NUMBER]_template_for_[PURPOSE].md</code></li>
+<li>Follow the file naming convention: <a href="../20_convention/10_convention_for_file_naming.md"><code>10_convention_for_file_naming.md</code></a></li>
+<li>Examples:</li>
+<li><code>11_template_for_term.md</code> (term template)</li>
+<li><code>12_template_for_concept.md</code> (concept template)</li>
+<li><code>13_template_for_principle.md</code> (principle template)</li>
+</ul>
+<h3>Version Requirements:</h3>
+<ul>
+<li>Follow the version convention: <a href="../20_convention/01_convention_for_version.md"><code>01_convention_for_version.md</code></a></li>
+</ul>
+<hr />
+<h2>Term Template Usage Instructions</h2>
+<h3>Template Application Process:</h3>
+<ol>
+<li><strong>Term Identification</strong>: Identify the concept requiring precise definition</li>
+<li><strong>Research Phase</strong>: Gather theoretical foundations and practical applications</li>
+<li><strong>Definition Development</strong>: Craft clear, comprehensive term definition</li>
+<li><strong>Relationship Mapping</strong>: Identify connections to other framework terms</li>
+<li><strong>Validation Testing</strong>: Ensure clarity, precision, and utility</li>
+<li><strong>Documentation</strong>: Apply template structure for consistent presentation</li>
+</ol>
+<h3>Template Customization Guidelines:</h3>
+<ul>
+<li><strong>Adapt Structure</strong>: Modify sections based on term complexity and domain</li>
+<li><strong>Maintain Consistency</strong>: Preserve core definition block and quality standards</li>
+<li><strong>Enhance Clarity</strong>: Add domain-specific examples and applications</li>
+<li><strong>Ensure Completeness</strong>: Include all required fields and relationships</li>
+<li><strong>Support Evolution</strong>: Design for future updates and refinements</li>
+</ul>
+<h3>Quality Control Checklist:</h3>
+<ul>
+<li>[ ] Term has clear, unambiguous definition</li>
+<li>[ ] Formal definition uses appropriate logical notation</li>
+<li>[ ] Type classification accurately reflects term nature</li>
+<li>[ ] Priority level justified by framework importance</li>
+<li>[ ] Scientific acceptance supported by evidence</li>
+<li>[ ] References include authoritative sources</li>
+<li>[ ] Key theories represent major foundations</li>
+<li>[ ] Context clearly explains framework relevance</li>
+<li>[ ] Related terms properly categorized and linked</li>
+<li>[ ] Confidence assessment includes rationale</li>
+</ul>
+<hr />
+<h2>Term Template Benefits</h2>
+<h3>Documentation Benefits:</h3>
+<ul>
+<li><strong>Consistency</strong>: Uniform term documentation across framework</li>
+<li><strong>Clarity</strong>: Precise definitions eliminate ambiguity</li>
+<li><strong>Discoverability</strong>: Standardized structure enables easy location</li>
+<li><strong>Maintainability</strong>: Clear format supports updates and revisions</li>
+</ul>
+<h3>Framework Benefits:</h3>
+<ul>
+<li><strong>Knowledge Organization</strong>: Systematic term relationships and hierarchies</li>
+<li><strong>Communication Precision</strong>: Common understanding of key concepts</li>
+<li><strong>Validation Support</strong>: Automated checking of term definitions</li>
+<li><strong>Evolution Capability</strong>: Structured approach to term development</li>
+</ul>
+<h3>Implementation Benefits:</h3>
+<ul>
+<li><strong>Rapid Development</strong>: Template accelerates term documentation</li>
+<li><strong>Quality Assurance</strong>: Built-in standards ensure term quality</li>
+<li><strong>Cross-Referencing</strong>: Automated relationship mapping</li>
+<li><strong>Scalability</strong>: Consistent approach scales with framework growth</li>
+</ul>
+<hr />
+<p><em>This term template establishes the methodology for creating precise, comprehensive term definitions that serve as the foundation for systematic knowledge organization and rigorous conceptual frameworks.</em></p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:03 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

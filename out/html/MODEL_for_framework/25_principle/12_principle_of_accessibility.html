@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_principle_of_accessibility</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principle of Accessibility [PRINC_MFW_ACCESSIBILITY] [PRIO: CRITICAL]</h1>
+<p><strong>Version: V0.1.1</strong> <strong>Status: ACTIVE</strong> <strong>Date: 2026-01-12</strong></p>
+<p><strong>We establish Accessibility as a foundational principle requiring that all products, documents, and tools be designed, developed, and documented to be usable by people with the widest possible range of abilities.</strong></p>
+<p><strong>Objectives:</strong>
+1. <strong>Perceivable</strong>: Ensure users can perceive all presented information through their available senses.
+2. <strong>Operable</strong>: Ensure user interface components and navigation are fully operable by all users.
+3. <strong>Understandable</strong>: Ensure information and the operation of the user interface are clear and understandable.
+4. <strong>Robust</strong>: Ensure content is robust enough to be interpreted reliably by a wide variety of user agents, including assistive technologies.</p>
+<hr />
+<h2>Abstract</h2>
+<p><strong>[AI_LOCK]</strong>
+The Principle of Accessibility mandates that the framework and its outputs are inclusive by design. It moves beyond a "one-size-fits-all" approach to ensure that users with visual, auditory, motor, or cognitive disabilities can access and interact with content and tools on an equal basis. Adherence to this principle is not just a matter of compliance but a core tenet of creating high-quality, user-centric products. This principle adopts the internationally recognized Web Content Accessibility Guidelines (WCAG) as its primary standard.
+<strong>[END_AI_LOCK]</strong></p>
+<hr />
+<h2>1. Scope and Applicability</h2>
+<p>This principle applies to all aspects of the framework, including but not limited to:
+- All generated HTML documents.
+- All user-facing tools and interfaces.
+- All official documentation, both in Markdown and its rendered forms.</p>
+<hr />
+<h2>2. Core Definitions</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Accessibility (a11y)</strong></td>
+<td>The practice of making websites, tools, and documents usable by as many people as possible, including those with disabilities.</td>
+</tr>
+<tr>
+<td><strong>WCAG</strong></td>
+<td>Web Content Accessibility Guidelines. An international standard providing a wide range of recommendations for making web content more accessible.</td>
+</tr>
+<tr>
+<td><strong>Assistive Technology</strong></td>
+<td>Hardware and/or software that acts as a user agent to provide functionality to meet the requirements of users with disabilities (e.g., screen readers, screen magnifiers).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4. Rules and Guidelines</h2>
+<h3>4.1 HTML Content Requirements (based on WCAG 2.1 AA)</h3>
+<ol>
+<li><strong>Alt Text</strong>: All non-decorative images (<code>&lt;img&gt;</code>) MUST have descriptive alternative text (<code>alt</code> attribute).</li>
+<li><strong>Semantic HTML</strong>: Use appropriate HTML5 semantic elements (<code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, etc.) to define the structure of the page.</li>
+<li><strong>Color Contrast</strong>: Text and interactive elements MUST have a color contrast ratio of at least 4.5:1 against the background.</li>
+<li><strong>Keyboard Navigation</strong>: All interactive elements (links, buttons, form fields) MUST be fully accessible and operable using only a keyboard.</li>
+</ol>
+<h3>4.2 Documentation Requirements</h3>
+<ol>
+<li><strong>Descriptive Links</strong>: Link text MUST clearly describe the destination of the link. Avoid generic phrases like "click here".</li>
+<li><strong>Structured Content</strong>: Use headings, lists, and other structural elements correctly to create a logical document outline.</li>
+</ol>
+<hr />
+<h2>8. Related Principles and Documents</h2>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Guidelines</a></td>
+<td>The primary technical standard for this principle.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.1</td>
+<td>2026-01-10</td>
+<td>Initial creation</td>
+<td>Framework Steward</td>
+<td>mini review changes</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-10</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>To formally establish accessibility as a core principle of the framework.</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:04 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

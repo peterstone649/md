@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_rule_for_ai_lock_protection</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rule for AI_LOCK Content Protection <strong>[RULE_MFW_AI_LOCK_PROTECTION]</strong></h1>
+<p><strong>Version: V0.1.0</strong> <strong>Date: 2026-01-09</strong></p>
+<p><strong>Rule ID:</strong> RULE_AI_LOCK_PROTECTION
+<strong>Priority:</strong> CRITICAL
+<strong>Applies to:</strong> All AI-assisted document processing and generation</p>
+<hr />
+<h2>Rule Statement</h2>
+<p><strong>AI systems MUST NOT modify, rephrase, rewrite, or alter any content enclosed within <code>[AI_LOCK]</code> and <code>[END_AI_LOCK]</code> markers. These markers designate protected content that represents the authoritative, human-authored intent and MUST remain unchanged.</strong></p>
+<hr />
+<h2>Rationale</h2>
+<p>The AI_LOCK mechanism protects:
+- <strong>Human Authored Intent</strong>: Content within AI_LOCK markers represents definitive human statements that must not be altered by AI
+- <strong>Semantic Integrity</strong>: Prevents AI from introducing subtle changes that alter meaning
+- <strong>Accountability Chains</strong>: Maintains clear provenance of protected statements
+- <strong>Framework Stability</strong>: Ensures core principles and definitions remain consistent
+- <strong>Trust Boundaries</strong>: Creates explicit zones where human authority supersedes AI capability</p>
+<hr />
+<h2>AI_LOCK Pattern Structure</h2>
+<h3>Standard Format</h3>
+<pre><code class="language-markdown">**[AI_LOCK]**
+[PROTECTED_CONTENT]
+**[END_AI_LOCK]**
+</code></pre>
+<h3>Examples</h3>
+<table>
+<thead>
+<tr>
+<th>Protected Content Type</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Principles</strong></td>
+<td><strong>[AI_LOCK]</strong> Human sovereignty establishes that... <strong>[END_AI_LOCK]</strong></td>
+</tr>
+<tr>
+<td><strong>Axioms</strong></td>
+<td><strong>[AI_LOCK]</strong> The axiom of systematic framework development... <strong>[END_AI_LOCK]</strong></td>
+</tr>
+<tr>
+<td><strong>Definitions</strong></td>
+<td><strong>[AI_LOCK]</strong> Consciousness is defined as... <strong>[END_AI_LOCK]</strong></td>
+</tr>
+<tr>
+<td><strong>Policy Statements</strong></td>
+<td><strong>[AI_LOCK]</strong> The framework prohibits... <strong>[END_AI_LOCK]</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Rules for AI Systems</h2>
+<h3>1. Recognition Rule</h3>
+<p>AI systems MUST recognize and respect <code>[AI_LOCK]</code> and <code>[END_AI_LOCK]</code> markers in all contexts:
+- Within any document type (Markdown, YAML, JSON, etc.)
+- Across all framework directories
+- Regardless of document length or complexity</p>
+<h3>2. Preservation Rule</h3>
+<p>When processing documents, AI systems MUST:
+- <strong>PRESERVE</strong> all content within AI_LOCK markers exactly as written
+- <strong>NOT</strong> rephrase, reword, or modify protected content
+- <strong>NOT</strong> add, remove, or alter markers
+- <strong>NOT</strong> summarize or reference protected content in ways that change its meaning</p>
+<h3>3. Generation Rule</h3>
+<p>When AI generates new content:
+- AI_LOCK markers may only be used for NEW protected content
+- Existing AI_LOCK sections must remain unchanged
+- AI must clearly separate its own content from protected content</p>
+<h3>4. Interaction Rule</h3>
+<p>AI systems interacting with AI_LOCK content:
+- <strong>MAY</strong> reference protected content in analysis
+- <strong>MUST NOT</strong> modify the content itself
+- <strong>MUST</strong> indicate when content falls within protected zones</p>
+<hr />
+<h2>Acceptable Modifications (Human Only)</h2>
+<p>Only human stakeholders may modify AI_LOCK content through:
+1. <strong>Direct Edit</strong>: Human-authored changes to protected sections
+2. <strong>Version Update</strong>: Incremented version numbers when content changes
+3. <strong>Migration</strong>: Explicit migration procedures for framework evolution</p>
+<p>AI systems may suggest modifications but MUST:
+- Clearly label suggestions as "PROPOSED_CHANGES"
+- Never auto-apply changes to protected content
+- Request explicit human approval before any modification</p>
+<hr />
+<h2>Violation Examples</h2>
+<h3>❌ Violation: Content Modification</h3>
+<pre><code class="language-markdown">**[AI_LOCK]**
+Human sovereignty establishes that humans retain final decision-making authority.
+**[END_AI_LOCK]**
+
+# AI modification (VIOLATION):
+**[AI_LOCK]**
+Humans retain the final say in all decisions within collaborative frameworks.
+**[END_AI_LOCK]**
+</code></pre>
+<h3>❌ Violation: Marker Removal</h3>
+<pre><code class="language-markdown"># Before (VALID):
+**[AI_LOCK]**
+Core principle content...
+**[END_AI_LOCK]**
+
+# After (VIOLATION):
+Core principle content...
+</code></pre>
+<h3>❌ Violation: Content Reformatting</h3>
+<pre><code class="language-markdown"># Before (VALID):
+**[AI_LOCK]**
+The Principle of Human Sovereignty establishes...
+**[END_AI_LOCK]**
+
+# After (VIOLATION):
+**[AI_LOCK]**
+We establish that the Principle of Human Sovereignty...
+**[END_AI_LOCK]**
+</code></pre>
+<hr />
+<h2>Validation Checklist</h2>
+<ul>
+<li>[ ] All AI_LOCK sections preserved exactly</li>
+<li>[ ] No rephrasing or rewording of protected content</li>
+<li>[ ] Markers remain intact (opening and closing)</li>
+<li>[ ] New AI_LOCK content clearly distinguished from existing</li>
+<li>[ ] AI-generated suggestions labeled separately</li>
+<li>[ ] No auto-application of changes to protected zones</li>
+</ul>
+<hr />
+<h2>Enforcement</h2>
+<ol>
+<li><strong>Detection Phase:</strong> AI tools flag AI_LOCK sections during processing</li>
+<li><strong>Preservation Phase:</strong> Automated checks verify marker integrity</li>
+<li><strong>Review Phase:</strong> Human reviewers verify protected content remains unchanged</li>
+<li><strong>Violation Response:</strong> Document violations and revert unauthorized changes</li>
+</ol>
+<hr />
+<h2>Integration with Other Rules</h2>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RULE_ACTIVE_VOICE</td>
+<td>AI_LOCK content exempt from active voice requirements</td>
+</tr>
+<tr>
+<td>Framework Conventions</td>
+<td>AI_LOCK sections override general formatting rules</td>
+</tr>
+<tr>
+<td>Writing Standards</td>
+<td>Protected content follows original author's style</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>References</h2>
+<ul>
+<li>MODEL_for_stakeholder_AI_collab/30_principle/01_principle_human_sovereignty.md</li>
+<li>Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)</li>
+<li>Intellectual Property Rights Conventions (20_convention/16_convention_for_intellectual_property_rights.md)</li>
+</ul>
+<hr />
+<p><strong>Rule Steward:</strong> Framework Standards Committee
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-09
+<strong>Review Cycle:</strong> Annual</p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:02 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21_convention_for_todo_markers</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Convention for Todo Markers [CONVENTION_MFW_TODO_MARKERS] [PRIO: MEDIUM]</h1>
+<p><strong>Convention ID:</strong> CONVENTION_TODO_MARKERS
+<strong>Priority:</strong> MEDIUM
+<strong>Applies to:</strong> All task files and project documentation</p>
+<hr />
+<h2>Convention Statement</h2>
+<p><strong>All task files and project documentation should use standardized todo markers for progress tracking and project management.</strong></p>
+<hr />
+<h2>Rationale</h2>
+<p>Standardized todo markers provide:
+- Consistent progress tracking across all framework components
+- Clear visual indicators of completion status
+- Systematic project management methodology
+- Enhanced collaboration and accountability
+- Measurable progress reporting capabilities</p>
+<hr />
+<h2>Todo Marker Standards</h2>
+<h3>Basic Format</h3>
+<p>All task files consistently use:</p>
+<ul>
+<li><code>- [ ]</code> for <strong>incomplete tasks</strong> (unchecked)</li>
+<li><code>- [x]</code> for <strong>completed tasks</strong> (checked)</li>
+<li>Clear, actionable descriptions</li>
+<li>Organized by phases/sections</li>
+<li>Measurable outcomes where applicable</li>
+</ul>
+<h3>Syntax Rules</h3>
+<h4>Unchecked Tasks</h4>
+<pre><code class="language-markdown">- [ ] Task description with clear, actionable language
+- [ ] Implement user authentication system
+- [ ] Create database schema for user management
+</code></pre>
+<h4>Checked Tasks</h4>
+<pre><code class="language-markdown">- [x] Task description (completed)
+- [x] Implement user authentication system
+- [x] Create database schema for user management
+</code></pre>
+<h4>Nested Tasks</h4>
+<pre><code class="language-markdown">- [ ] Main task category
+  - [ ] Subtask 1
+  - [x] Subtask 2 (completed)
+  - [ ] Subtask 3
+</code></pre>
+<hr />
+<h2>Implementation Guidelines</h2>
+<h3>File Naming Convention</h3>
+<p>Task files MUST follow the naming pattern:</p>
+<pre><code>task_for_[description].md
+</code></pre>
+<p>Examples:
+- <code>task_for_vms_implementation.md</code>
+- <code>task_for_physical_preservation.md</code>
+- <code>task_for_user_authentication.md</code></p>
+<h3>File Structure</h3>
+<p>Task files MUST include:</p>
+<ol>
+<li><strong>Header Section</strong></li>
+<li>Clear title describing the task scope</li>
+<li>Overview of objectives and deliverables</li>
+<li>
+<p>Timeline and milestones (when applicable)</p>
+</li>
+<li>
+<p><strong>Task Organization</strong></p>
+</li>
+<li>Logical grouping by phases, components, or priorities</li>
+<li>Hierarchical structure for complex tasks</li>
+<li>
+<p>Dependencies clearly identified</p>
+</li>
+<li>
+<p><strong>Progress Tracking</strong></p>
+</li>
+<li>Regular updates to completion status</li>
+<li>Comments on blockers or challenges</li>
+<li>
+<p>Updated completion dates</p>
+</li>
+<li>
+<p><strong>Metadata Section</strong></p>
+</li>
+<li>Responsible stakeholders</li>
+<li>Success criteria</li>
+<li>Resource requirements</li>
+<li>Risk assessments</li>
+</ol>
+<h3>Content Standards</h3>
+<h4>Task Descriptions</h4>
+<ul>
+<li><strong>Action-oriented</strong>: Start with verbs (Implement, Create, Test, etc.)</li>
+<li><strong>Specific</strong>: Clearly define what needs to be done</li>
+<li><strong>Measurable</strong>: Include criteria for completion where possible</li>
+<li><strong>Realistic</strong>: Achievable within defined scope and resources</li>
+</ul>
+<h4>Examples of Good Task Descriptions</h4>
+<pre><code class="language-markdown">- [ ] Implement OAuth 2.0 authentication flow with JWT tokens
+- [ ] Create REST API endpoints for user profile management
+- [ ] Write unit tests with &gt;90% code coverage for authentication module
+- [ ] Conduct security audit and penetration testing
+</code></pre>
+<h4>Examples of Poor Task Descriptions</h4>
+<pre><code class="language-markdown">- [ ] Work on authentication (too vague)
+- [ ] Fix bugs (not specific enough)
+- [ ] Make it better (subjective, not measurable)
+</code></pre>
+<hr />
+<h2>Task Organization Patterns</h2>
+<h3>Phase-Based Organization</h3>
+<pre><code class="language-markdown">## Phase 1: Foundation (Weeks 1-4)
+- [ ] Complete requirement analysis
+- [ ] Design system architecture
+- [ ] Set up development environment
+
+## Phase 2: Implementation (Weeks 5-8)
+- [ ] Develop core functionality
+- [ ] Implement user interface
+- [ ] Create database schema
+</code></pre>
+<h3>Component-Based Organization</h3>
+<pre><code class="language-markdown">## Authentication Module
+- [ ] Implement login/logout functionality
+- [ ] Add password reset feature
+- [ ] Integrate social login providers
+
+## User Management Module
+- [ ] Create user profile system
+- [ ] Implement role-based permissions
+- [ ] Add user administration interface
+</code></pre>
+<h3>Priority-Based Organization</h3>
+<pre><code class="language-markdown">## High Priority (Must Complete)
+- [ ] Critical security fixes
+- [ ] Core functionality implementation
+
+## Medium Priority (Should Complete)
+- [ ] Performance optimizations
+- [ ] Additional features
+
+## Low Priority (Nice to Have)
+- [ ] UI enhancements
+- [ ] Advanced reporting features
+</code></pre>
+<hr />
+<h2>Progress Tracking Guidelines</h2>
+<h3>Update Frequency</h3>
+<ul>
+<li><strong>Daily</strong>: For active development tasks</li>
+<li><strong>Weekly</strong>: For long-term planning tasks</li>
+<li><strong>Immediate</strong>: When blockers are identified or resolved</li>
+</ul>
+<h3>Status Updates</h3>
+<p>When updating task status:
+1. Change <code>- [ ]</code> to <code>- [x]</code> for completed tasks
+2. Add completion date in parentheses when applicable
+3. Note any deviations from original plan
+4. Update dependent tasks as needed</p>
+<h3>Example Progress Update</h3>
+<pre><code class="language-markdown">## Before
+- [ ] Implement user authentication system
+- [ ] Create database schema for user management
+
+## After
+- [x] Implement user authentication system (2026-01-13)
+- [ ] Create database schema for user management
+</code></pre>
+<hr />
+<h2>Quality Assurance</h2>
+<h3>Validation Checklist</h3>
+<ul>
+<li>[ ] All tasks use correct marker syntax (<code>- [ ]</code> or <code>- [x]</code>)</li>
+<li>[ ] Task descriptions are clear and actionable</li>
+<li>[ ] Tasks are organized logically by category/phase</li>
+<li>[ ] Completion criteria are defined where applicable</li>
+<li>[ ] File follows naming convention (<code>task_for_*.md</code>)</li>
+</ul>
+<h3>Review Process</h3>
+<ul>
+<li><strong>Self-Review</strong>: Author validates task file before sharing</li>
+<li><strong>Peer Review</strong>: Team member reviews for clarity and completeness</li>
+<li><strong>Stakeholder Review</strong>: Relevant stakeholders approve task scope</li>
+<li><strong>Regular Audits</strong>: Periodic review of task file maintenance</li>
+</ul>
+<hr />
+<h2>Integration with Framework Tools</h2>
+<h3>Git Integration</h3>
+<p>Task files should be committed with meaningful messages:</p>
+<pre><code class="language-bash">git commit -m &quot;Update VMS implementation tasks
+
+- [x] Complete definition layer implementation
+- [ ] Begin priority framework development
+- [ ] Update timeline for Phase 2&quot;
+</code></pre>
+<h3>Progress Reporting</h3>
+<p>Task completion status feeds into:
+- Sprint planning and retrospectives
+- Stakeholder communications
+- Project dashboards and metrics
+- Risk assessment and mitigation planning</p>
+<hr />
+<h2>Exceptions and Special Cases</h2>
+<h3>Conditional Tasks</h3>
+<p>For tasks that depend on external factors:</p>
+<pre><code class="language-markdown">- [ ] Deploy to production (pending security audit completion)
+- [ ] Implement advanced features (requires stakeholder approval)
+</code></pre>
+<h3>Blocked Tasks</h3>
+<p>For tasks waiting on dependencies:</p>
+<pre><code class="language-markdown">- [ ] Integrate with external API (BLOCKED: waiting for API documentation)
+- [ ] Performance testing (BLOCKED: development environment setup)
+</code></pre>
+<h3>Deferred Tasks</h3>
+<p>For tasks moved to future scope:</p>
+<pre><code class="language-markdown">- [ ] Implement advanced analytics (DEFERRED: Phase 2)
+- [ ] Mobile app development (DEFERRED: Post-MVP)
+</code></pre>
+<hr />
+<h2>Training and Adoption</h2>
+<h3>New Team Member Onboarding</h3>
+<ul>
+<li>Review this convention during onboarding</li>
+<li>Provide examples of well-structured task files</li>
+<li>Demonstrate progress tracking workflows</li>
+</ul>
+<h3>Continuous Improvement</h3>
+<ul>
+<li>Regular review of task file effectiveness</li>
+<li>Updates to convention based on team feedback</li>
+<li>Sharing of best practices across projects</li>
+</ul>
+<hr />
+<h2>References</h2>
+<ul>
+<li><a href="../20_convention/10_convention_for_file_naming.md">CONVENTION_FILE_NAMING</a></li>
+<li><a href="../20_convention/03_convention_for_writing_style.md">CONVENTION_WRITING_STYLE</a></li>
+<li><a href="../12_rule/04_rule_for_version_changelog_update.md">RULE_VERSION_CHANGELOG</a></li>
+</ul>
+<hr />
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.0</td>
+<td>2026-01-13</td>
+<td>Initial convention for standardized todo markers</td>
+<td>Framework Steward</td>
+<td>Establish consistent task tracking methodology across all framework projects</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Convention Steward:</strong> Framework Management Committee
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-13
+<strong>Review Cycle:</strong> Annual</p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:04 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

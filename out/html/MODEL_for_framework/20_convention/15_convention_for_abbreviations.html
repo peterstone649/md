@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15_convention_for_abbreviations</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>15. Convention for Abbreviations <strong>[CONV_FOR_MODELFW_ABBREVIATIONS]</strong> <strong>[PRIO: HIGH]</strong></h1>
+<blockquote>
+<p><strong>Convention for Abbreviations and Acronyms in the Framework</strong></p>
+<p><strong>Version:</strong> V0.1.2<br />
+<strong>Status:</strong> DONE<br />
+<strong>Date:</strong> 2026-01-08</p>
+<p><strong>Confidence Score:</strong> 5</p>
+<p><strong>Integration Field:</strong> MODEL_for_framework</p>
+</blockquote>
+<hr />
+<h2>Derivation Source</h2>
+<p>Based on <code>&lt;internal_framework_standard&gt;</code></p>
+<h2>Core Inheritance</h2>
+<ul>
+<li>Inherits standardized abbreviation practices from framework methodology</li>
+<li>Adapts prefix-based naming conventions for consistency</li>
+<li>Extends abbreviation tracking for documentation purposes</li>
+<li>Maintains compatibility with naming conventions across all framework components</li>
+</ul>
+<h2>Rationale</h2>
+<p>This convention establishes standardized abbreviations and acronyms for consistent use throughout the framework. It ensures clarity, maintainability, and interoperability across all framework components by providing a systematic approach to creating, documenting, and applying abbreviations.</p>
+<h2>General Reference</h2>
+<p>This convention applies to all documents within the framework including conventions, templates, axioms, strategies, and tasks.</p>
+<hr />
+<h2>Abstract</h2>
+<p>This convention establishes standardized abbreviations and acronyms for consistent use throughout the framework. It defines a systematic approach to creating, documenting, and applying abbreviations to ensure clarity, maintainability, and interoperability across all framework components.</p>
+<hr />
+<h2>1. Scope and Applicability</h2>
+<h3>1.1 When to Apply</h3>
+<ul>
+<li>Creating new framework documents (conventions, templates, axioms, strategies, tasks)</li>
+<li>Defining variable names and identifiers</li>
+<li>Naming files and folders</li>
+<li>Writing technical documentation</li>
+<li>Creating cross-references between documents</li>
+</ul>
+<h3>1.2 Target Audience</h3>
+<ul>
+<li>Framework developers and maintainers</li>
+<li>Document authors and contributors</li>
+<li>e.g. Technical writers, System architects ...</li>
+</ul>
+<hr />
+<h2>2. Core Definitions</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Prefix</strong></td>
+<td>Short code representing a full term, used at the beginning of identifiers</td>
+<td><code>fw</code>, <code>model</code>, <code>tpl</code></td>
+</tr>
+<tr>
+<td><strong>Abbreviation</strong></td>
+<td>Shortened form of a word or phrase</td>
+<td><code>DRAFT</code>, <code>IN_PROGRESS</code></td>
+</tr>
+<tr>
+<td><strong>Acronym</strong></td>
+<td>Word formed from initial letters</td>
+<td><code>SAFe</code>, <code>FIELDC</code></td>
+</tr>
+<tr>
+<td><strong>Convention Constant</strong></td>
+<td>Standardized constant prefix for framework references</td>
+<td><code>CONV_FOR_</code>, <code>CONV_VERSION</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. Version Requirements</h2>
+<p>Version management follows <a href="./01_convention_for_version.md">CONV_FOR_VERSION</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Version Type</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MAJOR</strong></td>
+<td>Breaking Changes</td>
+<td>Not backward compatible</td>
+</tr>
+<tr>
+<td><strong>MINOR</strong></td>
+<td>New Features</td>
+<td>Backward compatible</td>
+</tr>
+<tr>
+<td><strong>PATCH</strong></td>
+<td>Bug Fixes</td>
+<td>Backward compatible</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4. Rules and Guidelines</h2>
+<h3>4.1 Prefix-Based Abbreviations</h3>
+<p>Prefixes are defined in <a href="./12_convention_for_formal_notation.md">CONV_FOR_FORMAL_NOTATION</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>Full Term</th>
+<th>Usage</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>fra</strong></td>
+<td>Framework</td>
+<td>Framework-level references</td>
+<td><code>fra_id</code>, <code>fra_version</code></td>
+</tr>
+<tr>
+<td><strong>model</strong></td>
+<td>Model</td>
+<td>Model definitions</td>
+<td><code>mod_name</code>, <code>mod_type</code></td>
+</tr>
+<tr>
+<td><strong>tpl</strong></td>
+<td>Template</td>
+<td>Template components</td>
+<td><code>tpl_id</code>, <code>tpl_category</code></td>
+</tr>
+<tr>
+<td><strong>conv</strong></td>
+<td>Convention</td>
+<td>Convention references</td>
+<td><code>con_id</code>, <code>con_status</code></td>
+</tr>
+<tr>
+<td><strong>val</strong></td>
+<td>Validation</td>
+<td>Validation logic</td>
+<td><code>val_score</code>, <code>val_result</code></td>
+</tr>
+<tr>
+<td><strong>sys</strong></td>
+<td>System/Systematic</td>
+<td>System-level elements</td>
+<td><code>sys_name</code>, <code>sys_version</code></td>
+</tr>
+<tr>
+<td><strong>evo</strong></td>
+<td>Evolution/Extension</td>
+<td>Evolution tracking</td>
+<td><code>evo_phase</code>, <code>evo_status</code></td>
+</tr>
+<tr>
+<td><strong>axiom</strong></td>
+<td>Axiom/Applicability</td>
+<td>Axiom references</td>
+<td><code>axi_id</code>, <code>axi_type</code></td>
+</tr>
+<tr>
+<td><strong>integ</strong></td>
+<td>Integration/Integrity</td>
+<td>Integration points</td>
+<td><code>integ_type</code>, <code>integ_status</code></td>
+</tr>
+<tr>
+<td><strong>prop</strong></td>
+<td>Property/Principle</td>
+<td>Properties and principles</td>
+<td><code>prop_name</code>, <code>prop_value</code></td>
+</tr>
+<tr>
+<td><strong>term</strong></td>
+<td>Term</td>
+<td>Terminology entries</td>
+<td><code>term_id</code>, <code>term_name</code></td>
+</tr>
+<tr>
+<td><strong>def</strong></td>
+<td>Definition</td>
+<td>Definitions</td>
+<td><code>def_id</code>, <code>def_text</code></td>
+</tr>
+</tbody>
+</table>
+<h3>4.2 Status Abbreviations</h3>
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Full Status</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DRAFT</strong></td>
+<td>Draft</td>
+<td>Initial creation, pending review</td>
+</tr>
+<tr>
+<td><strong>OPEN</strong></td>
+<td>Open</td>
+<td>Task/work item identified, not started</td>
+</tr>
+<tr>
+<td><strong>IN_PROGRESS</strong></td>
+<td>In Progress</td>
+<td>Active work being conducted</td>
+</tr>
+<tr>
+<td><strong>PAUSED</strong></td>
+<td>Paused</td>
+<td>Work temporarily halted</td>
+</tr>
+<tr>
+<td><strong>REVIEW</strong></td>
+<td>Review</td>
+<td>Pending validation/approval</td>
+</tr>
+<tr>
+<td><strong>DONE</strong></td>
+<td>Done</td>
+<td>All work complete and validated</td>
+</tr>
+<tr>
+<td><strong>ARCHIVED</strong></td>
+<td>Archived</td>
+<td>Historical reference, no longer active</td>
+</tr>
+</tbody>
+</table>
+<h3>4.3 Document Type Abbreviations</h3>
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Full Term</th>
+<th>File Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>axiom</strong></td>
+<td>Axiom</td>
+<td><code>##_axiom_*.md</code></td>
+</tr>
+<tr>
+<td><strong>convention</strong></td>
+<td>Convention</td>
+<td><code>##_convention_*.md</code></td>
+</tr>
+<tr>
+<td><strong>template</strong></td>
+<td>Template</td>
+<td><code>##_template_*.md</code></td>
+</tr>
+<tr>
+<td><strong>strategy</strong></td>
+<td>Strategy</td>
+<td><code>##_strategy_*.md</code></td>
+</tr>
+<tr>
+<td><strong>thesis</strong></td>
+<td>Thesis</td>
+<td><code>##_thesis_*.md</code></td>
+</tr>
+<tr>
+<td><strong>term</strong></td>
+<td>Term</td>
+<td><code>##_term_*.md</code></td>
+</tr>
+<tr>
+<td><strong>rule</strong></td>
+<td>Rule</td>
+<td><code>##_rule_*.md</code></td>
+</tr>
+<tr>
+<td><strong>task</strong></td>
+<td>Task</td>
+<td><code>task_*.md</code></td>
+</tr>
+</tbody>
+</table>
+<h3>4.4 Field/Category Abbreviations</h3>
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Full Field</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OT</strong></td>
+<td>Orthogonal Theory / "of type"</td>
+<td>Philosophical/theoretical framework, type indicator</td>
+</tr>
+<tr>
+<td><strong>FIELDC</strong></td>
+<td>Field of Consciousness / Field of type core</td>
+<td>Domain classification, core field type</td>
+</tr>
+<tr>
+<td><strong>FIELDM</strong></td>
+<td>Field of type major</td>
+<td>Major field classification</td>
+</tr>
+<tr>
+<td><strong>Ethosys</strong></td>
+<td>Ethical System</td>
+<td>Ethics and safety framework</td>
+</tr>
+<tr>
+<td><strong>SAFe</strong></td>
+<td>Scaled Agile Framework</td>
+<td>Implementation methodology</td>
+</tr>
+<tr>
+<td><strong>PROGL</strong></td>
+<td>Programming Language</td>
+<td>Programming language references</td>
+</tr>
+<tr>
+<td><strong>meth</strong></td>
+<td>Methodology</td>
+<td>Methodology references</td>
+</tr>
+<tr>
+<td><strong>SYST</strong></td>
+<td>System of Type</td>
+<td>System classification by type</td>
+</tr>
+</tbody>
+</table>
+<h3>4.5 Naming Convention Constants</h3>
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Full Constant</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CONV_FOR_</strong></td>
+<td>Convention Prefix</td>
+<td>Standard prefix for convention constants</td>
+</tr>
+<tr>
+<td><strong>CONV_VERSION</strong></td>
+<td>Convention Version</td>
+<td>Current convention version</td>
+</tr>
+<tr>
+<td><strong>CONV_STATUS</strong></td>
+<td>Convention Status</td>
+<td>Current convention status</td>
+</tr>
+<tr>
+<td><strong>CONV_DATE</strong></td>
+<td>Convention Date</td>
+<td>Date of last update</td>
+</tr>
+</tbody>
+</table>
+<h3>4.6 Validation Abbreviations</h3>
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Full Term</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CONF</strong></td>
+<td>Confidence Score</td>
+<td>0-100 or 1-5 scale</td>
+</tr>
+<tr>
+<td><strong>VAL</strong></td>
+<td>Validation Status</td>
+<td>PASS/FAIL/PENDING</td>
+</tr>
+<tr>
+<td><strong>QC</strong></td>
+<td>Quality Check</td>
+<td>Numeric or categorical</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Naming Conventions</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lowercase prefixes</strong></td>
+<td>Variable/identifier naming</td>
+<td><code>fra_id</code>, <code>mod_type</code></td>
+</tr>
+<tr>
+<td><strong>UPPERCASE status</strong></td>
+<td>Document/work status</td>
+<td><code>DRAFT</code>, <code>IN_PROGRESS</code></td>
+</tr>
+<tr>
+<td><strong>CONV_FOR_* constant</strong></td>
+<td>Convention reference constants</td>
+<td><code>CONV_FOR_ABBREVIATIONS</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6. Status Workflow</h2>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Transition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DRAFT</strong></td>
+<td>Initial creation, pending review</td>
+<td>→ OPEN</td>
+</tr>
+<tr>
+<td><strong>OPEN</strong></td>
+<td>Ready for implementation</td>
+<td>→ IN PROGRESS</td>
+</tr>
+<tr>
+<td><strong>IN PROGRESS</strong></td>
+<td>Actively being implemented</td>
+<td>→ REVIEW or PAUSED</td>
+</tr>
+<tr>
+<td><strong>PAUSED</strong></td>
+<td>Temporarily halted</td>
+<td>→ IN PROGRESS or DONE</td>
+</tr>
+<tr>
+<td><strong>REVIEW</strong></td>
+<td>Pending validation</td>
+<td>→ DONE or IN PROGRESS</td>
+</tr>
+<tr>
+<td><strong>DONE</strong></td>
+<td>Complete and validated</td>
+<td>→ ARCHIVED</td>
+</tr>
+<tr>
+<td><strong>ARCHIVED</strong></td>
+<td>Historical reference</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>7. Examples</h2>
+<h3>7.1 Correct Usage</h3>
+<pre><code>fra_id = &quot;model-framework-001&quot;
+tpl_category = &quot;axiom&quot;
+con_status = &quot;DRAFT&quot;
+val_score = 85
+</code></pre>
+<h3>7.2 Incorrect Usage</h3>
+<pre><code>Fra_id = &quot;model-framework-001&quot;  // Wrong: mixed case prefix
+tpl-category = &quot;axiom&quot;          // Wrong: hyphen instead of underscore
+status = &quot;draft&quot;                 // Wrong: lowercase status
+</code></pre>
+<h3>7.3 Edge Cases</h3>
+<ul>
+<li>Multi-word abbreviations should use underscores: <code>IN_PROGRESS</code></li>
+<li>Convention constants always use <code>CONV_FOR_</code> prefix</li>
+<li>Document type abbreviations map to folder structure</li>
+</ul>
+<hr />
+<h2>8. Related Conventions</h2>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./01_convention_for_version.md">CONV_FOR_VERSION</a></td>
+<td>Version management standards</td>
+</tr>
+<tr>
+<td><a href="./12_convention_for_formal_notation.md">CONV_FOR_FORMAL_NOTATION</a></td>
+<td>Defines variable prefix standards</td>
+</tr>
+<tr>
+<td><a href="./14_convention_for_stati.md">CONV_FOR_STATUS_CONVENTION</a></td>
+<td>Defines status workflow</td>
+</tr>
+<tr>
+<td><a href="./10_convention_for_file_naming.md">CONV_FOR_FILE_NAMING</a></td>
+<td>File naming conventions</td>
+</tr>
+<tr>
+<td><a href="../99_appendix/abbreviations.md">../99_appendix/abbreviations.md</a></td>
+<td>Quick reference guide</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>9. Implementation</h2>
+<h3>9.1 Migration Path</h3>
+<ol>
+<li>Identify all abbreviations in the document</li>
+<li>Cross-reference with this convention's tables</li>
+<li>Update incorrect abbreviations to match standards</li>
+<li>Add missing abbreviations to the quick reference</li>
+</ol>
+<h3>9.2 Validation Checklist</h3>
+<ul>
+<li>[ ] All prefixes follow lowercase convention</li>
+<li>[ ] All status abbreviations use UPPERCASE</li>
+<li>[ ] All convention constants use CONV_FOR_ prefix</li>
+<li>[ ] New abbreviations are documented in both files</li>
+</ul>
+<hr />
+<h2>10. Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.2</td>
+<td>2026-01-08</td>
+<td>Added FIELDC (Field of type core), FIELDM (Field of type major)</td>
+</tr>
+<tr>
+<td>V0.1.1</td>
+<td>2026-01-08</td>
+<td>Added PROGL, meth, SYST abbreviations; OT updated with "of type"</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-08</td>
+<td>Initial creation of abbreviation convention</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11. Appendices</h2>
+<h3>Appendix A: Quick Reference</h3>
+<p>Available at <code>../99_appendix/abbreviations.md</code></p>
+<h3>Appendix B: Prefix Reference</h3>
+<p>Complete prefix definitions are maintained in <a href="./12_convention_for_formal_notation.md">CONV_FOR_FORMAL_NOTATION</a></p>
+<hr />
+<p><strong>End of Convention</strong></p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:03 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

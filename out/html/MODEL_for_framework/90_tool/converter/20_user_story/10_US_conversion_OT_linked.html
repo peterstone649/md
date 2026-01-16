@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_US_conversion_OT_linked</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Story: Automatic Conversion of Linked Documents (US_MFR_CONVERSION_OT_LINKED) <strong>[PRIO: MEDIUM]</strong></h1>
+<p><strong>Version: V0.1.0</strong> <strong>Status: DRAFT</strong> <strong>Date: 2026-01-10</strong></p>
+<p><strong>As a</strong> Framework Documenter,
+<strong>I want</strong> the HTML conversion tool to automatically find and convert any linked Markdown documents that it references,
+<strong>so that</strong> I can be confident all local links will work correctly in the final HTML output without having to convert each file manually.</p>
+<hr />
+<h2>Acceptance Criteria</h2>
+<p>1.
+    - <strong>Given</strong> I convert a single Markdown file (<code>A.md</code>),
+    - <strong>And</strong> <code>A.md</code> contains a relative link to another Markdown file (<code>B.md</code>),
+    - <strong>When</strong> the conversion process runs,
+    - <strong>Then</strong> both <code>A.html</code> and <code>B.html</code> should be generated in the correct output directory.</p>
+<p>2.
+    - <strong>Given</strong> a linked document (<code>B.md</code>) has already been converted in the same process (e.g., it was also linked from another file),
+    - <strong>When</strong> the converter encounters the link to <code>B.md</code> again,
+    - <strong>Then</strong> it should not re-convert it, to avoid redundant processing.</p>
+<p>3.
+    - <strong>Given</strong> a file contains a link to a non-Markdown file (e.g., an image or a PDF),
+    - <strong>When</strong> the conversion process runs,
+    - <strong>Then</strong> the link should be preserved in the final HTML, but no conversion should be attempted on the linked file.</p>
+<p>4.
+    - <strong>Given</strong> a file contains a link to an external website (e.g., <code>https://...</code>),
+    - <strong>When</strong> the conversion process runs,
+    - <strong>Then</strong> the external link should be preserved without any processing.</p>
+<p>5.
+    - <strong>Given</strong> this feature is active,
+    - <strong>When</strong> I use the existing <code>--recursive</code> flag on a directory,
+    - <strong>Then</strong> both the recursive directory scan and the linked-document scan should work together, ensuring all documents are found and converted.</p>
+<hr />
+<h2>Related Documents</h2>
+<ul>
+<li><strong>Rule:</strong> <a href="../../12_rule/04_rule_for_version_changelog_update.md">Changelog Update Rule</a></li>
+<li><strong>User Story:</strong> <a href="./conversion_OT_recursive.md">conversion_OT_recursive.md</a></li>
+</ul>
+<hr />
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-10</td>
+<td>Initial creation</td>
+<td>AI Analyst</td>
+<td>To capture the feature request for converting linked documents.</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:06 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

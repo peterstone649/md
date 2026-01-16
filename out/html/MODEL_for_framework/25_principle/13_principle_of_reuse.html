@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13_principle_of_reuse</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principle of Reuse [PRINC_MFW_REUSE] [PRIO: HIGH]</h1>
+<p><strong>We establish Reuse as a core principle requiring that framework components, documentation, and patterns be designed for maximum reusability to enhance efficiency, consistency, and quality.</strong></p>
+<p><strong>Objectives:</strong>
+1. <strong>Efficiency</strong>: Accelerate development by eliminating redundant work.
+2. <strong>Consistency</strong>: Ensure a uniform and predictable structure across all framework assets.
+3. <strong>Maintainability</strong>: Simplify updates by modifying a single, authoritative source rather than multiple copies.
+4. <strong>Quality</strong>: Improve overall quality by leveraging proven, tested, and standardized components.</p>
+<hr />
+<h2>Abstract</h2>
+<p><strong>[AI_LOCK]</strong>
+The Principle of Reuse mandates a "Don't Repeat Yourself" (DRY) approach to framework development. By creating and maintaining a library of reusable assets—including code, documentation templates, and design patterns—the framework can achieve higher efficiency and consistency. This principle shifts the focus from creating one-off solutions to building a robust, interconnected system where components are designed to be consumed multiple times, reducing maintenance overhead and improving the speed of future development.
+<strong>[END_AI_LOCK]</strong></p>
+<hr />
+<h2>1. Scope and Applicability</h2>
+<p>This principle applies to all assets created within the framework:
+- Source code (functions, classes, modules).
+- Documentation (principles, rules, user stories).
+- Templates for documents.
+- Architectural and design patterns.</p>
+<hr />
+<h2>2. Core Definitions</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reuse</strong></td>
+<td>The practice of using existing assets in new contexts with little or no modification.</td>
+</tr>
+<tr>
+<td><strong>Component</strong></td>
+<td>A self-contained, interchangeable piece of software or documentation designed to be reusable.</td>
+</tr>
+<tr>
+<td><strong>DRY Principle</strong></td>
+<td>Don't Repeat Yourself. A principle of software development aimed at reducing repetition of any kind.</td>
+</tr>
+<tr>
+<td><strong>Single Source of Truth</strong></td>
+<td>The practice of structuring information so that every data element is stored exactly once, and any references to it are pointers to that single source.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4. Rules and Guidelines</h2>
+<ol>
+<li><strong>Use Templates</strong>: All new documents of a specific type (e.g., Principle, User Story) MUST be created from the official template for that type.</li>
+<li><strong>Modular Design</strong>: All new code MUST be designed in a modular, component-based fashion to encourage reuse.</li>
+<li><strong>Centralize Assets</strong>: Reusable assets (templates, scripts, common code libraries) MUST be stored in a designated, centralized location and be well-documented.</li>
+<li><strong>Reference, Don't Copy</strong>: When information or functionality is needed from another part of the framework, it MUST be referenced or called directly, not copied and pasted.</li>
+</ol>
+<hr />
+<h2>8. Related Principles and Documents</h2>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../15_template/">Template Directory</a></td>
+<td>The centralized location for all official document templates.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>10. Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.1</td>
+<td>2026-01-10</td>
+<td>version</td>
+<td>Framework Steward</td>
+<td>review</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-10</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>To formally establish reuse as a core principle of the framework.</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:04 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

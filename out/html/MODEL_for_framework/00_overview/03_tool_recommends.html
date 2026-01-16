@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_tool_recommends</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>03. Tool Recommendations <strong>[TOOL_RECOMMENDS]</strong> <strong>[PRIO: MEDIUM]</strong></h1>
+<p><strong>Version: V0.1.2</strong> <strong>Date: 2026-01-15</strong></p>
+<h2>AI Tools Used</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Category</th>
+<th>Purpose</th>
+<th>Rationale</th>
+<th>Why Recommended</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Grok (xAI)</strong></td>
+<td>AI Assistant</td>
+<td>Content generation, analysis</td>
+<td>High-quality reasoning</td>
+<td>80% coverage, high speed</td>
+</tr>
+<tr>
+<td><strong>Claude (Anthropic)</strong></td>
+<td>AI Assistant</td>
+<td>Verification, cross-checking</td>
+<td>Strong safety alignment</td>
+<td>20% coverage, reliable validation</td>
+</tr>
+<tr>
+<td><strong>Perplexity AI</strong></td>
+<td>Research Assistant</td>
+<td>Fact verification</td>
+<td>Advanced web search</td>
+<td>10% coverage, real-time access</td>
+</tr>
+<tr>
+<td><strong>ChatGPT (OpenAI)</strong></td>
+<td>AI Assistant</td>
+<td>Creative exploration</td>
+<td>Versatile conversational AI</td>
+<td>30% coverage, broad knowledge</td>
+</tr>
+<tr>
+<td><strong>Local Models</strong></td>
+<td>AI Assistant</td>
+<td>Creative exploration</td>
+<td>Versatile conversational AI</td>
+<td>Privacy-focused, offline capability</td>
+</tr>
+</tbody>
+</table>
+<h2>Development Tools</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Category</th>
+<th>Purpose</th>
+<th>Rationale</th>
+<th>Why Recommended</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VS Code</strong></td>
+<td>Code Editor</td>
+<td>Primary development environment</td>
+<td>Excellent Markdown support</td>
+<td>Free, cross-platform, industry standard</td>
+</tr>
+<tr>
+<td><strong>Git</strong></td>
+<td>Version Control</td>
+<td>Source code management</td>
+<td>Distributed version control</td>
+<td>Industry standard, robust collaboration</td>
+</tr>
+<tr>
+<td><strong>Python Markdown</strong></td>
+<td>Library</td>
+<td>HTML conversion</td>
+<td>Feature-rich processing</td>
+<td>Proven reliability, active maintenance</td>
+</tr>
+<tr>
+<td><strong>Custom MD-to-HTML Converter</strong></td>
+<td>Tool</td>
+<td>Framework-specific conversion</td>
+<td>Tailored formatting</td>
+<td>Handles SVG scaling, maintains consistency</td>
+</tr>
+</tbody>
+</table>
+<h2>Platform Tools</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Category</th>
+<th>Purpose</th>
+<th>Rationale</th>
+<th>Why Recommended</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GitHub</strong></td>
+<td>Repository Platform</td>
+<td>Code hosting, collaboration</td>
+<td>Industry-leading platform</td>
+<td>Repository location, excellent tools</td>
+</tr>
+<tr>
+<td><strong>GitHub Actions</strong></td>
+<td>CI/CD</td>
+<td>Automated workflows</td>
+<td>Seamless GitHub integration</td>
+<td>Free for public repos, extensive marketplace</td>
+</tr>
+</tbody>
+</table>
+<h2>Apps for models</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Category</th>
+<th>Purpose</th>
+<th>Rationale</th>
+<th>Why Recommended</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>LLMstudio</strong></td>
+<td>AI Model Interface</td>
+<td>Local LLM management and interaction</td>
+<td>User-friendly local AI deployment</td>
+<td>Easy model switching, offline capability</td>
+</tr>
+<tr>
+<td><strong>Visual Studio</strong></td>
+<td>IDE</td>
+<td>Advanced code development</td>
+<td>Comprehensive development features</td>
+<td>Powerful debugging, extensive language support</td>
+</tr>
+<tr>
+<td><strong>5ire MCP</strong></td>
+<td>AI Integration Platform</td>
+<td>Model context protocol implementation</td>
+<td>Standardized AI tool integration</td>
+<td>Cross-platform compatibility, protocol standardization</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.2</td>
+<td>2026-01-15</td>
+<td>Added Local Models entry to AI Tools Used section</td>
+<td>Framework Steward</td>
+<td>Include privacy-focused offline AI options</td>
+</tr>
+<tr>
+<td>V0.1.1</td>
+<td>2026-01-15</td>
+<td>Added Apps for models section with LLMstudio, Visual Studio, 5ire MCP; Updated Grok description</td>
+<td>Framework Steward</td>
+<td>Expand tool recommendations to include AI model applications</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-15</td>
+<td>Initial creation with AI, development, and platform tools</td>
+<td>Framework Steward</td>
+<td>Provide structured tool recommendations for project use</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Status:</strong> ACTIVE</p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:01 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

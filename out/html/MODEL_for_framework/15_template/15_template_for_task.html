@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15_template_for_task</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>[NUMBER]. Template for Task <strong>[TASK_TEMPLATE]</strong> <strong>[PRIO: [LEVEL]]</strong></h1>
+<p><strong>Version: V0.1</strong> <strong>Date: 2026-01-08</strong></p>
+<hr />
+<h2>Task Template Structure</h2>
+<h3>Core Template Elements:</h3>
+<ol>
+<li><strong>Title with Reference</strong>: <code># Task: [TASK_NAME]</code> <strong>[TASK_REFERENCE]</strong> <strong>[PRIO: [LEVEL]]</strong></li>
+<li><strong>Version Block</strong>: <code>**Version: V&lt;Version&gt;**</code> <code>**Date: YYYY-MM-DD**</code></li>
+<li><strong>Focus Statement</strong>: Brief description of task focus</li>
+<li><strong>Problems/Issues Section</strong>: Numbered list of problems found</li>
+<li><strong>Fix Plan Section</strong>: Checkbox list of action items</li>
+<li><strong>Status Section</strong>: Task status tracking</li>
+<li><strong>Metadata</strong>: AI model used, timestamps</li>
+</ol>
+<hr />
+<h2>Task Template Fields:</h2>
+<ul>
+<li><strong>Version Format</strong>: Use semantic versioning (MAJOR.MINOR.PATCH)
+| Field | Format | Example |
+|-------|--------|---------|
+| <strong>Task Reference</strong> | UPPER_CASE_WITH_UNDERSCORES | TASK_FIX_PROBLEMS |
+| <strong>Priority Level</strong> | HIGHEST/HIGH/MEDIUM/LOW | HIGH |
+| <strong>Version</strong> | V<MAJOR>.<MINOR>.<PATCH> | V0.1.0 |
+| <strong>Focus</strong> | Brief description | "Fix structural problems in MODEL_for_framework" |</li>
+</ul>
+<hr />
+<h2>Template Structure:</h2>
+<pre><code class="language-markdown"># Task: [TASK_NAME] **[TASK_REFERENCE]** **[PRIO: PRIORITY_LEVEL]**
+
+**Version: V&lt;Version&gt;** **Date: YYYY-MM-DD**
+
+**Focus:** [BRIEF_DESCRIPTION_OF_TASK_FOCUS]
+
+---
+
+## [PROBLEMS_FOUND/ISSUES/AREAS_COVERED]:
+
+### [NUMBER]. **[PROBLEM_TITLE]**
+- **File:** [FILE_PATH]
+- **Issue:** [DESCRIPTION_OF_ISSUE]
+- **Impact:** [EFFECT_ON_FRAMEWORK]
+- **Line/Location:** [OPTIONAL_SPECIFIC_LOCATION]
+
+### [NUMBER]. **[PROBLEM_TITLE]**
+- **File:** [FILE_PATH]
+- **Issue:** [DESCRIPTION_OF_ISSUE]
+- **Impact:** [EFFECT_ON_FRAMEWORK]
+- **Line/Location:** [OPTIONAL_SPECIFIC_LOCATION]
+
+---
+
+## [FIX_PLAN/ACTION_ITEMS/SOLUTION]:
+
+- [ ] **[TASK_ITEM_1]** - [DESCRIPTION]
+- [ ] **[TASK_ITEM_2]** - [DESCRIPTION]
+- [ ] **[TASK_ITEM_3]** - [DESCRIPTION]
+- [ ] **[TASK_ITEM_N]** - [DESCRIPTION]
+
+---
+
+## Status: [STATUS]
+**Started:** YYYY-MM-DD [TIME]h
+**Completed:** YYYY-MM-DD [TIME]h OR -
+
+**AI Model used**: [MODEL_NAME]
+
+---
+
+## Additional Sections (Optional):
+
+### **Validation Criteria**
+- [ ] [CRITERION_1]
+- [ ] [CRITERION_2]
+
+### **Dependencies**
+- [RELATED_TASK_FILE_1]
+- [RELATED_DOCUMENT_2]
+
+### **Notes**
+- [NOTE_1]
+- [NOTE_2]
+
+### **Related Files**
+- [FILE_1]
+- [FILE_2]
+</code></pre>
+<hr />
+<h2>Task Naming Convention:</h2>
+<ul>
+<li>Use format: <code>task_for_[ACTION]_[TARGET].md</code></li>
+<li>Examples:</li>
+<li><code>task_for_fixing_problems_V0.1.0.md</code></li>
+<li><code>task_for_validation_of_theorem.md</code></li>
+<li><code>task_for_refactoring_documents.md</code></li>
+<li><code>task_for_quality_assessment.md</code></li>
+</ul>
+<hr />
+<h2>Version Requirements:</h2>
+<ul>
+<li>Follow version convention: <a href="../20_convention/01_convention_for_version.md"><code>01_convention_for_version.md</code></a></li>
+</ul>
+<h2>Priority Levels:</h2>
+<ul>
+<li><strong>CRITICAL</strong>: Immediate action required, blocks other work</li>
+<li><strong>HIGH</strong>: Important issues affecting framework integrity</li>
+<li><strong>MEDIUM</strong>: Improvement opportunities, moderate impact</li>
+<li><strong>LOW</strong>: Minor enhancements, nice-to-have improvements</li>
+</ul>
+<hr />
+<h2>Task Status Workflow:</h2>
+<p>Follow status convention: <a href="../20_convention/14_convention_for_stati.md"><code>14_convention_for_stati.md</code></a></p>
+<ol>
+<li><strong>DRAFT</strong> - Initial creation, pending review</li>
+<li><strong>OPEN</strong> - Ready to be picked up</li>
+<li><strong>IN PROGRESS</strong> - Currently being worked on</li>
+<li><strong>PAUSED</strong> - Temporarily halted</li>
+<li><strong>REVIEW</strong> - Pending validation</li>
+<li><strong>DONE</strong> - All action items completed</li>
+<li><strong>ARCHIVED</strong> - Historical reference</li>
+</ol>
+<hr />
+<h2>Common Task Categories:</h2>
+<h3><strong>Problem Fixing Tasks</strong></h3>
+<pre><code>Focus: Identify and resolve issues in framework
+Sections: Problems Found → Fix Plan → Status
+</code></pre>
+<h3><strong>Validation Tasks</strong></h3>
+<pre><code>Focus: Verify framework components meet standards
+Sections: Validation Criteria → Findings → Recommendations
+</code></pre>
+<h3><strong>Improvement Tasks</strong></h3>
+<pre><code>Focus: Enhance existing framework components
+Sections: Current State → Desired State → Implementation Plan
+</code></pre>
+<h3><strong>Creation Tasks</strong></h3>
+<pre><code>Focus: Develop new framework components
+Sections: Requirements → Design → Implementation Steps
+</code></pre>
+<hr />
+<p><em>This task template ensures consistent documentation of work items, problems, and improvements across the MODEL_for_framework.</em></p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:03 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

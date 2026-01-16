@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_convention_for_file_naming</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>File Naming Convention (CONV_FOR_MFW_FILE_NAMING) <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-09</strong></p>
+<p><strong>We establish consistent file naming standards that enable programmatic processing, improve discoverability, and maintain framework organization.</strong></p>
+<p><strong>Benefits:</strong>
+- Consistent file naming enables automated framework validation and processing
+- Standardized naming conventions support programmatic documentation generation
+- Clear file naming improves framework navigation and maintenance
+- Systematic naming enables automated cross-referencing and dependency tracking
+- Framework evolution is supported through consistent naming patterns
+- File naming standards enable automated quality assurance and compliance checking</p>
+<hr />
+<h2>Referenced Standards</h2>
+<h3>Type Prefix Standards</h3>
+<p><strong>Prefix standards are defined in the dedicated convention: <a href="../17_convention_for_prefix_standards.md"><code>17_convention_for_prefix_standards.md</code></a></strong></p>
+<h3><strong>Integration with File Naming</strong></h3>
+<ul>
+<li>File names use prefixes from the approved prefix standards</li>
+<li>Prefix selection must follow semantic accuracy guidelines</li>
+<li>All prefixes must be documented in the prefix standards convention</li>
+<li>Prefix usage enables automated categorization and processing</li>
+</ul>
+<h2>Core File Naming Principles</h2>
+<h3><strong>Standard Format Structure</strong></h3>
+<pre><code>[NUMBER]_[TYPE_CONSTANT]_[DESCRIPTIVE_NAME].[EXTENSION]
+</code></pre>
+<h3><strong>Component Definitions</strong></h3>
+<ul>
+<li><strong>[NUMBER]</strong>: Sequential identifier (01, 02, 10, etc.) for ordering and uniqueness</li>
+<li><strong>[TYPE]</strong>: Content type identifier (term, axiom, theorem, template, convention, etc.)</li>
+<li><strong>[DESCRIPTIVE_NAME]</strong>: Clear, concise description using underscores, structured top-down when possible (e.g., <code>convention_for_version</code>, <code>template_for_template_OT_flexible</code>)</li>
+<li><strong>[EXTENSION]</strong>: Standard file extension (.md, .py, .json, etc.)</li>
+</ul>
+<h3><strong>Naming Rules</strong></h3>
+<ol>
+<li><strong>Numbers</strong>: normally 2 digits with leading zero (01, 02, ..., 10, 11, ...)</li>
+<li><strong>Type Prefixes</strong>: Use standardized type identifiers</li>
+<li><strong>Descriptive Names</strong>: Use lowercase with underscores, no spaces except for abbreviations</li>
+<li><strong>Extensions</strong>: Use appropriate file extensions consistently</li>
+</ol>
+<hr />
+<h2>File Naming Examples</h2>
+<h3><strong>Terminology Files</strong></h3>
+<pre><code>01_term_alignment.md
+02_term_trust.md
+10_term_system_health.md
+59_term_defect.md
+</code></pre>
+<h3><strong>Axiom Files</strong></h3>
+<pre><code>01_axiom_of_component_dual_nature.md
+05_axiom_of_criticality_driven_resource_allocation.md
+10_axiom_of_objective_achievement.md
+</code></pre>
+<h3><strong>Template Files</strong></h3>
+<pre><code>01_template_for_template_OT_minimal.md
+10_template_for_term_reference.md
+05_template_for_template_OT_flexible.md
+</code></pre>
+<h3><strong>Convention Files</strong></h3>
+<pre><code>01_convention_for_version.md
+02_convention_for_file_naming.md
+</code></pre>
+<hr />
+<h2>Directory Structure Integration</h2>
+<h3><strong>Standard Directory Organization</strong></h3>
+<pre><code>[PROJECT]/
+├── [NUMBER]_[TYPE]_[CATEGORY]/
+│   ├── [NUMBER]_[SUBTYPE]_[NAME].[EXT]
+│   └── [NUMBER]_[SUBTYPE]_[NAME].[EXT]
+</code></pre>
+<h3><strong>Directory Naming Examples</strong></h3>
+<pre><code>00_vision/
+├── 01_vision_statement.md
+└── 02_mission_objectives.md
+
+30_terminology/
+├── 01_term_alignment.md
+├── 02_term_trust.md
+└── 59_term_defect.md
+
+15_template/
+├── 01_template_for_template_OT_minimal.md
+└── 10_template_for_term_reference.md
+</code></pre>
+<hr />
+<h2>Special Naming Cases</h2>
+<h3><strong>Reference Files</strong></h3>
+<ul>
+<li>Use <code>_ref</code> suffix for reference documents</li>
+<li>Example: <code>59_term_defect_ref.md</code></li>
+</ul>
+<h3><strong>Versioned Files</strong></h3>
+<ul>
+<li>Use <code>_v[VERSION]</code> suffix for versioned documents</li>
+<li>Example: <code>01_template_v2.1.md</code></li>
+</ul>
+<h3><strong>Draft Files</strong></h3>
+<ul>
+<li>Use <code>_draft</code> suffix for draft documents</li>
+<li>Example: <code>02_convention_draft.md</code></li>
+</ul>
+<h3><strong>Archive Files</strong></h3>
+<ul>
+<li>Use <code>_archive</code> suffix for archived documents</li>
+<li>Example: <code>01_term_archive.md</code></li>
+</ul>
+<hr />
+<h2>Quality Assurance Standards</h2>
+<h3><strong>Naming Validation Rules</strong></h3>
+<ol>
+<li><strong>Format Compliance</strong>: All files must follow the standard format</li>
+<li><strong>Uniqueness</strong>: No duplicate file names within the same directory</li>
+<li><strong>Consistency</strong>: Type prefixes must be from approved list</li>
+<li><strong>Clarity</strong>: Descriptive names must be unambiguous and accurate</li>
+<li><strong>Extensions</strong>: File extensions must be appropriate for content type</li>
+</ol>
+<h3><strong>Automated Validation</strong></h3>
+<ul>
+<li><strong>Format Checking</strong>: Regular expression validation of file names</li>
+<li><strong>Directory Scanning</strong>: Automated inventory and compliance checking</li>
+<li><strong>Cross-Reference Validation</strong>: Verification of file linkages and references</li>
+<li><strong>Consistency Auditing</strong>: Regular audits of naming convention adherence</li>
+</ul>
+<h3><strong>Maintenance Procedures</strong></h3>
+<ul>
+<li><strong>Version Tracking</strong>: Document changes to naming conventions</li>
+<li><strong>Migration Planning</strong>: Procedures for renaming existing files</li>
+<li><strong>Documentation Updates</strong>: Keep naming convention documentation current</li>
+<li><strong>Training Updates</strong>: Update training materials when conventions change</li>
+</ul>
+<hr />
+<h2>Implementation Guidelines</h2>
+<h3><strong>Adoption Process</strong></h3>
+<ol>
+<li><strong>Review Existing Files</strong>: Audit current file naming patterns</li>
+<li><strong>Plan Migration</strong>: Develop strategy for renaming existing files</li>
+<li><strong>Update Templates</strong>: Modify document templates to use new conventions</li>
+<li><strong>Training</strong>: Educate team members on new naming standards</li>
+<li><strong>Implementation</strong>: Apply new conventions to new files immediately</li>
+</ol>
+<h3><strong>Tools and Automation</strong></h3>
+<ul>
+<li><strong>Validation Scripts</strong>: Automated checking of file naming compliance</li>
+<li><strong>Renaming Tools</strong>: Safe batch renaming with reference updating</li>
+<li><strong>Template Integration</strong>: Document templates that enforce naming standards</li>
+<li><strong>IDE Integration</strong>: Editor plugins for naming convention enforcement</li>
+</ul>
+<h3><strong>Monitoring and Enforcement</strong></h3>
+<ul>
+<li><strong>Regular Audits</strong>: Periodic checking of naming convention compliance</li>
+<li><strong>Automated Alerts</strong>: Notifications for naming convention violations</li>
+<li><strong>Documentation Links</strong>: Clear references to naming standards</li>
+<li><strong>Exception Process</strong>: Defined procedures for naming convention exceptions</li>
+</ul>
+<hr />
+<h2>Benefits and Impact</h2>
+<h3><strong>Operational Benefits</strong></h3>
+<ul>
+<li><strong>Improved Discoverability</strong>: Files can be easily located and identified</li>
+<li><strong>Automated Processing</strong>: Scripts can reliably process file collections</li>
+<li><strong>Quality Assurance</strong>: Automated validation of documentation structure</li>
+<li><strong>Maintenance Efficiency</strong>: Easier file management and organization</li>
+</ul>
+<h3><strong>Development Benefits</strong></h3>
+<ul>
+<li><strong>Consistency</strong>: Uniform approach across all framework components</li>
+<li><strong>Scalability</strong>: Naming conventions scale with framework growth</li>
+<li><strong>Integration</strong>: Easier integration with external tools and systems</li>
+<li><strong>Evolution</strong>: Framework can evolve while maintaining naming consistency</li>
+</ul>
+<h3><strong>Collaboration Benefits</strong></h3>
+<ul>
+<li><strong>Team Coordination</strong>: Clear expectations for file naming</li>
+<li><strong>Knowledge Transfer</strong>: Easy onboarding with standardized naming</li>
+<li><strong>Review Efficiency</strong>: Faster code and documentation reviews</li>
+<li><strong>Cross-Team Work</strong>: Consistent naming across different teams and projects</li>
+</ul>
+<hr />
+<p><em>This file naming convention establishes the foundation for consistent, maintainable, and programmatically accessible documentation across the entire framework.</em></p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.1</td>
+<td>2026-01-13</td>
+<td>update</td>
+<td>Framework Steward</td>
+<td>add changelog</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-09</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>Establish</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:03 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

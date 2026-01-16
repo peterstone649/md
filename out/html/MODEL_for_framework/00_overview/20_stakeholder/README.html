@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stakeholder Definitions [STAKEHOLDER_MFW_LIST] [PRIO: MEDIUM]</h1>
+<p><strong>Purpose:</strong> This document provides a consolidated overview of the key stakeholders involved in the creation, maintenance, and application of the framework.</p>
+<hr />
+<h2>🎯 Stakeholder Roles and Responsibilities</h2>
+<p>This section defines the primary stakeholders within the framework ecosystem. These roles provide a clear separation of concerns and ensure that all aspects of the framework's lifecycle, from development to application, are covered.</p>
+<h3>📁 Directory Structure</h3>
+<p>The stakeholder roles are organized into the following directories:</p>
+<pre><code>20_stakeholder/
+├── README.md                   # This document
+├── 10_user/                    # Consumers of the framework
+├── 20_developer/               # Builders of the framework
+├── 30_integrator_for_AI/       # Specialists for AI integration
+├── 40_implementer_for_domain/  # Specialists for domain application
+└── 50_reviewer/                # Quality and ethical oversight
+</code></pre>
+<hr />
+<h2>Stakeholder Details</h2>
+<h3>1. User (Framework Consumer)</h3>
+<ul>
+<li><strong>Directory:</strong> <code>10_user/</code></li>
+<li><strong>Description:</strong> Users are the primary consumers of the framework. They apply existing principles, follow templates, and use conventions to create their own documents and projects. Their main goal is to create consistent, high-quality work that aligns with the framework's standards.</li>
+<li><strong>Core Activities:</strong><ul>
+<li>Consuming framework documentation.</li>
+<li>Applying principles and conventions.</li>
+<li>Using standardized templates.</li>
+<li>Validating their work against framework standards.</li>
+</ul>
+</li>
+<li><strong>Related User Story:</strong> <code>US_FRAMEWORK_USER</code></li>
+</ul>
+<h3>2. Developer (Framework Builder)</h3>
+<ul>
+<li><strong>Directory:</strong> <code>20_developer/</code></li>
+<li><strong>Description:</strong> Developers are the architects and builders of the framework itself. They create, extend, and maintain the core components, such as principles, templates, and conventions. Their focus is on the framework's integrity, evolution, and usability.</li>
+<li><strong>Core Activities:</strong><ul>
+<li>Creating and refactoring principles and conventions.</li>
+<li>Designing and updating templates.</li>
+<li>Ensuring the framework's internal consistency and quality.</li>
+<li>Documenting framework components.</li>
+</ul>
+</li>
+<li><strong>Related User Story:</strong> <code>US_FRAMEWORK_DEVELOPER</code></li>
+</ul>
+<h3>3. AI Integrator</h3>
+<ul>
+<li><strong>Directory:</strong> <code>30_integrator_for_AI/</code></li>
+<li><strong>Description:</strong> The AI Integrator is a specialist role focused on the technical implementation of the stakeholder-AI collaboration principles. They configure AI tools, develop scripts, and establish workflows that ensure AI contributions are transparent, accountable, and aligned with human-defined goals.</li>
+<li><strong>Core Activities:</strong><ul>
+<li>Implementing workflows that respect the 12 collaboration principles.</li>
+<li>Configuring AI tools to respect constraints like <code>AI_LOCK</code>.</li>
+<li>Developing scripts for AI-assisted tasks (e.g., drafting, validation).</li>
+<li>Monitoring AI adherence to ethical and quality guidelines.</li>
+</ul>
+</li>
+<li><strong>Related User Story:</strong> <code>US_AI_INTEGRATION</code></li>
+</ul>
+<h3>4. Domain Implementer</h3>
+<ul>
+<li><strong>Directory:</strong> <code>40_implementer_for_domain/</code></li>
+<li><strong>Description:</strong> The Domain Implementer is a subject matter expert who adapts and applies the framework to a specific field (e.g., healthcare, finance, legal). They are responsible for creating domain-specific extensions, guidelines, and examples that make the framework relevant and practical for a particular industry.</li>
+<li><strong>Core Activities:</strong><ul>
+<li>Translating general principles into domain-specific rules.</li>
+<li>Developing domain-specific templates and vocabularies.</li>
+<li>Ensuring the framework's application is compliant with industry regulations.</li>
+<li>Providing feedback on the framework's utility from a practical standpoint.</li>
+</ul>
+</li>
+</ul>
+<h3>5. Reviewer</h3>
+<ul>
+<li><strong>Directory:</strong> <code>50_reviewer/</code></li>
+<li><strong>Description:</strong> The Reviewer is responsible for quality and ethical oversight. They assess framework components and user-generated content to ensure they meet the required standards for accuracy, clarity, consistency, and ethical soundness. Reviewers act as a critical check to maintain the integrity and trustworthiness of the framework ecosystem.</li>
+<li><strong>Core Activities:</strong><ul>
+<li>Performing quality assurance checks on new and existing components.</li>
+<li>Validating content against ethical principles, such as bias mitigation.</li>
+<li>Ensuring documentation is clear, complete, and accessible.</li>
+<li>Providing feedback to Developers and Users to improve quality.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>🔄 Stakeholder Interaction</h2>
+<p>The stakeholders collaborate in a continuous cycle:</p>
+<ol>
+<li><strong>Developers</strong> build the core framework.</li>
+<li><strong>Users</strong> consume the framework to do their work.</li>
+<li><strong>AI Integrators</strong> provide the tools for effective human-AI collaboration within the framework.</li>
+<li><strong>Domain Implementers</strong> adapt the framework for specific needs, creating new use cases.</li>
+<li><strong>Reviewers</strong> ensure that all outputs meet the required quality and ethical standards, providing feedback to all other stakeholders.</li>
+</ol>
+<p>This collaborative process ensures the framework remains robust, relevant, and trustworthy.</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.1</td>
+<td>2026-01-13</td>
+<td>update</td>
+<td>Framework Steward</td>
+<td>mini review changes</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-10</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>To formally establish accessibility as a core principle of the framework.</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:01 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

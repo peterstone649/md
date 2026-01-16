@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_user_story_assurer</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Story: Assurer [US_MFW_ASSURER] [PRIO: HIGH]</h1>
+<p><strong>Version: V1.0.0</strong> <strong>Date: 2026-01-09</strong></p>
+<p><strong>Story ID:</strong> US_MFW_ASSURER
+<strong>Stakeholder:</strong> Assurer</p>
+<hr />
+<h2>User Story</h2>
+<p><strong>As an</strong> Assurer responsible for quality and compliance,</p>
+<p><strong>I want to</strong> validate that all framework documents and tools meet standards, conventions, and quality criteria,</p>
+<p><strong>So that</strong> I can ensure framework integrity, consistency, and trustworthiness.</p>
+<hr />
+<h2>Description</h2>
+<p>Assurers are quality guardians who verify compliance with all framework standards. They review documents for active voice, clickable links, template compliance, AI_LOCK protection, and overall quality. Assurers maintain the framework's integrity by catching issues before they propagate.</p>
+<hr />
+<h2>Goals</h2>
+<ol>
+<li><strong>Validate</strong> document compliance with framework standards</li>
+<li><strong>Verify</strong> active voice usage throughout documents</li>
+<li><strong>Check</strong> clickable links function correctly</li>
+<li><strong>Ensure</strong> template &amp; convention compliance and proper structure</li>
+<li><strong>Confirm</strong> relevant rules are correctly applied</li>
+<li><strong>Document</strong> compliance status and issues found</li>
+</ol>
+<hr />
+<h2>Acceptance Criteria</h2>
+<ul>
+<li>[ ] Assurer can validate document compliance with framework standards</li>
+<li>[ ] Assurer can verify active voice usage throughout documents</li>
+<li>[ ] Assurer can check clickable links function correctly</li>
+<li>[ ] Assurer can ensure template &amp; convention compliance and proper structure</li>
+<li>[ ] Assurer can confirm relevant rules are correctly applied</li>
+<li>[ ] Assurer can document compliance status and issues found</li>
+</ul>
+<hr />
+<h2>Assurance Workflow</h2>
+<pre><code>1. SELECTION
+   └── Identify document for review
+   └── Determine applicable standards
+   └── Review type (new, modified, periodic)
+
+2. INSPECTION
+   └── Check active voice compliance
+   └── Verify clickable links work
+   └── Validate template structure
+   └── Confirm AI_LOCK markers
+   └── Review terminology consistency
+
+3. EVALUATION
+   └── Score compliance by dimension
+   └── Identify specific issues
+   └── Prioritize findings by severity
+   └── Document evidence
+
+4. REPORTING
+   └── Create compliance report
+   └── Provide specific feedback
+   └── Suggest remediation steps
+   └── Track issue resolution
+
+5. FOLLOW-UP
+   └── Verify remediation
+   └── Re-score if needed
+   └── Update compliance status
+   └── Archive review record
+</code></pre>
+<hr />
+<h2>Quality Dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Standard</th>
+<th>Validation Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Active Voice</strong></td>
+<td>RULE_ACTIVE_VOICE</td>
+<td>Manual review + automated checks</td>
+</tr>
+<tr>
+<td><strong>Clickable Links</strong></td>
+<td>RULE_CLICKABLE_LINKS</td>
+<td>Link traversal verification</td>
+</tr>
+<tr>
+<td><strong>Template Compliance</strong></td>
+<td>15_template/</td>
+<td>Structure comparison</td>
+</tr>
+<tr>
+<td><strong>AI_LOCK Protection</strong></td>
+<td>Framework standard</td>
+<td>Marker verification</td>
+</tr>
+<tr>
+<td><strong>Terminology</strong></td>
+<td>30_terminology/</td>
+<td>Consistency check</td>
+</tr>
+<tr>
+<td><strong>Naming</strong></td>
+<td>20_convention/</td>
+<td>Pattern matching</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Compliance Checklist</h2>
+<h3>General Compliance</h3>
+<ul>
+<li>[ ] Document follows approved template</li>
+<li>[ ] File naming follows conventions</li>
+<li>[ ] Version and date correctly formatted</li>
+<li>[ ] Changelog present and complete</li>
+</ul>
+<h3>Writing Standards</h3>
+<ul>
+<li>[ ] Active voice used throughout</li>
+<li>[ ] No passive voice without justification</li>
+<li>[ ] Clear, concise language</li>
+<li>[ ] Proper terminology usage</li>
+</ul>
+<h3>Navigation</h3>
+<ul>
+<li>[ ] All internal links clickable</li>
+<li>[ ] Links point to correct documents</li>
+<li>[ ] Relative paths correct</li>
+<li>[ ] No broken or dead links</li>
+</ul>
+<h3>Content Protection</h3>
+<ul>
+<li>[ ] AI_LOCK markers present where needed</li>
+<li>[ ] Protected content not modified</li>
+<li>[ ] AI_LOCK syntax correct</li>
+</ul>
+<h3>Documentation</h3>
+<ul>
+<li>[ ] Abstract present and clear</li>
+<li>[ ] Scope well-defined</li>
+<li>[ ] Examples provided where needed</li>
+<li>[ ] Cross-references complete</li>
+</ul>
+<hr />
+<h2>Review Levels</h2>
+<h3>Level 1: Quick Review</h3>
+<ul>
+<li>File naming check</li>
+<li>Template structure check</li>
+<li>AI_LOCK marker check</li>
+<li><strong>Time:</strong> ~5 minutes</li>
+</ul>
+<h3>Level 2: Standard Review</h3>
+<ul>
+<li>All Level 1 checks</li>
+<li>Active voice spot-check</li>
+<li>Link verification</li>
+<li><strong>Time:</strong> ~15 minutes</li>
+</ul>
+<h3>Level 3: Full Review</h3>
+<ul>
+<li>All Level 2 checks</li>
+<li>Complete active voice review</li>
+<li>Full terminology check</li>
+<li>Compliance scoring</li>
+<li><strong>Time:</strong> ~30 minutes</li>
+</ul>
+<hr />
+<h2>Reporting Format</h2>
+<h3>Compliance Report Template</h3>
+<pre><code class="language-markdown">## Review Summary
+- **Document:** [path/to/document.md]
+- **Reviewer:** [Assurer name]
+- **Date:** [YYYY-MM-DD]
+- **Review Level:** [1/2/3]
+- **Overall Score:** [X/100]
+
+### Issues Found
+| Severity | Issue | Location | Remediation |
+|----------|-------|----------|-------------|
+| HIGH | Active voice violation | Section 2 | Rewrite sentence |
+| MEDIUM | Broken link | Section 4 | Fix path |
+
+### Recommendations
+1. Rewrite passive constructions in Section 2
+2. Update link to point to correct file
+</code></pre>
+<hr />
+<h2>Success Metrics</h2>
+<ul>
+<li>100% of new documents receive Level 2+ review</li>
+<li>Compliance score average ≥ 85%</li>
+<li>Critical issues resolved within 48 hours</li>
+<li>Review turnaround time ≤ 24 hours for standard reviews</li>
+</ul>
+<hr />
+<h2>Tools and Resources</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Purpose</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Review Checklist</td>
+<td>Standard criteria</td>
+<td>This document</td>
+</tr>
+<tr>
+<td>Active Voice Rule</td>
+<td>Writing standard</td>
+<td><code>12_rule/01_rule_for_active_voice.md</code></td>
+</tr>
+<tr>
+<td>Clickable Links Rule</td>
+<td>Navigation standard</td>
+<td><code>12_rule/02_rule_for_clickable_links.md</code></td>
+</tr>
+<tr>
+<td>Templates</td>
+<td>Structure reference</td>
+<td><code>15_template/</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Story Status:</strong> Ready
+<strong>Estimation:</strong> 5 story points
+<strong>Sprint:</strong> TBD</p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:02 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

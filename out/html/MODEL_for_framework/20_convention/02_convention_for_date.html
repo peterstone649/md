@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_convention_for_date</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>2. Convention for Date Format (CONV_FOR_MODELFW_DATE) <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version:</strong> V1.0.0 <strong>Status:</strong> APPROVED <strong>Date:</strong> 2026-01-09
+<strong>Integration Field:</strong> MODEL_for_framework_ecosystem</p>
+<hr />
+<h2>Derivation Source</h2>
+<p>Based on ISO 8601 international date standard and framework consistency requirements</p>
+<h2>Core Inheritance</h2>
+<ul>
+<li>Inherits fundamental date formatting principles from ISO 8601 standard</li>
+<li>Adapts date representation for framework documentation requirements</li>
+<li>Extends date formatting for version control and metadata needs</li>
+<li>Maintains compatibility with international standards and system requirements</li>
+</ul>
+<h2>Rationale</h2>
+<p>Consistent date formatting is essential for maintaining clarity, enabling proper sorting, and ensuring machine readability across all framework documents and systems. This convention establishes a standardized approach that prevents ambiguity and supports automated processing.</p>
+<h2>General Reference</h2>
+<p>This convention applies to all dates in framework documents, metadata, version control, and system interfaces. All dates must follow the YYYY-MM-DD format to ensure consistency and proper functionality.</p>
+<hr />
+<h2>Abstract</h2>
+<p>This convention establishes the mandatory YYYY-MM-DD date format for all framework components. It defines the ISO 8601 compliant date representation that ensures lexicographic sorting, machine readability, and international compatibility across all framework documents and systems.</p>
+<hr />
+<h2>1. Scope and Applicability</h2>
+<h3>1.1 When to Apply</h3>
+<p>This convention applies to:
+- Document headers and metadata
+- File creation and modification dates
+- Version control timestamps
+- Reference and citation dates
+- System-generated date fields
+- User-entered date information</p>
+<h3>1.2 Target Audience</h3>
+<ul>
+<li>Framework document authors and maintainers</li>
+<li>System developers and integrators</li>
+<li>Quality assurance and validation teams</li>
+<li>Automated tooling and scripts</li>
+</ul>
+<hr />
+<h2>2. Core Definitions</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ISO 8601</strong></td>
+<td>International standard for date and time representation</td>
+<td>YYYY-MM-DD format</td>
+</tr>
+<tr>
+<td><strong>Lexicographic Sorting</strong></td>
+<td>Alphabetical sorting that works correctly for dates</td>
+<td>2026-01-01 &lt; 2026-01-02</td>
+</tr>
+<tr>
+<td><strong>Machine Readable</strong></td>
+<td>Format easily parsed by computers and databases</td>
+<td>Database imports, API processing</td>
+</tr>
+<tr>
+<td><strong>Unambiguous</strong></td>
+<td>No confusion between different regional formats</td>
+<td>MM/DD/YYYY vs DD/MM/YYYY</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. Date Format Requirements</h2>
+<h3>3.1 Standard Date Format</h3>
+<p><strong>YYYY-MM-DD</strong></p>
+<p>All dates in the framework must use the ISO 8601 date format:
+- Four-digit year (YYYY)
+- Two-digit month (MM)
+- Two-digit day (DD)
+- Separated by hyphens (-)</p>
+<h3>3.2 Format Validation Rules</h3>
+<ul>
+<li><strong>Year</strong>: Must be four digits (e.g., 2026, not 26)</li>
+<li><strong>Month</strong>: Must be two digits with leading zero (01-12)</li>
+<li><strong>Day</strong>: Must be two digits with leading zero (01-31)</li>
+<li><strong>Separators</strong>: Must use hyphens (-), not slashes (/) or dots (.)</li>
+<li><strong>No Time Zones</strong>: Date-only format, no time components unless specified</li>
+</ul>
+<h3>3.3 Invalid Formats</h3>
+<table>
+<thead>
+<tr>
+<th>Invalid Format</th>
+<th>Reason</th>
+<th>Correct Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01/07/2026</td>
+<td>Ambiguous (US vs European)</td>
+<td>2026-01-07</td>
+</tr>
+<tr>
+<td>2026/01/07</td>
+<td>Uses slashes instead of hyphens</td>
+<td>2026-01-07</td>
+</tr>
+<tr>
+<td>07.01.2026</td>
+<td>Uses dots, ambiguous</td>
+<td>2026-01-07</td>
+</tr>
+<tr>
+<td>2026-1-7</td>
+<td>Missing leading zeros</td>
+<td>2026-01-07</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4. Rules and Guidelines</h2>
+<h3>4.1 Date Formatting Rules</h3>
+<ul>
+<li><strong>Rule 1</strong>: All dates must use YYYY-MM-DD format</li>
+<li><strong>Rule 2</strong>: Month and day must include leading zeros</li>
+<li><strong>Rule 3</strong>: Hyphens must be used as separators</li>
+<li><strong>Rule 4</strong>: Four-digit years are mandatory</li>
+<li><strong>Rule 5</strong>: No alternative formats are permitted</li>
+</ul>
+<h3>4.2 Usage Guidelines</h3>
+<ul>
+<li><strong>Guideline 1</strong>: Use consistent date format in all document headers</li>
+<li><strong>Guideline 2</strong>: Apply format to file metadata and properties</li>
+<li><strong>Guideline 3</strong>: Ensure version control systems use this format</li>
+<li><strong>Guideline 4</strong>: Validate date inputs in user interfaces</li>
+<li><strong>Guideline 5</strong>: Document date format requirements in APIs</li>
+</ul>
+<h3>4.3 Implementation Guidelines</h3>
+<ul>
+<li><strong>Guideline 6</strong>: Configure systems to default to YYYY-MM-DD format</li>
+<li><strong>Guideline 7</strong>: Validate date formats in automated scripts</li>
+<li><strong>Guideline 8</strong>: Use date parsing libraries that support ISO 8601</li>
+<li><strong>Guideline 9</strong>: Document date format expectations in style guides</li>
+<li><strong>Guideline 10</strong>: Train contributors on proper date formatting</li>
+</ul>
+<hr />
+<h2>5. Naming Conventions</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>YYYY-MM-DD</strong></td>
+<td>Standard date format</td>
+<td>2026-01-09</td>
+</tr>
+<tr>
+<td><strong>Date: YYYY-MM-DD</strong></td>
+<td>Document header format</td>
+<td>Date: 2026-01-09</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6. Examples</h2>
+<h3>6.1 Correct Usage Examples</h3>
+<pre><code class="language-markdown">**Date:** 2026-01-09
+**Created:** 2026-01-07
+**Modified:** 2026-01-08
+</code></pre>
+<h3>6.2 Document Header Example</h3>
+<pre><code class="language-markdown">**Version:** V1.0.0
+**Status:** APPROVED
+**Date:** 2026-01-09
+</code></pre>
+<h3>6.3 File Metadata Example</h3>
+<pre><code class="language-yaml">created_date: 2026-01-07
+modified_date: 2026-01-09
+published_date: 2026-01-08
+</code></pre>
+<hr />
+<h2>7. Related Conventions and Documents</h2>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./01_convention_for_version.md">01_convention_for_version.md</a></td>
+<td>Version and date coordination</td>
+</tr>
+<tr>
+<td><a href="./15_convention_for_abbreviations.md">15_convention_for_abbreviations.md</a></td>
+<td>Date-related abbreviations</td>
+</tr>
+<tr>
+<td><a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 Standard</a></td>
+<td>International date standard</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>8. Implementation Notes</h2>
+<h3>8.1 Migration Path</h3>
+<p>When adopting this convention:
+1. Update existing documents to use YYYY-MM-DD format
+2. Configure systems and tools to default to this format
+3. Validate and correct any existing date inconsistencies
+4. Train contributors on the new format requirements</p>
+<h3>8.2 Tooling Support</h3>
+<ul>
+<li><strong>VS Code</strong>: Date format validation and auto-completion</li>
+<li><strong>Git</strong>: Commit date standardization</li>
+<li><strong>Scripts</strong>: Automated date format checking</li>
+<li><strong>Databases</strong>: ISO 8601 date type configuration</li>
+</ul>
+<h3>8.3 Validation Checklist</h3>
+<ul>
+<li>[ ] All document headers use YYYY-MM-DD format</li>
+<li>[ ] File metadata contains properly formatted dates</li>
+<li>[ ] Version control shows consistent date formatting</li>
+<li>[ ] User interfaces validate date input format</li>
+<li>[ ] APIs document date format expectations</li>
+</ul>
+<hr />
+<h2>9. Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.0</td>
+<td>2026-01-09</td>
+<td>Complete date format convention with ISO 8601 compliance</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>10. Appendices</h2>
+<h3>Appendix A: ISO 8601 Benefits</h3>
+<ul>
+<li><strong>International Standard</strong>: Globally recognized and accepted</li>
+<li><strong>Lexicographic Ordering</strong>: Dates sort correctly alphabetically</li>
+<li><strong>Database Compatibility</strong>: Native support in most database systems</li>
+<li><strong>API Safety</strong>: Prevents date parsing ambiguities</li>
+<li><strong>Future Proofing</strong>: Supports dates beyond year 9999</li>
+</ul>
+<h3>Appendix B: Common Date Format Mistakes</h3>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>Problem</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MM/DD/YYYY</td>
+<td>Ambiguous between US/European</td>
+<td>Use YYYY-MM-DD</td>
+</tr>
+<tr>
+<td>DD.MM.YYYY</td>
+<td>Uses dots, regional</td>
+<td>Use YYYY-MM-DD</td>
+</tr>
+<tr>
+<td>YYYY/MM/DD</td>
+<td>Uses slashes</td>
+<td>Use YYYY-MM-DD</td>
+</tr>
+<tr>
+<td>Short years</td>
+<td>Y2K problems</td>
+<td>Use full four-digit years</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>End of Convention</strong></p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:03 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

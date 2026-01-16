@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18_convention_for_priority_variants</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>18. Convention for Priority Variants <strong>[CONV_FOR_MODELFW_PRIORITY_VARIANTS]</strong> <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V0.1.0</strong> <strong>Date: 2026-01-09</strong></p>
+<p><strong>Purpose:</strong> Define priority classification systems for different document types in the framework.</p>
+<hr />
+<h2>Standard Priority Levels (General)</h2>
+<p>For most framework documents:</p>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Meaning</th>
+<th>Color Code</th>
+<th>Response Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CRITICAL</strong></td>
+<td>Immediate action required</td>
+<td>🔴 Red</td>
+<td>Within 24 hours</td>
+</tr>
+<tr>
+<td><strong>HIGH</strong></td>
+<td>Important, address soon</td>
+<td>🟠 Orange</td>
+<td>Within 1 week</td>
+</tr>
+<tr>
+<td><strong>MEDIUM</strong></td>
+<td>Standard priority</td>
+<td>🟡 Yellow</td>
+<td>Within 1 month</td>
+</tr>
+<tr>
+<td><strong>LOW</strong></td>
+<td>Nice to have, when time permits</td>
+<td>🟢 Green</td>
+<td>When resources available</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Rule-Specific Priority Levels <strong>[RULE_PRIO]</strong></h2>
+<p>Rules use a modified priority system reflecting enforcement severity:</p>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Meaning</th>
+<th>Enforcement</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MANDATORY</strong></td>
+<td>Must comply, no exceptions</td>
+<td>Blocking</td>
+<td>Security rules, ethical protections</td>
+</tr>
+<tr>
+<td><strong>REQUIRED</strong></td>
+<td>Compliance expected</td>
+<td>Non-blocking with escalation</td>
+<td>Quality standards, documentation</td>
+</tr>
+<tr>
+<td><strong>RECOMMENDED</strong></td>
+<td>Best practice, encouraged</td>
+<td>Advisory</td>
+<td>Style guidelines, efficiency tips</td>
+</tr>
+<tr>
+<td><strong>OPTIONAL</strong></td>
+<td>Available for use</td>
+<td>No enforcement</td>
+<td>Experimental features, templates</td>
+</tr>
+</tbody>
+</table>
+<h3>Rule Priority Format</h3>
+<pre><code>**[RULE_PRIO: MANDATORY | REQUIRED | RECOMMENDED | OPTIONAL]**
+</code></pre>
+<h3>Examples</h3>
+<p><strong>Mandatory Rule:</strong></p>
+<pre><code># 01. Rule for AI Lock Protection **[RULE_AI_LOCK]** **[RULE_PRIO: MANDATORY]**
+</code></pre>
+<p><strong>Recommended Rule:</strong></p>
+<pre><code># XX. Rule for Documentation Style **[RULE_DOC_STYLE]** **[RULE_PRIO: RECOMMENDED]**
+</code></pre>
+<hr />
+<h2>Axiom Priority Levels <strong>[AXIOM_PRIO]</strong></h2>
+<p>Axioms use an importance-based priority system:</p>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Meaning</th>
+<th>Impact Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FOUNDATIONAL</strong></td>
+<td>Core to framework existence</td>
+<td>All documents</td>
+</tr>
+<tr>
+<td><strong>ESSENTIAL</strong></td>
+<td>Critical to framework function</td>
+<td>All active documents</td>
+</tr>
+<tr>
+<td><strong>IMPORTANT</strong></td>
+<td>Significant to framework quality</td>
+<td>Relevant documents</td>
+</tr>
+<tr>
+<td><strong>SUPPORTING</strong></td>
+<td>Enhances framework capability</td>
+<td>Optional documents</td>
+</tr>
+</tbody>
+</table>
+<h3>Axiom Priority Format</h3>
+<pre><code>**[AXIOM_PRIO: FOUNDATIONAL | ESSENTIAL | IMPORTANT | SUPPORTING]**
+</code></pre>
+<hr />
+<h2>Principle Priority Levels <strong>[PRIO]</strong></h2>
+<p>For stakeholder-AI collaboration principles:</p>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Meaning</th>
+<th>Stakeholder Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CRITICAL</strong></td>
+<td>Non-negotiable, essential</td>
+<td>Immediate adoption required</td>
+</tr>
+<tr>
+<td><strong>HIGH</strong></td>
+<td>Very important</td>
+<td>Strong recommendation</td>
+</tr>
+<tr>
+<td><strong>MEDIUM</strong></td>
+<td>Standard importance</td>
+<td>Suggested adoption</td>
+</tr>
+<tr>
+<td><strong>LOW</strong></td>
+<td>Optional enhancement</td>
+<td>When applicable</td>
+</tr>
+</tbody>
+</table>
+<h3>Principle Priority Format</h3>
+<pre><code>**[PRIO: CRITICAL | HIGH | MEDIUM | LOW]**
+</code></pre>
+<hr />
+<h2>Task Priority Levels</h2>
+<p>For task and work item tracking:</p>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Meaning</th>
+<th>排序</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P0</strong></td>
+<td>Critical path, blocker</td>
+<td>1</td>
+<td>Framework blocker</td>
+</tr>
+<tr>
+<td><strong>P1</strong></td>
+<td>High priority</td>
+<td>2</td>
+<td>Important feature</td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td>Medium priority</td>
+<td>3</td>
+<td>Standard work</td>
+</tr>
+<tr>
+<td><strong>P3</strong></td>
+<td>Low priority</td>
+<td>4</td>
+<td>Backlog item</td>
+</tr>
+</tbody>
+</table>
+<h3>Task Priority Format</h3>
+<pre><code>**Priority:** P0 | P1 | P2 | P3
+</code></pre>
+<hr />
+<h2>Risk Priority Matrix</h2>
+<p>For risk assessment and hazard identification:</p>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Meaning</th>
+<th>Response Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CATASTROPHIC</strong></td>
+<td>Existential threat</td>
+<td>Immediate halt, remediation</td>
+</tr>
+<tr>
+<td><strong>SEVERE</strong></td>
+<td>Major impact</td>
+<td>Urgent action within 48h</td>
+</tr>
+<tr>
+<td><strong>MODERATE</strong></td>
+<td>Significant impact</td>
+<td>Address within 1 week</td>
+</tr>
+<tr>
+<td><strong>MINOR</strong></td>
+<td>Limited impact</td>
+<td>Monitor and track</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> For civilisation collapse risks (MAXIMUM), use <a href="19_convention_for_existential_risk_priority.md">19_convention_for_existential_risk_priority.md</a> instead.</p>
+</blockquote>
+<hr />
+<h2>Priority Usage Guidelines</h2>
+<h3>Document Type to Priority Mapping</h3>
+<table>
+<thead>
+<tr>
+<th>Document Type</th>
+<th>Priority Type</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rule</td>
+<td>RULE_PRIO</td>
+<td><strong>[RULE_PRIO: X]</strong></td>
+</tr>
+<tr>
+<td>Axiom</td>
+<td>AXIOM_PRIO</td>
+<td><strong>[AXIOM_PRIO: X]</strong></td>
+</tr>
+<tr>
+<td>Principle</td>
+<td>PRIO</td>
+<td><strong>[PRIO: X]</strong></td>
+</tr>
+<tr>
+<td>Task</td>
+<td>Task Priority</td>
+<td><strong>Priority: PX</strong></td>
+</tr>
+<tr>
+<td>Convention</td>
+<td>Standard</td>
+<td><strong>[PRIO: X]</strong></td>
+</tr>
+<tr>
+<td>Template</td>
+<td>Standard</td>
+<td><strong>[PRIO: X]</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Priority Placement in Documents</h3>
+<p>Place priority marker in the document header:</p>
+<pre><code># Document Title **[PRIO_TYPE: VALUE]**
+
+**Version:** V0.1.0 **Date:** YYYY-MM-DD **[PRIO_TYPE: VALUE]**
+</code></pre>
+<hr />
+<h2>Priority Transition Rules</h2>
+<h3>Escalation (Increasing Priority)</h3>
+<ul>
+<li>New information reveals higher impact</li>
+<li>Deadlines approach with incomplete work</li>
+<li>Stakeholder feedback indicates importance</li>
+</ul>
+<h3>De-escalation (Decreasing Priority)</h3>
+<ul>
+<li>Issue resolved or mitigated</li>
+<li>Circumstances change reducing impact</li>
+<li>Alternative solution implemented</li>
+</ul>
+<h3>Transition Documentation</h3>
+<p>When priority changes, document in changelog:</p>
+<pre><code>| Version | Date | Stakeholder | Priority Change | Rationale |
+|---------|------|-------------|-----------------|-----------|
+| V0.2.0 | 2026-01-10 | Author | MEDIUM → HIGH | Stakeholder feedback |
+</code></pre>
+<hr />
+<h2>Priority Review Cadence</h2>
+<table>
+<thead>
+<tr>
+<th>Priority Level</th>
+<th>Review Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CRITICAL/FOUNDATIONAL/CATASTROPHIC</td>
+<td>Weekly until resolved</td>
+</tr>
+<tr>
+<td>HIGH/P0/SEVERE</td>
+<td>Bi-weekly</td>
+</tr>
+<tr>
+<td>MEDIUM/P1</td>
+<td>Monthly</td>
+</tr>
+<tr>
+<td>LOW/P2/P3</td>
+<td>Quarterly</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> For MAXIMUM priority (civilisation risks), see <a href="19_convention_for_existential_risk_priority.md">19_convention_for_existential_risk_priority.md</a>.</p>
+</blockquote>
+<hr />
+<h2>Priority Override Protocol</h2>
+<h3>When Standard Rules Don't Apply</h3>
+<ol>
+<li><strong>Emergency Declaration</strong>: CRITICAL → CATASTROPHIC for immediate threats</li>
+<li><strong>Strategic Priority</strong>: Stakeholder alignment for framework-wide changes</li>
+<li><strong>Deprecation Path</strong>: Phased reduction from HIGH → LOW</li>
+</ol>
+<h3>Override Documentation</h3>
+<pre><code>**Priority Override:** [Standard Priority] → [Override Priority]
+**Rationale:** [Explanation]
+**Approved By:** [Authority]
+**Valid Until:** [Date or Condition]
+</code></pre>
+<hr />
+<h2>References</h2>
+<ul>
+<li><a href="14_convention_for_stati.md">14_convention_for_stati.md</a> - Status conventions</li>
+<li><a href="17_convention_for_prefix_standards.md">17_convention_for_prefix_standards.md</a> - Prefix standards</li>
+<li><a href="11_convention_for_confidence_scoring.md">11_convention_for_confidence_scoring.md</a> - Related scoring</li>
+</ul>
+<hr />
+<p><strong>Convention Reference:</strong> Apply to all documents in MODEL_for_framework and derived frameworks.</p>
+<hr />
+<p><strong>End of Convention</strong></p>
+<hr />
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Version:</strong> V0.1.0
+<strong>Date:</strong> 2026-01-09
+<strong>Priority:</strong> HIGH</p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:03 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

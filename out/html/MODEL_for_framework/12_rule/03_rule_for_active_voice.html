@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_rule_for_active_voice</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rule for Active Voice <strong>[RULE_FW_ACTIVE_VOICE]</strong> <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V0.1.0</strong> <strong>Status: OPEN</strong> <strong>Date: 2026-01-09</strong></p>
+<p><strong>Rule ID:</strong> RULE_ACTIVE_VOICE
+<strong>Applies to:</strong> All framework documentation</p>
+<hr />
+<h2>Rule Statement</h2>
+<p><strong>All framework documents SHOULD use active voice constructions. Avoid passive voice unless specifically required for emphasis or when the actor is genuinely unknown.</strong></p>
+<hr />
+<h2>Rationale</h2>
+<p>Active voice:
+- Clarifies who performs actions
+- Creates more engaging and direct communication
+- Reduces ambiguity in responsibility
+- Aligns with framework principles of clarity and precision
+- Makes sentences more concise</p>
+<hr />
+<h2>Active Voice Pattern</h2>
+<h3>Structure</h3>
+<pre><code>[ACTOR] + [ACTION] + [OBJECT]
+</code></pre>
+<h3>Examples</h3>
+<table>
+<thead>
+<tr>
+<th>Passive ❌</th>
+<th>Active ✅</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The validation was performed by the framework</td>
+<td>The framework validates</td>
+</tr>
+<tr>
+<td>Decisions must be made by contributors</td>
+<td>Contributors make decisions</td>
+</tr>
+<tr>
+<td>Changes are required by the system</td>
+<td>The system requires changes</td>
+</tr>
+<tr>
+<td>Analysis is conducted by researchers</td>
+<td>Researchers conduct analysis</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Character-Action-Subject (CAS) Strategy</h2>
+<ol>
+<li><strong>Identify the Action</strong> - What is actually happening?</li>
+<li><strong>Name the Actor</strong> - Who/what performs the action?</li>
+<li><strong>Position Actor First</strong> - Put subject at beginning of sentence</li>
+</ol>
+<h3>Application</h3>
+<ul>
+<li><strong>Step 1:</strong> Find passive constructions (was/were + past participle)</li>
+<li><strong>Step 2:</strong> Identify the actor and action</li>
+<li><strong>Step 3:</strong> Restructure: Actor → Action → Object</li>
+</ul>
+<hr />
+<h2>Acceptable Passive Voice Exceptions</h2>
+<p>Passive voice IS acceptable when:</p>
+<ol>
+<li><strong>Unknown Actor</strong></li>
+<li>
+<p>"The file was corrupted during transmission" (actor unknown)</p>
+</li>
+<li>
+<p><strong>Emphasis on Action/Object</strong></p>
+</li>
+<li>
+<p>"The decision has been made" (focus on decision, not decision-maker)</p>
+</li>
+<li>
+<p><strong>Scientific/Technical Neutrality</strong></p>
+</li>
+<li>
+<p>"The sample was heated to 100°C" (standard scientific reporting)</p>
+</li>
+<li>
+<p><strong>Deliberate De-emphasis</strong></p>
+</li>
+<li>"Mistakes were made" (when blaming is inappropriate)</li>
+</ol>
+<hr />
+<h2>Validation Checklist</h2>
+<ul>
+<li>[ ] Subject performs action in 90%+ of sentences</li>
+<li>[ ] No "was/were + past participle" patterns without reason</li>
+<li>[ ] Actor clearly identified and positioned first</li>
+<li>[ ] "By" phrases used only when actor adds value</li>
+</ul>
+<hr />
+<h2>Enforcement</h2>
+<ol>
+<li><strong>Writing Phase:</strong> Writers apply CAS strategy during drafting</li>
+<li><strong>Review Phase:</strong> Reviewers check for passive voice violations</li>
+<li><strong>Automated Checks:</strong> Tools flag passive constructions for review</li>
+</ol>
+<hr />
+<h2>References</h2>
+<ul>
+<li>Strunk &amp; White, "The Elements of Style"</li>
+<li>Williams, "Style: Toward Clarity and Grace"</li>
+<li>Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)</li>
+</ul>
+<hr />
+<p><strong>Rule Steward:</strong> Writing Standards Committee
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-08
+<strong>Review Cycle:</strong> Annual</p>
+        <footer>
+            <p>Generated on 2026-01-16 19:38:02 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>
