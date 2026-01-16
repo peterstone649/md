@@ -86,4 +86,26 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- HTML Export Files -->
+  <url>
+    <loc>https://github.com/peterstone649/md/tree/master/out/html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://github.com/peterstone649/md/blob/master/out/html/MODEL_for_framework/README_OT_detailed.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://github.com/peterstone649/md/blob/master/out/html/MODEL_for_framework/00_overview/mfw_model_for_framework.svg</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
 </urlset>

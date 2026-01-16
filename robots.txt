@@ -23,8 +23,7 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-# Disallow crawling of generated/output directories
-Disallow: /out/
+# Disallow crawling of generated/output directories (except HTML exports)
 Disallow: /__pycache__/
 Disallow: /.pytest_cache/
 Disallow: /.git/
@@ -34,6 +33,7 @@ Allow: /MODEL_for_framework/
 Allow: /MODEL_for_STKHLD_AI_COLLAB/
 Allow: /BOOK/
 Allow: /transl/
+Allow: /out/html/
 Allow: /README.md
 Allow: /CONTRIBUTING.md
 
