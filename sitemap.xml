@@ -94,15 +94,78 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Core HTML Documentation -->
+  <url>
+    <loc>https://github.com/peterstone649/md/blob/master/out/html/MODEL_for_framework/README.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <url>
     <loc>https://github.com/peterstone649/md/blob/master/out/html/MODEL_for_framework/README_OT_detailed.html</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://github.com/peterstone649/md/blob/master/out/html/MODEL_for_framework/CONTRIBUTING.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Framework Rules -->
+  <url>
+    <loc>https://github.com/peterstone649/md/blob/master/out/html/MODEL_for_framework/12_rule/01_rule_for_epistemological_uncertainty_acknowledgment.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://github.com/peterstone649/md/blob/master/out/html/MODEL_for_framework/00_overview/mfw_model_for_framework.svg</loc>
+    <loc>https://github.com/peterstone649/md/blob/master/out/html/MODEL_for_framework/12_rule/05_rule_for_IDE_editor_respect.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Templates -->
+  <url>
+    <loc>https://github.com/peterstone649/md/blob/master/out/html/MODEL_for_framework/15_template/04_template_for_rule.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Conventions -->
+  <url>
+    <loc>https://github.com/peterstone649/md/blob/master/out/html/MODEL_for_framework/20_convention/20_convention_for_uncertainty_communication.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Terminology -->
+  <url>
+    <loc>https://github.com/peterstone649/md/blob/master/out/html/MODEL_for_framework/30_terminology/72_term_system.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Axioms -->
+  <url>
+    <loc>https://github.com/peterstone649/md/blob/master/out/html/MODEL_for_framework/35_axiom/10_axiom_of_epistemological_uncertainty.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Images -->
+  <url>
+    <loc>https://github.com/peterstone649/md/blob/master/out/html/MODEL_for_framework/00_overview/mfw_model_for_framework_OT_simple.svg</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
