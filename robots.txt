@@ -1,0 +1,44 @@
+# Robots.txt for MD Repository
+# https://github.com/peterstone649/md
+
+User-agent: *
+Allow: /
+
+# Allow all major search engines to crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Disallow crawling of generated/output directories
+Disallow: /out/
+Disallow: /__pycache__/
+Disallow: /.pytest_cache/
+Disallow: /.git/
+
+# Allow crawling of documentation
+Allow: /MODEL_for_framework/
+Allow: /MODEL_for_STKHLD_AI_COLLAB/
+Allow: /BOOK/
+Allow: /transl/
+Allow: /README.md
+Allow: /CONTRIBUTING.md
+
+# Sitemap location
+Sitemap: https://github.com/peterstone649/md/blob/master/sitemap.xml
+
+# Crawl delay (be respectful to GitHub)
+Crawl-delay: 1
