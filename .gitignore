@@ -2,3 +2,6 @@ __pycache__/
 .env
 .env.example
 .pytest_cache/
+
+# Generated log files
+out/log/
