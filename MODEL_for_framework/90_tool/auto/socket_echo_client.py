@@ -78,7 +78,7 @@ class FrameworkEchoClient:
         """
         Read messages from stdin and send them to the server.
         """
-        print("📝 Reading from stdin. Press Ctrl+D (Unix) or Ctrl+Z+Enter (Windows) to end.")
+        print("Reading from stdin. Press Ctrl+D (Unix) or Ctrl+Z+Enter (Windows) to end.")
         try:
             for line in sys.stdin:
                 message = line.strip()
