@@ -1,0 +1,75 @@
+2026-01-17 08:48:22,565 - INFO - Framework Echo Server v1.0.0 initialized
+2026-01-17 08:48:22,565 - INFO - Configuration: localhost:8888, max_clients=10
+2026-01-17 08:48:22,576 - INFO - Framework Echo Server listening on localhost:8888
+2026-01-17 08:48:32,271 - INFO - New client connected: 127.0.0.1:52990
+2026-01-17 08:48:32,271 - INFO - ECHO | 127.0.0.1:52990 | successful test message
+2026-01-17 08:48:32,271 - INFO - Client 127.0.0.1:52990 disconnected
+2026-01-17 08:51:57,889 - INFO - New client connected: 127.0.0.1:63533
+2026-01-17 08:51:57,889 - INFO - ECHO | 127.0.0.1:63533 | Line 1
+2026-01-17 08:51:57,889 - INFO - New client connected: 127.0.0.1:63534
+2026-01-17 08:51:57,889 - INFO - Client 127.0.0.1:63533 disconnected
+2026-01-17 08:51:57,889 - INFO - ECHO | 127.0.0.1:63534 | Line 2
+2026-01-17 08:51:57,889 - INFO - New client connected: 127.0.0.1:63535
+2026-01-17 08:51:57,889 - INFO - Client 127.0.0.1:63534 disconnected
+2026-01-17 08:51:57,889 - INFO - ECHO | 127.0.0.1:63535 | Line 3
+2026-01-17 08:51:57,889 - INFO - Client 127.0.0.1:63535 disconnected
+2026-01-17 08:52:44,228 - INFO - New client connected: 127.0.0.1:64090
+2026-01-17 08:52:44,228 - INFO - ECHO | 127.0.0.1:64090 | Line 1
+2026-01-17 08:52:44,228 - INFO - New client connected: 127.0.0.1:64091
+2026-01-17 08:52:44,228 - INFO - Client 127.0.0.1:64090 disconnected
+2026-01-17 08:52:44,228 - INFO - ECHO | 127.0.0.1:64091 | Line 2
+2026-01-17 08:52:44,237 - INFO - New client connected: 127.0.0.1:64092
+2026-01-17 08:52:44,237 - INFO - Client 127.0.0.1:64091 disconnected
+2026-01-17 08:52:44,237 - INFO - ECHO | 127.0.0.1:64092 | Line 3
+2026-01-17 08:52:44,237 - INFO - Client 127.0.0.1:64092 disconnected
+2026-01-17 08:55:01,468 - INFO - New client connected: 127.0.0.1:62451
+2026-01-17 08:55:01,479 - INFO - ECHO | 127.0.0.1:62451 | Line 1
+2026-01-17 08:55:01,479 - INFO - Client 127.0.0.1:62451 disconnected
+2026-01-17 08:55:01,479 - INFO - New client connected: 127.0.0.1:62452
+2026-01-17 08:55:01,479 - INFO - ECHO | 127.0.0.1:62452 | Line 2
+2026-01-17 08:55:01,479 - INFO - New client connected: 127.0.0.1:62453
+2026-01-17 08:55:01,479 - INFO - Client 127.0.0.1:62452 disconnected
+2026-01-17 08:55:01,479 - INFO - ECHO | 127.0.0.1:62453 | Line 3
+2026-01-17 08:55:01,479 - INFO - Client 127.0.0.1:62453 disconnected
+2026-01-17 09:05:48,135 - INFO - Framework Echo Server v1.0.0 initialized
+2026-01-17 09:05:48,135 - INFO - Configuration: localhost:8888, max_clients=10
+2026-01-17 09:05:48,145 - INFO - Framework Echo Server listening on localhost:9999
+2026-01-17 09:33:26,794 - INFO - New client connected: 127.0.0.1:59439
+2026-01-17 09:33:26,794 - INFO - New client connected: 127.0.0.1:59440
+2026-01-17 09:33:26,794 - INFO - ECHO | 127.0.0.1:59439 | Line 1
+2026-01-17 09:33:26,794 - INFO - Client 127.0.0.1:59439 disconnected
+2026-01-17 09:33:26,809 - INFO - ECHO | 127.0.0.1:59440 | Line 2
+2026-01-17 09:33:26,809 - INFO - Client 127.0.0.1:59440 disconnected
+2026-01-17 09:33:26,811 - INFO - New client connected: 127.0.0.1:59441
+2026-01-17 09:33:26,811 - INFO - ECHO | 127.0.0.1:59441 | Line 3
+2026-01-17 09:33:26,811 - INFO - Client 127.0.0.1:59441 disconnected
+2026-01-17 09:35:14,839 - INFO - New client connected: 127.0.0.1:59522
+2026-01-17 09:35:14,839 - INFO - New client connected: 127.0.0.1:59523
+2026-01-17 09:35:14,839 - INFO - ECHO | 127.0.0.1:59522 | Line 1
+2026-01-17 09:35:14,839 - INFO - New client connected: 127.0.0.1:59524
+2026-01-17 09:35:14,839 - INFO - ECHO | 127.0.0.1:59523 | Line 2
+2026-01-17 09:35:14,839 - INFO - Client 127.0.0.1:59522 disconnected
+2026-01-17 09:35:14,839 - INFO - ECHO | 127.0.0.1:59524 | Line 3
+2026-01-17 09:35:14,839 - INFO - Client 127.0.0.1:59523 disconnected
+2026-01-17 09:35:14,839 - INFO - Client 127.0.0.1:59524 disconnected
+2026-01-17 09:38:18,544 - INFO - New client connected: 127.0.0.1:53691
+2026-01-17 09:38:18,550 - INFO - ECHO | 127.0.0.1:53691 | AI_START
+2026-01-17 09:38:18,550 - INFO - Client 127.0.0.1:53691 disconnected
+2026-01-17 09:38:26,595 - INFO - New client connected: 127.0.0.1:53700
+2026-01-17 09:38:26,690 - INFO - Client 127.0.0.1:53700 disconnected
+2026-01-17 09:47:25,112 - INFO - New client connected: 127.0.0.1:62164
+2026-01-17 09:47:25,112 - INFO - New client connected: 127.0.0.1:62165
+2026-01-17 09:47:25,112 - INFO - ECHO | 127.0.0.1:62164 | Line 1
+2026-01-17 09:47:25,112 - INFO - ECHO | 127.0.0.1:62165 | Line 2
+2026-01-17 09:47:25,112 - INFO - New client connected: 127.0.0.1:62166
+2026-01-17 09:47:25,114 - INFO - Client 127.0.0.1:62164 disconnected
+2026-01-17 09:47:25,114 - INFO - Client 127.0.0.1:62165 disconnected
+2026-01-17 09:47:25,114 - INFO - ECHO | 127.0.0.1:62166 | Line 3
+2026-01-17 09:47:25,114 - INFO - Client 127.0.0.1:62166 disconnected
+2026-01-17 09:59:12,430 - INFO - New client connected: 127.0.0.1:51162
+2026-01-17 09:59:12,432 - INFO - ECHO | 127.0.0.1:51162 | AI_START
+2026-01-17 09:59:12,432 - INFO - Client 127.0.0.1:51162 disconnected
+2026-01-17 09:59:19,944 - INFO - New client connected: 127.0.0.1:51169
+2026-01-17 09:59:19,947 - INFO - Client 127.0.0.1:51169 disconnected
+2026-01-17 10:02:52,117 - INFO - New client connected: 127.0.0.1:53618
+2026-01-17 10:02:52,130 - INFO - Client 127.0.0.1:53618 disconnected

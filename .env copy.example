@@ -2,3 +2,14 @@
 # md = markdown
 # Set the base path for the project
 PROJECT_BASE_PATH=E:/2025_11/md/
+
+# Framework Echo Server Configuration
+# Base echo server settings
+ECHO_HOST=localhost
+ECHO_PORT=8888
+ECHO_MAX_CLIENTS=10
+
+# Overlay echo server settings (inherits from base if not specified)
+ECHO_OVERLAY_HOST=localhost
+ECHO_OVERLAY_PORT=9999
+ECHO_OVERLAY_MAX_CLIENTS=10

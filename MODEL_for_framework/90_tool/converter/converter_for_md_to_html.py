@@ -27,6 +27,7 @@ CHANGELOG
 | V0.1.1  | 2026-01-10 | Updated template metadata to include Framework Version and use list format | AI Coder | To provide more detailed and consistently formatted metadata in new documents |
 
 mfw_tool.svg pulled from https://game-icons.net/1x1/lorc/gear-hammer.html
+
 """
 
 # Load environment variables from .env file
