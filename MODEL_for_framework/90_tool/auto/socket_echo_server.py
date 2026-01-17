@@ -27,6 +27,33 @@ import argparse
 from datetime import datetime
 import os
 
+def safe_print(text):
+    """
+    Print text safely across different platforms, handling Unicode/emoji issues.
+
+    Args:
+        text (str): Text to print
+    """
+    try:
+        # Try to print with emojis (works on most modern terminals)
+        print(text)
+    except UnicodeEncodeError:
+        # Fallback for Windows console or other systems that don't support emojis
+        # Replace common emojis with ASCII alternatives
+        fallback_text = text
+        emoji_map = {
+            '🚀': '[START]',
+            '📡': '[LISTEN]',
+            '👥': '[CLIENTS]',
+            '🛑': '[STOP]',
+            '❌': '[ERROR]',
+            '📤': '[SEND]',
+        }
+        for emoji, replacement in emoji_map.items():
+            fallback_text = fallback_text.replace(emoji, replacement)
+
+        print(fallback_text)
+
 __version__ = "1.0.0"
 __status__ = "ACTIVE"
 
@@ -91,11 +118,11 @@ class FrameworkEchoServer:
             self.running = True
 
             logging.info(f"Framework Echo Server listening on {self.host}:{self.port}")
-            print(f"🚀 Framework Echo Server v{__version__} started!")
-            print(f"📡 Listening on {self.host}:{self.port}")
-            print(f"👥 Max clients: {self.max_clients}")
-            print(f"🛑 Press Ctrl+C to stop")
-            print("=" * 50)
+            safe_print(f"🚀 Framework Echo Server v{__version__} started!")
+            safe_print(f"📡 Listening on {self.host}:{self.port}")
+            safe_print(f"👥 Max clients: {self.max_clients}")
+            safe_print(f"🛑 Press Ctrl+C to stop")
+            safe_print("=" * 50)
 
             while self.running:
                 try:
@@ -199,7 +226,7 @@ class FrameworkEchoServer:
                     thread.join(timeout=1.0)
 
         logging.info("Framework Echo Server shutdown complete")
-        print("\n🛑 Framework Echo Server stopped.")
+        safe_print("\n🛑 Framework Echo Server stopped.")
 
 
 def main():

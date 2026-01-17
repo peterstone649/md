@@ -15,10 +15,36 @@ License: EUPL v1.2
 import socket
 import sys
 import argparse
+import platform
 from datetime import datetime
 
 __version__ = "1.0.0"
 __status__ = "ACTIVE"
+
+def safe_print(text):
+    """
+    Print text safely across different platforms, handling Unicode/emoji issues.
+
+    Args:
+        text (str): Text to print
+    """
+    try:
+        # Try to print with emojis (works on most modern terminals)
+        print(text)
+    except UnicodeEncodeError:
+        # Fallback for Windows console or other systems that don't support emojis
+        # Replace common emojis with ASCII alternatives
+        fallback_text = text
+        emoji_map = {
+            '📤': '[SEND]',
+            '❌': '[ERROR]',
+            '🛑': '[STOP]',
+            '📝': '[INPUT]',
+        }
+        for emoji, replacement in emoji_map.items():
+            fallback_text = fallback_text.replace(emoji, replacement)
+
+        print(fallback_text)
 
 class FrameworkEchoClient:
     """
@@ -61,33 +87,33 @@ class FrameworkEchoClient:
             client_socket.close()
 
             timestamp = datetime.now().strftime('%H:%M:%S')
-            print(f"[{timestamp}] 📤 Message sent: {message}")
+            safe_print(f"[{timestamp}] 📤 Message sent: {message}")
             return True
 
         except socket.timeout:
-            print(f"❌ Connection timeout after {self.timeout} seconds")
+            safe_print(f"❌ Connection timeout after {self.timeout} seconds")
             return False
         except ConnectionRefusedError:
-            print(f"❌ Connection refused. Is the server running on {self.host}:{self.port}?")
+            safe_print(f"❌ Connection refused. Is the server running on {self.host}:{self.port}?")
             return False
         except Exception as e:
-            print(f"❌ Error sending message: {e}")
+            safe_print(f"❌ Error sending message: {e}")
             return False
 
     def send_from_stdin(self):
         """
         Read messages from stdin and send them to the server.
         """
-        print("Reading from stdin. Press Ctrl+D (Unix) or Ctrl+Z+Enter (Windows) to end.")
+        safe_print("📝 Reading from stdin. Press Ctrl+D (Unix) or Ctrl+Z+Enter (Windows) to end.")
         try:
             for line in sys.stdin:
                 message = line.strip()
                 if message:  # Skip empty lines
                     self.send_message(message)
         except KeyboardInterrupt:
-            print("\n🛑 Stopped reading from stdin.")
+            safe_print("\n🛑 Stopped reading from stdin.")
         except Exception as e:
-            print(f"❌ Error reading from stdin: {e}")
+            safe_print(f"❌ Error reading from stdin: {e}")
 
 def main():
     """Main entry point for the echo client."""
