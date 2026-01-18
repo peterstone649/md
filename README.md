@@ -124,58 +124,102 @@ Framework Development Standards:
 ├── Collaboration → Open participation and community contribution
 └── Sustainability → Long-term viability and continuous improvement
 ```
-## Translations Directory
+## 🌐 **Multilingual Translations Directory**
 
-This directory contains multilingual translations of project documentation, books, and framework models.
+This directory contains comprehensive multilingual translations of project documentation, AI research books, framework models, and technical content, enabling global accessibility and international collaboration.
 
 ### Directory Structure
 
 ```
 transl/
-└── zh/                      # Chinese translations
-    ├── 书/                   # Book translations
-    ├── 利益相关方人工智能协作模型/  # Stakeholder AI Collaboration Model (Chinese)
-    └── 框架模型/              # Framework Model (Chinese)
+├── fr/LIVRE/               # French translations ("Book")
+│   ├── 20_AI/              # AI content
+│   └── README.md           # Translated overview
+├── de/BUCH/                # German translations ("Book")
+│   ├── 20_AI/              # AI content
+│   └── README.md           # Translated overview
+├── zh/书/                   # Chinese translations ("Book")
+│   ├── 10_writing/         # Writing guides
+│   ├── 20_AI/              # AI research content
+│   └── README.md           # Translated overview
+├── es/LIBRO/               # Spanish translations ("Book")
+│   ├── 10_writing/         # Writing guides
+│   ├── 20_AI/              # AI content
+│   └── README.md           # Translated overview
+├── ja/本/                   # Japanese translations ("Book")
+│   ├── 10_writing/         # Writing guides
+│   ├── 20_AI/              # AI content
+│   └── README.md           # Translated overview
+└── ru/КНИГА/               # Russian translations ("Book")
+    ├── 10_writing/         # Writing guides
+    ├── 20_AI/              # AI content
+    └── README.md           # Translated overview
 ```
 
 ### Purpose
 
-The `transl/` directory serves as the central repository for all multilingual content, enabling the project to reach international audiences and support diverse linguistic communities.
+The `transl/` directory serves as the central multilingual repository, making critical AI research, framework documentation, and technical content accessible to international audiences in their native languages, fostering global understanding and collaboration on AI governance, ethics, and safety.
 
-### Current Languages
+### Current Languages & Coverage
 
-- **zh (Chinese)**: Primary translation language with comprehensive coverage
+- **fr (French)**: AI thesis and Life 3.0 book translations
+- **de (German)**: AI thesis and Life 3.0 book translations
+- **zh (Chinese)**: Comprehensive coverage including writing guides, AI research books, and Superintelligence content
+- **es (Spanish)**: Writing guides and Superintelligence book translations
+- **ja (Japanese)**: Writing guides and Superintelligence book translations
+- **ru (Russian)**: Writing guides and Superintelligence book translations
 
-## Content Types
+### Content Types
 
-### Books (书/)
-Contains translations of literature referenced in the project:
-- Writing and style guides
-- AI ethics and philosophy books
-- Technical literature
+#### AI Research Books (20_AI/)
+Comprehensive translations of foundational AI literature:
+- **Superintelligence by Nick Bostrom**: Fully translated to 5 languages (zh, es, ja, ru, fr)
+- **Life 3.0 by Max Tegmark**: Translated to French and German
+- **Weapons of Math Destruction by Cathy O'Neil**: Pending translations
+- **AI Revolution Thesis**: Translated to French and German
 
-### Framework Models
-- **MODEL_for_STKHLD_AI_COLLAB**: Starter for "Stakeholder AI Collaboration Model" in Chinese
-- **MODEL_for_framework**: Starter for "Framework Model in Chinese"
+#### Writing & Style Guides (10_writing/)
+Professional writing methodology translations:
+- **The Elements of Style**: Translated to Chinese, Spanish, Japanese, Russian
+- **Style: Toward Clarity and Grace**: Translated to Chinese
+
+#### Framework Models
+- **MODEL_for_STKHLD_AI_COLLAB**: Stakeholder AI Collaboration Model (Chinese starter)
+- **MODEL_for_framework**: Framework Model (Chinese starter)
 
 ### Translation Standards
 
-- Maintains conceptual accuracy while ensuring natural language flow
-- Preserves technical terminology consistency
-- Follows cultural adaptation principles where appropriate
-- Includes translator notes for complex concepts
+- **Professional Quality**: AI-assisted translations with human review and validation
+- **Technical Accuracy**: Preservation of technical terminology and conceptual precision
+- **Cultural Adaptation**: Appropriate localization while maintaining original meaning
+- **Consistency**: Standardized terminology across all languages and documents
+- **Quality Assurance**: Multi-stage review process ensuring translation accuracy
+
+### Translation Project Documentation
+
+For detailed information about the multilingual translation initiative, see:
+- **Translation Task Document**: [`out/task_translate_book_to_languages.md`](out/task_translate_book_to_languages.md)
+- **Translation Scope**: Comprehensive BOOK directory translation to 6 languages
+- **Methodology**: Systematic approach with professional translation standards
+- **Progress Tracking**: Version-controlled translation evolution
 
 ### Contributing Translations
 
-To contribute new translations:
+To contribute new translations or expand existing coverage:
 
-1. Create a new language directory using ISO 639-1 codes (e.g., `en/`, `es/`, `fr/`)
-2. Mirror the source structure from the main project directories
-3. Follow the established naming conventions
-4. Include a README.md in the language directory explaining translation scope and contributors
+1. **Language Addition**: Create new language directory using ISO 639-1 codes (e.g., `pt/`, `ko/`, `ar/`)
+2. **Structure Mirroring**: Follow the established directory structure from source content
+3. **Naming Conventions**: Use language-appropriate transliterations for directory names
+4. **Documentation**: Include README.md explaining translation scope, contributors, and coverage
+5. **Quality Standards**: Adhere to established translation standards and submit for review
 
-### Maintenance
+### Maintenance & Updates
 
-- Translations should be kept in sync with source document updates
-- Version control tracks translation evolution alongside source changes
-- Quality assurance processes ensure translation accuracy and consistency
+- **Synchronization**: Translations kept current with source document updates
+- **Version Control**: Git tracking of translation evolution alongside source changes
+- **Quality Assurance**: Ongoing validation ensuring accuracy and consistency
+- **Community Collaboration**: Open participation in translation expansion and improvement
+
+### Impact & Global Reach
+
+The multilingual translation initiative significantly enhances the project's global accessibility, making sophisticated AI research and framework methodologies available to international communities. This fosters cross-cultural understanding and collaboration on critical AI governance, safety, and ethical development topics.
