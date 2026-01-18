@@ -5,3 +5,4 @@ __pycache__/
 
 # Generated log files
 out/log/
+out/word/
