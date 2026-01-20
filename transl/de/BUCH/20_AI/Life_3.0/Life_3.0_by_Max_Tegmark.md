@@ -394,3 +394,8 @@ Verwandte Werke:
 ```
 
 **Leben 4.0 bleibt unverzichtbare Lektüre für jeden, der die Zukunft künstlicher Intelligenz verstehen und beeinflussen möchte.**
+
+| Version | Datum | Änderungen | Stakeholder | Rationale/Motivation |
+|---------|-------|------------|-------------|----------------------|
+| V0.1.1 | 2026-01-20 | Changelog hinzugefügt | Framework-Verwalter |  |
+| V0.1.0 | 2026-01-09 | Ersterstellung | KI-Framework-Verwalter | Datei erstellt |

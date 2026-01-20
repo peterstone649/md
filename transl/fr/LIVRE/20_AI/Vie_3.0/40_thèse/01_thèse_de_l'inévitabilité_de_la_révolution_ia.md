@@ -482,3 +482,8 @@ La Thèse de l'inévitabilité de la révolution IA établit que le développeme
 **La révolution IA est inévitable - notre choix n'est pas si elle se produira, mais si nous la gouvernerons sagement pour créer un avenir d'épanouissement ou faire face aux conséquences d'une transformation non gouvernée.**
 
 **En reconnaissant l'inévitabilité de la révolution IA, l'humanité gagne la sagesse de façonner notre destin technologique plutôt que d'être façonnée par lui.** 🤖🌍✨
+
+| Version | Date | Changements | Stakeholder | Rationale/Motivation |
+|---------|------|-------------|-------------|----------------------|
+| V0.1.1 | 2026-01-20 | ajouter le journal des modifications | Intendant du Framework |  |
+| V0.1.0 | 2026-01-09 | Création initiale | Intendant du Framework IA | Établir le fichier |

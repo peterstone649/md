@@ -19,6 +19,7 @@ import argparse
 import logging
 from typing import List, Set
 from pathlib import Path
+from urllib.parse import urlparse
 
 # Add converter path for imports
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'converter'))
@@ -26,6 +27,9 @@ from manager_for_dir_OT_base import ManagerForDirOTBase
 
 # Import word filter
 from handler_for_word_filter import WordFilter
+
+# Import link filter
+from filter_for_links import FilterForLinks
 
 __version__ = "1.0.0"
 __status__ = "ACTIVE"
@@ -61,6 +65,9 @@ class AnalyserForWordsInFiles:
             self.word_filter = WordFilter(word_filter_config)
         else:
             self.word_filter = word_filter
+
+        # Initialize link filter
+        self.link_filter = FilterForLinks()
 
         # Ensure output directory exists
         os.makedirs(self.output_root, exist_ok=True)
@@ -204,6 +211,127 @@ class AnalyserForWordsInFiles:
             logger.error(f"Failed to analyse file '{input_path}': {e}")
             return False
 
+    def analyse_file_as_md(self, input_path: str) -> bool:
+        """
+        Analyse a single file and generate MD output with stemmed words.
+
+        Args:
+            input_path: Path to the input file
+
+        Returns:
+            bool: True if successful, False otherwise
+        """
+        try:
+            # Read file content
+            with open(input_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+
+            # Extract unique words (this already applies filtering and lemmatization)
+            words = self.extract_words(content)
+
+            # Sort alphabetically
+            sorted_words = sorted(words)
+
+            # Generate output path (change extension to .md)
+            csv_path = self.generate_output_path(input_path)
+            output_path = os.path.splitext(csv_path)[0] + '.md'
+
+            # Ensure output directory exists
+            if not self.ensure_output_directory(output_path):
+                return False
+
+            # Write MD file
+            with open(output_path, 'w', encoding='utf-8') as mdfile:
+                # Write header
+                mdfile.write(f"# Word Analysis: {os.path.basename(input_path)}\n\n")
+                mdfile.write(f"**Total unique words:** {len(sorted_words)}\n\n")
+                mdfile.write("## Words (stemmed and filtered)\n\n")
+
+                # Write words as a list
+                for word in sorted_words:
+                    mdfile.write(f"- {word}\n")
+
+                # Add footer
+                mdfile.write(f"\n---\n*Generated from: {input_path}*\n")
+
+            logger.info(f"Analysed file '{input_path}' and saved to '{output_path}'")
+            return True
+
+        except Exception as e:
+            logger.error(f"Failed to analyse file '{input_path}': {e}")
+            return False
+
+
+
+    def show_stems_line_by_line(self, input_path: str) -> bool:
+        """
+        Create MD file with original text structure but words replaced by their stems.
+
+        Args:
+            input_path: Path to the input file
+
+        Returns:
+            bool: True if successful, False otherwise
+        """
+        try:
+            # Read file content
+            with open(input_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+
+            # Split into lines
+            lines = content.split('\n')
+
+            # Generate output path (change extension to .md)
+            csv_path = self.generate_output_path(input_path)
+            output_path = os.path.splitext(csv_path)[0] + '_stems.md'
+
+            # Ensure output directory exists
+            if not self.ensure_output_directory(output_path):
+                return False
+
+            # Get directory of input file for resolving relative links
+            input_dir = os.path.dirname(os.path.abspath(input_path))
+
+            # Process each line and create stemmed content
+            stemmed_lines = []
+            for line in lines:
+                if line.strip():  # Only process non-empty lines
+                    # First filter out broken links
+                    filtered_line = self.link_filter.filter_broken_links(line, input_dir)
+
+                    # Find all words in the filtered line
+                    words = re.findall(r'\b[a-zA-Z][a-zA-Z0-9]*\b', filtered_line)
+
+                    # Create stemmed version
+                    stemmed_line = filtered_line
+                    for word in words:
+                        # Get the stemmed version of this word
+                        # Apply filtering and lemmatization to get the stem
+                        filtered_set = self.word_filter.filter_words({word})
+                        stemmed_set = self.word_filter.lemmatize_words(filtered_set)
+
+                        if stemmed_set:
+                            stem = list(stemmed_set)[0]  # Get the stemmed word
+                            # Replace the word with its stem in the line
+                            # Use word boundaries to avoid partial replacements
+                            stemmed_line = re.sub(r'\b' + re.escape(word) + r'\b', stem, stemmed_line)
+
+                    stemmed_lines.append(stemmed_line)
+                else:
+                    stemmed_lines.append(line)
+
+            # Write MD file with stemmed content
+            with open(output_path, 'w', encoding='utf-8') as mdfile:
+                # Write the stemmed content (preserving original MD structure)
+                mdfile.write('\n'.join(stemmed_lines))
+
+            logger.info(f"Created stemmed MD file '{input_path}' and saved to '{output_path}'")
+            return True
+
+        except Exception as e:
+            logger.error(f"Failed to process file '{input_path}': {e}")
+            return False
+
 def main():
     """Main function for the analyser."""
     parser = argparse.ArgumentParser(
@@ -217,6 +345,11 @@ def main():
         '--project-base',
         help='Custom project base path'
     )
+    parser.add_argument(
+        '--stems',
+        action='store_true',
+        help='Create MD file with original text structure but words replaced by their stems'
+    )
 
     args = parser.parse_args()
 
@@ -227,7 +360,10 @@ def main():
     analyser = AnalyserForWordsInFiles(manager)
 
     # Analyse the file
-    success = analyser.analyse_file(args.input_file)
+    if args.stems:
+        success = analyser.show_stems_line_by_line(args.input_file)
+    else:
+        success = analyser.analyse_file(args.input_file)
 
     if success:
         print(f"Successfully analysed file: {args.input_file}")

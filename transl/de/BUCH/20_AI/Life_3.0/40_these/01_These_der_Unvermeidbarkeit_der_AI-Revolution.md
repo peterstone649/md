@@ -482,3 +482,8 @@ Die These der Unvermeidbarkeit der AI-Revolution stellt fest, dass die künstlic
 **Die AI-Revolution ist unvermeidbar - unsere Wahl ist nicht, ob sie geschehen wird, sondern ob wir sie weise regieren werden, um eine Zukunft des Gedeihens zu schaffen oder die Konsequenzen ungeregelter Transformation zu face.**
 
 **In der Anerkennung der Unvermeidbarkeit der AI-Revolution gewinnt die Menschheit die Weisheit, unser technologisches Schicksal zu formen, anstatt von ihm geformt zu werden.** 🤖🌍✨
+
+| Version | Datum | Änderungen | Stakeholder | Rationale/Motivation |
+|---------|-------|------------|-------------|----------------------|
+| V0.1.1 | 2026-01-20 | Changelog hinzugefügt | Framework-Verwalter |  |
+| V0.1.0 | 2026-01-09 | Ersterstellung | KI-Framework-Verwalter | Datei erstellt |

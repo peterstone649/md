@@ -394,3 +394,8 @@ Insights essentiels de la Vie 4.0 :
 ```
 
 **La Vie 4.0 reste une lecture essentielle pour quiconque cherche à comprendre et influencer l'avenir de l'intelligence artificielle et de la civilisation humaine.**
+
+| Version | Date | Changements | Stakeholder | Rationale/Motivation |
+|---------|------|-------------|-------------|----------------------|
+| V0.1.1 | 2026-01-20 | ajouter le journal des modifications | Intendant du Framework |  |
+| V0.1.0 | 2026-01-09 | Création initiale | Intendant du Framework IA | Établir le fichier |

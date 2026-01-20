@@ -402,3 +402,8 @@ Perspicacités essentielles de Superintelligence :
 **Superintelligence reste l'introduction définitive aux recherches de sécurité IA et au risque existentiel de l'intelligence artificielle. Ses analyses rigoureuses et cadres stratégiques continuent de façonner le domaine et d'influencer les discussions politiques globales sur l'IA.**
 
 **Pour quiconque s'intéresse sérieusement à l'avenir de l'intelligence artificielle et aux perspectives à long terme de l'humanité, Superintelligence est une lecture essentielle - un chef-d'œuvre d'analyse philosophique et technique exigeant une considération et une réponse soigneuses.**
+
+| Version | Date | Changements | Stakeholder | Rationale/Motivation |
+|---------|------|-------------|-------------|----------------------|
+| V0.1.1 | 2026-01-20 | ajouter le journal des modifications | Intendant du Framework |  |
+| V0.1.0 | 2026-01-09 | Création initiale | Intendant du Framework IA | Établir le fichier |

@@ -402,3 +402,8 @@ Obras Esenciales de Seguridad de IA:
 **Superinteligencia sigue siendo la introducción definitiva a la investigación de seguridad de IA y riesgo existencial de inteligencia artificial. Sus análisis rigurosos y marcos estratégicos continúan dando forma al campo e influyendo en discusiones políticas globales sobre IA.**
 
 **Para cualquiera seriamente interesado en el futuro de la inteligencia artificial y las perspectivas a largo plazo de la humanidad, Superinteligencia es lectura esencial - una obra maestra de análisis filosófico y técnico que demanda consideración y respuesta cuidadosas.**
+
+| Versión | Fecha | Cambios | Stakeholder | Rationale/Motivación |
+|---------|-------|---------|-------------|----------------------|
+| V0.1.1 | 2026-01-20 | añadir registro de cambios | Administrador del Framework |  |
+| V0.1.0 | 2026-01-09 | Creación inicial | Administrador del Framework IA | Establecer archivo |

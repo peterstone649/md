@@ -271,3 +271,8 @@ El éxito del libro radica en su enfoque en fundamentos: la buena escritura es c
 **Recomendación de Lectura**: Lee la edición original de 1959 para contexto histórico, luego suplementa con guías de estilo modernas para aplicaciones contemporáneas.
 
 **Cita Clave**: "La escritura vigorosa es concisa. Una oración no debe contener palabras innecesarias, un párrafo no debe contener oraciones innecesarias, por la misma razón que un dibujo no debe tener líneas innecesarias y una máquina no debe tener partes innecesarias."
+
+| Versión | Fecha | Cambios | Stakeholder | Rationale/Motivación |
+|---------|-------|---------|-------------|----------------------|
+| V0.1.1 | 2026-01-20 | añadir registro de cambios | Administrador del Framework |  |
+| V0.1.0 | 2026-01-09 | Creación inicial | Administrador del Framework IA | Establecer archivo |
