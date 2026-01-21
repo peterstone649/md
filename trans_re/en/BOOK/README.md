@@ -25,5 +25,5 @@ Use this content as a starting point or reference, but not as definitive or auth
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V0.1.1 | 2026-01-20 | Changelog added | Framework Administrator |  |
+| V0.1.1 | 2026-01-20 | Changelog added | Framework Administrator | backtranslate |
 | V0.1.0 | 2026-01-09 | Initial creation | Framework Administrator | Create file |
