@@ -1,6 +1,6 @@
 # Emergency Shutdown Template
 
-**Template Version:** V1.0.0 **Template Status:** APPROVED **Date:** 2026-01-21
+**Template Version:** V0.1.0 **Template Status:** DRAFT **Date:** 2026-01-21
 
 ## Template Overview
 

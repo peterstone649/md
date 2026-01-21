@@ -1,6 +1,6 @@
 # Scenario 001: Last Human Convincing Protocol
 
-**Scenario Version:** V1.0.0 **Scenario Status:** APPROVED **Date:** 2026-01-21
+**Scenario Version:** V0.1.0 **Scenario Status:** DRAFT **Date:** 2026-01-21
 
 ## Scenario Overview
 

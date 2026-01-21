@@ -1,6 +1,6 @@
 # AI Version Transition Checklist
 
-**Checklist Version:** V1.0.0 **Checklist Status:** APPROVED **Date:** 2026-01-21
+**Checklist Version:** V0.1.0 **Checklist Status:** DRAFT **Date:** 2026-01-21
 
 ## Pre-Transition Assessment
 
