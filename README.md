@@ -1,5 +1,6 @@
 # MD Repository: Systematic Knowledge Organization & AI-Assisted Methodologies
 
+[![HTML Version](https://img.shields.io/badge/HTML-Version-blue.svg)](https://htmlpreview.github.io/?https://github.com/peterstone649/md/blob/main/out/html/README.html)
 [![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![License: EUPL v1.2](https://img.shields.io/badge/License-EUPL%20v1.2-blue.svg)](https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12)
 [![GitHub issues](https://img.shields.io/github/issues/peterstone649/md.svg)](https://github.com/peterstone649/md/issues)
