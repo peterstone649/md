@@ -1,0 +1,71 @@
+name: Dependency Submission
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  schedule:
+    # Run weekly on Mondays at 8:00 UTC
+    - cron: '0 8 * * 1'
+
+jobs:
+  dependency-analysis:
+    name: Dependency Analysis
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Analyze dependencies
+      run: |
+        echo "=== Installed Packages ==="
+        pip list --format=freeze > installed_packages.txt
+        cat installed_packages.txt
+
+        echo "=== Dependency Tree ==="
+        pip install pipdeptree
+        pipdeptree
+
+        echo "=== Outdated Packages ==="
+        pip list --outdated
+
+  security-audit:
+    name: Security Audit
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run safety check
+      run: |
+        pip install safety
+        safety check --full-report
+
+    - name: Run bandit security linter
+      run: |
+        pip install bandit
+        bandit -r MODEL_for_framework/90_tool/ -f json -o security-report.json || true
+        cat security-report.json
