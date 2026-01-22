@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>requi_analyser_for_words_in_files</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Requirements Analyser for Words in Files [REQUI_WORD_ANALYSER] [PRIO: MEDIUM]</h1>
+<h2>Overview</h2>
+<p>This document specifies the requirements for an analyser tool that extracts unique words from text files and outputs them as alphabetically ordered CSV files.</p>
+<h2>Functional Requirements</h2>
+<h3>1. Command Line Interface</h3>
+<ul>
+<li>Accept a file path as command line argument</li>
+<li>Support optional project base path override via --project-base flag</li>
+<li>Provide clear success/failure output messages</li>
+</ul>
+<h3>2. Directory Management</h3>
+<ul>
+<li>Use <code>manager_for_dir_OT_base.py</code> for base directory operations</li>
+<li>Output files to <code>out/word</code> directory structure</li>
+<li>Maintain relative directory paths in output filenames</li>
+<li>Automatically create output directories as needed</li>
+</ul>
+<h3>3. Word Extraction</h3>
+<ul>
+<li>Extract unique words from file contents using regex pattern <code>\b[a-zA-Z][a-zA-Z0-9]*\b</code></li>
+<li>Apply comprehensive word filtering based on configurable YAML rules:</li>
+<li><strong>Number filtering</strong>: Filter words containing digits anywhere (e.g., "test123", "v2.1", "file_1.txt")</li>
+<li><strong>Underscore filtering</strong>: Filter words starting with underscores (e.g., "_private", "_internal")</li>
+<li><strong>File extension filtering</strong>: Filter standalone file extensions (e.g., "txt", "md", "py") AND words ending with file extensions (e.g., "README.md", "script.py")</li>
+<li><strong>Abbreviation filtering</strong>: Filter ALL CAPS abbreviations 2-5 characters (e.g., "EU", "IO", "API", "HTTP")</li>
+<li><strong>OS command filtering</strong>: Filter common operating system commands (e.g., "cd", "ls", "git", "python", "docker")</li>
+<li>Apply Porter stemming to reduce morphological variants to common stems (e.g., "contributing/contribution/contributor" → "contribut")</li>
+<li>Convert all words to lowercase for case-insensitive uniqueness</li>
+<li>Sort words alphabetically before output</li>
+</ul>
+<h4>Detailed Filtering Requirements</h4>
+<ul>
+<li><strong>Pattern-based filters</strong> (configurable via YAML):</li>
+<li>Words containing numbers: <code>.*\\d+.*</code></li>
+<li>Words starting with underscores: <code>^_.*</code></li>
+<li>File extensions: <code>^(ext|.*\\.ext)$</code> for each extension type</li>
+<li>ALL CAPS abbreviations: <code>^[A-Z]{2,5}$</code></li>
+<li><strong>Exclusion lists</strong> (configurable via YAML):</li>
+<li><strong>Operating system commands</strong> (40+ commands): cd, ls, dir, mkdir, cp, mv, rm, cat, echo, pwd, git, svn, docker, kubectl, python, pip, npm, node, java, gcc, make, etc.</li>
+<li><strong>Common abbreviations</strong>: etc, ie, eg, vs, re, cf, ibid, et, al</li>
+<li><strong>File extensions</strong> (40+ extensions): txt, md, py, js, java, c, cpp, h, html, css, xml, json, yaml, yml, ini, cfg, conf, log, csv, tsv, sql, sh, bat, ps1, exe, dll, so, dylib, etc.</li>
+<li><strong>Lemmatization options</strong>:</li>
+<li>Porter stemmer (default): Aggressive stemming for grouping related terms</li>
+<li>WordNet lemmatizer: Linguistic lemmatization with POS tagging</li>
+<li>None: No lemmatization</li>
+</ul>
+<h3>4. CSV Output</h3>
+<ul>
+<li>Generate CSV files with "Word" as header column</li>
+<li>Output one word per row</li>
+<li>Use UTF-8 encoding for file operations</li>
+</ul>
+<h3>5. Testing</h3>
+<ul>
+<li>Include comprehensive unit tests in <code>test/</code> subfolder</li>
+<li>Test word extraction logic</li>
+<li>Test output path generation</li>
+<li>Test file analysis integration</li>
+<li>Test error handling for nonexistent files</li>
+</ul>
+<h2>Non-Functional Requirements</h2>
+<h3>Performance</h3>
+<ul>
+<li>Process files efficiently for typical text file sizes</li>
+<li>Handle large files without excessive memory usage</li>
+</ul>
+<h3>Reliability</h3>
+<ul>
+<li>Handle file I/O errors gracefully</li>
+<li>Validate input file existence</li>
+<li>Ensure output directory creation succeeds</li>
+</ul>
+<h3>Compatibility</h3>
+<ul>
+<li>Compatible with Python 3.x</li>
+<li>Use standard library modules where possible</li>
+<li>Follow framework coding conventions</li>
+</ul>
+<h2>Implementation Details</h2>
+<h3>Dependencies</h3>
+<ul>
+<li><code>manager_for_dir_OT_base.py</code> for directory management</li>
+<li><code>nltk</code> (Natural Language Toolkit) for WordNet lemmatization</li>
+<li>Standard library: <code>os</code>, <code>sys</code>, <code>csv</code>, <code>re</code>, <code>argparse</code>, <code>logging</code></li>
+</ul>
+<h3>Configuration</h3>
+<ul>
+<li><strong>YAML-based configuration</strong> (<code>word_filter.yaml</code>):</li>
+<li>Version management</li>
+<li>Pattern-based filters with regex rules</li>
+<li>Exclusion lists for commands and abbreviations</li>
+<li>Processing options (case sensitivity, lemmatization method)</li>
+<li>Logging configuration</li>
+</ul>
+<h3>File Structure</h3>
+<pre><code>MODEL_for_framework/90_tool/word_ot_unique/
+├── analyser_for_words_in_files.py          # Main analyser script
+├── handler_for_word_filter.py              # Word filtering logic
+├── lemmatizer_wordnet.py                   # WordNet lemmatizer module
+├── word_filter.yaml                        # Configuration file
+├── requi_analyser_for_words_in_files.md    # Requirements documentation
+└── test/
+    └── test_analyser_for_words_in_files.py # Unit tests
+</code></pre>
+<h3>Usage Example</h3>
+<pre><code class="language-bash">python analyser_for_words_in_files.py path/to/input/file.md
+</code></pre>
+<p>This will create <code>out/word/path/to/input/file.csv</code> containing unique words from the input file.</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.9.0</td>
+<td>2026-01-18</td>
+<td>Added file extension filtering and updated number filtering to exclude words containing digits anywhere</td>
+<td>Framework Steward</td>
+<td>Improve filtering of technical terms, version numbers, and file references in text</td>
+</tr>
+<tr>
+<td>V0.8.0</td>
+<td>2026-01-18</td>
+<td>Added Porter stemmer as default lemmatization method and OS commands filtering</td>
+<td>Framework Steward</td>
+<td>Implement aggressive stemming for better word grouping and filter technical commands</td>
+</tr>
+<tr>
+<td>V0.7.0</td>
+<td>2026-01-18</td>
+<td>Added WordNet lemmatizer module and integrated lemmatization pipeline</td>
+<td>Framework Steward</td>
+<td>Improve word analysis by normalizing related word forms</td>
+</tr>
+<tr>
+<td>V0.6.0</td>
+<td>2026-01-18</td>
+<td>Renamed handle_word_filter.py to handler_for_word_filter.py for consistency</td>
+<td>Framework Steward</td>
+<td>Improve naming consistency across the codebase</td>
+</tr>
+<tr>
+<td>V0.5.0</td>
+<td>2026-01-18</td>
+<td>Implemented configurable YAML-based word filtering system with handle_word_filter.py</td>
+<td>Framework Steward</td>
+<td>Make word filtering configurable and extensible</td>
+</tr>
+<tr>
+<td>V0.4.0</td>
+<td>2026-01-18</td>
+<td>Added case pattern analysis to filter abbreviations (ALL CAPS and mixed-case)</td>
+<td>Framework Steward</td>
+<td>Improve word extraction by removing technical abbreviations</td>
+</tr>
+<tr>
+<td>V0.3.0</td>
+<td>2026-01-18</td>
+<td>Updated word extraction to filter out numbers and words starting with underscores</td>
+<td>Framework Steward</td>
+<td>Improve word extraction quality by excluding non-text elements</td>
+</tr>
+<tr>
+<td>V0.2.0</td>
+<td>2026-01-18</td>
+<td>Added comprehensive functional and non-functional requirements sections</td>
+<td>Framework Steward</td>
+<td>Complete requirements specification for analyser implementation</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-18</td>
+<td>Initial creation</td>
+<td>Framework Steward</td>
+<td>Establish requirements for analyser for words in files</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p>Generated on 2026-01-22 20:45:02 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>
