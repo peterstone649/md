@@ -1,17 +1,11 @@
-# Rule for AI_LOCK Content Protection **[RULE_MFW_AI_LOCK_PROTECTION]**
-**Version: V0.1.0** **Date: 2026-01-09**
+# AI_LOCK Content Protection [RULE_FOR_MFW_AI_LOCK_PROTECTION] **[PRIO: HIGHEST]**
 
-**Rule ID:** RULE_AI_LOCK_PROTECTION
-**Priority:** CRITICAL
-**Applies to:** All AI-assisted document processing and generation
-
----
+**Rule ID:** RULE_FOR_MFW_AI_LOCK_PROTECTION
+**Scope:** All AI-assisted document processing and generation
 
 ## Rule Statement
 
-**AI systems MUST NOT modify, rephrase, rewrite, or alter any content enclosed within `[AI_LOCK]` and `[END_AI_LOCK]` markers. These markers designate protected content that represents the authoritative, human-authored intent and MUST remain unchanged.**
-
----
+AI systems MUST NOT modify, rephrase, rewrite, or alter any content enclosed within `[AI_LOCK]` and `[END_AI_LOCK]` markers. These markers designate protected content that represents the authoritative, human-authored intent and MUST remain unchanged.
 
 ## Rationale
 
@@ -21,8 +15,6 @@ The AI_LOCK mechanism protects:
 - **Accountability Chains**: Maintains clear provenance of protected statements
 - **Framework Stability**: Ensures core principles and definitions remain consistent
 - **Trust Boundaries**: Creates explicit zones where human authority supersedes AI capability
-
----
 
 ## AI_LOCK Pattern Structure
 
@@ -41,8 +33,6 @@ The AI_LOCK mechanism protects:
 | **Axioms** | **[AI_LOCK]** The axiom of systematic framework development... **[END_AI_LOCK]** |
 | **Definitions** | **[AI_LOCK]** Consciousness is defined as... **[END_AI_LOCK]** |
 | **Policy Statements** | **[AI_LOCK]** The framework prohibits... **[END_AI_LOCK]** |
-
----
 
 ## Rules for AI Systems
 
@@ -71,8 +61,6 @@ AI systems interacting with AI_LOCK content:
 - **MUST NOT** modify the content itself
 - **MUST** indicate when content falls within protected zones
 
----
-
 ## Acceptable Modifications (Human Only)
 
 Only human stakeholders may modify AI_LOCK content through:
@@ -84,8 +72,6 @@ AI systems may suggest modifications but MUST:
 - Clearly label suggestions as "PROPOSED_CHANGES"
 - Never auto-apply changes to protected content
 - Request explicit human approval before any modification
-
----
 
 ## Violation Examples
 
@@ -125,8 +111,6 @@ We establish that the Principle of Human Sovereignty...
 **[END_AI_LOCK]**
 ```
 
----
-
 ## Validation Checklist
 
 - [ ] All AI_LOCK sections preserved exactly
@@ -136,16 +120,12 @@ We establish that the Principle of Human Sovereignty...
 - [ ] AI-generated suggestions labeled separately
 - [ ] No auto-application of changes to protected zones
 
----
-
 ## Enforcement
 
 1. **Detection Phase:** AI tools flag AI_LOCK sections during processing
 2. **Preservation Phase:** Automated checks verify marker integrity
 3. **Review Phase:** Human reviewers verify protected content remains unchanged
 4. **Violation Response:** Document violations and revert unauthorized changes
-
----
 
 ## Integration with Other Rules
 
@@ -155,17 +135,24 @@ We establish that the Principle of Human Sovereignty...
 | Framework Conventions | AI_LOCK sections override general formatting rules |
 | Writing Standards | Protected content follows original author's style |
 
----
-
 ## References
 
 - MODEL_for_stakeholder_AI_collab/30_principle/01_principle_human_sovereignty.md
 - Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)
 - Intellectual Property Rights Conventions (20_convention/16_convention_for_intellectual_property_rights.md)
 
----
-
 **Rule Steward:** Framework Standards Committee
 **Approval Status:** Framework Approved
 **Effective Date:** 2026-01-09
 **Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V0.1.0
+**Date:** 2026-01-09
+**Priority:** HIGHEST
+
+Changelog:
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Admin | Establish file |

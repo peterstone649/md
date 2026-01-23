@@ -1,16 +1,11 @@
-# Convention for Todo Markers [CONVENTION_MFW_TODO_MARKERS] [PRIO: MEDIUM]
+# Todo Markers [CONV_FOR_MFW_TODO_MARKERS] **[PRIO: MEDIUM]**
 
-**Convention ID:** CONVENTION_TODO_MARKERS
-**Priority:** MEDIUM
-**Applies to:** All task files and project documentation
-
----
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All task files and project documentation
 
 ## Convention Statement
 
 **All task files and project documentation should use standardized todo markers for progress tracking and project management.**
-
----
 
 ## Rationale
 
@@ -20,8 +15,6 @@ Standardized todo markers provide:
 - Systematic project management methodology
 - Enhanced collaboration and accountability
 - Measurable progress reporting capabilities
-
----
 
 ## Todo Marker Standards
 
@@ -57,8 +50,6 @@ All task files consistently use:
   - [x] Subtask 2 (completed)
   - [ ] Subtask 3
 ```
-
----
 
 ## Implementation Guidelines
 
@@ -119,8 +110,6 @@ Task files MUST include:
 - [ ] Make it better (subjective, not measurable)
 ```
 
----
-
 ## Task Organization Patterns
 
 ### Phase-Based Organization
@@ -164,8 +153,6 @@ Task files MUST include:
 - [ ] Advanced reporting features
 ```
 
----
-
 ## Progress Tracking Guidelines
 
 ### Update Frequency
@@ -191,8 +178,6 @@ When updating task status:
 - [ ] Create database schema for user management
 ```
 
----
-
 ## Quality Assurance
 
 ### Validation Checklist
@@ -207,8 +192,6 @@ When updating task status:
 - **Peer Review**: Team member reviews for clarity and completeness
 - **Stakeholder Review**: Relevant stakeholders approve task scope
 - **Regular Audits**: Periodic review of task file maintenance
-
----
 
 ## Integration with Framework Tools
 
@@ -228,8 +211,6 @@ Task completion status feeds into:
 - Stakeholder communications
 - Project dashboards and metrics
 - Risk assessment and mitigation planning
-
----
 
 ## Exceptions and Special Cases
 
@@ -254,8 +235,6 @@ For tasks moved to future scope:
 - [ ] Mobile app development (DEFERRED: Post-MVP)
 ```
 
----
-
 ## Training and Adoption
 
 ### New Team Member Onboarding
@@ -268,25 +247,25 @@ For tasks moved to future scope:
 - Updates to convention based on team feedback
 - Sharing of best practices across projects
 
----
-
 ## References
 
 - [CONVENTION_FILE_NAMING](../20_convention/10_convention_for_file_naming.md)
 - [CONVENTION_WRITING_STYLE](../20_convention/03_convention_for_writing_style.md)
 - [RULE_VERSION_CHANGELOG](../12_rule/04_rule_for_version_changelog_update.md)
 
----
-
-## Changelog
-
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
-|---------|------|---------|-------------|----------------------|
-| V1.0.0 | 2026-01-13 | Initial convention for standardized todo markers | Framework Steward | Establish consistent task tracking methodology across all framework projects |
-
----
-
-**Convention Steward:** Framework Management Committee
+**Rule Steward:** Framework Management Committee
 **Approval Status:** Framework Approved
 **Effective Date:** 2026-01-13
 **Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed "Applies to" to "Scope" per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V1.0.0 | 2026-01-13 | Initial convention for standardized todo markers | Framework Steward | Establish consistent task tracking methodology |
+| V0.1.0 | 2026-01-13 | Initial draft | Framework Admin | Initial creation |

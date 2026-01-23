@@ -1,8 +1,10 @@
-# 11. Term Template (TERM_TEMPLATE)
-**Version: V0.1**
-**Date: 2026-01-07**
+# Term [TPL_FOR_MFW_TERM] **[PRIO: HIGH]**
 
-**Scope:**
+**Version: V1.0.1**
+**Date: 2026-01-23**
+
+## Scope
+
 - Templates ensure consistent term documentation across all framework components
 - Standardized structure improves term clarity and discoverability
 - Template-based creation reduces ambiguity and enhances precision
@@ -10,12 +12,10 @@
 - Templates support automated cross-referencing and relationship mapping
 - Framework evolution is supported through systematic term development
 
----
-
 ## Term Template Structure
 
 ### Core Template Elements:
-1. **Title with Reference**: `# [NUMBER]. [TERM_NAME] ([CONSTANT_REFERENCE]) **[PRIO: [LEVEL]]**`
+1. **Title with Reference**: `# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**`
 
 **Version: V<Version>** **Date: YYYY-MM-DD**
 
@@ -25,9 +25,9 @@
 5. **Conclusion**: Summary statement about the term's significance
 
 ### Required Term Fields:
-- **[CONSTANT_REFERENCE]**: UPPER_CASE_WITH_UNDERSCORES format (e.g., DEF_FOR_TERM)
-- **[TERM_NAME]**: Clear, descriptive term name
-- **[PRIO_LEVEL]**: HIGHEST, HIGH, MEDIUM, or LOW priority designation
+- **[TYPE_FRAMEWORK_TITLE_ABBREV]**: e.g., [DEF_FOR_MFW_TERM]
+- **[DOCUMENT_TITLE_DESCRIPTIVE]**: Clear, descriptive term name
+- **[PRIO: XXX]**: HIGHEST, HIGH, MEDIUM, or LOW priority designation
 - **Definition Fields**: Term, Description, Formal Definition, Type Classification, Priority Level, Scientific Acceptance, Reference, Key Theories, Context
 
 ### Term Definition Block Format:
@@ -116,8 +116,6 @@
 ### Version Requirements:
 - Follow the version convention: [`01_convention_for_version.md`](../20_convention/01_convention_for_version.md)
 
----
-
 ## Term Template Usage Instructions
 
 ### Template Application Process:
@@ -147,8 +145,6 @@
 - [ ] Related terms properly categorized and linked
 - [ ] Confidence assessment includes rationale
 
----
-
 ## Term Template Benefits
 
 ### Documentation Benefits:
@@ -169,6 +165,15 @@
 - **Cross-Referencing**: Automated relationship mapping
 - **Scalability**: Consistent approach scales with framework growth
 
----
-
 *This term template establishes the methodology for creating precise, comprehensive term definitions that serve as the foundation for systematic knowledge organization and rigorous conceptual frameworks.*
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V0.1.0
+**Date:** 2026-01-07
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-07 | Initial template creation | Framework Steward | Establish term template standard |

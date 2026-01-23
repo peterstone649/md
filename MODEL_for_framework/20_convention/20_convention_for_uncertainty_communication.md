@@ -1,18 +1,11 @@
-# Convention for Uncertainty Communication **[CONVENTION_UNCERTAINTY_COMMUNICATION]** **[PRIO: HIGH]**
+# Uncertainty Communication [CONV_FOR_MFW_UNCERTAINTY_COMMUNICATION] **[PRIO: HIGH]**
 
-**Version: V0.1.0** **Date: 2026-01-15**
-
-**Convention ID:** CONVENTION_UNCERTAINTY_COMMUNICATION
-**Applies to:** All framework statements, decisions, and outputs
-**Priority:** HIGH
-
----
+**Version: V0.1.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All framework statements, decisions, and outputs
 
 ## Convention Statement
 
 **At least all critical or high impact statements, claims, and outputs within the MODEL_for_framework ecosystem MUST include explicit uncertainty declarations using the standardized communication format.**
-
----
 
 ## Uncertainty Communication Format
 
@@ -49,8 +42,6 @@
 [REQUIRES_VERIFICATION]: Yes - human stakeholder approval required
 ```
 
----
-
 ## Uncertainty Declaration Requirements
 
 ### For Human Stakeholders
@@ -66,8 +57,6 @@
 - [ ] Identify potential biases in training data affecting outputs
 - [ ] Communicate uncertainty ranges for predictions
 - [ ] Flag areas requiring human verification
-
----
 
 ## Verification Protocol
 
@@ -90,8 +79,6 @@
 | **50-69%** | Multiple stakeholder review + documentation of uncertainty |
 | **Below 50%** | Treat as hypothesis, not conclusion; explicit labeling required |
 
----
-
 ## Compliance Checklist
 
 - [ ] **U1**: All statements include a confidence assessment
@@ -103,8 +90,6 @@
 - [ ] **U7**: Low confidence statements are labeled as hypotheses
 - [ ] **U8**: Regular reassessment of confidence levels as new information emerges
 
----
-
 ## Consequences of Non-Compliance
 
 | Severity | Violation | Consequence |
@@ -113,8 +98,6 @@
 | **HIGH** | Missing uncertainty declaration in formal outputs | Output marked as non-compliant |
 | **MEDIUM** | Incomplete bias identification | Review required before proceeding |
 | **LOW** | Vague confidence statements | Feedback and correction |
-
----
 
 ## Integration with Framework Components
 
@@ -129,17 +112,18 @@
 - **[02_principle_transparency.md](../../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.md)** - Transparency requires uncertainty acknowledgment
 - **[03_principle_proportionality.md](../../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md)** - Proportionality depends on uncertainty recognition
 
----
-
-## Changelog
-
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
-|---------|------|---------|-------------|----------------------|
-| V0.1.0 | 2026-01-15 | Initial convention extracted from uncertainty rule | Framework Steward | Standardize uncertainty communication across framework |
-
----
-
-**Convention Steward:** Framework Steward
+**Rule Steward:** Framework Steward
 **Approval Status:** Framework Approved
 **Effective Date:** 2026-01-15
 **Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V0.1.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.1 | 2026-01-23 | Updated title formatting and changed "Applies to" to "Scope" per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-15 | Initial convention extracted from uncertainty rule | Framework Steward | Standardize uncertainty communication across framework |

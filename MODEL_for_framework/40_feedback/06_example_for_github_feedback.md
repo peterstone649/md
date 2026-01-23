@@ -1,6 +1,7 @@
-# GitHub Feedback Example [FB_MFW_GITHUB] [PRIO: HIGH]
+# GitHub Feedback Example [FB_MFW_GITHUB] **[PRIO: HIGH]**
 
-**Version: V1.0.0** **Date: 2026-01-12**
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** Specialized feedback template designed for GitHub integration
 
 **Purpose:** Specialized feedback template designed for GitHub integration, allowing users to provide feedback with full GitHub feature support including issues, pull requests, discussions, and GitHub-specific formatting.
 
@@ -128,45 +129,6 @@ graph TD
     G --> H[Track in Project Board]
 ```
 
-### **Automated GitHub Actions**
-```markdown
-**Automated Processing:**
-1. Feedback received → Auto-create GitHub issue
-2. Apply appropriate labels based on content
-3. Assign to relevant team members
-4. Link to project boards
-5. Set milestones when applicable
-
-**Example Automation:**
-```yaml
-- name: Process GitHub Feedback
-  uses: actions/github-feedback-processor@v1
-  with:
-    repo-token: ${{ secrets.GITHUB_TOKEN }}
-    labels: "feedback, needs-triage"
-    assignees: "team-lead, framework-maintainer"
-```
-```
-
----
-
-## 📊 GitHub Feedback Metrics
-
-### **Integration Success Metrics**
-| Metric | Target | Current |
-|--------|--------|---------|
-| **Issue Creation Time** | ≤ 24h | [Value] |
-| **PR Response Time** | ≤ 48h | [Value] |
-| **Label Accuracy** | ≥ 90% | [Value] |
-| **Stakeholder Notification** | 100% | [Value] |
-| **GitHub API Success Rate** | ≥ 99% | [Value] |
-
-### **GitHub-Specific Metrics**
-- **Issue Resolution Rate**: ≥ 85% within 7 days
-- **PR Merge Rate**: ≥ 70% acceptance
-- **Label Accuracy**: ≥ 90% correct classification
-- **User Satisfaction**: ≥ 4.5/5 for GitHub integration
-
 ---
 
 ## 🔗 Related GitHub Resources
@@ -225,17 +187,20 @@ jobs:
           labels: "feedback, template, needs-review"
 ```
 
-### **Code References**
-```markdown
-**File:** `40_feedback/10_plugin_fb_OT_detailed/10_plugin_for_fb_OT_detailed.md`
-**Line:** 42-58
-**Commit:** a1b2c3d
-**Branch:** main
-```
-
 ---
 
+**Rule Steward:** Terminology Architects
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
+
 **Framework:** MODEL_for_framework
-**Status:** ACTIVE
-**GitHub Integration:** Full support for GitHub features
-**Related:** [Quick Feedback Example](05_quick_feedback_example.md)
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V1.0.0 | 2026-01-12 | Initial creation | AI Framework Steward | Establish foundation for GitHub feedback |

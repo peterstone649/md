@@ -1,8 +1,11 @@
-# 11. Convention for Confidence Scoring **[CONV_FOR_MODELFW_CONFIDENCE_SCORING]** **[PRIO: HIGH]**
+# Confidence Scoring Convention [CONV_FOR_MFW_CONFIDENCE_SCORING] **[PRIO: HIGH]**
 
-**Version: V0.1.0** **Date: 2026-01-08**
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All axiom, term, and strategy documents in MODEL_for_framework
 
-**Purpose:** Establish standardized confidence scoring criteria for framework components to ensure credible, differentiated, and evidence-based confidence assessments.
+## Overview
+
+**Establish standardized confidence scoring criteria for framework components to ensure credible, differentiated, and evidence-based confidence assessments.**
 
 ---
 
@@ -62,4 +65,18 @@
 
 ---
 
-**Convention Reference:** Apply to all axiom, term, and strategy documents in MODEL_for_framework.
+**Rule Steward:** AI Framework Steward
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed "Applies to" to "Scope" (standardized metadata headers) | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-08 | Initial creation | AI Framework Steward | Establish standardized confidence scoring |

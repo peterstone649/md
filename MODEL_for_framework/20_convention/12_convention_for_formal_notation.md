@@ -1,8 +1,11 @@
-# 12. Convention for Formal Notation **[CONV_FOR_MODELFW_FORMAL_NOTATION]** **[PRIO: HIGH]**
+# Formal Notation Convention [CONV_FOR_MFW_FORMAL_NOTATION] **[PRIO: HIGH]**
 
-**Version: V0.1.0** **Date: 2026-01-08**
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All framework documents and derived frameworks
 
-**Purpose:** Standardize formal notation across all framework documents for consistency, readability, and rigor.
+## Overview
+
+**Standardize formal notation across all framework documents for consistency, readability, and rigor.**
 
 ---
 
@@ -86,13 +89,11 @@
 
 ---
 
----
-
 ## Document Constant Naming Convention
 
-### Framework Constant Suffix Standard
+### Framework Constant Tag Standard
 
-All constants in `E:\2025_11\_29\MODEL_for_framework` MUST use the `_FW` suffix to identify them as framework-level constants.
+All constants in `E:\2025_11\md\MODEL_for_framework` MUST use the `_MFW_` (or equivalent framework abbreviation) in the tag to identify them as framework-level constants.
 
 The following frameworks are known till now:
 
@@ -106,55 +107,51 @@ The following frameworks are known till now:
 | FIELDdesign_pattern | FDP | Field of Design Patterns |
 | FIELDgame_theory | FGT | Field of Game Theory |
 | FIELDsystem_analysis | FSYS | Field of System Analysis |
-| MODEL_for_framework | MODELFW | Framework Methodology | base |
-| MODEL_for_STKHLD_AI_COLLAB | MODELSHCOL | Stakeholder-AI Collaboration | independent
+| MODEL_for_framework | MFW | Framework Methodology | base |
+| MODEL_for_STKHLD_AI_COLLAB | MODELSHCOL | Stakeholder-AI Collaboration | independent |
 
 Note: 
-1.Type "base" is used to set the standards for all other frameworks
-2.Type "independant" signals that Stakeholder-AI Collaboration aspect cam also be used in non framework related AI collaboration
+1. Type "base" is used to set the standards for all other frameworks.
+2. Type "independent" signals that Stakeholder-AI Collaboration aspect can also be used in non-framework related AI collaboration.
 
 ### Constant Pattern
 
 | Document Type | Pattern | Example |
 |---------------|---------|---------|
-| **Convention** | `CONV_FOR_[NAME]` → `CONV_FOR_FW_[NAME]` | `CONV_FOR_STATUS_CONVENTION` → `CONV_FOR_FW_STATUS_CONVENTION` |
-| **Rule** | `RULE_[NAME]` → `RULE_FW_[NAME]` | `RULE_ACTIVE_VOICE` → `RULE_FW_ACTIVE_VOICE` |
-| **Axiom** | `AXIOM_[NAME]` → `AXIOM_FW_[NAME]` | `AXIOM_FRAMEWORK_VALIDATION` → `AXIOM_FW_FRAMEWORK_VALIDATION` |
-| **Template** | `TEMPLATE_[NAME]` → `TEMPLATE_FW_[NAME]` | `TEMPLATE_RULE` → `TEMPLATE_FW_RULE` |
-| **Priority** | `PRIO_[NAME]` → `PRIO_FW_[NAME]` | `PRIO_CRITICAL` → `PRIO_FW_CRITICAL` |
-
-### Application Examples
-
-**Before (Without FW Suffix):**
-```
-**[CONV_FOR_STATUS_CONVENTION]**
-**[RULE_ACTIVE_VOICE]**
-**[AXIOM_FRAMEWORK_VALIDITY]**
-```
-
-**After (With FW Suffix):**
-```
-**[CONV_FOR_FW_STATUS_CONVENTION]**
-**[RULE_FW_ACTIVE_VOICE]**
-**[AXIOM_FW_FRAMEWORK_VALIDITY]**
-```
+| **Convention** | `CONV_FOR_[FW]_[NAME]` | `CONV_FOR_MFW_STATUS` |
+| **Rule** | `RULE_FOR_[FW]_[NAME]` | `RULE_FOR_MFW_ACTIVE_VOICE` |
+| **Axiom** | `AXIOM_FOR_[FW]_[NAME]` | `AXIOM_FOR_MFW_VALIDITY` |
+| **Template** | `TEMPLATE_FOR_[FW]_[NAME]` | `TEMPLATE_FOR_MFW_RULE` |
+| **Priority** | `PRIO: [LEVEL]` | `**[PRIO: HIGH]**` |
 
 ### Rationale
 
 - **Uniqueness**: Prevents constant name collisions across frameworks
 - **Origin Traceability**: Constants can be traced back to MODEL_for_framework
-- **Namespace Isolation**: Clear separation from derived frameworks (e.g., MODEL_for_stakeholder_AI_collab)
+- **Namespace Isolation**: Clear separation from derived frameworks
 - **Consistency**: All framework documents follow the same pattern
 
 ### Exception Handling
 
-Derived frameworks (e.g., MODEL_for_stakeholder_AI_collab) should use their own suffix:
-- **MODEL_for_stakeholder_AI_collab** → `_SA` suffix (Stakeholder-AI)
-- **Ethosys** → `_ES` suffix
-- **FIELDCscience** → `_FS` suffix
+Derived frameworks should use their own abbreviation:
+- **MODEL_for_STKHLD_AI_COLLAB** → `MODELSHCOL`
+- **Ethosys** → `ESYS`
+- **FIELDCscience** → `FCSCI`
 
 ---
 
-**Convention Reference:** Apply to all documents in MODEL_for_framework and derived frameworks.
+**Rule Steward:** Notation Standards Committee
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
 
-**End of Convention**
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting, metadata headers, and standardized framework abbreviation to MFW per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-08 | Initial creation | AI Framework Steward | Establish formal notation standards |

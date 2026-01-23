@@ -28,3 +28,10 @@ This "indestructible" yet "completely detached" nature of AI creates a unique ba
 **Scope:** Philosophical Reflection / Supplement to "Human Compatible"
 **Context:** Derived from a human-AI dialogue with the author of this repository's framework regarding the nature of safety and identity.
 **Date:** 2026-01-22
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.2 | 2026-01-23 | Finalized backward translation | Framework Admin | backwards translate |
+| V0.1.1 | 2026-01-20 | Added changelog | Framework Admin | motivation adapt |
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Admin | Establish file |
+

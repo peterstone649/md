@@ -1,8 +1,13 @@
-# Principle of Framework Stewardship [PRINC_MFW_STEWARDSHIP] [PRIO: HIGH]
+# Framework Stewardship Principle [PRINC_FOR_MFW_STEWARDSHIP] **[PRIO: HIGH]**
+
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** Any individual or group designated as the official "Framework Steward" or "Maintainer" of the MODEL_for_framework
+
+## Overview
 
 **We establish Framework Stewardship as a core principle defining a neutral guardian role whose primary responsibility is to the long-term health, consistency, and usability of the framework for all users.**
 
-**Objectives:**
+### **Objectives**
 1. **Neutrality**: Ensure framework decisions serve the common good of all reusers, not the interests of a single project or stakeholder.
 2. **Usability**: Guarantee a high-quality user experience through rigorous testing and validation.
 3. **Consistency**: Uphold and enforce all established framework principles, rules, and conventions.
@@ -19,12 +24,6 @@ The Principle of Framework Stewardship defines the role of the "Framework Stewar
 
 ---
 
-## 1. Scope and Applicability
-
-This principle applies to any individual or group designated as the official "Framework Steward" or "Maintainer" of the `MODEL_for_framework`.
-
----
-
 ## 2. Core Definitions
 
 | Element | Definition |
@@ -34,7 +33,7 @@ This principle applies to any individual or group designated as the official "Fr
 
 ---
 
-## 4. Rules and Guidelines
+## 3. Rules and Guidelines
 
 1. **Primacy of the Framework**: The Steward's decisions MUST be justified based on the framework's declared principles and long-term health, not the immediate needs of any single project.
 2. **Guardian of Convention**: The Steward is the final arbiter on the interpretation and enforcement of all framework conventions.
@@ -43,7 +42,7 @@ This principle applies to any individual or group designated as the official "Fr
 
 ---
 
-## 8. Related Principles and Documents
+## 4. Related Principles and Documents
 
 | Reference | Relationship |
 |-----------|--------------|
@@ -52,10 +51,20 @@ This principle applies to any individual or group designated as the official "Fr
 
 ---
 
-## 10. Changelog
+**Rule Steward:** Governance Committee
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-10
+**Review Cycle:** Annual
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.2 | 2026-01-12 | Added accessibility enforcement | Framework Steward | Ensure Maintainer applies accessibility principles |
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | minor adapts in maintainer role focus |
 | V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward | To formally define the role and responsibilities of the Framework Steward. |

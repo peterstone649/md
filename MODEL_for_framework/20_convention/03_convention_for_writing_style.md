@@ -1,9 +1,7 @@
-# Writing Style Conventions **[CONV_FOR_FW_WRITING_STYLE]**
-**Version: V0.1.0** **Date: 2026-01-08**
+# Writing Style Conventions [CONV_FOR_MFW_WRITING_STYLE] **[PRIO: HIGH]**
 
-**Framework Integration:** Writing style conventions establish professional writing standards that ensure clarity, coherence, and grace in all framework documentation, based on principles from "The Elements of Style" and "Style: Toward Clarity and Grace".
-
----
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All framework documentation
 
 ## Overview
 
@@ -247,7 +245,18 @@
 
 **"Clear writing is the foundation of clear thinking, and clear thinking is the foundation of effective frameworks."**
 
-**Framework Steward:** Writing Standards Committee
+**Rule Steward:** Writing Standards Committee
 **Approval Status:** Framework Approved
 **Effective Date:** 2026-01-08
 **Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-08 | Initial draft | Framework Admin | Establish professional writing standards |

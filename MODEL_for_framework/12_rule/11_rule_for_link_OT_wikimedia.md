@@ -1,15 +1,11 @@
-# Rule for Wikimedia Links [RULE_MFW_WIKIMEDIA_LINKS] [PRIO: MEDIUM]
+# Rule for Wikimedia Links [RULE_FOR_MFW_WIKIMEDIA_LINKS] **[PRIO: MEDIUM]**
 
-**Rule ID:** RULE_WIKIMEDIA_LINKS
-**Applies to:** All framework documentation containing Wikimedia references
-
----
+**Rule ID:** RULE_FOR_MFW_WIKIMEDIA_LINKS
+**Scope:** All framework documents containing Wikimedia references
 
 ## Rule Statement
 
 **All references to Wikimedia Commons and Wikipedia resources MUST include proper attribution, licensing information, and direct links to source materials.**
-
----
 
 ## Rationale
 
@@ -20,8 +16,6 @@ Proper Wikimedia linking:
 - Supports academic and research integrity
 - Facilitates verification of referenced information
 - Aligns with framework principles of transparency and accountability
-
----
 
 ## Wikimedia Link Requirements
 
@@ -60,8 +54,6 @@ Every Wikimedia reference MUST include:
 *Diagram by [Creator Name](https://commons.wikimedia.org/wiki/User:Username) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) via Wikimedia Commons*
 ```
 
----
-
 ## Attribution Standards
 
 ### License Identification
@@ -86,8 +78,6 @@ Every Wikimedia reference MUST include:
 - Place access date in parentheses after the link
 - Update access date when content is verified or refreshed
 
----
-
 ## Implementation Guidelines
 
 ### Image Usage
@@ -106,8 +96,6 @@ Every Wikimedia reference MUST include:
 2. **Visual Separation** - Use italics or smaller text for attribution blocks
 3. **Grouping** - Group multiple attributions from same source when appropriate
 
----
-
 ## Validation Checklist
 
 - [ ] All Wikimedia links include direct URLs
@@ -118,32 +106,12 @@ Every Wikimedia reference MUST include:
 - [ ] Alt text is provided for images
 - [ ] Attribution format follows established patterns
 
----
-
 ## Enforcement
 
 1. **Content Creation:** Include complete attribution during initial drafting
 2. **Review Process:** Verify all Wikimedia references meet attribution requirements
 3. **Automated Checks:** Tools can validate link syntax and presence of attribution elements
 4. **Regular Audits:** Periodic review of all Wikimedia references for accuracy
-
----
-
-## Common Issues and Solutions
-
-### Missing Attribution
-**Problem:** Link present but no creator/license information
-**Solution:** Research original source and add complete attribution block
-
-### Broken Links
-**Problem:** Wikimedia page has moved or been deleted
-**Solution:** Find updated location or replace with alternative resource
-
-### Incomplete License Info
-**Problem:** License mentioned but not linked
-**Solution:** Add direct link to license text on Creative Commons website
-
----
 
 ## References
 
@@ -153,9 +121,18 @@ Every Wikimedia reference MUST include:
 - Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)
 - Clickable Links Rule (12_rule/10_rule_for_clickable_links.md)
 
----
-
 **Rule Steward:** Documentation Standards Committee
 **Approval Status:** Framework Approved
 **Effective Date:** 2026-01-13
 **Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V0.1.0
+**Date:** 2026-01-13
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed "Applies to" to "Scope" for consistency | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-13 | Initial creation | AI Framework Admin | Establish file |

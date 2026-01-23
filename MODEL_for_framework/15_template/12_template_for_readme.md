@@ -1,11 +1,8 @@
-**Template Version:** V0.1.0 **Template Status:** DONE **Date:** 2026-01-07
-# [FIELD_NAME] - [FIELD_DESCRIPTION] **[FIELD_IDENTIFIER]**
+# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
 
-**Version: <Version>** **Date: YYYY-MM-DD**
+**Version: V[VERSION]** **Date: YYYY-MM-DD**
 
 **Framework Integration:** [FRAMEWORK_INTEGRATION_STATEMENT]
-
----
 
 ## Overview
 
@@ -23,8 +20,6 @@
 - **[CHARACTERISTIC_3]**
 - **[CHARACTERISTIC_4]**
 
----
-
 ## Directory Structure
 
 ```
@@ -40,8 +35,6 @@ _[FRAMEWORK_LEVEL]/[FIELD_NAME]/
     ├── [CONTENT_FILE_3]                # [CONTENT_3_DESCRIPTION]
     └── [CONTENT_FILE_N]                # [CONTENT_N_DESCRIPTION]
 ```
-
----
 
 ## [CORE_FRAMEWORK_SECTION_NAME]
 
@@ -95,8 +88,6 @@ _[FRAMEWORK_LEVEL]/[FIELD_NAME]/
 - **Types:** [TYPE_LIST]
 - **[INTEGRATION_ASPECT]:** [INTEGRATION_DESCRIPTION]
 
----
-
 ## Framework Integration
 
 ### **Cross-Field Relationships**
@@ -138,8 +129,6 @@ _[FRAMEWORK_LEVEL]/[FIELD_NAME]/
 - **[APPLICATION_3]**
 - **[APPLICATION_4]**
 
----
-
 ## Usage Guidelines
 
 ### **[CONTENT_TYPE] Standards**
@@ -159,8 +148,6 @@ _[FRAMEWORK_LEVEL]/[FIELD_NAME]/
 - **[QA_PROCESS_2]**
 - **[QA_PROCESS_3]**
 - **[VALIDATION_PROCEDURES]**
-
----
 
 ## Development Status
 
@@ -182,8 +169,6 @@ _[FRAMEWORK_LEVEL]/[FIELD_NAME]/
 - **[FUTURE_AREA_3]**
 - **[FUTURE_AREA_4]**
 
----
-
 ## Key Contributions
 
 ### **[CONTRIBUTION_TYPE_1]**
@@ -204,40 +189,20 @@ _[FRAMEWORK_LEVEL]/[FIELD_NAME]/
 - **[CONTRIBUTION_3]**
 - **[CONTRIBUTION_4]**
 
----
-
 ## Conclusion
 
 **[FIELD_NAME]** [CONCLUSION_STATEMENT]
 
 **[FIELD_NAME]** [MISSION_STATEMENT]
 
-## Contact and Development
-
-**Framework Steward:** [FRAMEWORK_STEWARD]
-**Development Status:** [DEVELOPMENT_STATUS]
-**Version Control:** [VERSION_CONTROL_SYSTEM]
-**Documentation Standards:** [DOCUMENTATION_STANDARDS]
-
----
-
-**[INSPIRATIONAL_QUOTE_1]**
-
-**[INSPIRATIONAL_QUOTE_2]**
-
-**[INSPIRATIONAL_QUOTE_3]**
-
----
-
 ## Template Usage Instructions
 
 ### **Required Replacements**
-1. **[FIELD_NAME]** → Replace with specific field name (e.g., "FIELDCscience")
-2. **[FIELD_DESCRIPTION]** → Replace with field description (e.g., "Scientific Methodology Framework")
-3. **[FIELD_IDENTIFIER]** → Replace with field identifier (e.g., "FIELD_SCIENCE")
-4. **[VERSION]** → Replace with current version (e.g., "1.0")
-5. **[CURRENT_DATE]** → Replace with current date (e.g., "2026-01-07")
-6. **[FRAMEWORK_INTEGRATION_STATEMENT]** → Replace with field integration statement
+1. **[DOCUMENT_TITLE_DESCRIPTIVE]** → Replace with specific field name (e.g., "FIELDCscience Overview")
+2. **[TYPE_FRAMEWORK_TITLE_ABBREV]** → Replace with field identifier (e.g., "[RDME_FOR_FIELD_SCIENCE]")
+3. **[VERSION]** → Replace with current version (e.g., "1.0")
+4. **[CURRENT_DATE]** → Replace with current date (e.g., "2026-01-07")
+5. **[FRAMEWORK_INTEGRATION_STATEMENT]** → Replace with field integration statement
 
 ### **Section-Specific Replacements**
 - **Overview Section:** Replace all [PLACEHOLDER] items with field-specific content
@@ -260,3 +225,19 @@ _[FRAMEWORK_LEVEL]/[FIELD_NAME]/
 - [ ] Framework integration statements are accurate
 - [ ] Contact information is current
 - [ ] Inspirational quotes are relevant to field focus
+
+**Rule Steward:** [FRAMEWORK_STEWARD]
+**Approval Status:** [STATUS]
+**Effective Date:** YYYY-MM-DD
+**Review Cycle:** [CYCLE]
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V0.1.0
+**Date:** 2026-01-07
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-07 | Initial template creation | Framework Steward | Establish readme template standard |

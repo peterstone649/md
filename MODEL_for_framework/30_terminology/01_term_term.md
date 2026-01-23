@@ -1,4 +1,7 @@
-# Term [DEF_FOR_TERM] [PRIO: HIGHEST]
+# Term [TERM_FOR_MFW_TERM] **[PRIO: HIGHEST]**
+
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All framework terminology and conceptual organization
 
 *   **Term:** A precisely defined conceptual unit that represents a specific idea, concept, or entity within a knowledge domain, characterized by clear boundaries, consistent usage, and established relationships to other terms in the conceptual framework.
 *   **Description:** In this scientific framework, a term represents the fundamental building block of knowledge organization and communication. Terms establish precise conceptual boundaries that enable clear thinking, consistent communication, and systematic knowledge development. Each term serves as a standardized reference point that connects ideas, enables rigorous analysis, and supports the construction of complex conceptual frameworks. Terms transform ambiguous language into precise conceptual tools.
@@ -140,33 +143,20 @@ Terms represent the fundamental units of precise thought and communication withi
 - **Contextual Stability:** Core concept with universal application across all knowledge domains
 - **Practical Application:** Essential for all systematic knowledge organization and communication
 
-## Related Terms
+**Term Steward:** Terminology Architects
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
 
-**Reference Terms:**
-- [Definition](02_term_definition.md) - Precise specification of meaning
-- [Context](03_term_context.md) - Domain-specific application context
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
-**Prerequisite Terms:**
-- [Model](04_term_model.md) - Conceptual framework for organization
-- [Abstraction](05_term_abstraction.md) - Level of conceptualization
+## Changelog
 
-**Related Terms:**
-- [Framework](61_term_writing_fundamentals.md) - Structured approach to knowledge organization
-- [Theory](06_term_theory.md) - Coherent group of general propositions
-- [Relation](08_term_relation.md) - Connections between concepts
-
-**Dependent Terms:**
-- [Validation](07_term_validation_of_framework.md) - Verification of framework integrity
-- [Defect Reference](59_term_defect_ref.md) - Reference for identifying issues
-
-**See Also:**
-- [Cross-References to Philosophy](60_cross_references_to_philosophy.md) - Philosophical foundations
-- [Terminology Standards](..//20_convention/03_convention_for_writing_style.md) - Writing conventions
-
-## 10. Changelog
-
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.2 | 2026-01-13 | Add access dates to Wikipedia references | Framework Steward | Comply with Wikimedia links rule requiring access date documentation |
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
 | V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward | To formally define the role and responsibilities of the Framework Steward. |

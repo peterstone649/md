@@ -1,9 +1,8 @@
-# Framework Document Writing Template **[WRITING_TEMPLATE]**
-**Version: V0.1.0** **Date: 2026-01-08**
+# Writing Framework Document [TPL_FOR_MFW_WRITING_DOC] **[PRIO: HIGH]**
+
+**Version: V1.0.1** **Date: 2026-01-23**
 
 **Framework Integration:** Framework document writing template provides standardized structure and style guidelines for creating clear, professional documentation that effectively communicates complex philosophical and technical concepts.
-
----
 
 ## Template Overview
 
@@ -21,22 +20,22 @@
 - **Quality Validation** - Built-in review and improvement processes
 - **Framework Integration** - Consistent with overall framework methodology
 
----
-
 ## Document Structure Template
 
 ### **1. Header Section** **[HEADER]**
 
 #### **Title** **[TITLE]**
-**Format:** Clear, specific title using active voice and concrete terms
+**Format:** `# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**`
 **Guidelines:**
 - State main concept first
 - Use active construction when possible
 - Include key qualifiers for specificity
+- **Mandatory bolding** for priority tag: `**[PRIO: XXX]**`
+- **Square brackets** for abbreviation: `[TYPE_FOR_FW_PURPOSE]`
 
 **Examples:**
-- **Good:** "Framework Validates Theorems Through Systematic Verification"
-- **Avoid:** "Theorem Validation Framework Implementation"
+- **Good:** `# Active Voice [RULE_FOR_MFW_ACTIVE_VOICE] **[PRIO: HIGH]**`
+- **Avoid:** `# Rule for Active Voice (RULE_ACTIVE_VOICE)`
 
 #### **Metadata** **[METADATA]**
 ```
@@ -53,8 +52,6 @@
 
 **Word Count:** 50-100 words
 **Style:** Active voice, concrete examples, clear transitions
-
----
 
 ### **2. Introduction Section** **[INTRODUCTION]**
 
@@ -77,8 +74,6 @@
 - What document covers
 - What document does not cover
 - Boundaries and limitations
-
----
 
 ### **3. Main Content Section** **[CONTENT]**
 
@@ -133,8 +128,6 @@ Concrete: "The framework validates theorems using three steps: premise verificat
 - **Transitions:** Explicit connectors (therefore, however, consequently)
 - **Logical Progression:** Clear relationship between ideas
 
----
-
 ### **4. Validation Section** **[VALIDATION]**
 
 #### **Quality Checklist** **[CHECKLIST]**
@@ -151,8 +144,6 @@ Concrete: "The framework validates theorems using three steps: premise verificat
 - Coherence: Do ideas flow logically?
 - Concision: Are unnecessary words eliminated?
 - Precision: Are terms defined and examples concrete?
-
----
 
 ### **5. Conclusion Section** **[CONCLUSION]**
 
@@ -171,8 +162,6 @@ Concrete: "The framework validates theorems using three steps: premise verificat
 **Purpose:** Memorable closing that reinforces main message
 **Style:** Clear, direct, forward-looking
 
----
-
 ### **6. References/Appendices** **[REFERENCES]**
 
 #### **Integration References** **[INTEGRATION]**
@@ -185,57 +174,37 @@ Concrete: "The framework validates theorems using three steps: premise verificat
 - Technical specifications
 - Extended validations
 
----
-
 ## Writing Style Guidelines Integration
 
 ### **Sentence-Level Guidelines** **[SENTENCE_STYLE]**
 
 #### **Active Voice Priority**
 **Rule:** Use active voice unless passive is required for emphasis
-**Validation:** Subject performs action clearly
-**Framework Application:** Show philosophical operations actively
 
 #### **Concision Standards**
 **Rule:** Each word must contribute unique meaning
-**Validation:** Could any word be removed without losing clarity?
-**Framework Application:** Preserve philosophical precision while eliminating redundancy
 
 #### **Concrete Language Requirement**
 **Rule:** Use specific, tangible terms that create mental images
-**Validation:** Can concept be illustrated with concrete example?
-**Framework Application:** Make abstract philosophical concepts accessible
 
 ### **Paragraph-Level Guidelines** **[PARAGRAPH_STYLE]**
 
 #### **Topic Sentence Requirement**
 **Rule:** Every paragraph begins with clear statement of main idea
-**Validation:** All sentences support the topic sentence
-**Framework Application:** Organize complex philosophical discussions
 
 #### **Coherence Standards**
 **Rule:** Ideas connect logically with explicit transitions
-**Validation:** Reader can follow argument without confusion
-**Framework Application:** Maintain logical flow in philosophical arguments
 
 #### **Unity Principle**
 **Rule:** One main idea per paragraph
-**Validation:** Paragraph has clear focus and purpose
-**Framework Application:** Break complex topics into digestible units
 
 ### **Document-Level Guidelines** **[DOCUMENT_STYLE]**
 
 #### **Old-to-New Flow**
 **Rule:** Familiar information precedes unfamiliar throughout document
-**Validation:** Reader knowledge builds progressively
-**Framework Application:** Guide readers through complex philosophical systems
 
 #### **Logical Progression**
 **Rule:** Ideas build systematically from foundation to application
-**Validation:** Each section depends on previous sections
-**Framework Application:** Create hierarchical understanding of framework concepts
-
----
 
 ## Quality Assurance Process
 
@@ -261,40 +230,15 @@ Concrete: "The framework validates theorems using three steps: premise verificat
 3. **Improve Flow:** Add transitions and improve old-to-new structure
 4. **Validate Quality:** Re-check against all criteria
 
----
-
-## Framework-Specific Applications
-
-### **Theorem Documentation** **[THEOREM_DOCS]**
-**Structure:**
-- Clear theorem statement
-- Proof sketch with active voice
-- Concrete verification example
-- Implications for framework
-
-### **Axiom Documentation** **[AXIOM_DOCS]**
-**Structure:**
-- Axiom statement showing establishment
-- Logical necessity justification
-- Concrete application examples
-- Relationship to other axioms
-
-### **Concept Documentation** **[CONCEPT_DOCS]**
-**Structure:**
-- Definition using function-before-form
-- Concrete illustrations
-- Relationship to other concepts
-- Validation examples
-
----
-
 ## Template Usage Instructions
 
 ### **Required Replacements**
-1. **[FRAMEWORK_MODEL]** → Replace with specific framework identifier
-2. **[VERSION]** → Replace with current version (e.g., "V1.0.0")
-3. **[CURRENT_DATE]** → Replace with current date (e.g., "2026-01-08")
-4. **[FRAMEWORK_INTEGRATION_STATEMENT]** → Replace with specific integration statement
+1. **[DOCUMENT_TITLE_DESCRIPTIVE]** → Descriptive title
+2. **[TYPE_FRAMEWORK_TITLE_ABBREV]** → Tag like [RULE_FOR_MFW_...]
+3. **[PRIO: XXX]** → Priority tag (bolded)
+4. **[VERSION]** → Replace with current version (e.g., "V1.0.0")
+5. **[CURRENT_DATE]** → Replace with current date (e.g., "2026-01-08")
+6. **[FRAMEWORK_INTEGRATION_STATEMENT]** → Replace with specific integration statement
 
 ### **Content Customization**
 - **Maintain Structure:** Keep the overall section organization
@@ -302,36 +246,18 @@ Concrete: "The framework validates theorems using three steps: premise verificat
 - **Quality Assurance:** Complete all checklists before finalization
 - **Framework Integration:** Ensure cross-references are valid
 
-### **Document Types**
-- **Reference Documents:** Use full template structure
-- **Brief Documents:** Condense sections while maintaining quality
-- **Technical Documents:** Emphasize concrete examples and validation
-
----
-
 ## Integration with Framework Templates
 
 ### **Cross-Template Relationships**
 - **01_template_for_template_OT_minimal.md:** Writing template builds on minimal structure
 - **11_template_for_term.md:** Writing guidelines apply to term documentation
-- **13_template_for_writing_framework_document.md:** Writing standards for framework documents
 - **14_template_for_copyright_notice.md:** Writing quality for copyright documents
-
-### **Quality Standards**
-- **Consistency:** All framework documents follow writing guidelines
-- **Professional Quality:** Publishing-standard writing throughout
-- **Clarity Focus:** Reader comprehension prioritized
-- **Framework Integration:** Consistent with overall methodology
-
----
 
 ## Conclusion
 
 **Framework Document Writing Template** transforms document creation from subjective writing to systematic methodology, ensuring that all framework documentation achieves professional clarity, coherence, and effectiveness.
 
 **Framework Document Writing Template** establishes the writing foundation that enables the framework to communicate complex philosophical and technical concepts with maximum clarity and impact, ensuring that intellectual rigor matches communicative excellence.
-
----
 
 ## Key Template Principles
 
@@ -341,11 +267,20 @@ Concrete: "The framework validates theorems using three steps: premise verificat
 4. **Quality Assured:** Built-in checklists and review processes
 5. **Framework Integrated:** Consistent with overall methodology
 
----
+"Clear structure enables clear thinking, and clear thinking enables clear frameworks."
 
-**"Clear structure enables clear thinking, and clear thinking enables clear frameworks."**
-
-**Template Steward:** Writing Standards Committee
+**Rule Steward:** Writing Standards Committee
 **Approval Status:** Framework Approved
 **Effective Date:** 2026-01-08
 **Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V0.1.0
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-08 | Initial template creation | Framework Steward | Establish writing template standard |

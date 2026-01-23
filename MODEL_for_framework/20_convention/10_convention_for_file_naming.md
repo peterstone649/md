@@ -1,10 +1,13 @@
-# File Naming Convention (CONV_FOR_MFW_FILE_NAMING) **[PRIO: HIGH]**
+# File Naming Convention [CONV_FOR_MFW_FILE_NAMING] **[PRIO: HIGH]**
 
-**Version: V1.0** **Status: APPROVED** **Date: 2026-01-09**
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All framework files and directories
+
+## Overview
 
 **We establish consistent file naming standards that enable programmatic processing, improve discoverability, and maintain framework organization.**
 
-**Benefits:**
+### **Benefits**
 - Consistent file naming enables automated framework validation and processing
 - Standardized naming conventions support programmatic documentation generation
 - Clear file naming improves framework navigation and maintenance
@@ -25,6 +28,7 @@
 - Prefix selection must follow semantic accuracy guidelines
 - All prefixes must be documented in the prefix standards convention
 - Prefix usage enables automated categorization and processing
+
 ## Core File Naming Principles
 
 ### **Standard Format Structure**
@@ -194,11 +198,21 @@
 
 ---
 
-*This file naming convention establishes the foundation for consistent, maintainable, and programmatically accessible documentation across the entire framework.*
+**"This file naming convention establishes the foundation for consistent, maintainable, and programmatically accessible documentation across the entire framework."**
+
+**Rule Steward:** AI Framework Steward
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-09
+**Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
 ## Changelog
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed "Applies to" to "Scope" (standardized metadata headers) | Framework Admin | Ensure framework-wide consistency |
 | V0.1.1 | 2026-01-13 | update | Framework Steward | add changelog | refine |
-| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish  |
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundation |

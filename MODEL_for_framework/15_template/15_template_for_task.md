@@ -1,13 +1,11 @@
-# [NUMBER]. Template for Task **[TASK_TEMPLATE]** **[PRIO: [LEVEL]]**
+# Task [TPL_FOR_MFW_TASK] **[PRIO: HIGH]**
 
-**Version: V0.1** **Date: 2026-01-08**
-
----
+**Version: V1.0.1** **Date: 2026-01-23**
 
 ## Task Template Structure
 
 ### Core Template Elements:
-1. **Title with Reference**: `# Task: [TASK_NAME]` **[TASK_REFERENCE]** **[PRIO: [LEVEL]]**
+1. **Title with Reference**: `# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**`
 2. **Version Block**: `**Version: V<Version>**` `**Date: YYYY-MM-DD**`
 3. **Focus Statement**: Brief description of task focus
 4. **Problems/Issues Section**: Numbered list of problems found
@@ -15,23 +13,20 @@
 6. **Status Section**: Task status tracking
 7. **Metadata**: AI model used, timestamps
 
----
-
 ## Task Template Fields:
 - **Version Format**: Use semantic versioning (MAJOR.MINOR.PATCH)
+
 | Field | Format | Example |
 |-------|--------|---------|
-| **Task Reference** | UPPER_CASE_WITH_UNDERSCORES | TASK_FIX_PROBLEMS |
-| **Priority Level** | HIGHEST/HIGH/MEDIUM/LOW | HIGH |
+| **[TYPE_FRAMEWORK_TITLE_ABBREV]** | UPPER_CASE_WITH_UNDERSCORES | [TASK_FOR_MFW_FIX_PROBLEMS] |
+| **[PRIO: XXX]** | HIGHEST/HIGH/MEDIUM/LOW | **[PRIO: HIGH]** |
 | **Version** | V<MAJOR>.<MINOR>.<PATCH> | V0.1.0 |
 | **Focus** | Brief description | "Fix structural problems in MODEL_for_framework" |
-
----
 
 ## Template Structure:
 
 ```markdown
-# Task: [TASK_NAME] **[TASK_REFERENCE]** **[PRIO: PRIORITY_LEVEL]**
+# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
 
 **Version: V<Version>** **Date: YYYY-MM-DD**
 
@@ -91,8 +86,6 @@
 - [FILE_2]
 ```
 
----
-
 ## Task Naming Convention:
 - Use format: `task_for_[ACTION]_[TARGET].md`
 - Examples:
@@ -100,8 +93,6 @@
   - `task_for_validation_of_theorem.md`
   - `task_for_refactoring_documents.md`
   - `task_for_quality_assessment.md`
-
----
 
 ## Version Requirements:
 - Follow version convention: [`01_convention_for_version.md`](../20_convention/01_convention_for_version.md)
@@ -111,8 +102,6 @@
 - **HIGH**: Important issues affecting framework integrity
 - **MEDIUM**: Improvement opportunities, moderate impact
 - **LOW**: Minor enhancements, nice-to-have improvements
-
----
 
 ## Task Status Workflow:
 Follow status convention: [`14_convention_for_stati.md`](../20_convention/14_convention_for_stati.md)
@@ -124,8 +113,6 @@ Follow status convention: [`14_convention_for_stati.md`](../20_convention/14_con
 5. **REVIEW** - Pending validation
 6. **DONE** - All action items completed
 7. **ARCHIVED** - Historical reference
-
----
 
 ## Common Task Categories:
 
@@ -153,6 +140,20 @@ Focus: Develop new framework components
 Sections: Requirements → Design → Implementation Steps
 ```
 
----
-
 *This task template ensures consistent documentation of work items, problems, and improvements across the MODEL_for_framework.*
+
+**Rule Steward:** [STEWARD]
+**Approval Status:** [STATUS]
+**Effective Date:** YYYY-MM-DD
+**Review Cycle:** [CYCLE]
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V0.1.0
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-09 | Initial template creation | Framework Steward | Establish task template standard |

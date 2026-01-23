@@ -1,15 +1,11 @@
-# Rule for Title Line Formatting [RULE_FW_TITLE_FORMAT] [PRIO: MEDIUM]
+# Rule for Title Line Formatting [RULE_FOR_MFW_TITLE_FORMAT] **[PRIO: MEDIUM]**
 
-**Rule ID:** RULE_TITLE_FORMAT
-**Applies to:** All framework document title lines
-
----
+**Rule ID:** RULE_FOR_MFW_TITLE_FORMAT
+**Scope:** All framework document title lines
 
 ## Rule Statement
 
-**All framework document title lines should follow the standardized format: # <title><Document Title>[TYPE_FRAMEWORK_ABBREV] [PRIO: XXX]**
-
----
+**All framework document title lines should follow the standardized format: # [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]****
 
 ## Rationale
 
@@ -20,13 +16,11 @@ Standardized title formatting:
 - Supports framework navigation and search functionality
 - Maintains professional presentation standards
 
----
-
 ## Title Line Format Specification
 
 ### Required Structure
 ```
-# <Document Title> [TYPE_FRAMEWORK_ABBREV] [PRIO: XXX]
+# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
 ```
 
 ### Components Breakdown
@@ -34,28 +28,28 @@ Standardized title formatting:
 | Component | Description | Example |
 |-----------|-------------|---------|
 | `#` | Markdown header level 1 | `#` |
-| `<Document Title>` | Descriptive title of the document | `Term Definition` |
-| `[TYPE_FRAMEWORK_ABBREV]` | Combined type and framework abbreviation | `[DEF_FOR_TERM]` |
-| `[PRIO: XXX]` | Priority level indicator | `[PRIO: HIGHEST]` |
+| `[DOCUMENT_TITLE_DESCRIPTIVE]` | Descriptive title of the document in normal top down writing form | `Definition for Term in MFW` |
+| `[TYPE_FRAMEWORK_TITLE_ABBREV]` | Combined type and framework abbreviation | `[DEF_FOR_MFW_TERM]` |
+| `**[PRIO: XXX]**` | Priority level indicator | `**[PRIO: HIGHEST]**` |
 
 ### Complete Format Example
 ```markdown
-# Term [DEF_FOR_TERM] [PRIO: HIGHEST]
+# Term [DEF_FOR_MFW_TERM] **[PRIO: HIGHEST]**
 ```
 
 ### TYPE Component Examples
 
-The TYPE component indicates the document category and can be:
+The TYPE component indicates the document category e.g. can be:
 
 | TYPE Value | Meaning | Example Usage |
 |------------|---------|---------------|
-| **RULE** | Framework rules and guidelines | `[RULE_FW_TITLE_FORMAT]` |
-| **DEF_FOR** | Definitions and terminology | `[DEF_FOR_TERM]` |
-| **VISION** | Vision and strategic documents | `[VISION_FRAMEWORK]` |
-| **PRINC** | Principles and core values | `[PRINC_ACCESSIBILITY]` |
-| **AXIOM** | Fundamental axioms | `[AXIOM_VALIDATION]` |
-| **CONV_FOR** | Conventions and standards | `[CONV_FOR_VERSION]` |
-| **TPL_FOR** | Templates and patterns | `[TPL_FOR_DOCUMENT]` |
+| **RULE** | Framework rules and guidelines | `[RULE_FOR_MFW_TITLE_FORMAT]` |
+| **DEF_FOR** | Definitions and terminology | `[DEF_FOR_MFW_TERM]` |
+| **VISION** | Vision and strategic documents | `[VISION_FOR_MFW]` |
+| **PRINC** | Principles and core values | `[PRINC_FOR_MFW_ACCESSIBILITY]` |
+| **AXIOM** | Fundamental axioms | `[AXIOM_FOR_MFW_VALIDATION]` |
+| **CONV_FOR** | Conventions and standards | `[CONV_FOR_MFW_VERSION]` |
+| **TPL_FOR** | Templates and patterns | `[TPL_FOR_MFW_DOCUMENT]` |
 
 ---
 
@@ -65,12 +59,12 @@ The TYPE component indicates the document category and can be:
 
 | Abbreviation | Full Term | Usage Context |
 |-------------|-----------|---------------|
-| **DEF_FOR_** | Definition for | Document definitions |
-| **RULE_FW_** | Rule Framework | Framework rules |
-| **PRINC_** | Principle | Framework principles |
-| **AXIOM_** | Axiom | Framework axioms |
-| **CONV_FOR_** | Convention for | Framework conventions |
-| **TPL_FOR_** | Template for | Framework templates |
+| **DEF_FOR_<FW>_** | Definition for | Document definitions |
+| **RULE_FOR_<FW>_** | Rule Framework | Framework rules |
+| **PRINC_FOR_<FW>_** | Principle | Framework principles |
+| **AXIOM_FOR_<FW>_** | Axiom | Framework axioms |
+| **CONV_FOR_<FW>_** | Convention for | Framework conventions |
+| **TPL_FOR_<FW>_** | Template for | Framework templates |
 
 ### Priority Levels
 
@@ -80,8 +74,6 @@ The TYPE component indicates the document category and can be:
 | **HIGH** | Important operational elements | 🟠 Orange |
 | **MEDIUM** | Standard framework elements | 🟡 Yellow |
 | **LOW** | Supplementary materials | 🟢 Green |
-
----
 
 ## Implementation Guidelines
 
@@ -96,13 +88,11 @@ The TYPE component indicates the document category and can be:
 
 | Document Type | Abbreviation Pattern | Example |
 |---------------|---------------------|---------|
-| Rules | `RULE_FW_` | `RULE_FW_TITLE_FORMAT` |
-| Principles | `PRINC_` | `PRINC_ACCESSIBILITY` |
-| Definitions | `DEF_FOR_` | `DEF_FOR_TERM` |
-| Conventions | `CONV_FOR_` | `CONV_FOR_VERSION` |
-| Templates | `TPL_FOR_` | `TPL_FOR_DOCUMENT` |
-
----
+| Rules | `RULE_FOR_<FW>_` | `RULE_FOR_MFW_TITLE_FORMAT` |
+| Principles | `PRINC_FOR_<FW>_` | `PRINC_FOR_MFW_ACCESSIBILITY` |
+| Definitions | `DEF_FOR_<FW>_` | `DEF_FOR_MFW_TERM` |
+| Conventions | `CONV_FOR_<FW>_` | `CONV_FOR_MFW_VERSION` |
+| Templates | `TPL_FOR_<FW>_` | `TPL_FOR_MFW_DOCUMENT` |
 
 ## Validation Checklist
 
@@ -110,11 +100,9 @@ The TYPE component indicates the document category and can be:
 - [ ] Document title is descriptive and clear
 - [ ] Framework abbreviation uses correct format `[ABBREV]`
 - [ ] Priority level uses valid code (HIGHEST/HIGH/MEDIUM/LOW)
-- [ ] Priority format follows `[PRIO: XXX]` exactly
+- [ ] Priority format follows `**[PRIO: XXX]**` exactly (must be bolded)
 - [ ] No extra spaces or formatting variations
 - [ ] Abbreviation corresponds to document content
-
----
 
 ## Common Issues and Corrections
 
@@ -134,8 +122,6 @@ The TYPE component indicates the document category and can be:
 **Problem:** `# Title [ABBREV] [PRIO: IMPORTANT]`
 **Correction:** `# Title [ABBREV] [PRIO: HIGH]`
 
----
-
 ## Enforcement
 
 1. **Document Creation:** Apply correct format during initial drafting
@@ -143,21 +129,18 @@ The TYPE component indicates the document category and can be:
 3. **Review Process:** Manual verification during document reviews
 4. **Bulk Updates:** Periodic audits ensure consistency across framework
 
----
 
 ## Automation Support
 
-### Regex Pattern for Validation
+### Example Regex Pattern for Validation
 ```regex
-^# .+\[.*\]\s+\[PRIO:\s+(HIGHEST|HIGH|MEDIUM|LOW)\]$
+^# .+\[.*\]\s+\*\*\[PRIO:\s+(HIGHEST|HIGH|MEDIUM|LOW)\]\*\*$
 ```
 
 ### Automated Processing
 - **Search/Indexing:** Standardized format enables reliable document discovery
 - **Priority Filtering:** Automated sorting by priority level
 - **Cross-References:** Consistent abbreviations support linking systems
-
----
 
 ## References
 
@@ -166,9 +149,13 @@ The TYPE component indicates the document category and can be:
 - Abbreviation Reference (99_appendix/abbreviation_reference.md)
 - Active Voice Rule (12_rule/03_rule_for_active_voice.md)
 
----
-
 **Rule Steward:** Documentation Standards Committee
 **Approval Status:** Framework Approved
 **Effective Date:** 2026-01-13
 **Review Cycle:** Annual
+
+Changelog:
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated placeholders to [DOCUMENT_TITLE_DESCRIPTIVE] and [TYPE_FRAMEWORK_TITLE_ABBREV] (with underscores) | Framework Admin | Improve clarity and hierarchy |
+| V1.0.0 | 2026-01-09 | Initial creation | AI Framework Admin | Establish file |

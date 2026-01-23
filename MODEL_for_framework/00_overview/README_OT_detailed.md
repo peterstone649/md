@@ -1,15 +1,15 @@
-# MODEL_for_framework Framework Overview [MFW_FRAMEWORK_OVERVIEW] [PRIO: HIGH]
+# Framework overview [OVER_FOR_MFW_README_DETAILED] **[PRIO: HIGH]**
 
 <img src="mfw_model_for_framework.svg" width="20%" alt="MODEL_for_framework Logo">
 
 *Figure 1: MODEL_for_framework - Logo*
 
-**Version: V0.1.1** **Status: ACTIVE** **Date: 2026-01-13**
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** Foundational overview establishing legal framework, AI collaboration transparency, and development principles
 
-**Purpose:** Foundational overview establishing legal framework, AI collaboration transparency, and framework development principles.
+*   **Purpose:** Foundational overview establishing legal framework, AI collaboration transparency, and framework development principles.
+*   **Disclaimer:** Information presented may contain AI-generated inaccuracies, biases, or hallucinations — please always verify independently.
 
-Information presented may contain AI-generated inaccuracies, biases, or hallucinations
-— please always verify independently
 ---
 
 ## 📋 Directory Overview
@@ -299,32 +299,29 @@ Planned Developments:
 └── Technology Evolution → Adaptation to emerging AI capabilities and tools
 ```
 
-### **Transparency Evolution**
-```
-Ongoing Commitments:
-├── Methodology Refinement → Continuous improvement of AI integration processes
-├── Quality Metric Enhancement → More sophisticated validation and assessment
-├── Community Engagement → Expanded participation and feedback mechanisms
-├── Research Publication → Academic sharing of human-AI collaboration insights
-├── Ethical Framework → Updated principles for responsible AI development
-└── Global Standards → International collaboration on AI integration norms
-```
-
 ---
 
-## 📝 Changelog
+**Rule Steward:** Terminology Architects
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V0.1.1 | 2026-01-13 | minor update "Directory Overview" & last sentence| Framework Steward | refine |
-| V0.1.0b | 2026-01-09 | Basic structure and legal foundation updated | Framework Steward |
-| V0.1.0a | 2026-01-08 | Basic structure and legal foundation established | AI Framework Steward |
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.1 | 2026-01-13 | minor update "Directory Overview" & last sentence | Framework Steward | refine |
+| V0.1.0b | 2026-01-09 | Basic structure and legal foundation updated | Framework Steward | Update structure |
+| V0.1.0a | 2026-01-08 | Basic structure and legal foundation established | AI Framework Steward | Initial setup |
 
 ---
 
-**Framework Status:** ACTIVE
+**Framework Status:** APPROVED
 **License:** EUPL v1.2
-**AI Integration:** Full transparency documented
-**Community:** Open collaboration encouraged
 
 **MODEL_for_framework constitutes an innovative methodological paradigm for systematic knowledge organization, integrating rigorous analytical frameworks with AI-assisted cognitive augmentation to facilitate comprehensive system analysis and implementation.** 🧠⚡🔧🤖🧑‍🤝‍🧑

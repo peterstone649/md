@@ -1,17 +1,11 @@
-# Rule for Version Changelog Update **[RULE_FW_DOC_VERSION_CHANGELOG]**
-**Version: V0.1.1** **Date: 2026-01-15**
+# Version Changelog Update [RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE] **[PRIO: HIGH]**
 
-**Rule ID:** RULE_VERSION_CHANGELOG
-**Priority:** HIGH
-**Applies to:** All framework documents with changelog sections
-
----
+**Rule ID:** RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE
+**Scope:** All framework documents with changelog sections
 
 ## Rule Statement
 
-**All framework documents MUST maintain an accurate and complete version changelog with Stakeholder and Rationale/Motivation columns for every version entry.**
-
----
+All framework documents MUST maintain an accurate and complete version changelog with Stakeholder and Rationale/Motivation columns for every version entry.
 
 ## Rationale
 
@@ -22,8 +16,6 @@ A comprehensive changelog:
 - Enables audit of framework evolution
 - Supports version rollback and impact analysis
 - Aligns with principle of transparency in documentation
-
----
 
 ## Changelog Structure
 
@@ -56,8 +48,6 @@ Place the changelog section at the end of the document before the footer:
 - Do not use numbered headers like `## 7. Changelog`
 - Maintain consistent header level (typically `##`) across all framework documents
 
----
-
 ## Changelog Entry Requirements
 
 ### 1. Version Numbering
@@ -88,8 +78,6 @@ Place the changelog section at the end of the document before the footer:
 - If multiple changes occur for the same version, consolidate them into a single entry
 - Version increments are required for any substantive changes
 
----
-
 ## Update Triggers
 
 Update the changelog when:
@@ -113,16 +101,12 @@ Update the changelog when:
    - Fix validation errors
    - Resolve audit findings
 
----
-
 ## Entry Order
 
 Maintain reverse chronological order:
 - Newest entries at the TOP of the table
 - Oldest entries at the BOTTOM
 - Each entry on its own line
-
----
 
 ## Validation Checklist
 
@@ -138,16 +122,12 @@ Maintain reverse chronological order:
 - [ ] Initial creation properly documented
 - [ ] if py code __version__ = [VERSION] then also update this!
 
----
-
 ## Enforcement
 
 1. **Document Creation:** Include empty changelog structure with initial version
 2. **Review Phase:** Verify changelog completeness and accuracy
 3. **Template Validation:** Check for required columns in automated checks
 4. **Commit Gates:** Reject commits without changelog updates for document changes
-
----
 
 ## References
 
@@ -156,18 +136,19 @@ Maintain reverse chronological order:
 - Convention for Writing Style (20_convention/03_convention_for_writing_style.md)
 - Template for Principle (15_template/17_template_for_principle.md)
 
----
+**Rule Steward:** Documentation Standards Committee
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-09
+**Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V0.1.1
+**Date:** 2026-01-15
 
 ## Changelog
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.1 | 2026-01-15 | Added Version Uniqueness section to Changelog Entry Requirements | Framework Steward | Strengthen changelog integrity by preventing duplicate version entries |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational structure |
-
----
-
-**Rule Steward:** Documentation Standards Committee
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-09
-**Review Cycle:** Annual

@@ -1,6 +1,7 @@
-# 1. Template for Template Minimal (TEMPLATE_FOR_MFW_TEMPLATE) **[PRIO: HIGH]**
+# Template for Template Minimal [TPL_FOR_MFW_TPL_OT_MIN] **[PRIO: HIGH]**
 
-**Template Version:** V1.0.0 **Template Status:** APPROVED **Date:** 2026-01-09
+**Version: V1.0.2** **Status: ACTIVE** **Date: 2026-01-23**
+
 **Template Scope:** MODEL_for_framework_ecosystem
 **We create templates that standardize documentation and ensure consistency across all framework components.**
 
@@ -17,9 +18,7 @@
 ## Template Creation Guidelines
 
 ### Core Template Structure:
-1. **Title with Reference**: `# [NUMBER]. [TITLE] ([CONSTANT_REFERENCE])`
-
-**Version: V<Version>** **Status: <STATUS>** **Date: YYYY-MM-DD**
+1. **Title with Reference**: `# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**`
 
 2. **Manifesto Statement**: `**[STATEMENT]**` or `**Manifesto Statement:** [STATEMENT]`
 3. **Application Section**: `-`
@@ -27,7 +26,7 @@
 5. **Usage Instructions**: Clear guidance for template users
 
 ### Required Template Elements:
-- **[CONSTANT_REFERENCE]**: UPPER_CASE_WITH_UNDERSCORES format
+- **[TYPE_FRAMEWORK_TITLE_ABBREV]**: UPPER_CASE_WITH_UNDERSCORES format emphasizing hierarchy (e.g., [TPL_FOR_MFW_DOCUMENT])
 - **[PLACEHOLDER_FIELDS]**: Clearly marked with `[BRACKETS]`
 - **Alternative Formats**: Provide both subtitle and section formats
 - **Usage Examples**: Concrete examples of template application
@@ -61,3 +60,20 @@
 ---
 
 *This meta-template establishes the methodology for creating all templates in the AI safety framework, ensuring consistency, quality, and maintainability across all documentation components.*
+
+**Rule Steward:** Framework Admin
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-09
+**Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.2
+**Date:** 2026-01-23
+
+## Changelog
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.2 | 2026-01-23 | Synchronized terminology ([TYPE_FRAMEWORK_TITLE_ABBREV]) with RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V1.0.1 | 2026-01-23 | Synchronized placeholder terminology with RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V1.0.0 | 2026-01-09 | Initial creation | AI Framework Admin | Establish file |
+

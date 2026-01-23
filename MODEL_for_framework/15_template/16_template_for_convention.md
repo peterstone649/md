@@ -1,4 +1,4 @@
-# [NUMBER]. [CONVENTION_NAME] (CONV_FOR_[CONSTANT_FOR_REFERENCE]) **[PRIO: [LEVEL]]**
+# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
 
 **Version: V[VERSION]** **Status: [STATUS]** **Date: YYYY-MM-DD**
 
@@ -6,8 +6,6 @@
 
 **Rationale:**
 [CONVENTION_RATIONALE - Explain why this convention exists and what problems it solves]
-
----
 
 ## Core Convention Principles
 
@@ -29,8 +27,6 @@
 4. **Validation**: Conventions must support automated verification
 5. **Evolution**: Conventions must allow for systematic updates
 
----
-
 ## Convention Usage Guidelines
 
 ### **Convention Application Rules**
@@ -45,8 +41,6 @@
 - **Domain Conventions**: Specific domain standards (technical, legal, etc.)
 - **Special Conventions**: Specialized operational standards (quality, process, etc.)
 
----
-
 ## 1. Scope and Applicability
 
 ### 1.1 When to Apply
@@ -55,8 +49,6 @@
 ### 1.2 Target Audience
 <Who should follow this convention? Developers, writers, architects, etc.>
 
----
-
 ## 2. Core Definitions
 
 | Element | Definition | Example |
@@ -64,8 +56,6 @@
 | **<term1>** | <Definition of first key term> | `<example>` |
 | **<term2>** | <Definition of second key term> | `<example>` |
 | **<term3>** | <Definition of third key term> | `<example>` |
-
----
 
 ## 3. Version Requirements
 
@@ -89,8 +79,6 @@
 - Specify minimum framework version requirements
 - Track deprecation notices for older versions
 
----
-
 ## 4. Rules and Guidelines
 
 ### 4.1 <Rule Category 1>
@@ -101,8 +89,6 @@
 
 ### 4.3 <Rule Category 3>
 <Describe the third category of rules if needed.>
-
----
 
 ## Quality Assurance Standards
 
@@ -125,8 +111,6 @@
 - **Migration**: Guidelines for updating existing documents with new conventions
 - **Documentation**: Regular updates to convention documentation
 
----
-
 ## Implementation Guidelines
 
 ### **Convention Adoption Process**
@@ -148,8 +132,6 @@
 - **Usage Analytics**: Tracking of convention adoption and effectiveness
 - **Exception Handling**: Defined procedures for convention standard exceptions
 
----
-
 ## Benefits and Impact
 
 ### **Operational Benefits**
@@ -170,8 +152,6 @@
 - **Review Efficiency**: Faster document reviews with consistent standards
 - **Cross-Team Work**: Consistent convention usage across different teams and projects
 
----
-
 ## 5. Naming Conventions
 
 | Pattern | Meaning | Example |
@@ -179,8 +159,6 @@
 | **<prefix>** | <Description> | `<example>` |
 | **<prefix>** | <Description> | `<example>` |
 | **<prefix>** | <Description> | `<example>` |
-
----
 
 ## 6. Status and States
 
@@ -193,8 +171,6 @@
 | **REVIEW** | Pending validation | → DONE or IN PROGRESS |
 | **DONE** | Complete and validated | → ARCHIVED |
 | **ARCHIVED** | Historical reference | - |
-
----
 
 ## 7. Examples
 
@@ -213,8 +189,6 @@
 <examples of special cases and how to handle them>
 ```
 
----
-
 ## 8. Related Conventions and Documents
 
 | Reference | Relationship |
@@ -222,8 +196,6 @@
 | [CONV_FOR_<RELATED>] | <Description of relationship> |
 | [CONV_FOR_<RELATED>] | <Description of relationship> |
 | [<path/to/document>] | <Description of relationship> |
-
----
 
 ## 9. Implementation Notes
 
@@ -238,25 +210,18 @@
 - [ ] <Second validation item>
 - [ ] <Third validation item>
 
----
+**Rule Steward:** [STEWARD]
+**Approval Status:** [STATUS]
+**Effective Date:** YYYY-MM-DD
+**Review Cycle:** [CYCLE]
 
-## 10. Changelog
+**Framework:** MODEL_for_framework
+**Framework Version:** V0.1.0
+**Date:** 2026-01-23
 
-| Version | Date | Changes |
-|---------|------|---------|
-| V0.1.0 | YYYY-MM-DD | Initial creation |
+## Changelog
 
----
-
-## 11. Appendices
-
-### Appendix A: <Optional Supplementary Information>
-<Any additional details, references, or background information.>
-
-### Appendix B: <Optional Glossary>
-<Any additional terms specific to this convention.>
-
----
-
-**End of Convention**
-
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-09 | Initial template creation | Framework Steward | Establish convention template standard |

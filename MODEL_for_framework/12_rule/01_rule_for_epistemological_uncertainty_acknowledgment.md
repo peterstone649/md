@@ -1,8 +1,9 @@
-# 04. Rule of Epistemological Uncertainty Acknowledgment **[RULE_MFW_EPISTEMOLOGICAL_ACKNOWLEDGMENT]** **[PRIO: CRITICAL]**
+# Epistemological Uncertainty Acknowledgment [RULE_FOR_MFW_EPISTEMOLOGICAL_ACKNOWLEDGMENT] **[PRIO: HIGHEST]**
+
+**Rule ID:** RULE_FOR_MFW_EPISTEMOLOGICAL_ACKNOWLEDGMENT
+**Scope:** All framework stakeholders and AI systems
 
 *Based on: [10_axiom_of_epistemological_uncertainty.md](../35_axiom/10_axiom_of_epistemological_uncertainty.md)*
-
----
 
 ## Rule Statement
 
@@ -14,8 +15,6 @@ All stakeholders and AI systems MUST acknowledge the inherent uncertainty in all
     → MustAcknowledge(a, Uncertainty(s)) ∧ MustIdentify(a, Limitations(s)) 
     ∧ MustDeclare(a, BiasPotential(s)))
 ```
-
----
 
 ## Core Requirements
 
@@ -35,16 +34,12 @@ This convention provides:
 - Verification protocols and confidence thresholds
 - Compliance checklists and consequences
 
----
-
 ## Consequences of Non-Compliance
 
 | Severity | Violation | Consequence |
 |----------|-----------|-------------|
 | **CRITICAL** | Omission of uncertainty in high-stakes decisions | Decision void until compliance |
 | **HIGH** | Missing uncertainty declaration in formal outputs | Output marked as non-compliant |
-
----
 
 ## Integration with Other Framework Components
 
@@ -60,8 +55,6 @@ This convention provides:
 - [02_principle_transparency.md](../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.md) - Transparency requires uncertainty acknowledgment
 - [03_principle_proportionality.md](../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md) - Proportionality depends on uncertainty recognition
 
----
-
 ## Scientific Foundation
 
 Based on:
@@ -70,8 +63,6 @@ Based on:
 - **Cognitive Bias Research** - Systematic errors in human judgment
 - **Bayesian Epistemology** - Probabilistic approach to knowledge
 
----
-
 ## References
 
 - [10 Axiom of Epistemological Uncertainty](../35_axiom/10 axiom_of_epistemological_uncertainty.md)
@@ -79,16 +70,18 @@ Based on:
 - [02 Rule for AI Lock Protection](02_rule_for_ai_lock_protection.md)
 - [03 Rule for Version Changelog Update](03_rule_for_version_changelog_update.md)
 
----
-
 **Rule Owner:** Framework Development Team
 **Enforcement Authority:** All stakeholders in MODEL_for_framework and MODEL_for_stakeholder_AI_collab
 **Review Cycle:** Quarterly or when significant uncertainty research emerges
 
----
-
 **Framework:** MODEL_for_framework
 **Framework Version:** V0.1.0
 **Date:** 2026-01-09
-**Priority:** CRITICAL
+**Priority:** HIGHEST
 **Compliance:** Mandatory for all stakeholders and AI systems
+
+Changelog:
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Admin | Establish file |

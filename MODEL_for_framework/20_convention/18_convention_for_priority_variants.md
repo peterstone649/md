@@ -1,8 +1,11 @@
-# 18. Convention for Priority Variants **[CONV_FOR_MODELFW_PRIORITY_VARIANTS]** **[PRIO: HIGH]**
+# Priority Variants Convention [CONV_FOR_MFW_PRIORITY_VARIANTS] **[PRIO: HIGH]**
 
-**Version: V0.1.0** **Date: 2026-01-09**
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All documents in MODEL_for_framework and derived frameworks
 
-**Purpose:** Define priority classification systems for different document types in the framework.
+## Overview
+
+**Define priority classification systems for different document types in the framework to ensure consistent importance assessment and response management.**
 
 ---
 
@@ -19,7 +22,7 @@ For most framework documents:
 
 ---
 
-## Rule-Specific Priority Levels **[RULE_PRIO]**
+## Rule-Specific Priority Levels [RULE_PRIO]
 
 Rules use a modified priority system reflecting enforcement severity:
 
@@ -35,21 +38,9 @@ Rules use a modified priority system reflecting enforcement severity:
 **[RULE_PRIO: MANDATORY | REQUIRED | RECOMMENDED | OPTIONAL]**
 ```
 
-### Examples
-
-**Mandatory Rule:**
-```
-# 01. Rule for AI Lock Protection **[RULE_AI_LOCK]** **[RULE_PRIO: MANDATORY]**
-```
-
-**Recommended Rule:**
-```
-# XX. Rule for Documentation Style **[RULE_DOC_STYLE]** **[RULE_PRIO: RECOMMENDED]**
-```
-
 ---
 
-## Axiom Priority Levels **[AXIOM_PRIO]**
+## Axiom Priority Levels [AXIOM_PRIO]
 
 Axioms use an importance-based priority system:
 
@@ -67,7 +58,7 @@ Axioms use an importance-based priority system:
 
 ---
 
-## Principle Priority Levels **[PRIO]**
+## Principle Priority Levels [PRIO]
 
 For stakeholder-AI collaboration principles:
 
@@ -89,7 +80,7 @@ For stakeholder-AI collaboration principles:
 
 For task and work item tracking:
 
-| Priority | Meaning |排序 | Example |
+| Priority | Meaning | 排序 | Example |
 |----------|---------|-----|---------|
 | **P0** | Critical path, blocker | 1 | Framework blocker |
 | **P1** | High priority | 2 | Important feature |
@@ -114,7 +105,7 @@ For risk assessment and hazard identification:
 | **MODERATE** | Significant impact | Address within 1 week |
 | **MINOR** | Limited impact | Monitor and track |
 
-> **Note:** For civilisation collapse risks (MAXIMUM), use [19_convention_for_existential_risk_priority.md](19_convention_for_existential_risk_priority.md) instead.
+> **Note:** For civilization collapse risks (MAXIMUM), use [19_convention_for_existential_risk_priority.md](19_convention_for_existential_risk_priority.md) instead.
 
 ---
 
@@ -133,11 +124,15 @@ For risk assessment and hazard identification:
 
 ### Priority Placement in Documents
 
-Place priority marker in the document header:
+Place priority marker in the document title line according to [RULE_FOR_MFW_TITLE_FORMAT](../12_rule/12_rule_for_title_line_formatting.md):
+```markdown
+# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
 ```
-# Document Title **[PRIO_TYPE: VALUE]**
 
-**Version:** V0.1.0 **Date:** YYYY-MM-DD **[PRIO_TYPE: VALUE]**
+Metadata example:
+```markdown
+**Version: V1.x.x** **Status: APPROVED** **Date: YYYY-MM-DD**
+**Scope:** [Scope of Application]
 ```
 
 ---
@@ -156,7 +151,7 @@ Place priority marker in the document header:
 
 ### Transition Documentation
 When priority changes, document in changelog:
-```
+```markdown
 | Version | Date | Stakeholder | Priority Change | Rationale |
 |---------|------|-------------|-----------------|-----------|
 | V0.2.0 | 2026-01-10 | Author | MEDIUM → HIGH | Stakeholder feedback |
@@ -173,7 +168,7 @@ When priority changes, document in changelog:
 | MEDIUM/P1 | Monthly |
 | LOW/P2/P3 | Quarterly |
 
-> **Note:** For MAXIMUM priority (civilisation risks), see [19_convention_for_existential_risk_priority.md](19_convention_for_existential_risk_priority.md).
+> **Note:** For MAXIMUM priority (civilization risks), see [19_convention_for_existential_risk_priority.md](19_convention_for_existential_risk_priority.md).
 
 ---
 
@@ -186,7 +181,7 @@ When priority changes, document in changelog:
 3. **Deprecation Path**: Phased reduction from HIGH → LOW
 
 ### Override Documentation
-```
+```markdown
 **Priority Override:** [Standard Priority] → [Override Priority]
 **Rationale:** [Explanation]
 **Approved By:** [Authority]
@@ -197,21 +192,24 @@ When priority changes, document in changelog:
 
 ## References
 
-- [14_convention_for_stati.md](14_convention_for_stati.md) - Status conventions
-- [17_convention_for_prefix_standards.md](17_convention_for_prefix_standards.md) - Prefix standards
-- [11_convention_for_confidence_scoring.md](11_convention_for_confidence_scoring.md) - Related scoring
+- [CONV_FOR_MFW_STATUS](./14_convention_for_stati.md) - Status conventions
+- [CONV_FOR_MFW_PREFIX_STANDARDS](./17_convention_for_prefix_standards.md) - Prefix standards
+- [CONV_FOR_MFW_CONFIDENCE_SCORING](./11_convention_for_confidence_scoring.md) - Related scoring
 
 ---
 
-**Convention Reference:** Apply to all documents in MODEL_for_framework and derived frameworks.
-
----
-
-**End of Convention**
-
----
+**Rule Steward:** Priority Standards Committee
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-09
+**Review Cycle:** Annual
 
 **Framework:** MODEL_for_framework
-**Version:** V0.1.0
-**Date:** 2026-01-09
-**Priority:** HIGH
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting, metadata headers, and standardized tag to MFW per RULE_FOR_MFW_TITLE_FORMAT. Updated placement guidelines. | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish priority classification systems |

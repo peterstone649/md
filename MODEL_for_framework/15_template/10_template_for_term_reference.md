@@ -1,16 +1,15 @@
-**Template Version:** V0.1.0 **Template Status:** DONE **Date:** YYYY-MM-DD
-# 10. Term Reference Template (TERM_REFERENCE_TEMPLATE)
+# Term Reference [TPL_FOR_MFW_TERM_REF] **[PRIO: HIGH]**
+
 **We create term reference files that establish inheritance relationships between terminology across different frameworks, ensuring consistent term usage and clear cross-references.**
 
-**Scope:**
-- Term reference templates ensure consistent referencing of terms.
+## Scope
 
----
+- Term reference templates ensure consistent referencing of terms.
 
 ## Term Reference Creation Guidelines
 
 ### Core Reference Structure:
-1. **Title with Reference**: `# [NUMBER]. [TERM_NAME] Reference ([TERM_REFERENCE_CONSTANT])`
+1. **Title with Reference**: `# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**`
 
 **Version: <Version>** **Date: YYYY-MM-DD**
 
@@ -21,7 +20,7 @@
 6. **Usage Guidelines**: When to use source vs. adapted definitions
 
 ### Required Reference Elements:
-- **[TERM_REFERENCE_CONSTANT]**: TERM_REF format (e.g., DEFECT_REF)
+- **[TYPE_FRAMEWORK_TITLE_ABBREV]**: e.g. [TERM_FOR_MFW_DEFECT_REF]
 - **Primary Source Path**: Full relative path to source term definition
 - **Framework Context**: How term applies in current framework layer
 - **Inheritance Relationship**: What is inherited, adapted, extended
@@ -37,7 +36,8 @@
 
 ### Reference File Structure:
 ```
-# [NUMBER]. [TERM_NAME] Reference ([CONSTANT])
+# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
+
 ## Term Reference
 **Primary Definition Source:** [SOURCE_PATH]
 
@@ -77,8 +77,6 @@
 - **Version Tracking**: Document changes between versions with rationale
 - **Compatibility**: Specify which framework versions the reference supports
 
----
-
 ## Example: Defect Term Reference
 
 Based on the defect reference file (`_29/MODEL_for_framework/30_terminology/59_term_defect_ref.md`), here is how the template extracts and structures information:
@@ -99,6 +97,15 @@ Based on the defect reference file (`_29/MODEL_for_framework/30_terminology/59_t
 - **Navigation**: Framework users can easily find appropriate term definitions
 - **Evolution**: Framework can evolve while maintaining term relationships
 
----
-
 *This template establishes the methodology for creating term reference files that extract and adapt terminology from source frameworks, ensuring clear inheritance relationships and consistent usage across framework layers.*
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V0.1.0
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-09 | Initial template creation | Framework Steward | Establish term reference template standard |

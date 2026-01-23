@@ -1,4 +1,6 @@
-# [FRAMEWORK_NAME] Vision Template
+# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
+
+**Version: V[VERSION]** **Status: [STATUS]** **Date: YYYY-MM-DD**
 
 ## Vision Statement
 
@@ -26,10 +28,18 @@
 - **Phase 3:** [Description]
 - **Phase 4:** [Description]
 
+**Rule Steward:** [STEWARD]
+**Approval Status:** [STATUS]
+**Effective Date:** YYYY-MM-DD
+**Review Cycle:** [CYCLE]
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V0.1.0
+**Date:** 2026-01-23
+
 ## Changelog
 
-| Version | Date | Changes | By | Reason |
-|---------|------|---------|----|--------|
-| [VERSION] | [DATE] | [CHANGES] | [NAME] | [REASON] |
-
-**Version:** [VERSION] **Status:** [STATUS] **Date:** [DATE]
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-09 | Initial template creation | Framework Steward | Establish vision template standard |

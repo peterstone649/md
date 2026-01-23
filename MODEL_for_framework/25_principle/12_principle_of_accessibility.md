@@ -1,10 +1,13 @@
-# Principle of Accessibility [PRINC_MFW_ACCESSIBILITY] [PRIO: CRITICAL]
+# Principle of Accessibility [PRINC_FOR_MFW_ACCESSIBILITY] **[PRIO: CRITICAL]**
 
-**Version: V0.1.1** **Status: ACTIVE** **Date: 2026-01-12**
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All framework products, documents, and tools
+
+## Overview
 
 **We establish Accessibility as a foundational principle requiring that all products, documents, and tools be designed, developed, and documented to be usable by people with the widest possible range of abilities.**
 
-**Objectives:**
+### **Objectives**
 1. **Perceivable**: Ensure users can perceive all presented information through their available senses.
 2. **Operable**: Ensure user interface components and navigation are fully operable by all users.
 3. **Understandable**: Ensure information and the operation of the user interface are clear and understandable.
@@ -20,15 +23,6 @@ The Principle of Accessibility mandates that the framework and its outputs are i
 
 ---
 
-## 1. Scope and Applicability
-
-This principle applies to all aspects of the framework, including but not limited to:
-- All generated HTML documents.
-- All user-facing tools and interfaces.
-- All official documentation, both in Markdown and its rendered forms.
-
----
-
 ## 2. Core Definitions
 
 | Element | Definition |
@@ -39,21 +33,21 @@ This principle applies to all aspects of the framework, including but not limite
 
 ---
 
-## 4. Rules and Guidelines
+## 3. Rules and Guidelines
 
-### 4.1 HTML Content Requirements (based on WCAG 2.1 AA)
+### 3.1 HTML Content Requirements (based on WCAG 2.1 AA)
 1. **Alt Text**: All non-decorative images (`<img>`) MUST have descriptive alternative text (`alt` attribute).
 2. **Semantic HTML**: Use appropriate HTML5 semantic elements (`<main>`, `<nav>`, `<article>`, etc.) to define the structure of the page.
 3. **Color Contrast**: Text and interactive elements MUST have a color contrast ratio of at least 4.5:1 against the background.
 4. **Keyboard Navigation**: All interactive elements (links, buttons, form fields) MUST be fully accessible and operable using only a keyboard.
 
-### 4.2 Documentation Requirements
+### 3.2 Documentation Requirements
 1. **Descriptive Links**: Link text MUST clearly describe the destination of the link. Avoid generic phrases like "click here".
 2. **Structured Content**: Use headings, lists, and other structural elements correctly to create a logical document outline.
 
 ---
 
-## 8. Related Principles and Documents
+## 4. Related Principles and Documents
 
 | Reference | Relationship |
 |-----------|--------------|
@@ -61,9 +55,19 @@ This principle applies to all aspects of the framework, including but not limite
 
 ---
 
-##  Changelog
+**Rule Steward:** Accessibility Committee
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-10
+**Review Cycle:** Annual
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.1 | 2026-01-10 | Initial creation | Framework Steward | mini review changes|
 | V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward | To formally establish accessibility as a core principle of the framework. |

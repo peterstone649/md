@@ -1,15 +1,14 @@
-# Template for Rule [TEMPLATE_RULE] [PRIO: HIGH]
+# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
 
-**Rule ID:** <RULE_TEMPLATE_ID_FROM_TITLE>
-**Priority:** HIGH
-**Applies to:** All framework rules
+**Rule ID:** [TYPE_FRAMEWORK_TITLE_ABBREV]
+**Scope:** [What this rule applies to]
 
 ## Rule Statement
 
 **Clear, concise statement of what this rule requires or prohibits.**
 
 ## Rule Requirements
-/* can be more requirements if needed !*/
+
 - **[R1]**: Description of requirement with ID for compliance tracking
 - **[R2]**: Description of requirement with ID for compliance tracking
 - **[R3]**: Description of requirement with ID for compliance tracking
@@ -43,20 +42,19 @@ Brief explanation of why this rule exists and its benefits.
 ### Related Principles
 - **[principle_name.md](../path/to/principle.md)** - Description of relationship
 
-## Changelog
-
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
-|---------|------|---------|-------------|----------------------|
-| V0.1.1 | 2026-01-15 | Added extended footer section with Rule Owner, Enforcement Authority, Framework metadata | Framework Steward | Provide comprehensive rule documentation template |
-| V0.1.0 | YYYY-MM-DD | Initial template creation | Framework Steward | Establish rule template standard |
-
-**Rule Steward:** Framework Steward
-**Approval Status:** Template
+**Rule Steward:** [Role Title]
+**Approval Status:** [Status]
 **Effective Date:** YYYY-MM-DD
-**Review Cycle:** Annual
+**Review Cycle:** [Duration]
 
 **Framework:** MODEL_for_framework
 **Framework Version:** V[VERSION]
 **Date:** YYYY-MM-DD
-**Priority:** [PRIORITY]
-**Compliance:** [Mandatory | Recommended]
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.1 | 2026-01-15 | Added extended footer section with Rule Owner, Enforcement Authority, Framework metadata | Framework Steward | Provide comprehensive rule documentation template |
+| V0.1.0 | YYYY-MM-DD | Initial template creation | Framework Steward | Establish rule template standard |

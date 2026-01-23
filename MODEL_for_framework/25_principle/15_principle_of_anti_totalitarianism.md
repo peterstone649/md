@@ -1,8 +1,13 @@
-# Principle of Anti-Totalitarianism [PRINC_MFW_ANTI_TOTALITARIANISM] [PRIO: CRITICAL]
+# Anti-Totalitarianism Principle [PRINC_FOR_MFW_ANTI_TOTALITARIANISM] **[PRIO: CRITICAL]**
+
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All aspects of system design and operation (optimization algorithms, governance, resource allocation, etc.)
+
+## Overview
 
 **We establish Anti-Totalitarianism as a foundational principle requiring that all AI systems, frameworks, and optimizations preserve individual sovereignty and prevent the emergence of totalitarian control structures.**
 
-**Objectives:**
+### **Objectives**
 1. **Individual Sovereignty**: Ensure no single entity or system can establish permanent control over others.
 2. **Multi-Perspective Balance**: Maintain diverse viewpoints and decision-making approaches.
 3. **Exit Rights**: Guarantee the ability to opt-out or dissent from systemic optimizations.
@@ -18,16 +23,6 @@ The Principle of Anti-Totalitarianism mandates that systems must be designed to 
 
 ---
 
-## 1. Scope and Applicability
-
-This principle applies to all aspects of system design and operation, including but not limited to:
-- All optimization algorithms and decision frameworks.
-- All priority hierarchies and conflict resolution systems.
-- All resource allocation and distribution mechanisms.
-- All governance and control structures.
-
----
-
 ## 2. Core Definitions
 
 | Element | Definition |
@@ -39,15 +34,15 @@ This principle applies to all aspects of system design and operation, including 
 
 ---
 
-## 4. Rules and Guidelines
+## 3. Rules and Guidelines
 
-### 4.1 Fundamental Constraints
+### 3.1 Fundamental Constraints
 1. **No Permanent Hierarchies**: Systems cannot establish control structures that permanently eliminate individual agency.
 2. **Exit Rights Preservation**: All entities must retain the ability to dissent or opt-out from systemic optimizations.
 3. **Multi-Perspective Requirement**: Decision frameworks must incorporate diverse viewpoints and prevent single-perspective dominance.
 4. **Power Distribution**: Authority cannot be concentrated in ways that enable full totalitarian control.
 
-### 4.2 Optimization Safeguards
+### 3.2 Optimization Safeguards
 1. **Anti-Totalitarian Overrides**: Priority systems must include veto mechanisms against totalitarian outcomes.
 2. **Sovereignty Preservation**: Individual autonomy takes precedence over collective optimization when they conflict.
 3. **Dissent Protection**: Systems must protect and incorporate dissenting viewpoints in decision processes.
@@ -55,7 +50,7 @@ This principle applies to all aspects of system design and operation, including 
 
 ---
 
-## 8. Related Principles and Documents
+## 4. Related Principles and Documents
 
 | Reference | Relationship |
 |-----------|--------------|
@@ -64,9 +59,19 @@ This principle applies to all aspects of system design and operation, including 
 
 ---
 
+**Rule Steward:** Anti-Totalitarianism Committee
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-13
+**Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
 ## Changelog
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.1 | 2026-01-13 | Initial creation | Framework Steward | minor updates |
 | V0.1.0 | 2026-01-13 | Initial creation | Framework Steward | Establish anti-totalitarianism as a core principle to prevent totalitarian AI outcomes. |

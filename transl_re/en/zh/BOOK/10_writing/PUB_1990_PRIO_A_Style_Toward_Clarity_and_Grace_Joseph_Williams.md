@@ -174,5 +174,6 @@ The book emphasizes that good style is not about following rules but about makin
 
 | Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V0.1.1 | 2026-01-20 | Added changelog | Framework Admin |  |
+| V0.1.2 | 2026-01-23 | Finalized backward translation | Framework Admin | backwards translate |
+| V0.1.1 | 2026-01-20 | Added changelog | Framework Admin | motivation adapt |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Admin | Establish file |

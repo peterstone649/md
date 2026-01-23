@@ -1,4 +1,7 @@
-# Framework [DEF_FOR_FRAMEWORK] [PRIO: HIGH]
+# Framework [TERM_FOR_MFW_FRAMEWORK] **[PRIO: HIGH]**
+
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All framework structural systems and conceptual foundations
 
 *   **Framework:** A structured conceptual system that provides a foundation for understanding, organizing, and implementing complex concepts, processes, or systems through interrelated components, principles, and methodologies.
 *   **Description:** A framework represents a comprehensive conceptual architecture that establishes the boundaries, relationships, and operational principles for addressing complex domains. It provides systematic approaches to problem-solving, decision-making, and implementation by defining core components, their interactions, and the underlying principles that guide their application. Frameworks transform abstract concepts into actionable systems through structured methodologies and validated approaches.
@@ -6,7 +9,7 @@
 *   **Type Classification:** SYSTEMIC
 *   **Priority Level:** HIGH
 *   **Scientific Acceptance:** High (Fundamental to systems engineering, knowledge management, and organizational design with extensive empirical validation).
-*   **Reference:** [TOGAF Architecture Framework](https://www.opengroup.org/togaf), [Zachman Framework for Enterprise Architecture](https://www.zachman.com/)
+*   **Reference:** [TOGAF Architecture Framework](https://www.opengroup.org/togaf) (WP), [Zachman Framework for Enterprise Architecture](https://www.zachman.com/) (WP)
 *   **Key Theories:** Systems Theory, Structuralism, Cybernetics, General Systems Theory, Hierarchical Organization Theory, Complexity Theory
 *   **Context:** Frameworks provide the intellectual scaffolding for complex problem-solving across all domains, enabling systematic approaches to understanding, designing, and implementing sophisticated systems and methodologies.
 
@@ -48,9 +51,19 @@
 - **Contextual Stability:** Core concept with consistent application across engineering, business, science, and governance domains
 - **Practical Application:** Essential for all complex system design, implementation, and management activities
 
+**Term Steward:** Terminology Architects
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
 ## Changelog
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation  |
-|---------|------|---------|-------------|-----------------------|
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
-| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  |
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward | Establish foundation for term framework |

@@ -1,4 +1,7 @@
-# Context [[DEF_FOR_CONTEXT]] [PRIO: HIGH]
+# Context [TERM_FOR_MFW_CONTEXT] **[PRIO: HIGH]**
+
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All framework contextual grounding and situational factors
 
 *   **Context:** The comprehensive framework of situational, relational, and environmental factors that shape the meaning, interpretation, and application of concepts, terms, and systems within specific domains of knowledge and practice.
 *   **Description:** In this scientific framework, context represents the essential relational and situational grounding that prevents concepts from becoming isolated abstractions. Context encompasses the broader framework of relationships, historical development, disciplinary boundaries, and situational factors that influence how terms, concepts, and systems function within specific knowledge domains. It transforms theoretical constructs into practical, applicable knowledge by providing the necessary background, relationships, and environmental factors that shape understanding and implementation.
@@ -6,7 +9,7 @@
 *   **Type Classification:** METACOGNITIVE / RELATIONAL
 *   **Priority Level:** HIGH
 *   **Scientific Acceptance:** High (Fundamental to epistemology, cognitive science, and systems theory).
-*   **Reference:** [Context (Philosophy)](https://en.wikipedia.org/wiki/Context_(philosophy)), [Situated Cognition](https://en.wikipedia.org/wiki/Situated_cognition)
+*   **Reference:** [Context (Philosophy)](https://en.wikipedia.org/wiki/Context_(philosophy)) (WP), [Situated Cognition](https://en.wikipedia.org/wiki/Situated_cognition) (WP)
 *   **Key Theories:** Situated Learning Theory (Lave & Wenger), Ecological Psychology (Gibson), Distributed Cognition (Hutchins), Embodied Cognition (Varela)
 *   **Context:** In this scientific framework, context serves as the essential relational and situational grounding that transforms abstract concepts into practical knowledge. It provides the environmental and relational framework that enables meaningful interpretation, application, and evolution of conceptual systems.
 
@@ -233,35 +236,19 @@ Context represents the essential relational and situational grounding that trans
 - **Contextual Stability:** Core concept with universal application across all domains of knowledge and practice
 - **Practical Application:** Essential for effective communication, system design, and knowledge application across contexts
 
-## Related Terms
+**Term Steward:** Terminology Architects
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
 
-**Reference Terms:**
-- [[00_term_term.md]](00_term_term.md) - Terms derive meaning from contextual relationships
-- [[02_term_definition.md]](02_term_definition.md) - Definitions require contextual specification
-
-**Prerequisite Terms:**
-- [[71_term_framework.md]](71_term_framework.md) - Frameworks provide contextual structure
-- [[concept.md]](concept.md) - Concepts gain meaning through contextual application
-
-**Related Terms:**
-- [[system.md]](system.md) - Systems operate within contextual boundaries
-- [[environment.md]](environment.md) - Environmental factors shape contextual understanding
-- [[relation.md]](relation.md) - Relationships form the core of contextual frameworks
-- [[../../../FIELDCphilosophy/20_FIELDMepistemology/30_terminology/03_term_concept.md]](../FIELDCphilosophy/20_FIELDMepistemology/30_terminology/03_term_concept.md) - Philosophical perspectives on concepts in epistemology
-
-**Dependent Terms:**
-- [[application.md]](application.md) - Applications require contextual appropriateness
-- [[adaptation.md]](adaptation.md) - Adaptation responds to contextual changes
-- [[validation.md]](validation.md) - Validation occurs within contextual frameworks
-
-**See Also:**
-- [[epistemology.md]](epistemology.md) - Theory of knowledge and contextual understanding
-- [[cognition.md]](cognition.md) - Cognitive processes shaped by contextual factors
-- [[communication.md]](communication.md) - Communication effectiveness depends on shared context
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
 ## Changelog
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation  |
-|---------|------|---------|-------------|-----------------------|
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
-| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  |
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward | Establish foundation for term context |

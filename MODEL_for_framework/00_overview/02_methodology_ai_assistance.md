@@ -1,6 +1,7 @@
-# 02. AI Assistance Methodology and Transparency (METH_AI_ASSISTANCE_FRAMEWORK) **[PRIO: HIGH]**
+# AI assistance methodology and transparency [METH_FOR_MFW_AI_ASSISTANCE] **[PRIO: HIGH]**
 
-**Version: V1.0** **Date: 2026-01-09**
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** AI assistance methodology and transparency for MODEL_for_framework
 
 *   **Methodology Overview:** This document provides MODEL_for_framework-specific AI assistance methodology, referencing the comprehensive base methodology from **MODEL_for_stakeholder_AI_collab**.
 *   **Purpose:** To document MODEL_for_framework's AI assistance practices while leveraging the standardized stakeholder-AI collaboration framework.
@@ -59,7 +60,18 @@ The **MODEL_for_framework** fully adopts the stakeholder-AI collaboration method
 
 ---
 
-**Template Version:** V1.0
-**Last Updated:** 2026-01-09
-**Base Reference:** MODEL_for_stakeholder_AI_collab/00_overview/02_methodology_ai_assistance.md
-**Framework Integration:** MODEL_for_framework AI assistance methodology (adapted from base framework)```
+**Rule Steward:** Terminology Architects
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundation for AI assistance methodology |

@@ -1,8 +1,13 @@
-# Principle of Reuse [PRINC_MFW_REUSE] [PRIO: HIGH]
+# Principle of Reuse [PRINC_FOR_MFW_REUSE] **[PRIO: HIGH]**
+
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All framework components, documentation, and patterns
+
+## Overview
 
 **We establish Reuse as a core principle requiring that framework components, documentation, and patterns be designed for maximum reusability to enhance efficiency, consistency, and quality.**
 
-**Objectives:**
+### **Objectives**
 1. **Efficiency**: Accelerate development by eliminating redundant work.
 2. **Consistency**: Ensure a uniform and predictable structure across all framework assets.
 3. **Maintainability**: Simplify updates by modifying a single, authoritative source rather than multiple copies.
@@ -39,7 +44,7 @@ This principle applies to all assets created within the framework:
 
 ---
 
-## 4. Rules and Guidelines
+## 3. Rules and Guidelines
 
 1. **Use Templates**: All new documents of a specific type (e.g., Principle, User Story) MUST be created from the official template for that type.
 2. **Modular Design**: All new code MUST be designed in a modular, component-based fashion to encourage reuse.
@@ -48,7 +53,7 @@ This principle applies to all assets created within the framework:
 
 ---
 
-## 8. Related Principles and Documents
+## 4. Related Principles and Documents
 
 | Reference | Relationship |
 |-----------|--------------|
@@ -56,9 +61,19 @@ This principle applies to all assets created within the framework:
 
 ---
 
-## 10. Changelog
+**Rule Steward:** Reuse Standards Committee
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-10
+**Review Cycle:** Annual
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V0.1.1 | 2026-01-10 | version | Framework Steward | review|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.1 | 2026-01-10 | version update | Framework Steward | review|
 | V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward | To formally establish reuse as a core principle of the framework. |

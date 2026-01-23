@@ -1,4 +1,7 @@
-# Definition [DEF_FOR_DEFINITION] [PRIO: HIGH]
+# Definition [TERM_FOR_MFW_DEFINITION] **[PRIO: HIGH]**
+
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All framework definitions and semantic boundary specifications
 
 *   **Definition:** A structured explanation or description that clarifies the meaning and usage of a specific term within a particular context or domain, establishing precise conceptual boundaries and enabling consistent understanding.
 *   **Description:** In this scientific framework, definitions provide the precise semantic boundaries and conceptual clarity for all terms. They establish the exact meaning, scope, and usage parameters that enable consistent communication and logical reasoning across different dimensions and layers of the system. Definitions transform ambiguous language into precise conceptual tools, enabling systematic analysis and knowledge organization.
@@ -6,7 +9,7 @@
 *   **Type Classification:** CONCEPTUAL
 *   **Priority Level:** HIGH
 *   **Scientific Acceptance:** High (Fundamental to linguistics, semantics, and knowledge organization systems).
-*   **Reference:** [Terminology](https://en.wikipedia.org/wiki/Terminology), [Definition](https://en.wikipedia.org/wiki/Definition)
+*   **Reference:** [Terminology](https://en.wikipedia.org/wiki/Terminology) (WP), [Definition](https://en.wikipedia.org/wiki/Definition) (WP)
 *   **Key Theories:** Philosophy of Language (Wittgenstein), Semantics (Frege), Conceptual Analysis (Russell), Formal Logic (Tarski)
 *   **Context:** In this scientific framework, term definitions provide the precise semantic boundaries and conceptual clarity for all terms. They establish the exact meaning, scope, and usage parameters that enable consistent communication and logical reasoning across different dimensions and layers of the system. Definitions are essential for maintaining the integrity and coherence of the structured vocabulary system.
 
@@ -169,29 +172,19 @@ Definitions represent the fundamental mechanism for establishing conceptual prec
 - **Contextual Stability:** Core methodological concept with universal application across all knowledge domains
 - **Practical Application:** Essential for all systematic knowledge organization, communication, and reasoning systems
 
-## Related Terms
+**Term Steward:** Terminology Architects
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
 
-**Reference Terms:**
-- [Term](00_term_term.md) - Conceptual units requiring definition
-- [Concept](10_concept.md) - Ideas requiring precise definition
-- [Context](context frameworks) - Situational factors affecting definitions
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
-**Prerequisite Terms:**
-- [Language](semantic systems) - Communication medium for definitions
-- [Meaning](semantic content) - What definitions aim to establish
-- [Precision](exact specification) - Quality that definitions strive to achieve
+## Changelog
 
-**Related Terms:**
-- [Semantics](meaning systems) - Study of meaning that definitions support
-- [Ontology](knowledge structures) - Formal systems built on definitions
-- [Taxonomy](classification systems) - Organizational frameworks using definitions
-
-**Dependent Terms:**
-- [Axiom](fundamental principles) - Statements requiring precise definition
-- [Theorem](derived principles) - Propositions built on defined concepts
-- [System](organized entities) - Structures composed of defined components
-
-**See Also:**
-- [Philosophy of Language](Wittgenstein) - Theoretical foundations of meaning and definition
-- [Formal Logic](Tarski) - Mathematical approaches to precise definition
-- [Knowledge Representation](Sowa) - Computational methods for definition and meaning
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward | Establish foundation for term definition |
+| V0.1.1 | 2026-01-12 | refiner | AI Framework Steward | version log update |

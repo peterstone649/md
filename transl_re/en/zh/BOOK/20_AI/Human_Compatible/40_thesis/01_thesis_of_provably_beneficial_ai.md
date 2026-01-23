@@ -163,5 +163,6 @@ The Provably Beneficial AI Thesis establishes that AI safety is not a matter of 
 
 | Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V0.1.1 | 2026-01-20 | Added changelog | Framework Admin |  |
+| V0.1.2 | 2026-01-23 | Finalized backward translation | Framework Admin | backwards translate |
+| V0.1.1 | 2026-01-20 | Added changelog | Framework Admin | motivation adapt |
 | V0.1.0 | 2026-01-20 | Initial creation | AI Framework Admin | Establish thesis |

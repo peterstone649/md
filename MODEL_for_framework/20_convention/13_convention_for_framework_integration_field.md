@@ -1,8 +1,11 @@
-# 13. Convention for Framework Integration Field **[CONV_FOR_MODELFW_FRAMEWORK_INTEGRATION]** **[PRIO: HIGH]**
+# Framework Integration Convention [CONV_FOR_MFW_INTEGRATION] **[PRIO: HIGH]**
 
-**Version: V0.1.0** **Date: 2026-01-08**
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All axiom, term, strategy, and template documents in MODEL_for_framework
 
-**Purpose:** Standardize the meaning and usage of the "Framework Integration" field across all framework documents.
+## Overview
+
+**Standardize the meaning and usage of the "Framework Integration" field across all framework documents.**
 
 ---
 
@@ -52,7 +55,7 @@
 ## Field Placement
 
 The "Framework Integration" field should appear:
-1. Immediately after the version/date header
+1. Immediately after the version/date header (or Scope field)
 2. Before the main description/definition
 3. As a brief bridge between the header and detailed content
 
@@ -69,4 +72,18 @@ The "Framework Integration" field should appear:
 
 ---
 
-**Convention Reference:** Apply to all axiom, term, strategy, and template documents in MODEL_for_framework.
+**Rule Steward:** Integration Standards Committee
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-08 | Initial creation | AI Framework Steward | Establish integration field standards |

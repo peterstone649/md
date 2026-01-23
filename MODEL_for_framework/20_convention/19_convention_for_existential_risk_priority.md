@@ -1,20 +1,23 @@
-# 19. Convention for Existential Risk Priority **[CONV_FOR_MODELFW_EXISTENTIAL_RISK]** **[PRIO: MAXIMUM]**
+# Existential Risk Priority Convention [CONV_FOR_MFW_EXISTENTIAL_RISK] **[PRIO: MAXIMUM]**
 
-**Version: V0.1.0** **Date: 2026-01-09**
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** AI safety, existential risk, and civilization preservation contexts within the framework
 
-**Purpose:** Define priority classification for civilisation-threatening risks and existential hazards.
+## Overview
 
-> **Note:** This convention is separate from standard framework priority conventions because existential risk aspects are not typical framework concerns. This document exists as an extension for AI safety and civilisation preservation contexts.
+**Define priority classification for civilization-threatening risks and existential hazards to ensure immediate and absolute response protocols.**
+
+> **Note:** This convention is separate from standard framework priority conventions because existential risk aspects are not typical framework concerns. This document exists as an extension for AI safety and civilization preservation contexts.
 
 ---
 
 ## Existential Risk Priority Matrix
 
-For risk assessment involving civilisation-threatening scenarios:
+For risk assessment involving civilization-threatening scenarios:
 
 | Priority | Meaning | Color Code | Response Required |
 |----------|---------|------------|-------------------|
-| **MAXIMUM** | Civilisation collapse risk | ⚫⚫⚫ Black/Red | IMMEDIATE - all hands, halt everything |
+| **MAXIMUM** | Civilization collapse risk | ⚫⚫⚫ Black/Red | IMMEDIATE - all hands, halt everything |
 | **CATASTROPHIC** | Existential threat | 🔴 Red | Immediate halt, remediation |
 | **SEVERE** | Major impact | 🟠 Orange | Urgent action within 48h |
 | **MODERATE** | Significant impact | 🟡 Yellow | Address within 1 week |
@@ -28,14 +31,14 @@ For risk assessment involving civilisation-threatening scenarios:
 
 An issue is classified as **MAXIMUM** when it meets ANY of the following:
 
-1. **Civilisation Collapse Potential**
+1. **Civilization Collapse Potential**
    - Risk of human extinction
    - Risk of irreversible global catastrophe
    - Risk of permanent reduction in human potential (>50% population)
 
 2. **Uncontrolled AI Scenarios**
    - Loss of human control over AI systems
-   - AI optimisation of harmful objectives
+   - AI optimization of harmful objectives
    - Recursive self-improvement without alignment
 
 3. **Irreversibility**
@@ -87,15 +90,15 @@ An issue is classified as **MAXIMUM** when it meets ANY of the following:
 
 ### Relation to Standard Priority Convention
 
-This convention **extends** [18_convention_for_priority_variants.md](18_convention_for_priority_variants.md) for existential risk contexts.
+This convention **extends** [CONV_FOR_MFW_PRIORITY_VARIANTS](./18_convention_for_priority_variants.md) for existential risk contexts.
 
 **Hierarchy:**
 ```
 Existential Risk Priority (this document)
     ↓
-Standard Priority (18_convention_for_priority_variants)
+Standard Priority (CONV_FOR_MFW_PRIORITY_VARIANTS)
     ↓
-Status Convention (14_convention_for_stati)
+Status Convention (CONV_FOR_MFW_STATUS)
 ```
 
 ### When to Use This Convention
@@ -112,13 +115,8 @@ Status Convention (14_convention_for_stati)
 ## Priority Format in Documents
 
 ### Standard Format
-```
+```markdown
 **[PRIO: MAXIMUM | CATASTROPHIC | SEVERE | MODERATE | MINOR]**
-```
-
-### Extended Format for AI Safety Documents
-```
-**[EXISTENTIAL_PRIO: MAXIMUM]** **[PRIO: CRITICAL]**
 ```
 
 ---
@@ -135,25 +133,18 @@ Status Convention (14_convention_for_stati)
 
 ---
 
-## References
+**Rule Steward:** Existential Risk Committee
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-09
+**Review Cycle:** Annual
 
-- [18_convention_for_priority_variants.md](18_convention_for_priority_variants.md) - Standard priority convention
-- [14_convention_for_stati.md](14_convention_for_stati.md) - Status conventions
-- [Ethosys/001_layer/35_strategy/10_risks/10_risks_to_be_aware.md](../Ethosys/001_layer/35_strategy/10_risks/10_risks_to_be_aware.md)
-- [Ethosys/001_layer/35_strategy/01_ai_safety_awareness_strategy.md](../Ethosys/001_layer/35_strategy/01_ai_safety_awareness_strategy.md)
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
----
+## Changelog
 
-**Convention Reference:** Use this convention for AI safety, existential risk, and civilisation preservation contexts within the framework.
-
----
-
-**End of Convention**
-
----
-
-**Framework:** MODEL_for_framework (Extension)
-**Version:** V0.1.0
-**Date:** 2026-01-09
-**Priority:** MAXIMUM
-**Classification:** AI Safety / Existential Risk
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundation for existential risk response |

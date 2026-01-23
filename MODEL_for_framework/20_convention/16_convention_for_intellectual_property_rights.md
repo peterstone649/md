@@ -1,14 +1,7 @@
-# 16. Convention for Intellectual Property Rights **[CONV_FOR_MODELFW_IPR]** **[PRIO: HIGH]**
+# Intellectual Property Rights [CONV_FOR_MFW_IPR] **[PRIO: HIGH]**
 
-**Version:** V1.0.0
-**Status:** DONE
-**Date:** 2026-01-09
-
-**Confidence Score:** 5
-
-**Integration Field:** OT
-
----
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All framework documents, code, and derivative works
 
 ## Derivation Source
 
@@ -29,13 +22,9 @@ Clear intellectual property rights conventions are essential for protecting crea
 
 This convention applies to all framework documents, code, and derivative works. It ensures legal clarity while promoting open collaboration and innovation.
 
----
-
 ## Abstract
 
 This convention establishes comprehensive intellectual property rights guidelines for the framework. It defines ownership, licensing, attribution, and usage rights for all framework components, ensuring legal protection while enabling collaborative development and open innovation.
-
----
 
 ## 1. Scope and Applicability
 
@@ -53,8 +42,6 @@ This convention applies to:
 - Academic researchers and institutions
 - Open source community members
 
----
-
 ## 2. Core Definitions
 
 | Element | Definition | Example |
@@ -64,8 +51,6 @@ This convention applies to:
 | **Attribution** | Credit given to original creators | © 2026 Raoul Menzel |
 | **Derivative Work** | Modified or adapted original work | Framework extensions, implementations |
 | **Fair Use** | Limited use without permission | Research, education, criticism |
-
----
 
 ## 3. Intellectual Property Rights
 
@@ -87,8 +72,6 @@ This convention applies to:
 - Reference original framework and contributors
 - Maintain license text accessibility
 - Preserve attribution chains in collaborative works
-
----
 
 ## 4. Rules and Guidelines
 
@@ -113,8 +96,6 @@ This convention applies to:
 - **Guideline 9**: Credit all contributors appropriately
 - **Guideline 10**: Preserve attribution chains in collaborative works
 
----
-
 ## 5. Naming Conventions
 
 | Pattern | Meaning | Example |
@@ -122,8 +103,6 @@ This convention applies to:
 | **© YYYY Author** | Copyright notice | © 2026 Raoul Menzel |
 | **[LICENSE_NAME]** | License reference | **[EUPL v1.2]** |
 | **Based on [FRAMEWORK]** | Attribution format | Based on MODEL_for_framework |
-
----
 
 ## 6. Examples
 
@@ -145,8 +124,6 @@ Derived from MODEL_for_framework © 2026 Raoul Menzel
 Licensed under EUPL v1.2 with modifications by [Your Name]
 ```
 
----
-
 ## 7. Related Conventions and Documents
 
 | Reference | Relationship |
@@ -155,8 +132,6 @@ Licensed under EUPL v1.2 with modifications by [Your Name]
 | [CONV_FOR_VERSION](./01_convention_for_version.md) | Version tracking and attribution |
 | [CONV_FOR_STATUS](./14_convention_for_stati.md) | Document status conventions |
 | [CONV_FOR_ABBREVIATIONS](./15_convention_for_abbreviations.md) | License abbreviation standards |
-
----
 
 ## 8. Implementation Notes
 
@@ -179,47 +154,19 @@ When adopting this convention:
 - [ ] License compatibility verified across components
 - [ ] Commercial usage rights clearly defined
 
----
+**Rule Steward:** Raoul Menzel
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-09
+**Review Cycle:** Annual
 
-## 9. Changelog
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
-| Version | Date | Changes |
-|---------|------|---------|
-| V1.0.0 | 2026-01-09 | Complete IPR convention with EUPL framework |
-| V0.1.0 | 2026-01-09 | Initial IPR guidelines and licensing framework |
+## Changelog
 
----
-
-## 10. Appendices
-
-### Appendix A: EUPL v1.2 Summary
-- **Usage Rights**: Full permissions for any purpose
-- **Modification**: Create derivatives and adaptations
-- **Distribution**: Share original and modified works
-- **Commercial Use**: Build commercial products and services
-- **Requirements**: Attribution, license copy, share-alike compatibility
-
-### Appendix B: Compatible Licenses
-| License | Compatibility | Use Case |
-|---------|----------------|----------|
-| **Apache 2.0** | Full compatible | Software and documentation |
-| **MIT** | Full compatible | Code and simple components |
-| **BSD** | Full compatible | Academic and research software |
-| **CC BY-SA 4.0** | Compatible with restrictions | Creative content |
-
-### Appendix C: Attribution Templates
-```markdown
-<!-- Standard Attribution -->
-© 2026 Raoul Menzel
-Licensed under EUPL v1.2
-Framework: MODEL_for_framework
-
-<!-- Derivative Attribution -->
-Based on MODEL_for_framework © 2026 Raoul Menzel
-Additional contributions by [Contributor Names]
-Licensed under [Compatible License]
-```
-
----
-
-**End of Convention**
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and synchronized metadata per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V1.0.0 | 2026-01-09 | Complete IPR convention with EUPL framework | Framework Admin | Establish convention |
+| V0.1.0 | 2026-01-09 | Initial IPR guidelines and licensing framework | Framework Admin | Initial creation |

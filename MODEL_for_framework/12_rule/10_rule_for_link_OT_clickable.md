@@ -1,17 +1,11 @@
-# Rule for Clickable Links **[RULE_FW_CLICKABLE_LINKS]** **[PRIO: HIGH]**
+# Clickable Links [RULE_FOR_MFW_LINK_OT_CLICKABLE] **[PRIO: HIGH]**
 
-**Version: V1.0.0** **Status: ACTIVE** **Date: 2026-01-09**
-
-**Rule ID:** RULE_CLICKABLE_LINKS
-**Applies to:** All framework documentation
-
----
+**Rule ID:** RULE_FOR_MFW_LINK_OT_CLICKABLE
+**Scope:** All framework documentation
 
 ## Rule Statement
 
-**All cross-references to framework documents SHOULD use clickable markdown links. Plain text file paths are NOT acceptable for internal navigation.**
-
----
+All cross-references to framework documents SHOULD use clickable markdown links. Plain text file paths are NOT acceptable for internal navigation.
 
 ## Rationale
 
@@ -22,8 +16,6 @@ Clickable links:
 - Support markdown viewers and IDE navigation
 - Align with framework principles of clarity and accessibility
 - Make framework exploration intuitive and efficient
-
----
 
 ## Clickable Link Pattern
 
@@ -39,8 +31,6 @@ Clickable links:
 | See `30_principle/01_principle_human_sovereignty.md` | See [Human Sovereignty](../30_principle/01_principle_human_sovereignty.md) |
 | Templates are in `15_template/17_template_for_principle.md` | Templates are in [17_template_for_principle.md](../../15_template/17_template_for_principle.md) |
 | Legal info in 01_copyright_notice.md | Legal info in [01_copyright_notice.md](../01_legal/01_copyright_notice.md) |
-
----
 
 ## Link Construction Strategy
 
@@ -69,8 +59,6 @@ Clickable links:
 [Principle Template](../../15_template/17_template_for_principle.md)
 ```
 
----
-
 ## Acceptable Plain Text Exceptions
 
 Plain text file paths ARE acceptable when:
@@ -87,8 +75,6 @@ Plain text file paths ARE acceptable when:
 4. **Quick Reference Tables**
    - When both link text and path need visible separation
 
----
-
 ## Validation Checklist
 
 - [ ] All internal document references use `[Text](path)` format
@@ -97,15 +83,11 @@ Plain text file paths ARE acceptable when:
 - [ ] No broken or dead links
 - [ ] Links work in markdown viewers and IDEs
 
----
-
 ## Enforcement
 
 1. **Writing Phase:** Writers apply link pattern during drafting
 2. **Review Phase:** Reviewers verify all cross-references are clickable
 3. **Automated Checks:** Tools can verify markdown link syntax
-
----
 
 ## Cross-Framework Application
 
@@ -115,17 +97,24 @@ This rule applies universally across all framework directories:
 - **FIELDC*** directories - Domain-specific implementations
 - **Ethosys** - Ethics and safety framework
 
----
-
 ## References
 
 - Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)
 - Markdown Specification (CommonMark)
 - Active Voice Rule (12_rule/01_rule_for_active_voice.md)
 
----
-
 **Rule Steward:** Framework Standards Committee
 **Approval Status:** Framework Approved
 **Effective Date:** 2026-01-09
 **Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.0
+**Date:** 2026-01-09
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V1.0.0 | 2026-01-09 | Initial creation | AI Framework Admin | Establish rule |

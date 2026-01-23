@@ -1,6 +1,7 @@
-# Convention for version [CONV_FOR_MODELFW_VERSION] [PRIO: HIGH]
->
-**Version:** V1.0.0 **Status:** APPROVED **Date:** 2026-01-09
+# Version [CONV_FOR_MFW_VERSION] **[PRIO: HIGH]**
+
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+
 **Integration Field:** MODEL_for_framework_ecosystem
 
 ## Derivation Source
@@ -28,13 +29,9 @@ Standardized versioning practices are essential for maintaining consistency, saf
 
 This convention applies to all documents within the frameworks including conventions, templates, axioms, strategies, and tasks. All documents must follow these versioning practices to ensure systematic evolution and traceability.
 
----
-
 ## Abstract
 
 This convention establishes standardized versioning practices for the frameworks. It defines version number formats, semantic versioning guidelines, version documentation requirements, and change management procedures. The goal is to ensure consistency, traceability, and compatibility across all framework components throughout their lifecycle.
-
----
 
 ## 1. Scope and Applicability
 
@@ -52,8 +49,6 @@ This convention should be applied when:
 - System architects managing component compatibility
 - Quality assurance teams
 
----
-
 ## 2. Core Definitions
 
 | Element | Definition | Example |
@@ -64,8 +59,6 @@ This convention should be applied when:
 | **PATCH Version** | Third number indicating bug fixes | `x.x.2` |
 | **Changelog** | Documented history of version changes | See Section 10 |
 | **Compatibility** | Degree of interoperability between versions | Full/Partial/None |
-
----
 
 ## 3. Version Requirements
 
@@ -96,8 +89,6 @@ This convention should be applied when:
 | **V{major}.{minor}.{patch}** | Standard version | `V1.2.3` |
 | **{major}.{minor}** | Abbreviated (stable only) | `1.2` |
 | **v{major}.{minor}.{patch}** | Lowercase variant | `v1.2.3` |
-
----
 
 ## 4. Version Documentation
 
@@ -135,8 +126,6 @@ When documenting breaking changes, include:
 | **DEPRECATED** | Scheduled for removal | Plan migration |
 | **OBSOLETE** | No longer supported | Upgrade required |
 
----
-
 ## 5. Naming Conventions
 
 | Pattern | Meaning | Example |
@@ -170,8 +159,6 @@ When documenting breaking changes, include:
 - **Guideline 9**: Deprecation notices must include migration timelines
 - **Guideline 10**: Archived documents must maintain version history
 
----
-
 ## 7. Status and States
 
 Version status follows the document status convention defined in [CONV_FOR_STATUS_CONVENTION](./14_convention_for_stati.md):
@@ -187,11 +174,9 @@ Version status follows the document status convention defined in [CONV_FOR_STATU
 | **DONE** | Released | V1.0.0+ |
 | **ARCHIVED** | Historical | Any version |
 
----
+## 8. Examples
 
-## 7. Examples
-
-### 7.1 Changelog Entry Examples
+### 8.1 Changelog Entry Examples
 ```
 | Version | Date | Changes |
 |---------|------|---------|
@@ -201,7 +186,7 @@ Version status follows the document status convention defined in [CONV_FOR_STATU
 | V0.1.0 | 2026-01-05 | Initial creation |
 ```
 
-### 7.2 Version Number Progression
+### 8.2 Version Number Progression
 ```markdown
 Initial creation:     V0.1.0
 Minor feature add:    V0.2.0
@@ -212,7 +197,7 @@ Minor feature after:  V1.1.0
 Breaking change:      V2.0.0
 ```
 
-### 7.3 Breaking Change Documentation
+### 8.3 Breaking Change Documentation
 ```markdown
 ## Breaking Changes in V2.0.0
 
@@ -227,9 +212,7 @@ Breaking change:      V2.0.0
 **Timeline:** Effective immediately, V1.x.x supported until 2026-07-01
 ```
 
----
-
-## 8. Related Conventions and Documents
+## 9. Related Conventions and Documents
 
 | Reference | Relationship |
 |-----------|--------------|
@@ -238,9 +221,7 @@ Breaking change:      V2.0.0
 | [CONV_FOR_FILE_NAMING](./10_convention_for_file_naming.md) | File naming with versions |
 | [CONV_FOR_FORMAL_NOTATION](./12_convention_for_formal_notation.md) | Version prefix notation |
 
----
-
-## 9. Implementation Notes
+## 10. Implementation Notes
 
 ### 9.1 Migration Path
 When updating to follow this convention:
@@ -264,33 +245,19 @@ When updating to follow this convention:
 - [ ] Document status matches version progression
 - [ ] Related documents referenced where applicable
 
----
+**Rule Steward:** AI Framework Steward
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-09
+**Review Cycle:** Annual
 
-## Appendices
-
-### Appendix A: Version Format Reference
-| Format | Example | Usage |
-|--------|---------|-------|
-| V{major}.{minor}.{patch} | V1.2.3 | Standard document version |
-| v{major}.{minor}.{patch} | v1.2.3 | Alternative case format |
-| V{major}.{minor} | V1.2 | Stable major versions only |
-
-### Appendix B: Semantic Versioning Summary
-- **MAJOR**: Incompatible API changes
-- **MINOR**: New functionality (backward compatible)
-- **PATCH**: Bug fixes (backward compatible)
-
-### Appendix C: Compatibility Matrix
-| From \ To | V0.x.x | V1.0.0 | V2.0.0 |
-|-----------|--------|--------|--------|
-| V0.x.x | Compatible | Review | Migrate |
-| V1.0.0 | Review | Compatible | Migrate |
-| V2.0.0 | Migrate | Migrate | Compatible |
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
 ## Changelog
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and synchronized metadata per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.1 | 2026-01-13 | update | Framework Steward | add changelog | refine |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish  |
-

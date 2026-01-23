@@ -1,4 +1,7 @@
-# Defect Reference [REF_FOR_DEFECT] [PRIO: MEDIUM]
+# Defect Reference [TERM_FOR_MFW_DEFECT_REF] **[PRIO: MEDIUM]**
+
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All framework defect references and methodological mappings
 
 ## Term Reference
 
@@ -93,9 +96,19 @@ The defect term in MODEL_for_framework context builds upon the comprehensive SWm
 
 **For detailed defect concepts, management practices, and comprehensive analysis, refer to the primary SWmeth definition. For framework-specific applications, use the context provided above.**
 
+**Term Steward:** Terminology Architects
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
 ## Changelog
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation  |
-|---------|------|---------|-------------|-----------------------|
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.1 | 2026-01-12 | refine | Framework Steward | version log |
-| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward  |
+| V0.1.0 | 2026-01-10 | Initial creation | AI Framework Steward | Establish foundation for defect reference |

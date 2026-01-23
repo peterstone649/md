@@ -1,12 +1,15 @@
-# 14. Convention for Status Statti **[CONV_FOR_MODELFW_STATUS_CONVENTION]** **[PRIO: HIGH]**
+# Status Convention [CONV_FOR_MFW_STATUS] **[PRIO: HIGH]**
 
-**Version: V0.1.0** **Date: 2026-01-08**
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All task files, issue tracking, and project management documents in MODEL_for_framework
 
-**Purpose:** Standardize status terminology across all framework documents and tasks.
+## Overview
+
+**Standardize status terminology across all framework documents and tasks to ensure consistent progress tracking and communication.**
 
 ---
 
-## Standard Status Statti
+## Standard Status States
 
 | Status | Meaning | Usage |
 |--------|---------|-------|
@@ -18,7 +21,6 @@
 | **APPROVED** | Work reviewed and approved, ready for completion | Passed validation, awaiting finalization |
 | **DONE** | All work complete and validated | Final state - fully completed |
 | **ARCHIVED** | Historical reference, no longer active | Old completed items |
-
 
 ---
 
@@ -83,7 +85,7 @@ OPEN → IN PROGRESS → REVIEW → APPROVED → DONE
 
 ### For Task Files:
 ```
-## Status: [STATUS]
+**Status:** [STATUS]
 Started: YYYY-MM-DD [TIME]h
 Completed: YYYY-MM-DD [TIME]h OR -
 ```
@@ -131,4 +133,18 @@ Completed: YYYY-MM-DD [TIME]h OR -
 
 ---
 
-**Convention Reference:** Apply to all task files, issue tracking, and project management documents in MODEL_for_framework.
+**Rule Steward:** Status Management Committee
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
+
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting, metadata headers, and standardized tag to MFW per RULE_FOR_MFW_TITLE_FORMAT. Adjusted title text for clarity. | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-08 | Initial creation | AI Framework Steward | Establish status terminology standards |

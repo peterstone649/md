@@ -1,41 +1,11 @@
-# 15. Convention for Abbreviations **[CONV_FOR_MODELFW_ABBREVIATIONS]** **[PRIO: HIGH]**
+# Abbreviation Convention [CONV_FOR_MFW_ABBREVIATIONS] **[PRIO: HIGH]**
 
-> **Convention for Abbreviations and Acronyms in the Framework**
->
-> **Version:** V0.1.2  
-> **Status:** DONE  
-> **Date:** 2026-01-08
->
-> **Confidence Score:** 5
->
-> **Integration Field:** MODEL_for_framework
-
----
-
-## Derivation Source
-
-Based on `<internal_framework_standard>`
-
-## Core Inheritance
-
-- Inherits standardized abbreviation practices from framework methodology
-- Adapts prefix-based naming conventions for consistency
-- Extends abbreviation tracking for documentation purposes
-- Maintains compatibility with naming conventions across all framework components
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
+**Scope:** All documents within the framework (conventions, templates, axioms, strategies, and tasks)
 
 ## Rationale
 
 This convention establishes standardized abbreviations and acronyms for consistent use throughout the framework. It ensures clarity, maintainability, and interoperability across all framework components by providing a systematic approach to creating, documenting, and applying abbreviations.
-
-## General Reference
-
-This convention applies to all documents within the framework including conventions, templates, axioms, strategies, and tasks.
-
----
-
-## Abstract
-
-This convention establishes standardized abbreviations and acronyms for consistent use throughout the framework. It defines a systematic approach to creating, documenting, and applying abbreviations to ensure clarity, maintainability, and interoperability across all framework components.
 
 ---
 
@@ -51,7 +21,7 @@ This convention establishes standardized abbreviations and acronyms for consiste
 ### 1.2 Target Audience
 - Framework developers and maintainers
 - Document authors and contributors
-- e.g. Technical writers, System architects ...
+- e.g., Technical writers, System architects
 
 ---
 
@@ -68,7 +38,7 @@ This convention establishes standardized abbreviations and acronyms for consiste
 
 ## 3. Version Requirements
 
-Version management follows [CONV_FOR_VERSION](./01_convention_for_version.md).
+Version management follows [CONV_FOR_MFW_VERSION](./01_convention_for_version.md).
 
 | Version Type | Meaning | Description |
 |--------------|---------|-------------|
@@ -81,7 +51,7 @@ Version management follows [CONV_FOR_VERSION](./01_convention_for_version.md).
 ## 4. Rules and Guidelines
 
 ### 4.1 Prefix-Based Abbreviations
-Prefixes are defined in [CONV_FOR_FORMAL_NOTATION](./12_convention_for_formal_notation.md).
+Prefixes are defined in [CONV_FOR_MFW_FORMAL_NOTATION](./12_convention_for_formal_notation.md).
 
 | Prefix | Full Term | Usage | Example |
 |--------|-----------|-------|---------|
@@ -161,7 +131,7 @@ Prefixes are defined in [CONV_FOR_FORMAL_NOTATION](./12_convention_for_formal_no
 |---------|---------|---------|
 | **Lowercase prefixes** | Variable/identifier naming | `fra_id`, `mod_type` |
 | **UPPERCASE status** | Document/work status | `DRAFT`, `IN_PROGRESS` |
-| **CONV_FOR_* constant** | Convention reference constants | `CONV_FOR_ABBREVIATIONS` |
+| **CONV_FOR_* constant** | Convention reference constants | `CONV_FOR_MFW_ABBREVIATIONS` |
 
 ---
 
@@ -196,21 +166,16 @@ tpl-category = "axiom"          // Wrong: hyphen instead of underscore
 status = "draft"                 // Wrong: lowercase status
 ```
 
-### 7.3 Edge Cases
-- Multi-word abbreviations should use underscores: `IN_PROGRESS`
-- Convention constants always use `CONV_FOR_` prefix
-- Document type abbreviations map to folder structure
-
 ---
 
 ## 8. Related Conventions
 
 | Reference | Relationship |
 |-----------|--------------|
-| [CONV_FOR_VERSION](./01_convention_for_version.md) | Version management standards |
-| [CONV_FOR_FORMAL_NOTATION](./12_convention_for_formal_notation.md) | Defines variable prefix standards |
-| [CONV_FOR_STATUS_CONVENTION](./14_convention_for_stati.md) | Defines status workflow |
-| [CONV_FOR_FILE_NAMING](./10_convention_for_file_naming.md) | File naming conventions |
+| [CONV_FOR_MFW_VERSION](./01_convention_for_version.md) | Version management standards |
+| [CONV_FOR_MFW_FORMAL_NOTATION](./12_convention_for_formal_notation.md) | Defines variable prefix standards |
+| [CONV_FOR_MFW_STATUS](./14_convention_for_stati.md) | Defines status workflow |
+| [CONV_FOR_MFW_FILE_NAMING](./10_convention_for_file_naming.md) | File naming conventions |
 | [../99_appendix/abbreviations.md](../99_appendix/abbreviations.md) | Quick reference guide |
 
 ---
@@ -231,24 +196,20 @@ status = "draft"                 // Wrong: lowercase status
 
 ---
 
-## 10. Changelog
+**Rule Steward:** Abbreviation Standards Committee
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
 
-| Version | Date | Changes |
-|---------|------|---------|
-| V0.1.2 | 2026-01-08 | Added FIELDC (Field of type core), FIELDM (Field of type major) |
-| V0.1.1 | 2026-01-08 | Added PROGL, meth, SYST abbreviations; OT updated with "of type" |
-| V0.1.0 | 2026-01-08 | Initial creation of abbreviation convention |
+**Framework:** MODEL_for_framework
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
----
+## Changelog
 
-## 11. Appendices
-
-### Appendix A: Quick Reference
-Available at `../99_appendix/abbreviations.md`
-
-### Appendix B: Prefix Reference
-Complete prefix definitions are maintained in [CONV_FOR_FORMAL_NOTATION](./12_convention_for_formal_notation.md)
-
----
-
-**End of Convention**
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-23 | Updated title formatting, metadata headers, and consolidated header structure per RULE_FOR_MFW_TITLE_FORMAT. Standardized tag to MFW. | Framework Admin | Ensure framework-wide consistency |
+| V0.1.2 | 2026-01-08 | Added FIELDC (Field of type core), FIELDM (Field of type major) | Framework Steward | Expansion |
+| V0.1.1 | 2026-01-08 | Added PROGL, meth, SYST abbreviations; OT updated with "of type" | Framework Steward | Refinement |
+| V0.1.0 | 2026-01-08 | Initial creation | AI Framework Steward | Establish foundation |
