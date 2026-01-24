@@ -60,9 +60,11 @@
     </style>
 </head>
 <body>
-    <h1>18. Convention for Priority Variants <strong>[CONV_FOR_MODELFW_PRIORITY_VARIANTS]</strong> <strong>[PRIO: HIGH]</strong></h1>
-<p><strong>Version: V0.1.0</strong> <strong>Date: 2026-01-09</strong></p>
-<p><strong>Purpose:</strong> Define priority classification systems for different document types in the framework.</p>
+    <h1>Priority Variants Convention [CONV_FOR_MFW_PRIORITY_VARIANTS] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
+<strong>Scope:</strong> All documents in MODEL_for_framework and derived frameworks</p>
+<h2>Overview</h2>
+<p><strong>Define priority classification systems for different document types in the framework to ensure consistent importance assessment and response management.</strong></p>
 <hr />
 <h2>Standard Priority Levels (General)</h2>
 <p>For most framework documents:</p>
@@ -103,7 +105,7 @@
 </tbody>
 </table>
 <hr />
-<h2>Rule-Specific Priority Levels <strong>[RULE_PRIO]</strong></h2>
+<h2>Rule-Specific Priority Levels [RULE_PRIO]</h2>
 <p>Rules use a modified priority system reflecting enforcement severity:</p>
 <table>
 <thead>
@@ -144,15 +146,8 @@
 <h3>Rule Priority Format</h3>
 <pre><code>**[RULE_PRIO: MANDATORY | REQUIRED | RECOMMENDED | OPTIONAL]**
 </code></pre>
-<h3>Examples</h3>
-<p><strong>Mandatory Rule:</strong></p>
-<pre><code># 01. Rule for AI Lock Protection **[RULE_AI_LOCK]** **[RULE_PRIO: MANDATORY]**
-</code></pre>
-<p><strong>Recommended Rule:</strong></p>
-<pre><code># XX. Rule for Documentation Style **[RULE_DOC_STYLE]** **[RULE_PRIO: RECOMMENDED]**
-</code></pre>
 <hr />
-<h2>Axiom Priority Levels <strong>[AXIOM_PRIO]</strong></h2>
+<h2>Axiom Priority Levels [AXIOM_PRIO]</h2>
 <p>Axioms use an importance-based priority system:</p>
 <table>
 <thead>
@@ -189,7 +184,7 @@
 <pre><code>**[AXIOM_PRIO: FOUNDATIONAL | ESSENTIAL | IMPORTANT | SUPPORTING]**
 </code></pre>
 <hr />
-<h2>Principle Priority Levels <strong>[PRIO]</strong></h2>
+<h2>Principle Priority Levels [PRIO]</h2>
 <p>For stakeholder-AI collaboration principles:</p>
 <table>
 <thead>
@@ -302,7 +297,7 @@
 </tbody>
 </table>
 <blockquote>
-<p><strong>Note:</strong> For civilisation collapse risks (MAXIMUM), use <a href="19_convention_for_existential_risk_priority.md">19_convention_for_existential_risk_priority.md</a> instead.</p>
+<p><strong>Note:</strong> For civilization collapse risks (MAXIMUM), use <a href="19_convention_for_existential_risk_priority.html">19_convention_for_existential_risk_priority.md</a> instead.</p>
 </blockquote>
 <hr />
 <h2>Priority Usage Guidelines</h2>
@@ -349,10 +344,12 @@
 </tbody>
 </table>
 <h3>Priority Placement in Documents</h3>
-<p>Place priority marker in the document header:</p>
-<pre><code># Document Title **[PRIO_TYPE: VALUE]**
-
-**Version:** V0.1.0 **Date:** YYYY-MM-DD **[PRIO_TYPE: VALUE]**
+<p>Place priority marker in the document title line according to <a href="../12_rule/12_rule_for_title_line_formatting.html">RULE_FOR_MFW_TITLE_FORMAT</a>:</p>
+<pre><code class="language-markdown"># [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
+</code></pre>
+<p>Metadata example:</p>
+<pre><code class="language-markdown">**Version: V1.x.x** **Status: APPROVED** **Date: YYYY-MM-DD**
+**Scope:** [Scope of Application]
 </code></pre>
 <hr />
 <h2>Priority Transition Rules</h2>
@@ -370,7 +367,7 @@
 </ul>
 <h3>Transition Documentation</h3>
 <p>When priority changes, document in changelog:</p>
-<pre><code>| Version | Date | Stakeholder | Priority Change | Rationale |
+<pre><code class="language-markdown">| Version | Date | Stakeholder | Priority Change | Rationale |
 |---------|------|-------------|-----------------|-----------|
 | V0.2.0 | 2026-01-10 | Author | MEDIUM → HIGH | Stakeholder feedback |
 </code></pre>
@@ -403,7 +400,7 @@
 </tbody>
 </table>
 <blockquote>
-<p><strong>Note:</strong> For MAXIMUM priority (civilisation risks), see <a href="19_convention_for_existential_risk_priority.md">19_convention_for_existential_risk_priority.md</a>.</p>
+<p><strong>Note:</strong> For MAXIMUM priority (civilization risks), see <a href="19_convention_for_existential_risk_priority.html">19_convention_for_existential_risk_priority.md</a>.</p>
 </blockquote>
 <hr />
 <h2>Priority Override Protocol</h2>
@@ -414,7 +411,7 @@
 <li><strong>Deprecation Path</strong>: Phased reduction from HIGH → LOW</li>
 </ol>
 <h3>Override Documentation</h3>
-<pre><code>**Priority Override:** [Standard Priority] → [Override Priority]
+<pre><code class="language-markdown">**Priority Override:** [Standard Priority] → [Override Priority]
 **Rationale:** [Explanation]
 **Approved By:** [Authority]
 **Valid Until:** [Date or Condition]
@@ -422,21 +419,48 @@
 <hr />
 <h2>References</h2>
 <ul>
-<li><a href="14_convention_for_stati.md">14_convention_for_stati.md</a> - Status conventions</li>
-<li><a href="17_convention_for_prefix_standards.md">17_convention_for_prefix_standards.md</a> - Prefix standards</li>
-<li><a href="11_convention_for_confidence_scoring.md">11_convention_for_confidence_scoring.md</a> - Related scoring</li>
+<li><a href="./14_convention_for_stati.html">CONV_FOR_MFW_STATUS</a> - Status conventions</li>
+<li><a href="./17_convention_for_prefix_standards.html">CONV_FOR_MFW_PREFIX_STANDARDS</a> - Prefix standards</li>
+<li><a href="./11_convention_for_confidence_scoring.html">CONV_FOR_MFW_CONFIDENCE_SCORING</a> - Related scoring</li>
 </ul>
 <hr />
-<p><strong>Convention Reference:</strong> Apply to all documents in MODEL_for_framework and derived frameworks.</p>
-<hr />
-<p><strong>End of Convention</strong></p>
-<hr />
+<p><strong>Rule Steward:</strong> Priority Standards Committee
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-09
+<strong>Review Cycle:</strong> Annual</p>
 <p><strong>Framework:</strong> MODEL_for_framework
-<strong>Version:</strong> V0.1.0
-<strong>Date:</strong> 2026-01-09
-<strong>Priority:</strong> HIGH</p>
+<strong>Framework Version:</strong> V1.0.1
+<strong>Date:</strong> 2026-01-23</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting, metadata headers, and standardized tag to MFW per RULE_FOR_MFW_TITLE_FORMAT. Updated placement guidelines.</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-09</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>Establish priority classification systems</td>
+</tr>
+</tbody>
+</table>
         <footer>
-            <p>Generated on 2026-01-22 20:45:01 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:38 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

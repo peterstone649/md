@@ -1,6 +1,6 @@
-# Rule for Wikimedia Links [RULE_FOR_MFW_WIKIMEDIA_LINKS] **[PRIO: MEDIUM]**
+# Wikimedia Links [RULE_FOR_MFW_WIKIMEDIA_LINKS] **[PRIO: MEDIUM]**
 
-**Rule ID:** RULE_FOR_MFW_WIKIMEDIA_LINKS
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework documents containing Wikimedia references
 
 ## Rule Statement
@@ -121,18 +121,18 @@ Every Wikimedia reference MUST include:
 - Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)
 - Clickable Links Rule (12_rule/10_rule_for_clickable_links.md)
 
-**Rule Steward:** Documentation Standards Committee
+**Rule Steward:** Terminology Architects
 **Approval Status:** Framework Approved
 **Effective Date:** 2026-01-13
 **Review Cycle:** Annual
 
 **Framework:** MODEL_for_framework
-**Framework Version:** V0.1.0
-**Date:** 2026-01-13
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
 ## Changelog
 
 | Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V1.0.1 | 2026-01-23 | Updated title formatting and changed "Applies to" to "Scope" for consistency | Framework Admin | Ensure framework-wide consistency |
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.0 | 2026-01-13 | Initial creation | AI Framework Admin | Establish file |

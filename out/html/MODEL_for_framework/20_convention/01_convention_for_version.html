@@ -60,11 +60,9 @@
     </style>
 </head>
 <body>
-    <h1>Convention for version [CONV_FOR_MODELFW_VERSION] [PRIO: HIGH]</h1>
-<blockquote>
-<p><strong>Version:</strong> V1.0.0 <strong>Status:</strong> APPROVED <strong>Date:</strong> 2026-01-09
-<strong>Integration Field:</strong> MODEL_for_framework_ecosystem</p>
-</blockquote>
+    <h1>Version [CONV_FOR_MFW_VERSION] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong></p>
+<p><strong>Integration Field:</strong> MODEL_for_framework_ecosystem</p>
 <h2>Derivation Source</h2>
 <p>Based on <code>.\SWmeth\20_convention\convention_for_version.md</code>
 Based on `..\20_convention*.md'</p>
@@ -84,10 +82,8 @@ Based on `..\20_convention*.md'</p>
 - Clear migration paths for breaking changes</p>
 <h2>General Reference</h2>
 <p>This convention applies to all documents within the frameworks including conventions, templates, axioms, strategies, and tasks. All documents must follow these versioning practices to ensure systematic evolution and traceability.</p>
-<hr />
 <h2>Abstract</h2>
 <p>This convention establishes standardized versioning practices for the frameworks. It defines version number formats, semantic versioning guidelines, version documentation requirements, and change management procedures. The goal is to ensure consistency, traceability, and compatibility across all framework components throughout their lifecycle.</p>
-<hr />
 <h2>1. Scope and Applicability</h2>
 <h3>1.1 When to Apply</h3>
 <p>This convention should be applied when:
@@ -103,7 +99,6 @@ Based on `..\20_convention*.md'</p>
 <li>System architects managing component compatibility</li>
 <li>Quality assurance teams</li>
 </ul>
-<hr />
 <h2>2. Core Definitions</h2>
 <table>
 <thead>
@@ -146,7 +141,6 @@ Based on `..\20_convention*.md'</p>
 </tr>
 </tbody>
 </table>
-<hr />
 <h2>3. Version Requirements</h2>
 <h3>3.1 Version Number</h3>
 <ul>
@@ -240,7 +234,6 @@ Based on `..\20_convention*.md'</p>
 </tr>
 </tbody>
 </table>
-<hr />
 <h2>4. Version Documentation</h2>
 <h3>4.1 Changelog Requirements</h3>
 <p>All documents must include a changelog with the following columns:
@@ -295,7 +288,6 @@ Based on `..\20_convention*.md'</p>
 </tr>
 </tbody>
 </table>
-<hr />
 <h2>5. Naming Conventions</h2>
 <table>
 <thead>
@@ -346,9 +338,8 @@ Based on `..\20_convention*.md'</p>
 <li><strong>Guideline 9</strong>: Deprecation notices must include migration timelines</li>
 <li><strong>Guideline 10</strong>: Archived documents must maintain version history</li>
 </ul>
-<hr />
 <h2>7. Status and States</h2>
-<p>Version status follows the document status convention defined in <a href="./14_convention_for_stati.md">CONV_FOR_STATUS_CONVENTION</a>:</p>
+<p>Version status follows the document status convention defined in <a href="./14_convention_for_stati.html">CONV_FOR_STATUS_CONVENTION</a>:</p>
 <table>
 <thead>
 <tr>
@@ -400,9 +391,8 @@ Based on `..\20_convention*.md'</p>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2>7. Examples</h2>
-<h3>7.1 Changelog Entry Examples</h3>
+<h2>8. Examples</h2>
+<h3>8.1 Changelog Entry Examples</h3>
 <pre><code>| Version | Date | Changes |
 |---------|------|---------|
 | V1.0.0 | 2026-01-08 | Initial release with full convention set |
@@ -410,7 +400,7 @@ Based on `..\20_convention*.md'</p>
 | V0.1.1 | 2026-01-06 | Fixed typos in Core Definitions table |
 | V0.1.0 | 2026-01-05 | Initial creation |
 </code></pre>
-<h3>7.2 Version Number Progression</h3>
+<h3>8.2 Version Number Progression</h3>
 <pre><code class="language-markdown">Initial creation:     V0.1.0
 Minor feature add:    V0.2.0
 Bug fix:              V0.2.1
@@ -419,7 +409,7 @@ Bug fix after 1.0:    V1.0.1
 Minor feature after:  V1.1.0
 Breaking change:      V2.0.0
 </code></pre>
-<h3>7.3 Breaking Change Documentation</h3>
+<h3>8.3 Breaking Change Documentation</h3>
 <pre><code class="language-markdown">## Breaking Changes in V2.0.0
 
 ### Change: Renamed &quot;FIELDC&quot; to &quot;FIELD_CORE&quot;
@@ -432,8 +422,7 @@ Breaking change:      V2.0.0
 
 **Timeline:** Effective immediately, V1.x.x supported until 2026-07-01
 </code></pre>
-<hr />
-<h2>8. Related Conventions and Documents</h2>
+<h2>9. Related Conventions and Documents</h2>
 <table>
 <thead>
 <tr>
@@ -443,25 +432,24 @@ Breaking change:      V2.0.0
 </thead>
 <tbody>
 <tr>
-<td><a href="./15_convention_for_abbreviations.md">CONV_FOR_ABBREVIATIONS</a></td>
+<td><a href="./15_convention_for_abbreviations.html">CONV_FOR_ABBREVIATIONS</a></td>
 <td>Uses version conventions</td>
 </tr>
 <tr>
-<td><a href="./14_convention_for_stati.md">CONV_FOR_STATUS_CONVENTION</a></td>
+<td><a href="./14_convention_for_stati.html">CONV_FOR_STATUS_CONVENTION</a></td>
 <td>Document status workflow</td>
 </tr>
 <tr>
-<td><a href="./10_convention_for_file_naming.md">CONV_FOR_FILE_NAMING</a></td>
+<td><a href="./10_convention_for_file_naming.html">CONV_FOR_FILE_NAMING</a></td>
 <td>File naming with versions</td>
 </tr>
 <tr>
-<td><a href="./12_convention_for_formal_notation.md">CONV_FOR_FORMAL_NOTATION</a></td>
+<td><a href="./12_convention_for_formal_notation.html">CONV_FOR_FORMAL_NOTATION</a></td>
 <td>Version prefix notation</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2>9. Implementation Notes</h2>
+<h2>10. Implementation Notes</h2>
 <h3>9.1 Migration Path</h3>
 <p>When updating to follow this convention:
 1. Assign initial version number (V0.1.0 for new documents)
@@ -485,84 +473,32 @@ Breaking change:      V2.0.0
 <li>[ ] Document status matches version progression</li>
 <li>[ ] Related documents referenced where applicable</li>
 </ul>
-<hr />
-<h2>Appendices</h2>
-<h3>Appendix A: Version Format Reference</h3>
-<table>
-<thead>
-<tr>
-<th>Format</th>
-<th>Example</th>
-<th>Usage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>V{major}.{minor}.{patch}</td>
-<td>V1.2.3</td>
-<td>Standard document version</td>
-</tr>
-<tr>
-<td>v{major}.{minor}.{patch}</td>
-<td>v1.2.3</td>
-<td>Alternative case format</td>
-</tr>
-<tr>
-<td>V{major}.{minor}</td>
-<td>V1.2</td>
-<td>Stable major versions only</td>
-</tr>
-</tbody>
-</table>
-<h3>Appendix B: Semantic Versioning Summary</h3>
-<ul>
-<li><strong>MAJOR</strong>: Incompatible API changes</li>
-<li><strong>MINOR</strong>: New functionality (backward compatible)</li>
-<li><strong>PATCH</strong>: Bug fixes (backward compatible)</li>
-</ul>
-<h3>Appendix C: Compatibility Matrix</h3>
-<table>
-<thead>
-<tr>
-<th>From \ To</th>
-<th>V0.x.x</th>
-<th>V1.0.0</th>
-<th>V2.0.0</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>V0.x.x</td>
-<td>Compatible</td>
-<td>Review</td>
-<td>Migrate</td>
-</tr>
-<tr>
-<td>V1.0.0</td>
-<td>Review</td>
-<td>Compatible</td>
-<td>Migrate</td>
-</tr>
-<tr>
-<td>V2.0.0</td>
-<td>Migrate</td>
-<td>Migrate</td>
-<td>Compatible</td>
-</tr>
-</tbody>
-</table>
+<p><strong>Rule Steward:</strong> AI Framework Steward
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-09
+<strong>Review Cycle:</strong> Annual</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V1.0.1
+<strong>Date:</strong> 2026-01-23</p>
 <h2>Changelog</h2>
 <table>
 <thead>
 <tr>
 <th>Version</th>
 <th>Date</th>
-<th>Changes</th>
-<th>Stakeholder</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
 <th>Rationale/Motivation</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting and synchronized metadata per RULE_FOR_MFW_TITLE_FORMAT</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
 <tr>
 <td>V0.1.1</td>
 <td>2026-01-13</td>
@@ -580,7 +516,7 @@ Breaking change:      V2.0.0
 </tbody>
 </table>
         <footer>
-            <p>Generated on 2026-01-22 20:45:01 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:38 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

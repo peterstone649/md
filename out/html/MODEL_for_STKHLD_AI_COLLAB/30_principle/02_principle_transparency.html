@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_principle_transparency</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>2. Principle of Transparency (PRIN_MSHCOL_TRANSPARENCY) <strong>[PRIO: CRITICAL]</strong></h1>
+<p><strong>Version: V0.1.0</strong> <strong>Status: OPEN</strong> <strong>Date: 2026-01-09</strong></p>
+<p><strong>We establish transparency as a core principle that requires all AI involvement in stakeholder collaboration to be disclosed, traceable, and understandable.</strong></p>
+<p><strong>Objectives:</strong>
+1. <strong>Disclosure</strong>: Make AI involvement visible to all stakeholders
+2. <strong>Traceability</strong>: Enable tracking of AI contributions throughout workflows
+3. <strong>Understandability</strong>: Ensure stakeholders comprehend AI's role and limitations
+4. <strong>Auditability</strong>: Support systematic review of AI-assisted decisions</p>
+<hr />
+<h2>Abstract</h2>
+<p><strong>[AI_LOCK]</strong>
+The Principle of Transparency establishes that in stakeholder-AI collaboration, all AI involvement must be fully disclosed and traceable. Stakeholders have the right to know when, how, and to what extent AI systems are contributing to collaborative outputs. This transparency enables informed decision-making, builds trust, and creates accountability for AI-assisted work. Transparency also includes clear communication of AI limitations and the boundaries of AI capability.
+<strong>[END_AI_LOCK]</strong></p>
+<hr />
+<h2>1. Scope and Applicability</h2>
+<h3>1.1 When to Apply</h3>
+<p>This principle applies when:
+- AI systems contribute to collaborative outputs
+- AI recommendations influence stakeholder decisions
+- AI tools automate or augment human tasks
+- AI-generated content enters stakeholder workflows</p>
+<h3>1.2 Target Audience</h3>
+<ul>
+<li>All stakeholders in AI-assisted workflows</li>
+<li>AI tool developers</li>
+<li>Framework administrators</li>
+<li>Quality assurance teams</li>
+</ul>
+<hr />
+<h2>2. Core Definitions</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Transparency</strong></td>
+<td>The quality of being open about AI involvement</td>
+<td>Disclosing AI contribution in document headers</td>
+</tr>
+<tr>
+<td><strong>Traceability</strong></td>
+<td>The ability to track AI contributions through workflows</td>
+<td>Version history showing AI edits</td>
+</tr>
+<tr>
+<td><strong>AI Disclosure</strong></td>
+<td>Explicit statement of AI involvement</td>
+<td>"AI-assisted content generation" tags</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. Version Requirements</h2>
+<hr />
+<h2>4. Rules and Guidelines</h2>
+<h3>4.1 Disclosure Requirements</h3>
+<ol>
+<li><strong>Explicit Marking</strong>: All AI-assisted content must be clearly marked</li>
+<li><strong>Contribution Attribution</strong>: Document what AI contributed vs. human input</li>
+<li><strong>Confidence Disclosure</strong>: Indicate confidence levels for AI recommendations</li>
+<li><strong>Limitation Statements</strong>: Communicate AI limitations transparently</li>
+</ol>
+<h3>4.2 Traceability Requirements</h3>
+<ol>
+<li><strong>Version Control</strong>: Maintain records of AI-assisted changes</li>
+<li><strong>Change Tracking</strong>: Log AI modifications to collaborative outputs</li>
+<li><strong>Origin Documentation</strong>: Track where AI contributions originated</li>
+<li><strong>Audit Logs</strong>: Support systematic review of AI involvement</li>
+</ol>
+<hr />
+<h2>5. Naming Conventions</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AI_ASSISTED_</code></td>
+<td>Content with AI contribution</td>
+<td><code>AI_ASSISTED_draft_v1.md</code></td>
+</tr>
+<tr>
+<td><code>AI_REVIEW_</code></td>
+<td>AI-reviewed content</td>
+<td><code>AI_REVIEW_analysis.md</code></td>
+</tr>
+<tr>
+<td><code>AI_GENERATED_</code></td>
+<td>Primarily AI-generated content</td>
+<td><code>AI_GENERATED_summary.md</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6. Status and States</h2>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Transition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DRAFT</td>
+<td>Initial creation</td>
+<td>→ OPEN</td>
+</tr>
+<tr>
+<td>OPEN</td>
+<td>Ready for stakeholder review</td>
+<td>→ IN PROGRESS</td>
+</tr>
+<tr>
+<td>IN PROGRESS</td>
+<td>Implementation underway</td>
+<td>→ REVIEW</td>
+</tr>
+<tr>
+<td>REVIEW</td>
+<td>Pending validation</td>
+<td>→ DONE</td>
+</tr>
+<tr>
+<td>DONE</td>
+<td>Complete and validated</td>
+<td>→ ARCHIVED</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>7. Examples</h2>
+<h3>7.1 Correct Usage</h3>
+<pre><code>Document Header: &quot;AI-Assisted Document - 40% human contribution&quot;
+Changes Log: &quot;[AI] Suggested rewrite of section 2 → [Human] Approved with modifications&quot;
+</code></pre>
+<h3>7.2 Incorrect Usage</h3>
+<pre><code>AI-modified document with no disclosure
+Human stakeholder unaware of AI involvement
+No trace of AI contributions in version history
+</code></pre>
+<hr />
+<h2>8. Related Principles and Documents</h2>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./01_principle_human_sovereignty.html">PRIN_MSHCOL_HUMAN_SOVEREIGNTY</a></td>
+<td>Transparency enables informed human decisions</td>
+</tr>
+<tr>
+<td><a href="./04_principle_accountability.html">PRIN_MSHCOL_ACCOUNTABILITY</a></td>
+<td>Traceability supports accountability</td>
+</tr>
+<tr>
+<td><a href="./05_principle_iterative_validation.html">PRIN_MSHCOL_ITERATIVE_VALIDATION</a></td>
+<td>Transparency aids validation processes</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>9. Implementation Notes</h2>
+<h3>9.1 Migration Path</h3>
+<p>N/A (Initial principle)</p>
+<h3>9.2 Validation Checklist</h3>
+<ul>
+<li>[ ] All AI-assisted content is marked</li>
+<li>[ ] AI contributions are traceable</li>
+<li>[ ] Stakeholders can identify AI involvement</li>
+<li>[ ] Limitations are communicated</li>
+</ul>
+<hr />
+<h2>10. Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.1</td>
+<td>2026-01-10</td>
+<td>Standardized principle references to PRIN_MSHCOL_* format</td>
+<td>AI Framework Steward</td>
+<td>Ensure consistent naming convention across all principle cross-references</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-09</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>Establish foundational transparency structure</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version History Guidelines:</strong>
+- <strong>Stakeholder</strong>: Document the person or role responsible for the change
+- <strong>Rationale/Motivation</strong>: Explain why the change was made (e.g., "Added disclosure requirements based on stakeholder feedback")
+- <strong>Traceability</strong>: Each version entry links to a documented decision or request if this exists</p>
+<hr />
+<p><strong>End of Principle</strong></p>
+<hr />
+<p><strong>Template Version:</strong> V1.0
+<strong>Template Reference:</strong> <a href="../15_template/17_template_for_principle.html">17_template_for_principle.md</a>
+<strong>Date:</strong> 2026-01-09
+<strong>Framework:</strong> MODEL_for_stakeholder_AI_collab</p>
+        <footer>
+            <p>Generated on 2026-01-23 08:30:41 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

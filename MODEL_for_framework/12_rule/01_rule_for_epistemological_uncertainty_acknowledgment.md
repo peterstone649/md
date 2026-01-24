@@ -1,6 +1,6 @@
 # Epistemological Uncertainty Acknowledgment [RULE_FOR_MFW_EPISTEMOLOGICAL_ACKNOWLEDGMENT] **[PRIO: HIGHEST]**
 
-**Rule ID:** RULE_FOR_MFW_EPISTEMOLOGICAL_ACKNOWLEDGMENT
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework stakeholders and AI systems
 
 *Based on: [10_axiom_of_epistemological_uncertainty.md](../35_axiom/10_axiom_of_epistemological_uncertainty.md)*
@@ -70,18 +70,18 @@ Based on:
 - [02 Rule for AI Lock Protection](02_rule_for_ai_lock_protection.md)
 - [03 Rule for Version Changelog Update](03_rule_for_version_changelog_update.md)
 
-**Rule Owner:** Framework Development Team
-**Enforcement Authority:** All stakeholders in MODEL_for_framework and MODEL_for_stakeholder_AI_collab
-**Review Cycle:** Quarterly or when significant uncertainty research emerges
+**Rule Steward:** Terminology Architects
+**Approval Status:** Framework Approved
+**Effective Date:** 2026-01-08
+**Review Cycle:** Annual
 
 **Framework:** MODEL_for_framework
-**Framework Version:** V0.1.0
-**Date:** 2026-01-09
-**Priority:** HIGHEST
-**Compliance:** Mandatory for all stakeholders and AI systems
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
-Changelog:
+## Changelog
+
 | Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Admin | Establish file |

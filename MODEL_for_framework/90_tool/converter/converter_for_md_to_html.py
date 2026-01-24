@@ -7,6 +7,7 @@ import re
 import shutil
 from datetime import datetime
 from dotenv import load_dotenv
+from handler_for_links import LinkHandler
 
 __version__ = "1.6.1"
 __status__ = "ACTIVE"
@@ -108,6 +109,7 @@ class HTMLConverter:
 
         return updated_content
 
+
     def convert(self):
         """
         Executes the conversion from Markdown to a styled HTML file.
@@ -135,6 +137,9 @@ class HTMLConverter:
         html_content = markdown.markdown(
             md_content, extensions=['fenced_code', 'tables']
         )
+
+        # Convert .md links to .html links using the LinkHandler
+        html_content = LinkHandler.handler_for_links(html_content, ".md", ".html")
 
         title = os.path.splitext(os.path.basename(self.input_path))[0]
         html_template = self._get_html_template(title, html_content)

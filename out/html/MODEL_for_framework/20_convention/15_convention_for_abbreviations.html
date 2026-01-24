@@ -60,32 +60,11 @@
     </style>
 </head>
 <body>
-    <h1>15. Convention for Abbreviations <strong>[CONV_FOR_MODELFW_ABBREVIATIONS]</strong> <strong>[PRIO: HIGH]</strong></h1>
-<blockquote>
-<p><strong>Convention for Abbreviations and Acronyms in the Framework</strong></p>
-<p><strong>Version:</strong> V0.1.2<br />
-<strong>Status:</strong> DONE<br />
-<strong>Date:</strong> 2026-01-08</p>
-<p><strong>Confidence Score:</strong> 5</p>
-<p><strong>Integration Field:</strong> MODEL_for_framework</p>
-</blockquote>
-<hr />
-<h2>Derivation Source</h2>
-<p>Based on <code>&lt;internal_framework_standard&gt;</code></p>
-<h2>Core Inheritance</h2>
-<ul>
-<li>Inherits standardized abbreviation practices from framework methodology</li>
-<li>Adapts prefix-based naming conventions for consistency</li>
-<li>Extends abbreviation tracking for documentation purposes</li>
-<li>Maintains compatibility with naming conventions across all framework components</li>
-</ul>
+    <h1>Abbreviation Convention [CONV_FOR_MFW_ABBREVIATIONS] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
+<strong>Scope:</strong> All documents within the framework (conventions, templates, axioms, strategies, and tasks)</p>
 <h2>Rationale</h2>
 <p>This convention establishes standardized abbreviations and acronyms for consistent use throughout the framework. It ensures clarity, maintainability, and interoperability across all framework components by providing a systematic approach to creating, documenting, and applying abbreviations.</p>
-<h2>General Reference</h2>
-<p>This convention applies to all documents within the framework including conventions, templates, axioms, strategies, and tasks.</p>
-<hr />
-<h2>Abstract</h2>
-<p>This convention establishes standardized abbreviations and acronyms for consistent use throughout the framework. It defines a systematic approach to creating, documenting, and applying abbreviations to ensure clarity, maintainability, and interoperability across all framework components.</p>
 <hr />
 <h2>1. Scope and Applicability</h2>
 <h3>1.1 When to Apply</h3>
@@ -100,7 +79,7 @@
 <ul>
 <li>Framework developers and maintainers</li>
 <li>Document authors and contributors</li>
-<li>e.g. Technical writers, System architects ...</li>
+<li>e.g., Technical writers, System architects</li>
 </ul>
 <hr />
 <h2>2. Core Definitions</h2>
@@ -137,7 +116,7 @@
 </table>
 <hr />
 <h2>3. Version Requirements</h2>
-<p>Version management follows <a href="./01_convention_for_version.md">CONV_FOR_VERSION</a>.</p>
+<p>Version management follows <a href="./01_convention_for_version.html">CONV_FOR_MFW_VERSION</a>.</p>
 <table>
 <thead>
 <tr>
@@ -167,7 +146,7 @@
 <hr />
 <h2>4. Rules and Guidelines</h2>
 <h3>4.1 Prefix-Based Abbreviations</h3>
-<p>Prefixes are defined in <a href="./12_convention_for_formal_notation.md">CONV_FOR_FORMAL_NOTATION</a>.</p>
+<p>Prefixes are defined in <a href="./12_convention_for_formal_notation.html">CONV_FOR_MFW_FORMAL_NOTATION</a>.</p>
 <table>
 <thead>
 <tr>
@@ -486,7 +465,7 @@
 <tr>
 <td><strong>CONV_FOR_* constant</strong></td>
 <td>Convention reference constants</td>
-<td><code>CONV_FOR_ABBREVIATIONS</code></td>
+<td><code>CONV_FOR_MFW_ABBREVIATIONS</code></td>
 </tr>
 </tbody>
 </table>
@@ -551,12 +530,6 @@ val_score = 85
 tpl-category = &quot;axiom&quot;          // Wrong: hyphen instead of underscore
 status = &quot;draft&quot;                 // Wrong: lowercase status
 </code></pre>
-<h3>7.3 Edge Cases</h3>
-<ul>
-<li>Multi-word abbreviations should use underscores: <code>IN_PROGRESS</code></li>
-<li>Convention constants always use <code>CONV_FOR_</code> prefix</li>
-<li>Document type abbreviations map to folder structure</li>
-</ul>
 <hr />
 <h2>8. Related Conventions</h2>
 <table>
@@ -568,23 +541,23 @@ status = &quot;draft&quot;                 // Wrong: lowercase status
 </thead>
 <tbody>
 <tr>
-<td><a href="./01_convention_for_version.md">CONV_FOR_VERSION</a></td>
+<td><a href="./01_convention_for_version.html">CONV_FOR_MFW_VERSION</a></td>
 <td>Version management standards</td>
 </tr>
 <tr>
-<td><a href="./12_convention_for_formal_notation.md">CONV_FOR_FORMAL_NOTATION</a></td>
+<td><a href="./12_convention_for_formal_notation.html">CONV_FOR_MFW_FORMAL_NOTATION</a></td>
 <td>Defines variable prefix standards</td>
 </tr>
 <tr>
-<td><a href="./14_convention_for_stati.md">CONV_FOR_STATUS_CONVENTION</a></td>
+<td><a href="./14_convention_for_stati.html">CONV_FOR_MFW_STATUS</a></td>
 <td>Defines status workflow</td>
 </tr>
 <tr>
-<td><a href="./10_convention_for_file_naming.md">CONV_FOR_FILE_NAMING</a></td>
+<td><a href="./10_convention_for_file_naming.html">CONV_FOR_MFW_FILE_NAMING</a></td>
 <td>File naming conventions</td>
 </tr>
 <tr>
-<td><a href="../99_appendix/abbreviations.md">../99_appendix/abbreviations.md</a></td>
+<td><a href="../99_appendix/abbreviations.html">../99_appendix/abbreviations.md</a></td>
 <td>Quick reference guide</td>
 </tr>
 </tbody>
@@ -606,43 +579,57 @@ status = &quot;draft&quot;                 // Wrong: lowercase status
 <li>[ ] New abbreviations are documented in both files</li>
 </ul>
 <hr />
-<h2>10. Changelog</h2>
+<p><strong>Rule Steward:</strong> Abbreviation Standards Committee
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-08
+<strong>Review Cycle:</strong> Annual</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V1.0.1
+<strong>Date:</strong> 2026-01-23</p>
+<h2>Changelog</h2>
 <table>
 <thead>
 <tr>
 <th>Version</th>
 <th>Date</th>
-<th>Changes</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting, metadata headers, and consolidated header structure per RULE_FOR_MFW_TITLE_FORMAT. Standardized tag to MFW.</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
+<tr>
 <td>V0.1.2</td>
 <td>2026-01-08</td>
 <td>Added FIELDC (Field of type core), FIELDM (Field of type major)</td>
+<td>Framework Steward</td>
+<td>Expansion</td>
 </tr>
 <tr>
 <td>V0.1.1</td>
 <td>2026-01-08</td>
 <td>Added PROGL, meth, SYST abbreviations; OT updated with "of type"</td>
+<td>Framework Steward</td>
+<td>Refinement</td>
 </tr>
 <tr>
 <td>V0.1.0</td>
 <td>2026-01-08</td>
-<td>Initial creation of abbreviation convention</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>Establish foundation</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2>11. Appendices</h2>
-<h3>Appendix A: Quick Reference</h3>
-<p>Available at <code>../99_appendix/abbreviations.md</code></p>
-<h3>Appendix B: Prefix Reference</h3>
-<p>Complete prefix definitions are maintained in <a href="./12_convention_for_formal_notation.md">CONV_FOR_FORMAL_NOTATION</a></p>
-<hr />
-<p><strong>End of Convention</strong></p>
         <footer>
-            <p>Generated on 2026-01-22 20:45:01 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:38 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

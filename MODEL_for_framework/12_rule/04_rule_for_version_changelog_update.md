@@ -1,6 +1,6 @@
 # Version Changelog Update [RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE] **[PRIO: HIGH]**
 
-**Rule ID:** RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework documents with changelog sections
 
 ## Rule Statement
@@ -36,7 +36,7 @@ Place the changelog section at the end of the document before the footer:
 ```markdown
 ## Changelog
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
 | V0.1.1 | 2026-01-15 | Added Version Uniqueness section and header format requirements | Framework Steward | Strengthen changelog integrity and consistency |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational structure |
@@ -111,7 +111,7 @@ Maintain reverse chronological order:
 ## Validation Checklist
 
 - [ ] Changelog section exists in document
-- [ ] All 5 columns present (Version, Date, Changes, Stakeholder, Rationale/Motivation)
+- [ ] All 5 columns present (Version, Date, Change Content, Stakeholders, Rationale/Motivation)
 - [ ] Entries in reverse chronological order
 - [ ] Date format is ISO 8601 (YYYY-MM-DD)
 - [ ] Date reflects current operating system date at time of change
@@ -136,19 +136,19 @@ Maintain reverse chronological order:
 - Convention for Writing Style (20_convention/03_convention_for_writing_style.md)
 - Template for Principle (15_template/17_template_for_principle.md)
 
-**Rule Steward:** Documentation Standards Committee
+**Rule Steward:** Terminology Architects
 **Approval Status:** Framework Approved
-**Effective Date:** 2026-01-09
+**Effective Date:** 2026-01-08
 **Review Cycle:** Annual
 
 **Framework:** MODEL_for_framework
-**Framework Version:** V0.1.1
-**Date:** 2026-01-15
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
 ## Changelog
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.1 | 2026-01-15 | Added Version Uniqueness section to Changelog Entry Requirements | Framework Steward | Strengthen changelog integrity by preventing duplicate version entries |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational structure |

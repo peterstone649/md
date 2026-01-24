@@ -60,13 +60,12 @@
     </style>
 </head>
 <body>
-    <h1>[NUMBER]. Template for Task <strong>[TASK_TEMPLATE]</strong> <strong>[PRIO: [LEVEL]]</strong></h1>
-<p><strong>Version: V0.1</strong> <strong>Date: 2026-01-08</strong></p>
-<hr />
+    <h1>Task [TPL_FOR_MFW_TASK] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.1</strong> <strong>Date: 2026-01-23</strong></p>
 <h2>Task Template Structure</h2>
 <h3>Core Template Elements:</h3>
 <ol>
-<li><strong>Title with Reference</strong>: <code># Task: [TASK_NAME]</code> <strong>[TASK_REFERENCE]</strong> <strong>[PRIO: [LEVEL]]</strong></li>
+<li><strong>Title with Reference</strong>: <code># [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**</code></li>
 <li><strong>Version Block</strong>: <code>**Version: V&lt;Version&gt;**</code> <code>**Date: YYYY-MM-DD**</code></li>
 <li><strong>Focus Statement</strong>: Brief description of task focus</li>
 <li><strong>Problems/Issues Section</strong>: Numbered list of problems found</li>
@@ -74,20 +73,43 @@
 <li><strong>Status Section</strong>: Task status tracking</li>
 <li><strong>Metadata</strong>: AI model used, timestamps</li>
 </ol>
-<hr />
 <h2>Task Template Fields:</h2>
 <ul>
-<li><strong>Version Format</strong>: Use semantic versioning (MAJOR.MINOR.PATCH)
-| Field | Format | Example |
-|-------|--------|---------|
-| <strong>Task Reference</strong> | UPPER_CASE_WITH_UNDERSCORES | TASK_FIX_PROBLEMS |
-| <strong>Priority Level</strong> | HIGHEST/HIGH/MEDIUM/LOW | HIGH |
-| <strong>Version</strong> | V<MAJOR>.<MINOR>.<PATCH> | V0.1.0 |
-| <strong>Focus</strong> | Brief description | "Fix structural problems in MODEL_for_framework" |</li>
+<li><strong>Version Format</strong>: Use semantic versioning (MAJOR.MINOR.PATCH)</li>
 </ul>
-<hr />
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Format</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[TYPE_FRAMEWORK_TITLE_ABBREV]</strong></td>
+<td>UPPER_CASE_WITH_UNDERSCORES</td>
+<td>[TASK_FOR_MFW_FIX_PROBLEMS]</td>
+</tr>
+<tr>
+<td><strong>[PRIO: XXX]</strong></td>
+<td>HIGHEST/HIGH/MEDIUM/LOW</td>
+<td><strong>[PRIO: HIGH]</strong></td>
+</tr>
+<tr>
+<td><strong>Version</strong></td>
+<td>V<MAJOR>.<MINOR>.<PATCH></td>
+<td>V0.1.0</td>
+</tr>
+<tr>
+<td><strong>Focus</strong></td>
+<td>Brief description</td>
+<td>"Fix structural problems in MODEL_for_framework"</td>
+</tr>
+</tbody>
+</table>
 <h2>Template Structure:</h2>
-<pre><code class="language-markdown"># Task: [TASK_NAME] **[TASK_REFERENCE]** **[PRIO: PRIORITY_LEVEL]**
+<pre><code class="language-markdown"># [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
 
 **Version: V&lt;Version&gt;** **Date: YYYY-MM-DD**
 
@@ -146,7 +168,6 @@
 - [FILE_1]
 - [FILE_2]
 </code></pre>
-<hr />
 <h2>Task Naming Convention:</h2>
 <ul>
 <li>Use format: <code>task_for_[ACTION]_[TARGET].md</code></li>
@@ -156,10 +177,9 @@
 <li><code>task_for_refactoring_documents.md</code></li>
 <li><code>task_for_quality_assessment.md</code></li>
 </ul>
-<hr />
 <h2>Version Requirements:</h2>
 <ul>
-<li>Follow version convention: <a href="../20_convention/01_convention_for_version.md"><code>01_convention_for_version.md</code></a></li>
+<li>Follow version convention: <a href="../20_convention/01_convention_for_version.html"><code>01_convention_for_version.md</code></a></li>
 </ul>
 <h2>Priority Levels:</h2>
 <ul>
@@ -168,9 +188,8 @@
 <li><strong>MEDIUM</strong>: Improvement opportunities, moderate impact</li>
 <li><strong>LOW</strong>: Minor enhancements, nice-to-have improvements</li>
 </ul>
-<hr />
 <h2>Task Status Workflow:</h2>
-<p>Follow status convention: <a href="../20_convention/14_convention_for_stati.md"><code>14_convention_for_stati.md</code></a></p>
+<p>Follow status convention: <a href="../20_convention/14_convention_for_stati.html"><code>14_convention_for_stati.md</code></a></p>
 <ol>
 <li><strong>DRAFT</strong> - Initial creation, pending review</li>
 <li><strong>OPEN</strong> - Ready to be picked up</li>
@@ -180,7 +199,6 @@
 <li><strong>DONE</strong> - All action items completed</li>
 <li><strong>ARCHIVED</strong> - Historical reference</li>
 </ol>
-<hr />
 <h2>Common Task Categories:</h2>
 <h3><strong>Problem Fixing Tasks</strong></h3>
 <pre><code>Focus: Identify and resolve issues in framework
@@ -198,10 +216,44 @@ Sections: Current State → Desired State → Implementation Plan
 <pre><code>Focus: Develop new framework components
 Sections: Requirements → Design → Implementation Steps
 </code></pre>
-<hr />
 <p><em>This task template ensures consistent documentation of work items, problems, and improvements across the MODEL_for_framework.</em></p>
+<p><strong>Rule Steward:</strong> [STEWARD]
+<strong>Approval Status:</strong> [STATUS]
+<strong>Effective Date:</strong> YYYY-MM-DD
+<strong>Review Cycle:</strong> [CYCLE]</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V0.1.0
+<strong>Date:</strong> 2026-01-23</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-09</td>
+<td>Initial template creation</td>
+<td>Framework Steward</td>
+<td>Establish task template standard</td>
+</tr>
+</tbody>
+</table>
         <footer>
-            <p>Generated on 2026-01-22 20:45:01 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:38 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

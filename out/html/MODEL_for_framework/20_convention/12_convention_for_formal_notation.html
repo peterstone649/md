@@ -60,9 +60,11 @@
     </style>
 </head>
 <body>
-    <h1>12. Convention for Formal Notation <strong>[CONV_FOR_MODELFW_FORMAL_NOTATION]</strong> <strong>[PRIO: HIGH]</strong></h1>
-<p><strong>Version: V0.1.0</strong> <strong>Date: 2026-01-08</strong></p>
-<p><strong>Purpose:</strong> Standardize formal notation across all framework documents for consistency, readability, and rigor.</p>
+    <h1>Formal Notation Convention [CONV_FOR_MFW_FORMAL_NOTATION] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
+<strong>Scope:</strong> All framework documents and derived frameworks</p>
+<h2>Overview</h2>
+<p><strong>Standardize formal notation across all framework documents for consistency, readability, and rigor.</strong></p>
 <hr />
 <h2>Variable Naming Convention</h2>
 <h3>Standard Variable Prefixes</h3>
@@ -223,10 +225,9 @@
 </tbody>
 </table>
 <hr />
-<hr />
 <h2>Document Constant Naming Convention</h2>
-<h3>Framework Constant Suffix Standard</h3>
-<p>All constants in <code>E:\2025_11\_29\MODEL_for_framework</code> MUST use the <code>_FW</code> suffix to identify them as framework-level constants.</p>
+<h3>Framework Constant Tag Standard</h3>
+<p>All constants in <code>E:\2025_11\md\MODEL_for_framework</code> MUST use the <code>_MFW_</code> (or equivalent framework abbreviation) in the tag to identify them as framework-level constants.</p>
 <p>The following frameworks are known till now:</p>
 <table>
 <thead>
@@ -288,7 +289,7 @@
 </tr>
 <tr>
 <td>MODEL_for_framework</td>
-<td>MODELFW</td>
+<td>MFW</td>
 <td>Framework Methodology</td>
 <td>base</td>
 </tr>
@@ -301,8 +302,8 @@
 </tbody>
 </table>
 <p>Note: 
-1.Type "base" is used to set the standards for all other frameworks
-2.Type "independant" signals that Stakeholder-AI Collaboration aspect cam also be used in non framework related AI collaboration</p>
+1. Type "base" is used to set the standards for all other frameworks.
+2. Type "independent" signals that Stakeholder-AI Collaboration aspect can also be used in non-framework related AI collaboration.</p>
 <h3>Constant Pattern</h3>
 <table>
 <thead>
@@ -315,59 +316,81 @@
 <tbody>
 <tr>
 <td><strong>Convention</strong></td>
-<td><code>CONV_FOR_[NAME]</code> → <code>CONV_FOR_FW_[NAME]</code></td>
-<td><code>CONV_FOR_STATUS_CONVENTION</code> → <code>CONV_FOR_FW_STATUS_CONVENTION</code></td>
+<td><code>CONV_FOR_[FW]_[NAME]</code></td>
+<td><code>CONV_FOR_MFW_STATUS</code></td>
 </tr>
 <tr>
 <td><strong>Rule</strong></td>
-<td><code>RULE_[NAME]</code> → <code>RULE_FW_[NAME]</code></td>
-<td><code>RULE_ACTIVE_VOICE</code> → <code>RULE_FW_ACTIVE_VOICE</code></td>
+<td><code>RULE_FOR_[FW]_[NAME]</code></td>
+<td><code>RULE_FOR_MFW_ACTIVE_VOICE</code></td>
 </tr>
 <tr>
 <td><strong>Axiom</strong></td>
-<td><code>AXIOM_[NAME]</code> → <code>AXIOM_FW_[NAME]</code></td>
-<td><code>AXIOM_FRAMEWORK_VALIDATION</code> → <code>AXIOM_FW_FRAMEWORK_VALIDATION</code></td>
+<td><code>AXIOM_FOR_[FW]_[NAME]</code></td>
+<td><code>AXIOM_FOR_MFW_VALIDITY</code></td>
 </tr>
 <tr>
 <td><strong>Template</strong></td>
-<td><code>TEMPLATE_[NAME]</code> → <code>TEMPLATE_FW_[NAME]</code></td>
-<td><code>TEMPLATE_RULE</code> → <code>TEMPLATE_FW_RULE</code></td>
+<td><code>TEMPLATE_FOR_[FW]_[NAME]</code></td>
+<td><code>TEMPLATE_FOR_MFW_RULE</code></td>
 </tr>
 <tr>
 <td><strong>Priority</strong></td>
-<td><code>PRIO_[NAME]</code> → <code>PRIO_FW_[NAME]</code></td>
-<td><code>PRIO_CRITICAL</code> → <code>PRIO_FW_CRITICAL</code></td>
+<td><code>PRIO: [LEVEL]</code></td>
+<td><code>**[PRIO: HIGH]**</code></td>
 </tr>
 </tbody>
 </table>
-<h3>Application Examples</h3>
-<p><strong>Before (Without FW Suffix):</strong></p>
-<pre><code>**[CONV_FOR_STATUS_CONVENTION]**
-**[RULE_ACTIVE_VOICE]**
-**[AXIOM_FRAMEWORK_VALIDITY]**
-</code></pre>
-<p><strong>After (With FW Suffix):</strong></p>
-<pre><code>**[CONV_FOR_FW_STATUS_CONVENTION]**
-**[RULE_FW_ACTIVE_VOICE]**
-**[AXIOM_FW_FRAMEWORK_VALIDITY]**
-</code></pre>
 <h3>Rationale</h3>
 <ul>
 <li><strong>Uniqueness</strong>: Prevents constant name collisions across frameworks</li>
 <li><strong>Origin Traceability</strong>: Constants can be traced back to MODEL_for_framework</li>
-<li><strong>Namespace Isolation</strong>: Clear separation from derived frameworks (e.g., MODEL_for_stakeholder_AI_collab)</li>
+<li><strong>Namespace Isolation</strong>: Clear separation from derived frameworks</li>
 <li><strong>Consistency</strong>: All framework documents follow the same pattern</li>
 </ul>
 <h3>Exception Handling</h3>
-<p>Derived frameworks (e.g., MODEL_for_stakeholder_AI_collab) should use their own suffix:
-- <strong>MODEL_for_stakeholder_AI_collab</strong> → <code>_SA</code> suffix (Stakeholder-AI)
-- <strong>Ethosys</strong> → <code>_ES</code> suffix
-- <strong>FIELDCscience</strong> → <code>_FS</code> suffix</p>
+<p>Derived frameworks should use their own abbreviation:
+- <strong>MODEL_for_STKHLD_AI_COLLAB</strong> → <code>MODELSHCOL</code>
+- <strong>Ethosys</strong> → <code>ESYS</code>
+- <strong>FIELDCscience</strong> → <code>FCSCI</code></p>
 <hr />
-<p><strong>Convention Reference:</strong> Apply to all documents in MODEL_for_framework and derived frameworks.</p>
-<p><strong>End of Convention</strong></p>
+<p><strong>Rule Steward:</strong> Notation Standards Committee
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-08
+<strong>Review Cycle:</strong> Annual</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V1.0.1
+<strong>Date:</strong> 2026-01-23</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting, metadata headers, and standardized framework abbreviation to MFW per RULE_FOR_MFW_TITLE_FORMAT</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-08</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>Establish formal notation standards</td>
+</tr>
+</tbody>
+</table>
         <footer>
-            <p>Generated on 2026-01-22 20:45:01 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:38 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

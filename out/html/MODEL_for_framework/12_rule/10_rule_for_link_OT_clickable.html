@@ -60,14 +60,11 @@
     </style>
 </head>
 <body>
-    <h1>Rule for Clickable Links <strong>[RULE_FW_CLICKABLE_LINKS]</strong> <strong>[PRIO: HIGH]</strong></h1>
-<p><strong>Version: V1.0.0</strong> <strong>Status: ACTIVE</strong> <strong>Date: 2026-01-09</strong></p>
-<p><strong>Rule ID:</strong> RULE_CLICKABLE_LINKS
-<strong>Applies to:</strong> All framework documentation</p>
-<hr />
+    <h1>Clickable Links [RULE_FOR_MFW_LINK_OT_CLICKABLE] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Rule ID:</strong> RULE_FOR_MFW_LINK_OT_CLICKABLE
+<strong>Scope:</strong> All framework documentation</p>
 <h2>Rule Statement</h2>
-<p><strong>All cross-references to framework documents SHOULD use clickable markdown links. Plain text file paths are NOT acceptable for internal navigation.</strong></p>
-<hr />
+<p>All cross-references to framework documents SHOULD use clickable markdown links. Plain text file paths are NOT acceptable for internal navigation.</p>
 <h2>Rationale</h2>
 <p>Clickable links:
 - Enable direct navigation between related documents
@@ -76,7 +73,6 @@
 - Support markdown viewers and IDE navigation
 - Align with framework principles of clarity and accessibility
 - Make framework exploration intuitive and efficient</p>
-<hr />
 <h2>Clickable Link Pattern</h2>
 <h3>Structure</h3>
 <pre><code class="language-markdown">[Link Text](relative/path/to/file.md)
@@ -92,19 +88,18 @@
 <tbody>
 <tr>
 <td>See <code>30_principle/01_principle_human_sovereignty.md</code></td>
-<td>See <a href="../30_principle/01_principle_human_sovereignty.md">Human Sovereignty</a></td>
+<td>See <a href="../30_principle/01_principle_human_sovereignty.html">Human Sovereignty</a></td>
 </tr>
 <tr>
 <td>Templates are in <code>15_template/17_template_for_principle.md</code></td>
-<td>Templates are in <a href="../../15_template/17_template_for_principle.md">17_template_for_principle.md</a></td>
+<td>Templates are in <a href="../../15_template/17_template_for_principle.html">17_template_for_principle.md</a></td>
 </tr>
 <tr>
 <td>Legal info in 01_copyright_notice.md</td>
-<td>Legal info in <a href="../01_legal/01_copyright_notice.md">01_copyright_notice.md</a></td>
+<td>Legal info in <a href="../01_legal/01_copyright_notice.html">01_copyright_notice.md</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
 <h2>Link Construction Strategy</h2>
 <ol>
 <li><strong>Identify Target File</strong> - Determine the document you want to reference</li>
@@ -128,7 +123,6 @@
 <pre><code class="language-markdown">[Getting Started Guide](../../00_overview/20_stakeholder/01_getting_started.md)
 [Principle Template](../../15_template/17_template_for_principle.md)
 </code></pre>
-<hr />
 <h2>Acceptable Plain Text Exceptions</h2>
 <p>Plain text file paths ARE acceptable when:</p>
 <ol>
@@ -153,7 +147,6 @@
 </li>
 <li>When both link text and path need visible separation</li>
 </ol>
-<hr />
 <h2>Validation Checklist</h2>
 <ul>
 <li>[ ] All internal document references use <code>[Text](path)</code> format</li>
@@ -162,34 +155,61 @@
 <li>[ ] No broken or dead links</li>
 <li>[ ] Links work in markdown viewers and IDEs</li>
 </ul>
-<hr />
 <h2>Enforcement</h2>
 <ol>
 <li><strong>Writing Phase:</strong> Writers apply link pattern during drafting</li>
 <li><strong>Review Phase:</strong> Reviewers verify all cross-references are clickable</li>
 <li><strong>Automated Checks:</strong> Tools can verify markdown link syntax</li>
 </ol>
-<hr />
 <h2>Cross-Framework Application</h2>
 <p>This rule applies universally across all framework directories:
 - <strong>MODEL_for_framework</strong> - Core methodology documentation
 - <strong>MODEL_for_STKHLD_AI_COLLAB</strong> - Stakeholder-AI collaboration principles
 - <strong>FIELDC</strong><em> directories - Domain-specific implementations
 - </em><em>Ethosys</em>* - Ethics and safety framework</p>
-<hr />
 <h2>References</h2>
 <ul>
 <li>Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)</li>
 <li>Markdown Specification (CommonMark)</li>
 <li>Active Voice Rule (12_rule/01_rule_for_active_voice.md)</li>
 </ul>
-<hr />
 <p><strong>Rule Steward:</strong> Framework Standards Committee
 <strong>Approval Status:</strong> Framework Approved
 <strong>Effective Date:</strong> 2026-01-09
 <strong>Review Cycle:</strong> Annual</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V1.0.0
+<strong>Date:</strong> 2026-01-09</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
+<tr>
+<td>V1.0.0</td>
+<td>2026-01-09</td>
+<td>Initial creation</td>
+<td>AI Framework Admin</td>
+<td>Establish rule</td>
+</tr>
+</tbody>
+</table>
         <footer>
-            <p>Generated on 2026-01-22 20:45:01 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:38 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

@@ -1,4 +1,4 @@
-# Term [TERM_FOR_MFW_TERM] **[PRIO: HIGHEST]**
+# Definition for Term in MFW [TERM_FOR_MFW_TERM] **[PRIO: HIGHEST]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework terminology and conceptual organization

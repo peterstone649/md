@@ -60,21 +60,22 @@
     </style>
 </head>
 <body>
-    <h1>11. Term Template (TERM_TEMPLATE)</h1>
-<p><strong>Version: V0.1</strong>
-<strong>Date: 2026-01-07</strong></p>
-<p><strong>Scope:</strong>
-- Templates ensure consistent term documentation across all framework components
-- Standardized structure improves term clarity and discoverability
-- Template-based creation reduces ambiguity and enhances precision
-- Consistent term definitions enable programmatic processing and validation
-- Templates support automated cross-referencing and relationship mapping
-- Framework evolution is supported through systematic term development</p>
-<hr />
+    <h1>Term [TPL_FOR_MFW_TERM] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.1</strong>
+<strong>Date: 2026-01-23</strong></p>
+<h2>Scope</h2>
+<ul>
+<li>Templates ensure consistent term documentation across all framework components</li>
+<li>Standardized structure improves term clarity and discoverability</li>
+<li>Template-based creation reduces ambiguity and enhances precision</li>
+<li>Consistent term definitions enable programmatic processing and validation</li>
+<li>Templates support automated cross-referencing and relationship mapping</li>
+<li>Framework evolution is supported through systematic term development</li>
+</ul>
 <h2>Term Template Structure</h2>
 <h3>Core Template Elements:</h3>
 <ol>
-<li><strong>Title with Reference</strong>: <code># [NUMBER]. [TERM_NAME] ([CONSTANT_REFERENCE]) **[PRIO: [LEVEL]]**</code></li>
+<li><strong>Title with Reference</strong>: <code># [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**</code></li>
 </ol>
 <p><strong>Version: V<Version></strong> <strong>Date: YYYY-MM-DD</strong></p>
 <ol>
@@ -85,9 +86,9 @@
 </ol>
 <h3>Required Term Fields:</h3>
 <ul>
-<li><strong>[CONSTANT_REFERENCE]</strong>: UPPER_CASE_WITH_UNDERSCORES format (e.g., DEF_FOR_TERM)</li>
-<li><strong>[TERM_NAME]</strong>: Clear, descriptive term name</li>
-<li><strong>[PRIO_LEVEL]</strong>: HIGHEST, HIGH, MEDIUM, or LOW priority designation</li>
+<li><strong>[TYPE_FRAMEWORK_TITLE_ABBREV]</strong>: e.g., [DEF_FOR_MFW_TERM]</li>
+<li><strong>[DOCUMENT_TITLE_DESCRIPTIVE]</strong>: Clear, descriptive term name</li>
+<li><strong>[PRIO: XXX]</strong>: HIGHEST, HIGH, MEDIUM, or LOW priority designation</li>
 <li><strong>Definition Fields</strong>: Term, Description, Formal Definition, Type Classification, Priority Level, Scientific Acceptance, Reference, Key Theories, Context</li>
 </ul>
 <h3>Term Definition Block Format:</h3>
@@ -162,7 +163,7 @@
 <h3>Term Template Naming Convention:</h3>
 <ul>
 <li>Use the format: <code>[NUMBER]_template_for_[PURPOSE].md</code></li>
-<li>Follow the file naming convention: <a href="../20_convention/10_convention_for_file_naming.md"><code>10_convention_for_file_naming.md</code></a></li>
+<li>Follow the file naming convention: <a href="../20_convention/10_convention_for_file_naming.html"><code>10_convention_for_file_naming.md</code></a></li>
 <li>Examples:</li>
 <li><code>11_template_for_term.md</code> (term template)</li>
 <li><code>12_template_for_concept.md</code> (concept template)</li>
@@ -170,9 +171,8 @@
 </ul>
 <h3>Version Requirements:</h3>
 <ul>
-<li>Follow the version convention: <a href="../20_convention/01_convention_for_version.md"><code>01_convention_for_version.md</code></a></li>
+<li>Follow the version convention: <a href="../20_convention/01_convention_for_version.html"><code>01_convention_for_version.md</code></a></li>
 </ul>
-<hr />
 <h2>Term Template Usage Instructions</h2>
 <h3>Template Application Process:</h3>
 <ol>
@@ -204,7 +204,6 @@
 <li>[ ] Related terms properly categorized and linked</li>
 <li>[ ] Confidence assessment includes rationale</li>
 </ul>
-<hr />
 <h2>Term Template Benefits</h2>
 <h3>Documentation Benefits:</h3>
 <ul>
@@ -227,10 +226,40 @@
 <li><strong>Cross-Referencing</strong>: Automated relationship mapping</li>
 <li><strong>Scalability</strong>: Consistent approach scales with framework growth</li>
 </ul>
-<hr />
 <p><em>This term template establishes the methodology for creating precise, comprehensive term definitions that serve as the foundation for systematic knowledge organization and rigorous conceptual frameworks.</em></p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V0.1.0
+<strong>Date:</strong> 2026-01-07</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-07</td>
+<td>Initial template creation</td>
+<td>Framework Steward</td>
+<td>Establish term template standard</td>
+</tr>
+</tbody>
+</table>
         <footer>
-            <p>Generated on 2026-01-22 20:45:01 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:38 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

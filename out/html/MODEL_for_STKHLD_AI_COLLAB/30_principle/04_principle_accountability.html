@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_principle_accountability</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>4. Principle of Accountability (PRIN_MSHCOL_ACCOUNTABILITY) <strong>[PRIO: CRITICAL]</strong></h1>
+<p><strong>Version: V0.1.0</strong> <strong>Status: OPEN</strong> <strong>Date: 2026-01-09</strong></p>
+<p><strong>We establish accountability as a core principle requiring clear responsibility chains for all stakeholder-AI collaborative outputs.</strong></p>
+<p><strong>Objectives:</strong>
+1. <strong>Responsibility Clarity</strong>: Define who owns each decision and output
+2. <strong>Traceability</strong>: Enable tracking of responsibility through workflows
+3. <strong>Consequence Management</strong>: Support appropriate responses to outcomes
+4. <strong>Governance</strong>: Enable effective oversight of stakeholder-AI collaboration</p>
+<hr />
+<h2>Abstract</h2>
+<p><strong>[AI_LOCK]</strong>
+The Principle of Accountability establishes that in stakeholder-AI collaboration, clear chains of responsibility must exist for all outputs, decisions, and actions. Neither AI systems nor human stakeholders can operate without identifiable accountability structures. This principle ensures that when outcomes occur—whether positive or negative—there is always a clear path to understanding who or what contributed, enabling appropriate responses, learning, and governance.
+<strong>[END_AI_LOCK]</strong></p>
+<hr />
+<h2>1. Scope and Applicability</h2>
+<h3>1.1 When to Apply</h3>
+<ul>
+<li>All collaborative outputs are produced</li>
+<li>AI recommendations influence decisions</li>
+<li>Quality issues or errors occur</li>
+<li>Governance and oversight are required</li>
+</ul>
+<h3>1.2 Target Audience</h3>
+<ul>
+<li>All stakeholders in collaborative workflows</li>
+<li>Governance bodies</li>
+<li>Quality assurance teams</li>
+<li>AI system operators</li>
+</ul>
+<hr />
+<h2>2. Core Definitions</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Accountability</strong></td>
+<td>The state of being responsible for outcomes</td>
+<td>Documented ownership of decisions</td>
+</tr>
+<tr>
+<td><strong>Responsibility Chain</strong></td>
+<td>A sequence of responsible parties</td>
+<td>Human → AI Tool → Framework</td>
+</tr>
+<tr>
+<td><strong>Outcome Attribution</strong></td>
+<td>Linking results to contributors</td>
+<td>Tracing error to specific input</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. Version Requirements</h2>
+<hr />
+<h2>4. Rules and Guidelines</h2>
+<h3>4.1 Accountability Requirements</h3>
+<ol>
+<li><strong>Clear Ownership</strong>: Every output has an identified owner</li>
+<li><strong>Contribution Tracking</strong>: Document AI and human contributions</li>
+<li><strong>Decision Logging</strong>: Record who approved each significant decision</li>
+<li><strong>Outcome Documentation</strong>: Track results and their attributions</li>
+</ol>
+<h3>4.2 Responsibility Matrix</h3>
+<table>
+<thead>
+<tr>
+<th>Activity</th>
+<th>Primary Responsibility</th>
+<th>Secondary Responsibility</th>
+<th>AI Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content Creation</td>
+<td>Human Stakeholder</td>
+<td>Quality Review</td>
+<td>Assistant</td>
+</tr>
+<tr>
+<td>Decision Approval</td>
+<td>Human Stakeholder</td>
+<td>Governance Body</td>
+<td>Recommender</td>
+</tr>
+<tr>
+<td>Error Correction</td>
+<td>Owner</td>
+<td>Framework Admin</td>
+<td>Detector</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Examples</h2>
+<h3>5.1 Correct Usage</h3>
+<pre><code>Document: strategy_recommendation.md
+Owner: Jane Smith (Human)
+AI Contributions: Research synthesis, Draft generation
+Human Contributions: Strategic direction, Final approval
+</code></pre>
+<h3>5.2 Incorrect Usage</h3>
+<pre><code>Document: recommendations.md
+Owner: Unclear
+Contributions: Untracked
+Responsibility: Distributed, no clear ownership
+</code></pre>
+<hr />
+<h2>6. Related Principles and Documents</h2>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./01_principle_human_sovereignty.html">PRIN_MSHCOL_HUMAN_SOVEREIGNTY</a></td>
+<td>Human retains final responsibility</td>
+</tr>
+<tr>
+<td><a href="./02_principle_transparency.html">PRIN_MSHCOL_TRANSPARENCY</a></td>
+<td>Enables accountability through disclosure</td>
+</tr>
+<tr>
+<td><a href="./07_principle_reversibility.html">PRIN_MSHCOL_REVERSIBILITY</a></td>
+<td>Supports correction of accountable actions</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>7. Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.1</td>
+<td>2026-01-10</td>
+<td>Standardized principle references to PRIN_MSHCOL_* format</td>
+<td>AI Framework Steward</td>
+<td>Ensure consistent naming convention across all principle cross-references</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-09</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>Establish foundational accountability structure</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version History Guidelines:</strong>
+- <strong>Stakeholder</strong>: Document the person or role responsible for the change
+- <strong>Rationale/Motivation</strong>: Explain why the change was made (e.g., "Updated responsibility matrix based on stakeholder feedback")
+- <strong>Traceability</strong>: Each version entry links to a documented decision or request if this exists</p>
+<hr />
+<p><strong>End of Principle</strong></p>
+<hr />
+<p><strong>Template Version:</strong> V1.0
+<strong>Template Reference:</strong> <a href="../15_template/17_template_for_principle.html">17_template_for_principle.md</a>
+<strong>Date:</strong> 2026-01-09
+<strong>Framework:</strong> MODEL_for_stakeholder_AI_collab</p>
+        <footer>
+            <p>Generated on 2026-01-23 08:30:41 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-# Abstraction [TERM_FOR_MFW_ABSTRACTION] **[PRIO: HIGH]**
+# Definition for Abstraction in MFW [TERM_FOR_MFW_ABSTRACTION] **[PRIO: HIGH]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework abstraction processes and cognitive mappings

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_principle_human_sovereignty</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Principle of Human Sovereignty (PRIN_MSHCOL_HUMAN_SOVEREIGNTY) <strong>[PRIO: CRITICAL]</strong></h1>
+<p><strong>Version: V0.1.2</strong> <strong>Status: OPEN</strong> <strong>Date: 2026-01-09</strong></p>
+<p><strong>We establish human sovereignty as the foundational principle that ensures human stakeholders retain final decision-making authority over all AI-assisted outputs in the stakeholder-AI collaboration ecosystem.</strong></p>
+<p><strong>Objectives:</strong>
+1. <strong>Authority Preservation</strong>: Maintain human control over critical decisions
+2. <strong>Decision Rights</strong>: Clearly delineate decision authority between humans and AI
+3. <strong>Override Capability</strong>: Ensure humans can override any AI recommendation
+4. <strong>Autonomy Protection</strong>: Preserve stakeholder autonomy in collaborative workflows</p>
+<hr />
+<h2>Abstract</h2>
+<p><strong>[AI_LOCK]</strong>
+The Principle of Human Sovereignty establishes that in any stakeholder-AI collaboration, humans must retain ultimate authority over decisions. AI systems may assist, recommend, and augment human capabilities, but the final decision-making power remains with human stakeholders. This principle recognizes that while AI can process information faster and identify patterns humans might miss, the ethical, contextual, and values-based judgment required for meaningful decisions remains a uniquely human domain.
+<strong>[END_AI_LOCK]</strong></p>
+<hr />
+<h2>1. Scope and Applicability</h2>
+<h3>1.1 When to Apply</h3>
+<p>This principle applies to all stakeholder-AI collaboration scenarios where:
+- Decisions affect human welfare, rights, or interests
+- Ethical considerations are involved
+- Stakeholder preferences must be respected
+- Long-term consequences must be evaluated</p>
+<h3>1.2 Target Audience</h3>
+<ul>
+<li>Stakeholders making decisions with AI assistance</li>
+<li>AI tool developers and operators</li>
+<li>Framework administrators</li>
+<li>Quality assurance teams</li>
+</ul>
+<hr />
+<h2>2. Core Definitions</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Human Sovereignty</strong></td>
+<td>The inherent right and capability of humans to make final decisions in stakeholder-AI collaboration</td>
+<td>A stakeholder choosing to reject an AI recommendation</td>
+</tr>
+<tr>
+<td><strong>Decision Authority</strong></td>
+<td>The power to accept, modify, or reject AI-generated suggestions</td>
+<td>Stakeholder's right to edit AI content</td>
+</tr>
+<tr>
+<td><strong>Override Capability</strong></td>
+<td>The ability to reverse or change AI decisions</td>
+<td>Manual intervention in automated processes</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. Version Requirements</h2>
+<hr />
+<h2>4. Rules and Guidelines</h2>
+<h3>4.1 Decision Authority Rules</h3>
+<ol>
+<li><strong>Final Decision Rights</strong>: Humans always retain the right to make final decisions</li>
+<li><strong>Recommendation Only</strong>: AI outputs must be framed as recommendations, not mandates</li>
+<li><strong>Explicit Consent</strong>: AI systems must obtain explicit human approval for consequential actions</li>
+<li><strong>No Autonomous Action</strong>: AI systems cannot take irreversible actions without human approval</li>
+</ol>
+<h3>4.2 Implementation Requirements</h3>
+<ol>
+<li><strong>Clear Interfaces</strong>: Provide human-readable interfaces for all AI recommendations</li>
+<li><strong>Explanation Requirement</strong>: AI recommendations must include reasoning and confidence levels</li>
+<li><strong>Feedback Loops</strong>: Allow stakeholders to provide feedback that influences AI behavior</li>
+<li><strong>Audit Trails</strong>: Maintain records of who made each decision</li>
+</ol>
+<hr />
+<h2>5. Naming Conventions</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DEC_</code></td>
+<td>Decision points requiring human approval</td>
+<td><code>DEC_approve_content</code></td>
+</tr>
+<tr>
+<td><code>REC_</code></td>
+<td>AI recommendations awaiting stakeholder review</td>
+<td><code>REC_suggested_edit</code></td>
+</tr>
+<tr>
+<td><code>OVR_</code></td>
+<td>Override actions taken by stakeholders</td>
+<td><code>OVR_ai_rejection</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6. Status and States</h2>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Transition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DRAFT</td>
+<td>Initial creation</td>
+<td>→ OPEN</td>
+</tr>
+<tr>
+<td>OPEN</td>
+<td>Ready for stakeholder review</td>
+<td>→ IN PROGRESS</td>
+</tr>
+<tr>
+<td>IN PROGRESS</td>
+<td>Implementation underway</td>
+<td>→ REVIEW</td>
+</tr>
+<tr>
+<td>REVIEW</td>
+<td>Pending validation</td>
+<td>→ DONE</td>
+</tr>
+<tr>
+<td>DONE</td>
+<td>Complete and validated</td>
+<td>→ ARCHIVED</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>7. Examples</h2>
+<h3>7.1 Correct Usage</h3>
+<pre><code>Stakeholder receives AI recommendation → Reviews reasoning → Makes informed decision → Executes or modifies → Decision recorded
+</code></pre>
+<h3>7.2 Incorrect Usage</h3>
+<pre><code>AI makes decision without human approval → No explanation provided → Stakeholder cannot override → No audit trail
+</code></pre>
+<hr />
+<h2>8. Related Principles and Documents</h2>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./02_principle_transparency.html">PRIN_MSHCOL_TRANSPARENCY</a></td>
+<td>Complements by ensuring visibility of AI involvement</td>
+</tr>
+<tr>
+<td><a href="./05_principle_iterative_validation.html">PRIN_MSHCOL_ITERATIVE_VALIDATION</a></td>
+<td>Supports through multi-stage human review</td>
+</tr>
+<tr>
+<td><a href="./04_principle_accountability.html">PRIN_MSHCOL_ACCOUNTABILITY</a></td>
+<td>Enables through clear responsibility chains</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>9. Implementation Notes</h2>
+<h3>9.1 Migration Path</h3>
+<p>N/A (Initial principle)</p>
+<h3>9.2 Validation Checklist</h3>
+<ul>
+<li>[ ] AI outputs clearly marked as recommendations</li>
+<li>[ ] Human approval required for consequential actions</li>
+<li>[ ] Override mechanisms are accessible and functional</li>
+<li>[ ] Audit trails maintained for all decisions</li>
+</ul>
+<hr />
+<h2>10. Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.2</td>
+<td>2026-01-10</td>
+<td>Updated document metadata to new list-based format.</td>
+<td>AI Framework Steward</td>
+<td>To align with updated template standards for metadata.</td>
+</tr>
+<tr>
+<td>V0.1.1</td>
+<td>2026-01-10</td>
+<td>Standardized principle references to PRIN_MSHCOL_* format</td>
+<td>AI Framework Steward</td>
+<td>Ensure consistent naming convention across all principle cross-references</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-09</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>Establish foundational human sovereignty structure</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version History Guidelines:</strong>
+- <strong>Stakeholder</strong>: Document the person or role responsible for the change
+- <strong>Rationale/Motivation</strong>: Explain why the change was made (e.g., "Added decision authority matrix based on stakeholder feedback")
+- <strong>Traceability</strong>: Each version entry links to a documented decision or request if this exists</p>
+<hr />
+<ul>
+<li><strong>Template Version:</strong> V0.1.1 <strong>Date:</strong> 2026-01-10</li>
+<li><strong>Template Reference:</strong> <a href="../15_template/17_template_for_principle.html">17_template_for_principle.md</a></li>
+<li><strong>Framework:</strong> MODEL_for_stakeholder_AI_collab</li>
+<li><strong>Framework Version:</strong> V1.0 <strong>Date:</strong> 2026-01-10</li>
+</ul>
+        <footer>
+            <p>Generated on 2026-01-23 08:30:41 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

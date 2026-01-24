@@ -1,4 +1,4 @@
-# Definition [TERM_FOR_MFW_DEFINITION] **[PRIO: HIGH]**
+# Definition for Definition in MFW [TERM_FOR_MFW_DEFINITION] **[PRIO: HIGH]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework definitions and semantic boundary specifications

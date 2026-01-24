@@ -60,16 +60,16 @@
     </style>
 </head>
 <body>
-    <p><strong>Template Version:</strong> V0.1.0 <strong>Template Status:</strong> DONE <strong>Date:</strong> YYYY-MM-DD</p>
-<h1>10. Term Reference Template (TERM_REFERENCE_TEMPLATE)</h1>
+    <h1>Term Reference [TPL_FOR_MFW_TERM_REF] <strong>[PRIO: HIGH]</strong></h1>
 <p><strong>We create term reference files that establish inheritance relationships between terminology across different frameworks, ensuring consistent term usage and clear cross-references.</strong></p>
-<p><strong>Scope:</strong>
-- Term reference templates ensure consistent referencing of terms.</p>
-<hr />
+<h2>Scope</h2>
+<ul>
+<li>Term reference templates ensure consistent referencing of terms.</li>
+</ul>
 <h2>Term Reference Creation Guidelines</h2>
 <h3>Core Reference Structure:</h3>
 <ol>
-<li><strong>Title with Reference</strong>: <code># [NUMBER]. [TERM_NAME] Reference ([TERM_REFERENCE_CONSTANT])</code></li>
+<li><strong>Title with Reference</strong>: <code># [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**</code></li>
 </ol>
 <p><strong>Version: <Version></strong> <strong>Date: YYYY-MM-DD</strong></p>
 <ol>
@@ -81,7 +81,7 @@
 </ol>
 <h3>Required Reference Elements:</h3>
 <ul>
-<li><strong>[TERM_REFERENCE_CONSTANT]</strong>: TERM_REF format (e.g., DEFECT_REF)</li>
+<li><strong>[TYPE_FRAMEWORK_TITLE_ABBREV]</strong>: e.g. [TERM_FOR_MFW_DEFECT_REF]</li>
 <li><strong>Primary Source Path</strong>: Full relative path to source term definition</li>
 <li><strong>Framework Context</strong>: How term applies in current framework layer</li>
 <li><strong>Inheritance Relationship</strong>: What is inherited, adapted, extended</li>
@@ -97,7 +97,8 @@
 <li><code>34_term_validation_ref.md</code> (validation term reference)</li>
 </ul>
 <h3>Reference File Structure:</h3>
-<pre><code># [NUMBER]. [TERM_NAME] Reference ([CONSTANT])
+<pre><code># [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
+
 ## Term Reference
 **Primary Definition Source:** [SOURCE_PATH]
 
@@ -138,7 +139,6 @@
 <li><strong>Version Tracking</strong>: Document changes between versions with rationale</li>
 <li><strong>Compatibility</strong>: Specify which framework versions the reference supports</li>
 </ul>
-<hr />
 <h2>Example: Defect Term Reference</h2>
 <p>Based on the defect reference file (<code>_29/MODEL_for_framework/30_terminology/59_term_defect_ref.md</code>), here is how the template extracts and structures information:</p>
 <h3><strong>Extracted Information Structure:</strong></h3>
@@ -159,10 +159,40 @@
 <li><strong>Navigation</strong>: Framework users can easily find appropriate term definitions</li>
 <li><strong>Evolution</strong>: Framework can evolve while maintaining term relationships</li>
 </ul>
-<hr />
 <p><em>This template establishes the methodology for creating term reference files that extract and adapt terminology from source frameworks, ensuring clear inheritance relationships and consistent usage across framework layers.</em></p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V0.1.0
+<strong>Date:</strong> 2026-01-23</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-09</td>
+<td>Initial template creation</td>
+<td>Framework Steward</td>
+<td>Establish term reference template standard</td>
+</tr>
+</tbody>
+</table>
         <footer>
-            <p>Generated on 2026-01-22 20:45:01 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:38 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

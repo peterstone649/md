@@ -60,10 +60,9 @@
     </style>
 </head>
 <body>
-    <h1>2. Convention for Date Format (CONV_FOR_MODELFW_DATE) <strong>[PRIO: HIGH]</strong></h1>
-<p><strong>Version:</strong> V1.0.0 <strong>Status:</strong> APPROVED <strong>Date:</strong> 2026-01-09
-<strong>Integration Field:</strong> MODEL_for_framework_ecosystem</p>
-<hr />
+    <h1>Date Format [CONV_FOR_MFW_DATE] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
+<strong>Scope:</strong> All framework documentation, metadata, and version control</p>
 <h2>Derivation Source</h2>
 <p>Based on ISO 8601 international date standard and framework consistency requirements</p>
 <h2>Core Inheritance</h2>
@@ -77,10 +76,8 @@
 <p>Consistent date formatting is essential for maintaining clarity, enabling proper sorting, and ensuring machine readability across all framework documents and systems. This convention establishes a standardized approach that prevents ambiguity and supports automated processing.</p>
 <h2>General Reference</h2>
 <p>This convention applies to all dates in framework documents, metadata, version control, and system interfaces. All dates must follow the YYYY-MM-DD format to ensure consistency and proper functionality.</p>
-<hr />
 <h2>Abstract</h2>
 <p>This convention establishes the mandatory YYYY-MM-DD date format for all framework components. It defines the ISO 8601 compliant date representation that ensures lexicographic sorting, machine readability, and international compatibility across all framework documents and systems.</p>
-<hr />
 <h2>1. Scope and Applicability</h2>
 <h3>1.1 When to Apply</h3>
 <p>This convention applies to:
@@ -97,7 +94,6 @@
 <li>Quality assurance and validation teams</li>
 <li>Automated tooling and scripts</li>
 </ul>
-<hr />
 <h2>2. Core Definitions</h2>
 <table>
 <thead>
@@ -130,7 +126,6 @@
 </tr>
 </tbody>
 </table>
-<hr />
 <h2>3. Date Format Requirements</h2>
 <h3>3.1 Standard Date Format</h3>
 <p><strong>YYYY-MM-DD</strong></p>
@@ -179,7 +174,6 @@
 </tr>
 </tbody>
 </table>
-<hr />
 <h2>4. Rules and Guidelines</h2>
 <h3>4.1 Date Formatting Rules</h3>
 <ul>
@@ -205,7 +199,6 @@
 <li><strong>Guideline 9</strong>: Document date format expectations in style guides</li>
 <li><strong>Guideline 10</strong>: Train contributors on proper date formatting</li>
 </ul>
-<hr />
 <h2>5. Naming Conventions</h2>
 <table>
 <thead>
@@ -228,7 +221,6 @@
 </tr>
 </tbody>
 </table>
-<hr />
 <h2>6. Examples</h2>
 <h3>6.1 Correct Usage Examples</h3>
 <pre><code class="language-markdown">**Date:** 2026-01-09
@@ -245,7 +237,6 @@
 modified_date: 2026-01-09
 published_date: 2026-01-08
 </code></pre>
-<hr />
 <h2>7. Related Conventions and Documents</h2>
 <table>
 <thead>
@@ -256,11 +247,11 @@ published_date: 2026-01-08
 </thead>
 <tbody>
 <tr>
-<td><a href="./01_convention_for_version.md">01_convention_for_version.md</a></td>
+<td><a href="./01_convention_for_version.html">01_convention_for_version.md</a></td>
 <td>Version and date coordination</td>
 </tr>
 <tr>
-<td><a href="./15_convention_for_abbreviations.md">15_convention_for_abbreviations.md</a></td>
+<td><a href="./15_convention_for_abbreviations.html">15_convention_for_abbreviations.md</a></td>
 <td>Date-related abbreviations</td>
 </tr>
 <tr>
@@ -269,7 +260,6 @@ published_date: 2026-01-08
 </tr>
 </tbody>
 </table>
-<hr />
 <h2>8. Implementation Notes</h2>
 <h3>8.1 Migration Path</h3>
 <p>When adopting this convention:
@@ -292,70 +282,43 @@ published_date: 2026-01-08
 <li>[ ] User interfaces validate date input format</li>
 <li>[ ] APIs document date format expectations</li>
 </ul>
-<hr />
-<h2>9. Changelog</h2>
+<p><strong>Rule Steward:</strong> Framework Admin
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-09
+<strong>Review Cycle:</strong> Annual</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V1.0.1
+<strong>Date:</strong> 2026-01-23</p>
+<h2>Changelog</h2>
 <table>
 <thead>
 <tr>
 <th>Version</th>
 <th>Date</th>
-<th>Changes</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting and changed "Applies to" regions to "Scope" for consistency</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
 <tr>
 <td>V1.0.0</td>
 <td>2026-01-09</td>
 <td>Complete date format convention with ISO 8601 compliance</td>
+<td>Framework Admin</td>
+<td>Establish convention</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2>10. Appendices</h2>
-<h3>Appendix A: ISO 8601 Benefits</h3>
-<ul>
-<li><strong>International Standard</strong>: Globally recognized and accepted</li>
-<li><strong>Lexicographic Ordering</strong>: Dates sort correctly alphabetically</li>
-<li><strong>Database Compatibility</strong>: Native support in most database systems</li>
-<li><strong>API Safety</strong>: Prevents date parsing ambiguities</li>
-<li><strong>Future Proofing</strong>: Supports dates beyond year 9999</li>
-</ul>
-<h3>Appendix B: Common Date Format Mistakes</h3>
-<table>
-<thead>
-<tr>
-<th>Mistake</th>
-<th>Problem</th>
-<th>Solution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MM/DD/YYYY</td>
-<td>Ambiguous between US/European</td>
-<td>Use YYYY-MM-DD</td>
-</tr>
-<tr>
-<td>DD.MM.YYYY</td>
-<td>Uses dots, regional</td>
-<td>Use YYYY-MM-DD</td>
-</tr>
-<tr>
-<td>YYYY/MM/DD</td>
-<td>Uses slashes</td>
-<td>Use YYYY-MM-DD</td>
-</tr>
-<tr>
-<td>Short years</td>
-<td>Y2K problems</td>
-<td>Use full four-digit years</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><strong>End of Convention</strong></p>
         <footer>
-            <p>Generated on 2026-01-22 20:45:01 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:38 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

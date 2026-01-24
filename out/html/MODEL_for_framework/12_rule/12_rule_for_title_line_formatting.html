@@ -60,13 +60,11 @@
     </style>
 </head>
 <body>
-    <h1>Rule for Title Line Formatting [RULE_FW_TITLE_FORMAT] [PRIO: MEDIUM]</h1>
-<p><strong>Rule ID:</strong> RULE_TITLE_FORMAT
-<strong>Applies to:</strong> All framework document title lines</p>
-<hr />
+    <h1>Title Line Formatting [RULE_FOR_MFW_TITLE_FORMAT] <strong>[PRIO: MEDIUM]</strong></h1>
+<p><strong>Version: V1.0.2</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
+<strong>Scope:</strong> All framework document title lines</p>
 <h2>Rule Statement</h2>
-<p><strong>All framework document title lines should follow the standardized format: # <title><Document Title>[TYPE_FRAMEWORK_ABBREV] [PRIO: XXX]</strong></p>
-<hr />
+<p><strong>All framework document title lines should follow the standardized format: # [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] </strong>[PRIO: XXX]****</p>
 <h2>Rationale</h2>
 <p>Standardized title formatting:
 - Ensures consistent document identification across the framework
@@ -74,10 +72,9 @@
 - Enables automated processing and categorization
 - Supports framework navigation and search functionality
 - Maintains professional presentation standards</p>
-<hr />
 <h2>Title Line Format Specification</h2>
 <h3>Required Structure</h3>
-<pre><code># &lt;Document Title&gt; [TYPE_FRAMEWORK_ABBREV] [PRIO: XXX]
+<pre><code># [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
 </code></pre>
 <h3>Components Breakdown</h3>
 <table>
@@ -95,27 +92,27 @@
 <td><code>#</code></td>
 </tr>
 <tr>
-<td><code>&lt;Document Title&gt;</code></td>
-<td>Descriptive title of the document</td>
-<td><code>Term Definition</code></td>
+<td><code>[DOCUMENT_TITLE_DESCRIPTIVE]</code></td>
+<td>Descriptive title of the document in normal top down writing form</td>
+<td><code>Definition for Term in MFW</code></td>
 </tr>
 <tr>
-<td><code>[TYPE_FRAMEWORK_ABBREV]</code></td>
+<td><code>[TYPE_FRAMEWORK_TITLE_ABBREV]</code></td>
 <td>Combined type and framework abbreviation</td>
-<td><code>[DEF_FOR_TERM]</code></td>
+<td><code>[DEF_FOR_MFW_TERM]</code></td>
 </tr>
 <tr>
-<td><code>[PRIO: XXX]</code></td>
+<td><code>**[PRIO: XXX]**</code></td>
 <td>Priority level indicator</td>
-<td><code>[PRIO: HIGHEST]</code></td>
+<td><code>**[PRIO: HIGHEST]**</code></td>
 </tr>
 </tbody>
 </table>
 <h3>Complete Format Example</h3>
-<pre><code class="language-markdown"># Term [DEF_FOR_TERM] [PRIO: HIGHEST]
+<pre><code class="language-markdown"># Term [TERM_FOR_MFW_TERM] **[PRIO: HIGHEST]**
 </code></pre>
 <h3>TYPE Component Examples</h3>
-<p>The TYPE component indicates the document category and can be:</p>
+<p>The TYPE component indicates the document category e.g. can be:</p>
 <table>
 <thead>
 <tr>
@@ -128,37 +125,37 @@
 <tr>
 <td><strong>RULE</strong></td>
 <td>Framework rules and guidelines</td>
-<td><code>[RULE_FW_TITLE_FORMAT]</code></td>
+<td><code>[RULE_FOR_MFW_TITLE_FORMAT]</code></td>
 </tr>
 <tr>
-<td><strong>DEF_FOR</strong></td>
+<td><strong>TERM</strong></td>
 <td>Definitions and terminology</td>
-<td><code>[DEF_FOR_TERM]</code></td>
+<td><code>[TERM_FOR_MFW_TERM]</code></td>
 </tr>
 <tr>
 <td><strong>VISION</strong></td>
 <td>Vision and strategic documents</td>
-<td><code>[VISION_FRAMEWORK]</code></td>
+<td><code>[VISION_FOR_MFW]</code></td>
 </tr>
 <tr>
 <td><strong>PRINC</strong></td>
 <td>Principles and core values</td>
-<td><code>[PRINC_ACCESSIBILITY]</code></td>
+<td><code>[PRINC_FOR_MFW_ACCESSIBILITY]</code></td>
 </tr>
 <tr>
 <td><strong>AXIOM</strong></td>
 <td>Fundamental axioms</td>
-<td><code>[AXIOM_VALIDATION]</code></td>
+<td><code>[AXIOM_FOR_MFW_VALIDATION]</code></td>
 </tr>
 <tr>
-<td><strong>CONV_FOR</strong></td>
+<td><strong>CONV</strong></td>
 <td>Conventions and standards</td>
-<td><code>[CONV_FOR_VERSION]</code></td>
+<td><code>[CONV_FOR_MFW_VERSION]</code></td>
 </tr>
 <tr>
-<td><strong>TPL_FOR</strong></td>
+<td><strong>TPL</strong></td>
 <td>Templates and patterns</td>
-<td><code>[TPL_FOR_DOCUMENT]</code></td>
+<td><code>[TPL_FOR_MFW_DOCUMENT]</code></td>
 </tr>
 </tbody>
 </table>
@@ -175,32 +172,32 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>DEF_FOR_</strong></td>
-<td>Definition for</td>
+<td><strong>TERM_FOR_<FW>_</strong></td>
+<td>Term for</td>
 <td>Document definitions</td>
 </tr>
 <tr>
-<td><strong>RULE_FW_</strong></td>
+<td><strong>RULE_FOR_<FW>_</strong></td>
 <td>Rule Framework</td>
 <td>Framework rules</td>
 </tr>
 <tr>
-<td><strong>PRINC_</strong></td>
+<td><strong>PRINC_FOR_<FW>_</strong></td>
 <td>Principle</td>
 <td>Framework principles</td>
 </tr>
 <tr>
-<td><strong>AXIOM_</strong></td>
+<td><strong>AXIOM_FOR_<FW>_</strong></td>
 <td>Axiom</td>
 <td>Framework axioms</td>
 </tr>
 <tr>
-<td><strong>CONV_FOR_</strong></td>
+<td><strong>CONV_FOR_<FW>_</strong></td>
 <td>Convention for</td>
 <td>Framework conventions</td>
 </tr>
 <tr>
-<td><strong>TPL_FOR_</strong></td>
+<td><strong>TPL_FOR_<FW>_</strong></td>
 <td>Template for</td>
 <td>Framework templates</td>
 </tr>
@@ -238,7 +235,6 @@
 </tr>
 </tbody>
 </table>
-<hr />
 <h2>Implementation Guidelines</h2>
 <h3>Title Construction Process</h3>
 <ol>
@@ -259,57 +255,54 @@
 <tbody>
 <tr>
 <td>Rules</td>
-<td><code>RULE_FW_</code></td>
-<td><code>RULE_FW_TITLE_FORMAT</code></td>
+<td><code>RULE_FOR_&lt;FW&gt;_</code></td>
+<td><code>RULE_FOR_MFW_TITLE_FORMAT</code></td>
 </tr>
 <tr>
 <td>Principles</td>
-<td><code>PRINC_</code></td>
-<td><code>PRINC_ACCESSIBILITY</code></td>
+<td><code>PRINC_FOR_&lt;FW&gt;_</code></td>
+<td><code>PRINC_FOR_MFW_ACCESSIBILITY</code></td>
 </tr>
 <tr>
-<td>Definitions</td>
-<td><code>DEF_FOR_</code></td>
-<td><code>DEF_FOR_TERM</code></td>
+<td>Terms</td>
+<td><code>TERM_FOR_&lt;FW&gt;_</code></td>
+<td><code>TERM_FOR_MFW_TERM</code></td>
 </tr>
 <tr>
 <td>Conventions</td>
-<td><code>CONV_FOR_</code></td>
-<td><code>CONV_FOR_VERSION</code></td>
+<td><code>CONV_FOR_&lt;FW&gt;_</code></td>
+<td><code>CONV_FOR_MFW_VERSION</code></td>
 </tr>
 <tr>
 <td>Templates</td>
-<td><code>TPL_FOR_</code></td>
-<td><code>TPL_FOR_DOCUMENT</code></td>
+<td><code>TPL_FOR_&lt;FW&gt;_</code></td>
+<td><code>TPL_FOR_MFW_DOCUMENT</code></td>
 </tr>
 </tbody>
 </table>
-<hr />
 <h2>Validation Checklist</h2>
 <ul>
 <li>[ ] Title starts with single <code>#</code> for level 1 header</li>
 <li>[ ] Document title is descriptive and clear</li>
 <li>[ ] Framework abbreviation uses correct format <code>[ABBREV]</code></li>
 <li>[ ] Priority level uses valid code (HIGHEST/HIGH/MEDIUM/LOW)</li>
-<li>[ ] Priority format follows <code>[PRIO: XXX]</code> exactly</li>
+<li>[ ] Priority format follows <code>**[PRIO: XXX]**</code> exactly (must be bolded)</li>
 <li>[ ] No extra spaces or formatting variations</li>
 <li>[ ] Abbreviation corresponds to document content</li>
 </ul>
-<hr />
 <h2>Common Issues and Corrections</h2>
 <h3>Incorrect Abbreviation Format</h3>
 <p><strong>Problem:</strong> <code># Title ABBREV [PRIO: HIGH]</code>
-<strong>Correction:</strong> <code># Title [ABBREV] [PRIO: HIGH]</code></p>
+<strong>Correction:</strong> <code># Title [ABBREV] **[PRIO: HIGH]**</code></p>
 <h3>Missing Priority</h3>
 <p><strong>Problem:</strong> <code># Title [ABBREV]</code>
-<strong>Correction:</strong> <code># Title [ABBREV] [PRIO: MEDIUM]</code></p>
+<strong>Correction:</strong> <code># Title [ABBREV] **[PRIO: MEDIUM]**</code></p>
 <h3>Wrong Header Level</h3>
-<p><strong>Problem:</strong> <code>## Title [ABBREV] [PRIO: HIGH]</code>
-<strong>Correction:</strong> <code># Title [ABBREV] [PRIO: HIGH]</code></p>
+<p><strong>Problem:</strong> <code>## Title [ABBREV] **[PRIO: HIGH]**</code>
+<strong>Correction:</strong> <code># Title [ABBREV] **[PRIO: HIGH]**</code></p>
 <h3>Invalid Priority Code</h3>
-<p><strong>Problem:</strong> <code># Title [ABBREV] [PRIO: IMPORTANT]</code>
-<strong>Correction:</strong> <code># Title [ABBREV] [PRIO: HIGH]</code></p>
-<hr />
+<p><strong>Problem:</strong> <code># Title [ABBREV] **[PRIO: IMPORTANT]**</code>
+<strong>Correction:</strong> <code># Title [ABBREV] **[PRIO: HIGH]**</code></p>
 <h2>Enforcement</h2>
 <ol>
 <li><strong>Document Creation:</strong> Apply correct format during initial drafting</li>
@@ -317,10 +310,9 @@
 <li><strong>Review Process:</strong> Manual verification during document reviews</li>
 <li><strong>Bulk Updates:</strong> Periodic audits ensure consistency across framework</li>
 </ol>
-<hr />
 <h2>Automation Support</h2>
-<h3>Regex Pattern for Validation</h3>
-<pre><code class="language-regex">^# .+\[.*\]\s+\[PRIO:\s+(HIGHEST|HIGH|MEDIUM|LOW)\]$
+<h3>Example Regex Pattern for Validation</h3>
+<pre><code class="language-regex">^# .+\[.*\]\s+\*\*\[PRIO:\s+(HIGHEST|HIGH|MEDIUM|LOW)\]\*\*$
 </code></pre>
 <h3>Automated Processing</h3>
 <ul>
@@ -328,7 +320,6 @@
 <li><strong>Priority Filtering:</strong> Automated sorting by priority level</li>
 <li><strong>Cross-References:</strong> Consistent abbreviations support linking systems</li>
 </ul>
-<hr />
 <h2>References</h2>
 <ul>
 <li>Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)</li>
@@ -336,13 +327,50 @@
 <li>Abbreviation Reference (99_appendix/abbreviation_reference.md)</li>
 <li>Active Voice Rule (12_rule/03_rule_for_active_voice.md)</li>
 </ul>
-<hr />
-<p><strong>Rule Steward:</strong> Documentation Standards Committee
+<p><strong>Rule Steward:</strong> Terminology Architects
 <strong>Approval Status:</strong> Framework Approved
 <strong>Effective Date:</strong> 2026-01-13
 <strong>Review Cycle:</strong> Annual</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V1.0.2
+<strong>Date:</strong> 2026-01-23</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.2</td>
+<td>2026-01-23</td>
+<td>Updated metadata headers per RULE_FOR_MFW_TITLE_FORMAT; changed DEF to TERM in examples</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency with terminology</td>
+</tr>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated placeholders to [DOCUMENT_TITLE_DESCRIPTIVE] and [TYPE_FRAMEWORK_TITLE_ABBREV] (with underscores)</td>
+<td>Framework Admin</td>
+<td>Improve clarity and hierarchy</td>
+</tr>
+<tr>
+<td>V1.0.0</td>
+<td>2026-01-09</td>
+<td>Initial creation</td>
+<td>AI Framework Admin</td>
+<td>Establish file</td>
+</tr>
+</tbody>
+</table>
         <footer>
-            <p>Generated on 2026-01-22 20:45:01 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:38 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

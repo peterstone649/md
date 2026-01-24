@@ -1,6 +1,6 @@
 # Clickable Links [RULE_FOR_MFW_LINK_OT_CLICKABLE] **[PRIO: HIGH]**
 
-**Rule ID:** RULE_FOR_MFW_LINK_OT_CLICKABLE
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework documentation
 
 ## Rule Statement
@@ -103,18 +103,19 @@ This rule applies universally across all framework directories:
 - Markdown Specification (CommonMark)
 - Active Voice Rule (12_rule/01_rule_for_active_voice.md)
 
-**Rule Steward:** Framework Standards Committee
+**Rule Steward:** Terminology Architects
 **Approval Status:** Framework Approved
 **Effective Date:** 2026-01-09
 **Review Cycle:** Annual
 
 **Framework:** MODEL_for_framework
-**Framework Version:** V1.0.0
-**Date:** 2026-01-09
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
 ## Changelog
 
 | Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V1.0.0 | 2026-01-09 | Initial creation | AI Framework Admin | Establish rule |
+ stories |

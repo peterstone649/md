@@ -1,6 +1,6 @@
 # AI_LOCK Content Protection [RULE_FOR_MFW_AI_LOCK_PROTECTION] **[PRIO: HIGHEST]**
 
-**Rule ID:** RULE_FOR_MFW_AI_LOCK_PROTECTION
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All AI-assisted document processing and generation
 
 ## Rule Statement
@@ -141,18 +141,18 @@ We establish that the Principle of Human Sovereignty...
 - Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)
 - Intellectual Property Rights Conventions (20_convention/16_convention_for_intellectual_property_rights.md)
 
-**Rule Steward:** Framework Standards Committee
+**Rule Steward:** Terminology Architects
 **Approval Status:** Framework Approved
-**Effective Date:** 2026-01-09
+**Effective Date:** 2026-01-08
 **Review Cycle:** Annual
 
 **Framework:** MODEL_for_framework
-**Framework Version:** V0.1.0
-**Date:** 2026-01-09
-**Priority:** HIGHEST
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
-Changelog:
+## Changelog
+
 | Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Admin | Establish file |

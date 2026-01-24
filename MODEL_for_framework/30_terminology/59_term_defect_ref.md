@@ -1,4 +1,4 @@
-# Defect Reference [TERM_FOR_MFW_DEFECT_REF] **[PRIO: MEDIUM]**
+# Definition for Defect Reference in MFW [TERM_FOR_MFW_DEFECT_REF] **[PRIO: MEDIUM]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework defect references and methodological mappings

@@ -1,4 +1,4 @@
-# Relation [TERM_FOR_MFW_RELATION] **[PRIO: HIGH]**
+# Definition for Relation in MFW [TERM_FOR_MFW_RELATION] **[PRIO: HIGH]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework relational structures and connection mappings

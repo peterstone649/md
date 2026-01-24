@@ -1,6 +1,6 @@
 # Active Voice [RULE_FOR_MFW_ACTIVE_VOICE] **[PRIO: HIGH]**
 
-**Rule ID:** RULE_FOR_MFW_ACTIVE_VOICE
+**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework documentation
 
 ## Rule Statement
@@ -78,17 +78,18 @@ Passive voice IS acceptable when:
 - Williams, "Style: Toward Clarity and Grace"
 - Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)
 
-**Rule Steward:** Writing Standards Committee
+**Rule Steward:** Terminology Architects
 **Approval Status:** Framework Approved
 **Effective Date:** 2026-01-08
 **Review Cycle:** Annual
 
 **Framework:** MODEL_for_framework
-**Framework Version:** V0.1.0
-**Date:** 2026-01-09
+**Framework Version:** V1.0.1
+**Date:** 2026-01-23
 
-Changelog:
+## Changelog
+
 | Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Admin | Establish file |

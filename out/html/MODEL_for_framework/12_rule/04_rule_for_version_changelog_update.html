@@ -60,15 +60,11 @@
     </style>
 </head>
 <body>
-    <h1>Rule for Version Changelog Update <strong>[RULE_FW_DOC_VERSION_CHANGELOG]</strong></h1>
-<p><strong>Version: V0.1.1</strong> <strong>Date: 2026-01-15</strong></p>
-<p><strong>Rule ID:</strong> RULE_VERSION_CHANGELOG
-<strong>Priority:</strong> HIGH
-<strong>Applies to:</strong> All framework documents with changelog sections</p>
-<hr />
+    <h1>Version Changelog Update [RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
+<strong>Scope:</strong> All framework documents with changelog sections</p>
 <h2>Rule Statement</h2>
-<p><strong>All framework documents MUST maintain an accurate and complete version changelog with Stakeholder and Rationale/Motivation columns for every version entry.</strong></p>
-<hr />
+<p>All framework documents MUST maintain an accurate and complete version changelog with Stakeholder and Rationale/Motivation columns for every version entry.</p>
 <h2>Rationale</h2>
 <p>A comprehensive changelog:
 - Provides traceability for all document changes
@@ -77,7 +73,6 @@
 - Enables audit of framework evolution
 - Supports version rollback and impact analysis
 - Aligns with principle of transparency in documentation</p>
-<hr />
 <h2>Changelog Structure</h2>
 <h3>Required Columns</h3>
 <table>
@@ -120,7 +115,7 @@
 <p>Place the changelog section at the end of the document before the footer:</p>
 <pre><code class="language-markdown">## Changelog
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
 | V0.1.1 | 2026-01-15 | Added Version Uniqueness section and header format requirements | Framework Steward | Strengthen changelog integrity and consistency |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational structure |
@@ -131,7 +126,6 @@
 <li>Do not use numbered headers like <code>## 7. Changelog</code></li>
 <li>Maintain consistent header level (typically <code>##</code>) across all framework documents</li>
 </ul>
-<hr />
 <h2>Changelog Entry Requirements</h2>
 <h3>1. Version Numbering</h3>
 <ul>
@@ -166,7 +160,6 @@
 <li>If multiple changes occur for the same version, consolidate them into a single entry</li>
 <li>Version increments are required for any substantive changes</li>
 </ul>
-<hr />
 <h2>Update Triggers</h2>
 <p>Update the changelog when:</p>
 <ol>
@@ -198,17 +191,15 @@
 <li>Fix validation errors</li>
 <li>Resolve audit findings</li>
 </ol>
-<hr />
 <h2>Entry Order</h2>
 <p>Maintain reverse chronological order:
 - Newest entries at the TOP of the table
 - Oldest entries at the BOTTOM
 - Each entry on its own line</p>
-<hr />
 <h2>Validation Checklist</h2>
 <ul>
 <li>[ ] Changelog section exists in document</li>
-<li>[ ] All 5 columns present (Version, Date, Changes, Stakeholder, Rationale/Motivation)</li>
+<li>[ ] All 5 columns present (Version, Date, Change Content, Stakeholders, Rationale/Motivation)</li>
 <li>[ ] Entries in reverse chronological order</li>
 <li>[ ] Date format is ISO 8601 (YYYY-MM-DD)</li>
 <li>[ ] Date reflects current operating system date at time of change</li>
@@ -219,7 +210,6 @@
 <li>[ ] Initial creation properly documented</li>
 <li>[ ] if py code <strong>version</strong> = [VERSION] then also update this!</li>
 </ul>
-<hr />
 <h2>Enforcement</h2>
 <ol>
 <li><strong>Document Creation:</strong> Include empty changelog structure with initial version</li>
@@ -227,27 +217,39 @@
 <li><strong>Template Validation:</strong> Check for required columns in automated checks</li>
 <li><strong>Commit Gates:</strong> Reject commits without changelog updates for document changes</li>
 </ol>
-<hr />
 <h2>References</h2>
 <ul>
-<li><a href="../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md">PRIN_PROPORTIONALITY</a></li>
+<li><a href="../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.html">PRIN_PROPORTIONALITY</a></li>
 <li>Convention for Version (20_convention/01_convention_for_version.md)</li>
 <li>Convention for Writing Style (20_convention/03_convention_for_writing_style.md)</li>
 <li>Template for Principle (15_template/17_template_for_principle.md)</li>
 </ul>
-<hr />
+<p><strong>Rule Steward:</strong> Terminology Architects
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-08
+<strong>Review Cycle:</strong> Annual</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V1.0.1
+<strong>Date:</strong> 2026-01-23</p>
 <h2>Changelog</h2>
 <table>
 <thead>
 <tr>
 <th>Version</th>
 <th>Date</th>
-<th>Changes</th>
-<th>Stakeholder</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
 <th>Rationale/Motivation</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
 <tr>
 <td>V0.1.1</td>
 <td>2026-01-15</td>
@@ -264,13 +266,8 @@
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>Rule Steward:</strong> Documentation Standards Committee
-<strong>Approval Status:</strong> Framework Approved
-<strong>Effective Date:</strong> 2026-01-09
-<strong>Review Cycle:</strong> Annual</p>
         <footer>
-            <p>Generated on 2026-01-22 20:45:01 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:38 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

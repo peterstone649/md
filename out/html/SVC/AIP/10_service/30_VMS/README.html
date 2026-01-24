@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Value Management System (VMS)</h1>
+<p>The Value Management System (VMS) provides a structured framework for managing and evolving human values in AI systems.</p>
+<h2>Overview</h2>
+<p>VMS implements a layered architecture that systematically addresses value definition, prioritization, scope management, failure handling, and evolutionary adaptation.</p>
+<h2>Architecture Layers</h2>
+<h3>05_layer_for_meta/</h3>
+<p>Metadata and system-level definitions for the VMS framework.</p>
+<h3>10_layer_for_definition/</h3>
+<p>Core value definitions and foundational concepts.</p>
+<h3>20_layer_for_priority/</h3>
+<p>Value prioritization mechanisms and ranking systems.</p>
+<h3>30_layer_for_scope/</h3>
+<p>Scope definition and boundary management for value application.</p>
+<h3>40_layer_for_failure/</h3>
+<p>Failure mode analysis and recovery strategies for value systems.</p>
+<h3>50_layer_for_evolution/</h3>
+<p>Evolutionary mechanisms and adaptation strategies for value management.</p>
+<h2>Key Components</h2>
+<ul>
+<li><strong>vms_manifest_v1-0_human-values.yaml</strong>: Core manifest defining human values framework</li>
+<li>Layered architecture for systematic value management</li>
+<li>Evolutionary adaptation capabilities</li>
+</ul>
+<h2>Value Metadata Schema (VMS 1.0)</h2>
+<p>VMS implements a comprehensive metadata schema for systematic parsing and weighting of human values. Each value entry includes a YAML front-matter block defining its "Value Profile" with the following key components:</p>
+<h3>Core Schema Elements</h3>
+<ul>
+<li><strong>ID</strong>: Unique identifier for indexing and cross-referencing</li>
+<li><strong>Classification</strong>: Type (Intrinsic vs Instrumental), category, and priority level</li>
+<li><strong>Context Bounds</strong>: Temporal, geographic, and cultural sensitivity parameters</li>
+<li><strong>Logic Constraints</strong>: Negotiability, conflict resolution rules, and exceptions</li>
+<li><strong>Verification Metrics</strong>: Measurable criteria for value assessment</li>
+</ul>
+<h3>Functional Layers</h3>
+<h4>Definition Layer (Identity)</h4>
+<ul>
+<li>Unique identifiers and semantic labels</li>
+<li>Descriptive narratives for contextual understanding</li>
+</ul>
+<h4>Priority Layer (Weighting)</h4>
+<ul>
+<li>Lexical priority hierarchies (Rawls-inspired)</li>
+<li>Trade-off elasticity for conflict resolution</li>
+</ul>
+<h4>Scope Layer (Context)</h4>
+<ul>
+<li>Substrate dependency (human vs digital minds)</li>
+<li>Coherent Extrapolated Volition (CEV) markers</li>
+</ul>
+<h4>Failure Mode Layer (Safety)</h4>
+<ul>
+<li>Perverse instantiation risk identification</li>
+<li>Known "Monkey's Paw" scenario warnings</li>
+</ul>
+<h3>Value Conflict Resolution</h3>
+<p>When conflicts arise, VMS follows a systematic decision tree prioritizing higher-tier values before considering lower-tier ones, with built-in safeguards against value ossification through version control and moral evolution mechanisms.</p>
+<h2>Tools and Converters</h2>
+<h3>MD to YAML Converter</h3>
+<p>The framework provides a specialized converter (<code>MODEL_for_framework/90_tool/converter/converter_for_md_to_yaml.py</code>) that can transform Markdown documentation files into Python-readable YAML format. This converter:</p>
+<ul>
+<li>Extracts structured data from Markdown files (headings, tables, lists, code blocks)</li>
+<li>Converts content to YAML format suitable for programmatic processing</li>
+<li>Outputs files to the <code>out/yaml</code> directory maintaining the source directory structure</li>
+<li>Supports both single file conversion and recursive directory processing</li>
+</ul>
+<p>Example usage:</p>
+<pre><code class="language-bash">python MODEL_for_framework/90_tool/converter/converter_for_md_to_yaml.py &quot;SVC/AIP/VMS/50_layer_for_evolution/vms_manifest_v1-0_human-values.md&quot;
+</code></pre>
+<p>This enables automated processing of documentation for configuration management and data integration.</p>
+<h2>Purpose</h2>
+<p>VMS ensures that AI systems maintain alignment with human values through structured management and continuous evolution of value frameworks.</p>
+        <footer>
+            <p>Generated on 2026-01-23 08:30:42 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

@@ -60,8 +60,9 @@
     </style>
 </head>
 <body>
-    <h1>GitHub Feedback Example [FB_MFW_GITHUB] [PRIO: HIGH]</h1>
-<p><strong>Version: V1.0.0</strong> <strong>Date: 2026-01-12</strong></p>
+    <h1>GitHub Feedback Example [FB_MFW_GITHUB] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
+<strong>Scope:</strong> Specialized feedback template designed for GitHub integration</p>
 <p><strong>Purpose:</strong> Specialized feedback template designed for GitHub integration, allowing users to provide feedback with full GitHub feature support including issues, pull requests, discussions, and GitHub-specific formatting.</p>
 <hr />
 <h2>📝 GitHub Feedback Submission</h2>
@@ -213,58 +214,17 @@ jobs:
     F --&gt; G[Notify Stakeholders]
     G --&gt; H[Track in Project Board]
 </code></pre>
-<h3><strong>Automated GitHub Actions</strong></h3>
-<pre><code class="language-markdown">**Automated Processing:**
-1. Feedback received → Auto-create GitHub issue
-2. Apply appropriate labels based on content
-3. Assign to relevant team members
-4. Link to project boards
-5. Set milestones when applicable
-
-**Example Automation:**
-```yaml
-- name: Process GitHub Feedback
-  uses: actions/github-feedback-processor@v1
-  with:
-    repo-token: ${{ secrets.GITHUB_TOKEN }}
-    labels: &quot;feedback, needs-triage&quot;
-    assignees: &quot;team-lead, framework-maintainer&quot;
-</code></pre>
-<pre><code>
----
-
-## 📊 GitHub Feedback Metrics
-
-### **Integration Success Metrics**
-| Metric | Target | Current |
-|--------|--------|---------|
-| **Issue Creation Time** | ≤ 24h | [Value] |
-| **PR Response Time** | ≤ 48h | [Value] |
-| **Label Accuracy** | ≥ 90% | [Value] |
-| **Stakeholder Notification** | 100% | [Value] |
-| **GitHub API Success Rate** | ≥ 99% | [Value] |
-
-### **GitHub-Specific Metrics**
-- **Issue Resolution Rate**: ≥ 85% within 7 days
-- **PR Merge Rate**: ≥ 70% acceptance
-- **Label Accuracy**: ≥ 90% correct classification
-- **User Satisfaction**: ≥ 4.5/5 for GitHub integration
-
----
-
-## 🔗 Related GitHub Resources
-
-- **GitHub Documentation**: [https://docs.github.com](https://docs.github.com)
-- **GitHub API**: [https://developer.github.com/v3](https://developer.github.com/v3)
-- **GitHub Actions**: [https://github.com/features/actions](https://github.com/features/actions)
-- **GitHub Flavored Markdown**: [https://github.github.com/gfm](https://github.github.com/gfm)
-
----
-
-## 📝 Example GitHub Feedback
-
-```markdown
-# GitHub Feedback **[GITHUB_20260112_TEMPLATE_ISSUE]**
+<hr />
+<h2>🔗 Related GitHub Resources</h2>
+<ul>
+<li><strong>GitHub Documentation</strong>: <a href="https://docs.github.com">https://docs.github.com</a></li>
+<li><strong>GitHub API</strong>: <a href="https://developer.github.com/v3">https://developer.github.com/v3</a></li>
+<li><strong>GitHub Actions</strong>: <a href="https://github.com/features/actions">https://github.com/features/actions</a></li>
+<li><strong>GitHub Flavored Markdown</strong>: <a href="https://github.github.com/gfm">https://github.github.com/gfm</a></li>
+</ul>
+<hr />
+<h2>📝 Example GitHub Feedback</h2>
+<pre><code class="language-markdown"># GitHub Feedback **[GITHUB_20260112_TEMPLATE_ISSUE]**
 
 **Date:** 2026-01-12
 **From:** @framework-user
@@ -307,19 +267,44 @@ jobs:
           feedback-file: ${{ github.event.issue.body }}
           labels: &quot;feedback, template, needs-review&quot;
 </code></pre>
-<h3><strong>Code References</strong></h3>
-<pre><code class="language-markdown">**File:** `40_feedback/10_plugin_fb_OT_detailed/10_plugin_for_fb_OT_detailed.md`
-**Line:** 42-58
-**Commit:** a1b2c3d
-**Branch:** main
-</code></pre>
 <hr />
+<p><strong>Rule Steward:</strong> Terminology Architects
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-08
+<strong>Review Cycle:</strong> Annual</p>
 <p><strong>Framework:</strong> MODEL_for_framework
-<strong>Status:</strong> ACTIVE
-<strong>GitHub Integration:</strong> Full support for GitHub features
-<strong>Related:</strong> <a href="05_quick_feedback_example.md">Quick Feedback Example</a></p>
+<strong>Framework Version:</strong> V1.0.1
+<strong>Date:</strong> 2026-01-23</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
+<tr>
+<td>V1.0.0</td>
+<td>2026-01-12</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>Establish foundation for GitHub feedback</td>
+</tr>
+</tbody>
+</table>
         <footer>
-            <p>Generated on 2026-01-22 20:45:02 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:39 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_user_story_framework_developer</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Story: Framework Developer <strong>[US_FRAMEWORK_DEVELOPER]</strong> <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.0</strong> <strong>Date: 2026-01-10</strong></p>
+<p><strong>Story ID:</strong> US_FRAMEWORK_DEVELOPER
+<strong>Stakeholder:</strong> Framework Developer</p>
+<hr />
+<h2>User Story</h2>
+<p><strong>As a</strong> Framework Developer,</p>
+<p><strong>I want to</strong> create, extend, and maintain framework components like principles, templates, and conventions,</p>
+<p><strong>So that</strong> I can evolve the framework to meet new requirements and ensure its long-term integrity and usability.</p>
+<hr />
+<h2>Description</h2>
+<p>Framework Developers are responsible for building and maintaining the framework itself. They create new principles, design templates, and define conventions. Their work requires a deep understanding of the framework's architecture and goals, and they need tools and processes that support consistent and high-quality development.</p>
+<hr />
+<h2>Goals</h2>
+<ol>
+<li><strong>Create</strong> new principles and conventions that are consistent with the existing structure.</li>
+<li><strong>Extend</strong> the framework with new components and functionalities.</li>
+<li><strong>Refactor</strong> and improve existing components to enhance clarity and efficiency.</li>
+<li><strong>Ensure</strong> that all components are well-documented and easy to understand.</li>
+<li><strong>Validate</strong> new components against the framework's quality standards.</li>
+</ol>
+<hr />
+<h2>Acceptance Criteria</h2>
+<ul>
+<li>[ ] Developer can create a new principle using the <code>17_template_for_principle.md</code>.</li>
+<li>[ ] Developer can define a new convention and document it in the <code>20_convention/</code> directory.</li>
+<li>[ ] Developer can add clickable cross-references between related documents.</li>
+<li>[ ] Developer updates the changelog for all modifications with stakeholder and rationale.</li>
+<li>[ ] Developer can run validation checks to ensure framework integrity.</li>
+<li>[ ] Developer respects and applies <code>AI_LOCK</code> markers to protect core content.</li>
+</ul>
+<hr />
+<h2>User Journey</h2>
+<pre><code>1. PLANNING
+   └── Identify need for a new principle or convention.
+   └── Review existing framework structure and standards.
+
+2. DEVELOPMENT
+   └── Create new document from a template.
+   └── Write content, following established conventions.
+   └── Add cross-references and `AI_LOCK` markers.
+
+3. DOCUMENTATION
+   └── Update READMEs to reflect changes.
+   └── Fill out the changelog with detailed information.
+
+4. VALIDATION &amp; DEPLOYMENT
+   └── Perform quality assurance checks.
+   └── Integrate the new component into the framework.
+</code></pre>
+<hr />
+<h2>Related Framework Elements</h2>
+<ul>
+<li><strong>All Framework Components</strong>: Principles, Templates, Conventions, etc.</li>
+<li><strong>AI Methodology</strong>: <code>00_overview/01_legal/02_methodology_ai_assistance.md</code></li>
+<li><strong>Templates</strong>: <code>15_template/</code></li>
+<li><strong>Changelog Format</strong>: As defined in the root <code>README.md</code>.</li>
+</ul>
+<hr />
+<h2>Key Needs</h2>
+<table>
+<thead>
+<tr>
+<th>Need</th>
+<th>Framework Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standardized Structures</td>
+<td><code>15_template/</code> directory</td>
+</tr>
+<tr>
+<td>Clear Development Process</td>
+<td>AI-Human Collaboration Cycle in <code>README.md</code></td>
+</tr>
+<tr>
+<td>Quality Standards</td>
+<td>Quality Control Measures in <code>README.md</code></td>
+</tr>
+<tr>
+<td>Version Control</td>
+<td>Git and clear changelog format</td>
+</tr>
+<tr>
+<td>Protection of Core Concepts</td>
+<td><code>AI_LOCK</code> mechanism</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Example Use Cases</h2>
+<ol>
+<li>
+<p><strong>Creating a New Principle</strong></p>
+<blockquote>
+<p>"The framework needs a new principle for data privacy. I need to create it following all the required standards."</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Updating a Template</strong></p>
+<blockquote>
+<p>"The principle template is missing a section. I need to update it and ensure all existing principles are migrated."</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Refactoring Conventions</strong></p>
+<blockquote>
+<p>"The naming conventions have become ambiguous. I need to clarify them and update the documentation."</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h2>Success Metrics</h2>
+<ul>
+<li>Time to create and integrate a new principle is less than 2 hours.</li>
+<li>Number of validation errors for new components is zero.</li>
+<li>Peer review feedback indicates high quality and consistency of new components.</li>
+</ul>
+<hr />
+<p><strong>Story Status:</strong> Ready
+<strong>Estimation:</strong> 5 story points
+<strong>Sprint:</strong> TBD</p>
+        <footer>
+            <p>Generated on 2026-01-23 08:30:41 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

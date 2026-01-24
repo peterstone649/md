@@ -60,17 +60,17 @@
     </style>
 </head>
 <body>
-    <h1>Template for Rule [TEMPLATE_RULE] [PRIO: HIGH]</h1>
-<p><strong>Rule ID:</strong> <RULE_TEMPLATE_ID_FROM_TITLE>
-<strong>Priority:</strong> HIGH
-<strong>Applies to:</strong> All framework rules</p>
+    <h1>[DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] <strong>[PRIO: XXX]</strong></h1>
+<p><strong>Rule ID:</strong> [TYPE_FRAMEWORK_TITLE_ABBREV]
+<strong>Scope:</strong> [What this rule applies to]</p>
 <h2>Rule Statement</h2>
 <p><strong>Clear, concise statement of what this rule requires or prohibits.</strong></p>
 <h2>Rule Requirements</h2>
-<p>/<em> can be more requirements if needed !</em>/
-- <strong>[R1]</strong>: Description of requirement with ID for compliance tracking
-- <strong>[R2]</strong>: Description of requirement with ID for compliance tracking
-- <strong>[R3]</strong>: Description of requirement with ID for compliance tracking</p>
+<ul>
+<li><strong>[R1]</strong>: Description of requirement with ID for compliance tracking</li>
+<li><strong>[R2]</strong>: Description of requirement with ID for compliance tracking</li>
+<li><strong>[R3]</strong>: Description of requirement with ID for compliance tracking</li>
+</ul>
 <p><strong>Formal Statement:</strong></p>
 <pre><code>e.g.
 ∀s∀a∀stakeholder (Statement(s) ∧ Actor(a) ∧ (Human(stakeholder) ∨ AI(a)))
@@ -79,34 +79,48 @@
 </code></pre>
 <h2>Rationale</h2>
 <p>Brief explanation of why this rule exists and its benefits.</p>
-<p><em>Based on: <a href="../path/to/document.md">document.md</a></em></p>
+<p><em>Based on: <a href="../path/to/document.html">document.md</a></em></p>
 <h2>Uncertainty Declaration</h2>
 <p><em>If applicable: This rule acknowledges inherent uncertainties in [specific domain/area]. Key limitations include: [list key uncertainties or limitations].</em></p>
 <h2>Integration with Other Framework Components</h2>
 <h3>Related Rules</h3>
 <ul>
-<li><strong><a href="path/to/rule.md">rule_name.md</a></strong> - Description of relationship</li>
+<li><strong><a href="path/to/rule.html">rule_name.md</a></strong> - Description of relationship</li>
 </ul>
 <h3>Related Axioms</h3>
 <ul>
-<li><strong><a href="path/to/axiom.md">axiom_name.md</a></strong> - Foundation for this rule</li>
+<li><strong><a href="path/to/axiom.html">axiom_name.md</a></strong> - Foundation for this rule</li>
 </ul>
 <h3>Related Principles</h3>
 <ul>
-<li><strong><a href="../path/to/principle.md">principle_name.md</a></strong> - Description of relationship</li>
+<li><strong><a href="../path/to/principle.html">principle_name.md</a></strong> - Description of relationship</li>
 </ul>
+<p><strong>Rule Steward:</strong> [Role Title]
+<strong>Approval Status:</strong> [Status]
+<strong>Effective Date:</strong> YYYY-MM-DD
+<strong>Review Cycle:</strong> [Duration]</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V[VERSION]
+<strong>Date:</strong> YYYY-MM-DD</p>
 <h2>Changelog</h2>
 <table>
 <thead>
 <tr>
 <th>Version</th>
 <th>Date</th>
-<th>Changes</th>
-<th>Stakeholder</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
 <th>Rationale/Motivation</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
 <tr>
 <td>V0.1.1</td>
 <td>2026-01-15</td>
@@ -123,17 +137,8 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Rule Steward:</strong> Framework Steward
-<strong>Approval Status:</strong> Template
-<strong>Effective Date:</strong> YYYY-MM-DD
-<strong>Review Cycle:</strong> Annual</p>
-<p><strong>Framework:</strong> MODEL_for_framework
-<strong>Framework Version:</strong> V[VERSION]
-<strong>Date:</strong> YYYY-MM-DD
-<strong>Priority:</strong> [PRIORITY]
-<strong>Compliance:</strong> [Mandatory | Recommended]</p>
         <footer>
-            <p>Generated on 2026-01-22 20:45:01 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:38 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_principle_bias_mitigation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>11. Principle of Bias Mitigation (PRIN_MSHCOL_BIAS_MITIGATION) <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V0.1.0</strong> <strong>Status: OPEN</strong> <strong>Date: 2026-01-09</strong></p>
+<p><strong>We establish bias mitigation as a core principle requiring active detection and correction of AI-generated biases in stakeholder-AI collaboration.</strong></p>
+<p><strong>Objectives:</strong>
+1. <strong>Bias Detection</strong>: Identify AI-generated biases
+2. <strong>Active Correction</strong>: Implement bias correction measures
+3. <strong>Awareness Raising</strong>: Increase stakeholder awareness of bias risks
+4. <strong>Fairness Assurance</strong>: Ensure equitable treatment across stakeholders</p>
+<hr />
+<h2>Abstract</h2>
+<p><strong>[AI_LOCK]</strong>
+The Principle of Bias Mitigation establishes that stakeholder-AI collaboration must include active measures to detect and correct biases in AI-generated outputs. AI systems can perpetuate or amplify biases present in training data, leading to unfair or discriminatory outcomes. This principle requires systematic bias detection, diverse perspective incorporation, and ongoing correction to ensure fair and equitable collaborative outcomes.
+<strong>[END_AI_LOCK]</strong></p>
+<hr />
+<h2>1. Scope and Applicability</h2>
+<ul>
+<li>AI-generated content affecting multiple stakeholders</li>
+<li>Decision-support AI applications</li>
+<li>Content with potential impact on protected groups</li>
+<li>High-stakes AI recommendations</li>
+</ul>
+<h3>1.2 Target Audience</h3>
+<ul>
+<li>AI tool developers</li>
+<li>Quality reviewers</li>
+<li>Stakeholders in affected decisions</li>
+</ul>
+<hr />
+<h2>2. Core Definitions</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bias Mitigation</strong></td>
+<td>Active reduction of AI biases</td>
+<td>Diversity review, testing</td>
+</tr>
+<tr>
+<td><strong>AI Bias</strong></td>
+<td>Systematic errors favoring certain outcomes</td>
+<td>Demographic skew, perspective limitation</td>
+</tr>
+<tr>
+<td><strong>Fairness</strong></td>
+<td>Equitable treatment across stakeholders</td>
+<td>No discrimination, balanced representation</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. Version Requirements</h2>
+<hr />
+<h2>4. Mitigation Strategies</h2>
+<ol>
+<li><strong>Diverse Review</strong>: Include multiple perspectives in review</li>
+<li><strong>Testing Protocols</strong>: Test outputs across demographic groups</li>
+<li><strong>Feedback Channels</strong>: Allow stakeholders to report bias</li>
+<li><strong>Documentation</strong>: Record known biases and mitigations</li>
+</ol>
+<hr />
+<h2>5. Related Principles and Documents</h2>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./09_principle_quality_assurance.html">PRIN_MSHCOL_QUALITY_ASSURANCE</a></td>
+<td>Quality review includes bias detection</td>
+</tr>
+<tr>
+<td><a href="./02_principle_transparency.html">PRIN_MSHCOL_TRANSPARENCY</a></td>
+<td>Bias disclosure supports transparency</td>
+</tr>
+<tr>
+<td><a href="./05_principle_iterative_validation.html">PRIN_MSHCOL_ITERATIVE_VALIDATION</a></td>
+<td>Validation catches bias issues</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6. Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.1</td>
+<td>2026-01-10</td>
+<td>Standardized principle references to PRIN_MSHCOL_* format</td>
+<td>AI Framework Steward</td>
+<td>Ensure consistent naming convention across all principle cross-references</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-09</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>Establish foundational bias mitigation structure</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version History Guidelines:</strong></p>
+<ul>
+<li><strong>Stakeholder</strong>: Document the person or role responsible for the change</li>
+<li><strong>Rationale/Motivation</strong>: Explain why the change was made (e.g., "Added bias mitigation strategies based on stakeholder feedback")</li>
+<li><strong>Traceability</strong>: Each version entry links to a documented decision or request if this exists</li>
+</ul>
+<hr />
+<ul>
+<li><strong>Template Version:</strong> V1.0</li>
+<li><strong>Template Reference:</strong> <a href="../15_template/17_template_for_principle.html">17_template_for_principle.md</a></li>
+<li><strong>Date:</strong> 2026-01-09</li>
+<li><strong>Framework:</strong> MODEL_for_stakeholder_AI_collab</li>
+<li><strong>Framework Version:V1.0</strong> <strong>Date:</strong> 2026-01-09</li>
+</ul>
+        <footer>
+            <p>Generated on 2026-01-23 08:30:41 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

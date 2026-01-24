@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14_convention_for_status</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>14. Convention for Status Stati <strong>[CONV_FOR_SVC_AIP_STATUS_CONVENTION]</strong> <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version:</strong> V0.1.0 <strong>Status:</strong> ACTIVE <strong>Date:</strong> 2026-01-14</p>
+<p><strong>Purpose:</strong> Standardize status terminology across all SVC/AIP documents and tasks.</p>
+<hr />
+<h2>Standard Status Stati</h2>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OPEN</strong></td>
+<td>Task/work item has been identified, not yet started</td>
+<td>Ready to be picked up, initial state for new tasks</td>
+</tr>
+<tr>
+<td><strong>IN PROGRESS</strong></td>
+<td>Active work is being conducted</td>
+<td>Currently being worked on, has recent activity</td>
+</tr>
+<tr>
+<td><strong>PAUSED</strong></td>
+<td>Work temporarily halted, may resume</td>
+<td>Blocked by dependency or waiting for external input</td>
+</tr>
+<tr>
+<td><strong>REVIEW</strong></td>
+<td>Work complete, pending validation/approval</td>
+<td>Awaiting feedback or quality assurance</td>
+</tr>
+<tr>
+<td><strong>APPROVED</strong></td>
+<td>Work reviewed and approved, ready for completion</td>
+<td>Passed validation, ready for final implementation</td>
+</tr>
+<tr>
+<td><strong>DONE</strong></td>
+<td>All work complete and validated</td>
+<td>Final state - fully completed and deployed</td>
+</tr>
+<tr>
+<td><strong>ACTIVE</strong></td>
+<td>Document/component is currently in use</td>
+<td>Operational state for conventions, templates, principles</td>
+</tr>
+<tr>
+<td><strong>ARCHIVED</strong></td>
+<td>Historical reference, no longer active</td>
+<td>Old completed items retained for reference</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Status Workflow</h2>
+<pre><code>OPEN → IN PROGRESS → REVIEW → APPROVED → DONE
+                    ↘ PAUSED ↗
+                    ↘ ARCHIVED
+</code></pre>
+<hr />
+<h2>Usage Guidelines</h2>
+<h3>When to Use Each Status:</h3>
+<p><strong>OPEN:</strong>
+- Task just created or identified
+- Not yet assigned or started
+- Waiting for resources or prioritization
+- Planning phase for new initiatives</p>
+<p><strong>IN PROGRESS:</strong>
+- Actively being worked on
+- Has recent commits, updates, or activity
+- Development, implementation, or execution underway
+- Regular progress updates expected</p>
+<p><strong>PAUSED:</strong>
+- Temporarily halted due to dependencies
+- Waiting for external input or decisions
+- Resource constraints or reprioritization
+- Can be resumed when conditions are met</p>
+<p><strong>REVIEW:</strong>
+- Work complete from implementer's perspective
+- Awaiting validation, testing, or approval
+- Quality assurance or stakeholder feedback pending
+- Ready for evaluation but not yet approved</p>
+<p><strong>APPROVED:</strong>
+- Work reviewed and approved by stakeholders
+- Passed all validation and quality checks
+- Ready for final implementation or deployment
+- Authorized for production use</p>
+<p><strong>DONE:</strong>
+- All requirements met and validated
+- Successfully implemented and operational
+- No remaining action items or follow-up needed
+- Ready for monitoring and maintenance</p>
+<p><strong>ACTIVE:</strong>
+- Document or component currently in active use
+- Referenced and applied in current work
+- Maintained and updated as needed
+- Primary version for new implementations</p>
+<p><strong>ARCHIVED:</strong>
+- Historical record retained for reference
+- No longer the active or current version
+- Completed work from previous phases
+- Maintained for audit trails and lessons learned</p>
+<hr />
+<h2>Status Format in Documents</h2>
+<h3>For Task Files:</h3>
+<pre><code>**Task ID:** TASK_[ID]
+**Title:** [Task Title]
+**Priority:** [Priority Level]
+**Status:** [STATUS]
+**Assignee:** [Person/Role]
+**Due Date:** YYYY-MM-DD
+</code></pre>
+<h3>For Template Files:</h3>
+<pre><code>**Template Version:** V[major].[minor].[patch] **Template Status:** [STATUS] **Date:** YYYY-MM-DD
+</code></pre>
+<h3>For Convention Files:</h3>
+<pre><code>**Version:** V[major].[minor].[patch] **Status:** [STATUS] **Date:** YYYY-MM-DD
+</code></pre>
+<h3>For Project Management:</h3>
+<pre><code>| Component | Status | Owner | Due Date |
+|-----------|--------|-------|----------|
+| [Name] | OPEN | [Person] | YYYY-MM-DD |
+</code></pre>
+<hr />
+<h2>Status Transition Rules</h2>
+<ol>
+<li><strong>OPEN → IN PROGRESS</strong>: When work begins and active development starts</li>
+<li><strong>IN PROGRESS → PAUSED</strong>: When work halts due to external factors</li>
+<li><strong>IN PROGRESS → REVIEW</strong>: When implementation work is complete</li>
+<li><strong>PAUSED → IN PROGRESS</strong>: When blocking factors are resolved</li>
+<li><strong>PAUSED → ARCHIVED</strong>: When work is abandoned or deprioritized indefinitely</li>
+<li><strong>REVIEW → APPROVED</strong>: When validation and approval are complete</li>
+<li><strong>REVIEW → IN PROGRESS</strong>: When feedback requires additional work</li>
+<li><strong>APPROVED → DONE</strong>: When approved work is successfully deployed</li>
+<li><strong>APPROVED → IN PROGRESS</strong>: When approved work needs further refinement</li>
+<li><strong>DONE → ARCHIVED</strong>: After 30 days of stable operation (for tasks)</li>
+<li><strong>ACTIVE → ARCHIVED</strong>: When document/component is superseded</li>
+</ol>
+<hr />
+<h2>Document Type Status Guidelines</h2>
+<h3>Task Documents</h3>
+<ul>
+<li>Start as <strong>OPEN</strong> when created</li>
+<li>Move to <strong>IN PROGRESS</strong> when work begins</li>
+<li><strong>REVIEW</strong> when implementation complete</li>
+<li><strong>APPROVED</strong> when validated</li>
+<li><strong>DONE</strong> when deployed and operational</li>
+<li><strong>ARCHIVED</strong> after 30 days of completion</li>
+</ul>
+<h3>Template Documents</h3>
+<ul>
+<li>Use <strong>ACTIVE</strong> for current templates in use</li>
+<li><strong>APPROVED</strong> for reviewed templates ready for use</li>
+<li><strong>ARCHIVED</strong> for superseded template versions</li>
+</ul>
+<h3>Convention Documents</h3>
+<ul>
+<li><strong>ACTIVE</strong> for current conventions being followed</li>
+<li><strong>APPROVED</strong> for reviewed conventions ready for adoption</li>
+<li><strong>ARCHIVED</strong> for superseded convention versions</li>
+</ul>
+<h3>Implementation Documents</h3>
+<ul>
+<li><strong>OPEN</strong> for planned implementations</li>
+<li><strong>IN PROGRESS</strong> during development</li>
+<li><strong>REVIEW</strong> when implementation complete</li>
+<li><strong>APPROVED</strong> when tested and validated</li>
+<li><strong>DONE</strong> when successfully deployed</li>
+<li><strong>ACTIVE</strong> for operational systems</li>
+</ul>
+<hr />
+<h2>Status Validation Checklist</h2>
+<ul>
+<li>[ ] Status matches current state of work/document</li>
+<li>[ ] Status transitions follow defined workflow rules</li>
+<li>[ ] Status is appropriate for document type (task/template/convention)</li>
+<li>[ ] Status is updated when state changes occur</li>
+<li>[ ] Status is clearly visible in document header</li>
+<li>[ ] Status changes are documented in changelog when applicable</li>
+</ul>
+<hr />
+<h2>Common Status Mistakes to Avoid</h2>
+<h3>Incorrect Transitions</h3>
+<ul>
+<li>Skipping <strong>REVIEW</strong> phase for critical work</li>
+<li>Moving directly from <strong>OPEN</strong> to <strong>DONE</strong></li>
+<li>Using <strong>PAUSED</strong> for work that should be <strong>ARCHIVED</strong></li>
+</ul>
+<h3>Status Misuse</h3>
+<ul>
+<li>Using <strong>IN PROGRESS</strong> for work not actively being done</li>
+<li>Keeping items in <strong>REVIEW</strong> indefinitely</li>
+<li>Using <strong>DONE</strong> before validation is complete</li>
+</ul>
+<h3>Documentation Issues</h3>
+<ul>
+<li>Not updating status when work state changes</li>
+<li>Inconsistent status format across similar documents</li>
+<li>Missing status in document headers</li>
+</ul>
+<hr />
+<h2>Integration with Other Conventions</h2>
+<table>
+<thead>
+<tr>
+<th>Related Convention</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./01_convention_for_version.html">Version Convention</a></td>
+<td>Status often aligns with version progression</td>
+</tr>
+<tr>
+<td><a href="./10_convention_for_file_naming.html">File Naming Convention</a></td>
+<td>Status may influence naming conventions</td>
+</tr>
+<tr>
+<td><a href="./15_convention_for_task_management.html">Task Management Convention</a></td>
+<td>Defines task status workflow</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-14</td>
+<td>Initial status convention for SVC/AIP framework</td>
+<td>Framework Steward</td>
+<td>Establish standardized status terminology across all SVC/AIP documents and tasks</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p>Generated on 2026-01-23 08:30:42 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

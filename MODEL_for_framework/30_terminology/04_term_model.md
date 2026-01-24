@@ -1,4 +1,4 @@
-# Model [TERM_FOR_MFW_MODEL] **[PRIO: HIGHEST]**
+# Definition for Model in MFW [TERM_FOR_MFW_MODEL] **[PRIO: HIGHEST]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework modeling and representational abstractions

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_principle_proportionality</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>3. Principle of Proportionality (PRIN_MSHCOL_PROPORTIONALITY) <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V0.1.0</strong> <strong>Status: OPEN</strong> <strong>Date: 2026-01-09</strong></p>
+<p><strong>We establish proportionality as a core principle requiring that AI assistance levels match task complexity, risk, and stakeholder needs.</strong></p>
+<p><strong>Objectives:</strong>
+1. <strong>Appropriate Sizing</strong>: Match AI capability to task requirements
+2. <strong>Risk Alignment</strong>: Scale AI involvement according to risk levels
+3. <strong>Resource Efficiency</strong>: Avoid over-reliance on AI for simple tasks
+4. <strong>Human Retention</strong>: Ensure human involvement in proportion to task significance</p>
+<hr />
+<h2>Abstract</h2>
+<p><strong>[AI_LOCK]</strong>
+The Principle of Proportionality establishes that in stakeholder-AI collaboration, the level of AI assistance must be appropriate to the task at hand. Simple, low-risk tasks may require minimal AI involvement, while complex, high-stakes decisions warrant careful human oversight and limited AI augmentation. This principle prevents both under-utilization of AI capabilities and over-dependence on AI systems, ensuring optimal human-AI task allocation.
+<strong>[END_AI_LOCK]</strong></p>
+<hr />
+<h2>1. Scope and Applicability</h2>
+<h3>1.1 When to Apply</h3>
+<ul>
+<li>Task complexity varies significantly</li>
+<li>Risk levels differ across collaborative activities</li>
+<li>Resource constraints require optimization</li>
+<li>Multiple AI involvement options exist</li>
+</ul>
+<h3>1.2 Target Audience</h3>
+<ul>
+<li>Task planners and coordinators</li>
+<li>Stakeholders allocating AI resources</li>
+<li>AI tool administrators</li>
+<li>Risk managers</li>
+</ul>
+<hr />
+<h2>2. Core Definitions</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Proportionality</strong></td>
+<td>Matching AI involvement to task requirements</td>
+<td>Minimal AI for simple document formatting</td>
+</tr>
+<tr>
+<td><strong>Task Complexity</strong></td>
+<td>The degree of difficulty and interconnectedness</td>
+<td>Multi-domain analysis vs. grammar check</td>
+</tr>
+<tr>
+<td><strong>Risk Level</strong></td>
+<td>Potential impact of errors or failures</td>
+<td>Financial decisions vs. content suggestions</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. Version Requirements</h2>
+<hr />
+<h2>4. Rules and Guidelines</h2>
+<h3>4.1 Proportionality Matrix</h3>
+<table>
+<thead>
+<tr>
+<th>Risk Level</th>
+<th>Task Complexity</th>
+<th>AI Involvement</th>
+<th>Human Oversight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Low</strong></td>
+<td>Simple</td>
+<td>High</td>
+<td>Minimal</td>
+</tr>
+<tr>
+<td><strong>Low</strong></td>
+<td>Complex</td>
+<td>Moderate</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>High</strong></td>
+<td>Simple</td>
+<td>Moderate</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>High</strong></td>
+<td>Complex</td>
+<td>Minimal</td>
+<td>Intensive</td>
+</tr>
+</tbody>
+</table>
+<h3>4.2 Implementation Requirements</h3>
+<ol>
+<li><strong>Task Assessment</strong>: Evaluate complexity and risk before AI allocation</li>
+<li><strong>Proportion Calculation</strong>: Determine appropriate AI/human balance</li>
+<li><strong>Dynamic Adjustment</strong>: Adjust involvement as task evolves</li>
+<li><strong>Documentation</strong>: Record proportionality decisions and rationale</li>
+</ol>
+<hr />
+<h2>5. Examples</h2>
+<h3>5.1 Correct Usage</h3>
+<pre><code>Task: Grammar review of draft document
+- Risk: Low | Complexity: Low
+- AI Involvement: 90% | Human Review: 10%
+</code></pre>
+<h3>5.2 Incorrect Usage</h3>
+<pre><code>Task: Strategic decision affecting stakeholder interests
+- Risk: High | Complexity: High
+- AI Involvement: 100% | Human Review: 0%
+</code></pre>
+<hr />
+<h2>6. Related Principles and Documents</h2>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./01_principle_human_sovereignty.html">PRIN_MSHCOL_HUMAN_SOVEREIGNTY</a></td>
+<td>Proportionality supports human authority</td>
+</tr>
+<tr>
+<td><a href="./10_principle_fallback_preservation.html">PRIN_MSHCOL_FALLBACK_PRESERVATION</a></td>
+<td>Ensures human capability retention</td>
+</tr>
+<tr>
+<td><a href="./05_principle_iterative_validation.html">PRIN_MSHCOL_ITERATIVE_VALIDATION</a></td>
+<td>Scales validation with risk</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>7. Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.2</td>
+<td>2026-01-10</td>
+<td>Standardized principle references to PRIN_MSHCOL_* format</td>
+<td>AI Framework Steward</td>
+<td>Ensure consistent naming convention across all principle cross-references</td>
+</tr>
+<tr>
+<td>V0.1.1</td>
+<td>2026-01-09</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>clickable principle files on author request</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-09</td>
+<td>Initial creation</td>
+<td>AI Framework Steward</td>
+<td>Establish foundational proportionality structure</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version History Guidelines:</strong>
+- <strong>Stakeholder</strong>: Document the person or role responsible for the change
+- <strong>Rationale/Motivation</strong>: Explain why the change was made (e.g., "Added risk-based AI involvement matrix based on stakeholder feedback")
+- <strong>Traceability</strong>: Each version entry links to a documented decision or request if this exists</p>
+<hr />
+<p><strong>End of Principle</strong></p>
+<hr />
+<p><strong>Template Version:</strong> V1.0
+<strong>Template Reference:</strong> <a href="../15_template/17_template_for_principle.html">17_template_for_principle.md</a>
+<strong>Date:</strong> 2026-01-09
+<strong>Framework:</strong> MODEL_for_stakeholder_AI_collab</p>
+        <footer>
+            <p>Generated on 2026-01-23 08:30:41 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>

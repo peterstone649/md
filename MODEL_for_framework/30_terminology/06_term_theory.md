@@ -1,4 +1,4 @@
-# Theory [TERM_FOR_MFW_THEORY] **[PRIO: HIGH]**
+# Definition for Theory in MFW [TERM_FOR_MFW_THEORY] **[PRIO: HIGH]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework theoretical systems and explanatory architectures

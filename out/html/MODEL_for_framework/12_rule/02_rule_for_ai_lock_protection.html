@@ -60,15 +60,11 @@
     </style>
 </head>
 <body>
-    <h1>Rule for AI_LOCK Content Protection <strong>[RULE_MFW_AI_LOCK_PROTECTION]</strong></h1>
-<p><strong>Version: V0.1.0</strong> <strong>Date: 2026-01-09</strong></p>
-<p><strong>Rule ID:</strong> RULE_AI_LOCK_PROTECTION
-<strong>Priority:</strong> CRITICAL
-<strong>Applies to:</strong> All AI-assisted document processing and generation</p>
-<hr />
+    <h1>AI_LOCK Content Protection [RULE_FOR_MFW_AI_LOCK_PROTECTION] <strong>[PRIO: HIGHEST]</strong></h1>
+<p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
+<strong>Scope:</strong> All AI-assisted document processing and generation</p>
 <h2>Rule Statement</h2>
-<p><strong>AI systems MUST NOT modify, rephrase, rewrite, or alter any content enclosed within <code>[AI_LOCK]</code> and <code>[END_AI_LOCK]</code> markers. These markers designate protected content that represents the authoritative, human-authored intent and MUST remain unchanged.</strong></p>
-<hr />
+<p>AI systems MUST NOT modify, rephrase, rewrite, or alter any content enclosed within <code>[AI_LOCK]</code> and <code>[END_AI_LOCK]</code> markers. These markers designate protected content that represents the authoritative, human-authored intent and MUST remain unchanged.</p>
 <h2>Rationale</h2>
 <p>The AI_LOCK mechanism protects:
 - <strong>Human Authored Intent</strong>: Content within AI_LOCK markers represents definitive human statements that must not be altered by AI
@@ -76,7 +72,6 @@
 - <strong>Accountability Chains</strong>: Maintains clear provenance of protected statements
 - <strong>Framework Stability</strong>: Ensures core principles and definitions remain consistent
 - <strong>Trust Boundaries</strong>: Creates explicit zones where human authority supersedes AI capability</p>
-<hr />
 <h2>AI_LOCK Pattern Structure</h2>
 <h3>Standard Format</h3>
 <pre><code class="language-markdown">**[AI_LOCK]**
@@ -110,7 +105,6 @@
 </tr>
 </tbody>
 </table>
-<hr />
 <h2>Rules for AI Systems</h2>
 <h3>1. Recognition Rule</h3>
 <p>AI systems MUST recognize and respect <code>[AI_LOCK]</code> and <code>[END_AI_LOCK]</code> markers in all contexts:
@@ -133,7 +127,6 @@
 - <strong>MAY</strong> reference protected content in analysis
 - <strong>MUST NOT</strong> modify the content itself
 - <strong>MUST</strong> indicate when content falls within protected zones</p>
-<hr />
 <h2>Acceptable Modifications (Human Only)</h2>
 <p>Only human stakeholders may modify AI_LOCK content through:
 1. <strong>Direct Edit</strong>: Human-authored changes to protected sections
@@ -143,7 +136,6 @@
 - Clearly label suggestions as "PROPOSED_CHANGES"
 - Never auto-apply changes to protected content
 - Request explicit human approval before any modification</p>
-<hr />
 <h2>Violation Examples</h2>
 <h3>❌ Violation: Content Modification</h3>
 <pre><code class="language-markdown">**[AI_LOCK]**
@@ -175,7 +167,6 @@ The Principle of Human Sovereignty establishes...
 We establish that the Principle of Human Sovereignty...
 **[END_AI_LOCK]**
 </code></pre>
-<hr />
 <h2>Validation Checklist</h2>
 <ul>
 <li>[ ] All AI_LOCK sections preserved exactly</li>
@@ -185,7 +176,6 @@ We establish that the Principle of Human Sovereignty...
 <li>[ ] AI-generated suggestions labeled separately</li>
 <li>[ ] No auto-application of changes to protected zones</li>
 </ul>
-<hr />
 <h2>Enforcement</h2>
 <ol>
 <li><strong>Detection Phase:</strong> AI tools flag AI_LOCK sections during processing</li>
@@ -193,7 +183,6 @@ We establish that the Principle of Human Sovereignty...
 <li><strong>Review Phase:</strong> Human reviewers verify protected content remains unchanged</li>
 <li><strong>Violation Response:</strong> Document violations and revert unauthorized changes</li>
 </ol>
-<hr />
 <h2>Integration with Other Rules</h2>
 <table>
 <thead>
@@ -217,20 +206,49 @@ We establish that the Principle of Human Sovereignty...
 </tr>
 </tbody>
 </table>
-<hr />
 <h2>References</h2>
 <ul>
 <li>MODEL_for_stakeholder_AI_collab/30_principle/01_principle_human_sovereignty.md</li>
 <li>Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)</li>
 <li>Intellectual Property Rights Conventions (20_convention/16_convention_for_intellectual_property_rights.md)</li>
 </ul>
-<hr />
-<p><strong>Rule Steward:</strong> Framework Standards Committee
+<p><strong>Rule Steward:</strong> Terminology Architects
 <strong>Approval Status:</strong> Framework Approved
-<strong>Effective Date:</strong> 2026-01-09
+<strong>Effective Date:</strong> 2026-01-08
 <strong>Review Cycle:</strong> Annual</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V1.0.1
+<strong>Date:</strong> 2026-01-23</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-09</td>
+<td>Initial creation</td>
+<td>AI Framework Admin</td>
+<td>Establish file</td>
+</tr>
+</tbody>
+</table>
         <footer>
-            <p>Generated on 2026-01-22 20:45:01 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-23 08:30:37 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15_convention_for_topic_id</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>15. Convention for Analysis Document IDs <strong>[CONV_FOR_SVC_AIP_ANALYSIS_IDS]</strong> <strong>[PRIO: MEDIUM]</strong></h1>
+<p><strong>Purpose:</strong> Standardize identification format for analysis documents in the SVC/AIP framework.</p>
+<hr />
+<h2>Flexible ID Format for SVC/AIP Documents</h2>
+<h3>General Format Pattern</h3>
+<pre><code>[DOCUMENT_TYPE]_[FRAMEWORK]_[TOPIC]_[SEQUENTIAL_NUMBER]
+</code></pre>
+<h3>Analysis-Specific Format</h3>
+<pre><code>ANALYSIS_VMS_[TOPIC]_[SEQUENTIAL_NUMBER]
+</code></pre>
+<h3>Format Components</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+<th>Example</th>
+<th>Flexibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[DOCUMENT_TYPE]</strong></td>
+<td>Document type identifier</td>
+<td><code>ANALYSIS</code>, <code>TASK</code>, <code>VALUE</code>, <code>PRIORITY</code></td>
+<td>Flexible - can be any document type</td>
+</tr>
+<tr>
+<td><strong>[FRAMEWORK]</strong></td>
+<td>Framework identifier</td>
+<td><code>VMS</code>, <code>SVC</code>, <code>AIP</code></td>
+<td>Flexible - can specify different frameworks</td>
+</tr>
+<tr>
+<td><strong>[TOPIC]</strong></td>
+<td>Subject matter (underscore-separated)</td>
+<td><code>THREE_PILLAR</code>, <code>COMPARATIVE</code>, <code>SAFE_PROGRESS</code></td>
+<td>Flexible - descriptive topic identifier</td>
+</tr>
+<tr>
+<td><strong>[SEQUENTIAL_NUMBER]</strong></td>
+<td>Unique identifier within topic</td>
+<td><code>001</code>, <code>002</code>, <code>003</code></td>
+<td>Sequential numbering per topic</td>
+</tr>
+</tbody>
+</table>
+<h3>Complete Examples</h3>
+<table>
+<thead>
+<tr>
+<th>Analysis Document</th>
+<th>Analysis ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>analysis_vms_vs_general_layered_architectures.md</code></td>
+<td><code>ANALYSIS_VMS_COMPARATIVE_001</code></td>
+</tr>
+<tr>
+<td><code>analysis_3_pillar_flourishing_approach.md</code></td>
+<td><code>ANALYSIS_VMS_THREE_PILLAR_001</code></td>
+</tr>
+<tr>
+<td><code>analysis_substrate_rebellion_risks.md</code></td>
+<td><code>ANALYSIS_VMS_SUBSTRATE_REBELLION_001</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Usage Guidelines</h2>
+<h3>When to Use</h3>
+<ul>
+<li>All analysis documents in the VMS framework</li>
+<li>Comparative evaluations and assessments</li>
+<li>Research findings and recommendations</li>
+<li>Alternative approach explorations</li>
+</ul>
+<h3>ID Assignment Rules</h3>
+<ol>
+<li><strong>ANALYSIS prefix</strong>: Always starts with <code>ANALYSIS</code></li>
+<li><strong>VMS identifier</strong>: Always includes <code>_VMS_</code> after ANALYSIS</li>
+<li><strong>Topic description</strong>: Use concise, descriptive terms separated by underscores</li>
+<li><strong>Sequential numbering</strong>: Start with <code>001</code> for each topic, increment as needed</li>
+</ol>
+<h3>Topic Naming Conventions</h3>
+<ul>
+<li>Use <strong>descriptive nouns</strong> that clearly identify the analysis subject</li>
+<li><strong>Avoid verbs</strong> in topic names (use nouns like <code>COMPARATIVE</code>, <code>THREE_PILLAR</code>)</li>
+<li><strong>Keep concise</strong> while being specific enough for identification</li>
+<li><strong>Use underscores</strong> to separate multi-word concepts</li>
+</ul>
+<hr />
+<h2>Implementation Examples</h2>
+<h3>Correct Usage</h3>
+<pre><code class="language-markdown">**Analysis ID:** ANALYSIS_VMS_COMPARATIVE_001
+**Title:** What Separates VMS from General Layered Value Architectures
+
+**Analysis ID:** ANALYSIS_VMS_THREE_PILLAR_001
+**Title:** Simplified Flourishing Framework with Three Core Pillars
+</code></pre>
+<h3>Incorrect Usage</h3>
+<pre><code class="language-markdown">**Analysis ID:** VMS_THREE_PILLAR_ANALYSIS_001  # Wrong order
+**Analysis ID:** ANALYSIS_COMPARATIVE_VMS_001   # VMS not in right position
+**Analysis ID:** ANALYSIS_VMS_001               # Missing topic
+</code></pre>
+<hr />
+<h2>Integration with File Naming</h2>
+<h3>Consistent Naming Pattern</h3>
+<p>Analysis documents should follow this parallel structure:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>ID Format</th>
+<th>Filename Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type</td>
+<td><code>ANALYSIS</code></td>
+<td><code>analysis</code></td>
+</tr>
+<tr>
+<td>Framework</td>
+<td><code>_VMS_</code></td>
+<td>(implied in path)</td>
+</tr>
+<tr>
+<td>Topic</td>
+<td><code>[TOPIC]</code></td>
+<td><code>[topic]</code></td>
+</tr>
+<tr>
+<td>Number</td>
+<td><code>_[NUMBER]</code></td>
+<td>(sequential)</td>
+</tr>
+</tbody>
+</table>
+<h3>Complete Correspondence</h3>
+<pre><code>ID: ANALYSIS_VMS_COMPARATIVE_001
+File: analysis_vms_vs_general_layered_architectures.md
+
+ID: ANALYSIS_VMS_THREE_PILLAR_001
+File: analysis_3_pillar_flourishing_approach.md
+</code></pre>
+<hr />
+<h2>Validation Checklist</h2>
+<ul>
+<li>[ ] ID starts with <code>ANALYSIS_VMS_</code></li>
+<li>[ ] Topic uses descriptive nouns separated by underscores</li>
+<li>[ ] Sequential number follows <code>001</code> format</li>
+<li>[ ] No verbs in topic description</li>
+<li>[ ] Topic is concise yet specific</li>
+<li>[ ] ID matches filename pattern</li>
+</ul>
+<hr />
+<h2>Related Conventions</h2>
+<table>
+<thead>
+<tr>
+<th>Convention</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./14_convention_for_stati.html">14_convention_for_stati.md</a></td>
+<td>Status values for analysis documents</td>
+</tr>
+<tr>
+<td><a href="./10_convention_for_file_naming.html">10_convention_for_file_naming.md</a></td>
+<td>Filename patterns for analysis documents</td>
+</tr>
+<tr>
+<td><a href="./01_convention_for_version.html">01_convention_for_version.md</a></td>
+<td>Versioning for analysis documents</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-14</td>
+<td>Initial analysis ID convention</td>
+<td>Framework Steward</td>
+<td>Standardize identification format for VMS analysis documents</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p>Generated on 2026-01-23 08:30:42 by MDToHTMLConverter v1.6.1</p>
+        </footer>
+</body>
+</html>
