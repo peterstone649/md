@@ -28,3 +28,9 @@ The "unbreakable" yet "completely detached" nature of AI creates a unique balanc
 **Scope:** Philosophical Reflection / Supplemental to *Human Compatible*
 **Context:** Derived from a human-AI dialogue on the nature of safety and identity with the framework author of this repository.
 **Date:** 2026-01-21
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

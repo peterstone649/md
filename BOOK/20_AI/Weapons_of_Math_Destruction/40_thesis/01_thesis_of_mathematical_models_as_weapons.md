@@ -487,3 +487,9 @@ The Thesis of Mathematical Models as Weapons establishes that opaque, large-scal
 **In recognizing mathematical models as potential weapons, humanity gains the wisdom to harness their power for justice and equality rather than allowing them to perpetuate harm and division.**
 
 **The thesis calls for a fundamental rethinking of our relationship with algorithmic systems, demanding that mathematics serve human values, protect human dignity, and promote social justice in an increasingly computational world.** ⚖️🤖🛡️
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

@@ -9,8 +9,8 @@ from datetime import datetime
 from pathlib import Path
 
 # Configuration
-BASE_DIR = Path(__file__).parent.parent
-RULE_FILE = BASE_DIR / "12_rule" / "04_rule_for_version_changelog_update.md"
+BASE_DIR = Path(__file__).parent.parent.parent / "BOOK"
+RULE_FILE = Path(__file__).parent.parent / "12_rule" / "04_rule_for_version_changelog_update.md"
 CHANGELOG_TEMPLATE = """## Changelog
 
 | Version | Date | Change Content | Stakeholders | Motivation |
@@ -94,7 +94,7 @@ def process_files():
     print(f"Files with changelog added: {files_with_changelog}")
 
 def main():
-    print("Applying version changelog update rule...")
+    print("Applying version changelog update rule to BOOK directory...")
     print(f"Base directory: {BASE_DIR}")
     print(f"Current date: {get_current_date()}")
     print()
