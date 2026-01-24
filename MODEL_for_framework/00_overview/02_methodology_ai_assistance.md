@@ -1,6 +1,5 @@
 # AI assistance methodology and transparency [METH_FOR_MFW_AI_ASSISTANCE] **[PRIO: HIGH]**
 
-**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** AI assistance methodology and transparency for MODEL_for_framework
 
 *   **Methodology Overview:** This document provides MODEL_for_framework-specific AI assistance methodology, referencing the comprehensive base methodology from **MODEL_for_stakeholder_AI_collab**.
@@ -17,7 +16,8 @@
 
 This document provides the complete foundation including:
 - AI Integration Framework (Proposed)
-- Primary AI Tools and Integration (Grok via CLINE)
+- Primary AI Tools and Integration (e.g. Grok via CLINE)
+  - Model: x-ai/grok-code-fast-1
 - AI-Assisted Development Process
 - Specific Tool Applications
 - Quality Assurance and Stakeholder Oversight
@@ -34,13 +34,12 @@ MODEL_for_framework adapts the following elements from the base methodology:
 
 | Component | Base Framework | MODEL_for_framework Adaptation |
 |-----------|----------------|-------------------------------|
-| AI Tools | Grok (xAI) via CLINE | Same toolset used |
+| AI Tools | e.g. Grok (xAI) via CLINE | Same toolset used |
 | Collaboration Model | Stakeholder-AI Partnership | Same model applied |
 | Quality Assurance | Stakeholder Validation | Same validation processes |
 | Transparency | Full disclosure required | Same transparency standards |
 
-Further models (5%usage):
-x-ai/grok-code-fast-1
+**Further models (5%usage):**
 minimax/minimax-m2.1
 mistralai/devstral-2512:free
 
@@ -60,18 +59,18 @@ The **MODEL_for_framework** fully adopts the stakeholder-AI collaboration method
 
 ---
 
-**Rule Steward:** Terminology Architects
+**Rule Steward:** Method Architects
 **Approval Status:** Framework Approved
-**Effective Date:** 2026-01-08
+**Effective Date:** 2026-01-23
 **Review Cycle:** Annual
 
 **Framework:** MODEL_for_framework
-**Framework Version:** V1.0.1
+**Framework Version:** V0.1.1 
 **Date:** 2026-01-23
 
 ## Changelog
 
 | Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
-| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
-| V1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundation for AI assistance methodology |
+| V0.1.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundation for AI assistance methodology |

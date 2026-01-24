@@ -330,7 +330,9 @@ Essential AI Safety Works:
 
 **For anyone wanting to understand not just the technical aspects of AI alignment, but also its philosophical, ethical, and social dimensions, The Alignment Problem is indispensable.**
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+## Changelog
+
+| Version | Date | Changes | Stakeholder | Motivation |
 |---------|------|---------|-------------|----------------------|
 | V0.1.1 | 2026-01-21 | Changelog added | Framework-Manager |  |
 | V0.1.0 | 2026-01-09 | Initial creation | AI-Framework-Manager | File created |

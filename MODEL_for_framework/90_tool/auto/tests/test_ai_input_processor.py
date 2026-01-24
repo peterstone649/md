@@ -243,3 +243,9 @@ class TestInputProcessor(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

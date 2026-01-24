@@ -435,3 +435,11 @@ Essential Algorithmic Ethics Works:
 **Weapons of Math Destruction remains essential reading for anyone concerned about the social impact of algorithms and the need for algorithmic accountability in an increasingly automated world.**
 
 **O'Neil's accessible yet rigorous analysis provides both the conceptual framework and practical examples needed to understand and address the ethical challenges of algorithmic systems.**
+
+
+## Changelog
+
+| Version | Date | Changes | Stakeholder | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.1 | 2026-01-20 | add changelog | Framework Steward |  |
+| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish file |

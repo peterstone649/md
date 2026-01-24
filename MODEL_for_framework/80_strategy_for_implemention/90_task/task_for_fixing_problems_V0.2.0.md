@@ -88,3 +88,9 @@ Completed: 2026-01-08 18:35h
 - [x] Clarify "Framework Integration" field definition (13_convention_for_framework_integration_field.md created)
 - [x] Add missing Type Classification to term files (already present in 01_term_term.md - CONCEPTUAL)
 - [x] Standardize formal notation variable naming convention (12_convention_for_formal_notation.md created)
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

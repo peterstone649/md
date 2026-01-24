@@ -113,3 +113,9 @@ Users are the primary consumers of the framework. They apply existing principles
 **Story Status:** Ready
 **Estimation:** 3 story points
 **Sprint:** TBD
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

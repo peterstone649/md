@@ -1,12 +1,12 @@
 import re
 
-class LinkHandler:
+class Handler_for_Link:
     """
     A utility class for handling link conversions in HTML content.
     """
 
     @staticmethod
-    def handler_for_links(content, from_ext, to_ext):
+    def handle_for_link(content, from_ext, to_ext):
         """
         Handles link conversion in HTML content by replacing file extensions.
 

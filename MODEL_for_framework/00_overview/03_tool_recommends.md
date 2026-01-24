@@ -1,6 +1,5 @@
-# Tool recommendations [TOOL_FOR_MFW_RECOMMENDS] **[PRIO: MEDIUM]**
+# Tool recommendations [OVER_FOR_MFW_TOOL_RECOMMENDS] **[PRIO: MEDIUM]**
 
-**Version: V1.0.0** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** Recommended tools and technologies for MODEL_for_framework
 
 ## AI Tools Used
@@ -17,7 +16,8 @@
 
 | Tool | Category | Purpose | Rationale | Why Recommended |
 |------|----------|---------|-----------|-----------------|
-| **VS Code** | Code Editor | Primary development environment | Excellent Markdown support | Free, cross-platform, industry standard |
+| **VS Code / Antigravity** | IDE | Primary development environment | Excellent Markdown support, AI integration | Free, cross-platform, industry standard |
+| **CLINE Extension** | AI Agent | AI-powered coding assistant | Seamless IDE integration | Context-aware suggestions, autonomous task execution |
 | **Git** | Version Control | Source code management | Distributed version control | Industry standard, robust collaboration |
 | **Python Markdown** | Library | HTML conversion | Feature-rich processing | Proven reliability, active maintenance |
 | **Custom MD-to-HTML Converter** | Tool | Framework-specific conversion | Tailored formatting | Handles SVG scaling, maintains consistency |
@@ -39,19 +39,20 @@
 
 ---
 
-**Rule Steward:** Terminology Architects
+**Rule Steward:** Tool Architects
 **Approval Status:** Framework Approved
-**Effective Date:** 2026-01-08
+**Effective Date:** 2026-01-24
 **Review Cycle:** Annual
 
 **Framework:** MODEL_for_framework
 **Framework Version:** V1.0.1
-**Date:** 2026-01-23
+**Date:** 2026-01-24
 
 ## Changelog
 
 | Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V1.0.1 | 2026-01-24 | Added VS Code/Antigravity as IDE and CLINE extension as AI Agent to Development Tools | Framework Admin | Include primary IDE and AI coding assistant |
 | V1.0.0 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.2 | 2026-01-15 | Added Local Models entry to AI Tools Used section | Framework Steward | Include privacy-focused offline AI options |
 | V0.1.1 | 2026-01-15 | Added Apps for models section with LLMstudio, Visual Studio, 5ire MCP; Updated Grok description | Framework Steward | Expand tool recommendations to include AI model applications |

@@ -214,3 +214,9 @@ The code is ready for use with the recommended improvements, particularly fixing
 - CI pipeline runs on push/pull_request to main branch
 - Performance metrics within acceptable limits
 - Error handling validated for edge cases
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

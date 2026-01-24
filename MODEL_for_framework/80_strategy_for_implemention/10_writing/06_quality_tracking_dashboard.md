@@ -328,3 +328,9 @@ Final:  8.0/10 (Target achieved)
 **Dashboard Owner:** Writing Quality Improvement Lead
 **Update Frequency:** Weekly
 **Review Cycle:** Monthly
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

@@ -110,3 +110,9 @@
 **Quality Foundation:** ✅ **ESTABLISHED**
 **Team Readiness:** ✅ **HIGH**
 **Next Training:** Week 2 - Active Voice Mastery (2026-01-15)
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

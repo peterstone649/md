@@ -23,7 +23,9 @@ Use this content as a starting point or reference, but not as definitive or auth
 - **10_writing**: Writing and style guide books
 - **20_AI**: Artificial Intelligence and related topics
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+## Changelog
+
+| Version | Date | Changes | Stakeholder | Motivation |
 |---------|------|---------|-------------|----------------------|
 | V0.1.1 | 2026-01-20 | add changelog | Framework Steward |  |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish file |

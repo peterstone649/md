@@ -1,7 +1,13 @@
 import unittest
-from handler_for_links import LinkHandler
+import sys
+import os
 
-class TestLinkHandler(unittest.TestCase):
+# Add parent directory to Python path to import the handler module
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from handler_for_link import Handler_for_Link
+
+class TestHandler_for_Link(unittest.TestCase):
     """Test cases for the LinkHandler class."""
 
     def test_md_to_html_conversion(self):
@@ -34,7 +40,7 @@ class TestLinkHandler(unittest.TestCase):
         '''
 
         # Apply the link handler
-        result = LinkHandler.handler_for_links(test_content, ".md", ".html")
+        result = Handler_for_Link.handle_for_link(test_content, ".md", ".html")
 
         # Check that .md links were converted to .html
         self.assertIn('href="document.html"', result)
@@ -64,24 +70,24 @@ class TestLinkHandler(unittest.TestCase):
         '''
 
         # Convert .txt to .html
-        result_txt = LinkHandler.handler_for_links(test_content, ".txt", ".html")
+        result_txt = Handler_for_Link.handle_for_link(test_content, ".txt", ".html")
         self.assertIn('href="document.html"', result_txt)
         self.assertIn('href="data.csv"', result_txt)  # CSV should remain unchanged
 
         # Convert .csv to .json
-        result_csv = LinkHandler.handler_for_links(test_content, ".csv", ".json")
+        result_csv = Handler_for_Link.handle_for_link(test_content, ".csv", ".json")
         self.assertIn('href="document.txt"', result_csv)  # TXT should remain unchanged
         self.assertIn('href="data.json"', result_csv)
 
     def test_edge_cases(self):
         """Test edge cases and special scenarios."""
         # Test with empty content
-        empty_result = LinkHandler.handler_for_links("", ".md", ".html")
+        empty_result = Handler_for_Link.handle_for_link("", ".md", ".html")
         self.assertEqual(empty_result, "")
 
         # Test with no links
         no_links = "<html><body>No links here</body></html>"
-        no_links_result = LinkHandler.handler_for_links(no_links, ".md", ".html")
+        no_links_result = Handler_for_Link.handle_for_link(no_links, ".md", ".html")
         self.assertEqual(no_links_result, no_links)
 
         # Test with complex URLs
@@ -89,7 +95,7 @@ class TestLinkHandler(unittest.TestCase):
         <a href="file.with.dots.md">Complex filename</a>
         <a href="path/with-dashes_and_underscores.md">Mixed characters</a>
         '''
-        complex_result = LinkHandler.handler_for_links(complex_content, ".md", ".html")
+        complex_result = Handler_for_Link.handle_for_link(complex_content, ".md", ".html")
         self.assertIn('href="file.with.dots.html"', complex_result)
         self.assertIn('href="path/with-dashes_and_underscores.html"', complex_result)
 

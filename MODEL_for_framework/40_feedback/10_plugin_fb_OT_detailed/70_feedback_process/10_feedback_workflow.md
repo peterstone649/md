@@ -299,3 +299,9 @@ graph TD
 **License:** EUPL v1.2
 **Status:** ACTIVE
 **Related Principles:** [Continuous Learning, Quality Assurance, Iterative Validation]
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

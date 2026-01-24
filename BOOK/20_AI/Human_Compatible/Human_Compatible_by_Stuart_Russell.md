@@ -308,7 +308,9 @@ Related Works:
 
 **Human Compatible is the definitive guide to ensuring that the most powerful technology in human history remains our greatest ally.**
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+## Changelog
+
+| Version | Date | Changes | Stakeholder | Motivation |
 |---------|------|---------|-------------|----------------------|
 | V0.1.1 | 2026-01-20 | add changelog | Framework Steward |  |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish file |

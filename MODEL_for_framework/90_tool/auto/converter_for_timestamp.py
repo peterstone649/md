@@ -353,3 +353,9 @@ if __name__ == "__main__":
 
     # Test validation
     print(f"Is valid timestamp: {converter.validate_timestamp(converter.now('iso'))}")
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

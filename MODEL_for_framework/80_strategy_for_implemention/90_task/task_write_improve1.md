@@ -345,3 +345,9 @@
 **Start Date:** 2026-01-09
 **Target Completion:** 2026-02-05
 **Review Date:** 2026-02-12
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

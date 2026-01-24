@@ -145,3 +145,9 @@ graph TD
 **License:** EUPL v1.2
 **Status:** [Draft/Submitted/In Review/Implemented/Rejected]
 **Feedback ID:** [Auto-generated or assigned]
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

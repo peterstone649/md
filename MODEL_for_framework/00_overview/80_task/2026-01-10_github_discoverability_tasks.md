@@ -32,3 +32,9 @@ This file lists the tasks required to improve the discoverability of the `MODEL_
 - [x] **Add Essential Files:**
     - [x] Create a `LICENSE` file (e.g., with the MIT License text).
     - [x] Create a `CONTRIBUTING.md` file outlining how others can contribute.
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

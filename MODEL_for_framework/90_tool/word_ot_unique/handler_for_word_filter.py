@@ -362,3 +362,9 @@ def filter_word_set(words: Set[str], config_path: Optional[str] = None) -> Set[s
     """
     filter_instance = WordFilter(config_path)
     return filter_instance.filter_words(words)
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

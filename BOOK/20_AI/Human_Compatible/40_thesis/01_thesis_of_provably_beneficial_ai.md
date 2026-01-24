@@ -161,7 +161,9 @@ The Thesis of Provably Beneficial AI establishes that the safety of artificial i
 **Usage Guidelines:** This thesis document follows the standardized Ethosys thesis template
 **Framework Integration:** Ethosys Beneficial AI and Human-Compatible foundations
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+## Changelog
+
+| Version | Date | Changes | Stakeholder | Motivation |
 |---------|------|---------|-------------|----------------------|
 | V0.1.1 | 2026-01-20 | add changelog | Framework Steward |  |
 | V0.1.0 | 2026-01-20 | Initial creation | AI Framework Steward | Establish thesis |

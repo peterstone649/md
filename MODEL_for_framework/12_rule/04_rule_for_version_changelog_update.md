@@ -5,7 +5,7 @@
 
 ## Rule Statement
 
-All framework documents MUST maintain an accurate and complete version changelog with Stakeholder and Rationale/Motivation columns for every version entry.
+All framework documents MUST maintain an accurate and complete version changelog with Stakeholder and Motivation columns for every version entry.
 
 ## Rationale
 
@@ -27,7 +27,7 @@ A comprehensive changelog:
 | **Date** | ISO format date of change | 2026-01-09 |
 | **Changes** | Description of modifications | "Added clickable cross-references" |
 | **Stakeholder** | Person or role responsible | "AI Framework Steward" |
-| **Rationale/Motivation** | Why the change was made | "Based on stakeholder feedback" |
+| **Motivation** | Why the change was made | "Based on stakeholder feedback" |
 
 ### Changelog Location
 
@@ -36,7 +36,7 @@ Place the changelog section at the end of the document before the footer:
 ```markdown
 ## Changelog
 
-| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+| Version | Date | Change Content | Stakeholders | Motivation |
 |---------|------|---------|-------------|----------------------|
 | V0.1.1 | 2026-01-15 | Added Version Uniqueness section and header format requirements | Framework Steward | Strengthen changelog integrity and consistency |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational structure |
@@ -120,7 +120,8 @@ Maintain reverse chronological order:
 - [ ] Rationale explains why change was made
 - [ ] No duplicate version entries
 - [ ] Initial creation properly documented
-- [ ] if py code __version__ = [VERSION] then also update this!
+- [ ] if e.g. py code __version__ = [VERSION] then also update this!
+- [ ] if code file : no duplicate version variable
 
 ## Enforcement
 
@@ -147,7 +148,7 @@ Maintain reverse chronological order:
 
 ## Changelog
 
-| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+| Version | Date | Change Content | Stakeholders | Motivation |
 |---------|------|---------|-------------|----------------------|
 | V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.1 | 2026-01-15 | Added Version Uniqueness section to Changelog Entry Requirements | Framework Steward | Strengthen changelog integrity by preventing duplicate version entries |

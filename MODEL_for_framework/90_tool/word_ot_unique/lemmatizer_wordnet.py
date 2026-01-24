@@ -233,3 +233,9 @@ if __name__ == "__main__":
         print(f"Error: {e}")
         print("Install NLTK with: pip install nltk")
         print("Download data with: python -c \"import nltk; nltk.download('wordnet'); nltk.download('omw-1.4'); nltk.download('averaged_perceptron_tagger')\"")
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

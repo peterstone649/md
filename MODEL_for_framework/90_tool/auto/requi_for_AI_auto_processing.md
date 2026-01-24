@@ -73,3 +73,9 @@ then move file to
 - Status: DRAFT
 - Author: Framework Steward
 - Date: 2026-01-18
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

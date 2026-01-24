@@ -185,7 +185,9 @@ Essential Insights:
 └── The cost of failure is potentially existential
 ```
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+## Changelog
+
+| Version | Date | Changes | Stakeholder | Motivation |
 |---------|------|---------|-------------|----------------------|
 | V0.1.1 | 2026-01-21 | Changelog added | Framework-Manager |  |
 | V0.1.0 | 2026-01-09 | Initial creation | AI-Framework-Manager | File created |

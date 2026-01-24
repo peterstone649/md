@@ -155,3 +155,9 @@ Found a bug or have a suggestion? We'd love to hear about it!
 **Thank you for contributing to MODEL_for_framework!** 🎉
 
 Your contributions help make framework development more systematic, reliable, and accessible to everyone.
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

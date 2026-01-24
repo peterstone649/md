@@ -95,3 +95,9 @@ This **[FRAMEWORK_NAME]** embraces **[OPEN_SCIENCE_DESCRIPTION]** while protecti
 **Framework:** MODEL_for_framework
 **Framework Version:** V0.1.0
 **Date:** 2026-01-23
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

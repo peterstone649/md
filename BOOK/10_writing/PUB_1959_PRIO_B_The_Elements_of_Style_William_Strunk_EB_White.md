@@ -272,7 +272,9 @@ The book's success lies in its focus on fundamentals: good writing is clear, con
 
 **Key Quote**: "Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts."
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+## Changelog
+
+| Version | Date | Changes | Stakeholder | Motivation |
 |---------|------|---------|-------------|----------------------|
 | V0.1.1 | 2026-01-20 | add changelog | Framework Steward |  |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish file |

@@ -35,3 +35,9 @@
 ## Related Documents
 - **Tool:** [converter_OT_html.py](../converter_OT_html.py)
 - **Rule:** [RULE_FW_DOC_VERSION_CHANGELOG](../../12_rule/03_rule_for_version_changelog_update.md)
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

@@ -51,3 +51,9 @@ The goal is to review each document, ensure it is complete and consistent, and m
 - [ ] Review and finalize `19_convention_for_existential_risk_priority.md`
 - [ ] Review and resolve `task_01_convention_for_version.md`
 - [ ] Review and resolve `task_16_convention_for_intellectual_property_rights.md`
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |
