@@ -86,3 +86,9 @@ This enables automated processing of documentation for configuration management 
 ## Purpose
 
 VMS ensures that AI systems maintain alignment with human values through structured management and continuous evolution of value frameworks.
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

@@ -71,20 +71,10 @@ The Principle of Accountability establishes that in stakeholder-AI collaboration
 ## 5. Examples
 
 ### 5.1 Correct Usage
-```
-Document: strategy_recommendation.md
-Owner: Jane Smith (Human)
-AI Contributions: Research synthesis, Draft generation
-Human Contributions: Strategic direction, Final approval
-```
+
 
 ### 5.2 Incorrect Usage
-```
-Document: recommendations.md
-Owner: Unclear
-Contributions: Untracked
-Responsibility: Distributed, no clear ownership
-```
+[17_template_for_principle.md](../15_template/17_template_for_principle.md)[PRIN_MSHCOL_REVERSIBILITY](./07_principle_reversibility.md)[PRIN_MSHCOL_TRANSPARENCY](./02_principle_transparency.md)[PRIN_MSHCOL_HUMAN_SOVEREIGNTY](./01_principle_human_sovereignty.md)
 
 ---
 
@@ -92,9 +82,9 @@ Responsibility: Distributed, no clear ownership
 
 | Reference | Relationship |
 |-----------|--------------|
-| [PRIN_MSHCOL_HUMAN_SOVEREIGNTY](./01_principle_human_sovereignty.md) | Human retains final responsibility |
-| [PRIN_MSHCOL_TRANSPARENCY](./02_principle_transparency.md) | Enables accountability through disclosure |
-| [PRIN_MSHCOL_REVERSIBILITY](./07_principle_reversibility.md) | Supports correction of accountable actions |
+|  | Human retains final responsibility |
+|  | Enables accountability through disclosure |
+|  | Supports correction of accountable actions |
 
 ---
 
@@ -117,6 +107,12 @@ Responsibility: Distributed, no clear ownership
 ---
 
 **Template Version:** V1.0
-**Template Reference:** [17_template_for_principle.md](../15_template/17_template_for_principle.md)
+**Template Reference:** 
 **Date:** 2026-01-09
 **Framework:** MODEL_for_stakeholder_AI_collab
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

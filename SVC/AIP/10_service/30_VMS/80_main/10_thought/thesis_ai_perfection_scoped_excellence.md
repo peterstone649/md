@@ -180,3 +180,9 @@ In this paradigm, AI's "imperfections" become features rather than flaws - bound
 **Independent AI Evaluations:**
 - LMSYS (2023). "Chatbot Arena Leaderboard." LMSYS Org. Available at: https://chatbot-arena.lmsys.org
 - Zheng, L., et al. (2023). "LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset." arXiv preprint arXiv:2309.11998.
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

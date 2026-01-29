@@ -87,8 +87,6 @@ def create_filter_for_links() -> FilterForLinks:
     """
     return FilterForLinks()
 
-## Changelog
-
-| Version | Date | Change Content | Stakeholders | Motivation |
-|---------|------|---------|-------------|----------------------|
-| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |
+# Changelog
+# V1.0.0 - 2026-01-29 - Applied version changelog update rule - Framework Steward - Ensure changelog follows framework requirements
+# V0.1.0 - 2026-01-24 - Initial creation - Framework Maintenance Team - Establish foundational structure

@@ -19,9 +19,7 @@
 ## Core Convention Principles
 
 ### **Stakeholder-AI Convention Format**
-```
-[NUMBER]_[TYPE_CONSTANT]_[DESCRIPTIVE_NAME].[EXTENSION]
-```
+
 
 ### **Convention Component Definitions**
 - **[NUMBER]**: Sequential identifier (01, 02, 10, etc.) for ordering and uniqueness
@@ -217,16 +215,13 @@
 ## 7. Examples
 
 ### 7.1 Correct Usage
-```<example of correct stakeholder-AI convention implementation>
-```
+
 
 ### 7.2 Incorrect Usage
-```<example of incorrect implementation - what to avoid>
-```
+
 
 ### 7.3 Edge Cases
-```<examples of special cases and how to handle them>
-```
+
 
 ---
 
@@ -275,3 +270,9 @@
 - **Template Reference:** <clickable_link_to_template>
 - **Framework:** MODEL_for_stakeholder_AI_collab
 - **Framework Version:[FRAMEWORK_VERSION]** **Date:** [FRAMEWORK_VERSION_DATE]
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

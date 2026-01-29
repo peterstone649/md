@@ -1,4 +1,4 @@
-# 📄 01. EUPL v1.2 License **[CN_EUPL_MODEL_SHCOL_AI_COLLAB]**
+[https://model-stakeholder-ai-collab.com](https://model-stakeholder-ai-collab.com)[joinup.ec.europa.eu/collection/eupl/eupl-licence](https://joinup.ec.europa.eu/collection/eupl/eupl-licence)[joinup.ec.europa.eu/collection/eupl/eupl-text-11-12](https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12)# 📄 01. EUPL v1.2 License **[CN_EUPL_MODEL_SHCOL_AI_COLLAB]**
 
 ---
 
@@ -43,15 +43,15 @@
 
 ### 🌐 Full License Details
 
-**Complete EUPL v1.2 text:** [joinup.ec.europa.eu/collection/eupl/eupl-text-11-12](https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12)
+**Complete EUPL v1.2 text:** 
 
-**EUPL in 22 languages:** [joinup.ec.europa.eu/collection/eupl/eupl-licence](https://joinup.ec.europa.eu/collection/eupl/eupl-licence)
+**EUPL in 22 languages:** 
 
 ---
 
 ### 🌐 Framework Portal & Resources
 [OPEN] - adapt URL
-**MODEL_for_stakeholder_AI_collab Framework Portal:** [https://model-stakeholder-ai-collab.com](https://model-stakeholder-ai-collab.com)
+**MODEL_for_stakeholder_AI_collab Framework Portal:** 
 
 **Additional Resources:**
 - **📚 Documentation:** Framework guides and tutorials
@@ -72,3 +72,9 @@ This **MODEL_for_stakeholder_AI_collab** embraces **open science principles** wh
 - **⚖️ Share-Alike** — Derivatives maintain framework compatibility
 
 **MODEL_for_stakeholder_AI_collab enables systematic knowledge organization and complex system understanding through a reusable stakeholder-AI collaboration framework model.** 🧠⚡🔧
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

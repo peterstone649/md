@@ -1,4 +1,4 @@
-# 7. Principle of Reversibility (PRIN_MSHCOL_REVERSIBILITY) **[PRIO: HIGH]**
+[17_template_for_principle.md](../15_template/17_template_for_principle.md)[PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md)[PRIN_MSHCOL_CONTEXT_PRESERVATION](./06_principle_context_preservation.md)[PRIN_MSHCOL_ACCOUNTABILITY](./04_principle_accountability.md)# 7. Principle of Reversibility (PRIN_MSHCOL_REVERSIBILITY) **[PRIO: HIGH]**
 
 **Version: V0.1.0** **Status: OPEN** **Date: 2026-01-09**
 
@@ -64,9 +64,9 @@ The Principle of Reversibility establishes that stakeholder-AI collaboration mus
 
 | Reference | Relationship |
 |-----------|--------------|
-| [PRIN_MSHCOL_ACCOUNTABILITY](./04_principle_accountability.md) | Audit trails support accountability |
-| [PRIN_MSHCOL_CONTEXT_PRESERVATION](./06_principle_context_preservation.md) | Preserved context supports reversal |
-| [PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md) | Validation checkpoints enable rollback |
+|  | Audit trails support accountability |
+|  | Preserved context supports reversal |
+|  | Validation checkpoints enable rollback |
 
 ---
 
@@ -89,6 +89,12 @@ The Principle of Reversibility establishes that stakeholder-AI collaboration mus
 ---
 
 **Template Version:** V1.0
-**Template Reference:** [17_template_for_principle.md](../15_template/17_template_for_principle.md)
+**Template Reference:** 
 **Date:** 2026-01-09
 **Framework:** MODEL_for_stakeholder_AI_collab
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

@@ -61,10 +61,10 @@
 </head>
 <body>
     <h1>AI_LOCK Content Protection [RULE_FOR_MFW_AI_LOCK_PROTECTION] <strong>[PRIO: HIGHEST]</strong></h1>
-<p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
+<p><strong>Version: V1.1.0</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-25</strong>
 <strong>Scope:</strong> All AI-assisted document processing and generation</p>
 <h2>Rule Statement</h2>
-<p>AI systems MUST NOT modify, rephrase, rewrite, or alter any content enclosed within <code>[AI_LOCK]</code> and <code>[END_AI_LOCK]</code> markers. These markers designate protected content that represents the authoritative, human-authored intent and MUST remain unchanged.</p>
+<p>AI systems MUST NOT modify, rephrase, rewrite, or alter any content enclosed within <code>[AI_LOCK]</code> and <code>[AI_UNLOCK]</code> markers. These markers designate protected content that represents the authoritative, human-authored intent and MUST remain unchanged.</p>
 <h2>Rationale</h2>
 <p>The AI_LOCK mechanism protects:
 - <strong>Human Authored Intent</strong>: Content within AI_LOCK markers represents definitive human statements that must not be altered by AI
@@ -75,8 +75,8 @@
 <h2>AI_LOCK Pattern Structure</h2>
 <h3>Standard Format</h3>
 <pre><code class="language-markdown">**[AI_LOCK]**
-[PROTECTED_CONTENT]
-**[END_AI_LOCK]**
+We must enable our people with AI-driven tools to radically accelerate skill acquisition and mastery.
+**[AI_UNLOCK]**
 </code></pre>
 <h3>Examples</h3>
 <table>
@@ -89,25 +89,25 @@
 <tbody>
 <tr>
 <td><strong>Principles</strong></td>
-<td><strong>[AI_LOCK]</strong> Human sovereignty establishes that... <strong>[END_AI_LOCK]</strong></td>
+<td><strong>[AI_LOCK]</strong> Human sovereignty establishes that... <strong>[AI_UNLOCK]</strong></td>
 </tr>
 <tr>
 <td><strong>Axioms</strong></td>
-<td><strong>[AI_LOCK]</strong> The axiom of systematic framework development... <strong>[END_AI_LOCK]</strong></td>
+<td><strong>[AI_LOCK]</strong> The axiom of systematic framework development... <strong>[AI_UNLOCK]</strong></td>
 </tr>
 <tr>
 <td><strong>Definitions</strong></td>
-<td><strong>[AI_LOCK]</strong> Consciousness is defined as... <strong>[END_AI_LOCK]</strong></td>
+<td><strong>[AI_LOCK]</strong> Consciousness is defined as... <strong>[AI_UNLOCK]</strong></td>
 </tr>
 <tr>
 <td><strong>Policy Statements</strong></td>
-<td><strong>[AI_LOCK]</strong> The framework prohibits... <strong>[END_AI_LOCK]</strong></td>
+<td><strong>[AI_LOCK]</strong> The framework prohibits... <strong>[AI_UNLOCK]</strong></td>
 </tr>
 </tbody>
 </table>
 <h2>Rules for AI Systems</h2>
 <h3>1. Recognition Rule</h3>
-<p>AI systems MUST recognize and respect <code>[AI_LOCK]</code> and <code>[END_AI_LOCK]</code> markers in all contexts:
+<p>AI systems MUST recognize and respect <code>[AI_LOCK]</code> and <code>[AI_UNLOCK]</code> markers in all contexts:
 - Within any document type (Markdown, YAML, JSON, etc.)
 - Across all framework directories
 - Regardless of document length or complexity</p>
@@ -140,18 +140,18 @@
 <h3>❌ Violation: Content Modification</h3>
 <pre><code class="language-markdown">**[AI_LOCK]**
 Human sovereignty establishes that humans retain final decision-making authority.
-**[END_AI_LOCK]**
+**[AI_UNLOCK]**
 
 # AI modification (VIOLATION):
 **[AI_LOCK]**
 Humans retain the final say in all decisions within collaborative frameworks.
-**[END_AI_LOCK]**
+**[AI_UNLOCK]**
 </code></pre>
 <h3>❌ Violation: Marker Removal</h3>
 <pre><code class="language-markdown"># Before (VALID):
 **[AI_LOCK]**
 Core principle content...
-**[END_AI_LOCK]**
+**[AI_UNLOCK]**
 
 # After (VIOLATION):
 Core principle content...
@@ -160,12 +160,12 @@ Core principle content...
 <pre><code class="language-markdown"># Before (VALID):
 **[AI_LOCK]**
 The Principle of Human Sovereignty establishes...
-**[END_AI_LOCK]**
+**[AI_UNLOCK]**
 
 # After (VIOLATION):
 **[AI_LOCK]**
 We establish that the Principle of Human Sovereignty...
-**[END_AI_LOCK]**
+**[AI_UNLOCK]**
 </code></pre>
 <h2>Validation Checklist</h2>
 <ul>
@@ -214,11 +214,11 @@ We establish that the Principle of Human Sovereignty...
 </ul>
 <p><strong>Rule Steward:</strong> Terminology Architects
 <strong>Approval Status:</strong> Framework Approved
-<strong>Effective Date:</strong> 2026-01-08
+<strong>Effective Date:</strong> 2026-01-25
 <strong>Review Cycle:</strong> Annual</p>
 <p><strong>Framework:</strong> MODEL_for_framework
-<strong>Framework Version:</strong> V1.0.1
-<strong>Date:</strong> 2026-01-23</p>
+<strong>Framework Version:</strong> V1.1.0
+<strong>Date:</strong> 2026-01-25</p>
 <h2>Changelog</h2>
 <table>
 <thead>
@@ -231,6 +231,13 @@ We establish that the Principle of Human Sovereignty...
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>V1.1.0</td>
+<td>2026-01-25</td>
+<td>Changed closing tag to [AI_UNLOCK]; Updated standard example</td>
+<td>Framework Admin</td>
+<td>User request for new standard</td>
+</tr>
 <tr>
 <td>V1.0.1</td>
 <td>2026-01-23</td>
@@ -248,7 +255,7 @@ We establish that the Principle of Human Sovereignty...
 </tbody>
 </table>
         <footer>
-            <p>Generated on 2026-01-23 08:30:37 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-25 10:09:44 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

@@ -44,3 +44,9 @@
 ## Summary
 
 This manifest defines the evolutionary control parameters for the Value Management System (VMS), ensuring that human values can adapt and evolve while maintaining core ethical safeguards. The system uses Coherent Extrapolated Volition (CEV) as its primary mechanism for value updates, requiring broad societal consensus before implementing changes.
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

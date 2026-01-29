@@ -1,4 +1,4 @@
-# 5. Principle of Iterative Validation (PRIN_MSHCOL_ITERATIVE_VALIDATION) **[PRIO: HIGH]**
+[17_template_for_principle.md](../15_template/17_template_for_principle.md)[PRIN_MSHCOL_ACCOUNTABILITY](./04_principle_accountability.md)[PRIN_MSHCOL_QUALITY_ASSURANCE](./09_principle_quality_assurance.md)[PRIN_MSHCOL_HUMAN_SOVEREIGNTY](./01_principle_human_sovereignty.md)# 5. Principle of Iterative Validation (PRIN_MSHCOL_ITERATIVE_VALIDATION) **[PRIO: HIGH]**
 
 **Version: V0.1.0** **Status: OPEN** **Date: 2026-01-09**
 
@@ -73,9 +73,9 @@ The Principle of Iterative Validation establishes that stakeholder-AI collaborat
 
 | Reference | Relationship |
 |-----------|--------------|
-| [PRIN_MSHCOL_HUMAN_SOVEREIGNTY](./01_principle_human_sovereignty.md) | Human validates at critical points |
-| [PRIN_MSHCOL_QUALITY_ASSURANCE](./09_principle_quality_assurance.md) | Systematic validation supports quality |
-| [PRIN_MSHCOL_ACCOUNTABILITY](./04_principle_accountability.md) | Reviewers are accountable for validation |
+|  | Human validates at critical points |
+|  | Systematic validation supports quality |
+|  | Reviewers are accountable for validation |
 
 ---
 
@@ -98,6 +98,12 @@ The Principle of Iterative Validation establishes that stakeholder-AI collaborat
 ---
 
 **Template Version:** V1.0
-**Template Reference:** [17_template_for_principle.md](../15_template/17_template_for_principle.md)
+**Template Reference:** 
 **Date:** 2026-01-09
 **Framework:** MODEL_for_stakeholder_AI_collab
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

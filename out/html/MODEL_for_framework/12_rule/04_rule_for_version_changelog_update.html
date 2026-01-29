@@ -64,7 +64,7 @@
 <p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
 <strong>Scope:</strong> All framework documents with changelog sections</p>
 <h2>Rule Statement</h2>
-<p>All framework documents MUST maintain an accurate and complete version changelog with Stakeholder and Rationale/Motivation columns for every version entry.</p>
+<p>All framework documents MUST maintain an accurate and complete version changelog with Stakeholder and Motivation columns for every version entry.</p>
 <h2>Rationale</h2>
 <p>A comprehensive changelog:
 - Provides traceability for all document changes
@@ -105,7 +105,7 @@
 <td>"AI Framework Steward"</td>
 </tr>
 <tr>
-<td><strong>Rationale/Motivation</strong></td>
+<td><strong>Motivation</strong></td>
 <td>Why the change was made</td>
 <td>"Based on stakeholder feedback"</td>
 </tr>
@@ -115,7 +115,7 @@
 <p>Place the changelog section at the end of the document before the footer:</p>
 <pre><code class="language-markdown">## Changelog
 
-| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
+| Version | Date | Change Content | Stakeholders | Motivation |
 |---------|------|---------|-------------|----------------------|
 | V0.1.1 | 2026-01-15 | Added Version Uniqueness section and header format requirements | Framework Steward | Strengthen changelog integrity and consistency |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational structure |
@@ -208,7 +208,10 @@
 <li>[ ] Rationale explains why change was made</li>
 <li>[ ] No duplicate version entries</li>
 <li>[ ] Initial creation properly documented</li>
-<li>[ ] if py code <strong>version</strong> = [VERSION] then also update this!</li>
+<li>[ ] if code file : changelog section is commented out and at prominent part of file</li>
+<li>[ ] if no code file : changelog section at end of file</li>
+<li>[ ] if e.g. py code <strong>version</strong> = [VERSION] then also update this!</li>
+<li>[ ] if code file : no duplicate version variable</li>
 </ul>
 <h2>Enforcement</h2>
 <ol>
@@ -239,7 +242,7 @@
 <th>Date</th>
 <th>Change Content</th>
 <th>Stakeholders</th>
-<th>Rationale/Motivation</th>
+<th>Motivation</th>
 </tr>
 </thead>
 <tbody>
@@ -267,7 +270,7 @@
 </tbody>
 </table>
         <footer>
-            <p>Generated on 2026-01-23 08:30:38 by MDToHTMLConverter v1.6.1</p>
+            <p>Generated on 2026-01-25 10:09:44 by MDToHTMLConverter v1.6.1</p>
         </footer>
 </body>
 </html>

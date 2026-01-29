@@ -32,9 +32,28 @@
 | **REST** | Representational State Transfer |
 | **JSON** | JavaScript Object Notation |
 
+## VMS Abbreviations
+
+| Abbreviation | Full Term | Context |
+|--------------|-----------|---------|
+| **VMS** | Value Management System | Core framework name |
+| **CEV** | Coherent Extrapolated Volition | Evolutionary mechanism |
+| **OT** | of type | Type indicator (inherited from framework) |
+| **ANALYSIS** | Analysis | Document type for evaluations |
+| **VALUE** | Value | Core value definitions |
+| **TASK** | Task | Implementation tasks |
+| **SKILL** | Skill | Specialized capabilities |
+| **META** | Metadata | System-level information |
+| **DEFINITION** | Definition | Foundational concepts |
+| **PRIORITY** | Priority | Ranking mechanisms |
+| **SCOPE** | Scope | Boundary management |
+| **FAILURE** | Failure | Risk and recovery |
+| **EVOLUTION** | Evolution | Adaptation strategies |
+
 ## Changelog
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V0.1.2 | 2026-01-25 | Add VMS abbreviations section | Framework Steward | Complete VMS implementation tasks |
 | V0.1.1 | 2026-01-13 | add framework abbrev | Framework Steward |  
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish  |

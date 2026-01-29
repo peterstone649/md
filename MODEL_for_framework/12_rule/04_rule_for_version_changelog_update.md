@@ -1,141 +1,45 @@
 # Version Changelog Update [RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE] **[PRIO: HIGH]**
 
-**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
-**Scope:** All framework documents with changelog sections
 
 ## Rule Statement
 
 All framework documents MUST maintain an accurate and complete version changelog with Stakeholder and Motivation columns for every version entry.
 
-## Rationale
+## Rule Requirements
 
-A comprehensive changelog:
-- Provides traceability for all document changes
-- Documents decision rationale for future reference
-- Identifies responsible stakeholders for each modification
-- Enables audit of framework evolution
-- Supports version rollback and impact analysis
-- Aligns with principle of transparency in documentation
+- **[R1]**: Changelog section exists in document with all 5 required columns
+- **[R2]**: Entries in reverse chronological order (newest at top)
+- **[R3]**: Date format is ISO 8601 (YYYY-MM-DD)
+- **[R4]**: Version format is V[major].[minor].[patch]
+- **[R5]**: No duplicate version entries permitted
+- **[R6]**: Rationale explains why change was made
 
-## Changelog Structure
-
-### Required Columns
-
-| Column | Description | Example |
-|--------|-------------|---------|
-| **Version** | Semantic version number | V0.1.0, V1.0.0 |
-| **Date** | ISO format date of change | 2026-01-09 |
-| **Changes** | Description of modifications | "Added clickable cross-references" |
-| **Stakeholder** | Person or role responsible | "AI Framework Steward" |
-| **Motivation** | Why the change was made | "Based on stakeholder feedback" |
-
-### Changelog Location
-
-Place the changelog section at the end of the document before the footer:
-
-```markdown
-## Changelog
-
-| Version | Date | Change Content | Stakeholders | Motivation |
-|---------|------|---------|-------------|----------------------|
-| V0.1.1 | 2026-01-15 | Added Version Uniqueness section and header format requirements | Framework Steward | Strengthen changelog integrity and consistency |
-| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational structure |
+## Formal Statement
+```
+∀document (FrameworkDocument(document) → HasChangelog(document) ∧ CompleteChangelog(document))
 ```
 
-### Changelog Header Format
+## Rationale
 
-- Use `## Changelog` (without numbering)
-- Do not use numbered headers like `## 7. Changelog`
-- Maintain consistent header level (typically `##`) across all framework documents
+A comprehensive changelog provides traceability, documents decision rationale, and enables audit of framework evolution.
 
-## Changelog Entry Requirements
+## Uncertainty Declaration
 
-### 1. Version Numbering
-- Follow semantic versioning (V[major].[minor].[patch])
-- Increment version according to change significance
-- Document initial version as V0.1.0
+*If applicable: This rule acknowledges inherent uncertainties in change impact assessment and the evolving nature of framework requirements.*
 
-### 2. Stakeholder Identification
-- Use role titles (e.g., "AI Framework Steward")
-- Include team name for team decisions
-- Reference external stakeholders when applicable
+## Integration with Other Framework Components
 
-### 3. Rationale Documentation
-- Explain the business need for change
-- Reference related issues or decisions
-- Describe expected benefits or outcomes
-- Link to stakeholder requests when available
+### Related Rules
+- **[01_rule_for_epistemological_uncertainty_acknowledgment.md](01_rule_for_epistemological_uncertainty_acknowledgment.md)** - Changelog documents uncertainty acknowledgments
+- **[03_rule_for_active_voice.md](03_rule_for_active_voice.md)** - Changelog entries should use active voice
 
-### 4. Change Description
-- Use concise, action-oriented language
-- Describe what changed, not how
-- Include affected sections when relevant
-- Reference related principles or conventions
+### Related Axioms
+- **[02_axiom_of_framework_validation_integrity.md](../35_axiom/02_axiom_of_framework_validation_integrity.md)** - Validation includes changelog completeness
+- **[03_axiom_of_clarity_and_precision.md](../35_axiom/03_axiom_of_clarity_and_precision.md)** - Changelog supports clarity requirements
 
-### 5. Version Uniqueness
-- Each version number MUST be unique within the changelog
-- No duplicate entries for the same version are permitted
-- If multiple changes occur for the same version, consolidate them into a single entry
-- Version increments are required for any substantive changes
-
-## Update Triggers
-
-Update the changelog when:
-
-1. **Content Changes**
-   - Add, remove, or modify substantive content
-   - Update examples or definitions
-   - Change scope or applicability
-
-2. **Structural Changes**
-   - Reorganize sections
-   - Add new sections
-   - Modify section numbering
-
-3. **Template Updates**
-   - Adopt new template version
-   - Align with updated conventions
-
-4. **Compliance Updates**
-   - Address feedback from reviews
-   - Fix validation errors
-   - Resolve audit findings
-
-## Entry Order
-
-Maintain reverse chronological order:
-- Newest entries at the TOP of the table
-- Oldest entries at the BOTTOM
-- Each entry on its own line
-
-## Validation Checklist
-
-- [ ] Changelog section exists in document
-- [ ] All 5 columns present (Version, Date, Change Content, Stakeholders, Rationale/Motivation)
-- [ ] Entries in reverse chronological order
-- [ ] Date format is ISO 8601 (YYYY-MM-DD)
-- [ ] Date reflects current operating system date at time of change
-- [ ] Version format is V[major].[minor].[patch]
-- [ ] Stakeholder identifies responsible person/role
-- [ ] Rationale explains why change was made
-- [ ] No duplicate version entries
-- [ ] Initial creation properly documented
-- [ ] if e.g. py code __version__ = [VERSION] then also update this!
-- [ ] if code file : no duplicate version variable
-
-## Enforcement
-
-1. **Document Creation:** Include empty changelog structure with initial version
-2. **Review Phase:** Verify changelog completeness and accuracy
-3. **Template Validation:** Check for required columns in automated checks
-4. **Commit Gates:** Reject commits without changelog updates for document changes
-
-## References
-
-- [PRIN_PROPORTIONALITY](../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md)
-- Convention for Version (20_convention/01_convention_for_version.md)
-- Convention for Writing Style (20_convention/03_convention_for_writing_style.md)
-- Template for Principle (15_template/17_template_for_principle.md)
+### Related Principles
+- **[02_principle_transparency.md](../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.md)** - Transparency requires complete change documentation
+- **[03_principle_proportionality.md](../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md)** - Proportionality applies to change documentation
 
 **Rule Steward:** Terminology Architects
 **Approval Status:** Framework Approved

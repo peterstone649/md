@@ -12,29 +12,7 @@ This overview section provides the foundational context and legal framework for 
 
 ### 📁 Directory Structure
 
-```
-00_overview/
-├── README.md                           # This overview document
-├── 01_legal/                          # Legal and methodological foundation
-│   ├── 01_copyright_notice.md         # EUPL v1.2 license and usage rights
-│   └── 02_methodology_ai_assistance.md # AI collaboration transparency
-15_template/                           # Standardized templates
-├── 16_template_for_convention.md      # Convention template
-└── 17_template_for_principle.md       # Principle template (NEW)
-30_principle/                          # Core stakeholder-AI collaboration principles (NEW)
-├── 01_principle_human_sovereignty.md  # Human retains final authority
-├── 02_principle_transparency.md       # AI involvement fully disclosed
-├── 03_principle_proportionality.md    # AI assistance matches task complexity
-├── 04_principle_accountability.md     # Clear responsibility chains
-├── 05_principle_iterative_validation.md # Systematic human review
-├── 06_principle_context_preservation.md # Critical information maintained
-├── 07_principle_reversibility.md      # Changes must be reversible
-├── 08_principle_incremental_integration.md # Gradual AI capability introduction
-├── 09_principle_quality_assurance.md  # Systematic output validation
-├── 10_principle_fallback_preservation.md # Human capability retention
-├── 11_principle_bias_mitigation.md    # Active bias detection and correction
-└── 12_principle_continuous_learning.md # Framework evolution based on feedback
-```
+
 
 ---
 
@@ -80,178 +58,43 @@ The framework establishes 12 foundational principles for effective human-AI coll
 ## 📄 Key Documents (NEW)
 
 ### **12 Core Principles**
-```
-📂 30_principle/
-├── 01_principle_human_sovereignty.md
-│   ├── Priority: CRITICAL
-│   ├── Abstract: Humans retain ultimate authority over decisions
-│   └── Related: Transparency, Iterative Validation, Accountability
-│
-├── 02_principle_transparency.md
-│   ├── Priority: CRITICAL
-│   ├── Abstract: All AI involvement must be fully disclosed
-│   └── Related: Human Sovereignty, Accountability, Iterative Validation
-│
-├── 03_principle_proportionality.md
-│   ├── Priority: HIGH
-│   ├── Abstract: AI assistance must match task complexity
-│   └── Related: Human Sovereignty, Fallback Preservation, Iterative Validation
-│
-├── 04_principle_accountability.md
-│   ├── Priority: CRITICAL
-│   ├── Abstract: Clear chains of responsibility for all outputs
-│   └── Related: Human Sovereignty, Transparency, Reversibility
-│
-├── 05_principle_iterative_validation.md
-│   ├── Priority: HIGH
-│   ├── Abstract: Systematic human review at defined checkpoints
-│   └── Related: Human Sovereignty, Quality Assurance, Accountability
-│
-├── 06_principle_context_preservation.md
-│   ├── Priority: HIGH
-│   ├── Abstract: Critical information maintained throughout collaboration
-│   └── Related: Transparency, Reversibility, Incremental Integration
-│
-├── 07_principle_reversibility.md
-│   ├── Priority: HIGH
-│   ├── Abstract: All AI-assisted changes must be reversible
-│   └── Related: Accountability, Context Preservation, Iterative Validation
-│
-├── 08_principle_incremental_integration.md
-│   ├── Priority: MEDIUM
-│   ├── Abstract: Gradual AI capability introduction with monitoring
-│   └── Related: Proportionality, Iterative Validation, Reversibility
-│
-├── 09_principle_quality_assurance.md
-│   ├── Priority: HIGH
-│   ├── Abstract: Systematic validation against quality standards
-│   └── Related: Iterative Validation, Accountability, Transparency
-│
-├── 10_principle_fallback_preservation.md
-│   ├── Priority: HIGH
-│   ├── Abstract: Human capability maintained as AI fallback
-│   └── Related: Human Sovereignty, Reversibility, Proportionality
-│
-├── 11_principle_bias_mitigation.md
-│   ├── Priority: HIGH
-│   ├── Abstract: Active detection and correction of AI biases
-│   └── Related: Quality Assurance, Transparency, Iterative Validation
-│
-└── 12_principle_continuous_learning.md
-    ├── Priority: MEDIUM
-    ├── Abstract: Framework evolves based on stakeholder feedback
-    └── Related: Quality Assurance, Iterative Validation, Incremental Integration
-```
+
 
 ### **Principle Template**
-```
-📄 17_template_for_principle.md (NEW)
-├── Purpose: Standardized structure for new principles
-├── Sections: Abstract, Scope, Definitions, Rules, Examples, Related Principles, Changelog
-├── AI_LOCK: Protected abstract section
-├── Changelog: Enhanced format with Stakeholder and Rationale/Motivation
-└── Cross-References: Clickable markdown links to related principles
-```
+
 
 ---
 
 ## 🤖 AI Collaboration Framework
 
 ### **Human-AI Partnership Model**
-```
-AI-Human Collaboration Framework:
-├── AI as Accelerator → Tools enhance human creativity and productivity
-├── Human as Director → Strategic direction, ethical oversight, final validation
-├── Quality Assurance → Multi-layered validation of AI outputs
-├── Transparency → Full disclosure of AI involvement and methodologies
-├── AI_LOCK Protection → Core abstracts protected from AI modification
-├── Traceability → Changelog with Stakeholder and Rationale columns
-└── Ethical Integration → Responsible use of AI for beneficial outcomes
-```
+
 
 ### **Quality Assurance Process**
-```
-Multi-Layer Validation Framework:
-├── AI Self-Consistency → Automated logical consistency checking
-├── Human Expert Review → Domain expert validation of accuracy
-├── Cross-Reference Verification → Framework component alignment
-├── Ethical Assessment → Content appropriateness evaluation
-├── AI_LOCK Validation → Protected content integrity verification
-├── Practical Testing → Real-world application validation
-└── Long-term Assessment → Framework sustainability evaluation
-```
+
 
 ---
 
 ## ⚖️ Legal and Ethical Framework
 
 ### **EUPL v1.2 License Benefits**
-```
-License Advantages:
-├── European Union Recognition → Official EU open source license
-├── Commercial Freedom → Build commercial products and services
-├── Modification Rights → Create custom implementations and derivatives
-├── Distribution Freedom → Share original and modified versions
-├── Integration Support → Combine with proprietary and open software
-└── Community Protection → Share-alike ensures framework integrity
-```
+
 
 ### **Framework Integrity Protection (NEW)**
-```
-Core Protection Framework:
-├── AI_LOCK Markers → **[AI_LOCK]** and **[END_AI_LOCK]** protect core content
-├── Intellectual Ownership → Stakeholders retain full IP rights
-├── Core Integrity → Fundamental framework elements remain intact
-├── Expansion Freedom → Build commercial applications and tools
-├── Traceability → Changelog tracks all changes with Stakeholder attribution
-├── Collaboration → Encourage community contributions and improvements
-├── Transparency → Open development with peer review processes
-└── Share-Alike → Derivatives maintain framework compatibility
-```
+
 
 ### **Principle Standards (NEW)**
-```
-Principle Requirements:
-├── AI_LOCK Abstract → Core principle protected from AI modification
-├── Clickable Cross-References → Markdown links in the files
-├── Enhanced Changelog → Stakeholder and Rationale/Motivation columns
-├── Framework Compatibility → V1.0+ specified
-├── Related Principles → Clear relationships documented
-└── Validation Checklist → Implementation requirements defined
-```
+
 
 ---
 
 ## 🔄 Development Workflow
 
 ### **AI-Human Collaboration Cycle**
-```
-Iterative Development Process:
-├── Research Phase → AI-assisted literature analysis and synthesis
-├── Conceptualization → AI-supported idea generation and structuring
-├── Drafting Phase → AI-generated comprehensive first drafts
-├── AI_LOCK Protection → Critical abstracts protected with markers
-├── Refinement Phase → Human-AI collaborative improvement cycles
-├── Integration Phase → AI-assisted cross-referencing and alignment
-├── Validation Phase → Human expert review and quality assurance
-├── Principle Linking → Clickable references between documents
-├── Documentation → AI-supported metadata and documentation creation
-└── Deployment → Human-approved final implementation and release
-```
+
 
 ### **Quality Control Measures**
-```
-Validation Protocols:
-├── Content Accuracy → Human verification of all factual claims
-├── Logical Consistency → Human review of argumentative structure
-├── Ethical Appropriateness → Human assessment of content implications
-├── AI_LOCK Integrity → Verification of protected content markers
-├── Practical Utility → Human evaluation of real-world applicability
-├── Framework Integration → Human confirmation of component alignment
-├── Cross-Reference Check → Verification of clickable links
-├── Originality Assessment → Human validation of novel contributions
-└── Long-term Viability → Human assessment of framework sustainability
-```
+
 
 ---
 
@@ -270,17 +113,7 @@ Validation Protocols:
 - **Bias Mitigation**: Active detection and correction of AI-generated biases
 
 ### **Development Principles**
-```
-Framework Development Standards:
-├── Transparency → Complete disclosure of methodologies and processes
-├── Accountability → Clear human responsibility for all decisions
-├── Traceability → Changelog with Stakeholder and Rationale columns
-├── Quality → Measurable standards for all framework components
-├── Ethics → Responsible AI integration and human oversight
-├── AI_LOCK Protection → Core content protected from modification
-├── Collaboration → Open participation and community contribution
-└── Sustainability → Long-term viability and continuous improvement
-```
+
 
 ---
 
@@ -298,35 +131,10 @@ Framework Development Standards:
 | **Axiom Framework** | Foundational axioms for systematic framework development |
 
 **Framework Hierarchy:**
-```
-MODEL_for_framework (Methodological Foundation)
-    ├── Templates: 15_template/
-    ├── Conventions: 20_convention/
-    ├── Terminology: 30_terminology/
-    └── Axioms: 35_axiom/
-        ↓
-MODEL_for_STKHLD_AI_COLLAB (Applied Methodology)
-    ├── Templates: 15_template/
-    ├── Principles: 30_principle/
-    └── Conventions: 20_convention/ (if present)
-    └── based on ethical aspects of ...
-    Ethosys/ → AI safety and ethics framework implementation
-```
+
 
 ### **Core Framework Structure (NEW)**
-```
-MODEL_for_stakeholder_AI_collab:
-├── 00_overview/ → Legal and methodological foundation (this section)
-├── 15_template/ → Standardized document templates
-│   ├── 16_template_for_convention.md → Convention template
-│   └── 17_template_for_principle.md → Principle template (NEW)
-├── 30_principle/ → Core stakeholder-AI collaboration principles (NEW - 12 files)
-├── 20_convention/ → Framework conventions and standards
-├── 30_terminology/ → Domain-specific terminology and definitions
-├── 35_principle/ → Fundamental principles (if applicable)
-├── 80_strategy/ → Implementation strategies and methodologies
-├── 99_appendix/ → Reference materials and appendices
-```
+
 
 ### **Key Integration Points (NEW)**
 - **Template System**: Standardized structures for principles and conventions
@@ -348,7 +156,7 @@ MODEL_for_stakeholder_AI_collab:
 6. **Document Changes**: Provide changelog with Stakeholder and Rationale
 7. **Contribute Back**: Share improvements and derivative works
 
-**Detailed Guide:** [`00_overview/20_stakeholder/01_getting_started.md`](00_overview/20_stakeholder/01_getting_started.md)
+**Detailed Guide:** [[00_overview/20_stakeholder/01_getting_started](00_overview/20_stakeholder/01_getting_started.md)](00_overview/20_stakeholder/01_getting_started.md)
 
 ### **For Framework Developers**
 1. **Study Principles**: Understand the 12 stakeholder-AI collaboration principles
@@ -358,7 +166,7 @@ MODEL_for_stakeholder_AI_collab:
 5. **Implement AI_LOCK**: Use markers to protect core content
 6. **Document Changes**: Provide comprehensive changelog with attribution
 
-**Detailed Guide:** [`00_overview/20_stakeholder/01_getting_started.md`](00_overview/20_stakeholder/01_getting_started.md)
+**Detailed Guide:** [[00_overview/20_stakeholder/01_getting_started](00_overview/20_stakeholder/01_getting_started.md)](00_overview/20_stakeholder/01_getting_started.md)
 
 ### **For AI Integration**
 1. **Review Principles**: Understand stakeholder-AI collaboration framework
@@ -368,7 +176,7 @@ MODEL_for_stakeholder_AI_collab:
 5. **Document Processes**: Maintain transparency in AI collaboration methods
 6. **Link References**: Create clickable cross-references between documents
 
-**Detailed Guide:** [`00_overview/20_stakeholder/01_getting_started.md`](00_overview/20_stakeholder/01_getting_started.md)
+**Detailed Guide:** [[00_overview/20_stakeholder/01_getting_started](00_overview/20_stakeholder/01_getting_started.md)](00_overview/20_stakeholder/01_getting_started.md)
 
 ---
 
@@ -393,27 +201,10 @@ MODEL_for_stakeholder_AI_collab:
 ## 🔮 Future Evolution
 
 ### **Framework Expansion**
-```
-Planned Developments:
-├── Additional Principles → Stakeholder feedback informs new principles
-├── Advanced AI Integration → More sophisticated human-AI collaboration models
-├── Quality Automation → AI-assisted validation and quality assurance systems
-├── Community Expansion → Broader participation and contribution frameworks
-├── International Standards → Global norms for stakeholder-AI collaboration
-└── Technology Evolution → Adaptation to emerging AI capabilities and tools
-```
+
 
 ### **Transparency Evolution**
-```
-Ongoing Commitments:
-├── Methodology Refinement → Continuous improvement of AI integration processes
-├── Principle Evolution → Principles adapt based on stakeholder experience
-├── Quality Metric Enhancement → More sophisticated validation and assessment
-├── AI_LOCK Enhancement → Expanded protection for core framework content
-├── Community Engagement → Expanded participation and feedback mechanisms
-├── Research Publication → Academic sharing of human-AI collaboration insights
-└── Global Standards → International collaboration on AI integration norms
-```
+
 
 ---
 
@@ -445,3 +236,8 @@ Ongoing Commitments:
 
 ---
 
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

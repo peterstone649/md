@@ -224,3 +224,9 @@ Addressing these challenges demands breakthroughs in robotic hardware, sensor te
 - **Neura Robotics** (2025). "Cognitive Robotics Platform: 3D Capability Assessment"
 - **Unitree Robotics** (2023). "Environmental Adaptation in Quadrupedal Systems"
 - **Agility Robotics** (2023). "Real-Time Coordination in Robotic Systems"
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

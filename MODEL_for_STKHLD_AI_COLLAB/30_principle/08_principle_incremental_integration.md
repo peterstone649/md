@@ -1,4 +1,4 @@
-# 8. Principle of Incremental Integration (PRIN_MSHCOL_INCREMENTAL_INTEGRATION) **[PRIO: MEDIUM]**
+[PRIN_MSHCOL_REVERSIBILITY](./07_principle_reversibility.md)[PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md)[PRIN_MSHCOL_PROPORTIONALITY](./03_principle_proportionality.md)# 8. Principle of Incremental Integration (PRIN_MSHCOL_INCREMENTAL_INTEGRATION) **[PRIO: MEDIUM]**
 
 **Version: V0.1.0** **Status: OPEN** **Date: 2026-01-09**
 
@@ -61,9 +61,9 @@ The Principle of Incremental Integration establishes that stakeholder-AI collabo
 
 | Reference | Relationship |
 |-----------|--------------|
-| [PRIN_MSHCOL_PROPORTIONALITY](./03_principle_proportionality.md) | Scales AI involvement appropriately |
-| [PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md) | Validates at each integration phase |
-| [PRIN_MSHCOL_REVERSIBILITY](./07_principle_reversibility.md) | Enables rollback if integration fails |
+|  | Scales AI involvement appropriately |
+|  | Validates at each integration phase |
+|  | Enables rollback if integration fails |
 
 ---
 
@@ -89,3 +89,9 @@ The Principle of Incremental Integration establishes that stakeholder-AI collabo
 **Date:** 2026-01-09
 **Framework:** MODEL_for_stakeholder_AI_collab
 **Date:** 2026-01-09
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

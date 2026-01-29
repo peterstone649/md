@@ -238,3 +238,9 @@ The protocol transforms theoretical AI safety principles into actionable tools t
 - [SVC/AIP/10_service/30_VMS/90_toolkit/checklist_ai_version_transition.md](./90_toolkit/checklist_ai_version_transition.md)
 - [SVC/AIP/10_service/30_VMS/90_templates/template_emergency_shutdown.md](./90_templates/template_emergency_shutdown.md)
 - [SVC/AIP/10_service/30_VMS/20_layer_for_priority/priority_001_lexical_hierarchy_for_flourishing.md](./20_layer_for_priority/priority_001_lexical_hierarchy_for_flourishing.md)
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

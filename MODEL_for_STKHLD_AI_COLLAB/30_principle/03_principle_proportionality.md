@@ -72,18 +72,10 @@ The Principle of Proportionality establishes that in stakeholder-AI collaboratio
 ## 5. Examples
 
 ### 5.1 Correct Usage
-```
-Task: Grammar review of draft document
-- Risk: Low | Complexity: Low
-- AI Involvement: 90% | Human Review: 10%
-```
+
 
 ### 5.2 Incorrect Usage
-```
-Task: Strategic decision affecting stakeholder interests
-- Risk: High | Complexity: High
-- AI Involvement: 100% | Human Review: 0%
-```
+[17_template_for_principle.md](../15_template/17_template_for_principle.md)[PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md)[PRIN_MSHCOL_FALLBACK_PRESERVATION](./10_principle_fallback_preservation.md)[PRIN_MSHCOL_HUMAN_SOVEREIGNTY](./01_principle_human_sovereignty.md)
 
 ---
 
@@ -91,9 +83,9 @@ Task: Strategic decision affecting stakeholder interests
 
 | Reference | Relationship |
 |-----------|--------------|
-| [PRIN_MSHCOL_HUMAN_SOVEREIGNTY](./01_principle_human_sovereignty.md) | Proportionality supports human authority |
-| [PRIN_MSHCOL_FALLBACK_PRESERVATION](./10_principle_fallback_preservation.md) | Ensures human capability retention |
-| [PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md) | Scales validation with risk |
+|  | Proportionality supports human authority |
+|  | Ensures human capability retention |
+|  | Scales validation with risk |
 
 ---
 
@@ -117,6 +109,12 @@ Task: Strategic decision affecting stakeholder interests
 ---
 
 **Template Version:** V1.0
-**Template Reference:** [17_template_for_principle.md](../15_template/17_template_for_principle.md)
+**Template Reference:** 
 **Date:** 2026-01-09
 **Framework:** MODEL_for_stakeholder_AI_collab
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

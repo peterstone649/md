@@ -1,4 +1,5 @@
 # example for a project base .\md\MODEL_for_framework\90_tool\converter
+# free model : upstage/solar-pro-3:free
 # md = markdown
 # Set the base path for the project
 PROJECT_BASE_PATH=E:/2025_11/md/

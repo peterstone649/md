@@ -214,3 +214,9 @@ Evaluates framework implications for different stakeholder groups.
 - **Impact Assessment**: Evaluate effectiveness of review recommendations
 
 This structured approach ensures that framework reviews are conducted with rigor, objectivity, and comprehensive expertise, leading to high-quality evaluations that support informed decision-making.
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

@@ -1,8 +1,5 @@
 # Title Line Formatting [RULE_FOR_MFW_TITLE_FORMAT] **[PRIO: MEDIUM]**
 
-**Version: V1.0.2** **Status: APPROVED** **Date: 2026-01-23**
-**Scope:** All framework document title lines
-
 ## Rule Statement
 
 **All framework document title lines should follow the standardized format: # [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]****

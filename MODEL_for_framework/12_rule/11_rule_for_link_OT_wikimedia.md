@@ -1,5 +1,6 @@
 # Wikimedia Links [RULE_FOR_MFW_WIKIMEDIA_LINKS] **[PRIO: MEDIUM]**
 
+
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework documents containing Wikimedia references
 
@@ -7,119 +8,43 @@
 
 **All references to Wikimedia Commons and Wikipedia resources MUST include proper attribution, licensing information, and direct links to source materials.**
 
+## Rule Requirements
+
+- **[R1]**: All Wikimedia links include direct URLs to specific pages
+- **[R2]**: Attribution information is complete and accurate (creator name when available)
+- **[R3]**: License information is specified and correct (CC BY, CC BY-SA, CC0, etc.)
+- **[R4]**: Access dates are included and current (ISO format YYYY-MM-DD)
+- **[R5]**: Links are functional and accessible
+- **[R6]**: Alt text is provided for images
+- **[R7]**: Attribution format follows established patterns
+
+## Formal Statement
+```
+∀wikimedia_ref (WikimediaReference(wikimedia_ref) ∧ FrameworkDocument(wikimedia_ref))
+    → (HasAttribution(wikimedia_ref) ∧ HasLicense(wikimedia_ref) ∧ HasAccessDate(wikimedia_ref))
+```
+
 ## Rationale
 
-Proper Wikimedia linking:
-- Ensures compliance with Creative Commons licensing requirements
-- Provides transparency about source materials
-- Enables proper attribution to original creators
-- Supports academic and research integrity
-- Facilitates verification of referenced information
-- Aligns with framework principles of transparency and accountability
+Proper Wikimedia linking ensures compliance with Creative Commons licensing requirements and supports academic and research integrity.
 
-## Wikimedia Link Requirements
+## Uncertainty Declaration
 
-### Required Elements
+*If applicable: This rule acknowledges inherent uncertainties in external resource availability and licensing changes over time.*
 
-Every Wikimedia reference MUST include:
+## Integration with Other Framework Components
 
-1. **Direct Link** - Functional URL to the specific Wikimedia page
-2. **Attribution** - Creator/artist name when available
-3. **License Information** - Specific Creative Commons license
-4. **Access Date** - When the resource was accessed
+### Related Rules
+- **[10_rule_for_link_OT_clickable.md](10_rule_for_link_OT_clickable.md)** - General clickable link requirements
+- **[03_rule_for_active_voice.md](03_rule_for_active_voice.md)** - Attribution text should use active voice
 
-### Link Format Pattern
+### Related Axioms
+- **[02_axiom_of_framework_validation_integrity.md](../35_axiom/02_axiom_of_framework_validation_integrity.md)** - Validation includes external resource compliance
+- **[03_axiom_of_clarity_and_precision.md](../35_axiom/03_axiom_of_clarity_and_precision.md)** - Clear attribution supports transparency
 
-```markdown
-[![Alt Text](link-to-image)](link-to-wikimedia-page)
-*Image by [Creator Name](link-to-creator-profile) / [License Name](link-to-license) via Wikimedia Commons*
-```
-
-### Complete Attribution Examples
-
-**For Images:**
-```markdown
-[![Game Hammer Icon](https://game-icons.net/icons/ffffff/000000/gear-hammer/000000/64.png)](https://game-icons.net/1x1/lorc/gear-hammer.html)
-*Icon by [Lorc](https://game-icons.net/about.html#lorc) / [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) via Game-Icons.net*
-```
-
-**For Wikipedia Articles:**
-```markdown
-[Artificial Intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence) (WP)
-```
-
-**For Wikimedia Commons Files:**
-```markdown
-[Framework Architecture Diagram](https://commons.wikimedia.org/wiki/File:Example_diagram.svg)(WM)
-*Diagram by [Creator Name](https://commons.wikimedia.org/wiki/User:Username) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) via Wikimedia Commons*
-```
-
-## Attribution Standards
-
-### License Identification
-
-| License Code | Full Name | Attribution Required |
-|-------------|-----------|---------------------|
-| CC BY 3.0 | Creative Commons Attribution 3.0 | Yes |
-| CC BY-SA 4.0 | Creative Commons Attribution-ShareAlike 4.0 | Yes |
-| CC0 | Creative Commons Zero (Public Domain) | Recommended |
-| Public Domain | Public Domain | Recommended |
-
-### Creator Attribution
-
-- Include creator name when available from Wikimedia metadata
-- Link to creator's profile page when possible
-- Use "Anonymous" or "Unknown" if creator information is not available
-- Preserve original attribution chains for derivative works
-
-### Access Documentation
-
-- Include access date in ISO format (YYYY-MM-DD)
-- Place access date in parentheses after the link
-- Update access date when content is verified or refreshed
-
-## Implementation Guidelines
-
-### Image Usage
-1. **Select Appropriate License** - Prefer CC BY-SA or CC0 for maximum compatibility
-2. **Download Original Resolution** - Use highest quality available
-3. **Preserve Metadata** - Keep EXIF data for attribution tracking
-4. **Create Alt Text** - Descriptive text for accessibility
-
-### Content References
-1. **Cite Specific Sections** - Link to relevant article sections when possible
-2. **Include Context** - Explain why the reference supports the framework content
-3. **Regular Verification** - Check links periodically for continued availability
-
-### Framework Integration
-1. **Consistent Placement** - Place attributions immediately after referenced content
-2. **Visual Separation** - Use italics or smaller text for attribution blocks
-3. **Grouping** - Group multiple attributions from same source when appropriate
-
-## Validation Checklist
-
-- [ ] All Wikimedia links include direct URLs
-- [ ] Attribution information is complete and accurate
-- [ ] License information is specified and correct
-- [ ] Access dates are included and current
-- [ ] Links are functional and accessible
-- [ ] Alt text is provided for images
-- [ ] Attribution format follows established patterns
-
-## Enforcement
-
-1. **Content Creation:** Include complete attribution during initial drafting
-2. **Review Process:** Verify all Wikimedia references meet attribution requirements
-3. **Automated Checks:** Tools can validate link syntax and presence of attribution elements
-4. **Regular Audits:** Periodic review of all Wikimedia references for accuracy
-
-## References
-
-- [Creative Commons License Chooser](https://creativecommons.org/choose/)
-- [Wikimedia Commons Licensing](https://commons.wikimedia.org/wiki/Commons:Licensing)
-- [Wikipedia Citation Guidelines](https://en.wikipedia.org/wiki/Wikipedia:Citing_Wikipedia)
-- Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)
-- Clickable Links Rule (12_rule/10_rule_for_clickable_links.md)
+### Related Principles
+- **[02_principle_transparency.md](../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.md)** - Transparency requires proper attribution
+- **[03_principle_proportionality.md](../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md)** - Proportionality applies to attribution complexity
 
 **Rule Steward:** Terminology Architects
 **Approval Status:** Framework Approved

@@ -1,0 +1,40 @@
+# Virtual Environment Activation Path
+
+## Python Virtual Environment Location
+**Activation Script:** `../venv/Scripts/Activate.ps1`
+**Full Path:** `E:\2025_11\venv\Scripts\Activate.ps1`
+
+## Usage Instructions
+
+### PowerShell (Recommended)
+```powershell
+../venv/Scripts/Activate.ps1
+```
+
+### Command Prompt
+```cmd
+../venv/Scripts\activate.bat
+```
+
+### Bash/Linux
+```bash
+source ../venv/Scripts/activate
+```
+
+## Environment Details
+- **Python Version:** 3.12.9
+- **Base Python:** C:\Users\Peter\miniconda3\python.exe
+- **Created:** December 14, 2025
+- **Location:** E:\2025_11\venv
+
+## Available Packages
+The virtual environment contains 130+ packages including:
+- spacy, torch, scikit-learn, numpy, pandas (AI/ML)
+- fastapi, requests, uvicorn, starlette (Web/API)
+- pytest, pip, typer, pydantic (Development)
+- tqdm, rich, click, python-dotenv (Utilities)
+
+## Notes
+- Use this path for future Python development in this project
+- The venv is isolated from system Python
+- Contains all necessary dependencies for the project

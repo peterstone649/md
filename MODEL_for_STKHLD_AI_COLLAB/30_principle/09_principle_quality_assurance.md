@@ -1,4 +1,4 @@
-# 9. Principle of Quality Assurance (PRIN_MSHCOL_QUALITY_ASSURANCE) **[PRIO: HIGH]**
+[17_template_for_principle.md](../15_template/17_template_for_principle.md)[PRIN_MSHCOL_TRANSPARENCY](./02_principle_transparency.md)[PRIN_MSHCOL_ACCOUNTABILITY](./04_principle_accountability.md)[PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md)# 9. Principle of Quality Assurance (PRIN_MSHCOL_QUALITY_ASSURANCE) **[PRIO: HIGH]**
 
 **Version: V0.1.0** **Status: OPEN** **Date: 2026-01-09**
 
@@ -61,9 +61,9 @@ The Principle of Quality Assurance establishes that stakeholder-AI collaboration
 
 | Reference | Relationship |
 |-----------|--------------|
-| [PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md) | Quality assurance through validation checkpoints |
-| [PRIN_MSHCOL_ACCOUNTABILITY](./04_principle_accountability.md) | QA responsibility chain |
-| [PRIN_MSHCOL_TRANSPARENCY](./02_principle_transparency.md) | QA findings must be visible |
+|  | Quality assurance through validation checkpoints |
+|  | QA responsibility chain |
+|  | QA findings must be visible |
 
 ---
 
@@ -86,7 +86,13 @@ The Principle of Quality Assurance establishes that stakeholder-AI collaboration
 ---
 
 **Template Version:** V1.0
-**Template Reference:** [17_template_for_principle.md](../15_template/17_template_for_principle.md)
+**Template Reference:** 
 **Date:** 2026-01-09
 **Framework:** MODEL_for_stakeholder_AI_collab
 **Date:** 2026-01-09
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

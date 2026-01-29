@@ -213,3 +213,9 @@ This integrated approach positions Neura Robotics as a leader in the next genera
 - **IEEE** (2025). "Standards for Robotic-IoT System Interoperability"
 - **Smart City Council** (2025). "Robotic Systems in Urban Infrastructure"
 - **McKinsey & Company** (2024). "The Convergence of Physical and Digital Automation"
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

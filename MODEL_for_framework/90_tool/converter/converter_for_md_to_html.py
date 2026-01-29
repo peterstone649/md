@@ -7,12 +7,15 @@ import re
 import shutil
 from datetime import datetime
 from dotenv import load_dotenv
-from handler_for_links import LinkHandler
+from handler_for_link import Handler_for_Link
+
+# Import the index generator for folder link handling
+from index_generator import generate_index_for_folder
 
 __version__ = "1.6.1"
 __status__ = "ACTIVE"
 
-r"""
+"""
 CHANGELOG
 
 | Version | Date       | Changes | Stakeholder | Rationale/Motivation |
@@ -28,7 +31,8 @@ CHANGELOG
 | V0.1.1  | 2026-01-10 | Updated template metadata to include Framework Version and use list format | AI Coder | To provide more detailed and consistently formatted metadata in new documents |
 
 mfw_tool.svg pulled from https://game-icons.net/1x1/lorc/gear-hammer.html
-
+artist (Lorc)
+(lic) Creative Commons Attribution-ShareAlike 3.0
 """
 
 # Load environment variables from .env file
@@ -40,7 +44,7 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
-class HTMLConverter:
+class Converter_for_Md_to_Html:
     """
     A modernized tool to convert Markdown files to HTML, aligning with
     the standards of MODEL_for_framework.
@@ -54,7 +58,7 @@ class HTMLConverter:
         # Fixed output directory: <PROJECT_BASE_PATH>\out\html
         self.output_root = os.path.join(self.project_base, "out", "html")
 
-    def _generate_html_path(self):
+    def generate_for_html_path(self):
         """
         Generates the output HTML path, mirroring the source directory structure
         relative to the project base within the fixed output directory.
@@ -69,7 +73,7 @@ class HTMLConverter:
             base = os.path.splitext(os.path.basename(self.input_path))[0]
             return os.path.join(self.output_root, f"{base}.html")
 
-    def _copy_images(self, md_content, input_dir, output_dir):
+    def copy_for_images(self, md_content, input_dir, output_dir):
         """
         Copies image files referenced in markdown content to the output directory
         and updates the content with new relative paths.
@@ -109,6 +113,82 @@ class HTMLConverter:
 
         return updated_content
 
+    def generate_for_folder_indices(self, md_content, input_dir):
+        """
+        Detects folder links in markdown content and generates index files for them.
+        
+        Args:
+            md_content (str): The markdown content to scan for folder links
+            input_dir (str): The directory containing the markdown file
+        
+        Returns:
+            str: Updated markdown content with folder links modified
+        """
+        # Pattern to match folder links (links ending with / or pointing to directories)
+        folder_pattern = r'\[([^\]]*)\]\(([^)]*\/)\)'
+        
+        updated_content = md_content
+        
+        for match in re.finditer(folder_pattern, md_content):
+            link_text = match.group(1)
+            folder_path = match.group(2)
+            
+            # Skip external URLs
+            if folder_path.startswith(('http://', 'https://')):
+                continue
+            
+            # Resolve relative path from markdown file location
+            abs_folder_path = os.path.abspath(os.path.join(input_dir, folder_path))
+            
+            # Check if it's actually a directory
+            if os.path.isdir(abs_folder_path):
+                logging.info(f"Detected folder link: {abs_folder_path}")
+                
+                # Determine the new href
+                readme_md = os.path.join(abs_folder_path, 'README.md')
+                new_href = None
+                
+                if os.path.isfile(readme_md):
+                    # Check if README.html exists in output directory
+                    try:
+                        rel_folder = os.path.relpath(abs_folder_path, self.project_base)
+                        output_folder = os.path.join(self.output_root, rel_folder)
+                        readme_html = os.path.join(output_folder, 'README.html')
+                        if os.path.isfile(readme_html):
+                            new_href = folder_path.rstrip('/') + '/README.html'
+                            logging.info(f"Using existing README.html for folder: {abs_folder_path}")
+                        else:
+                            # Generate index.html
+                            success = generate_index_for_folder(abs_folder_path, format='html')
+                            if success:
+                                new_href = folder_path.rstrip('/') + '/index.html'
+                                logging.info(f"Generated index.html for folder with README: {abs_folder_path}")
+                            else:
+                                logging.warning(f"Failed to generate index for folder: {abs_folder_path}")
+                    except Exception as e:
+                        logging.error(f"Error processing folder {abs_folder_path}: {e}")
+                        # Fallback: generate index
+                        success = generate_index_for_folder(abs_folder_path, format='html')
+                        if success:
+                            new_href = folder_path.rstrip('/') + '/index.html'
+                else:
+                    # No README.md, generate index.html
+                    success = generate_index_for_folder(abs_folder_path, format='html')
+                    if success:
+                        new_href = folder_path.rstrip('/') + '/index.html'
+                        logging.info(f"Generated index.html for folder: {abs_folder_path}")
+                    else:
+                        logging.warning(f"Failed to generate index for folder: {abs_folder_path}")
+                
+                # Update the link in content if new_href was determined
+                if new_href:
+                    old_link = f'[{link_text}]({folder_path})'
+                    new_link = f'[{link_text}]({new_href})'
+                    updated_content = updated_content.replace(old_link, new_link)
+                    logging.info(f"Updated folder link: {old_link} -> {new_link}")
+        
+        return updated_content
+
 
     def convert(self):
         """
@@ -118,7 +198,7 @@ class HTMLConverter:
             logging.error(f"Input file not found: {self.input_path}")
             return False
 
-        html_path = self._generate_html_path()
+        html_path = self.generate_for_html_path()
         output_dir = os.path.dirname(html_path)
         input_dir = os.path.dirname(self.input_path)
 
@@ -131,7 +211,10 @@ class HTMLConverter:
             return False
 
         # Copy images and update content
-        md_content = self._copy_images(md_content, input_dir, output_dir)
+        md_content = self.copy_for_images(md_content, input_dir, output_dir)
+
+        # Generate index files for any folder links found in the content and update links
+        md_content = self.generate_for_folder_indices(md_content, input_dir)
 
         # Use markdown extensions for better formatting
         html_content = markdown.markdown(
@@ -139,10 +222,10 @@ class HTMLConverter:
         )
 
         # Convert .md links to .html links using the LinkHandler
-        html_content = LinkHandler.handler_for_links(html_content, ".md", ".html")
+        html_content = Handler_for_Link.handle_for_link(html_content, ".md", ".html")
 
         title = os.path.splitext(os.path.basename(self.input_path))[0]
-        html_template = self._get_html_template(title, html_content)
+        html_template = self.get_for_html_template(title, html_content)
 
         try:
             with open(html_path, 'w', encoding='utf-8') as f:
@@ -154,7 +237,7 @@ class HTMLConverter:
             return False
 
     @staticmethod
-    def _get_html_template(title, body):
+    def get_for_html_template(title, body):
         """
         Returns a styled HTML5 template.
         """
@@ -222,7 +305,7 @@ class HTMLConverter:
 <body>
     {body}
         <footer>
-            <p>Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} by MDToHTMLConverter v{__version__}</p>
+            <p><em>Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} by MDToHTMLConverter v{__version__}</em></p>
         </footer>
 </body>
 </html>"""
@@ -255,7 +338,7 @@ def main():
             for file in files:
                 if file.endswith((".md", ".markdown")):
                     input_file = os.path.join(root, file)
-                    converter = HTMLConverter(input_file, args.project_base)
+                    converter = Converter_for_Md_to_Html(input_file, args.project_base)
                     converter.convert()
         logging.info("Recursive conversion complete.")
 
@@ -264,7 +347,7 @@ def main():
             print("Error: Input file does not appear to be a Markdown file.")
             sys.exit(1)
 
-        converter = HTMLConverter(args.input_path, args.project_base)
+        converter = Converter_for_Md_to_Html(args.input_path, args.project_base)
         converter.convert()
     else:
         print(f"Error: Input path not found: {args.input_path}")
@@ -272,9 +355,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-## Changelog
-
-| Version | Date | Change Content | Stakeholders | Motivation |
-|---------|------|---------|-------------|----------------------|
-| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

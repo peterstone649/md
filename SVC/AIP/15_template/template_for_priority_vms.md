@@ -173,3 +173,9 @@ All conflict resolutions must be:
 ---
 
 *This template establishes the standardized structure for all VMS priority frameworks, ensuring systematic conflict resolution and consistent ethical decision-making across AI systems.*
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

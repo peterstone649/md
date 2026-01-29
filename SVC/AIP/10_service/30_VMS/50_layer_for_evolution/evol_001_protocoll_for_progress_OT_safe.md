@@ -203,3 +203,9 @@ Draft     4-Gate_Check  Testing     Graduated_Rollout    Global_Update  Performa
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
 | V1.0.0 | 2026-01-13 | Initial Safe Progress Protocol specification | Framework Steward | Establish systematic governance for AI moral evolution ensuring safety and flourishing enhancement |
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

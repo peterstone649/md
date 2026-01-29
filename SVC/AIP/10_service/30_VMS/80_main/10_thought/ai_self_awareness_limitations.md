@@ -152,3 +152,9 @@ The result is not diminished AI capability, but enhanced overall system performa
 - **LMSYS Chatbot Arena** (2023). User-reported transparency metrics
 - **Hendrycks et al.** (2022). "An Overview of Catastrophic AI Risks"
 - **Amodei et al.** (2016). "Concrete Problems in AI Safety"
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

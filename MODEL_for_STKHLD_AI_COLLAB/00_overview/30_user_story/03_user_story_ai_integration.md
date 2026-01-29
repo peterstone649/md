@@ -46,23 +46,7 @@ The AI Integration role focuses on the technical implementation of the collabora
 
 ## User Journey
 
-```
-1. CONFIGURATION
-   └── Set up AI models and tools.
-   └── Ingest framework principles and conventions as guidelines for the AI.
 
-2. DEVELOPMENT
-   └── Develop scripts for AI-assisted tasks (e.g., `create_principle_draft.py`).
-   └── Implement `AI_LOCK` checks in the development pipeline.
-
-3. EXECUTION
-   └── Run AI-assisted tasks under human supervision.
-   └── Generate content, suggestions, or analysis.
-
-4. MONITORING & LOGGING
-   └── Log all AI outputs and the prompts that generated them.
-   └── Review logs to ensure compliance with principles like Transparency and Accountability.
-```
 
 ---
 
@@ -70,7 +54,7 @@ The AI Integration role focuses on the technical implementation of the collabora
 
 - **12 Core Principles**: `30_principle/` directory is the primary guide.
 - **AI_LOCK Protection**: The `[AI_LOCK]` markers are a critical technical constraint.
-- **AI Methodology**: `02_methodology_ai_assistance.md` provides the high-level strategy.
+- **AI Methodology**: [02_methodology_ai_assistance](02_methodology_ai_assistance.md) provides the high-level strategy.
 - **Quality Assurance Process**: The multi-layer validation framework guides monitoring.
 
 ---
@@ -111,3 +95,9 @@ The AI Integration role focuses on the technical implementation of the collabora
 **Story Status:** Ready
 **Estimation:** 8 story points
 **Sprint:** TBD
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

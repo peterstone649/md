@@ -71,9 +71,9 @@ This principle applies when:
 
 | Pattern | Meaning | Example |
 |---------|---------|---------|
-| `AI_ASSISTED_` | Content with AI contribution | `AI_ASSISTED_draft_v1.md` |
-| `AI_REVIEW_` | AI-reviewed content | `AI_REVIEW_analysis.md` |
-| `AI_GENERATED_` | Primarily AI-generated content | `AI_GENERATED_summary.md` |
+| `AI_ASSISTED_` | Content with AI contribution | `[AI_ASSISTED_draft_v1](AI_ASSISTED_draft_v1.md)` |
+| `AI_REVIEW_` | AI-reviewed content | `[AI_REVIEW_analysis](AI_REVIEW_analysis.md)` |
+| `AI_GENERATED_` | Primarily AI-generated content | `[AI_GENERATED_summary](AI_GENERATED_summary.md)` |
 
 ---
 
@@ -92,17 +92,10 @@ This principle applies when:
 ## 7. Examples
 
 ### 7.1 Correct Usage
-```
-Document Header: "AI-Assisted Document - 40% human contribution"
-Changes Log: "[AI] Suggested rewrite of section 2 → [Human] Approved with modifications"
-```
+
 
 ### 7.2 Incorrect Usage
-```
-AI-modified document with no disclosure
-Human stakeholder unaware of AI involvement
-No trace of AI contributions in version history
-```
+[17_template_for_principle.md](../15_template/17_template_for_principle.md)[PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md)[PRIN_MSHCOL_ACCOUNTABILITY](./04_principle_accountability.md)[PRIN_MSHCOL_HUMAN_SOVEREIGNTY](./01_principle_human_sovereignty.md)
 
 ---
 
@@ -110,9 +103,9 @@ No trace of AI contributions in version history
 
 | Reference | Relationship |
 |-----------|--------------|
-| [PRIN_MSHCOL_HUMAN_SOVEREIGNTY](./01_principle_human_sovereignty.md) | Transparency enables informed human decisions |
-| [PRIN_MSHCOL_ACCOUNTABILITY](./04_principle_accountability.md) | Traceability supports accountability |
-| [PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md) | Transparency aids validation processes |
+|  | Transparency enables informed human decisions |
+|  | Traceability supports accountability |
+|  | Transparency aids validation processes |
 
 ---
 
@@ -148,6 +141,12 @@ N/A (Initial principle)
 ---
 
 **Template Version:** V1.0
-**Template Reference:** [17_template_for_principle.md](../15_template/17_template_for_principle.md)
+**Template Reference:** 
 **Date:** 2026-01-09
 **Framework:** MODEL_for_stakeholder_AI_collab
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

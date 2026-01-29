@@ -61,3 +61,9 @@ This directly addresses Tegmark's alignment challenges from *Life 3.0* in your r
 [8](https://github.com/LAION-AI/Open-Assistant/discussions/3659)
 [9](https://scholarworks.gvsu.edu/cgi/viewcontent.cgi?article=1116&context=orpc)
 [10](https://www.theatlantic.com/sponsored/google/can-we-align-language-models-with-human-values/3945/)
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

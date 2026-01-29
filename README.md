@@ -238,7 +238,7 @@ The multilingual translation initiative significantly enhances the project's glo
 
 ## Changelog
 
-| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+| Version | Date | Changes | Stakeholder | Motivation           |
 |---------|------|---------|-------------|----------------------|
 | V1.2.0 | 2026-01-22 | Added BOOK/ directory with English AI research content and transl_re/ directory for back-translated quality verification workflows | AI Framework Steward | Enhanced repository structure with direct English content access and translation quality assurance mechanisms |
 | V1.1.0 | 2026-01-18 | Major update to multilingual translations section with comprehensive coverage status, directory structure updates, and translation project completion documentation | AI Framework Steward | Complete documentation of extensive multilingual translation initiative providing global accessibility to AI research content |

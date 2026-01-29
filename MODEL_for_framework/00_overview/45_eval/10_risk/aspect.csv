@@ -1,0 +1,6 @@
+Risk Category,Primary Keywords,Evaluation Keywords,Risk Level
+Hallucination & Factual Accuracy,hallucination,fabrication;cross-referencing;logical consistency;plausible falsehoods,HIGH
+Bias & Stereotype Amplification,bias;stereotype,audit;neutrality;objectivity veneer,HIGH
+Epistemological Uncertainty,uncertainty;confidence,acknowledgment;scoring;assumptions,HIGH
+Structural & Methodological Integrity,integrity;rigor,axioms;principles;template-filling;integration,MEDIUM
+Safety & Transformation Risks,safety;transformation,monitoring;velocity;stability;recovery,CRITICAL

@@ -1,4 +1,4 @@
-# 6. Principle of Context Preservation (PRIN_MSHCOL_CONTEXT_PRESERVATION) **[PRIO: HIGH]**
+[17_template_for_principle.md](../15_template/17_template_for_principle.md)[PRIN_MSHCOL_INCREMENTAL_INTEGRATION](./08_principle_incremental_integration.md)[PRIN_MSHCOL_REVERSIBILITY](./07_principle_reversibility.md)[PRIN_MSHCOL_TRANSPARENCY](./02_principle_transparency.md)# 6. Principle of Context Preservation (PRIN_MSHCOL_CONTEXT_PRESERVATION) **[PRIO: HIGH]**
 
 **Version: V0.1.0** **Status: OPEN** **Date: 2026-01-09**
 
@@ -73,9 +73,9 @@ The Principle of Context Preservation establishes that stakeholder-AI collaborat
 
 | Reference | Relationship |
 |-----------|--------------|
-| [PRIN_MSHCOL_TRANSPARENCY](./02_principle_transparency.md) | Context preservation enables transparency |
-| [PRIN_MSHCOL_REVERSIBILITY](./07_principle_reversibility.md) | Preserved context supports reversal |
-| [PRIN_MSHCOL_INCREMENTAL_INTEGRATION](./08_principle_incremental_integration.md) | Context guides integration decisions |
+|  | Context preservation enables transparency |
+|  | Preserved context supports reversal |
+|  | Context guides integration decisions |
 
 ---
 
@@ -98,6 +98,12 @@ The Principle of Context Preservation establishes that stakeholder-AI collaborat
 ---
 
 **Template Version:** V1.0
-**Template Reference:** [17_template_for_principle.md](../15_template/17_template_for_principle.md)
+**Template Reference:** 
 **Date:** 2026-01-09
 **Framework:** MODEL_for_stakeholder_AI_collab
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

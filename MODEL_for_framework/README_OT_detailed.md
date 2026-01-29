@@ -1,7 +1,5 @@
 # MODEL_for_framework - A Methodological Markdown Framework
 
-**Version: V1.1.0** **Date: 2026-01-07**
-
 **MODEL_for_framework** is a comprehensive **Markdown framework** designed to build a robust and scalable **framework ecosystem**. It provides the core methodological infrastructure, standards, and templates to ensure systematic development, validation, and evolution of structured documentation and knowledge systems.
 
 ---
@@ -362,4 +360,4 @@ MODEL_for_STKHLD_AI_COLLAB utilizes framework templates:
 
 | Version | Date | Change Content | Stakeholders | Motivation |
 |---------|------|---------|-------------|----------------------|
-| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |
+| V0.1.0 | 2026-01-24 | Initial creation | Framework AI Steward | Establish foundational structure |

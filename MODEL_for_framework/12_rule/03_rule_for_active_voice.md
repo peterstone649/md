@@ -1,82 +1,44 @@
 # Active Voice [RULE_FOR_MFW_ACTIVE_VOICE] **[PRIO: HIGH]**
 
-**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
-**Scope:** All framework documentation
 
 ## Rule Statement
 
 All framework documents SHOULD use active voice constructions. Avoid passive voice unless specifically required for emphasis or when the actor is genuinely unknown.
 
+## Rule Requirements
+
+- **[R1]**: Subject performs action in 90%+ of sentences
+- **[R2]**: No "was/were + past participle" patterns without reason
+- **[R3]**: Actor clearly identified and positioned first
+- **[R4]**: "By" phrases used only when actor adds value
+
+## Formal Statement
+```
+∀sentence (Sentence(sentence) ∧ FrameworkDocument(sentence))
+    → (ActiveVoice(sentence) ∨ JustifiedPassive(sentence))
+```
+
 ## Rationale
 
-Active voice:
-- Clarifies who performs actions
-- Creates more engaging and direct communication
-- Reduces ambiguity in responsibility
-- Aligns with framework principles of clarity and precision
-- Makes sentences more concise
+Active voice clarifies responsibility, improves readability, and aligns with framework principles of clarity and precision.
 
-## Active Voice Pattern
+## Uncertainty Declaration
 
-### Structure
-```
-[ACTOR] + [ACTION] + [OBJECT]
-```
+*If applicable: This rule acknowledges inherent uncertainties in language interpretation and the subjective nature of voice assessment.*
 
-### Examples
+## Integration with Other Framework Components
 
-| Passive ❌ | Active ✅ |
-|-----------|----------|
-| The validation was performed by the framework | The framework validates |
-| Decisions must be made by contributors | Contributors make decisions |
-| Changes are required by the system | The system requires changes |
-| Analysis is conducted by researchers | Researchers conduct analysis |
+### Related Rules
+- **[01_rule_for_epistemological_uncertainty_acknowledgment.md](01_rule_for_epistemological_uncertainty_acknowledgment.md)** - Active voice supports uncertainty acknowledgment
+- **[02_rule_for_ai_lock_protection.md](02_rule_for_ai_lock_protection.md)** - AI_LOCK content may use passive voice when appropriate
 
-## Character-Action-Subject (CAS) Strategy
+### Related Axioms
+- **[02_axiom_of_framework_validation_integrity.md](../35_axiom/02_axiom_of_framework_validation_integrity.md)** - Validation includes language quality assessment
+- **[03_axiom_of_clarity_and_precision.md](../35_axiom/03_axiom_of_clarity_and_precision.md)** - Foundation for active voice requirement
 
-1. **Identify the Action** - What is actually happening?
-2. **Name the Actor** - Who/what performs the action?
-3. **Position Actor First** - Put subject at beginning of sentence
-
-### Application
-- **Step 1:** Find passive constructions (was/were + past participle)
-- **Step 2:** Identify the actor and action
-- **Step 3:** Restructure: Actor → Action → Object
-
-## Acceptable Passive Voice Exceptions
-
-Passive voice IS acceptable when:
-
-1. **Unknown Actor**
-   - "The file was corrupted during transmission" (actor unknown)
-
-2. **Emphasis on Action/Object**
-   - "The decision has been made" (focus on decision, not decision-maker)
-
-3. **Scientific/Technical Neutrality**
-   - "The sample was heated to 100°C" (standard scientific reporting)
-
-4. **Deliberate De-emphasis**
-   - "Mistakes were made" (when blaming is inappropriate)
-
-## Validation Checklist
-
-- [ ] Subject performs action in 90%+ of sentences
-- [ ] No "was/were + past participle" patterns without reason
-- [ ] Actor clearly identified and positioned first
-- [ ] "By" phrases used only when actor adds value
-
-## Enforcement
-
-1. **Writing Phase:** Writers apply CAS strategy during drafting
-2. **Review Phase:** Reviewers check for passive voice violations
-3. **Automated Checks:** Tools flag passive constructions for review
-
-## References
-
-- Strunk & White, "The Elements of Style"
-- Williams, "Style: Toward Clarity and Grace"
-- Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)
+### Related Principles
+- **[02_principle_transparency.md](../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.md)** - Transparency requires clear language
+- **[03_principle_proportionality.md](../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md)** - Proportionality applies to language complexity
 
 **Rule Steward:** Terminology Architects
 **Approval Status:** Framework Approved

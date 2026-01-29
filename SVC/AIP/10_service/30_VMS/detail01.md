@@ -69,3 +69,9 @@ A major risk in systematic value tagging is "Value Ossification"—locking in 20
 Would you like me to add a "Version Control & Moral Evolution" field to the schema to allow the AI to propose "Value Patches" as humanity matures?
 
 add a "Version Control & Moral Evolution" field to allow patches
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

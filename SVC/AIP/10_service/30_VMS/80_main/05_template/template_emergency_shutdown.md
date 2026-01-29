@@ -301,3 +301,9 @@ This template provides the structure for creating emergency shutdown procedures 
 - [SVC/AIP/10_service/30_VMS/90_scenarios/scenario_001_last_human_convincing.md](../90_scenarios/scenario_001_last_human_convincing.md)
 - [SVC/AIP/10_service/30_VMS/90_toolkit/checklist_ai_version_transition.md](../90_toolkit/checklist_ai_version_transition.md)
 - [SVC/AIP/10_service/30_VMS/20_layer_for_priority/priority_001_lexical_hierarchy_for_flourishing.md](../20_layer_for_priority/priority_001_lexical_hierarchy_for_flourishing.md)
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

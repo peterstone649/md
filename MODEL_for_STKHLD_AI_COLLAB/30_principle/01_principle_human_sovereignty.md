@@ -92,14 +92,10 @@ This principle applies to all stakeholder-AI collaboration scenarios where:
 ## 7. Examples
 
 ### 7.1 Correct Usage
-```
-Stakeholder receives AI recommendation → Reviews reasoning → Makes informed decision → Executes or modifies → Decision recorded
-```
+
 
 ### 7.2 Incorrect Usage
-```
-AI makes decision without human approval → No explanation provided → Stakeholder cannot override → No audit trail
-```
+[17_template_for_principle.md](../15_template/17_template_for_principle.md)[PRIN_MSHCOL_ACCOUNTABILITY](./04_principle_accountability.md)[PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md)[PRIN_MSHCOL_TRANSPARENCY](./02_principle_transparency.md)
 
 ---
 
@@ -107,9 +103,9 @@ AI makes decision without human approval → No explanation provided → Stakeho
 
 | Reference | Relationship |
 |-----------|--------------|
-| [PRIN_MSHCOL_TRANSPARENCY](./02_principle_transparency.md) | Complements by ensuring visibility of AI involvement |
-| [PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md) | Supports through multi-stage human review |
-| [PRIN_MSHCOL_ACCOUNTABILITY](./04_principle_accountability.md) | Enables through clear responsibility chains |
+|  | Complements by ensuring visibility of AI involvement |
+|  | Supports through multi-stage human review |
+|  | Enables through clear responsibility chains |
 
 ---
 
@@ -140,6 +136,12 @@ N/A (Initial principle)
 - **Traceability**: Each version entry links to a documented decision or request if this exists
 ---
 - **Template Version:** V0.1.1 **Date:** 2026-01-10
-- **Template Reference:** [17_template_for_principle.md](../15_template/17_template_for_principle.md)
+- **Template Reference:** 
 - **Framework:** MODEL_for_stakeholder_AI_collab
 - **Framework Version:** V1.0 **Date:** 2026-01-10
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

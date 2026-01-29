@@ -35,7 +35,7 @@ Framework Developers are responsible for building and maintaining the framework 
 
 ## Acceptance Criteria
 
-- [ ] Developer can create a new principle using the `17_template_for_principle.md`.
+- [ ] Developer can create a new principle using the `[17_template_for_principle](17_template_for_principle.md)`.
 - [ ] Developer can define a new convention and document it in the `20_convention/` directory.
 - [ ] Developer can add clickable cross-references between related documents.
 - [ ] Developer updates the changelog for all modifications with stakeholder and rationale.
@@ -46,33 +46,16 @@ Framework Developers are responsible for building and maintaining the framework 
 
 ## User Journey
 
-```
-1. PLANNING
-   └── Identify need for a new principle or convention.
-   └── Review existing framework structure and standards.
 
-2. DEVELOPMENT
-   └── Create new document from a template.
-   └── Write content, following established conventions.
-   └── Add cross-references and `AI_LOCK` markers.
-
-3. DOCUMENTATION
-   └── Update READMEs to reflect changes.
-   └── Fill out the changelog with detailed information.
-
-4. VALIDATION & DEPLOYMENT
-   └── Perform quality assurance checks.
-   └── Integrate the new component into the framework.
-```
 
 ---
 
 ## Related Framework Elements
 
 - **All Framework Components**: Principles, Templates, Conventions, etc.
-- **AI Methodology**: `00_overview/01_legal/02_methodology_ai_assistance.md`
+- **AI Methodology**: [00_overview/01_legal/02_methodology_ai_assistance](00_overview/01_legal/02_methodology_ai_assistance.md)
 - **Templates**: `15_template/`
-- **Changelog Format**: As defined in the root `README.md`.
+- **Changelog Format**: As defined in the root [README](README.md).
 
 ---
 
@@ -81,8 +64,8 @@ Framework Developers are responsible for building and maintaining the framework 
 | Need | Framework Support |
 |------|-------------------|
 | Standardized Structures | `15_template/` directory |
-| Clear Development Process | AI-Human Collaboration Cycle in `README.md` |
-| Quality Standards | Quality Control Measures in `README.md` |
+| Clear Development Process | AI-Human Collaboration Cycle in [README](README.md) |
+| Quality Standards | Quality Control Measures in [README](README.md) |
 | Version Control | Git and clear changelog format |
 | Protection of Core Concepts | `AI_LOCK` mechanism |
 
@@ -112,3 +95,9 @@ Framework Developers are responsible for building and maintaining the framework 
 **Story Status:** Ready
 **Estimation:** 5 story points
 **Sprint:** TBD
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

@@ -46,34 +46,16 @@ Framework Users are the primary consumers of the framework. They apply existing 
 
 ## User Journey
 
-```
-1. DISCOVERY
-   └── Browse framework overview in README.md
-   └── Explore principles in 30_principle/
-   
-2. LEARNING
-   └── Study template structures in 15_template/
-   └── Review naming conventions in 20_convention/
-   
-3. APPLICATION
-   └── Select appropriate template
-   └── Follow naming conventions
-   └── Apply principles to content
-   
-4. VALIDATION
-   └── Check against convention standards
-   └── Verify template compliance
-   └── Ensure clickable links work
-```
+
 
 ---
 
 ## Related Framework Elements
 
 - **Principles**: All 12 stakeholder-AI collaboration principles
-- **Templates**: `15_template/17_template_for_principle.md`
+- **Templates**: [15_template/17_template_for_principle](15_template/17_template_for_principle.md)
 - **Conventions**: `20_convention/` directory
-- **Getting Started**: `MODEL_for_STKHLD_AI_COLLAB/00_overview/20_stakeholder/01_getting_started.md`
+- **Getting Started**: [MODEL_for_STKHLD_AI_COLLAB/00_overview/20_stakeholder/01_getting_started](MODEL_for_STKHLD_AI_COLLAB/00_overview/20_stakeholder/01_getting_started.md)
 
 ---
 
@@ -113,3 +95,9 @@ Framework Users are the primary consumers of the framework. They apply existing 
 **Story Status:** Ready
 **Estimation:** 3 story points
 **Sprint:** TBD
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

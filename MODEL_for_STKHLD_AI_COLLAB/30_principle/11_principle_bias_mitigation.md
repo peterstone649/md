@@ -1,4 +1,4 @@
-# 11. Principle of Bias Mitigation (PRIN_MSHCOL_BIAS_MITIGATION) **[PRIO: HIGH]**
+[17_template_for_principle.md](../15_template/17_template_for_principle.md)[PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md)[PRIN_MSHCOL_TRANSPARENCY](./02_principle_transparency.md)[PRIN_MSHCOL_QUALITY_ASSURANCE](./09_principle_quality_assurance.md)# 11. Principle of Bias Mitigation (PRIN_MSHCOL_BIAS_MITIGATION) **[PRIO: HIGH]**
 
 **Version: V0.1.0** **Status: OPEN** **Date: 2026-01-09**
 
@@ -61,9 +61,9 @@ The Principle of Bias Mitigation establishes that stakeholder-AI collaboration m
 
 | Reference | Relationship |
 |-----------|--------------|
-| [PRIN_MSHCOL_QUALITY_ASSURANCE](./09_principle_quality_assurance.md) | Quality review includes bias detection |
-| [PRIN_MSHCOL_TRANSPARENCY](./02_principle_transparency.md) | Bias disclosure supports transparency |
-| [PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md) | Validation catches bias issues |
+|  | Quality review includes bias detection |
+|  | Bias disclosure supports transparency |
+|  | Validation catches bias issues |
 
 ---
 
@@ -82,7 +82,13 @@ The Principle of Bias Mitigation establishes that stakeholder-AI collaboration m
 
 ---
 - **Template Version:** V1.0
-- **Template Reference:** [17_template_for_principle.md](../15_template/17_template_for_principle.md)
+- **Template Reference:** 
 - **Date:** 2026-01-09
 - **Framework:** MODEL_for_stakeholder_AI_collab
 - **Framework Version:V1.0** **Date:** 2026-01-09
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

@@ -236,3 +236,9 @@ While general layered value architectures provide valuable conceptual foundation
 VMS transforms AI alignment from an academic challenge into a systematic, governable, and safely evolving framework that can scale with AI capabilities while maintaining human values and preventing existential risks.
 
 **VMS is not just another layered architecture—it's the operational foundation for safe AI moral evolution.**
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

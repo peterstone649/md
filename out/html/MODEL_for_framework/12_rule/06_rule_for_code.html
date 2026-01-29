@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_rule_for_code</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Code Naming Conventions [RULE_FOR_MFW_CODE] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.0</strong> <strong>Status: DRAFT</strong> <strong>Date: 2026-01-24</strong>
+<strong>Scope:</strong> All code files, classes, methods, and interfaces in the MODEL_for_framework</p>
+<p><em>Based on: Consistent naming improves code readability, maintainability, and framework cohesion</em></p>
+<h2>Rule Statement</h2>
+<p><strong>All code elements must follow language-specific naming conventions to ensure framework-wide uniformity and maintainability.</strong></p>
+<h2>Central Language Code Convention</h2>
+<p><strong>When ISO 639-1 language codes are used, they should be placed directly after the name they modify, following the pattern <code>&lt;name&gt;&lt;langCode&gt;</code>.</strong></p>
+<h3>Examples:</h3>
+<ul>
+<li><strong>Filenames</strong>: <code>readme_en.md</code>, <code>documentation_de.txt</code></li>
+<li><strong>Variables</strong>: <code>titleFr</code>, <code>descriptionEs</code></li>
+<li><strong>Classes</strong>: <code>ParserEn</code>, <code>ValidatorDe</code></li>
+<li><strong>Methods</strong>: <code>translateToZh()</code>, <code>getContentJa()</code></li>
+<li><strong>Packages/Namespaces</strong>: <code>com.example.content.en</code>, <code>online::wikx::docs::fr</code></li>
+</ul>
+<h2>Rule Details</h2>
+<h3>Language-Specific Conventions</h3>
+<h4>Python Conventions</h4>
+<ul>
+<li><strong>General Files</strong>: Use lowercase with underscores (snake_case) e.g., <code>handler_for_link.py</code></li>
+<li><strong>Test Files</strong>: Follow the pattern <code>test_&lt;module_name&gt;.py</code> e.g., <code>test_handler_for_link.py</code></li>
+<li><strong>Class Files</strong>: Filename should match the primary class name in lowercase with underscores e.g., <code>handler_for_link.py</code> for <code>Handler_for_Link</code></li>
+</ul>
+<h4>Java Conventions</h4>
+<ul>
+<li><strong>General Files</strong>: Use PascalCase (camelCase) without underscores e.g., <code>HandlerForLink.java</code></li>
+<li><strong>Test Files</strong>: Follow the pattern <code>Test&lt;ClassName&gt;.java</code> e.g., <code>TestHandlerForLink.java</code></li>
+<li><strong>Class Files</strong>: Filename should match the class name exactly e.g., <code>HandlerForLink.java</code> for <code>HandlerForLink</code></li>
+</ul>
+<h4>C++ Conventions</h4>
+<ul>
+<li><strong>General Files</strong>: Use PascalCase (camelCase) without underscores e.g., <code>HandlerForLink.cpp</code></li>
+<li><strong>Header Files</strong>: Use PascalCase with <code>.h</code> or <code>.hpp</code> extension e.g., <code>HandlerForLink.h</code></li>
+<li><strong>Test Files</strong>: Follow the pattern <code>Test&lt;ClassName&gt;.cpp</code> e.g., <code>TestHandlerForLink.cpp</code></li>
+<li><strong>Class Files</strong>: Filename should match the class name exactly e.g., <code>HandlerForLink.cpp</code> for <code>HandlerForLink</code></li>
+</ul>
+<h3>Class Naming Conventions</h3>
+<h4>Python</h4>
+<ul>
+<li><strong>Standard Classes</strong>: Use PascalCase with descriptive names following the pattern <code>&lt;NounedVerb&gt;_for_&lt;Noun&gt;</code> e.g., <code>Handler_for_Link</code></li>
+<li><strong>Utility Classes</strong>: Use PascalCase with <code>Util</code> suffix e.g., <code>StringUtil</code>, <code>FileUtil</code></li>
+<li><strong>Exception Classes</strong>: Use PascalCase with <code>Exception</code> suffix e.g., <code>ValidationException</code></li>
+</ul>
+<h4>Java</h4>
+<ul>
+<li><strong>Standard Classes</strong>: Use PascalCase without underscores following <code>&lt;NounedVerb&gt;</code> pattern e.g., <code>HandlerForLink</code></li>
+<li><strong>Utility Classes</strong>: Use PascalCase with <code>Util</code> suffix e.g., <code>StringUtils</code>, <code>FileUtils</code></li>
+<li><strong>Exception Classes</strong>: Use PascalCase with <code>Exception</code> suffix e.g., <code>ValidationException</code></li>
+</ul>
+<h4>C++</h4>
+<ul>
+<li><strong>Standard Classes</strong>: Use PascalCase without underscores following <code>&lt;NounedVerb&gt;</code> pattern e.g., <code>HandlerForLink</code></li>
+<li><strong>Utility Classes</strong>: Use PascalCase with <code>Util</code> suffix e.g., <code>StringUtils</code>, <code>FileUtils</code></li>
+<li><strong>Exception Classes</strong>: Use PascalCase with <code>Exception</code> suffix e.g., <code>ValidationException</code></li>
+</ul>
+<h3>Method Naming Conventions</h3>
+<p><strong>Important Note</strong>: Python uses snake_case for method names, while JavaScript/TypeScript and other languages use camelCase.</p>
+<p>e.g.</p>
+<h4>Python</h4>
+<ul>
+<li><strong>Standard Methods</strong>: Use lowercase with underscores (snake_case) following the pattern <code>&lt;verb&gt;_for_&lt;noun&gt;</code> e.g., <code>handle_for_link</code></li>
+<li><strong>Static Methods</strong>: Same as standard methods but should be clearly documented</li>
+<li><strong>Private Methods</strong>: Prefix with single underscore <code>_</code> e.g., <code>_validate_input</code></li>
+<li><strong>Property Methods</strong>: Use simple noun names e.g., <code>get_content()</code>, <code>set_content()</code></li>
+</ul>
+<h4>JavaScript/TypeScript</h4>
+<ul>
+<li><strong>Standard Methods</strong>: Use camelCase without underscores e.g., <code>handleLink</code></li>
+<li><strong>Static Methods</strong>: Same as standard methods with <code>static</code> keyword e.g., <code>static handleLink()</code></li>
+<li><strong>Private Methods</strong>: Use camelCase with <code>private</code> modifier e.g., <code>private validateInput()</code></li>
+<li><strong>Property Methods</strong>: Use standard getter/setter conventions e.g., <code>getContent()</code>, <code>setContent()</code></li>
+</ul>
+<h4>Java</h4>
+<ul>
+<li><strong>Standard Methods</strong>: Use camelCase without underscores e.g., <code>handleLink</code></li>
+<li><strong>Static Methods</strong>: Same as standard methods with <code>static</code> modifier</li>
+<li><strong>Private Methods</strong>: Use camelCase with <code>private</code> modifier e.g., <code>validateInput</code></li>
+<li><strong>Property Methods</strong>: Use standard Java bean conventions e.g., <code>getContent()</code>, <code>setContent()</code></li>
+</ul>
+<h4>C++</h4>
+<ul>
+<li><strong>Standard Methods</strong>: Use camelCase without underscores e.g., <code>handleLink()</code></li>
+<li><strong>Static Methods</strong>: Same as standard methods with <code>static</code> keyword e.g., <code>static void handleLink()</code></li>
+<li><strong>Private Methods</strong>: Use camelCase with <code>private:</code> access specifier e.g., <code>validateInput()</code></li>
+<li><strong>Property Methods</strong>: Use standard getter/setter conventions e.g., <code>getContent()</code>, <code>setContent()</code></li>
+</ul>
+<h3>Interface Naming Conventions</h3>
+<p><strong>Language-Aware Interface Pattern</strong>: For interfaces that are language-specific, use the pattern <code>&lt;name&gt;&lt;langCode&gt;I</code> (e.g., <code>HandlerEnI</code>, <code>ParserDeI</code>)</p>
+<h4>Python</h4>
+<ul>
+<li><strong>Standard Interfaces</strong>: Use PascalCase with <code>I</code> prefix or <code>Interface</code> suffix e.g., <code>IHandler</code> or <code>HandlerInterface</code></li>
+<li><strong>Language-Specific Interfaces</strong>: Use <code>&lt;name&gt;&lt;langCode&gt;I</code> pattern e.g., <code>HandlerEnI</code>, <code>ParserDeI</code></li>
+<li><strong>Abstract Classes</strong>: Use PascalCase with <code>Abstract</code> prefix e.g., <code>AbstractHandler</code></li>
+</ul>
+<h4>Java</h4>
+<ul>
+<li><strong>Standard Interfaces</strong>: Use PascalCase with <code>I</code> prefix or <code>Interface</code> suffix e.g., <code>IHandler</code> or <code>HandlerInterface</code></li>
+<li><strong>Language-Specific Interfaces</strong>: Use <code>&lt;name&gt;&lt;langCode&gt;I</code> pattern e.g., <code>HandlerEnI</code>, <code>ParserDeI</code></li>
+<li><strong>Abstract Classes</strong>: Use PascalCase with <code>Abstract</code> prefix e.g., <code>AbstractHandler</code></li>
+</ul>
+<h4>C++</h4>
+<ul>
+<li><strong>Standard Interfaces</strong>: Use PascalCase with <code>I</code> prefix or <code>Interface</code> suffix e.g., <code>IHandler</code> or <code>HandlerInterface</code></li>
+<li><strong>Language-Specific Interfaces</strong>: Use <code>&lt;name&gt;&lt;langCode&gt;I</code> pattern e.g., <code>HandlerEnI</code>, <code>ParserDeI</code></li>
+<li><strong>Abstract Classes</strong>: Use PascalCase with <code>Abstract</code> prefix e.g., <code>AbstractHandler</code></li>
+</ul>
+<h4>JavaScript/TypeScript</h4>
+<ul>
+<li><strong>Standard Interfaces</strong>: Use PascalCase with <code>I</code> prefix or <code>Interface</code> suffix e.g., <code>IHandler</code> or <code>HandlerInterface</code></li>
+<li><strong>Language-Specific Interfaces</strong>: Use <code>&lt;name&gt;&lt;langCode&gt;I</code> pattern e.g., <code>HandlerEnI</code>, <code>ParserDeI</code></li>
+<li><strong>Abstract Classes</strong>: Use PascalCase with <code>Abstract</code> prefix e.g., <code>AbstractHandler</code></li>
+</ul>
+<h3>Variable Naming Conventions</h3>
+<h4>Python</h4>
+<ul>
+<li><strong>Local Variables</strong>: Use lowercase with underscores (snake_case) e.g., <code>file_content</code>, <code>user_input</code></li>
+<li><strong>Constants</strong>: Use uppercase with underscores (UPPER_SNAKE_CASE) e.g., <code>MAX_RETRIES</code>, <code>DEFAULT_TIMEOUT</code></li>
+<li><strong>Class Variables</strong>: Use lowercase with underscores prefixed with class name e.g., <code>handler_config</code>, <code>parser_rules</code></li>
+</ul>
+<h4>Java</h4>
+<ul>
+<li><strong>Local Variables</strong>: Use camelCase without underscores e.g., <code>fileContent</code>, <code>userInput</code></li>
+<li><strong>Constants</strong>: Use uppercase with underscores (UPPER_SNAKE_CASE) e.g., <code>MAX_RETRIES</code>, <code>DEFAULT_TIMEOUT</code></li>
+<li><strong>Class Variables</strong>: Use camelCase with appropriate access modifiers e.g., <code>private String handlerConfig</code></li>
+</ul>
+<h4>C++</h4>
+<ul>
+<li><strong>Local Variables</strong>: Use camelCase without underscores e.g., <code>fileContent</code>, <code>userInput</code></li>
+<li><strong>Constants</strong>: Use uppercase with underscores (UPPER_SNAKE_CASE) e.g., <code>MAX_RETRIES</code>, <code>DEFAULT_TIMEOUT</code></li>
+<li><strong>Class Variables</strong>: Use camelCase with appropriate access modifiers e.g., <code>private: std::string handlerConfig</code></li>
+</ul>
+<h3>Package/Module Naming Conventions</h3>
+<h4>Python</h4>
+<ul>
+<li><strong>Packages</strong>: Use lowercase with underscores (snake_case) e.g., <code>online.wikx.n10.util.er</code></li>
+<li><strong>Modules</strong>: Use lowercase with underscores (snake_case) e.g., <code>handler_for_link</code></li>
+</ul>
+<h4>Java</h4>
+<ul>
+<li><strong>Packages</strong>: Use lowercase without underscores (dot notation) e.g., <code>online.wikx.n10.util.er</code></li>
+<li><strong>Modules</strong>: Follow Java module naming conventions e.g., <code>com.example.module</code></li>
+</ul>
+<h4>C++</h4>
+<ul>
+<li><strong>Namespaces</strong>: Use lowercase without underscores (dot notation) e.g., <code>online::wikx::n10::util::er</code></li>
+<li><strong>Modules</strong>: Follow C++ module naming conventions e.g., <code>com.example.module</code></li>
+</ul>
+<h2>Rationale</h2>
+<p>Consistent naming conventions improve code readability, reduce cognitive load, and facilitate easier maintenance. They also help new developers understand the codebase structure more quickly and reduce naming conflicts.</p>
+<h2>Examples</h2>
+<h3>Python Examples</h3>
+<h4>Good Examples</h4>
+<ul>
+<li><strong>Filename</strong>: <code>handler_for_link.py</code></li>
+<li><strong>Class</strong>: <code>Handler_for_Link</code></li>
+<li><strong>Method</strong>: <code>handle_for_link(content, from_ext, to_ext)</code></li>
+<li><strong>Variable</strong>: <code>file_content = "example.md"</code></li>
+<li><strong>Constant</strong>: <code>MAX_FILE_SIZE = 1024</code></li>
+<li><strong>Language-Specific Interface</strong>: <code>class ParserEnI</code>, <code>class ValidatorDeI</code></li>
+</ul>
+<h4>Bad Examples (to avoid)</h4>
+<ul>
+<li><strong>Filename</strong>: <code>LinkHandler.py</code> (should be lowercase)</li>
+<li><strong>Class</strong>: <code>linkHandler</code> (should be PascalCase)</li>
+<li><strong>Method</strong>: <code>handleLinks()</code> (should use snake_case)</li>
+<li><strong>Variable</strong>: <code>fileContent</code> (should use snake_case)</li>
+<li><strong>Language-Specific Interface</strong>: <code>class Parser_En_I</code> (should use <code>&lt;name&gt;&lt;langCode&gt;I</code> pattern)</li>
+</ul>
+<h3>Java Examples</h3>
+<h4>Good Examples</h4>
+<ul>
+<li><strong>Filename</strong>: <code>HandlerForLink.java</code></li>
+<li><strong>Class</strong>: <code>HandlerForLink</code></li>
+<li><strong>Method</strong>: <code>handleLink(String content, String fromExt, String toExt)</code></li>
+<li><strong>Variable</strong>: <code>String fileContent = "example.md"</code></li>
+<li><strong>Constant</strong>: <code>int MAX_FILE_SIZE = 1024</code></li>
+<li><strong>Language-Specific Interface</strong>: <code>interface ParserEnI</code>, <code>interface ValidatorDeI</code></li>
+</ul>
+<h4>Bad Examples (to avoid)</h4>
+<ul>
+<li><strong>Filename</strong>: <code>link_handler.java</code> (should be PascalCase)</li>
+<li><strong>Class</strong>: <code>linkHandler</code> (should be PascalCase)</li>
+<li><strong>Method</strong>: <code>handle_link()</code> (should use camelCase)</li>
+<li><strong>Variable</strong>: <code>String file_content</code> (should use camelCase)</li>
+<li><strong>Language-Specific Interface</strong>: <code>interface Parser_En_I</code> (should use <code>&lt;name&gt;&lt;langCode&gt;I</code> pattern)</li>
+</ul>
+<h3>C++ Examples</h3>
+<h4>Good Examples</h4>
+<ul>
+<li><strong>Filename</strong>: <code>HandlerForLink.cpp</code></li>
+<li><strong>Header</strong>: <code>HandlerForLink.h</code></li>
+<li><strong>Class</strong>: <code>HandlerForLink</code></li>
+<li><strong>Method</strong>: <code>void handleLink(std::string content, std::string fromExt, std::string toExt)</code></li>
+<li><strong>Variable</strong>: <code>std::string fileContent = "example.md"</code></li>
+<li><strong>Constant</strong>: <code>const int MAX_FILE_SIZE = 1024</code></li>
+<li><strong>Namespace</strong>: <code>namespace online::wikx::n10::util::er</code></li>
+<li><strong>Language-Specific Interface</strong>: <code>class ParserEnI</code>, <code>class ValidatorDeI</code></li>
+</ul>
+<h4>Bad Examples (to avoid)</h4>
+<ul>
+<li><strong>Filename</strong>: <code>link_handler.cpp</code> (should be PascalCase)</li>
+<li><strong>Class</strong>: <code>linkHandler</code> (should be PascalCase)</li>
+<li><strong>Method</strong>: <code>void handle_link()</code> (should use camelCase)</li>
+<li><strong>Variable</strong>: <code>std::string file_content</code> (should use camelCase)</li>
+<li><strong>Language-Specific Interface</strong>: <code>class Parser_En_I</code> (should use <code>&lt;name&gt;&lt;langCode&gt;I</code> pattern)</li>
+</ul>
+<h3>JavaScript/TypeScript Examples</h3>
+<h4>Good Examples</h4>
+<ul>
+<li><strong>Filename</strong>: <code>handlerForLink.ts</code></li>
+<li><strong>Class</strong>: <code>HandlerForLink</code></li>
+<li><strong>Method</strong>: <code>handleLink(content: string, fromExt: string, toExt: string)</code></li>
+<li><strong>Variable</strong>: <code>const fileContent = "example.md"</code></li>
+<li><strong>Constant</strong>: <code>const MAX_FILE_SIZE = 1024</code></li>
+<li><strong>Interface</strong>: <code>interface HandlerOptions</code></li>
+<li><strong>Language-Specific Interface</strong>: <code>interface ParserEnI</code>, <code>interface ValidatorDeI</code></li>
+</ul>
+<h4>Bad Examples (to avoid)</h4>
+<ul>
+<li><strong>Filename</strong>: <code>handler_for_link.ts</code> (should be camelCase)</li>
+<li><strong>Class</strong>: <code>handler_for_link</code> (should be PascalCase)</li>
+<li><strong>Method</strong>: <code>handle_for_link()</code> (should use camelCase)</li>
+<li><strong>Variable</strong>: <code>const file_content = "example.md"</code> (should use camelCase)</li>
+<li><strong>Language-Specific Interface</strong>: <code>interface Parser_En_I</code> (should use <code>&lt;name&gt;&lt;langCode&gt;I</code> pattern)</li>
+</ul>
+<p><strong>Rule Steward:</strong> Framework Architects
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-24
+<strong>Review Cycle:</strong> Annual</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V1.0.0
+<strong>Date:</strong> 2026-01-24</p>
+<p><strong>Changelog:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.0</td>
+<td>2026-01-24</td>
+<td>Initial creation with comprehensive naming conventions</td>
+<td>Framework Steward</td>
+<td>Establish consistent naming standards across the framework</td>
+</tr>
+</tbody>
+</table>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-24</td>
+<td>Initial creation</td>
+<td>Framework Maintenance Team</td>
+<td>Establish foundational structure</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p><em>Generated on 2026-01-25 19:46:55 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

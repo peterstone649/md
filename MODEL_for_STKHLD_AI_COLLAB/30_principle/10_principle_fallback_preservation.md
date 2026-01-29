@@ -1,4 +1,4 @@
-# 10. Principle of Fallback Preservation (PRIN_MSHCOL_FALLBACK_PRESERVATION) **[PRIO: HIGH]**
+[17_template_for_principle.md](../15_template/17_template_for_principle.md)[PRIN_MSHCOL_PROPORTIONALITY](./03_principle_proportionality.md)[PRIN_MSHCOL_REVERSIBILITY](./07_principle_reversibility.md)[PRIN_MSHCOL_HUMAN_SOVEREIGNTY](./01_principle_human_sovereignty.md)# 10. Principle of Fallback Preservation (PRIN_MSHCOL_FALLBACK_PRESERVATION) **[PRIO: HIGH]**
 
 **Version: V0.1.0** **Status: OPEN** **Date: 2026-01-09**
 
@@ -60,9 +60,9 @@ The Principle of Fallback Preservation establishes that stakeholder-AI collabora
 
 | Reference | Relationship |
 |-----------|--------------|
-| [PRIN_MSHCOL_HUMAN_SOVEREIGNTY](./01_principle_human_sovereignty.md) | Ensures human autonomy when AI fails |
-| [PRIN_MSHCOL_REVERSIBILITY](./07_principle_reversibility.md) | Fallback enables recovery |
-| [PRIN_MSHCOL_PROPORTIONALITY](./03_principle_proportionality.md) | Prevents over-reliance on AI |
+|  | Ensures human autonomy when AI fails |
+|  | Fallback enables recovery |
+|  | Prevents over-reliance on AI |
 
 ---
 
@@ -85,7 +85,13 @@ The Principle of Fallback Preservation establishes that stakeholder-AI collabora
 ---
 
 **Template Version:** V1.0
-**Template Reference:** [17_template_for_principle.md](../15_template/17_template_for_principle.md)
+**Template Reference:** 
 **Date:** 2026-01-09
 **Framework:** MODEL_for_stakeholder_AI_collab
 **Date:** 2026-01-09
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

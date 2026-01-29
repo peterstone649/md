@@ -192,36 +192,7 @@ AI systems should improve based on stakeholder feedback and outcomes. Learning m
 
 ## Interrelationship Map
 
-```
-                    ┌─────────────────┐
-                    │ HUMAN SOVEREIGNTY│
-                    │   [CRITICAL]    │
-                    └────────┬────────┘
-                             │
-              ┌──────────────┼──────────────┐
-              │              │              │
-              ▼              ▼              ▼
-        ┌─────────┐   ┌──────────┐   ┌─────────┐
-        │FALLBACK │   │REVERSIBIL│   │OVERRIDE │
-        │PRESERV. │   │   ITY    │   │CAPABIL. │
-        └─────────┘   └──────────┘   └─────────┘
-              │              │
-              │              └──────┐
-              │                     │
-              ▼                     ▼
-        ┌─────────┐           ┌──────────┐
-        │ACCOUNT- │◄─────────►│TRANSPAREN│
-        │ABILITY  │           │    CY    │
-        └─────────┘           └──────────┘
-              │                     │
-              └─────────┬───────────┘
-                        │
-                        ▼
-              ┌─────────────────────┐
-              │   BIAS MITIGATION   │
-              │       [HIGH]        │
-              └─────────────────────┘
-```
+
 
 ---
 

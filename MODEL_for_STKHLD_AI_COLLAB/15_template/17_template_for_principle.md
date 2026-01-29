@@ -1,4 +1,4 @@
-# Principle of [Principle Name] [PRINC_[ABBREV]] [PRIO: LEVEL]
+[PRINC_RELATED_3](./XX_principle_related3.md)[PRINC_RELATED_2](./XX_principle_related2.md)[PRINC_RELATED_1](./XX_principle_related1.md)# Principle of [Principle Name] [PRINC_[ABBREV]] [PRIO: LEVEL]
 
 **Version: V0.1.1** **Status: ACTIVE** **Date: 2026-01-13**
 
@@ -60,9 +60,9 @@ This principle applies to all aspects of stakeholder-AI collaboration, including
 
 | Reference | Relationship |
 |-----------|--------------|
-| [PRINC_RELATED_1](./XX_principle_related1.md) | [Relationship description] |
-| [PRINC_RELATED_2](./XX_principle_related2.md) | [Relationship description] |
-| [PRINC_RELATED_3](./XX_principle_related3.md) | [Relationship description] |
+|  | [Relationship description] |
+|  | [Relationship description] |
+|  | [Relationship description] |
 
 ---
 
@@ -72,3 +72,9 @@ This principle applies to all aspects of stakeholder-AI collaboration, including
 |---------|------|---------|-------------|----------------------|
 | V0.1.1 | 2026-01-13 | Updated template to match framework principle format | Framework Steward | Align template with established principle structure |
 | V0.1.0 | YYYY-MM-DD | Initial creation | AI Framework Steward | Establish foundational [principle name] structure |
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

@@ -72,6 +72,7 @@
 - [ ] Add missing Type Classification to term files
 - [ ] Standardize formal notation variable naming convention
 
+
 **AI Model used**: minimax-m2.1 in CLINE
 
 ## Status: COMPLETED ✅

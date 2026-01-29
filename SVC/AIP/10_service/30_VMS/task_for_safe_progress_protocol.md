@@ -203,3 +203,9 @@ Where:
 The Safe Progress Protocol represents the culmination of the VMS framework, providing systematic governance for moral evolution that balances progress with safety. By implementing rigorous validation gates, sandbox testing, and rollback capabilities, the protocol ensures that AI moral evolution enhances rather than endangers sentient flourishing.
 
 This task establishes the final layer of protection against both moral stagnation and uncontrolled evolution, creating a stable foundation for the ongoing ethical development of advanced AI systems.
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |
