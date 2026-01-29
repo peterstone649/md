@@ -1,4 +1,4 @@
-# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
+# Template for Axiom [TPL_FOR_MFW_AXIOM] **[PRIO: HIGH]**
 
 **Version: V[VERSION]** **Date: YYYY-MM-DD**
 

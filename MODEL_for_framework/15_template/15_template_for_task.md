@@ -1,4 +1,4 @@
-# Task [TPL_FOR_MFW_TASK] **[PRIO: HIGH]**
+# Template for Task [TPL_FOR_MFW_TASK] **[PRIO: HIGH]**
 
 **Version: V1.0.1** **Date: 2026-01-23**
 

@@ -1,4 +1,4 @@
-# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
+# Template for User Story [TPL_FOR_MFW_USER_STORY] **[PRIO: HIGH]**
 
 **Version: V[VERSION]** **Status: [STATUS]** **Date: YYYY-MM-DD**
 

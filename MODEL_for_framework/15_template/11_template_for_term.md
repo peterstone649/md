@@ -1,4 +1,4 @@
-# Term [TPL_FOR_MFW_TERM] **[PRIO: HIGH]**
+# Template for Term [TPL_FOR_MFW_TERM] **[PRIO: HIGH]**
 
 **Version: V1.0.1**
 **Date: 2026-01-23**

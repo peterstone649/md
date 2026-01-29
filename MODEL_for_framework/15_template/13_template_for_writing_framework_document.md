@@ -1,4 +1,4 @@
-# Writing Framework Document [TPL_FOR_MFW_WRITING_DOC] **[PRIO: HIGH]**
+# Template for Writing Framework Document [TPL_FOR_MFW_WRITING_DOC] **[PRIO: HIGH]**
 
 **Version: V1.0.1** **Date: 2026-01-23**
 

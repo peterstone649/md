@@ -1,5 +1,5 @@
 **Template Version:** V0.1.0 **Template Status:** DRAFT **Date:** YYYY-MM-DD
-# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
+# Template for Mapping [TPL_FOR_MFW_MAPPING] **[PRIO: HIGH]**
 
 
 ## Executive Summary

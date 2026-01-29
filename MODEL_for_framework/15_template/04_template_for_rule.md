@@ -1,7 +1,4 @@
-# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
-
-**Rule ID:** [TYPE_FRAMEWORK_TITLE_ABBREV]
-**Scope:** [What this rule applies to]
+# Template for Rule [TPL_FOR_MFW_RULE] **[PRIO: HIGH]**
 
 ## Rule Statement
 
@@ -13,7 +10,7 @@
 - **[R2]**: Description of requirement with ID for compliance tracking
 - **[R3]**: Description of requirement with ID for compliance tracking
 
-**Formal Statement:**
+## Formal Statement
 ```
 e.g.
 ∀s∀a∀stakeholder (Statement(s) ∧ Actor(a) ∧ (Human(stakeholder) ∨ AI(a)))
