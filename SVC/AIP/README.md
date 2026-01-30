@@ -23,6 +23,7 @@ The **Service AI Portal (SVC/AIP)** framework provides a comprehensive architect
 - **Value Alignment**: Maintains alignment with human values and ethical standards
 - **Bias Detection**: Automated detection and mitigation of AI biases
 - **Transparency Tools**: Explainable AI capabilities and audit trails
+- **Inspired by Gemini**: This concept is influenced by suggestions form Gemini AI, which tries to ensure value alignment e.g. in AI systems.
 
 ## Framework Integration
 

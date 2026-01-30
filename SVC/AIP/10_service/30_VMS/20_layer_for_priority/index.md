@@ -14,3 +14,9 @@ No subdirectories.
 
 ---
 *Generated on 2026-01-25 09:56:25 by IndexGenerator v1.0.0*
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-29 | Initial creation | Framework Maintenance Team | Establish foundational structure |
