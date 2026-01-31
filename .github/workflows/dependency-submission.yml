@@ -9,6 +9,9 @@ on:
     # Run weekly on Mondays at 8:00 UTC
     - cron: '0 8 * * 1'
 
+permissions:
+  contents: read
+
 jobs:
   dependency-analysis:
     name: Dependency Analysis
