@@ -81,8 +81,27 @@ import shutil
 from pathlib import Path
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from MODEL_for_framework.90_tool.yaml_to_html_converter import YAMLToHTMLConverter
-from MODEL_for_framework.90_tool.md_to_html_converter import HTMLConverter
+
+# Import modules using string-based imports to avoid syntax issues
+import importlib.util
+
+# Load YAML converter
+yaml_spec = importlib.util.spec_from_file_location(
+    "yaml_to_html_converter", 
+    os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "MODEL_for_framework", "90_tool", "yaml_to_html_converter.py")
+)
+yaml_module = importlib.util.module_from_spec(yaml_spec)
+yaml_spec.loader.exec_module(yaml_module)
+YAMLToHTMLConverter = yaml_module.YAMLToHTMLConverter
+
+# Load Markdown converter
+md_spec = importlib.util.spec_from_file_location(
+    "md_to_html_converter", 
+    os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "MODEL_for_framework", "90_tool", "md_to_html_converter.py")
+)
+md_module = importlib.util.module_from_spec(md_spec)
+md_spec.loader.exec_module(md_module)
+HTMLConverter = md_module.HTMLConverter
 
 # Edge case test data
 EDGE_CASE_YAML_EMPTY = """
@@ -92,18 +111,22 @@ EDGE_CASE_YAML_MALFORMED = """
 title: "Test User Story"
 id: "US_TEST_001"
 priority: "HIGH"
+
 metadata:
   version: "V1.0.0"
   status: "TEST"
   date: "2026-01-10"
+
 story: >-
   As a test user, I want to verify the YAML to HTML conversion works correctly.
+
 acceptance_criteria:
   - id: "TC-01"
     steps:
       - "Given I have a valid YAML file"
       - "When I run the converter"
       - "Then it should generate proper HTML"
+
 related_documents:
   - type: "Test Document"
     path: "./test_document.md"
