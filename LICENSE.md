@@ -1,3 +1,3 @@
 please see ...
-[.\MODEL_for_framework\00_overview\01_legal\01_copyright_notice.md](./MODEL_for_framework/00_overview/01_legal/01_copyright_notice.md)
+[.\MODEL_for_framework\00_overview\01_legal\README_copyright_notice.md](./MODEL_for_framework/00_overview/01_legal/README_copyright_notice.md)
 
