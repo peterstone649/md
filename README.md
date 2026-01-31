@@ -5,6 +5,7 @@
 [![License: EUPL v1.2](https://img.shields.io/badge/License-EUPL%20v1.2-blue.svg)](https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12)
 [![GitHub issues](https://img.shields.io/github/issues/peterstone649/md.svg)](https://github.com/peterstone649/md/issues)
 [![GitHub stars](https://img.shields.io/github/stars/peterstone649/md.svg)](https://github.com/peterstone649/md/stargazers)
+[![Release Notes](https://img.shields.io/badge/Release_Notes-V1.4.0-blue.svg)](RELEASE_NOTES.md)
 
 **Systematic knowledge organization, AI-assisted methodologies, and collaborative framework development ecosystem.**
 
@@ -121,7 +122,7 @@ This repository establishes a comprehensive framework for **systematic framework
 - **PUB/**: Published content including books, research, and documentation
   - **PUB/BOOK/**: English AI research books and writing guides (Superintelligence, Life 3.0, Human Compatible, The Alignment Problem, Elements of Style, Style Toward Clarity and Grace)
   - **PUB/BOOK/20_AI/10_AI_Ethics/**: AI ethics documentation and guidelines
-- **transl/**: Multilingual translations directory with comprehensive coverage in 6 languages (fr, de, zh, es, ja, ru)
+- **[transl/](transl/README.md)**: Multilingual translations directory with comprehensive coverage in 6 languages (fr, de, zh, es, ja, ru)
 - **transl_re/**: Back-translated content from Spanish to English for quality verification and multilingual workflow optimization
 
 For license please see:
@@ -239,10 +240,34 @@ To contribute new translations or expand existing coverage:
 
 The multilingual translation initiative significantly enhances the project's global accessibility, making sophisticated AI research and framework methodologies available to international communities. This fosters cross-cultural understanding and collaboration on critical AI governance, safety, and ethical development topics.
 
+## 🏗️ **Recent Framework Enhancements**
+
+### **Comprehensive Terminology System**
+- **Scope Term**: Defined boundaries and limitations for framework components
+- **Objective Term**: Established desired outcomes and direction-setting
+- **Constraint Term**: Defined limitations, restrictions, and framework governance elements
+- **Plugin Term**: Created modular extension mechanisms with complexity levels
+
+### **AI Principles & Governance**
+- **Microsoft AI Principles**: Fairness, Reliability, Privacy, Inclusiveness, Transparency, Accountability
+- **STKHLD_AI_COLLAB Principles**: Human Sovereignty, Transparency, Continuous Learning
+- **Constitutional Framework**: Governance standards and policy differentiation
+
+### **GitHub Workflow Security**
+- **Fixed Permissions**: Added explicit permissions blocks to ci.yml and dependency-submission.yml
+- **Syntax Error Resolution**: Fixed Python syntax issues in analyser_for_words_in_files.py
+- **CodeQL Compliance**: Resolved all workflow security warnings
+
+### **Enhanced Integration Features**
+- **Clickable Links**: Applied comprehensive clickable link standards
+- **Cross-References**: Established seamless navigation between framework components
+- **Quality Standards**: 9-point checklists for term definition and integration quality
+
 ## Changelog
 
 | Version | Date | Changes | Stakeholder | Motivation           |
 |---------|------|---------|-------------|----------------------|
+| V1.4.0 | 2026-01-31 | Added comprehensive terminology system (Scope, Objective, Constraint, Plugin terms), AI principles framework, GitHub workflow security fixes, and enhanced integration features | AI Framework Steward | Complete framework foundation with systematic terminology, governance principles, and security compliance |
 | V1.3.0 | 2026-01-31 | Updated README.md to reflect new PUB folder structure and content organization | AI Framework Steward | Adapt documentation to current file structure with PUB/BOOK/ directory and updated content references |
 | V1.2.0 | 2026-01-22 | Added BOOK/ directory with English AI research content and transl_re/ directory for back-translated quality verification workflows | AI Framework Steward | Enhanced repository structure with direct English content access and translation quality assurance mechanisms |
 | V1.1.0 | 2026-01-18 | Major update to multilingual translations section with comprehensive coverage status, directory structure updates, and translation project completion documentation | AI Framework Steward | Complete documentation of extensive multilingual translation initiative providing global accessibility to AI research content |
