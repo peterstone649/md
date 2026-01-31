@@ -11,16 +11,16 @@ from pathlib import Path
 def test_imports():
     """Test that converter modules can be imported."""
     try:
-        # Add the parent directory to the path
-        parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        sys_path = os.path.join(parent_dir, "90_tool")
+        # The converter files are in the same directory as this test file
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        parent_dir = os.path.dirname(current_dir)  # Go up to converter directory
         
         # Test YAML converter import
-        yaml_converter_path = os.path.join(sys_path, "yaml_to_html_converter.py")
+        yaml_converter_path = os.path.join(parent_dir, "converter_for_yaml_to_html.py")
         assert os.path.exists(yaml_converter_path), f"YAML converter not found at {yaml_converter_path}"
         
         # Test Markdown converter import
-        md_converter_path = os.path.join(sys_path, "md_to_html_converter.py")
+        md_converter_path = os.path.join(parent_dir, "converter_for_md_to_html.py")
         assert os.path.exists(md_converter_path), f"Markdown converter not found at {md_converter_path}"
         
         print("All converter modules found and accessible")
@@ -30,17 +30,17 @@ def test_imports():
         raise
 
 def test_temp_file_creation():
-    """Test that temporary files can be created and cleaned up."""
+    """Test that temporary files can be created and cleaned up.""" 
     with tempfile.NamedTemporaryFile(suffix='.yaml', delete=False) as tmp:
         tmp_path = tmp.name
     
     try:
         assert os.path.exists(tmp_path), "Temporary file should exist"
-        print("✅ Temporary file creation works")
+        print("Temporary file creation works")
     finally:
         os.unlink(tmp_path)
         assert not os.path.exists(tmp_path), "Temporary file should be cleaned up"
-        print("✅ Temporary file cleanup works")
+        print("Temporary file cleanup works")
 
 def test_directory_operations():
     """Test directory operations."""
@@ -58,10 +58,10 @@ def test_directory_operations():
         assert len(files) == 1, "Should have one file in temp directory"
         assert files[0] == "test.yaml", "File should be test.yaml"
         
-        print("✅ Directory operations work correctly")
+        print("Directory operations work correctly")
 
 if __name__ == "__main__":
     test_imports()
     test_temp_file_creation()
     test_directory_operations()
-    print("✅ All basic tests passed!")
+    print("All basic tests passed!")

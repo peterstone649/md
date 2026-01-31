@@ -9,6 +9,10 @@ The file and folder references get copied by via "copy path" (right mouse on fil
 The really super cool and nice thing is that nearly every LLM model is able to work with our framework ! You simply say "this and that" (folder or filepath) is relevant for your instruct and the AI with CLINE tries grasps the context (as it is structured and easy readable for it).
 If needed it looks/reads in the "related" files (as via the links they are interconnected like html)
 
+## Objective: Release V1.5.0 STATUS: MINOR_BUGS
+8) can you create index for E:\2025_11\md\MODEL_for_framework\99_appendix via right E:\2025_11\md\MODEL_for_framework\90_tool\converter\index_generator.py that md (default in same folder) and html ((default in base + out/html folder)
+
+7)README.md : Current Way of Working Instructions see latest improvements ... E:\2025_11\md\MODEL_for_framework\99_appendix\2026_01_31_instructs_for_current_working.md link is not relative in E:\2025_11\md\README.md 
 
 2026_01_31 17:26h ...
 git commit; git push

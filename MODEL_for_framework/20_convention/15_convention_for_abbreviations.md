@@ -1,6 +1,5 @@
 # Abbreviation Convention [CONV_FOR_MFW_ABBREVIATIONS] **[PRIO: HIGH]**
 
-**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All documents within the framework (conventions, templates, axioms, strategies, and tasks)
 
 ## Rationale

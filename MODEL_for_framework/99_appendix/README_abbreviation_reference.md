@@ -98,6 +98,23 @@
 
 ---
 
+## 7. Pull Request (PR) Abbreviations
+
+| Abbreviation | Full Term | Description |
+|--------------|-----------|-------------|
+| **PR** | Pull Request | Code review and integration workflow |
+| **PR_TEMPLATE** | Pull Request Template | Standardized PR submission format |
+| **PR_REVIEW** | Pull Request Review | Code review process and feedback |
+| **PR_MERGE** | Pull Request Merge | Integration of changes into main branch |
+| **PR_CLOSE** | Pull Request Close | Rejection or cancellation of PR |
+| **PR_DRAFT** | Draft Pull Request | Work-in-progress PR not ready for review |
+| **PR_READY** | Ready for Review | PR marked as ready for code review |
+| **PR_APPROVED** | Approved Pull Request | PR approved for merging |
+| **PR_CONFLICTS** | Conflicting Pull Request | PR with merge conflicts to resolve |
+| **PR_REBASE** | Rebase Pull Request | Update PR with latest base branch changes |
+
+---
+
 **See Also:** [CONV_FOR_ABBREVIATIONS](../20_convention/15_convention_for_abbreviations.md) for full documentation.
 
 
