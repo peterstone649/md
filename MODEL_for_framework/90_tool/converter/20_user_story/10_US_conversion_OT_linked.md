@@ -1,6 +1,4 @@
-# User Story: Automatic Conversion of Linked Documents (US_MFR_CONVERSION_OT_LINKED) **[PRIO: MEDIUM]**
-
-**Version: V0.1.0** **Status: DRAFT** **Date: 2026-01-10**
+# User Story: Automatic Conversion of Linked Documents (US_MFW_CONVERSION_OT_LINKED) **[PRIO: MEDIUM]**
 
 **As a** Framework Documenter,
 **I want** the HTML conversion tool to automatically find and convert any linked Markdown documents that it references,

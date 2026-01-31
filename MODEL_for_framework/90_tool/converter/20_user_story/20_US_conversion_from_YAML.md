@@ -1,6 +1,4 @@
-# User Story: Generate HTML from YAML Files (US_MFR_CONVERSION_FROM_YAML) **[PRIO: HIGH]**
-
-**Version: V0.2.0** **Status: ACTIVE** **Date: 2026-01-10**
+# User Story: Generate HTML from YAML Files (US_MFW_CONVERSION_FROM_YAML) **[PRIO: HIGH]**
 
 **As a** Framework Maintainer,
 **I want to** automatically generate styled HTML documents from all YAML files in the framework,

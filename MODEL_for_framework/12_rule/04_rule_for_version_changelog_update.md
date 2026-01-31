@@ -54,6 +54,7 @@ A comprehensive changelog provides traceability, documents decision rationale, a
 
 | Version | Date | Change Content | Stakeholders | Motivation |
 |---------|------|---------|-------------|----------------------|
+| V1.0.2 | 2026-01-31 | Comprehensive framework updates: Added RELEASE_NOTES.md, enhanced README.md with clickable links, implemented index_generator.py with comprehensive testing, fixed Path object errors, adapted changelog from converter_for_md_to_html.py, updated US_MFR to US_MFW references, removed version lines from user stories, translated Spanish directory structure, added working instructions reference | AI Framework Steward | Major framework enhancement and standardization across all components |
 | V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V0.1.1 | 2026-01-15 | Added Version Uniqueness section to Changelog Entry Requirements | Framework Steward | Strengthen changelog integrity by preventing duplicate version entries |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational structure |

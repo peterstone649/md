@@ -24,6 +24,11 @@ For detailed information, see the [Detailed README](README_OT_detailed.md).
 3. Use terminology standards from `30_terminology/`
 4. Apply validation frameworks from `35_axiom/`
 
+## Working with the Framework
+
+For detailed instructions on how to work with this framework, including development techniques and best practices, see our [Working Instructions](99_appendix/2026_01_31_instructs_for_current_working.md).
+
+
 ## Directory Structure
 
 ```

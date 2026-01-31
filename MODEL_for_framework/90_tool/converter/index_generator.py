@@ -25,8 +25,21 @@ from pathlib import Path
 from datetime import datetime
 import logging
 
-__version__ = "1.0.0"
+# Import the shared directory manager for consistent output paths
+from manager_for_dir_OT_base import ManagerForDirOTBase
+
+__version__ = "1.2.0"
 __status__ = "ACTIVE"
+
+"""
+CHANGELOG
+
+| Version | Date       | Changes | Stakeholder | Rationale/Motivation |
+|---------|------------|---------|-------------|----------------------|
+| V1.2.0  | 2026-01-31 | Updated to use ManagerForDirOTBase for consistent output path creation | Framework Steward | Align with framework conventions and ensure consistent output directory structure |
+| V1.1.0  | 2026-01-31 | Added comprehensive changelog following framework conventions | Framework Steward | Align with framework documentation standards and provide clear version history |
+| V1.0.0  | 2026-01-31 | Initial implementation with README-driven index creation | AI Coder | Core functionality for generating index files when README files exist |
+"""
 
 # Configure logging
 logging.basicConfig(
@@ -35,9 +48,10 @@ logging.basicConfig(
 )
 
 class IndexGenerator:
-    def __init__(self, base_path=None):
-        """Initialize the index generator with optional base path."""
-        self.base_path = Path(base_path) if base_path else Path.cwd()
+    def __init__(self, project_base=None):
+        """Initialize the index generator with optional project base path."""
+        # Use the shared directory manager for consistent path handling
+        self.dir_manager = ManagerForDirOTBase(project_base)
         self.created_files = []
         self.updated_files = []
 
@@ -75,20 +89,20 @@ class IndexGenerator:
     def _generate_markdown_index(self, folder_path, files, subfolders):
         """Generate Markdown index content."""
         try:
-            relative_path = folder_path.relative_to(self.base_path)
+            relative_path = folder_path.relative_to(self.dir_manager.get_project_base())
             title = f"Index of {relative_path}"
         except ValueError:
-            # If folder_path is not relative to base_path, use the folder name
+            # If folder_path is not relative to project base, use the folder name
             title = f"Index of {folder_path.name}"
 
-        # Check for README file to use as jump address
-        readme_files = ['README.md', 'README.txt', 'readme.md', 'readme.txt']
+        # Check for README file to use as jump address (supports *README* pattern)
+        import glob
+        readme_pattern = '*README*'
+        readme_files = list(folder_path.glob(readme_pattern))
         readme_file = None
-        for readme in readme_files:
-            readme_path = folder_path / readme
-            if readme_path.exists():
-                readme_file = readme
-                break
+        if readme_files:
+            # Use the first README file found
+            readme_file = readme_files[0].name
 
         content = f"""# {title}
 
@@ -106,7 +120,7 @@ This folder contains the following files and subdirectories:
         # Add files list (excluding README if it exists)
         if files:
             for file in files:
-                if readme_file and file.name.lower() in [r.lower() for r in readme_files]:
+                if readme_file and file.name.lower() in [r.name.lower() for r in readme_files]:
                     continue  # Skip README as it's already featured
                 content += f"- [{file.name}]({file.name})\n"
         else:
@@ -128,20 +142,20 @@ This folder contains the following files and subdirectories:
     def _generate_html_index(self, folder_path, files, subfolders):
         """Generate HTML index content."""
         try:
-            relative_path = folder_path.relative_to(self.base_path)
+            relative_path = folder_path.relative_to(self.dir_manager.get_project_base())
             title = f"Index of {relative_path}"
         except ValueError:
-            # If folder_path is not relative to base_path, use the folder name
+            # If folder_path is not relative to project base, use the folder name
             title = f"Index of {folder_path.name}"
 
-        # Check for README file to use as jump address
-        readme_files = ['README.md', 'README.txt', 'readme.md', 'readme.txt']
+        # Check for README file to use as jump address (supports *README* pattern)
+        import glob
+        readme_pattern = '*README*'
+        readme_files = list(folder_path.glob(readme_pattern))
         readme_file = None
-        for readme in readme_files:
-            readme_path = folder_path / readme
-            if readme_path.exists():
-                readme_file = readme
-                break
+        if readme_files:
+            # Use the first README file found
+            readme_file = readme_files[0].name
 
         content = f"""<!DOCTYPE html>
 <html lang="en">
@@ -206,13 +220,8 @@ This folder contains the following files and subdirectories:
 """
         # If README exists, make it the primary jump address
         if readme_file:
-            # Determine the href: if .md or .txt, assume .html
-            if readme_file.lower().endswith(('.md', '.txt')):
-                readme_href = readme_file.rsplit('.', 1)[0] + '.html'
-            else:
-                readme_href = readme_file
             content += f"""    <div class="readme-jump">
-        <h3>📁 <a href="{readme_href}">{readme_file}</a></h3>
+        <h3>📁 <a href="{readme_file}">{readme_file}</a></h3>
         <p><em>Jump to main documentation for this folder</em></p>
     </div>
 
@@ -225,7 +234,7 @@ This folder contains the following files and subdirectories:
         # Add files list (excluding README if it exists)
         if files:
             for file in files:
-                if readme_file and file.name.lower() in [r.lower() for r in readme_files]:
+                if readme_file and file.name.lower() in [r.name.lower() for r in readme_files]:
                     continue  # Skip README as it's already featured
                 content += f"        <li><a href=\"{file.name}\">{file.name}</a></li>\n"
         else:
@@ -280,6 +289,9 @@ This folder contains the following files and subdirectories:
         if recursive:
             for subfolder in folder_path.iterdir():
                 if subfolder.is_dir():
+                    # Skip hidden directories
+                    if subfolder.name.startswith('.'):
+                        continue
                     self.create_index_files(subfolder, format, recursive)
 
         return True
@@ -287,23 +299,32 @@ This folder contains the following files and subdirectories:
     def _create_single_index(self, folder_path, format):
         """Create a single index file."""
         if format == 'md':
+            # MD files go in the same folder as the README
             index_file = folder_path / 'index.md'
             extension = 'md'
         else:
-            index_file = folder_path / 'index.html'
+            # HTML files go to the standardized output directory
+            index_file_path = self.dir_manager.generate_html_path(str(folder_path / 'index.html'))
+            index_file = Path(index_file_path)
             extension = 'html'
+            
+            # Ensure the output directory exists
+            self.dir_manager.ensure_output_directory(index_file_path)
 
         # Check if index file already exists
         if index_file.exists():
             logging.warning(f"Index file already exists: {index_file}")
             return
 
-        # Check if README file exists in the folder
-        readme_files = ['README.md', 'README.txt', 'readme.md', 'readme.txt']
-        readme_exists = any((folder_path / readme).exists() for readme in readme_files)
+        # Check if README file exists in the folder (supports *README* pattern)
+        import glob
+        readme_pattern = '*README*'
+        readme_files = list(folder_path.glob(readme_pattern))
+        readme_exists = len(readme_files) > 0
         
-        if readme_exists and format == 'md':
-            logging.info(f"README file exists in {folder_path}, skipping index.md generation")
+        # Only create index.md if README exists (this is the key change)
+        if not readme_exists and format == 'md':
+            logging.info(f"No README file exists in {folder_path}, skipping index.md generation")
             return
 
         # Generate content and write to file
@@ -391,7 +412,7 @@ def main():
         for file in generator.created_files:
             logging.info(f"  - {file}")
 
-def generate_index_for_folder(folder_path, format='both'):
+def generate_index_for_folder(folder_path, format='both', project_base=None):
     """
     Direct function call for generating index files.
     This allows the index generator to be called programmatically from other tools.
@@ -399,11 +420,12 @@ def generate_index_for_folder(folder_path, format='both'):
     Args:
         folder_path (str): Path to the folder
         format (str): Output format ('md', 'html', or 'both')
+        project_base (str): Optional project base path for consistent output directory structure
 
     Returns:
         bool: True if successful, False otherwise
     """
-    generator = IndexGenerator()
+    generator = IndexGenerator(project_base)
     return generator.create_index_files(folder_path, format, recursive=False)
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 # Release Notes
 
-## 🚀 Latest Release (V1.4.0) - January 31, 2026
+## 🚀 Latest Release (V1.5.0) - January 31, 2026
 
 ### 🎯 **Major Framework Enhancements**
 
@@ -25,8 +25,16 @@
 - **Cross-References**: Established seamless navigation between framework components
 - **Quality Standards**: 9-point checklists for term definition and integration quality
 
+#### **Recent Framework Enhancements (January 31, 2026)**
+- **Index Generator Implementation**: Created comprehensive index.md generation tool with full test suite
+- **US_MFR to US_MFW Standardization**: Updated all user story references across converter directory
+- **Spanish Translation Completion**: Fully translated directory structure from German to Spanish
+- **Working Instructions Integration**: Added direct references to development workflow documentation
+- **Changelog System Enhancement**: Updated all components with comprehensive version tracking
+- **Tool Testing Infrastructure**: Implemented robust testing framework for converter tools
+
 ### 📊 **Release Summary**
-- **Version**: V1.4.0
+- **Version**: V1.5.0
 - **Date**: 2026-01-31
 - **Stakeholder**: AI Framework Steward
 - **Type**: Major Release (Breaking Changes)
@@ -37,81 +45,33 @@
 - **Governance Standards**: Constitutional framework and policy differentiation
 - **Security Compliance**: CodeQL workflow fixes and permission management
 - **Integration Standards**: Enhanced cross-reference and navigation systems
+- **Tool Infrastructure**: Comprehensive testing and validation framework
+- **Internationalization**: Complete Spanish translation of directory structure
+- **Documentation Standards**: Enhanced working instructions and development guidelines
 
 ### 📚 **Content & Documentation**
-- **Enhanced README.md**: Updated with new framework structure
+- **Enhanced README.md**: Updated with new framework structure and recent enhancements
 - **Translation System**: Dedicated `transl/README.md` for multilingual documentation
 - **Quality Assurance**: Comprehensive documentation standards and validation
-
-## Changelog of README.md
-
-| Version | Date | Changes | Stakeholder | Motivation           |
-|---------|------|---------|-------------|----------------------|
-| V1.4.0 | 2026-01-31 | Added comprehensive terminology system (Scope, Objective, Constraint, Plugin terms), AI principles framework, GitHub workflow security fixes, and enhanced integration features | AI Framework Steward | Complete framework foundation with systematic terminology, governance principles, and security compliance |
-| V1.3.0 | 2026-01-31 | Updated README.md to reflect new PUB folder structure and content organization | AI Framework Steward | Adapt documentation to current file structure with PUB/BOOK/ directory and updated content references |
-| V1.2.0 | 2026-01-22 | Added BOOK/ directory with English AI research content and transl_re/ directory for back-translated quality verification workflows | AI Framework Steward | Enhanced repository structure with direct English content access and translation quality assurance mechanisms |
-| V1.1.0 | 2026-01-18 | Major update to multilingual translations section with comprehensive coverage status, directory structure updates, and translation project completion documentation | AI Framework Steward | Complete documentation of extensive multilingual translation initiative providing global accessibility to AI research content |
-| V1.0.0 | 2026-01-16 | Initial repository setup with framework models and multilingual translation infrastructure | Peter Stone | Establish comprehensive framework for systematic knowledge organization and AI-assisted methodologies |
-
----
+- **Working Instructions**: Direct integration of development workflow documentation
+- **Tool Documentation**: Complete documentation for index generator and converter tools
 
 ## 📋 **Complete Release History**
 
-### **V1.3.0** - January 31, 2026
-**Type**: Minor Release
-**Stakeholder**: AI Framework Steward
+### **Latest Releases**
 
-#### **Changes**
-- Updated README.md to reflect new PUB folder structure and content organization
-- Enhanced repository structure with PUB/BOOK/ directory
-- Updated content references and documentation links
+| Version | Date | Type | Stakeholder | Summary |
+|---------|------|------|-------------|---------|
+| [**V1.5.0**](release_notes/RELEASE_NOTES_V1.5.0.md) | 2026-01-31 | Major Release | AI Framework Steward | Comprehensive framework enhancements with terminology system, AI principles, security compliance, and tool infrastructure |
+| [**V1.4.0**](release_notes/RELEASE_NOTES_V1.4.0.md) | 2026-01-31 | Major Release | AI Framework Steward | Framework foundation with systematic terminology, governance principles, and security compliance |
+| [**V1.3.0**](release_notes/RELEASE_NOTES_V1.3.0.md) | 2026-01-31 | Minor Release | AI Framework Steward | Repository structure updates with PUB/BOOK/ directory and content organization |
+| [**V1.2.0**](release_notes/RELEASE_NOTES_V1.2.0.md) | 2026-01-22 | Minor Release | AI Framework Steward | Enhanced repository structure with English content access and translation quality assurance |
+| [**V1.1.0**](release_notes/RELEASE_NOTES_V1.1.0.md) | 2026-01-18 | Minor Release | AI Framework Steward | Extensive multilingual translation initiative providing global accessibility to AI research content |
+| [**V1.0.0**](release_notes/RELEASE_NOTES_V1.0.0.md) | 2026-01-16 | Initial Release | Peter Stone | Comprehensive framework for systematic knowledge organization and AI-assisted methodologies |
 
-#### **Motivation**
-Adapt documentation to current file structure with PUB/BOOK/ directory and updated content references
+### **Detailed Release Information**
 
----
-
-### **V1.2.0** - January 22, 2026
-**Type**: Minor Release
-**Stakeholder**: AI Framework Steward
-
-#### **Changes**
-- Added BOOK/ directory with English AI research content
-- Created transl_re/ directory for back-translated quality verification workflows
-- Enhanced repository structure with direct English content access
-- Implemented translation quality assurance mechanisms
-
-#### **Motivation**
-Enhanced repository structure with direct English content access and translation quality assurance mechanisms
-
----
-
-### **V1.1.0** - January 18, 2026
-**Type**: Minor Release
-**Stakeholder**: AI Framework Steward
-
-#### **Changes**
-- Major update to multilingual translations section
-- Comprehensive coverage status documentation
-- Directory structure updates for translation system
-- Translation project completion documentation
-
-#### **Motivation**
-Complete documentation of extensive multilingual translation initiative providing global accessibility to AI research content
-
----
-
-### **V1.0.0** - January 16, 2026
-**Type**: Initial Release
-**Stakeholder**: Peter Stone
-
-#### **Changes**
-- Initial repository setup with framework models
-- Multilingual translation infrastructure implementation
-- Core framework structure establishment
-
-#### **Motivation**
-Establish comprehensive framework for systematic knowledge organization and AI-assisted methodologies
+For detailed information about each release, click on the version links above or visit the individual release note files in the `release_notes/` directory.
 
 ---
 
@@ -182,4 +142,4 @@ For questions, issues, or contributions related to this release:
 
 **Release Notes maintained by AI Framework Steward**
 **Last Updated**: January 31, 2026
-**Next Release**: V1.5.0 (Planned)
+**Next Release**: V1.6.0 (Planned)

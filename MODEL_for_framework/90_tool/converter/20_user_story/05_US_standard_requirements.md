@@ -1,6 +1,4 @@
-# User Story: Standard Framework Requirements (US_MFR_STANDARD_REQUIREMENTS) **[PRIO: HIGH]**
-
-**Version: V1.0.0** **Status: ACTIVE** **Date: 2026-01-10**
+# User Story: Standard Framework Requirements (US_MFW_STANDARD_REQUIREMENTS) **[PRIO: HIGH]**
 
 **As a** Framework Developer,
 **I want** all tools and components to follow standard framework requirements,
