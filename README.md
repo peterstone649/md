@@ -118,7 +118,10 @@ This repository establishes a comprehensive framework for **systematic framework
 
 ## Content Directories
 
-- **BOOK/**: English AI research books and writing guides (Superintelligence, Life 3.0, Human Compatible, The Alignment Problem, Elements of Style, Style Toward Clarity and Grace)
+- **PUB/**: Published content including books, research, and documentation
+  - **PUB/BOOK/**: English AI research books and writing guides (Superintelligence, Life 3.0, Human Compatible, The Alignment Problem, Elements of Style, Style Toward Clarity and Grace)
+  - **PUB/BOOK/20_AI/10_AI_Ethics/**: AI ethics documentation and guidelines
+- **transl/**: Multilingual translations directory with comprehensive coverage in 6 languages (fr, de, zh, es, ja, ru)
 - **transl_re/**: Back-translated content from Spanish to English for quality verification and multilingual workflow optimization
 
 For license please see:
@@ -187,7 +190,7 @@ The `transl/` directory serves as the central multilingual repository, making cr
 Comprehensive translations of foundational AI literature:
 - **Superintelligence by Nick Bostrom**: Fully translated to 6 languages (zh, es, ja, ru, fr, de) - **COMPLETE**
 - **Life 3.0 by Max Tegmark**: Fully translated to 6 languages (fr, de, zh, es, ja, ru) - **COMPLETE**
-- **AI Revolution Thesis**: Translated to 5 languages (fr, de, zh, es, ja - missing ru)
+- **AI Revolution Thesis**: Translated to 6 languages (fr, de, zh, es, ja, ru) - **COMPLETE**
 - **Weapons of Math Destruction by Cathy O'Neil**: Pending translations
 
 #### Writing & Style Guides (10_writing/)
@@ -240,6 +243,7 @@ The multilingual translation initiative significantly enhances the project's glo
 
 | Version | Date | Changes | Stakeholder | Motivation           |
 |---------|------|---------|-------------|----------------------|
+| V1.3.0 | 2026-01-31 | Updated README.md to reflect new PUB folder structure and content organization | AI Framework Steward | Adapt documentation to current file structure with PUB/BOOK/ directory and updated content references |
 | V1.2.0 | 2026-01-22 | Added BOOK/ directory with English AI research content and transl_re/ directory for back-translated quality verification workflows | AI Framework Steward | Enhanced repository structure with direct English content access and translation quality assurance mechanisms |
 | V1.1.0 | 2026-01-18 | Major update to multilingual translations section with comprehensive coverage status, directory structure updates, and translation project completion documentation | AI Framework Steward | Complete documentation of extensive multilingual translation initiative providing global accessibility to AI research content |
 | V1.0.0 | 2026-01-16 | Initial repository setup with framework models and multilingual translation infrastructure | Peter Stone | Establish comprehensive framework for systematic knowledge organization and AI-assisted methodologies |

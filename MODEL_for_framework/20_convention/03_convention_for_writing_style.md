@@ -215,7 +215,7 @@
 - **20_convention/:** Writing conventions complement existing file naming and formatting standards
 - **30_terminology/:** Writing terms integrated with framework terminology
 - **15_template/:** Writing templates added to template library
-- **80_strategy_for_implemention/:** Writing strategies included in implementation approaches
+- **45_strategy_for_implemention/:** Writing strategies included in implementation approaches
 
 ### **Field-Specific Applications**
 - **FIELDCphilosophy:** Enhanced clarity for complex philosophical arguments

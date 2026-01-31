@@ -37,7 +37,7 @@
 - **Impact:** Inflated confidence undermines credibility
 
 ### 6. **V0.2.0 Task File Date Error**
-- **File:** `80_strategy_for_implemention/90_task/task_for_fixing_problems_V0.2.0.md`
+- **File:** `45_strategy_for_implemention/90_task/task_for_fixing_problems_V0.2.0.md`
 - **Issue:** Date says "99:00h" which is invalid
 - **Should be:** "17:48h" or proper format
 

@@ -86,7 +86,7 @@ _29/MODEL_for_framework/
 │   ├── 03_axiom_of_terminological_consistency.md
 │   ├── 04axiom_of_template_driven_standardization.md
 │   └── 10axiom_of_epistemological_uncertainty.md
-└── 80_strategy_for_implemention/          # Implementation strategies
+└── 45_strategy_for_implemention/          # Implementation strategies
     ├── 01_design_pattern_application_strategy.md
     └── 10_writing/
         ├── 02_writing_implementation_strategy.md

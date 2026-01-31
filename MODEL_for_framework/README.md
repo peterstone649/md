@@ -36,7 +36,7 @@ MODEL_for_framework/
 ├── 30_terminology/      # Terminology
 ├── 35_axiom/           # Validation
 ├── 40_feedback/        # Feedback
-├── 80_strategy_for_implemention/  # Implementation
+├── 45_strategy_for_implemention/  # Implementation
 ├── 90_tool/            # Tools
 └── 99_appendix/        # Reference
 ```

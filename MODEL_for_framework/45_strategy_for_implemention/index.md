@@ -1,4 +1,4 @@
-# Index of 80_strategy_for_implemention
+# Index of 45_strategy_for_implemention
 
 This folder contains the following files and subdirectories:
 

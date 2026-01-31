@@ -99,7 +99,7 @@
 - Abstract concepts need more concrete examples
 - Variable quality across documents
 
-### **Strategy Documents (80_strategy_for_implemention/)**
+### **Strategy Documents (45_strategy_for_implemention/)**
 **Documents:** 4 strategy files
 **Total Words:** ~6,000 words
 **Document Type:** Implementation methodologies
