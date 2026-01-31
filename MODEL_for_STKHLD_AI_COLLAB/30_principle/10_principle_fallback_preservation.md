@@ -1,6 +1,4 @@
-[17_template_for_principle.md](../15_template/17_template_for_principle.md)[PRIN_MSHCOL_PROPORTIONALITY](./03_principle_proportionality.md)[PRIN_MSHCOL_REVERSIBILITY](./07_principle_reversibility.md)[PRIN_MSHCOL_HUMAN_SOVEREIGNTY](./01_principle_human_sovereignty.md)# 10. Principle of Fallback Preservation (PRIN_MSHCOL_FALLBACK_PRESERVATION) **[PRIO: HIGH]**
-
-**Version: V0.1.0** **Status: OPEN** **Date: 2026-01-09**
+# Fallback Preservation [PRINC_FOR_STKHLD_AICOL_FALLBACK_PRESERVATION] **[PRIO: HIGH]**
 
 **We establish fallback preservation as a core principle requiring that human capability and manual processes be maintained as fallback when AI systems fail.**
 
@@ -70,12 +68,14 @@ The Principle of Fallback Preservation establishes that stakeholder-AI collabora
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V0.1.3 | 2026-01-31 | Removed version and status lines from title section per RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE | Framework Admin | Ensure compliance with version line removal requirements |
+| V0.1.2 | 2026-01-31 | Applied version changelog update rule - standardized format with all 5 required columns | Framework Admin | Ensure compliance with RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE |
 | V0.1.1 | 2026-01-10 | Standardized principle references to PRIN_MSHCOL_* format | AI Framework Steward | Ensure consistent naming convention across all principle cross-references |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational fallback preservation structure |
 
 **Version History Guidelines:**
 - **Stakeholder**: Document the person or role responsible for the change
-- **Rationale/Motivation**: Explain why the change was made (e.g., "Added fallback requirements based on stakeholder feedback")
+- **Rationale/Motivation**: Explain why the change was made (e.g., "Added fallback mechanisms based on stakeholder feedback")
 - **Traceability**: Each version entry links to a documented decision or request if this exists
 
 ---
@@ -88,10 +88,3 @@ The Principle of Fallback Preservation establishes that stakeholder-AI collabora
 **Template Reference:** 
 **Date:** 2026-01-09
 **Framework:** MODEL_for_stakeholder_AI_collab
-**Date:** 2026-01-09
-
-## Changelog
-
-| Version | Date | Change Content | Stakeholders | Motivation |
-|---------|------|---------|-------------|----------------------|
-| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

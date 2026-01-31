@@ -1,4 +1,4 @@
-# Abbreviation Reference for MODEL_for_STKHLD_AI_COLLAB
+# Abbreviation Reference for MSTKHLD_AICOL
 
 This document provides a comprehensive reference for all abbreviations used within the MODEL_for_STKHLD_AI_COLLAB framework.
 
@@ -11,7 +11,7 @@ This document provides a comprehensive reference for all abbreviations used with
 | **EUPL** | European Union Public License | Version 1.2 license governing framework usage |
 | **FRAMEWORK_OVERVIEW** | Framework Overview | Foundational overview document identifier |
 | **MODEL_for_STKHLD_AI_COLLAB** | Model for Stakeholder AI Collaboration | The complete framework name |
-| **MODEL_SHCOL**  | Model for Stakeholder AI Collaboration | The framework abreviation for reference constants |
+| **MSTKHLD_AICOL**  | Model for Stakeholder AI Collaboration | The framework abreviation for reference constants |
 
 ## Principle Abbreviations
 
@@ -79,7 +79,7 @@ This document provides a comprehensive reference for all abbreviations used with
 | Abbreviation | Full Form | Description |
 |--------------|-----------|-------------|
 | **SHCOL** | Stakeholder Collaboration | Short form for stakeholder collaboration context |
-| **STKHLD** | Stakeholder | Stakeholder abbreviation used in framework naming |
+| **MSTKHLD_AI** | Stakeholder | Stakeholder abbreviation used in framework naming |
 
 ## Usage Notes
 

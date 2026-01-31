@@ -1,6 +1,4 @@
-[17_template_for_principle.md](../15_template/17_template_for_principle.md)[PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md)[PRIN_MSHCOL_CONTEXT_PRESERVATION](./06_principle_context_preservation.md)[PRIN_MSHCOL_ACCOUNTABILITY](./04_principle_accountability.md)# 7. Principle of Reversibility (PRIN_MSHCOL_REVERSIBILITY) **[PRIO: HIGH]**
-
-**Version: V0.1.0** **Status: OPEN** **Date: 2026-01-09**
+# Reversibility [PRINC_FOR_STKHLD_AICOL_REVERSIBILITY] **[PRIO: HIGH]**
 
 **We establish reversibility as a core principle requiring that all AI-assisted changes be reversible and auditable in stakeholder-AI collaboration.**
 
@@ -74,6 +72,8 @@ The Principle of Reversibility establishes that stakeholder-AI collaboration mus
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V0.1.3 | 2026-01-31 | Removed version and status lines from title section per RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE | Framework Admin | Ensure compliance with version line removal requirements |
+| V0.1.2 | 2026-01-31 | Applied version changelog update rule - standardized format with all 5 required columns | Framework Admin | Ensure compliance with RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE |
 | V0.1.1 | 2026-01-10 | Standardized principle references to PRIN_MSHCOL_* format | AI Framework Steward | Ensure consistent naming convention across all principle cross-references |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational reversibility structure |
 
@@ -92,9 +92,3 @@ The Principle of Reversibility establishes that stakeholder-AI collaboration mus
 **Template Reference:** 
 **Date:** 2026-01-09
 **Framework:** MODEL_for_stakeholder_AI_collab
-
-## Changelog
-
-| Version | Date | Change Content | Stakeholders | Motivation |
-|---------|------|---------|-------------|----------------------|
-| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

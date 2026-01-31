@@ -118,18 +118,9 @@ N/A (Initial principle)
 - [ ] Override mechanisms are accessible and functional
 - [ ] Audit trails maintained for all decisions
 
+---
 
-**Version History Guidelines:**
-- **Stakeholder**: Document the person or role responsible for the change
-- **Rationale/Motivation**: Explain why the change was made (e.g., "Added decision authority matrix based on stakeholder feedback")
-- **Traceability**: Each version entry links to a documented decision or request if this exists
-
-**Template Version:** V0.1.1 **Date:** 2026-01-10
-**Template Reference:** 
-**Framework:** MODEL_for_stakeholder_AI_collab
-**Framework Version:** V1.0 **Date:** 2026-01-10
-
-## Changelog
+## 10. Changelog
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
@@ -138,3 +129,19 @@ N/A (Initial principle)
 | V0.1.2 | 2026-01-10 | Updated document metadata to new list-based format. | AI Framework Steward | To align with updated template standards for metadata. |
 | V0.1.1 | 2026-01-10 | Standardized principle references to PRIN_MSHCOL_* format | AI Framework Steward | Ensure consistent naming convention across all principle cross-references |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational human sovereignty structure |
+
+**Version History Guidelines:**
+- **Stakeholder**: Document the person or role responsible for the change
+- **Rationale/Motivation**: Explain why the change was made (e.g., "Added decision authority matrix based on stakeholder feedback")
+- **Traceability**: Each version entry links to a documented decision or request if this exists
+
+---
+
+**End of Principle**
+
+---
+
+**Template Version:** V0.1.1 **Date:** 2026-01-10
+**Template Reference:** 
+**Framework:** MODEL_for_stakeholder_AI_collab
+**Framework Version:** V1.0 **Date:** 2026-01-10

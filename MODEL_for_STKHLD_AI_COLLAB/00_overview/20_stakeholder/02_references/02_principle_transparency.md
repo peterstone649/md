@@ -118,17 +118,9 @@ N/A (Initial principle)
 - [ ] Stakeholders can identify AI involvement
 - [ ] Limitations are communicated
 
-**Version History Guidelines:**
-- **Stakeholder**: Document the person or role responsible for the change
-- **Rationale/Motivation**: Explain why the change was made (e.g., "Added disclosure requirements based on stakeholder feedback")
-- **Traceability**: Each version entry links to a documented decision or request if this exists
+---
 
-**Template Version:** V1.0
-**Template Reference:** 
-**Date:** 2026-01-09
-**Framework:** MODEL_for_stakeholder_AI_collab
-
-## Changelog
+## 10. Changelog
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
@@ -136,3 +128,19 @@ N/A (Initial principle)
 | V0.1.2 | 2026-01-31 | Applied version changelog update rule - standardized format with all 5 required columns | Framework Admin | Ensure compliance with RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE |
 | V0.1.1 | 2026-01-10 | Standardized principle references to PRIN_MSHCOL_* format | AI Framework Steward | Ensure consistent naming convention across all principle cross-references |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational transparency structure |
+
+**Version History Guidelines:**
+- **Stakeholder**: Document the person or role responsible for the change
+- **Rationale/Motivation**: Explain why the change was made (e.g., "Added disclosure requirements based on stakeholder feedback")
+- **Traceability**: Each version entry links to a documented decision or request if this exists
+
+---
+
+**End of Principle**
+
+---
+
+**Template Version:** V1.0
+**Template Reference:** 
+**Date:** 2026-01-09
+**Framework:** MODEL_for_stakeholder_AI_collab

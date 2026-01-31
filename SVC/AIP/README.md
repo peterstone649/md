@@ -144,4 +144,5 @@ This framework is licensed under the same terms as the MODEL_for_framework. See 
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V0.1.1 | 2026-01-30 | VMS explain origin | Framework Steward | :-) |
 | V0.1.0 | 2026-01-13 | Initial framework documentation | Framework Steward | Establish comprehensive overview of SVC/AIP framework and its integration with stakeholder AI collaboration model |

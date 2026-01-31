@@ -1,6 +1,4 @@
-[PRIN_MSHCOL_INCREMENTAL_INTEGRATION](./08_principle_incremental_integration.md)[PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md)[PRIN_MSHCOL_QUALITY_ASSURANCE](./09_principle_quality_assurance.md)# 12. Principle of Continuous Learning (PRIN_MSHCOL_CONTINUOUS_LEARNING) **[PRIO: MEDIUM]**
-
-**Version: V0.1.0** **Status: OPEN** **Date: 2026-01-09**
+# Continuous Learning [PRINC_FOR_STKHLD_AICOL_CONTINUOUS_LEARNING] **[PRIO: MEDIUM]**
 
 **We establish continuous learning as a core principle requiring that stakeholder-AI collaboration frameworks evolve based on stakeholder feedback and outcomes.**
 
@@ -71,6 +69,9 @@ The Principle of Continuous Learning establishes that stakeholder-AI collaborati
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V0.1.4 | 2026-01-31 | Removed version and status lines from title section per RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE | Framework Admin | Ensure compliance with version line removal requirements |
+| V0.1.3 | 2026-01-31 | Removed version and status lines from title section per RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE | Framework Admin | Ensure compliance with version line removal requirements |
+| V0.1.2 | 2026-01-31 | Applied version changelog update rule - standardized format with all 5 required columns | Framework Admin | Ensure compliance with RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE |
 | V0.1.1 | 2026-01-10 | Standardized principle references to PRIN_MSHCOL_* format | AI Framework Steward | Ensure consistent naming convention across all principle cross-references |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational continuous learning structure |
 
@@ -86,12 +87,6 @@ The Principle of Continuous Learning establishes that stakeholder-AI collaborati
 ---
 
 **Template Version:** V1.0
+**Template Reference:** 
 **Date:** 2026-01-09
 **Framework:** MODEL_for_stakeholder_AI_collab
-**Date:** 2026-01-09
-
-## Changelog
-
-| Version | Date | Change Content | Stakeholders | Motivation |
-|---------|------|---------|-------------|----------------------|
-| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

@@ -1,6 +1,4 @@
-[17_template_for_principle.md](../15_template/17_template_for_principle.md)[PRIN_MSHCOL_ITERATIVE_VALIDATION](./05_principle_iterative_validation.md)[PRIN_MSHCOL_TRANSPARENCY](./02_principle_transparency.md)[PRIN_MSHCOL_QUALITY_ASSURANCE](./09_principle_quality_assurance.md)# 11. Principle of Bias Mitigation (PRIN_MSHCOL_BIAS_MITIGATION) **[PRIO: HIGH]**
-
-**Version: V0.1.0** **Status: OPEN** **Date: 2026-01-09**
+# Bias Mitigation [PRINC_FOR_STKHLD_AICOL_BIAS_MITIGATION] **[PRIO: HIGH]**
 
 **We establish bias mitigation as a core principle requiring active detection and correction of AI-generated biases in stakeholder-AI collaboration.**
 
@@ -71,6 +69,9 @@ The Principle of Bias Mitigation establishes that stakeholder-AI collaboration m
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V0.1.4 | 2026-01-31 | Removed version and status lines from title section per RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE | Framework Admin | Ensure compliance with version line removal requirements |
+| V0.1.3 | 2026-01-31 | Removed version and status lines from title section per RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE | Framework Admin | Ensure compliance with version line removal requirements |
+| V0.1.2 | 2026-01-31 | Applied version changelog update rule - standardized format with all 5 required columns | Framework Admin | Ensure compliance with RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE |
 | V0.1.1 | 2026-01-10 | Standardized principle references to PRIN_MSHCOL_* format | AI Framework Steward | Ensure consistent naming convention across all principle cross-references |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational bias mitigation structure |
 
@@ -81,14 +82,12 @@ The Principle of Bias Mitigation establishes that stakeholder-AI collaboration m
 - **Traceability**: Each version entry links to a documented decision or request if this exists
 
 ---
-- **Template Version:** V1.0
-- **Template Reference:** 
-- **Date:** 2026-01-09
-- **Framework:** MODEL_for_stakeholder_AI_collab
-- **Framework Version:V1.0** **Date:** 2026-01-09
 
-## Changelog
+**End of Principle**
 
-| Version | Date | Change Content | Stakeholders | Motivation |
-|---------|------|---------|-------------|----------------------|
-| V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |
+---
+
+**Template Version:** V1.0
+**Template Reference:** 
+**Date:** 2026-01-09
+**Framework:** MODEL_for_stakeholder_AI_collab

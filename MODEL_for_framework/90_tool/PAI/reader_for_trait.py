@@ -2,6 +2,9 @@
 """
 ReaderForTrait - Python implementation for reading and understanding Traits.yaml
 
+originates from traits in the Fabric framework:
+https://github.com/danielmiessler/Fabric
+
 This tool provides functionality to parse and analyze the agent trait composition file.
 """
 

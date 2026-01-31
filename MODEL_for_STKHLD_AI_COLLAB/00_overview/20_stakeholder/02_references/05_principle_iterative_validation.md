@@ -48,9 +48,7 @@ The Principle of Iterative Validation establishes that stakeholder-AI collaborat
 
 ---
 
-## 4. Rules and Guidelines
-
-### 4.1 Validation Checkpoints
+## 4. Validation Checkpoints
 
 | Stage | Validation Type | Reviewer | Criteria |
 |-------|-----------------|----------|----------|
