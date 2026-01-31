@@ -1,8 +1,5 @@
 # Template for Term [TPL_FOR_MFW_TERM] **[PRIO: HIGH]**
 
-**Version: V1.0.1**
-**Date: 2026-01-23**
-
 ## Scope
 
 - Templates ensure consistent term documentation across all framework components
@@ -16,8 +13,6 @@
 
 ### Core Template Elements:
 1. **Title with Reference**: `# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**`
-
-**Version: V<Version>** **Date: YYYY-MM-DD**
 
 2. **Term Definition Block**: Structured definition with multiple fields
 3. **Content Sections**: 4-6 main sections with detailed term analysis

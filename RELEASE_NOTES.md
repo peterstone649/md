@@ -43,6 +43,16 @@
 - **Translation System**: Dedicated `transl/README.md` for multilingual documentation
 - **Quality Assurance**: Comprehensive documentation standards and validation
 
+## Changelog of README.md
+
+| Version | Date | Changes | Stakeholder | Motivation           |
+|---------|------|---------|-------------|----------------------|
+| V1.4.0 | 2026-01-31 | Added comprehensive terminology system (Scope, Objective, Constraint, Plugin terms), AI principles framework, GitHub workflow security fixes, and enhanced integration features | AI Framework Steward | Complete framework foundation with systematic terminology, governance principles, and security compliance |
+| V1.3.0 | 2026-01-31 | Updated README.md to reflect new PUB folder structure and content organization | AI Framework Steward | Adapt documentation to current file structure with PUB/BOOK/ directory and updated content references |
+| V1.2.0 | 2026-01-22 | Added BOOK/ directory with English AI research content and transl_re/ directory for back-translated quality verification workflows | AI Framework Steward | Enhanced repository structure with direct English content access and translation quality assurance mechanisms |
+| V1.1.0 | 2026-01-18 | Major update to multilingual translations section with comprehensive coverage status, directory structure updates, and translation project completion documentation | AI Framework Steward | Complete documentation of extensive multilingual translation initiative providing global accessibility to AI research content |
+| V1.0.0 | 2026-01-16 | Initial repository setup with framework models and multilingual translation infrastructure | Peter Stone | Establish comprehensive framework for systematic knowledge organization and AI-assisted methodologies |
+
 ---
 
 ## 📋 **Complete Release History**

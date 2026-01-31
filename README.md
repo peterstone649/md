@@ -142,74 +142,9 @@ Framework Development Standards:
 
 This directory contains comprehensive multilingual translations of project documentation, AI research books, framework models, and technical content, enabling global accessibility and international collaboration.
 
-### Directory Structure
-
-```
-transl/
-├── fr/LIVRE/               # French translations ("Book")
-│   ├── 10_écriture/        # Writing guides
-│   ├── 20_AI/              # AI research content
-│   └── README.md           # Translated overview
-├── de/BUCH/                # German translations ("Book")
-│   ├── 10_schreiben/       # Writing guides
-│   ├── 20_AI/              # AI research content
-│   └── README.md           # Translated overview
-├── zh/书/                   # Chinese translations ("Book")
-│   ├── 10_writing/         # Writing guides
-│   ├── 20_AI/              # AI research content
-│   └── README.md           # Translated overview
-├── es/LIBRO/               # Spanish translations ("Book")
-│   ├── 10_writing/         # Writing guides
-│   ├── 20_AI/              # AI research content
-│   └── README.md           # Translated overview
-├── ja/本/                   # Japanese translations ("Book")
-│   ├── 10_writing/         # Writing guides
-│   ├── 20_AI/              # AI research content
-│   └── README.md           # Translated overview
-└── ru/КНИГА/               # Russian translations ("Book")
-    ├── 10_writing/         # Writing guides
-    ├── 20_AI/              # AI research content
-    └── README.md           # Translated overview
-```
-
 ### Purpose
 
 The `transl/` directory serves as the central multilingual repository, making critical AI research, framework documentation, and technical content accessible to international audiences in their native languages, fostering global understanding and collaboration on AI governance, ethics, and safety.
-
-### Current Languages & Coverage
-
-- **fr (French)**: Complete coverage - AI thesis, Life 3.0 book, Elements of Style, and Style Toward Clarity and Grace
-- **de (German)**: Complete coverage - AI thesis, Life 3.0 book, and Elements of Style
-- **zh (Chinese)**: Comprehensive coverage including writing guides, AI research books, Superintelligence, Life 3.0, and AI thesis
-- **es (Spanish)**: Complete coverage - Superintelligence book, Elements of Style, and Style Toward Clarity and Grace
-- **ja (Japanese)**: Complete coverage - Superintelligence book, Elements of Style, and Style Toward Clarity and Grace
-- **ru (Russian)**: Complete coverage - Superintelligence book, Elements of Style, and Style Toward Clarity and Grace
-
-### Content Types
-
-#### AI Research Books (20_AI/)
-Comprehensive translations of foundational AI literature:
-- **Superintelligence by Nick Bostrom**: Fully translated to 6 languages (zh, es, ja, ru, fr, de) - **COMPLETE**
-- **Life 3.0 by Max Tegmark**: Fully translated to 6 languages (fr, de, zh, es, ja, ru) - **COMPLETE**
-- **AI Revolution Thesis**: Translated to 6 languages (fr, de, zh, es, ja, ru) - **COMPLETE**
-- **Weapons of Math Destruction by Cathy O'Neil**: Pending translations
-
-#### Writing & Style Guides (10_writing/)
-Professional writing methodology translations:
-- **The Elements of Style**: Fully translated to 6 languages (zh, es, ja, ru, fr, de) - **COMPLETE**
-- **Style: Toward Clarity and Grace**: Translated to 5 languages (zh, es, fr, ja, ru - missing de)
-
-#### Framework Models
-- **MODEL_for_STKHLD_AI_COLLAB**: Stakeholder AI Collaboration Model (Chinese starter)
-- **MODEL_for_framework**: Framework Model (Chinese starter)
-
-### Translation Standards
-
-- **Professional Quality**: AI-assisted translations with human review and validation
-- **Technical Accuracy**: Preservation of technical terminology and conceptual precision
-- **Cultural Adaptation**: Appropriate localization while maintaining original meaning
-- **Consistency**: Standardized terminology across all languages and documents
-- **Quality Assurance**: Multi-stage review process ensuring translation accuracy
 
 ### Translation Project Documentation
 
@@ -262,13 +197,3 @@ The multilingual translation initiative significantly enhances the project's glo
 - **Clickable Links**: Applied comprehensive clickable link standards
 - **Cross-References**: Established seamless navigation between framework components
 - **Quality Standards**: 9-point checklists for term definition and integration quality
-
-## Changelog
-
-| Version | Date | Changes | Stakeholder | Motivation           |
-|---------|------|---------|-------------|----------------------|
-| V1.4.0 | 2026-01-31 | Added comprehensive terminology system (Scope, Objective, Constraint, Plugin terms), AI principles framework, GitHub workflow security fixes, and enhanced integration features | AI Framework Steward | Complete framework foundation with systematic terminology, governance principles, and security compliance |
-| V1.3.0 | 2026-01-31 | Updated README.md to reflect new PUB folder structure and content organization | AI Framework Steward | Adapt documentation to current file structure with PUB/BOOK/ directory and updated content references |
-| V1.2.0 | 2026-01-22 | Added BOOK/ directory with English AI research content and transl_re/ directory for back-translated quality verification workflows | AI Framework Steward | Enhanced repository structure with direct English content access and translation quality assurance mechanisms |
-| V1.1.0 | 2026-01-18 | Major update to multilingual translations section with comprehensive coverage status, directory structure updates, and translation project completion documentation | AI Framework Steward | Complete documentation of extensive multilingual translation initiative providing global accessibility to AI research content |
-| V1.0.0 | 2026-01-16 | Initial repository setup with framework models and multilingual translation infrastructure | Peter Stone | Establish comprehensive framework for systematic knowledge organization and AI-assisted methodologies |
