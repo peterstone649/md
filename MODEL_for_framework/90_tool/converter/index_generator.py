@@ -34,8 +34,9 @@ __status__ = "ACTIVE"
 """
 CHANGELOG
 
-| Version | Date       | Changes | Stakeholder | Rationale/Motivation |
-|---------|------------|---------|-------------|----------------------|
+| Version | Date       | Change Content | Stakeholders | Motivation |
+|---------|------------|----------------|--------------|------------|
+| V1.2.1  | 2026-02-01 | Applied version changelog update rule: Fixed parent folder link to use relative path instead of absolute path, ensuring proper navigation functionality | Framework Steward | Ensure changelog completeness and framework rule compliance for relative path navigation |
 | V1.2.0  | 2026-01-31 | Updated to use ManagerForDirOTBase for consistent output path creation | Framework Steward | Align with framework conventions and ensure consistent output directory structure |
 | V1.1.0  | 2026-01-31 | Added comprehensive changelog following framework conventions | Framework Steward | Align with framework documentation standards and provide clear version history |
 | V1.0.0  | 2026-01-31 | Initial implementation with README-driven index creation | AI Coder | Core functionality for generating index files when README files exist |
@@ -109,6 +110,15 @@ class IndexGenerator:
 This folder contains the following files and subdirectories:
 
 """
+        # Add parent folder navigation with emoji if this is not the root directory
+        parent_path = folder_path.parent
+        if parent_path != folder_path:
+            # Calculate relative path from current folder to parent
+            # Use "../" to go up one level to the parent directory
+            parent_link = "../"
+            content += f"## [🏠 Go to Parent Folder]({parent_link})\n\n"
+            content += "---\n\n"
+
         # If README exists, make it the primary jump address
         if readme_file:
             content += f"## [📁 {readme_file}]({readme_file})\n\n"

@@ -4,6 +4,14 @@ This directory contains Python-based conversion tools e.g. for markdown & yaml f
 
 ## Tools
 
+### 📋 Quick Navigation
+
+- **[📋 Index of Converter Tools](index.md)** - Complete overview of all converter-related files
+- **[converter_for_md_to_html.py](converter_for_md_to_html.py)** - Markdown to HTML conversion
+- **[converter_for_yaml_to_html.py](converter_for_yaml_to_html.py)** - YAML to HTML conversion
+- **[index_generator.py](index_generator.py)** - Automated index generation
+- **[tests/](tests/)** - Comprehensive test suite
+
 ### Markdown to HTML Converter (`converter_for_md_to_html.py`)
 Converts Markdown files to styled HTML documents with support for:
 - Fenced code blocks
