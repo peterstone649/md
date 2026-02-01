@@ -8,6 +8,15 @@
 
 This section defines the primary stakeholders within the framework ecosystem. These roles provide a clear separation of concerns and ensure that all aspects of the framework's lifecycle, from development to application, are covered.
 
+## 📋 Quick Navigation
+
+- **[📋 Index of Stakeholder Documentation](index.md)** - Complete overview of all stakeholder-related files
+- **[10_user/](10_user/)** - Framework consumers and users
+- **[20_developer/](20_developer/)** - Framework builders and maintainers
+- **[30_integrator_for_AI/](30_integrator_for_AI/)** - AI integration specialists
+- **[40_implementer_for_domain/](40_implementer_for_domain/)** - Domain application experts
+- **[50_reviewer/](50_reviewer/)** - Quality and ethical oversight
+
 ### 📁 Directory Structure
 
 The stakeholder roles are organized into the following directories:

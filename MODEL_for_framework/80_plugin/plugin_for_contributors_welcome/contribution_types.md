@@ -20,7 +20,7 @@
 
 ## 🏢 Corporate Contributors
 
-### Tech Companies (Microsoft, Google, OpenAI, etc.)
+### Tech Companies
 **What they bring:**
 - Industry-leading AI expertise
 - Large-scale implementation experience

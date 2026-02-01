@@ -4,6 +4,10 @@
 
 > *"Ensuring quality, compliance, and consistency through structured constraint management"*
 
+[TAG:plugin:framework:constraint]
+[TAG:quality:validation:automated]
+[TAG:framework:core:principle]
+
 ## Overview
 
 This plugin provides a structured approach to defining, tracking, and managing constraints across the framework ecosystem. It helps maintain quality standards, compliance requirements, and architectural boundaries while enabling systematic constraint validation and enforcement.

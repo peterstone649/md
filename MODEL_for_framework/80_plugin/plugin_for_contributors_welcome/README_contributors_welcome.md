@@ -1,8 +1,12 @@
 # 🚀 Contributors Welcome Plugin
 
-**A lightweight framework for welcoming diverse contributors to the MD repository ecosystem**
+**A lightweight framework plugin for welcoming diverse contributors to the MD repository ecosystem**
 
 > *"Building bridges between different stakeholder groups and our framework community"*
+
+[TAG:plugin:framework:contribution]
+[TAG:stakeholder:contributor:welcome]
+[TAG:framework:template:document]
 
 ## Overview
 

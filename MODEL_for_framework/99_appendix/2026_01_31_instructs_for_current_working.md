@@ -6,8 +6,17 @@ Current work on objectives is done in parallel with e.g. two Visual Studio Windo
 additional windows like 2025_11/md/PUB would also possible
 The file and folder references get copied by via "copy path" (right mouse on file or folder)
 
-The really super cool and nice thing is that nearly every LLM model is able to work with our framework ! You simply say "this and that" (folder or filepath) is relevant for your instruct and the AI with CLINE tries grasps the context (as it is structured and easy readable for it).
-If needed it looks/reads in the "related" files (as via the links they are interconnected like html)
+**The really super cool and nice thing is that nearly every LLM model is able to work with our framework instantly!** 
+>You simply say "this and that" (folder or filepath) is relevant for your instruct and the AI with CLINE tries grasps the context (as it is structured and easy readable for it).
+If needed it looks/reads in the "related" files (via the links which are interconnected like html)
+
+based on E:\2025_11\md\PUB\BOOK\20_AI\Human_Compatible bring book "The Ethics of AI: Power, Critique by Rainer Mühlhoff" into folder E:\2025_11\md\PUB\BOOK\20_AI (use also websearch or compareable)
+
+does not work nicely
+2) In Visual Studio with OPENCODE on /connect Openrouter with /models arcee-ai/trinity-large-preview:free : instruct ...
+based on E:\2025_11\md\PUB\BOOK\20_AI\Human_Compatible bring "The Ethics of AI: Power, Critique by Rainer Mühlhoff"  into E:\2025_11\md\PUB\BOOK\20_AI\Y2025
+
+1) bring "Race After Technology" by Ruha Benjamin based on E:\2025_11\md\PUB\BOOK\20_AI\Life_3.0\Life_3.0_by_Max_Tegmark.md
 
 ## Objective: Release V1.5.0 STATUS: MINOR_BUGS
 8) can you create index for E:\2025_11\md\MODEL_for_framework\99_appendix via right E:\2025_11\md\MODEL_for_framework\90_tool\converter\index_generator.py that md (default in same folder) and html ((default in base + out/html folder)

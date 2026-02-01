@@ -3,6 +3,7 @@
 [![HTML Version](https://img.shields.io/badge/HTML-Version-blue.svg)](https://htmlpreview.github.io/?https://github.com/peterstone649/md/blob/master/out/html/README.html)
 [![Contributors Welcome](https://img.shielcheds.io/badge/contributors-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Contribution Guide](https://img.shields.io/badge/Contribution_Guide-Plugin_for_Contributors_Welcome-blue.svg)](MODEL_for_framework/80_plugin/plugin_for_contributors_welcome/README_contributors_welcome.md)
+[![Discord Community](https://img.shields.io/discord/1467470120371879988?label=Discord&logo=discord&color=7289DA)](https://discord.com/channels/1467470120371879988/1467470122016051275)
 [![License: EUPL v1.2](https://img.shields.io/badge/License-EUPL%20v1.2-blue.svg)](https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12)
 [![GitHub issues](https://img.shields.io/github/issues/peterstone649/md.svg)](https://github.com/peterstone649/md/issues)
 [![GitHub stars](https://img.shields.io/github/stars/peterstone649/md.svg)](https://github.com/peterstone649/md/stargazers)
