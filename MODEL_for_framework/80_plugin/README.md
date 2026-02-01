@@ -1,6 +1,6 @@
 # 📦 Plugin Directory
 
-**Version: V1.0.0** **Date: 2026-02-01**
+**Version: V1.0.2** **Date: 2026-02-01**
 
 ## Overview
 
@@ -45,6 +45,13 @@ This directory contains lightweight plugins that extend the functionality of the
 - Provides templates and compliance checklists
 - **Tags**: [plugin:framework:legal] [framework:template:document]
 
+#### **[plugin_for_markdown_commonmark](plugin_for_markdown_commonmark/)** 📝
+**CommonMark specification compliance**
+- Ensures all Markdown files adhere to CommonMark standard
+- Provides controlled framework-specific extensions
+- Includes multi-level validation framework
+- **Tags**: [plugin:framework:markdown] [framework:template:document]
+
 ## Plugin Categories
 
 | Category | Purpose | Plugins |
@@ -58,8 +65,8 @@ This directory contains lightweight plugins that extend the functionality of the
 
 ## Plugin Statistics
 
-- **Total Plugins**: 5
-- **Tagged Plugins**: 5/5 (100%)
+- **Total Plugins**: 6
+- **Tagged Plugins**: 6/6 (100%)
 - **Categories**: 6
 - **Integration**: Full framework compatibility
 
@@ -115,12 +122,13 @@ This directory contains lightweight plugins that extend the functionality of the
 
 **Directory**: 80_plugin
 **Framework**: MODEL_for_framework
-**Version**: V1.0.1
+**Version**: V1.0.2
 **Date**: 2026-02-01
 
 ## Changelog
 
 | Version | Date | Change Content | Stakeholders | Motivation |
 |---------|------|----------------|--------------|------------|
-| V1.0.0 | 2026-02-01 | Initial creation of comprehensive plugin directory documentation with 5 plugins: constraints, contributors_welcome, language_adaptation, tagging, and legal | Framework Steward, Plugin Developers | Establish foundational plugin directory structure and documentation |
-| V1.0.1 | 2026-02-01 | Applied version changelog update rule: Added comprehensive changelog section with all required columns, updated plugin descriptions, ensured framework compliance | Framework Steward | Ensure changelog completeness and framework rule compliance |
+| V1.0.2 | 2026-02-01 | Added plugin_for_markdown_commonmark to plugin directory: Created comprehensive CommonMark specification compliance plugin with multi-level validation framework and controlled framework-specific extensions | Framework Steward | Ensure all Markdown files adhere to CommonMark standard while supporting framework-specific enhancements |
+| V1.0.1 | 2026-02-01 | Added plugin_for_language_adaptation to plugin directory: Created comprehensive language adaptation plugin with translation workflows, cultural adaptation guidelines, and multilingual support templates | Framework Steward | Enable framework content accessibility across different languages and cultural contexts |
+| V1.0.0 | 2026-02-01 | Initial creation of comprehensive plugin directory documentation with 4 plugins: constraints, contributors_welcome, tagging, legal | Framework Steward, Plugin Developers | Establish foundational plugin directory structure and documentation |
