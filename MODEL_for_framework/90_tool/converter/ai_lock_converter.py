@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+"""
+AI_LOCK Converter for special handling of [AI_LOCK] and [AI_UNLOCK] tags in HTML conversion.
+
+This module provides specialized conversion for AI_LOCK/AI_UNLOCK tags that appear
+on the same line, ensuring they are properly formatted with line breaks and visual
+separation in the HTML output.
+"""
+
 import os
 import sys
 import argparse
@@ -12,10 +21,7 @@ from handler_for_link import Handler_for_Link
 # Import the index generator for folder link handling
 from index_generator import generate_index_for_folder
 
-# Import AI_LOCK processing functionality
-from ai_lock_converter import AILockConverter
-
-__version__ = "1.6.1"
+__version__ = "1.0.0"
 __status__ = "ACTIVE"
 
 """
@@ -23,34 +29,14 @@ CHANGELOG
 
 | Version | Date       | Changes | Stakeholder | Rationale/Motivation |
 |---------|------------|---------|-------------|----------------------|
-| V1.6.1  | 2026-01-15 | Fixed syntax warning by making docstring a raw string | Framework Steward | Resolve Python syntax warning for invalid escape sequences in docstring table formatting |
-| V1.6.0  | 2026-01-14 | Added automatic image copying for SVG and other image files | Framework Steward | Ensure images are properly included in HTML output |
-| V1.5.0  | 2026-01-13 | Renamed file from md_to_html_converter.py to converter_for_md_to_html.py | Framework Steward | Align with framework naming conventions and improve consistency |
-| V1.4.0  | 2026-01-13 | Restructured tool directory from 90_tool to 90_tool\converter | Framework Steward | Improve code organization and separate converter tools into dedicated subdirectory |
-| V1.3.0  | 2026-01-13 | Adapted fixed output directory structure <PROJECT_BASE_PATH>\out\html | Framework Steward | Standardize HTML output location for consistent deployment and easier maintenance |
-| V1.2.0  | 2026-01-10 | Added .env support for PROJECT_BASE_PATH configuration | AI Coder | Enable environment-based configuration for different deployment scenarios |
-| V1.1.0  | 2026-01-10 | Enhanced Markdown processing with fenced_code and tables extensions | AI Coder | Improve support for code blocks and tables in Markdown documents |
-| V1.0.0  | 2026-01-10 | Initial release with basic Markdown to HTML conversion | AI Coder | Provide foundational Markdown conversion capabilities |
-| V0.1.1  | 2026-01-10 | Updated template metadata to include Framework Version and use list format | AI Coder | To provide more detailed and consistently formatted metadata in new documents |
-
-mfw_tool.svg pulled from https://game-icons.net/1x1/lorc/gear-hammer.html
-artist (Lorc)
-(lic) Creative Commons Attribution-ShareAlike 3.0
+| V1.0.0  | 2026-02-01 | Initial creation of AI_LOCK converter with special line break handling | Framework Steward | Provide specialized handling for AI_LOCK tags to ensure proper visual separation with <br> tags |
 """
 
-# Load environment variables from .env file
-load_dotenv()
 
-# Setup basic logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-
-class Converter_for_Md_to_Html:
+class AILockConverter:
     """
-    A modernized tool to convert Markdown files to HTML, aligning with
-    the standards of MODEL_for_framework.
+    A specialized converter for handling AI_LOCK and AI_UNLOCK tags with proper
+    line break formatting and visual separation in HTML output.
     """
     def __init__(self, input_path, project_base=None):
         self.input_path = os.path.abspath(input_path)
@@ -75,6 +61,24 @@ class Converter_for_Md_to_Html:
             # Use just the filename in this case
             base = os.path.splitext(os.path.basename(self.input_path))[0]
             return os.path.join(self.output_root, f"{base}.html")
+
+    def process_ai_lock_tags(self, md_content):
+        """
+        Process AI_LOCK and AI_UNLOCK tags to ensure proper line break formatting.
+        Converts single-line AI_LOCK tags to separate lines with <br> tags.
+        """
+        # Pattern to match AI_LOCK and AI_UNLOCK tags on the same line
+        ai_lock_pattern = r'\[AI_LOCK\](.*?)\[AI_UNLOCK\]'
+        
+        def replace_ai_lock(match):
+            content = match.group(1).strip()
+            # Return formatted content with line breaks
+            return f"\n\n[AI_LOCK] {content} [AI_UNLOCK]\n\n"
+        
+        # Replace single-line AI_LOCK tags with properly formatted versions
+        processed_content = re.sub(ai_lock_pattern, replace_ai_lock, md_content, flags=re.DOTALL)
+        
+        return processed_content
 
     def copy_for_images(self, md_content, input_dir, output_dir):
         """
@@ -192,10 +196,9 @@ class Converter_for_Md_to_Html:
         
         return updated_content
 
-
     def convert(self):
         """
-        Executes the conversion from Markdown to a styled HTML file.
+        Executes the conversion from Markdown to a styled HTML file with AI_LOCK handling.
         """
         if not os.path.isfile(self.input_path):
             logging.error(f"Input file not found: {self.input_path}")
@@ -212,6 +215,9 @@ class Converter_for_Md_to_Html:
         except IOError as e:
             logging.error(f"Error reading input file {self.input_path}: {e}")
             return False
+
+        # Process AI_LOCK tags first to ensure proper formatting
+        md_content = self.process_ai_lock_tags(md_content)
 
         # Copy images and update content
         md_content = self.copy_for_images(md_content, input_dir, output_dir)
@@ -233,7 +239,7 @@ class Converter_for_Md_to_Html:
         try:
             with open(html_path, 'w', encoding='utf-8') as f:
                 f.write(html_template)
-            logging.info(f"Successfully converted '{self.input_path}' to '{html_path}'")
+            logging.info(f"Successfully converted '{self.input_path}' to '{html_path}' with AI_LOCK formatting")
             return True
         except IOError as e:
             logging.error(f"Error writing HTML file {html_path}: {e}")
@@ -242,7 +248,7 @@ class Converter_for_Md_to_Html:
     @staticmethod
     def get_for_html_template(title, body):
         """
-        Returns a styled HTML5 template.
+        Returns a styled HTML5 template with enhanced AI_LOCK styling.
         """
         return f"""<!DOCTYPE html>
 <html lang="en">
@@ -298,6 +304,30 @@ class Converter_for_Md_to_Html:
             background-color: #eaf4ff; /* Light Blue for table headers */
             color: #2c3e50; /* Darker text for contrast */
         }}
+        /* Enhanced AI_LOCK styling with visual separation */
+        .ai-lock {{
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 5px solid #ffc107;
+        }}
+        .ai-lock::before {{
+            content: "🔒 AI_LOCK PROTECTED CONTENT";
+            display: block;
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }}
+        .ai-lock-content {{
+            color: #856404;
+            line-height: 1.6;
+        }}
         footer {{
             margin-top: 2em;
             font-size: 0.8em;
@@ -308,14 +338,14 @@ class Converter_for_Md_to_Html:
 <body>
     {body}
         <footer>
-            <p><em>Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} by MDToHTMLConverter v{__version__}</em></p>
+            <p><em>Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} by AILockConverter v{__version__}</em></p>
         </footer>
 </body>
 </html>"""
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Converts Markdown files to styled HTML with fixed output directory.",
+        description="Converts Markdown files to styled HTML with AI_LOCK special handling and line break formatting.",
         formatter_class=argparse.RawTextHelpFormatter
     )
     parser.add_argument("input_path", help="Path to a Markdown file or a directory.")
@@ -341,7 +371,7 @@ def main():
             for file in files:
                 if file.endswith((".md", ".markdown")):
                     input_file = os.path.join(root, file)
-                    converter = Converter_for_Md_to_Html(input_file, args.project_base)
+                    converter = AILockConverter(input_file, args.project_base)
                     converter.convert()
         logging.info("Recursive conversion complete.")
 
@@ -350,7 +380,7 @@ def main():
             print("Error: Input file does not appear to be a Markdown file.")
             sys.exit(1)
 
-        converter = Converter_for_Md_to_Html(args.input_path, args.project_base)
+        converter = AILockConverter(args.input_path, args.project_base)
         converter.convert()
     else:
         print(f"Error: Input path not found: {args.input_path}")
