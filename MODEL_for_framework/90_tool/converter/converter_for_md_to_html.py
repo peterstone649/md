@@ -298,6 +298,10 @@ class Converter_for_Md_to_Html:
             background-color: #eaf4ff; /* Light Blue for table headers */
             color: #2c3e50; /* Darker text for contrast */
         }}
+        strong {{
+            font-weight: bold;
+            color: #2c3e50; /* Dark Slate Blue for consistency */
+        }}
         footer {{
             margin-top: 2em;
             font-size: 0.8em;
