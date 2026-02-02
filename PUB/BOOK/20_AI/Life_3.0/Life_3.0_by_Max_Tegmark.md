@@ -7,7 +7,7 @@
 - **Pages**: 384
 - **Genre**: Technology, Artificial Intelligence, Philosophy
 - **Impact**: Influential framework for understanding AI's societal impact and the need for beneficial AI governance
-- **Kindle URL**: https://www.amazon.com/Life-3-0-Being-Artificial-Intelligence/dp/1101946598
+- **Kindle URL**: [Amazon Kindle Edition](https://www.amazon.com/Life-3-0-Being-Artificial-Intelligence/dp/1101946598)
 
 ## Overview
 
@@ -352,51 +352,7 @@ Emerging Fields:
 └── Long-term future studies
 ```
 
-## Integration with "The Big Nine" by Amy Webb
 
-### **Corporate Power and AI Governance**
-```markdown
-Big Nine Analysis Integration:
-├── Corporate Concentration → Nine companies controlling AI infrastructure and development
-├── Geopolitical Divisions → US vs Chinese AI development models (Google/Amazon/Microsoft/Facebook/Apple/IBM vs Baidu/Alibaba/Tencent)
-├── Business Model Implications → AI as profit maximization tool vs public benefit
-├── Democratic vs Authoritarian Models → Different approaches to AI governance and control
-├── Antitrust and Competition → Need to break up AI monopolies for public benefit
-└── International Cooperation → Global coordination to address corporate AI dominance
-```
-
-### **Enhanced Risk Understanding**
-```markdown
-Big Nine Contribution to AI Risk Analysis:
-├── Concentration Risk → Corporate control amplifying AI existential risks
-├── Governance Failure → Corporate influence undermining AI safety efforts
-├── Democratic Erosion → AI enabling corporate surveillance and control
-├── Innovation Direction → Corporate priorities misaligned with human flourishing
-├── Global Competition → Big Nine rivalry increasing AI arms race risks
-└── Regulatory Capture → Corporate influence preventing effective AI governance
-```
-
-### **Practical Governance Strategies**
-```markdown
-Big Nine Analysis Informing AI Governance:
-├── Targeted Regulation → Specific policies addressing corporate AI power concentration
-├── Antitrust Enforcement → Breaking up AI monopolies and oligopolies
-├── International Coordination → Global agreements limiting corporate AI dominance
-├── Public Alternatives → Government and academic AI development programs
-├── Democratic Oversight → Public participation in AI governance decisions
-└── Corporate Accountability → Legal frameworks holding Big Nine responsible for AI impacts
-```
-
-### **Complementarity with Tegmark's Analysis**
-```markdown
-Big Nine Integration with Life 3.0:
-├── Corporate Power → Big Nine as key actors in Life 4.0 transition
-├── Governance Focus → Big Nine analysis provides concrete governance targets
-├── Risk Assessment → Corporate concentration as specific existential risk factor
-├── Solution Framework → Breaking up Big Nine as governance strategy
-├── Timeline Analysis → Big Nine dominance affecting pace of AI revolution
-└── Global Coordination → International cooperation needed to address corporate AI power
-```
 
 ## Conclusion
 

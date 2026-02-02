@@ -7,7 +7,7 @@
 - **Pages**: 272
 - **Genre**: Technology, Artificial Intelligence, Humor, Popular Science
 - **Impact**: Makes AI concepts accessible through humor while highlighting real AI limitations and biases
-- **Kindle URL**: https://www.amazon.com/Look-Thing-Love-You-Intelligence/dp/031652525X
+- **Kindle URL**: [Amazon Kindle Edition](https://www.amazon.com/Look-Thing-Love-You-Intelligence/dp/031652525X)
 
 ## Overview
 

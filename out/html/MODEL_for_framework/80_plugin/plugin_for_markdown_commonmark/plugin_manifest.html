@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plugin_manifest</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Markdown CommonMark Plugin Manifest</h1>
+<p><strong>Plugin Name</strong>: Markdown CommonMark Compliance Plugin<br />
+<strong>Plugin ID</strong>: <code>plugin_for_markdown_commonmark</code><br />
+<strong>Version</strong>: 1.0.0<br />
+<strong>Status</strong>: ACTIVE<br />
+<strong>Category</strong>: Documentation Standards<br />
+<strong>Framework</strong>: MODEL_for_framework</p>
+<h2>Plugin Overview</h2>
+<p>This plugin provides comprehensive CommonMark specification compliance for the MODEL_for_framework. It ensures all Markdown files adhere to the CommonMark standard while supporting framework-specific extensions.</p>
+<h2>Plugin Components</h2>
+<h3>Core Components</h3>
+<pre><code class="language-markdown">Plugin Structure:
+├── plugin_manifest.md → This manifest file
+├── README.md → Plugin documentation and usage
+├── 01_commonmark_standard.md → CommonMark specification reference
+├── 02_framework_extensions.md → Framework-specific extensions
+├── 03_validation_framework.md → Validation rules and testing
+├── 04_toolchain_integration.md → Toolchain configuration
+├── examples/ → Usage examples and templates
+├── tests/ → Plugin validation tests
+└── config/ → Plugin configuration files
+</code></pre>
+<h3>Plugin Features</h3>
+<pre><code class="language-markdown">Core Features:
+├── CommonMark Compliance → Full CommonMark specification adherence
+├── Framework Extensions → Controlled extension management
+├── Multi-Level Validation → L1-L5 validation framework
+├── Toolchain Integration → Complete toolchain support
+├── CI/CD Integration → Automated validation workflows
+└── Developer Tools → IDE and editor integration
+</code></pre>
+<h2>Plugin Configuration</h2>
+<h3>Required Dependencies</h3>
+<pre><code class="language-json">{
+  &quot;dependencies&quot;: {
+    &quot;commonmark&quot;: &quot;^1.0.0&quot;,
+    &quot;markdown-it&quot;: &quot;^12.0.0&quot;,
+    &quot;markdownlint&quot;: &quot;^0.25.0&quot;,
+    &quot;prettier&quot;: &quot;^2.5.0&quot;
+  },
+  &quot;devDependencies&quot;: {
+    &quot;framework-markdown-validator&quot;: &quot;^1.0.0&quot;
+  }
+}
+</code></pre>
+<h3>Plugin Settings</h3>
+<pre><code class="language-yaml">plugin:
+  name: plugin_for_markdown_commonmark
+  version: 1.0.0
+  enabled: true
+  priority: high
+  validation:
+    levels: [L1, L2, L3, L4, L5]
+    required: [L1, L2]
+  extensions:
+    enabled: true
+    strict_mode: true
+    fallback_behavior: true
+</code></pre>
+<h2>Plugin Integration</h2>
+<h3>Framework Integration Points</h3>
+<pre><code class="language-markdown">Integration Areas:
+├── 20_convention/ → References plugin for markdown standards
+├── 90_tool/ → Tool documentation references plugin
+├── User Stories → Acceptance criteria reference plugin
+├── Tests → Validation tests use plugin standards
+└── CI/CD → Automated validation using plugin
+</code></pre>
+<h3>Plugin Activation</h3>
+<pre><code class="language-bash"># Enable plugin
+npm run plugin:enable plugin_for_markdown_commonmark
+
+# Validate plugin installation
+npm run plugin:validate plugin_for_markdown_commonmark
+
+# Run plugin validation
+npm run plugin:validate:markdown
+</code></pre>
+<h2>Plugin Usage</h2>
+<h3>Basic Usage</h3>
+<pre><code class="language-bash"># Validate CommonMark compliance
+npm run validate:commonmark
+
+# Validate framework extensions
+npm run validate:extensions
+
+# Run complete validation
+npm run validate:markdown
+</code></pre>
+<h3>Advanced Usage</h3>
+<pre><code class="language-bash"># Custom validation levels
+npm run validate:markdown -- --level L3
+
+# Generate validation report
+npm run validate:markdown -- --report
+
+# Validate specific files
+npm run validate:markdown -- src/**/*.md
+</code></pre>
+<h2>Plugin Development</h2>
+<h3>Plugin Structure</h3>
+<pre><code class="language-markdown">Development Structure:
+├── src/ → Plugin source code
+├── tests/ → Plugin tests
+├── docs/ → Plugin documentation
+├── examples/ → Usage examples
+├── config/ → Configuration files
+└── scripts/ → Build and deployment scripts
+</code></pre>
+<h3>Plugin Testing</h3>
+<pre><code class="language-bash"># Run plugin tests
+npm test
+
+# Run integration tests
+npm run test:integration
+
+# Run performance tests
+npm run test:performance
+
+# Run compatibility tests
+npm run test:compatibility
+</code></pre>
+<h2>Plugin Maintenance</h2>
+<h3>Update Process</h3>
+<pre><code class="language-markdown">Update Workflow:
+├── 1. Monitor CommonMark specification updates
+├── 2. Assess impact on framework extensions
+├── 3. Update plugin components as needed
+├── 4. Run comprehensive testing
+├── 5. Update documentation
+├── 6. Deploy updated plugin
+└── 7. Communicate changes to users
+</code></pre>
+<h3>Version Management</h3>
+<pre><code class="language-markdown">Version Strategy:
+├── Major: Breaking changes to CommonMark compliance
+├── Minor: New extensions or validation features
+├── Patch: Bug fixes and minor improvements
+└── Pre-release: Testing and validation versions
+</code></pre>
+<h2>Plugin Support</h2>
+<h3>Documentation</h3>
+<ul>
+<li><a href="README.html">Plugin README</a></li>
+<li><a href="01_commonmark_standard.html">CommonMark Standard</a></li>
+<li><a href="02_framework_extensions.html">Framework Extensions</a></li>
+<li><a href="03_validation_framework.html">Validation Framework</a></li>
+<li><a href="04_toolchain_integration.html">Toolchain Integration</a></li>
+</ul>
+<h3>Support Channels</h3>
+<ul>
+<li>Framework documentation</li>
+<li>Issue tracker</li>
+<li>Developer community</li>
+<li>Plugin wiki</li>
+</ul>
+<h3>Troubleshooting</h3>
+<ul>
+<li>Common issues and solutions</li>
+<li>Debug tools and utilities</li>
+<li>Performance optimization guide</li>
+<li>Integration troubleshooting</li>
+</ul>
+<h2>Plugin Metrics</h2>
+<h3>Performance Metrics</h3>
+<pre><code class="language-markdown">Monitoring Metrics:
+├── Validation speed → Time to validate files
+├── Memory usage → Plugin memory consumption
+├── Error rates → Validation failure rates
+├── Compatibility → Cross-parser compatibility
+├── User satisfaction → Developer feedback
+└── Adoption rate → Plugin usage statistics
+</code></pre>
+<h3>Quality Metrics</h3>
+<pre><code class="language-markdown">Quality Indicators:
+├── CommonMark compliance rate
+├── Extension compatibility rate
+├── Validation accuracy
+├── Toolchain integration success
+├── Documentation completeness
+└── Test coverage percentage
+</code></pre>
+<h2>Plugin License</h2>
+<p><strong>License</strong>: [Framework License]<br />
+<strong>Copyright</strong>: [Framework Copyright]<br />
+<strong>Contributors</strong>: [List of contributors]</p>
+<h2>Plugin Changelog</h2>
+<h3>Version 1.0.0 (2026-02-01)</h3>
+<ul>
+<li>Initial plugin release</li>
+<li>Complete CommonMark specification integration</li>
+<li>Framework extension support</li>
+<li>Multi-level validation framework</li>
+<li>Complete toolchain integration</li>
+</ul>
+<hr />
+<p><strong>Plugin Maintainer</strong>: Framework Steward<br />
+<strong>Plugin Status</strong>: Active Development<br />
+<strong>Next Update</strong>: Scheduled for CommonMark specification updates</p>
+        <footer>
+            <p><em>Generated on 2026-02-01 19:53:48 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

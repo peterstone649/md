@@ -59,6 +59,7 @@ ased on the current AI Ethics books in your framework and the comprehensive stru
 
 ### __9. "The Big Nine" by Amy Webb (2019)__
 
+- __Status:__ ✅ **ADDED** - See BOOK/20_AI/The_Big_Nine/
 - __Why Add:__ Examines the geopolitical implications of AI development
 - __Focus:__ How US and China are shaping AI's future
 - __Value:__ Adds international and political dimensions to your framework
@@ -76,11 +77,13 @@ Based on your current structure, I recommend prioritizing these additions in thi
 2. __"The Age of Surveillance Capitalism"__ - Expands privacy and economic dimensions
 3. __"Rebooting AI"__ - Adds technical critique perspective
 4. __"Artificial Intelligence: A Guide for Thinking Humans"__ - Provides foundational understanding
+5. __"The Ethics of AI: Power, Critique, Responsibility" by Rainer Mühlhoff (2025)__ - Critical theory perspective on AI power structures
 
 These additions would create a well-rounded framework covering:
 
 - __Bias and Discrimination__ (Eubanks, Benjamin, Noble)
-- __Privacy and Surveillance__ (Zuboff, building on existing works)
+- __Privacy and Surveillance__ (Zuboff, Mühlhoff, building on existing works)
 - __Technical Limitations__ (Marcus, Mitchell, Russell)
 - __Economic Implications__ (Zuboff, Webb)
+- __Critical Theory and Power Analysis__ (Mühlhoff)
 - __Accessibility__ (Shane, Mitchell)

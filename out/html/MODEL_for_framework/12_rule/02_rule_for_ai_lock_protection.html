@@ -61,156 +61,39 @@
 </head>
 <body>
     <h1>AI_LOCK Content Protection [RULE_FOR_MFW_AI_LOCK_PROTECTION] <strong>[PRIO: HIGHEST]</strong></h1>
-<p><strong>Version: V1.1.0</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-25</strong>
-<strong>Scope:</strong> All AI-assisted document processing and generation</p>
 <h2>Rule Statement</h2>
 <p>AI systems MUST NOT modify, rephrase, rewrite, or alter any content enclosed within <code>[AI_LOCK]</code> and <code>[AI_UNLOCK]</code> markers. These markers designate protected content that represents the authoritative, human-authored intent and MUST remain unchanged.</p>
-<h2>Rationale</h2>
-<p>The AI_LOCK mechanism protects:
-- <strong>Human Authored Intent</strong>: Content within AI_LOCK markers represents definitive human statements that must not be altered by AI
-- <strong>Semantic Integrity</strong>: Prevents AI from introducing subtle changes that alter meaning
-- <strong>Accountability Chains</strong>: Maintains clear provenance of protected statements
-- <strong>Framework Stability</strong>: Ensures core principles and definitions remain consistent
-- <strong>Trust Boundaries</strong>: Creates explicit zones where human authority supersedes AI capability</p>
-<h2>AI_LOCK Pattern Structure</h2>
-<h3>Standard Format</h3>
-<pre><code class="language-markdown">**[AI_LOCK]**
-We must enable our people with AI-driven tools to radically accelerate skill acquisition and mastery.
-**[AI_UNLOCK]**
-</code></pre>
-<h3>Examples</h3>
-<table>
-<thead>
-<tr>
-<th>Protected Content Type</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Principles</strong></td>
-<td><strong>[AI_LOCK]</strong> Human sovereignty establishes that... <strong>[AI_UNLOCK]</strong></td>
-</tr>
-<tr>
-<td><strong>Axioms</strong></td>
-<td><strong>[AI_LOCK]</strong> The axiom of systematic framework development... <strong>[AI_UNLOCK]</strong></td>
-</tr>
-<tr>
-<td><strong>Definitions</strong></td>
-<td><strong>[AI_LOCK]</strong> Consciousness is defined as... <strong>[AI_UNLOCK]</strong></td>
-</tr>
-<tr>
-<td><strong>Policy Statements</strong></td>
-<td><strong>[AI_LOCK]</strong> The framework prohibits... <strong>[AI_UNLOCK]</strong></td>
-</tr>
-</tbody>
-</table>
-<h2>Rules for AI Systems</h2>
-<h3>1. Recognition Rule</h3>
-<p>AI systems MUST recognize and respect <code>[AI_LOCK]</code> and <code>[AI_UNLOCK]</code> markers in all contexts:
-- Within any document type (Markdown, YAML, JSON, etc.)
-- Across all framework directories
-- Regardless of document length or complexity</p>
-<h3>2. Preservation Rule</h3>
-<p>When processing documents, AI systems MUST:
-- <strong>PRESERVE</strong> all content within AI_LOCK markers exactly as written
-- <strong>NOT</strong> rephrase, reword, or modify protected content
-- <strong>NOT</strong> add, remove, or alter markers
-- <strong>NOT</strong> summarize or reference protected content in ways that change its meaning</p>
-<h3>3. Generation Rule</h3>
-<p>When AI generates new content:
-- AI_LOCK markers may only be used for NEW protected content
-- Existing AI_LOCK sections must remain unchanged
-- AI must clearly separate its own content from protected content</p>
-<h3>4. Interaction Rule</h3>
-<p>AI systems interacting with AI_LOCK content:
-- <strong>MAY</strong> reference protected content in analysis
-- <strong>MUST NOT</strong> modify the content itself
-- <strong>MUST</strong> indicate when content falls within protected zones</p>
-<h2>Acceptable Modifications (Human Only)</h2>
-<p>Only human stakeholders may modify AI_LOCK content through:
-1. <strong>Direct Edit</strong>: Human-authored changes to protected sections
-2. <strong>Version Update</strong>: Incremented version numbers when content changes
-3. <strong>Migration</strong>: Explicit migration procedures for framework evolution</p>
-<p>AI systems may suggest modifications but MUST:
-- Clearly label suggestions as "PROPOSED_CHANGES"
-- Never auto-apply changes to protected content
-- Request explicit human approval before any modification</p>
-<h2>Violation Examples</h2>
-<h3>❌ Violation: Content Modification</h3>
-<pre><code class="language-markdown">**[AI_LOCK]**
-Human sovereignty establishes that humans retain final decision-making authority.
-**[AI_UNLOCK]**
-
-# AI modification (VIOLATION):
-**[AI_LOCK]**
-Humans retain the final say in all decisions within collaborative frameworks.
-**[AI_UNLOCK]**
-</code></pre>
-<h3>❌ Violation: Marker Removal</h3>
-<pre><code class="language-markdown"># Before (VALID):
-**[AI_LOCK]**
-Core principle content...
-**[AI_UNLOCK]**
-
-# After (VIOLATION):
-Core principle content...
-</code></pre>
-<h3>❌ Violation: Content Reformatting</h3>
-<pre><code class="language-markdown"># Before (VALID):
-**[AI_LOCK]**
-The Principle of Human Sovereignty establishes...
-**[AI_UNLOCK]**
-
-# After (VIOLATION):
-**[AI_LOCK]**
-We establish that the Principle of Human Sovereignty...
-**[AI_UNLOCK]**
-</code></pre>
-<h2>Validation Checklist</h2>
+<h2>Rule Requirements</h2>
 <ul>
-<li>[ ] All AI_LOCK sections preserved exactly</li>
-<li>[ ] No rephrasing or rewording of protected content</li>
-<li>[ ] Markers remain intact (opening and closing)</li>
-<li>[ ] New AI_LOCK content clearly distinguished from existing</li>
-<li>[ ] AI-generated suggestions labeled separately</li>
-<li>[ ] No auto-application of changes to protected zones</li>
+<li><strong>[R1]</strong>: AI systems MUST recognize and respect <code>[AI_LOCK]</code> and <code>[AI_UNLOCK]</code> markers in all contexts</li>
+<li><strong>[R2]</strong>: AI systems MUST preserve all content within AI_LOCK markers exactly as written</li>
+<li><strong>[R3]</strong>: AI systems MUST NOT rephrase, reword, or modify protected content</li>
+<li><strong>[R4]</strong>: AI systems MUST NOT add, remove, or alter markers</li>
+<li><strong>[R5]</strong>: AI systems MUST NOT summarize or reference protected content in ways that change its meaning</li>
 </ul>
-<h2>Enforcement</h2>
-<ol>
-<li><strong>Detection Phase:</strong> AI tools flag AI_LOCK sections during processing</li>
-<li><strong>Preservation Phase:</strong> Automated checks verify marker integrity</li>
-<li><strong>Review Phase:</strong> Human reviewers verify protected content remains unchanged</li>
-<li><strong>Violation Response:</strong> Document violations and revert unauthorized changes</li>
-</ol>
-<h2>Integration with Other Rules</h2>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Relationship</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>RULE_ACTIVE_VOICE</td>
-<td>AI_LOCK content exempt from active voice requirements</td>
-</tr>
-<tr>
-<td>Framework Conventions</td>
-<td>AI_LOCK sections override general formatting rules</td>
-</tr>
-<tr>
-<td>Writing Standards</td>
-<td>Protected content follows original author's style</td>
-</tr>
-</tbody>
-</table>
-<h2>References</h2>
+<h2>Formal Statement</h2>
+<pre><code>∀document∀ai_system (Document(document) ∧ AISystem(ai_system) ∧ ContainsAilock(document))
+    → (PreserveContent(ai_system, document) ∧ RespectMarkers(ai_system, document))
+</code></pre>
+<h2>Rationale</h2>
+<p>The AI_LOCK mechanism protects human-authored intent and ensures semantic integrity in collaborative AI environments.</p>
+<h2>Uncertainty Declaration</h2>
+<p><em>If applicable: This rule acknowledges inherent uncertainties in AI content generation and the need for human oversight in critical content areas.</em></p>
+<h2>Integration with Other Framework Components</h2>
+<h3>Related Rules</h3>
 <ul>
-<li>MODEL_for_stakeholder_AI_collab/30_principle/01_principle_human_sovereignty.md</li>
-<li>Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)</li>
-<li>Intellectual Property Rights Conventions (20_convention/16_convention_for_intellectual_property_rights.md)</li>
+<li><strong><a href="03_rule_for_version_changelog_update.html">03_rule_for_version_changelog_update.md</a></strong> - Version updates must preserve AI_LOCK content</li>
+<li><strong><a href="01_rule_for_epistemological_uncertainty_acknowledgment.html">01_rule_for_epistemological_uncertainty_acknowledgment.md</a></strong> - AI_LOCK content represents human certainty</li>
+</ul>
+<h3>Related Axioms</h3>
+<ul>
+<li><strong><a href="../35_axiom/01_axiom_of_human_sovereignty.html">01_axiom_of_human_sovereignty.md</a></strong> - Foundation for human authority over AI</li>
+<li><strong><a href="../35_axiom/02_axiom_of_framework_validation_integrity.html">02_axiom_of_framework_validation_integrity.md</a></strong> - Validation must respect protected content</li>
+</ul>
+<h3>Related Principles</h3>
+<ul>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/01_principle_human_sovereignty.html">01_principle_human_sovereignty.md</a></strong> - Human sovereignty over AI decisions</li>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.html">02_principle_transparency.md</a></strong> - Transparency in AI-human collaboration</li>
 </ul>
 <p><strong>Rule Steward:</strong> Terminology Architects
 <strong>Approval Status:</strong> Framework Approved
@@ -255,7 +138,7 @@ We establish that the Principle of Human Sovereignty...
 </tbody>
 </table>
         <footer>
-            <p>Generated on 2026-01-25 10:09:44 by MDToHTMLConverter v1.6.1</p>
+            <p><em>Generated on 2026-02-01 19:53:44 by MDToHTMLConverter v1.6.1</em></p>
         </footer>
 </body>
 </html>

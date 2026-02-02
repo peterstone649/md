@@ -7,7 +7,7 @@
 - **Pages**: 320
 - **Genre**: Technology, Social Justice, Public Policy, Sociology
 - **Impact**: Groundbreaking examination of how automated systems reinforce poverty and inequality
-- **Kindle URL**: https://www.amazon.com/Automating-Inequality-Poverty-Algorithms-America/dp/1250074314
+- **Kindle URL**: [Amazon Kindle Edition](https://www.amazon.com/Automating-Inequality-Poverty-Algorithms-America/dp/1250074314)
 
 ## Overview
 

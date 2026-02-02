@@ -61,102 +61,38 @@
 </head>
 <body>
     <h1>Active Voice [RULE_FOR_MFW_ACTIVE_VOICE] <strong>[PRIO: HIGH]</strong></h1>
-<p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
-<strong>Scope:</strong> All framework documentation</p>
 <h2>Rule Statement</h2>
 <p>All framework documents SHOULD use active voice constructions. Avoid passive voice unless specifically required for emphasis or when the actor is genuinely unknown.</p>
-<h2>Rationale</h2>
-<p>Active voice:
-- Clarifies who performs actions
-- Creates more engaging and direct communication
-- Reduces ambiguity in responsibility
-- Aligns with framework principles of clarity and precision
-- Makes sentences more concise</p>
-<h2>Active Voice Pattern</h2>
-<h3>Structure</h3>
-<pre><code>[ACTOR] + [ACTION] + [OBJECT]
+<h2>Rule Requirements</h2>
+<ul>
+<li><strong>[R1]</strong>: Subject performs action in 90%+ of sentences</li>
+<li><strong>[R2]</strong>: No "was/were + past participle" patterns without reason</li>
+<li><strong>[R3]</strong>: Actor clearly identified and positioned first</li>
+<li><strong>[R4]</strong>: "By" phrases used only when actor adds value</li>
+</ul>
+<h2>Formal Statement</h2>
+<pre><code>∀sentence (Sentence(sentence) ∧ FrameworkDocument(sentence))
+    → (ActiveVoice(sentence) ∨ JustifiedPassive(sentence))
 </code></pre>
-<h3>Examples</h3>
-<table>
-<thead>
-<tr>
-<th>Passive ❌</th>
-<th>Active ✅</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The validation was performed by the framework</td>
-<td>The framework validates</td>
-</tr>
-<tr>
-<td>Decisions must be made by contributors</td>
-<td>Contributors make decisions</td>
-</tr>
-<tr>
-<td>Changes are required by the system</td>
-<td>The system requires changes</td>
-</tr>
-<tr>
-<td>Analysis is conducted by researchers</td>
-<td>Researchers conduct analysis</td>
-</tr>
-</tbody>
-</table>
-<h2>Character-Action-Subject (CAS) Strategy</h2>
-<ol>
-<li><strong>Identify the Action</strong> - What is actually happening?</li>
-<li><strong>Name the Actor</strong> - Who/what performs the action?</li>
-<li><strong>Position Actor First</strong> - Put subject at beginning of sentence</li>
-</ol>
-<h3>Application</h3>
+<h2>Rationale</h2>
+<p>Active voice clarifies responsibility, improves readability, and aligns with framework principles of clarity and precision.</p>
+<h2>Uncertainty Declaration</h2>
+<p><em>If applicable: This rule acknowledges inherent uncertainties in language interpretation and the subjective nature of voice assessment.</em></p>
+<h2>Integration with Other Framework Components</h2>
+<h3>Related Rules</h3>
 <ul>
-<li><strong>Step 1:</strong> Find passive constructions (was/were + past participle)</li>
-<li><strong>Step 2:</strong> Identify the actor and action</li>
-<li><strong>Step 3:</strong> Restructure: Actor → Action → Object</li>
+<li><strong><a href="01_rule_for_epistemological_uncertainty_acknowledgment.html">01_rule_for_epistemological_uncertainty_acknowledgment.md</a></strong> - Active voice supports uncertainty acknowledgment</li>
+<li><strong><a href="02_rule_for_ai_lock_protection.html">02_rule_for_ai_lock_protection.md</a></strong> - AI_LOCK content may use passive voice when appropriate</li>
 </ul>
-<h2>Acceptable Passive Voice Exceptions</h2>
-<p>Passive voice IS acceptable when:</p>
-<ol>
-<li><strong>Unknown Actor</strong></li>
-<li>
-<p>"The file was corrupted during transmission" (actor unknown)</p>
-</li>
-<li>
-<p><strong>Emphasis on Action/Object</strong></p>
-</li>
-<li>
-<p>"The decision has been made" (focus on decision, not decision-maker)</p>
-</li>
-<li>
-<p><strong>Scientific/Technical Neutrality</strong></p>
-</li>
-<li>
-<p>"The sample was heated to 100°C" (standard scientific reporting)</p>
-</li>
-<li>
-<p><strong>Deliberate De-emphasis</strong></p>
-</li>
-<li>"Mistakes were made" (when blaming is inappropriate)</li>
-</ol>
-<h2>Validation Checklist</h2>
+<h3>Related Axioms</h3>
 <ul>
-<li>[ ] Subject performs action in 90%+ of sentences</li>
-<li>[ ] No "was/were + past participle" patterns without reason</li>
-<li>[ ] Actor clearly identified and positioned first</li>
-<li>[ ] "By" phrases used only when actor adds value</li>
+<li><strong><a href="../35_axiom/02_axiom_of_framework_validation_integrity.html">02_axiom_of_framework_validation_integrity.md</a></strong> - Validation includes language quality assessment</li>
+<li><strong><a href="../35_axiom/03_axiom_of_clarity_and_precision.html">03_axiom_of_clarity_and_precision.md</a></strong> - Foundation for active voice requirement</li>
 </ul>
-<h2>Enforcement</h2>
-<ol>
-<li><strong>Writing Phase:</strong> Writers apply CAS strategy during drafting</li>
-<li><strong>Review Phase:</strong> Reviewers check for passive voice violations</li>
-<li><strong>Automated Checks:</strong> Tools flag passive constructions for review</li>
-</ol>
-<h2>References</h2>
+<h3>Related Principles</h3>
 <ul>
-<li>Strunk &amp; White, "The Elements of Style"</li>
-<li>Williams, "Style: Toward Clarity and Grace"</li>
-<li>Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)</li>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.html">02_principle_transparency.md</a></strong> - Transparency requires clear language</li>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.html">03_principle_proportionality.md</a></strong> - Proportionality applies to language complexity</li>
 </ul>
 <p><strong>Rule Steward:</strong> Terminology Architects
 <strong>Approval Status:</strong> Framework Approved
@@ -194,7 +130,7 @@
 </tbody>
 </table>
         <footer>
-            <p>Generated on 2026-01-25 10:09:44 by MDToHTMLConverter v1.6.1</p>
+            <p><em>Generated on 2026-02-01 19:53:44 by MDToHTMLConverter v1.6.1</em></p>
         </footer>
 </body>
 </html>

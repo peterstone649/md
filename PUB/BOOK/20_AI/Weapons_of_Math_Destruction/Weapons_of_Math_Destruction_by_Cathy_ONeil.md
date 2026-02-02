@@ -7,7 +7,7 @@
 - **Pages**: 272
 - **Genre**: Technology, Data Science, Social Criticism
 - **Impact**: Popularized concerns about algorithmic bias and the need for algorithmic accountability
-- **Kindle URL**: https://www.amazon.com/Weapons-Math-Destruction-Increases-Inequality/dp/0553418815
+- **Kindle URL**: [Amazon Kindle Edition](https://www.amazon.com/Weapons-Math-Destruction-Increases-Inequality/dp/0553418815)
 
 ## Overview
 

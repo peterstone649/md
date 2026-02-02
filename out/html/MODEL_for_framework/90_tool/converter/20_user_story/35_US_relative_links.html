@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35_US_relative_links</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Story: Ensure Clickable Links are Relative</h1>
+<p><strong>User Story ID:</strong> US_MFW_35<br />
+<strong>Title:</strong> Ensure Clickable Links are Relative in Generated Documentation<br />
+<strong>Priority:</strong> HIGH<br />
+<strong>Status:</strong> DRAFT<br />
+<strong>Created:</strong> 2026-02-01<br />
+<strong>Last Modified:</strong> 2026-02-01  </p>
+<h2>User Story Statement</h2>
+<p>As a content creator generating documentation with clickable links, I want all generated links to use relative paths instead of absolute paths, so that the documentation remains portable and works correctly when moved to different locations or deployed to different environments.</p>
+<h2>User Scenarios</h2>
+<h3>Scenario 1: Portable Documentation</h3>
+<ul>
+<li><strong>Given</strong> a user generates index files with clickable links</li>
+<li><strong>When</strong> the documentation is moved to a different directory or server</li>
+<li><strong>Then</strong> all links should continue to work without requiring path updates</li>
+</ul>
+<h3>Scenario 2: Cross-Platform Compatibility</h3>
+<ul>
+<li><strong>Given</strong> documentation is generated on one operating system</li>
+<li><strong>When</strong> it's accessed on a different operating system</li>
+<li><strong>Then</strong> relative links should work regardless of the file system structure</li>
+</ul>
+<h3>Scenario 3: Deployment Flexibility</h3>
+<ul>
+<li><strong>Given</strong> documentation needs to be deployed to different web servers</li>
+<li><strong>When</strong> the base URL changes (e.g., from local development to production)</li>
+<li><strong>Then</strong> relative links should automatically adapt without manual intervention</li>
+</ul>
+<h2>Requirements</h2>
+<h3>Functional Requirements</h3>
+<ul>
+<li><strong>[FR-35-001]</strong>: Index generator MUST create relative links for all file references</li>
+<li><strong>[FR-35-002]</strong>: HTML converter MUST convert absolute paths to relative paths in generated links</li>
+<li><strong>[FR-35-003]</strong>: All generated index files MUST use relative paths for internal navigation</li>
+<li><strong>[FR-35-004]</strong>: Link generation MUST calculate relative paths based on current file location</li>
+<li><strong>[FR-35-005]</strong>: System MUST handle nested directory structures correctly with relative links</li>
+<li><strong>[FR-35-006]</strong>: Generated links MUST work when documentation is moved as a complete unit</li>
+</ul>
+<h3>Non-Functional Requirements</h3>
+<ul>
+<li><strong>[NFR-35-001]</strong>: Link generation MUST be efficient and not significantly impact performance</li>
+<li><strong>[NFR-35-002]</strong>: Relative path calculation MUST handle edge cases (empty directories, root level)</li>
+<li><strong>[NFR-35-003]</strong>: Generated links MUST be valid and testable for correctness</li>
+<li><strong>[NFR-35-004]</strong>: System MUST maintain backward compatibility with existing relative link structures</li>
+</ul>
+<h2>Acceptance Criteria</h2>
+<h3>AC-35-001: Basic Relative Link Generation</h3>
+<ul>
+<li><strong>Given</strong> an index file is generated in a subdirectory</li>
+<li><strong>When</strong> links to sibling files are created</li>
+<li><strong>Then</strong> links use relative paths (e.g., <code>../sibling.md</code> instead of <code>/absolute/path/sibling.md</code>)</li>
+</ul>
+<h3>AC-35-002: Nested Directory Handling</h3>
+<ul>
+<li><strong>Given</strong> documentation with multiple nested levels</li>
+<li><strong>When</strong> index files are generated at different levels</li>
+<li><strong>Then</strong> all links use appropriate relative paths (e.g., <code>../../parent/file.md</code>)</li>
+</ul>
+<h3>AC-35-003: Cross-Tool Consistency</h3>
+<ul>
+<li><strong>Given</strong> both index_generator.py and converter_for_md_to_html.py are used</li>
+<li><strong>When</strong> they generate links to the same files</li>
+<li><strong>Then</strong> both tools produce consistent relative link formats</li>
+</ul>
+<h3>AC-35-004: Portability Verification</h3>
+<ul>
+<li><strong>Given</strong> documentation with relative links is moved to a new location</li>
+<li><strong>When</strong> links are tested in the new location</li>
+<li><strong>Then</strong> all internal links continue to work correctly</li>
+</ul>
+<h2>Implementation Notes</h2>
+<h3>Current Behavior</h3>
+<ul>
+<li>Some tools may generate absolute paths</li>
+<li>Link generation may not be consistent across different tools</li>
+<li>No standardized approach for relative path calculation</li>
+</ul>
+<h3>Desired Behavior</h3>
+<ul>
+<li>All generated links use relative paths</li>
+<li>Consistent relative path format across all tools</li>
+<li>Proper handling of directory traversal (../ notation)</li>
+<li>Cross-platform compatible path separators</li>
+</ul>
+<h3>Technical Considerations</h3>
+<ul>
+<li>Must integrate with existing path calculation logic</li>
+<li>Should handle both Windows and Unix-style path separators</li>
+<li>Needs to work with the ManagerForDirOTBase for consistent output paths</li>
+<li>Must maintain existing functionality while adding relative link support</li>
+</ul>
+<h2>Testing Strategy</h2>
+<h3>Unit Tests</h3>
+<ul>
+<li>Test relative path calculation for various directory structures</li>
+<li>Verify cross-platform path separator handling</li>
+<li>Test edge cases (root directory, single files, deeply nested structures)</li>
+</ul>
+<h3>Integration Tests</h3>
+<ul>
+<li>Test index_generator.py with relative links</li>
+<li>Test converter_for_md_to_html.py with relative links</li>
+<li>Verify consistency between different tools</li>
+</ul>
+<h3>Portability Tests</h3>
+<ul>
+<li>Move generated documentation to different locations</li>
+<li>Test link functionality in new locations</li>
+<li>Verify cross-platform compatibility</li>
+</ul>
+<h2>Dependencies</h2>
+<ul>
+<li><strong>[DEPENDENCY-35-001]</strong>: ManagerForDirOTBase path handling</li>
+<li><strong>[DEPENDENCY-35-002]</strong>: Existing index generation logic</li>
+<li><strong>[DEPENDENCY-35-003]</strong>: HTML conversion path processing</li>
+<li><strong>[DEPENDENCY-35-004]</strong>: Cross-platform path utilities</li>
+</ul>
+<h2>Risk Assessment</h2>
+<ul>
+<li><strong>[RISK-35-001]</strong>: Breaking existing absolute link functionality</li>
+<li><strong>Mitigation</strong>: Maintain backward compatibility during transition</li>
+<li><strong>[RISK-35-002]</strong>: Incorrect relative path calculation in complex structures</li>
+<li><strong>Mitigation</strong>: Comprehensive testing with various directory structures</li>
+<li><strong>[RISK-35-003]</strong>: Cross-platform path separator issues</li>
+<li><strong>Mitigation</strong>: Use platform-agnostic path handling utilities</li>
+</ul>
+<h2>Stakeholders</h2>
+<ul>
+<li><strong>Primary</strong>: Content creators, Documentation teams, Developers</li>
+<li><strong>Secondary</strong>: End users accessing documentation, System administrators</li>
+<li><strong>Approver</strong>: Framework Steward</li>
+</ul>
+<h2>Related Artifacts</h2>
+<ul>
+<li><strong>[RELATED-35-001]</strong>: index_generator.py - Index file generation with relative links</li>
+<li><strong>[RELATED-35-002]</strong>: converter_for_md_to_html.py - HTML conversion with relative links</li>
+<li><strong>[RELATED-35-003]</strong>: ManagerForDirOTBase - Path management utilities</li>
+<li><strong>[RELATED-35-004]</strong>: Existing user stories for link generation</li>
+</ul>
+<h2>Implementation Priority</h2>
+<ol>
+<li><strong>Phase 1</strong>: Update index_generator.py for relative links</li>
+<li><strong>Phase 2</strong>: Update converter_for_md_to_html.py for relative links</li>
+<li><strong>Phase 3</strong>: Add comprehensive testing and validation</li>
+<li><strong>Phase 4</strong>: Documentation and migration guide</li>
+</ol>
+<p><strong>User Story Steward:</strong> Framework Steward<br />
+<strong>Approval Status:</strong> Pending<br />
+<strong>Review Cycle:</strong> As needed</p>
+        <footer>
+            <p><em>Generated on 2026-02-01 19:53:48 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

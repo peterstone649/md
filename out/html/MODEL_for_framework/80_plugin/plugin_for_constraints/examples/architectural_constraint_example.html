@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>architectural_constraint_example</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>🏗️ Architectural Constraint Example: Microservices Design Patterns</h1>
+<p><strong>Example constraint definition for microservices architecture patterns</strong></p>
+<h2>📋 Constraint Overview</h2>
+<p><strong>Constraint ID</strong>: AR-001
+<strong>Constraint Name</strong>: Microservices Architecture Patterns
+<strong>Type</strong>: Architectural Constraint
+<strong>Enforcement Level</strong>: High
+<strong>Owner</strong>: Architecture Team</p>
+<h2>🎯 What This Constraint Ensures</h2>
+<p>This constraint ensures that all services in the framework follow established microservices architectural patterns, promoting consistency, maintainability, and scalability across the distributed system. It prevents architectural drift and ensures proper service boundaries and communication patterns.</p>
+<p><strong>Why this matters:</strong>
+- Maintains consistent architecture across all services
+- Prevents tight coupling between services
+- Ensures proper service boundaries and responsibilities
+- Facilitates system scalability and maintainability
+- Reduces technical debt and architectural inconsistencies</p>
+<h2>📝 Constraint Specification</h2>
+<h3>Requirements</h3>
+<ol>
+<li><strong>Service Boundaries</strong>: Each service must represent a single business capability</li>
+<li><strong>Database Per Service</strong>: Each service must have its own database/schema</li>
+<li><strong>API Contracts</strong>: All service communication must use well-defined API contracts</li>
+<li><strong>Event-Driven Communication</strong>: Use events for asynchronous communication between services</li>
+<li><strong>Circuit Breaker Pattern</strong>: Implement circuit breakers for external service calls</li>
+<li><strong>Service Discovery</strong>: Use service discovery for dynamic service location</li>
+<li><strong>Configuration Management</strong>: Externalize configuration from service code</li>
+</ol>
+<h3>Acceptance Criteria</h3>
+<ul>
+<li>[ ] Each service has a single, well-defined business responsibility</li>
+<li>[ ] No shared databases between services (except for read-only reporting)</li>
+<li>[ ] All APIs have documented contracts with versioning strategy</li>
+<li>[ ] Event-driven patterns used for inter-service communication</li>
+<li>[ ] Circuit breakers implemented for all external service calls</li>
+<li>[ ] Service discovery configured and working</li>
+<li>[ ] Configuration externalized and environment-specific</li>
+</ul>
+<h3>Implementation Details</h3>
+<p><strong>Technical Specifications:</strong></p>
+<pre><code class="language-yaml">architecture_patterns:
+  service_boundaries:
+    principle: &quot;Single business capability per service&quot;
+    size_guideline: &quot;50-500 lines of business logic&quot;
+    coupling: &quot;Loose coupling, high cohesion&quot;
+  data_management:
+    pattern: &quot;Database per service&quot;
+    exceptions: &quot;Read-only reporting databases allowed&quot;
+    migration: &quot;Service-owned database migrations&quot;
+  communication:
+    sync: &quot;RESTful APIs with OpenAPI specifications&quot;
+    async: &quot;Event-driven with message queues&quot;
+    contracts: &quot;Versioned API contracts required&quot;
+  resilience:
+    circuit_breaker: &quot;Required for all external calls&quot;
+    timeout: &quot;Maximum 30 seconds for external calls&quot;
+    retry: &quot;Exponential backoff with jitter&quot;
+  service_discovery:
+    mechanism: &quot;Consul or equivalent service registry&quot;
+    health_checks: &quot;Required for all services&quot;
+    load_balancing: &quot;Client-side load balancing&quot;
+  configuration:
+    externalization: &quot;All configuration externalized&quot;
+    sources: &quot;Environment variables, config files, vault&quot;
+    reload: &quot;Runtime configuration reload supported&quot;
+</code></pre>
+<p><strong>Validation Methods:</strong>
+- <strong>Architecture Reviews</strong>: Regular design reviews for new services
+- <strong>Code Analysis</strong>: Automated checks for architectural patterns
+- <strong>API Contract Validation</strong>: Contract testing and validation
+- <strong>Service Dependency Mapping</strong>: Automated dependency graph analysis</p>
+<p><strong>Tools &amp; Technologies:</strong>
+- <strong>Service Framework</strong>: Spring Boot, .NET Core, Express.js
+- <strong>API Documentation</strong>: OpenAPI/Swagger specifications
+- <strong>Message Queues</strong>: RabbitMQ, Apache Kafka, AWS SQS
+- <strong>Service Discovery</strong>: Consul, Eureka, etcd
+- <strong>Circuit Breakers</strong>: Hystrix, Resilience4j, Polly
+- <strong>Configuration</strong>: Spring Cloud Config, Consul, Vault</p>
+<h2>🔄 Enforcement &amp; Monitoring</h2>
+<h3>Validation Process</h3>
+<p><strong>When Checked:</strong>
+- <strong>Design Phase</strong>: Architecture review before implementation
+- <strong>Development</strong>: Code reviews for pattern compliance
+- <strong>Testing</strong>: Contract testing and integration testing
+- <strong>Deployment</strong>: Automated checks in CI/CD pipeline
+- <strong>Runtime</strong>: Monitoring service health and communication patterns</p>
+<p><strong>Who Enforces:</strong>
+- <strong>Architecture Team</strong>: Design reviews and pattern validation
+- <strong>Development Teams</strong>: Code reviews and implementation compliance
+- <strong>DevOps Team</strong>: Deployment validation and monitoring
+- <strong>Automated Tools</strong>: Continuous compliance checking</p>
+<h3>Monitoring &amp; Reporting</h3>
+<p><strong>Compliance Metrics:</strong>
+- Service boundary adherence percentage
+- Database isolation compliance
+- API contract completeness
+- Event-driven communication usage
+- Circuit breaker implementation coverage
+- Service discovery health status
+- Configuration externalization compliance</p>
+<p><strong>Reporting Frequency:</strong>
+- <strong>Real-time</strong>: Service health and communication monitoring
+- <strong>Daily</strong>: Architecture compliance dashboard
+- <strong>Weekly</strong>: Detailed compliance reports
+- <strong>Monthly</strong>: Architecture review and pattern effectiveness</p>
+<p><strong>Violation Handling:</strong>
+- <strong>Design violations</strong>: Block service creation until resolved
+- <strong>Implementation violations</strong>: Block deployment until fixed
+- <strong>Runtime violations</strong>: Alert and require immediate remediation
+- <strong>Pattern drift</strong>: Schedule refactoring and realignment</p>
+<h2>📚 Examples</h2>
+<h3>Compliant Example</h3>
+<pre><code class="language-yaml"># Service Definition: User Management Service
+service_name: user-management-service
+business_capability: &quot;User lifecycle management&quot;
+responsibilities:
+  - User registration and authentication
+  - User profile management
+  - User preferences and settings
+
+# Database Configuration
+database:
+  name: user_management_db
+  type: PostgreSQL
+  isolation: &quot;Service-specific, no sharing&quot;
+
+# API Contract
+api_contract:
+  version: &quot;v1&quot;
+  specification: &quot;OpenAPI 3.0&quot;
+  endpoints:
+    - path: &quot;/api/v1/users&quot;
+      method: &quot;POST&quot;
+      description: &quot;Create new user&quot;
+      contract_file: &quot;contracts/user-api-v1.yaml&quot;
+
+# Event Configuration
+events:
+  published:
+    - user.created
+    - user.updated
+    - user.deleted
+  consumed:
+    - profile.updated
+    - preferences.changed
+
+# Resilience Configuration
+resilience:
+  circuit_breaker:
+    enabled: true
+    failure_threshold: 5
+    recovery_timeout: 30s
+  timeout: 30s
+  retry:
+    max_attempts: 3
+    backoff: &quot;exponential&quot;
+
+# Service Discovery
+service_discovery:
+  enabled: true
+  registry: &quot;consul&quot;
+  health_check_interval: &quot;30s&quot;
+
+# Configuration
+configuration:
+  externalized: true
+  sources:
+    - environment_variables
+    - consul_kv
+    - vault_secrets
+</code></pre>
+<h3>Non-compliant Example</h3>
+<pre><code class="language-yaml"># Anti-pattern: Monolithic service with shared database
+service_name: everything-service
+business_capability: &quot;Multiple unrelated functions&quot;
+responsibilities:
+  - User management
+  - Order processing
+  - Inventory management
+  - Reporting
+
+# Shared database (VIOLATION)
+database:
+  name: shared_main_db  # VIOLATION: Shared database
+  type: MySQL
+
+# No API contracts
+api_contract: null  # VIOLATION: No contracts
+
+# No event-driven communication
+events: {}  # VIOLATION: No events
+
+# No resilience patterns
+resilience: {}  # VIOLATION: No circuit breakers
+
+# No service discovery
+service_discovery: null  # VIOLATION: No discovery
+
+# Hardcoded configuration
+configuration:
+  externalized: false  # VIOLATION: Configuration in code
+  hardcoded_values:
+    database_url: &quot;localhost:3306&quot;
+    api_key: &quot;secret123&quot;
+</code></pre>
+<p><strong>Issues:</strong>
+- Multiple business capabilities in one service
+- Shared database violates service isolation
+- No API contracts or versioning
+- No event-driven communication
+- No resilience patterns
+- No service discovery
+- Hardcoded configuration</p>
+<h3>Best Practices</h3>
+<ol>
+<li><strong>Service Design</strong>: Focus on single business capabilities</li>
+<li><strong>Data Isolation</strong>: Maintain strict database separation</li>
+<li><strong>API Design</strong>: Use consistent API patterns and versioning</li>
+<li><strong>Event Patterns</strong>: Implement proper event-driven architecture</li>
+<li><strong>Resilience</strong>: Always implement circuit breakers and timeouts</li>
+<li><strong>Monitoring</strong>: Comprehensive observability for all services</li>
+</ol>
+<h2>🔄 Maintenance &amp; Updates</h2>
+<h3>Review Schedule</h3>
+<ul>
+<li><strong>Monthly</strong>: Service boundary reviews and dependency analysis</li>
+<li><strong>Quarterly</strong>: Architecture pattern effectiveness assessment</li>
+<li><strong>Annually</strong>: Major architectural review and pattern updates</li>
+<li><strong>As needed</strong>: Review after major system changes or incidents</li>
+</ul>
+<h3>Update Process</h3>
+<ol>
+<li><strong>Pattern Evolution</strong>: Track industry best practices and framework evolution</li>
+<li><strong>Feedback Collection</strong>: Gather input from development teams</li>
+<li><strong>Impact Analysis</strong>: Assess impact of pattern changes</li>
+<li><strong>Gradual Migration</strong>: Implement changes incrementally</li>
+<li><strong>Documentation Updates</strong>: Update patterns and guidelines</li>
+</ol>
+<h3>Impact Assessment</h3>
+<p><strong>When Updating This Constraint:</strong>
+- <strong>Service Refactoring</strong>: May require service boundary changes
+- <strong>Database Migration</strong>: May need database separation
+- <strong>API Changes</strong>: May require API contract updates
+- <strong>Communication Patterns</strong>: May change event-driven approaches
+- <strong>Team Training</strong>: May require team education on new patterns</p>
+<h2>🤝 Stakeholder Information</h2>
+<h3>Primary Owner</h3>
+<p><strong>Owner</strong>: Architecture Team
+<strong>Contact</strong>: architecture@framework.org
+<strong>Responsibilities</strong>: Define patterns, review designs, ensure compliance</p>
+<h3>Reviewers</h3>
+<p><strong>Technical Reviewer</strong>: Senior Software Architects
+<strong>Operations Reviewer</strong>: DevOps Team Lead
+<strong>Security Reviewer</strong>: Security Architecture Team</p>
+<h3>Affected Teams</h3>
+<ul>
+<li>All development teams creating microservices</li>
+<li>DevOps and infrastructure teams</li>
+<li>QA and testing teams</li>
+<li>Product management and design teams</li>
+<li>Operations and monitoring teams</li>
+</ul>
+<h2>📞 Additional Information</h2>
+<h3>References</h3>
+<ul>
+<li><a href="https://microservices.io/patterns/">Microservices.io Patterns</a></li>
+<li><a href="https://framework.org/architecture-guidelines">Framework Architecture Guidelines</a></li>
+<li><a href="https://framework.org/api-design">API Design Best Practices</a></li>
+</ul>
+<h3>Notes</h3>
+<ul>
+<li>This constraint applies to all new microservices</li>
+<li>Existing services should migrate to these patterns over time</li>
+<li>Exceptions require documented justification and approval</li>
+</ul>
+<h3>Related Constraints</h3>
+<ul>
+<li><a href="../constraint_types.md#performance-constraints">Performance Standards</a></li>
+<li><a href="../constraint_types.md#security-constraints">Security Patterns</a></li>
+</ul>
+<hr />
+<p><strong>Next Steps</strong>: Use this example as a template for defining your own architectural constraints!</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.0</td>
+<td>2026-01-31</td>
+<td>Initial creation of architectural constraint example</td>
+<td>Architecture Team</td>
+<td>Establish example for microservices patterns</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p><em>Generated on 2026-02-01 19:53:47 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

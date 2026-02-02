@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_validation_framework</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Markdown Validation Rules [CONVENTION_FOR_MFW_MARKDOWN_VALIDATION] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.0</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-02-01</strong></p>
+<h2>Overview</h2>
+<p>This document defines the validation rules and requirements for ensuring CommonMark compliance and framework extension compatibility. All Markdown files within this framework MUST pass these validation rules.</p>
+<h2>Validation Framework</h2>
+<h3>1. Validation Levels</h3>
+<pre><code class="language-markdown">Validation Categories:
+├── L1: CommonMark Core Compliance
+├── L2: Framework Extension Compliance
+├── L3: Cross-Parser Compatibility
+├── L4: Semantic Correctness
+└── L5: Performance and Scalability
+</code></pre>
+<h3>2. Validation Requirements</h3>
+<pre><code class="language-markdown">Mandatory Validation:
+├── All files MUST pass L1 validation
+├── Framework-specific files MUST pass L2 validation
+├── Public documentation MUST pass L3 validation
+├── Critical documentation MUST pass L4 validation
+└── Large files MUST pass L5 validation
+</code></pre>
+<h2>Level 1: CommonMark Core Compliance</h2>
+<h3>1.1 Syntax Validation</h3>
+<pre><code class="language-markdown">Core Syntax Rules:
+├── Headers MUST follow CommonMark specification
+├── Lists MUST use proper indentation and markers
+├── Links MUST have valid URL syntax
+├── Images MUST have valid alt text and URLs
+├── Code blocks MUST use proper fencing
+└── Emphasis MUST use consistent markers
+</code></pre>
+<h3>1.2 Structure Validation</h3>
+<pre><code class="language-markdown">Document Structure:
+├── MUST have proper heading hierarchy
+├── Lists MUST be properly nested
+├── Tables MUST have consistent column alignment
+├── Blockquotes MUST use proper syntax
+├── Horizontal rules MUST use valid syntax
+└── HTML blocks MUST be properly formatted
+</code></pre>
+<h3>1.3 Content Validation</h3>
+<pre><code class="language-markdown">Content Requirements:
+├── Text MUST be properly escaped
+├── Special characters MUST be handled correctly
+├── Unicode characters MUST be supported
+├── Line endings MUST be consistent
+├── Whitespace MUST follow CommonMark rules
+└── Comments MUST use proper syntax
+</code></pre>
+<h2>Level 2: Framework Extension Compliance</h2>
+<h3>2.1 Extension Syntax Validation</h3>
+<pre><code class="language-markdown">Extension Rules:
+├── Framework headers MUST use proper prefixes
+├── Status indicators MUST follow format
+├── Priority markers MUST be valid
+├── Framework references MUST be resolvable
+├── Enhanced code blocks MUST have valid tags
+└── Metadata MUST use proper format
+</code></pre>
+<h3>2.2 Extension Compatibility</h3>
+<pre><code class="language-markdown">Compatibility Requirements:
+├── Extensions MUST not conflict with CommonMark
+├── Fallback behavior MUST be documented
+├── Extension syntax MUST be consistent
+├── Extension usage MUST be justified
+├── Extension documentation MUST be complete
+└── Extension testing MUST be comprehensive
+</code></pre>
+<h3>2.3 Extension Quality</h3>
+<pre><code class="language-markdown">Quality Standards:
+├── Extensions MUST enhance document clarity
+├── Extensions MUST follow framework conventions
+├── Extensions MUST be consistently applied
+├── Extensions MUST have clear purpose
+├── Extensions MUST be maintainable
+└── Extensions MUST be documented
+</code></pre>
+<h2>Level 3: Cross-Parser Compatibility</h2>
+<h3>3.1 Parser Testing</h3>
+<pre><code class="language-markdown">Parser Compatibility:
+├── MUST render correctly in CommonMark parser
+├── MUST render correctly in GitHub Flavored Markdown
+├── MUST render correctly in GitLab Flavored Markdown
+├── MUST render correctly in Bitbucket Markdown
+├── MUST render correctly in VS Code Markdown preview
+└── MUST render correctly in major documentation tools
+</code></pre>
+<h3>3.2 Platform Testing</h3>
+<pre><code class="language-markdown">Platform Compatibility:
+├── MUST work in GitHub repositories
+├── MUST work in GitLab repositories
+├── MUST work in documentation generators
+├── MUST work in static site generators
+├── MUST work in markdown editors
+└── MUST work in CI/CD pipelines
+</code></pre>
+<h3>3.3 Tool Integration</h3>
+<pre><code class="language-markdown">Tool Compatibility:
+├── MUST work with markdownlint
+├── MUST work with prettier
+├── MUST work with markdown-it
+├── MUST work with pandoc
+├── MUST work with commonmark.js
+└── MUST work with markdown parsers
+</code></pre>
+<h2>Level 4: Semantic Correctness</h2>
+<h3>4.1 Document Semantics</h3>
+<pre><code class="language-markdown">Semantic Requirements:
+├── Document structure MUST be logical
+├── Heading hierarchy MUST be correct
+├── Content organization MUST be clear
+├── Cross-references MUST be valid
+├── Link targets MUST exist
+└── Image sources MUST be accessible
+</code></pre>
+<h3>4.2 Content Semantics</h3>
+<pre><code class="language-markdown">Content Meaning:
+├── Text MUST convey intended meaning
+├── Code examples MUST be accurate
+├── Tables MUST present data clearly
+├── Lists MUST be logically ordered
+├── Blockquotes MUST be properly attributed
+└── Metadata MUST be accurate and complete
+</code></pre>
+<h3>4.3 Accessibility Semantics</h3>
+<pre><code class="language-markdown">Accessibility Requirements:
+├── Alt text MUST be descriptive
+├── Headings MUST form logical hierarchy
+├── Links MUST have meaningful text
+├── Tables MUST have proper headers
+├── Images MUST have appropriate descriptions
+└── Code blocks MUST be readable
+</code></pre>
+<h2>Level 5: Performance and Scalability</h2>
+<h3>5.1 File Size Limits</h3>
+<pre><code class="language-markdown">Size Requirements:
+├── Individual files MUST be under 1MB
+├── Large files MUST be split appropriately
+├── Images MUST be optimized
+├── Code blocks MUST be reasonably sized
+├── Tables MUST not exceed reasonable complexity
+└── Documents MUST load quickly
+</code></pre>
+<h3>5.2 Processing Performance</h3>
+<pre><code class="language-markdown">Performance Standards:
+├── Parsing MUST complete in reasonable time
+├── Rendering MUST be efficient
+├── Validation MUST be fast
+├── Processing MUST scale with file size
+├── Memory usage MUST be reasonable
+└── CPU usage MUST be optimized
+</code></pre>
+<h3>5.3 Scalability Considerations</h3>
+<pre><code class="language-markdown">Scalability Rules:
+├── Large documents MUST be manageable
+├── Complex documents MUST render correctly
+├── Many files MUST process efficiently
+├── Validation MUST scale with project size
+├── Tools MUST handle large repositories
+└── Performance MUST not degrade with growth
+</code></pre>
+<h2>Validation Tools and Processes</h2>
+<h3>1. Automated Validation</h3>
+<pre><code class="language-markdown">Validation Pipeline:
+├── Pre-commit hooks MUST validate Markdown
+├── CI/CD MUST include Markdown validation
+├── Automated testing MUST run validation
+├── Documentation builds MUST validate
+├── Release processes MUST validate
+└── Code reviews MUST check validation
+</code></pre>
+<h3>2. Manual Validation</h3>
+<pre><code class="language-markdown">Manual Review Process:
+├── Critical documents MUST be manually reviewed
+├── New extensions MUST be manually validated
+├── Complex documents MUST be manually checked
+├── Cross-platform testing MUST be manual
+├── Accessibility MUST be manually verified
+└── Semantic correctness MUST be manually reviewed
+</code></pre>
+<h3>3. Validation Tools</h3>
+<pre><code class="language-markdown">Tool Requirements:
+├── CommonMark validator MUST be used
+├── Framework extension validator MUST be used
+├── Cross-parser validator MUST be used
+├── Accessibility validator MUST be used
+├── Performance validator MUST be used
+└── Custom validators MUST be developed as needed
+</code></pre>
+<h2>Validation Implementation</h2>
+<h3>1. Pre-commit Hooks</h3>
+<pre><code class="language-markdown">Hook Configuration:
+#!/bin/bash
+# Markdown validation pre-commit hook
+
+echo &quot;Validating Markdown files...&quot;
+
+# Check for CommonMark compliance
+for file in $(git diff --cached --name-only --diff-filter=ACM | grep -E '\.md$'); do
+  echo &quot;Validating $file...&quot;
+
+  # Run CommonMark validation
+  if ! commonmark-validator &quot;$file&quot;; then
+    echo &quot;ERROR: $file failed CommonMark validation&quot;
+    exit 1
+  fi
+
+  # Run framework extension validation
+  if ! framework-markdown-validator &quot;$file&quot;; then
+    echo &quot;ERROR: $file failed framework extension validation&quot;
+    exit 1
+  fi
+
+  # Run cross-parser compatibility check
+  if ! cross-parser-validator &quot;$file&quot;; then
+    echo &quot;ERROR: $file failed cross-parser validation&quot;
+    exit 1
+  fi
+done
+
+echo &quot;All Markdown files validated successfully!&quot;
+</code></pre>
+<h3>2. CI/CD Integration</h3>
+<pre><code class="language-yaml"># GitHub Actions workflow example
+name: Markdown Validation
+on: [push, pull_request]
+
+jobs:
+  markdown-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install validation tools
+        run: |
+          npm install -g commonmark-validator
+          npm install -g framework-markdown-validator
+
+      - name: Validate CommonMark compliance
+        run: find . -name &quot;*.md&quot; -exec commonmark-validator {} \;
+
+      - name: Validate framework extensions
+        run: find . -name &quot;*.md&quot; -exec framework-markdown-validator {} \;
+
+      - name: Validate cross-parser compatibility
+        run: find . -name &quot;*.md&quot; -exec cross-parser-validator {} \;
+</code></pre>
+<h3>3. Validation Scripts</h3>
+<pre><code class="language-bash">#!/bin/bash
+# Comprehensive Markdown validation script
+
+echo &quot;=== Markdown Validation Report ===&quot;
+echo &quot;Date: $(date)&quot;
+echo &quot;Files: $(find . -name &quot;*.md&quot; | wc -l)&quot;
+echo &quot;&quot;
+
+# Count validation results
+total=0
+passed=0
+failed=0
+
+for file in $(find . -name &quot;*.md&quot;); do
+  total=$((total + 1))
+  echo &quot;Validating: $file&quot;
+
+  # CommonMark validation
+  if commonmark-validator &quot;$file&quot; &gt;/dev/null 2&gt;&amp;1; then
+    echo &quot;  ✓ CommonMark compliance&quot;
+  else
+    echo &quot;  ✗ CommonMark compliance FAILED&quot;
+    failed=$((failed + 1))
+    continue
+  fi
+
+  # Framework extension validation
+  if framework-markdown-validator &quot;$file&quot; &gt;/dev/null 2&gt;&amp;1; then
+    echo &quot;  ✓ Framework extensions&quot;
+  else
+    echo &quot;  ✗ Framework extensions FAILED&quot;
+    failed=$((failed + 1))
+    continue
+  fi
+
+  # Cross-parser validation
+  if cross-parser-validator &quot;$file&quot; &gt;/dev/null 2&gt;&amp;1; then
+    echo &quot;  ✓ Cross-parser compatibility&quot;
+  else
+    echo &quot;  ✗ Cross-parser compatibility FAILED&quot;
+    failed=$((failed + 1))
+    continue
+  fi
+
+  passed=$((passed + 1))
+  echo &quot;  ✓ All validations passed&quot;
+  echo &quot;&quot;
+done
+
+echo &quot;=== Validation Summary ===&quot;
+echo &quot;Total files: $total&quot;
+echo &quot;Passed: $passed&quot;
+echo &quot;Failed: $failed&quot;
+echo &quot;Success rate: $(( passed * 100 / total ))%&quot;
+
+if [ $failed -gt 0 ]; then
+  echo &quot;&quot;
+  echo &quot;❌ Validation failed! Please fix the issues above.&quot;
+  exit 1
+else
+  echo &quot;&quot;
+  echo &quot;✅ All validations passed!&quot;
+  exit 0
+fi
+</code></pre>
+<h2>Validation Reporting</h2>
+<h3>1. Validation Reports</h3>
+<pre><code class="language-markdown">Report Format:
+# Markdown Validation Report
+
+**Date**: 2026-02-01
+**Files Checked**: 150
+**Passed**: 148
+**Failed**: 2
+**Success Rate**: 98.7%
+
+## Failed Files
+
+### file1.md
+- ✗ CommonMark compliance: Line 45, invalid link syntax
+- ✗ Framework extensions: Line 12, invalid status indicator
+
+### file2.md
+- ✗ Cross-parser compatibility: Line 89, unsupported extension
+
+## Recommendations
+
+1. Fix link syntax in file1.md
+2. Update status indicator format in file1.md
+3. Review extension usage in file2.md
+</code></pre>
+<h3>2. Continuous Monitoring</h3>
+<pre><code class="language-markdown">Monitoring Dashboard:
+├── Daily validation reports
+├── Weekly trend analysis
+├── Monthly compliance summaries
+├── Quarterly framework extension reviews
+├── Annual CommonMark specification updates
+└── Real-time validation alerts
+</code></pre>
+<h3>3. Quality Metrics</h3>
+<pre><code class="language-markdown">Quality Indicators:
+├── CommonMark compliance rate
+├── Framework extension compliance rate
+├── Cross-parser compatibility rate
+├── Validation performance metrics
+├── Error frequency and types
+└── Resolution time for issues
+</code></pre>
+<h2>Maintenance and Updates</h2>
+<h3>1. Validation Rule Updates</h3>
+<pre><code class="language-markdown">Update Process:
+├── Monitor CommonMark specification changes
+├── Review framework extension requirements
+├── Update validation rules as needed
+├── Test updated rules thoroughly
+├── Deploy updated validation tools
+└── Communicate changes to team
+</code></pre>
+<h3>2. Tool Maintenance</h3>
+<pre><code class="language-markdown">Tool Management:
+├── Regular updates to validation tools
+├── Performance optimization of validators
+├── Bug fixes and issue resolution
+├── New feature implementation
+├── Documentation updates
+└── User support and training
+</code></pre>
+<h3>3. Process Improvement</h3>
+<pre><code class="language-markdown">Continuous Improvement:
+├── Analyze validation failure patterns
+├── Identify common issues and solutions
+├── Improve validation tool accuracy
+├── Enhance validation speed and efficiency
+├── Update validation guidelines
+└── Share best practices and lessons learned
+</code></pre>
+<h2>References and Resources</h2>
+<h3>CommonMark Validation Tools</h3>
+<ul>
+<li><a href="https://github.com/commonmark/commonmark.js">CommonMark Validator</a></li>
+<li><a href="https://github.com/DavidAnson/markdownlint">Markdownlint</a></li>
+<li><a href="https://prettier.io/">Prettier Markdown</a></li>
+<li><a href="https://vale.sh/">Vale Linter</a></li>
+</ul>
+<h3>Framework Validation Tools</h3>
+<ul>
+<li><a href="https://github.com/framework/markdown-validator">Framework Markdown Validator</a></li>
+<li><a href="https://github.com/framework/extension-checker">Extension Compatibility Checker</a></li>
+<li><a href="https://github.com/framework/cross-parser-validator">Cross-Parser Validator</a></li>
+</ul>
+<h3>Validation Best Practices</h3>
+<ul>
+<li><a href="https://spec.commonmark.org/dingus/">CommonMark Test Suite</a></li>
+<li><a href="https://www.markdownguide.org/">Markdown Style Guide</a></li>
+<li><a href="https://www.w3.org/WAI/">Accessibility Guidelines</a></li>
+</ul>
+<hr />
+<p><strong>Framework</strong>: MODEL_for_framework<br />
+<strong>Framework Version</strong>: V1.0.0<br />
+<strong>Date</strong>: 2026-02-01  </p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.0</td>
+<td>2026-02-01</td>
+<td>Initial creation</td>
+<td>Framework Steward</td>
+<td>Establish validation framework</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p><em>Generated on 2026-02-01 19:53:48 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

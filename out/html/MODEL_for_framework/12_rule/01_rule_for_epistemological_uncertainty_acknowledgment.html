@@ -61,81 +61,41 @@
 </head>
 <body>
     <h1>Epistemological Uncertainty Acknowledgment [RULE_FOR_MFW_EPISTEMOLOGICAL_ACKNOWLEDGMENT] <strong>[PRIO: HIGHEST]</strong></h1>
-<p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
-<strong>Scope:</strong> All framework stakeholders and AI systems</p>
 <p><em>Based on: <a href="../35_axiom/10_axiom_of_epistemological_uncertainty.html">10_axiom_of_epistemological_uncertainty.md</a></em></p>
 <h2>Rule Statement</h2>
 <p>All stakeholders and AI systems MUST acknowledge the inherent uncertainty in all statements, claims, and outputs. No statement shall be treated as absolute, complete, or bias-free.</p>
-<p><strong>Formal Statement:</strong></p>
+<h2>Rule Requirements</h2>
+<ul>
+<li><strong>[R1]</strong>: All statements include uncertainty declarations using the standard format</li>
+<li><strong>[R2]</strong>: Confidence levels are assigned and appropriate actions taken per threshold matrix</li>
+<li><strong>[R3]</strong>: High-stakes decisions receive enhanced scrutiny</li>
+<li><strong>[R4]</strong>: Low-confidence statements are explicitly labeled as hypotheses</li>
+</ul>
+<h2>Formal Statement</h2>
 <pre><code>∀s∀a∀stakeholder (Statement(s) ∧ Actor(a) ∧ (Human(stakeholder) ∨ AI(a))) 
     → MustAcknowledge(a, Uncertainty(s)) ∧ MustIdentify(a, Limitations(s)) 
     ∧ MustDeclare(a, BiasPotential(s)))
 </code></pre>
-<h2>Core Requirements</h2>
-<ul>
-<li>[ ] <strong>U1</strong>: All statements include uncertainty declarations using the standard format</li>
-<li>[ ] <strong>U2</strong>: Confidence levels are assigned and appropriate actions taken per threshold matrix</li>
-<li>[ ] <strong>U3</strong>: High-stakes decisions receive enhanced scrutiny</li>
-<li>[ ] <strong>U4</strong>: Low-confidence statements are explicitly labeled as hypotheses</li>
-</ul>
-<h2>Uncertainty Communication</h2>
-<p><strong>All uncertainty declarations MUST follow the standardized format defined in:</strong>
-<strong><a href="../20_convention/20_convention_for_uncertainty_communication.html">20_convention_for_uncertainty_communication.md</a></strong></p>
-<p>This convention provides:
-- Standard declaration template with required fields
-- Example usage for both human and AI stakeholders
-- Verification protocols and confidence thresholds
-- Compliance checklists and consequences</p>
-<h2>Consequences of Non-Compliance</h2>
-<table>
-<thead>
-<tr>
-<th>Severity</th>
-<th>Violation</th>
-<th>Consequence</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>CRITICAL</strong></td>
-<td>Omission of uncertainty in high-stakes decisions</td>
-<td>Decision void until compliance</td>
-</tr>
-<tr>
-<td><strong>HIGH</strong></td>
-<td>Missing uncertainty declaration in formal outputs</td>
-<td>Output marked as non-compliant</td>
-</tr>
-</tbody>
-</table>
+<h2>Rationale</h2>
+<p>Ensures intellectual honesty and prevents overconfidence in statements and decisions.</p>
+<p><em>Based on: <a href="../35_axiom/10_axiom_of_epistemological_uncertainty.html">10_axiom_of_epistemological_uncertainty.md</a></em></p>
+<h2>Uncertainty Declaration</h2>
+<p><em>If applicable: This rule acknowledges inherent uncertainties in knowledge representation and AI decision-making. Key limitations include: cognitive biases, incomplete information, and probabilistic nature of AI outputs.</em></p>
 <h2>Integration with Other Framework Components</h2>
 <h3>Related Rules</h3>
 <ul>
-<li><strong><a href="03_rule_for_version_changelog_update.html">RULE_VERSION_CHANGELOG_UPDATE.md</a></strong> - Changelogs must document uncertainty</li>
-<li><strong><a href="02_rule_for_ai_lock_protection.html">RULE_AI_LOCK_PROTECTION.md</a></strong> - Protected content must acknowledge uncertainty</li>
+<li><strong><a href="03_rule_for_version_changelog_update.html">03_rule_for_version_changelog_update.md</a></strong> - Changelogs must document uncertainty</li>
+<li><strong><a href="02_rule_for_ai_lock_protection.html">02_rule_for_ai_lock_protection.md</a></strong> - Protected content must acknowledge uncertainty</li>
 </ul>
 <h3>Related Axioms</h3>
 <ul>
-<li><strong>[10]<em>axiom</em>[epistemological_uncertainty].md</strong> - Foundation for this rule</li>
-<li><strong>[02]<em>axiom</em>[framework_validation_integrity].md</strong> - Validation must consider uncertainty</li>
+<li><strong><a href="../35_axiom/10_axiom_of_epistemological_uncertainty.html">10_axiom_of_epistemological_uncertainty.md</a></strong> - Foundation for this rule</li>
+<li><strong><a href="../35_axiom/02_axiom_of_framework_validation_integrity.html">02_axiom_of_framework_validation_integrity.md</a></strong> - Validation must consider uncertainty</li>
 </ul>
-<h3>Related Principles (MODEL_for_stakeholder_AI_collab)</h3>
+<h3>Related Principles</h3>
 <ul>
-<li><a href="../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.html">02_principle_transparency.md</a> - Transparency requires uncertainty acknowledgment</li>
-<li><a href="../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.html">03_principle_proportionality.md</a> - Proportionality depends on uncertainty recognition</li>
-</ul>
-<h2>Scientific Foundation</h2>
-<p>Based on:
-- <strong>Gödel's Incompleteness Theorems</strong> - No system can prove all truths about itself
-- <strong>Heisenberg's Uncertainty Principle</strong> - Complementary uncertainties in measurement
-- <strong>Cognitive Bias Research</strong> - Systematic errors in human judgment
-- <strong>Bayesian Epistemology</strong> - Probabilistic approach to knowledge</p>
-<h2>References</h2>
-<ul>
-<li><a href="../35_axiom/10 axiom_of_epistemological_uncertainty.html">10 Axiom of Epistemological Uncertainty</a></li>
-<li><a href="01_rule_for_active_voice.html">01 Rule for Active Voice</a></li>
-<li><a href="02_rule_for_ai_lock_protection.html">02 Rule for AI Lock Protection</a></li>
-<li><a href="03_rule_for_version_changelog_update.html">03 Rule for Version Changelog Update</a></li>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.html">02_principle_transparency.md</a></strong> - Transparency requires uncertainty acknowledgment</li>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.html">03_principle_proportionality.md</a></strong> - Proportionality depends on uncertainty recognition</li>
 </ul>
 <p><strong>Rule Steward:</strong> Terminology Architects
 <strong>Approval Status:</strong> Framework Approved
@@ -173,7 +133,7 @@
 </tbody>
 </table>
         <footer>
-            <p>Generated on 2026-01-25 10:09:44 by MDToHTMLConverter v1.6.1</p>
+            <p><em>Generated on 2026-02-01 19:53:44 by MDToHTMLConverter v1.6.1</em></p>
         </footer>
 </body>
 </html>

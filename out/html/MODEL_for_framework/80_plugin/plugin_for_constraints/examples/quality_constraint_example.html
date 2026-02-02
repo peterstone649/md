@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quality_constraint_example</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>⚖️ Quality Constraint Example: Code Quality Standards</h1>
+<p><strong>Example constraint definition for code quality standards</strong></p>
+<h2>📋 Constraint Overview</h2>
+<p><strong>Constraint ID</strong>: QC-001
+<strong>Constraint Name</strong>: Code Quality Standards
+<strong>Type</strong>: Quality Constraint
+<strong>Enforcement Level</strong>: High
+<strong>Created</strong>: January 2026
+<strong>Owner</strong>: Framework Quality Team</p>
+<h2>🎯 What This Constraint Ensures</h2>
+<p>This constraint ensures that all code contributions maintain high quality standards through consistent coding practices, comprehensive testing, and proper documentation. It helps prevent technical debt accumulation and maintains codebase maintainability.</p>
+<p><strong>Why this matters:</strong>
+- Reduces bug introduction and maintenance costs
+- Improves code readability and team productivity
+- Ensures consistent codebase quality across all contributions
+- Facilitates easier code reviews and onboarding</p>
+<h2>📝 Constraint Specification</h2>
+<h3>Requirements</h3>
+<ol>
+<li><strong>Code Coverage</strong>: All new code must have minimum 80% test coverage</li>
+<li><strong>Code Complexity</strong>: Cyclomatic complexity must not exceed 10 per function</li>
+<li><strong>Documentation</strong>: All public APIs must have comprehensive documentation</li>
+<li><strong>Linting</strong>: All code must pass linting checks without warnings</li>
+<li><strong>Code Review</strong>: All changes require peer code review approval</li>
+</ol>
+<h3>Acceptance Criteria</h3>
+<ul>
+<li>[ ] Test coverage reports show &gt;80% coverage for new code</li>
+<li>[ ] Static analysis tools report complexity &lt; 10 for all functions</li>
+<li>[ ] Documentation coverage &gt; 90% for public APIs</li>
+<li>[ ] Linting passes with zero warnings or errors</li>
+<li>[ ] All pull requests have at least one approval from qualified reviewer</li>
+</ul>
+<h3>Implementation Details</h3>
+<p><strong>Technical Specifications:</strong></p>
+<pre><code class="language-yaml">quality_standards:
+  test_coverage:
+    minimum: 80%
+    measurement: &quot;line coverage for new code only&quot;
+  complexity:
+    maximum: 10
+    measurement: &quot;cyclomatic complexity per function&quot;
+  documentation:
+    requirement: &quot;all public APIs&quot;
+    coverage_minimum: 90%
+  linting:
+    tool: &quot;ESLint with framework-specific rules&quot;
+    strict_mode: true
+  code_review:
+    required: true
+    approvers: &quot;qualified team members&quot;
+    minimum_approvals: 1
+</code></pre>
+<p><strong>Validation Methods:</strong>
+- <strong>Automated Testing</strong>: CI/CD pipeline validates coverage and complexity
+- <strong>Linting Checks</strong>: Pre-commit hooks and CI validation
+- <strong>Documentation Review</strong>: Automated documentation coverage checks
+- <strong>Manual Review</strong>: Code review process validation</p>
+<p><strong>Tools &amp; Technologies:</strong>
+- <strong>Coverage</strong>: Jest, Istanbul/NYC for JavaScript/TypeScript
+- <strong>Complexity</strong>: ESLint complexity plugin, SonarQube
+- <strong>Linting</strong>: ESLint with custom framework rules
+- <strong>Documentation</strong>: JSDoc with coverage validation
+- <strong>Review</strong>: GitHub/GitLab pull request workflow</p>
+<h2>🔄 Enforcement &amp; Monitoring</h2>
+<h3>Validation Process</h3>
+<p><strong>When Checked:</strong>
+- Pre-commit (linting only)
+- CI/CD pipeline (full validation)
+- Code review (documentation and overall quality)</p>
+<p><strong>Who Enforces:</strong>
+- <strong>Automated</strong>: CI/CD pipeline for technical metrics
+- <strong>Manual</strong>: Code reviewers for documentation and overall quality</p>
+<h3>Monitoring &amp; Reporting</h3>
+<p><strong>Compliance Metrics:</strong>
+- Overall code coverage percentage
+- Average complexity score across codebase
+- Documentation coverage percentage
+- Linting violation count
+- Code review approval rate</p>
+<p><strong>Reporting Frequency:</strong>
+- <strong>Real-time</strong>: CI/CD pipeline results
+- <strong>Weekly</strong>: Quality dashboard updates
+- <strong>Monthly</strong>: Comprehensive quality reports</p>
+<p><strong>Violation Handling:</strong>
+- <strong>Coverage &lt; 80%</strong>: Build failure, blocking merge
+- <strong>Complexity &gt; 10</strong>: Warning in CI, must be addressed in review
+- <strong>Linting failures</strong>: Pre-commit hook prevents commit
+- <strong>Missing documentation</strong>: Review comment, must be addressed before merge</p>
+<h2>📚 Examples</h2>
+<h3>Compliant Example</h3>
+<pre><code class="language-javascript">/**
+ * Calculates the total price including tax
+ * @param {number} basePrice - The base price before tax
+ * @param {number} taxRate - The tax rate as a decimal (e.g., 0.08 for 8%)
+ * @returns {number} The total price including tax
+ * @throws {Error} If basePrice or taxRate are invalid
+ */
+function calculateTotalPrice(basePrice, taxRate) {
+  // Input validation
+  if (typeof basePrice !== 'number' || basePrice &lt; 0) {
+    throw new Error('Base price must be a non-negative number');
+  }
+  if (typeof taxRate !== 'number' || taxRate &lt; 0) {
+    throw new Error('Tax rate must be a non-negative number');
+  }
+
+  // Simple calculation - complexity score: 2
+  const taxAmount = basePrice * taxRate;
+  return basePrice + taxAmount;
+}
+
+// Test coverage: 100%
+describe('calculateTotalPrice', () =&gt; {
+  test('calculates correct total for positive values', () =&gt; {
+    expect(calculateTotalPrice(100, 0.08)).toBe(108);
+  });
+
+  test('throws error for negative base price', () =&gt; {
+    expect(() =&gt; calculateTotalPrice(-10, 0.08)).toThrow('Base price must be a non-negative number');
+  });
+
+  test('throws error for negative tax rate', () =&gt; {
+    expect(() =&gt; calculateTotalPrice(100, -0.1)).toThrow('Tax rate must be a non-negative number');
+  });
+});
+</code></pre>
+<h3>Non-compliant Example</h3>
+<pre><code class="language-javascript">// Missing documentation, high complexity, no error handling
+function calcTotal(a, b) {
+  if (a &lt; 0) {
+    return 0;
+  } else if (b &lt; 0) {
+    return a;
+  } else {
+    let result = a;
+    for (let i = 0; i &lt; b * 100; i++) {
+      result += a * 0.01;
+    }
+    return result;
+  }
+}
+</code></pre>
+<p><strong>Issues:</strong>
+- No documentation
+- High cyclomatic complexity (4)
+- Poor variable names
+- No input validation
+- No error handling
+- No tests</p>
+<h3>Best Practices</h3>
+<ol>
+<li><strong>Function Design</strong>: Keep functions small and focused (single responsibility)</li>
+<li><strong>Documentation</strong>: Document all public APIs with JSDoc</li>
+<li><strong>Error Handling</strong>: Always validate inputs and handle edge cases</li>
+<li><strong>Testing</strong>: Write comprehensive tests covering happy path and edge cases</li>
+<li><strong>Code Review</strong>: Ensure all changes are reviewed by qualified team members</li>
+</ol>
+<h2>🔄 Maintenance &amp; Updates</h2>
+<h3>Review Schedule</h3>
+<ul>
+<li><strong>Monthly</strong>: Review metrics and adjust thresholds if needed</li>
+<li><strong>Quarterly</strong>: Assess constraint effectiveness and team feedback</li>
+<li><strong>Annually</strong>: Major review of constraint relevance and requirements</li>
+</ul>
+<h3>Update Process</h3>
+<ol>
+<li><strong>Identify Need</strong>: Based on metrics, feedback, or changing requirements</li>
+<li><strong>Propose Change</strong>: Create proposal with rationale and impact analysis</li>
+<li><strong>Team Review</strong>: Discuss with framework maintainers and team leads</li>
+<li><strong>Pilot Change</strong>: Test changes in limited scope</li>
+<li><strong>Full Implementation</strong>: Roll out changes with communication and training</li>
+</ol>
+<h3>Impact Assessment</h3>
+<p><strong>When Updating This Constraint:</strong>
+- <strong>Breaking Changes</strong>: Changes to minimum requirements affect all contributors
+- <strong>Migration</strong>: May require existing code updates to meet new standards
+- <strong>Training</strong>: Team education on new requirements or tools
+- <strong>Tool Updates</strong>: CI/CD pipeline and tooling configuration updates</p>
+<h2>🤝 Stakeholder Information</h2>
+<h3>Primary Owner</h3>
+<p><strong>Owner</strong>: Framework Quality Team
+<strong>Contact</strong>: quality@framework.org
+<strong>Responsibilities</strong>: Define standards, monitor compliance, update requirements</p>
+<h3>Reviewers</h3>
+<p><strong>Technical Reviewer</strong>: Architecture Team Lead
+<strong>Compliance Reviewer</strong>: Quality Assurance Lead
+<strong>Security Reviewer</strong>: Security Team Lead</p>
+<h3>Affected Teams</h3>
+<ul>
+<li>All development teams contributing to the framework</li>
+<li>Quality assurance and testing teams</li>
+<li>DevOps and CI/CD pipeline maintainers</li>
+<li>Documentation and training teams</li>
+</ul>
+<h2>📞 Additional Information</h2>
+<h3>References</h3>
+<ul>
+<li><a href="https://framework.org/quality-standards">Framework Quality Standards</a></li>
+<li><a href="https://framework.org/eslint-config">ESLint Configuration</a></li>
+<li><a href="https://framework.org/testing-guidelines">Testing Guidelines</a></li>
+</ul>
+<h3>Notes</h3>
+<ul>
+<li>This constraint applies to all new code contributions</li>
+<li>Existing code is encouraged to meet these standards during refactoring</li>
+<li>Exceptions require documented justification and approval</li>
+</ul>
+<h3>Related Constraints</h3>
+<ul>
+<li><a href="../constraint_types.md#documentation-quality-constraints">Documentation Standards</a></li>
+<li><a href="../constraint_types.md#process-constraints">Code Review Process</a></li>
+</ul>
+<hr />
+<p><strong>Next Steps</strong>: Use this example as a template for defining your own quality constraints!</p>
+        <footer>
+            <p><em>Generated on 2026-02-01 19:53:47 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

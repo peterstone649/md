@@ -61,117 +61,39 @@
 </head>
 <body>
     <h1>Clickable Links [RULE_FOR_MFW_LINK_OT_CLICKABLE] <strong>[PRIO: HIGH]</strong></h1>
-<p><strong>Rule ID:</strong> RULE_FOR_MFW_LINK_OT_CLICKABLE
-<strong>Scope:</strong> All framework documentation</p>
 <h2>Rule Statement</h2>
 <p>All cross-references to framework documents SHOULD use clickable markdown links. Plain text file paths are NOT acceptable for internal navigation.</p>
+<h2>Rule Requirements</h2>
+<ul>
+<li><strong>[R1]</strong>: All internal document references use <code>[Text](path)</code> format</li>
+<li><strong>[R2]</strong>: Link text describes the target document's purpose</li>
+<li><strong>[R3]</strong>: Relative paths are correct and functional</li>
+<li><strong>[R4]</strong>: No broken or dead links</li>
+<li><strong>[R5]</strong>: Links work in markdown viewers and IDEs</li>
+</ul>
+<h2>Formal Statement</h2>
+<pre><code>∀document∀reference (Document(document) ∧ Reference(reference) ∧ InternalReference(reference))
+    → (ClickableLink(reference) ∧ FunctionalPath(reference))
+</code></pre>
 <h2>Rationale</h2>
-<p>Clickable links:
-- Enable direct navigation between related documents
-- Reduce friction for readers exploring the framework
-- Ensure links remain functional when file locations change
-- Support markdown viewers and IDE navigation
-- Align with framework principles of clarity and accessibility
-- Make framework exploration intuitive and efficient</p>
-<h2>Clickable Link Pattern</h2>
-<h3>Structure</h3>
-<pre><code class="language-markdown">[Link Text](relative/path/to/file.md)
-</code></pre>
-<h3>Examples</h3>
-<table>
-<thead>
-<tr>
-<th>Unacceptable ❌</th>
-<th>Acceptable ✅</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>See <code>30_principle/01_principle_human_sovereignty.md</code></td>
-<td>See <a href="../30_principle/01_principle_human_sovereignty.html">Human Sovereignty</a></td>
-</tr>
-<tr>
-<td>Templates are in <code>15_template/17_template_for_principle.md</code></td>
-<td>Templates are in <a href="../../15_template/17_template_for_principle.html">17_template_for_principle.md</a></td>
-</tr>
-<tr>
-<td>Legal info in 01_copyright_notice.md</td>
-<td>Legal info in <a href="../01_legal/01_copyright_notice.html">01_copyright_notice.md</a></td>
-</tr>
-</tbody>
-</table>
-<h2>Link Construction Strategy</h2>
-<ol>
-<li><strong>Identify Target File</strong> - Determine the document you want to reference</li>
-<li><strong>Calculate Relative Path</strong> - Navigate from current file to target</li>
-<li><strong>Write Descriptive Link Text</strong> - Use meaningful, concise text</li>
-<li><strong>Wrap in Markdown Syntax</strong> - <code>[Text](path)</code></li>
-</ol>
-<h3>Path Navigation Rules</h3>
+<p>Clickable links enable direct navigation between related documents and reduce friction for readers exploring the framework.</p>
+<h2>Uncertainty Declaration</h2>
+<p><em>If applicable: This rule acknowledges inherent uncertainties in link functionality and the evolving nature of document locations.</em></p>
+<h2>Integration with Other Framework Components</h2>
+<h3>Related Rules</h3>
 <ul>
-<li><code>../</code> = Move up one directory level</li>
-<li><code>../../</code> = Move up two directory levels</li>
-<li>No leading slash = Relative to current directory</li>
+<li><strong><a href="07_rule_for_readme_clickable_links.html">07_rule_for_readme_clickable_links.md</a></strong> - README-specific clickable link requirements</li>
+<li><strong><a href="03_rule_for_active_voice.html">03_rule_for_active_voice.md</a></strong> - Link descriptions should use active voice</li>
 </ul>
-<h3>Application Examples</h3>
-<p><strong>From subdirectory to parent:</strong></p>
-<pre><code class="language-markdown">[Principle Document](../30_principle/01_principle_human_sovereignty.md)
-[Template File](../../15_template/17_template_for_principle.md)
-[Legal Document](../01_legal/01_copyright_notice.md)
-</code></pre>
-<p><strong>From principle to overview:</strong></p>
-<pre><code class="language-markdown">[Getting Started Guide](../../00_overview/20_stakeholder/01_getting_started.md)
-[Principle Template](../../15_template/17_template_for_principle.md)
-</code></pre>
-<h2>Acceptable Plain Text Exceptions</h2>
-<p>Plain text file paths ARE acceptable when:</p>
-<ol>
-<li><strong>Table Columns</strong></li>
-<li>
-<p>Document location is a column value requiring visual clarity</p>
-</li>
-<li>
-<p><strong>Directory Structure Listings</strong></p>
-</li>
-<li>
-<p>File tree diagrams where links would be visually overwhelming</p>
-</li>
-<li>
-<p><strong>Code Examples</strong></p>
-</li>
-<li>
-<p>Demonstrating path format in documentation about paths</p>
-</li>
-<li>
-<p><strong>Quick Reference Tables</strong></p>
-</li>
-<li>When both link text and path need visible separation</li>
-</ol>
-<h2>Validation Checklist</h2>
+<h3>Related Axioms</h3>
 <ul>
-<li>[ ] All internal document references use <code>[Text](path)</code> format</li>
-<li>[ ] Link text describes the target document's purpose</li>
-<li>[ ] Relative paths are correct and functional</li>
-<li>[ ] No broken or dead links</li>
-<li>[ ] Links work in markdown viewers and IDEs</li>
+<li><strong><a href="../35_axiom/02_axiom_of_framework_validation_integrity.html">02_axiom_of_framework_validation_integrity.md</a></strong> - Validation includes link functionality</li>
+<li><strong><a href="../35_axiom/03_axiom_of_clarity_and_precision.html">03_axiom_of_clarity_and_precision.md</a></strong> - Clear navigation supports clarity requirements</li>
 </ul>
-<h2>Enforcement</h2>
-<ol>
-<li><strong>Writing Phase:</strong> Writers apply link pattern during drafting</li>
-<li><strong>Review Phase:</strong> Reviewers verify all cross-references are clickable</li>
-<li><strong>Automated Checks:</strong> Tools can verify markdown link syntax</li>
-</ol>
-<h2>Cross-Framework Application</h2>
-<p>This rule applies universally across all framework directories:
-- <strong>MODEL_for_framework</strong> - Core methodology documentation
-- <strong>MODEL_for_STKHLD_AI_COLLAB</strong> - Stakeholder-AI collaboration principles
-- <strong>FIELDC</strong><em> directories - Domain-specific implementations
-- </em><em>Ethosys</em>* - Ethics and safety framework</p>
-<h2>References</h2>
+<h3>Related Principles</h3>
 <ul>
-<li>Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)</li>
-<li>Markdown Specification (CommonMark)</li>
-<li>Active Voice Rule (12_rule/01_rule_for_active_voice.md)</li>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.html">02_principle_transparency.md</a></strong> - Transparency requires accessible navigation</li>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.html">03_principle_proportionality.md</a></strong> - Proportionality applies to navigation complexity</li>
 </ul>
 <p><strong>Rule Steward:</strong> Framework Standards Committee
 <strong>Approval Status:</strong> Framework Approved
@@ -209,7 +131,7 @@
 </tbody>
 </table>
         <footer>
-            <p>Generated on 2026-01-25 10:09:44 by MDToHTMLConverter v1.6.1</p>
+            <p><em>Generated on 2026-02-01 19:53:44 by MDToHTMLConverter v1.6.1</em></p>
         </footer>
 </body>
 </html>

@@ -7,7 +7,7 @@
 - **Pages**: 352
 - **Genre**: Technology, Artificial Intelligence, Philosophy, Ethics
 - **Impact**: Comprehensive examination of AI alignment challenges and practical solutions
-- **Kindle URL**: https://www.amazon.com/Alignment-Problem-Machine-Learning-Human/dp/031645306X
+- **Kindle URL**: [Amazon Kindle Edition](https://www.amazon.com/Alignment-Problem-Machine-Learning-Human/dp/031645306X)
 
 ## Overview
 

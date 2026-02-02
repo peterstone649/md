@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22_convention_for_scope_limited_clickable_links</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scope-Limited Clickable Links Convention [CONV_FOR_MFW_SCOPE_LIMITED_LINKS] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V1.0.0</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-26</strong>
+<strong>Scope:</strong> All framework documentation with clickable links</p>
+<h2>Overview</h2>
+<p><strong>Scope-Limited Clickable Links Convention</strong> establishes the principle that clickable links within framework documentation should primarily reference documents within the same folder or logical scope, rather than pointing to external locations. This convention enhances documentation coherence, reduces dependency risks, and improves maintainability.</p>
+<h3>Core Purpose</h3>
+<ul>
+<li><strong>Scope Coherence</strong> - Maintain logical boundaries between documentation components</li>
+<li><strong>Dependency Reduction</strong> - Minimize external dependencies that could break</li>
+<li><strong>Maintainability</strong> - Simplify documentation updates and refactoring</li>
+<li><strong>Navigation Clarity</strong> - Provide clear scope boundaries for readers</li>
+</ul>
+<h3>Convention Characteristics</h3>
+<ul>
+<li><strong>Scope-Aware</strong> - Links respect folder and logical boundaries</li>
+<li><strong>Framework-Specific</strong> - Tailored for MODEL_for_framework structure</li>
+<li><strong>Practical Application</strong> - Actionable guidelines for link creation</li>
+<li><strong>Quality Assurance</strong> - Validation mechanisms for link scope</li>
+</ul>
+<hr />
+<h2>Core Principles</h2>
+<h3>Principle 1: Folder-Scoped Links</h3>
+<p><strong>Framework Application:</strong> Clickable links should primarily reference documents within the same directory</p>
+<h4>Scope Boundary Rules</h4>
+<ol>
+<li><strong>Same-Folder Preference</strong> - Links should point to files in the current directory</li>
+<li><strong>Logical Scope</strong> - Links within a conceptual unit stay within that unit</li>
+<li><strong>Minimal External References</strong> - Avoid links outside the immediate scope</li>
+</ol>
+<p><strong>Framework Example:</strong>
+- <strong>Preferred:</strong> <code>[Related Principle](./02_principle_transparency.md)</code> (same folder)
+- <strong>Avoid:</strong> <code>[External Reference](../../other_folder/document.md)</code> (different scope)</p>
+<h4>Scope Definition</h4>
+<ul>
+<li><strong>Folder Scope:</strong> Files within the same directory</li>
+<li><strong>Logical Scope:</strong> Conceptually related documents</li>
+<li><strong>Framework Rule:</strong> 80% of links should be within immediate scope</li>
+</ul>
+<h3>Principle 2: Relative Path Strategy</h3>
+<p><strong>Framework Application:</strong> Use relative paths that maintain scope boundaries</p>
+<h4>Path Construction Rules</h4>
+<ol>
+<li><strong>Current Directory First</strong> - <code>./filename.md</code> for same-folder links</li>
+<li><strong>Parent Directory Caution</strong> - <code>../</code> only when necessary for scope</li>
+<li><strong>Scope Preservation</strong> - Maintain logical grouping in paths</li>
+</ol>
+<p><strong>Examples:</strong>
+- <strong>Same Scope:</strong> <code>[Template](./17_template_for_principle.md)</code>
+- <strong>Parent Scope:</strong> <code>[Overview](../README.md)</code> (when truly needed)
+- <strong>Avoid:</strong> <code>[Distant Reference../../../other/section/document.md)</code></p>
+<h4>Path Validation</h4>
+<ul>
+<li><strong>Scope Check:</strong> Does the link stay within logical boundaries?</li>
+<li><strong>Necessity Test:</strong> Is the external reference truly required?</li>
+<li><strong>Framework Rule:</strong> External links require justification</li>
+</ul>
+<h3>Principle 3: Scope Hierarchy</h3>
+<p><strong>Framework Application:</strong> Organize links according to documentation hierarchy</p>
+<h4>Hierarchy Levels</h4>
+<ol>
+<li><strong>Immediate Scope</strong> - Same directory (preferred)</li>
+<li><strong>Parent Scope</strong> - Direct parent directory (use sparingly)</li>
+<li><strong>Extended Scope</strong> - Grandparent or deeper (avoid when possible)</li>
+</ol>
+<p><strong>Framework Structure:</strong></p>
+<pre><code>framework_root/
+├── 30_principle/          # Principle scope
+│   ├── 01_principle_human_sovereignty.md
+│   ├── 02_principle_transparency.md  ← [Transparency](./02_principle_transparency.md)
+│   └── README.md
+└── 15_template/          # Template scope (different scope)
+    ├── 16_template_for_convention.md
+    └── 17_template_for_principle.md
+</code></pre>
+<h3>Principle 4: Scope Documentation</h3>
+<p><strong>Framework Application:</strong> Document the scope boundaries for each section</p>
+<h4>Scope Definition Requirements</h4>
+<ul>
+<li><strong>Scope Statement:</strong> Define the logical boundaries</li>
+<li><strong>Link Policy:</strong> Specify allowed link destinations</li>
+<li><strong>Exception Handling:</strong> Document when external links are permitted</li>
+</ul>
+<p><strong>Scope Example:</strong></p>
+<pre><code>30_principle/ (Scope: Core Principles)
+- Allowed Links: Within 30_principle/ directory
+- Parent Links: To 15_template/ only for template references
+- External Links: Require approval and justification
+</code></pre>
+<hr />
+<h2>Framework-Specific Standards</h2>
+<h3>Documentation Scope Boundaries</h3>
+<h4>Principle Documentation</h4>
+<ul>
+<li><strong>Scope:</strong> Within 30_principle/ directory</li>
+<li><strong>Allowed Links:</strong> Other principles in same directory</li>
+<li><strong>Parent Links:</strong> Template references only</li>
+<li><strong>External Links:</strong> Framework overview with justification</li>
+</ul>
+<h4>Template Documentation</h4>
+<ul>
+<li><strong>Scope:</strong> Within 15_template/ directory</li>
+<li><strong>Allowed Links:</strong> Other templates in same directory</li>
+<li><strong>Parent Links:</strong> Principle references for examples</li>
+<li><strong>External Links:</strong> Implementation guides with approval</li>
+</ul>
+<h3>Quality Assurance Guidelines</h3>
+<h4>Scope Compliance Checklist</h4>
+<ul>
+<li>[ ] Links primarily reference same-directory files</li>
+<li>[ ] Relative paths maintain logical scope</li>
+<li>[ ] External links are minimized and justified</li>
+<li>[ ] Scope boundaries are documented</li>
+</ul>
+<h4>Link Validation Process</h4>
+<ul>
+<li>[ ] Scope boundary verification</li>
+<li>[ ] Path correctness validation</li>
+<li>[ ] Dependency risk assessment</li>
+<li>[ ] Maintenance impact analysis</li>
+</ul>
+<hr />
+<h2>Implementation Guidelines</h2>
+<h3>Application Phases</h3>
+<h4>Phase 1: Foundation (Immediate)</h4>
+<ul>
+<li>Apply scope-limited links to all new documentation</li>
+<li>Document scope boundaries for each directory</li>
+<li>Establish scope compliance checklist</li>
+</ul>
+<h4>Phase 2: Integration (Week 1-2)</h4>
+<ul>
+<li>Review existing links for scope compliance</li>
+<li>Refactor external links to scope-limited alternatives</li>
+<li>Train contributors on scope boundaries</li>
+</ul>
+<h4>Phase 3: Mastery (Month 1-2)</h4>
+<ul>
+<li>Scope-limited links become automatic</li>
+<li>Quality assurance integrated into workflow</li>
+<li>Framework-wide scope coherence achieved</li>
+</ul>
+<h3>Tools and Resources</h3>
+<h4>Link Validation Tools</h4>
+<ul>
+<li><strong>Scope Checker:</strong> Automated verification of link scope</li>
+<li><strong>Path Analyzer:</strong> Relative path correctness validation</li>
+<li><strong>Dependency Mapper:</strong> Visualization of link relationships</li>
+</ul>
+<h4>Documentation Templates</h4>
+<ul>
+<li><strong>Scope Definition Template:</strong> Standard format for scope boundaries</li>
+<li><strong>Link Policy Template:</strong> Framework for link guidelines</li>
+<li><strong>Exception Justification:</strong> Template for external link approval</li>
+</ul>
+<hr />
+<h2>Validation and Quality Assurance</h2>
+<h3>Scope Compliance Metrics</h3>
+<ul>
+<li><strong>Scope Adherence:</strong> Percentage of links within immediate scope</li>
+<li><strong>Dependency Risk:</strong> Number of external link dependencies</li>
+<li><strong>Maintainability Score:</strong> Ease of documentation updates</li>
+<li><strong>Navigation Clarity:</strong> Reader comprehension of scope boundaries</li>
+</ul>
+<h3>Review Process</h3>
+<ul>
+<li><strong>Self-Review:</strong> Author verifies scope compliance</li>
+<li><strong>Peer Review:</strong> Colleague validates link scope</li>
+<li><strong>Architecture Review:</strong> Framework steward approves scope boundaries</li>
+<li><strong>Final Validation:</strong> Quality assurance team confirms compliance</li>
+</ul>
+<h3>Continuous Monitoring</h3>
+<ul>
+<li><strong>Scope Tracking:</strong> Regular assessment of link compliance</li>
+<li><strong>Dependency Analysis:</strong> Periodic review of external links</li>
+<li><strong>Standards Evolution:</strong> Update conventions based on effectiveness</li>
+</ul>
+<hr />
+<h2>Integration with Framework Components</h2>
+<h3>Cross-Reference Integration</h3>
+<ul>
+<li><strong>12_rule/:</strong> Scope-limited links complement clickable link rules</li>
+<li><strong>20_convention/:</strong> Link conventions integrate with writing standards</li>
+<li><strong>30_terminology/:</strong> Scope terms added to framework terminology</li>
+<li><strong>15_template/:</strong> Scope templates included in template library</li>
+</ul>
+<h3>Field-Specific Applications</h3>
+<ul>
+<li><strong>MODEL_for_framework:</strong> Core framework documentation scope</li>
+<li><strong>MODEL_for_STKHLD_AI_COLLAB:</strong> Stakeholder-AI collaboration scope</li>
+<li><strong>FIELDC* directories:</strong> Domain-specific scope boundaries</li>
+<li><strong>All Components:</strong> Consistent scope-limited linking</li>
+</ul>
+<hr />
+<h2>Conclusion</h2>
+<p><strong>Scope-Limited Clickable Links Convention</strong> transforms framework documentation linking from potentially fragile external dependencies into robust, maintainable, scope-coherent references. By establishing clear scope boundaries and link policies, this convention ensures that framework documentation remains navigable, maintainable, and logically organized.</p>
+<p><strong>Scope-Limited Clickable Links Convention</strong> provides the structural foundation that enables framework documentation to scale effectively while maintaining clarity, coherence, and long-term maintainability.</p>
+<hr />
+<h2>Key Principles Summary</h2>
+<ol>
+<li><strong>Scope Coherence:</strong> Links respect folder and logical boundaries</li>
+<li><strong>Dependency Reduction:</strong> Minimize external references that could break</li>
+<li><strong>Maintainability:</strong> Simplify documentation updates and refactoring</li>
+<li><strong>Navigation Clarity:</strong> Provide clear scope boundaries for readers</li>
+<li><strong>Framework Integration:</strong> Align with existing documentation standards</li>
+</ol>
+<hr />
+<p><strong>"Effective documentation linking begins with clear scope boundaries and ends with maintainable, coherent references."</strong></p>
+<p><strong>Rule Steward:</strong> Documentation Architecture Team
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-26
+<strong>Review Cycle:</strong> Annual</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V1.0.0
+<strong>Date:</strong> 2026-01-26</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.0</td>
+<td>2026-01-26</td>
+<td>Initial creation</td>
+<td>Framework Documentation Team</td>
+<td>Establish scope-limited linking standards</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p><em>Generated on 2026-02-01 19:53:45 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

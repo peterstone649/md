@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25_US_special_handling_AI_LOCK</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Story: Special Handling for [AI_LOCK] and [AI_UNLOCK] Tags in HTML Conversion</h1>
+<p><strong>User Story ID:</strong> US_MFW_25<br />
+<strong>Title:</strong> Special Handling for [AI_LOCK] and [AI_UNLOCK] Tags in HTML Conversion<br />
+<strong>Priority:</strong> MEDIUM<br />
+<strong>Status:</strong> DRAFT<br />
+<strong>Created:</strong> 2026-02-01<br />
+<strong>Last Modified:</strong> 2026-02-01  </p>
+<h2>User Story Statement</h2>
+<p>As a content creator working with AI-generated documentation, I want the markdown to HTML converter to properly handle [AI_LOCK] and [AI_UNLOCK] tags that appear on the same line, so that the HTML output maintains the intended formatting and visual separation for these special markers.</p>
+<h2>User Scenarios</h2>
+<h3>Scenario 1: Single Line AI_LOCK Tags</h3>
+<ul>
+<li><strong>Given</strong> a markdown file contains <code>[AI_LOCK]</code> and <code>[AI_UNLOCK]</code> tags on the same line</li>
+<li><strong>When</strong> the converter processes the file to HTML</li>
+<li><strong>Then</strong> the tags should be properly formatted with appropriate HTML structure for visual separation</li>
+</ul>
+<h3>Scenario 2: AI_LOCK Tags with Content</h3>
+<ul>
+<li><strong>Given</strong> a markdown file contains <code>[AI_LOCK] content [AI_UNLOCK]</code> on a single line</li>
+<li><strong>When</strong> the converter processes the file to HTML</li>
+<li><strong>Then</strong> the content between the tags should be properly wrapped with appropriate styling</li>
+</ul>
+<h3>Scenario 3: Multiple AI_LOCK Sections</h3>
+<ul>
+<li><strong>Given</strong> a markdown file contains multiple lines with AI_LOCK/AI_UNLOCK pairs</li>
+<li><strong>When</strong> the converter processes the file to HTML</li>
+<li><strong>Then</strong> each section should be properly formatted with consistent styling</li>
+</ul>
+<h2>Requirements</h2>
+<h3>Functional Requirements</h3>
+<ul>
+<li><strong>[FR-25-001]</strong>: Converter MUST detect [AI_LOCK] and [AI_UNLOCK] tags on the same line</li>
+<li><strong>[FR-25-002]</strong>: Converter MUST wrap AI_LOCK content with appropriate HTML tags for visual separation</li>
+<li><strong>[FR-25-003]</strong>: Converter MUST apply consistent styling to all AI_LOCK sections</li>
+<li><strong>[FR-25-004]</strong>: Converter MUST preserve the original content between AI_LOCK and AI_UNLOCK tags</li>
+<li><strong>[FR-25-005]</strong>: Converter MUST handle multiple AI_LOCK sections in a single document</li>
+</ul>
+<h3>Non-Functional Requirements</h3>
+<ul>
+<li><strong>[NFR-25-001]</strong>: Processing time for AI_LOCK sections MUST not significantly impact overall conversion speed</li>
+<li><strong>[NFR-25-002]</strong>: HTML output MUST be valid and well-formed</li>
+<li><strong>[NFR-25-003]</strong>: Styling MUST be consistent with existing HTML converter CSS framework</li>
+</ul>
+<h2>Acceptance Criteria</h2>
+<h3>AC-25-001: Single Line Detection</h3>
+<ul>
+<li><strong>Given</strong> a markdown file with <code>[AI_LOCK] content [AI_UNLOCK]</code> on one line</li>
+<li><strong>When</strong> converted to HTML</li>
+<li><strong>Then</strong> the output contains properly structured HTML with visual separation</li>
+</ul>
+<h3>AC-25-002: Content Preservation</h3>
+<ul>
+<li><strong>Given</strong> a markdown file with AI_LOCK tags containing various content types</li>
+<li><strong>When</strong> converted to HTML</li>
+<li><strong>Then</strong> all original content is preserved between the tags</li>
+</ul>
+<h3>AC-25-003: Consistent Styling</h3>
+<ul>
+<li><strong>Given</strong> multiple AI_LOCK sections in a document</li>
+<li><strong>When</strong> converted to HTML</li>
+<li><strong>Then</strong> all sections have consistent visual styling and formatting</li>
+</ul>
+<h3>AC-25-004: Multiple Section Handling</h3>
+<ul>
+<li><strong>Given</strong> a document with multiple AI_LOCK/AI_UNLOCK pairs</li>
+<li><strong>When</strong> converted to HTML</li>
+<li><strong>Then</strong> each section is properly processed and formatted independently</li>
+</ul>
+<h2>Implementation Notes</h2>
+<h3>Current Behavior</h3>
+<ul>
+<li>AI_LOCK and AI_UNLOCK tags are currently processed as regular text</li>
+<li>No special formatting or visual separation is applied</li>
+<li>Tags on the same line are not handled as a special case</li>
+</ul>
+<h3>Desired Behavior</h3>
+<ul>
+<li>AI_LOCK sections should have distinct visual styling</li>
+<li>Content between tags should be clearly separated from surrounding text</li>
+<li>Consistent formatting across all AI_LOCK sections in a document</li>
+</ul>
+<h3>Technical Considerations</h3>
+<ul>
+<li>Must integrate with existing markdown parsing logic</li>
+<li>Should not break existing HTML conversion functionality</li>
+<li>CSS styling should follow existing framework patterns</li>
+</ul>
+<h2>Testing Strategy</h2>
+<h3>Unit Tests</h3>
+<ul>
+<li>Test detection of AI_LOCK/AI_UNLOCK pairs on single lines</li>
+<li>Test content preservation between tags</li>
+<li>Test multiple section processing</li>
+</ul>
+<h3>Integration Tests</h3>
+<ul>
+<li>Test with existing markdown files containing AI_LOCK tags</li>
+<li>Test with complex documents containing multiple AI_LOCK sections</li>
+<li>Test with various content types between AI_LOCK tags</li>
+</ul>
+<h3>Visual Tests</h3>
+<ul>
+<li>Verify consistent styling across different AI_LOCK sections</li>
+<li>Verify proper visual separation from surrounding content</li>
+<li>Verify HTML structure is valid and well-formed</li>
+</ul>
+<h2>Dependencies</h2>
+<ul>
+<li><strong>[DEPENDENCY-25-001]</strong>: Existing markdown parsing logic</li>
+<li><strong>[DEPENDENCY-25-002]</strong>: HTML converter CSS framework</li>
+<li><strong>[DEPENDENCY-25-003]</strong>: Existing HTML generation pipeline</li>
+</ul>
+<h2>Risk Assessment</h2>
+<ul>
+<li><strong>[RISK-25-001]</strong>: Breaking existing HTML conversion functionality</li>
+<li><strong>Mitigation</strong>: Thorough testing with existing documents</li>
+<li><strong>[RISK-25-002]</strong>: Inconsistent styling with existing framework</li>
+<li><strong>Mitigation</strong>: Follow existing CSS patterns and conventions</li>
+</ul>
+<h2>Stakeholders</h2>
+<ul>
+<li><strong>Primary</strong>: Content creators, Documentation teams</li>
+<li><strong>Secondary</strong>: End users viewing HTML documentation</li>
+<li><strong>Approver</strong>: Framework Steward</li>
+</ul>
+<h2>Related Artifacts</h2>
+<ul>
+<li><strong>[RELATED-25-001]</strong>: converter_for_md_to_html.py - Main conversion script</li>
+<li><strong>[RELATED-25-002]</strong>: CSS framework for HTML styling</li>
+<li><strong>[RELATED-25-003]</strong>: Existing user stories for HTML conversion</li>
+</ul>
+<p><strong>User Story Steward:</strong> Framework Steward<br />
+<strong>Approval Status:</strong> Pending<br />
+<strong>Review Cycle:</strong> As needed</p>
+        <footer>
+            <p><em>Generated on 2026-02-01 19:53:48 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

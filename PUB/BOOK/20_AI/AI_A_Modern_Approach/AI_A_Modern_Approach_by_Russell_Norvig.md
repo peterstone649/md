@@ -7,7 +7,7 @@
 - **Pages**: 1,152 (4th Edition)
 - **Genre**: Computer Science, Artificial Intelligence, Textbook
 - **Impact**: The world's most widely used AI textbook, shaping generations of AI researchers and practitioners
-- **Kindle URL**: https://www.amazon.com/Artificial-Intelligence-Modern-Approach-4th/dp/0134610997
+- **Kindle URL**: [Amazon Kindle Edition](https://www.amazon.com/Artificial-Intelligence-Modern-Approach-4th/dp/0134610997)
 
 ## Overview
 

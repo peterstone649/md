@@ -61,171 +61,39 @@
 </head>
 <body>
     <h1>Version Changelog Update [RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE] <strong>[PRIO: HIGH]</strong></h1>
-<p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
-<strong>Scope:</strong> All framework documents with changelog sections</p>
 <h2>Rule Statement</h2>
 <p>All framework documents MUST maintain an accurate and complete version changelog with Stakeholder and Motivation columns for every version entry.</p>
-<h2>Rationale</h2>
-<p>A comprehensive changelog:
-- Provides traceability for all document changes
-- Documents decision rationale for future reference
-- Identifies responsible stakeholders for each modification
-- Enables audit of framework evolution
-- Supports version rollback and impact analysis
-- Aligns with principle of transparency in documentation</p>
-<h2>Changelog Structure</h2>
-<h3>Required Columns</h3>
-<table>
-<thead>
-<tr>
-<th>Column</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Version</strong></td>
-<td>Semantic version number</td>
-<td>V0.1.0, V1.0.0</td>
-</tr>
-<tr>
-<td><strong>Date</strong></td>
-<td>ISO format date of change</td>
-<td>2026-01-09</td>
-</tr>
-<tr>
-<td><strong>Changes</strong></td>
-<td>Description of modifications</td>
-<td>"Added clickable cross-references"</td>
-</tr>
-<tr>
-<td><strong>Stakeholder</strong></td>
-<td>Person or role responsible</td>
-<td>"AI Framework Steward"</td>
-</tr>
-<tr>
-<td><strong>Motivation</strong></td>
-<td>Why the change was made</td>
-<td>"Based on stakeholder feedback"</td>
-</tr>
-</tbody>
-</table>
-<h3>Changelog Location</h3>
-<p>Place the changelog section at the end of the document before the footer:</p>
-<pre><code class="language-markdown">## Changelog
-
-| Version | Date | Change Content | Stakeholders | Motivation |
-|---------|------|---------|-------------|----------------------|
-| V0.1.1 | 2026-01-15 | Added Version Uniqueness section and header format requirements | Framework Steward | Strengthen changelog integrity and consistency |
-| V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish foundational structure |
+<h2>Rule Requirements</h2>
+<ul>
+<li><strong>[R1]</strong>: Changelog section exists in document with all 5 required columns</li>
+<li><strong>[R2]</strong>: Entries in reverse chronological order (newest at top)</li>
+<li><strong>[R3]</strong>: Date format is ISO 8601 (YYYY-MM-DD)</li>
+<li><strong>[R4]</strong>: Version format is V[major].[minor].[patch]</li>
+<li><strong>[R5]</strong>: No duplicate version entries permitted</li>
+<li><strong>[R6]</strong>: Rationale explains why change was made</li>
+</ul>
+<h2>Formal Statement</h2>
+<pre><code>∀document (FrameworkDocument(document) → HasChangelog(document) ∧ CompleteChangelog(document))
 </code></pre>
-<h3>Changelog Header Format</h3>
+<h2>Rationale</h2>
+<p>A comprehensive changelog provides traceability, documents decision rationale, and enables audit of framework evolution.</p>
+<h2>Uncertainty Declaration</h2>
+<p><em>If applicable: This rule acknowledges inherent uncertainties in change impact assessment and the evolving nature of framework requirements.</em></p>
+<h2>Integration with Other Framework Components</h2>
+<h3>Related Rules</h3>
 <ul>
-<li>Use <code>## Changelog</code> (without numbering)</li>
-<li>Do not use numbered headers like <code>## 7. Changelog</code></li>
-<li>Maintain consistent header level (typically <code>##</code>) across all framework documents</li>
+<li><strong><a href="01_rule_for_epistemological_uncertainty_acknowledgment.html">01_rule_for_epistemological_uncertainty_acknowledgment.md</a></strong> - Changelog documents uncertainty acknowledgments</li>
+<li><strong><a href="03_rule_for_active_voice.html">03_rule_for_active_voice.md</a></strong> - Changelog entries should use active voice</li>
 </ul>
-<h2>Changelog Entry Requirements</h2>
-<h3>1. Version Numbering</h3>
+<h3>Related Axioms</h3>
 <ul>
-<li>Follow semantic versioning (V[major].[minor].[patch])</li>
-<li>Increment version according to change significance</li>
-<li>Document initial version as V0.1.0</li>
+<li><strong><a href="../35_axiom/02_axiom_of_framework_validation_integrity.html">02_axiom_of_framework_validation_integrity.md</a></strong> - Validation includes changelog completeness</li>
+<li><strong><a href="../35_axiom/03_axiom_of_clarity_and_precision.html">03_axiom_of_clarity_and_precision.md</a></strong> - Changelog supports clarity requirements</li>
 </ul>
-<h3>2. Stakeholder Identification</h3>
+<h3>Related Principles</h3>
 <ul>
-<li>Use role titles (e.g., "AI Framework Steward")</li>
-<li>Include team name for team decisions</li>
-<li>Reference external stakeholders when applicable</li>
-</ul>
-<h3>3. Rationale Documentation</h3>
-<ul>
-<li>Explain the business need for change</li>
-<li>Reference related issues or decisions</li>
-<li>Describe expected benefits or outcomes</li>
-<li>Link to stakeholder requests when available</li>
-</ul>
-<h3>4. Change Description</h3>
-<ul>
-<li>Use concise, action-oriented language</li>
-<li>Describe what changed, not how</li>
-<li>Include affected sections when relevant</li>
-<li>Reference related principles or conventions</li>
-</ul>
-<h3>5. Version Uniqueness</h3>
-<ul>
-<li>Each version number MUST be unique within the changelog</li>
-<li>No duplicate entries for the same version are permitted</li>
-<li>If multiple changes occur for the same version, consolidate them into a single entry</li>
-<li>Version increments are required for any substantive changes</li>
-</ul>
-<h2>Update Triggers</h2>
-<p>Update the changelog when:</p>
-<ol>
-<li><strong>Content Changes</strong></li>
-<li>Add, remove, or modify substantive content</li>
-<li>Update examples or definitions</li>
-<li>
-<p>Change scope or applicability</p>
-</li>
-<li>
-<p><strong>Structural Changes</strong></p>
-</li>
-<li>Reorganize sections</li>
-<li>Add new sections</li>
-<li>
-<p>Modify section numbering</p>
-</li>
-<li>
-<p><strong>Template Updates</strong></p>
-</li>
-<li>Adopt new template version</li>
-<li>
-<p>Align with updated conventions</p>
-</li>
-<li>
-<p><strong>Compliance Updates</strong></p>
-</li>
-<li>Address feedback from reviews</li>
-<li>Fix validation errors</li>
-<li>Resolve audit findings</li>
-</ol>
-<h2>Entry Order</h2>
-<p>Maintain reverse chronological order:
-- Newest entries at the TOP of the table
-- Oldest entries at the BOTTOM
-- Each entry on its own line</p>
-<h2>Validation Checklist</h2>
-<ul>
-<li>[ ] Changelog section exists in document</li>
-<li>[ ] All 5 columns present (Version, Date, Change Content, Stakeholders, Rationale/Motivation)</li>
-<li>[ ] Entries in reverse chronological order</li>
-<li>[ ] Date format is ISO 8601 (YYYY-MM-DD)</li>
-<li>[ ] Date reflects current operating system date at time of change</li>
-<li>[ ] Version format is V[major].[minor].[patch]</li>
-<li>[ ] Stakeholder identifies responsible person/role</li>
-<li>[ ] Rationale explains why change was made</li>
-<li>[ ] No duplicate version entries</li>
-<li>[ ] Initial creation properly documented</li>
-<li>[ ] if code file : changelog section is commented out and at prominent part of file</li>
-<li>[ ] if no code file : changelog section at end of file</li>
-<li>[ ] if e.g. py code <strong>version</strong> = [VERSION] then also update this!</li>
-<li>[ ] if code file : no duplicate version variable</li>
-</ul>
-<h2>Enforcement</h2>
-<ol>
-<li><strong>Document Creation:</strong> Include empty changelog structure with initial version</li>
-<li><strong>Review Phase:</strong> Verify changelog completeness and accuracy</li>
-<li><strong>Template Validation:</strong> Check for required columns in automated checks</li>
-<li><strong>Commit Gates:</strong> Reject commits without changelog updates for document changes</li>
-</ol>
-<h2>References</h2>
-<ul>
-<li><a href="../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.html">PRIN_PROPORTIONALITY</a></li>
-<li>Convention for Version (20_convention/01_convention_for_version.md)</li>
-<li>Convention for Writing Style (20_convention/03_convention_for_writing_style.md)</li>
-<li>Template for Principle (15_template/17_template_for_principle.md)</li>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.html">02_principle_transparency.md</a></strong> - Transparency requires complete change documentation</li>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.html">03_principle_proportionality.md</a></strong> - Proportionality applies to change documentation</li>
 </ul>
 <p><strong>Rule Steward:</strong> Terminology Architects
 <strong>Approval Status:</strong> Framework Approved
@@ -246,6 +114,13 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>V1.0.2</td>
+<td>2026-01-31</td>
+<td>Comprehensive framework updates: Added RELEASE_NOTES.md, enhanced README.md with clickable links, implemented index_generator.py with comprehensive testing, fixed Path object errors, adapted changelog from converter_for_md_to_html.py, updated US_MFR to US_MFW references, removed version lines from user stories, translated Spanish directory structure, added working instructions reference</td>
+<td>AI Framework Steward</td>
+<td>Major framework enhancement and standardization across all components</td>
+</tr>
 <tr>
 <td>V1.0.1</td>
 <td>2026-01-23</td>
@@ -270,7 +145,7 @@
 </tbody>
 </table>
         <footer>
-            <p>Generated on 2026-01-25 10:09:44 by MDToHTMLConverter v1.6.1</p>
+            <p><em>Generated on 2026-02-01 19:53:44 by MDToHTMLConverter v1.6.1</em></p>
         </footer>
 </body>
 </html>

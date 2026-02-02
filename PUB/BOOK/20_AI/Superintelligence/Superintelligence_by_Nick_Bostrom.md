@@ -7,7 +7,7 @@
 - **Pages**: 352
 - **Genre**: Technology, Artificial Intelligence, Philosophy
 - **Impact**: Foundational text for AI safety research and existential risk studies
-- **Kindle URL**: https://www.amazon.com/Superintelligence-Dangers-Strategies-Nick-Bostrom/dp/0199678111
+- **Kindle URL**: [Amazon Kindle Edition](https://www.amazon.com/Superintelligence-Dangers-Strategies-Nick-Bostrom/dp/0199678111)
 
 ## Overview
 

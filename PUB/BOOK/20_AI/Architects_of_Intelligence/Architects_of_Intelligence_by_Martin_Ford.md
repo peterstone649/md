@@ -7,7 +7,7 @@
 - **Pages**: 416
 - **Genre**: Technology, Artificial Intelligence, Interviews, Future Studies
 - **Impact**: Provides insider perspectives from AI leaders on the field's trajectory and challenges
-- **Kindle URL**: https://www.amazon.com/Architects-Intelligence-Interviews-Worlds-Leading/dp/1786076168
+- **Kindle URL**: [Amazon Kindle Edition](https://www.amazon.com/Architects-Intelligence-Interviews-Worlds-Leading/dp/1786076168)
 
 ## Overview
 

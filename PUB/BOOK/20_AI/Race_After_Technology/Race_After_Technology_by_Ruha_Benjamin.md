@@ -7,7 +7,7 @@
 - **Pages**: 232
 - **Genre**: Technology, Sociology, Critical Race Theory, Science and Technology Studies
 - **Impact**: Groundbreaking examination of how technology reinforces racial hierarchies and perpetuates systemic racism
-- **Kindle URL**: https://www.amazon.com/Race-After-Technology-Abolition-Biopolitics/dp/0745691412
+- **Kindle URL**: [Amazon Kindle Edition](https://www.amazon.com/Race-After-Technology-Abolition-Biopolitics/dp/0745691412)
 
 ## Overview
 

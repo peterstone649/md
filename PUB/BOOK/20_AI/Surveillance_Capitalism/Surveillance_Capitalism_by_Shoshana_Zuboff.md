@@ -7,7 +7,7 @@
 - **Pages**: 704
 - **Genre**: Technology, Economics, Sociology, Philosophy
 - **Impact**: Definitive analysis of surveillance capitalism as a new economic system that threatens human autonomy and democracy
-- **Kindle URL**: https://www.amazon.com/Age-Surveillance-Capitalism-Future-Power/dp/1610395697
+- **Kindle URL**: [Amazon Kindle Edition](https://www.amazon.com/Age-Surveillance-Capitalism-Future-Power/dp/1610395697)
 
 ## Overview
 

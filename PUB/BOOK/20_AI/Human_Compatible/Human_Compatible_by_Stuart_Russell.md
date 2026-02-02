@@ -7,7 +7,7 @@
 - **Pages**: 352
 - **Genre**: Technology, Artificial Intelligence, Philosophy, Ethics
 - **Impact**: Redefined the AI safety debate by proposing a shift from "goal-driven" AI to "uncertainty-driven" beneficial AI
-- **Kindle URL**: https://www.amazon.com/Human-Compatible-Artificial-Intelligence-Problem-Control/dp/0525558616
+- **Kindle URL**: [Amazon Kindle Edition](https://www.amazon.com/Human-Compatible-Artificial-Intelligence-Problem-Control/dp/0525558616)
 
 ## Overview
 

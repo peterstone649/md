@@ -7,7 +7,7 @@
 - **Pages**: 256
 - **Genre**: Technology, Information Science, Critical Race Theory, Gender Studies
 - **Impact**: Groundbreaking examination of how search engines perpetuate racism and sexism through algorithmic bias
-- **Kindle URL**: https://www.amazon.com/Algorithms-Oppression-Search-Engines-Discriminate/dp/1479837245
+- **Kindle URL**: [Amazon Kindle Edition](https://www.amazon.com/Algorithms-Oppression-Search-Engines-Discriminate/dp/1479837245)
 
 ## Overview
 

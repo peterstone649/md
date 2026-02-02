@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewerErTraits</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>ViewerErTraits</h1>
+<p><strong>Purpose</strong>: A viewer tool to display and present the Traits markdown content for agent composition.</p>
+<p><strong>Location</strong>: <code>E:\2025_11\md\MODEL_for_framework\90_tool\PAI\ViewerErTraits.md</code></p>
+<h2>Package Information</h2>
+<ul>
+<li><strong>Package</strong>: <code>online.wikx.n10.util.er</code></li>
+<li><strong>Class Name</strong>: <code>ViewerErTraits</code></li>
+<li><strong>Type</strong>: Markdown Viewer</li>
+</ul>
+<h2>Functionality</h2>
+<h3>1. Markdown Content Display</h3>
+<p>The ViewerErTraits tool provides functionality to display the complete ListTraits.md content in a structured format.</p>
+<h3>2. Content Presentation</h3>
+<ul>
+<li>Displays all available traits organized by categories</li>
+<li>Shows expertise areas, personality dimensions, and approach styles</li>
+<li>Includes example compositions and usage scenarios</li>
+<li>Provides voice mapping information for trait combinations</li>
+</ul>
+<h3>3. Viewer Capabilities</h3>
+<ul>
+<li><strong>Complete Content Display</strong>: Shows the entire ListTraits.md content</li>
+<li><strong>Structured Organization</strong>: Maintains the original markdown structure and formatting</li>
+<li><strong>Category Separation</strong>: Clearly separates expertise, personality, and approach traits</li>
+<li><strong>Example Showcase</strong>: Displays predefined trait combinations and use cases</li>
+</ul>
+<h2>Viewer Content</h2>
+<h3>Complete ListTraits.md Content</h3>
+<pre><code class="language-markdown"># ListTraits Workflow
+
+**Shows all available traits that can be composed into custom agents.**
+
+## When to Use
+
+User says:
+- &quot;What agent personalities can you create?&quot;
+- &quot;Show me available traits&quot;
+- &quot;List agent types&quot;
+- &quot;What expertise areas do you have?&quot;
+
+## The Workflow
+
+### Step 1: Run AgentFactory with --list Flag
+
+```bash
+bun run ~/.claude/skills/Agents/Tools/AgentFactory.ts --list
+</code></pre>
+<h3>Step 2: Present Results to User</h3>
+<p>The tool outputs:</p>
+<pre><code>AVAILABLE TRAITS
+
+EXPERTISE (domain knowledge):
+  security        - Security Expert
+  legal           - Legal Analyst
+  finance         - Financial Analyst
+  medical         - Medical/Health Expert
+  technical       - Technical Specialist
+  research        - Research Specialist
+  creative        - Creative Specialist
+  business        - Business Strategist
+  data            - Data Analyst
+  communications  - Communications Expert
+
+PERSONALITY (behavior style):
+  skeptical       - Skeptical
+  enthusiastic    - Enthusiastic
+  cautious        - Cautious
+  bold            - Bold
+  analytical      - Analytical
+  creative        - Creative
+  empathetic      - Empathetic
+  contrarian      - Contrarian
+  pragmatic       - Pragmatic
+  meticulous      - Meticulous
+
+APPROACH (work style):
+  thorough        - Thorough
+  rapid           - Rapid
+  systematic      - Systematic
+  exploratory     - Exploratory
+  comparative     - Comparative
+  synthesizing    - Synthesizing
+  adversarial     - Adversarial
+  consultative    - Consultative
+
+EXAMPLE COMPOSITIONS:
+  security_audit       - Security architecture review
+                         traits: security, skeptical, thorough, adversarial
+  contract_review      - Legal contract analysis
+                         traits: legal, cautious, meticulous, systematic
+  market_analysis      - Competitive market research
+                         traits: business, analytical, comparative, thorough
+  code_review          - Technical code review
+                         traits: technical, meticulous, systematic
+  creative_brief       - Creative content development
+                         traits: creative, enthusiastic, exploratory
+  red_team             - Adversarial idea testing
+                         traits: contrarian, skeptical, adversarial, bold
+  user_research        - User experience research
+                         traits: research, empathetic, synthesizing
+  quick_assessment     - Rapid evaluation needed
+                         traits: analytical, pragmatic, rapid
+</code></pre>
+<h3>Step 3: Explain Composition System</h3>
+<p>Add context for user:</p>
+<pre><code>You can combine these traits to create custom agents:
+
+EXPERTISE + PERSONALITY + APPROACH = Custom Agent
+
+Examples:
+- &quot;Create a security expert who's skeptical and thorough&quot;
+  → security + skeptical + thorough
+
+- &quot;I need someone with legal knowledge who's really careful&quot;
+  → legal + cautious + meticulous
+
+- &quot;Get me a creative thinker who works fast&quot;
+  → creative + enthusiastic + rapid
+
+Just describe what you need naturally, and I'll compose the right agent.
+</code></pre>
+<h2>Enhanced Presentation (Optional)</h2>
+<p>If user wants more detail, also explain voice assignment:</p>
+<pre><code>Each trait combination maps to a unique voice:
+
+ENERGETIC VOICES (enthusiastic, creative, bold):
+- Jeremy (excited Irish-American male)
+- Fin (energetic Irish storyteller)
+- Freya (vibrant dynamic female)
+- Dave (youthful British energy)
+
+INTELLECTUAL VOICES (analytical, skeptical, research):
+- Default (BBC anchor authority)
+- George (academic warm raspy)
+- Charlotte (sophisticated Swedish-British)
+- Antoni (professorial articulate)
+
+AUTHORITATIVE VOICES (bold, business, cautious):
+- Domi (assertive CEO female)
+- Bill (documentary trustworthy male)
+- Alice (confident news anchor female)
+- Joseph (formal British authority)
+
+WARM VOICES (empathetic, consultative):
+- Matilda (friendly American storyteller)
+- Thomas (calm gentle guide)
+- Rachel (calm supportive)
+
+EDGY VOICES (adversarial, contrarian, security):
+- Clyde (gravelly war veteran intensity)
+- Callum (hoarse hacker character)
+- Sam (raspy gritty authentic)
+</code></pre>
+<h2>Example Interaction</h2>
+<p><strong>User:</strong> "What kinds of agents can you create?"</p>
+<p><strong>System:</strong></p>
+<pre><code>I can compose agents from 28 traits across three categories:
+
+EXPERTISE (what they know):
+security, legal, finance, medical, technical, research, creative,
+business, data, communications
+
+PERSONALITY (how they think):
+skeptical, enthusiastic, cautious, bold, analytical, creative,
+empathetic, contrarian, pragmatic, meticulous
+
+APPROACH (how they work):
+thorough, rapid, systematic, exploratory, comparative, synthesizing,
+adversarial, consultative
+
+Just tell me what you need:
+- &quot;I need a legal expert who's really thorough&quot;
+- &quot;Create a skeptical security analyst&quot;
+- &quot;Get me someone creative and fast&quot;
+
+I'll compose the right agent with a matching voice.
+</code></pre>
+<h2>Quick Reference Card (Optional)</h2>
+<p>For frequent use, provide a condensed version:</p>
+<pre><code>QUICK TRAIT REFERENCE
+
+Expertise:     security | legal | finance | medical | technical |
+               research | creative | business | data | communications
+
+Personality:   skeptical | enthusiastic | cautious | bold | analytical |
+               creative | empathetic | contrarian | pragmatic | meticulous
+
+Approach:      thorough | rapid | systematic | exploratory | comparative |
+               synthesizing | adversarial | consultative
+
+Popular Combos:
+- Security audit:     security + skeptical + adversarial
+- Contract review:    legal + cautious + meticulous
+- Creative brief:     creative + enthusiastic + exploratory
+- Code review:        technical + meticulous + systematic
+- Red team:           contrarian + skeptical + bold
+</code></pre>
+<h2>Related Workflows</h2>
+<ul>
+<li><strong>CreateCustomAgent</strong> - Actually create agents with these traits</li>
+<li><strong>SpawnParallelAgents</strong> - Launch generic agents (no trait customization)</li>
+</ul>
+<h2>References</h2>
+<ul>
+<li>Full trait definitions: <code>~/.claude/skills/Agents/Data/Traits.yaml</code></li>
+<li>Voice mappings: Lines 349-794 in Traits.yaml</li>
+<li>AgentFactory tool: <code>~/.claude/skills/Agents/Tools/AgentFactory.ts</code></li>
+</ul>
+<pre><code>
+## Usage Examples
+
+### Basic Viewer Usage
+```markdown
+# To display all available traits:
+
+ViewerErTraits.showAllTraits()
+
+# To display traits by category:
+
+ViewerErTraits.showExpertiseTraits()
+ViewerErTraits.showPersonalityTraits()
+ViewerErTraits.showApproachTraits()
+
+# To display example compositions:
+
+ViewerErTraits.showExampleCompositions()
+</code></pre>
+<h3>Advanced Viewer Usage</h3>
+<pre><code class="language-markdown"># To display the complete workflow:
+
+ViewerErTraits.showCompleteWorkflow()
+
+# To display voice mapping information:
+
+ViewerErTraits.showVoiceMappings()
+
+# To display quick reference:
+
+ViewerErTraits.showQuickReference()
+</code></pre>
+<h2>Implementation Details</h2>
+<h3>Viewer Methods</h3>
+<ul>
+<li><code>showAllTraits()</code>: Displays all available traits organized by categories</li>
+<li><code>showExpertiseTraits()</code>: Shows only expertise traits</li>
+<li><code>showPersonalityTraits()</code>: Shows only personality traits</li>
+<li><code>showApproachTraits()</code>: Shows only approach traits</li>
+<li><code>showExampleCompositions()</code>: Displays predefined trait combinations</li>
+<li><code>showCompleteWorkflow()</code>: Shows the entire ListTraits workflow</li>
+<li><code>showVoiceMappings()</code>: Displays voice assignment information</li>
+<li><code>showQuickReference()</code>: Shows condensed trait reference</li>
+</ul>
+<h3>Data Structure</h3>
+<p>The viewer maintains the original markdown structure and formatting from ListTraits.md, ensuring consistent presentation.</p>
+<h2>Integration</h2>
+<p>The ViewerErTraits tool can be integrated with agent composition systems to:</p>
+<ol>
+<li><strong>Trait Display</strong>: Show available traits to users for agent creation</li>
+<li><strong>Education</strong>: Help users understand the trait composition system</li>
+<li><strong>Reference</strong>: Provide quick access to trait information</li>
+<li><strong>Workflow Integration</strong>: Display trait information during agent creation workflows</li>
+</ol>
+<h2>Error Handling</h2>
+<ul>
+<li>Validates markdown content structure</li>
+<li>Provides fallback display options if content is missing</li>
+<li>Maintains consistent formatting across different display methods</li>
+</ul>
+<h2>Related Tools</h2>
+<ul>
+<li><strong>ReaderForTrait</strong>: For parsing and analyzing Traits.yaml</li>
+<li><strong>AgentFactory</strong>: For creating agents with specific traits</li>
+<li><strong>ListTraits</strong>: The original workflow this viewer displays</li>
+</ul>
+<h2>Technical Notes</h2>
+<ul>
+<li><strong>File Location</strong>: <code>E:\2025_11\md\MODEL_for_framework\90_tool\PAI\ViewerErTraits.md</code></li>
+<li><strong>Source Content</strong>: Based on <code>E:\2025_11\PAI\Packs\pai-agents-skill\src\skills\Agents\Workflows\ListTraits.md</code></li>
+<li><strong>Package</strong>: <code>online.wikx.n10.util.er</code></li>
+<li><strong>Class Name</strong>: <code>ViewerErTraits</code></li>
+<li><strong>Format</strong>: Markdown viewer for trait display</li>
+</ul>
+        <footer>
+            <p><em>Generated on 2026-02-01 19:53:48 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

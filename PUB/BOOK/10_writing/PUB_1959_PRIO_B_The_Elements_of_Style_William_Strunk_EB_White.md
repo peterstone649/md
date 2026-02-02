@@ -8,7 +8,7 @@
 - **Pages**: 105
 - **Genre**: Writing Guide, Style Manual
 - **Impact**: One of the most influential writing guides in English, selling millions of copies
-- **Kindle URL**: https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X
+- **Kindle URL**: [Amazon Kindle Edition](https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X)
 
 ## Historical Context
 

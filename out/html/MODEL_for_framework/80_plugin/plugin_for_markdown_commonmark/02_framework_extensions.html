@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_framework_extensions</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Markdown Extensions [CONVENTION_FOR_MFW_MARKDOWN_EXTENSIONS] <strong>[PRIO: MEDIUM]</strong></h1>
+<p><strong>Version: V1.0.0</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-02-01</strong></p>
+<h2>Overview</h2>
+<p>This document defines the framework-specific Markdown extensions that extend beyond the CommonMark specification. All extensions MUST maintain compatibility with CommonMark and provide clear documentation and fallback behavior.</p>
+<h2>Extension Guidelines</h2>
+<h3>1. Extension Principles</h3>
+<pre><code class="language-markdown">Extension Requirements:
+├── MUST not conflict with CommonMark core syntax
+├── MUST provide clear documentation and examples
+├── MUST include fallback behavior for non-supporting parsers
+├── MUST maintain semantic equivalence with CommonMark
+└── MUST be clearly marked as framework extensions
+</code></pre>
+<h3>2. Extension Categories</h3>
+<pre><code class="language-markdown">Extension Types:
+├── Semantic Extensions → Enhanced meaning and structure
+├── Presentation Extensions → Visual formatting and styling
+├── Functional Extensions → Interactive and dynamic content
+└── Metadata Extensions → Document and content metadata
+</code></pre>
+<h2>Semantic Extensions</h2>
+<h3>1. Framework-Specific Headers</h3>
+<pre><code class="language-markdown">Enhanced Headers:
+# [RULE] Header Title
+## [PRINCIPLE] Header Title
+### [AXIOM] Header Title
+#### [TEMPLATE] Header Title
+##### [CONVENTION] Header Title
+###### [GUIDELINE] Header Title
+
+Usage:
+- Use framework-specific prefixes for semantic meaning
+- Maintain standard CommonMark header structure
+- Provide clear semantic context for document purpose
+</code></pre>
+<h3>2. Status and Priority Markers</h3>
+<pre><code class="language-markdown">Status Indicators:
+[STATUS: DRAFT] → Document in development
+[STATUS: REVIEW] → Under review
+[STATUS: APPROVED] → Approved for use
+[STATUS: DEPRECATED] → No longer recommended
+
+Priority Markers:
+[PRIORITY: HIGH] → Critical importance
+[PRIORITY: MEDIUM] → Moderate importance
+[PRIORITY: LOW] → Lower priority
+</code></pre>
+<h3>3. Framework References</h3>
+<pre><code class="language-markdown">Reference Syntax:
+[FRAMEWORK: MODEL_for_framework] → Reference to framework
+[COMPONENT: 20_convention] → Reference to component
+[FILE: 01_markdown_convention.md] → Reference to specific file
+[SECTION: Core Requirements] → Reference to section
+
+Example:
+See [COMPONENT: 20_convention] for more details.
+</code></pre>
+<h2>Presentation Extensions</h2>
+<h3>1. Enhanced Code Blocks</h3>
+<pre><code class="language-markdown">Language-Specific Formatting:
+```javascript [EXAMPLE]
+// Framework-specific JavaScript example
+const config = {
+  commonmark: true,
+  extensions: ['framework']
+};
+</code></pre>
+<p>```python [VALIDATION]</p>
+<h1>Validation example</h1>
+<p>def validate_commonmark_compliance(content):
+    return commonmark_parser.validate(content)</p>
+<pre><code>
+```bash [COMMAND]
+# Command example
+npm run validate:commonmark
+</code></pre>
+<p>Usage:
+- Include [EXAMPLE], [VALIDATION], or [COMMAND] tags
+- Provide context-specific language examples
+- Maintain standard code block structure</p>
+<pre><code>
+### 2. Enhanced Tables
+```markdown
+Extended Table Features:
+| Feature | CommonMark | Framework Extension |
+|---------|------------|-------------------|
+| Basic Tables | ✅ | ✅ |
+| Table Headers | ✅ | ✅ |
+| Alignment | ✅ | ✅ |
+| Row Span | ❌ | ✅ [EXTENSION] |
+| Column Span | ❌ | ✅ [EXTENSION] |
+| Nested Content | Limited | ✅ [EXTENSION] |
+
+Extended Syntax:
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Cell 1   | Cell 2   | Cell 3   |
+| Cell 4   | Cell 5   | Cell 6   |
+| Cell 7   | Cell 8   | Cell 9   |
+</code></pre>
+<h3>3. Enhanced Lists</h3>
+<pre><code class="language-markdown">Task Lists with Metadata:
+- [x] [CRITICAL] Complete CommonMark validation
+- [ ] [HIGH] Implement extension testing
+- [ ] [MEDIUM] Update documentation
+- [ ] [LOW] Review compatibility
+
+Nested Lists with Extensions:
+1. Main Task
+   - [ ] Subtask A
+   - [ ] Subtask B
+     - [ ] Nested subtask
+   - [ ] Subtask C
+
+2. Another Task
+   - [x] Completed item
+   - [ ] Pending item
+</code></pre>
+<h2>Functional Extensions</h2>
+<h3>1. Interactive Elements</h3>
+<pre><code class="language-markdown">Collapsible Sections:
+&lt;details&gt;
+&lt;summary&gt;Click to expand&lt;/summary&gt;
+
+Extended content here.
+
+&lt;/details&gt;
+
+Accordion Content:
+&lt;details open&gt;
+&lt;summary&gt;Always open section&lt;/summary&gt;
+
+This content is visible by default.
+
+&lt;/details&gt;
+</code></pre>
+<h3>2. Embedded Content</h3>
+<pre><code class="language-markdown">Iframe Embedding:
+&lt;iframe src=&quot;https://example.com&quot; width=&quot;100%&quot; height=&quot;400&quot;&gt;&lt;/iframe&gt;
+
+Video Embedding:
+&lt;video controls width=&quot;100%&quot;&gt;
+  &lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+</code></pre>
+<h3>3. Mathematical Expressions</h3>
+<pre><code class="language-markdown">LaTeX Math (Extension):
+Inline: $E = mc^2$
+
+Block:
+$$
+\sum_{i=1}^{n} x_i = x_1 + x_2 + \cdots + x_n
+$$
+
+Complex Formula:
+$$
+f(x) = \int_{-\infty}^{\infty} \hat{f}(\xi) e^{2\pi i \xi x} d\xi
+$$
+</code></pre>
+<h2>Metadata Extensions</h2>
+<h3>1. Document Metadata</h3>
+<pre><code class="language-markdown">Front Matter (YAML):
+---
+title: &quot;Document Title&quot;
+version: &quot;1.0.0&quot;
+status: &quot;DRAFT&quot;
+date: &quot;2026-02-01&quot;
+author: &quot;Framework Steward&quot;
+tags: [&quot;markdown&quot;, &quot;commonmark&quot;, &quot;extensions&quot;]
+---
+
+Document Properties:
+**Framework**: MODEL_for_framework
+**Component**: 20_convention
+**Created**: 2026-02-01
+**Modified**: 2026-02-01
+**Version**: 1.0.0
+</code></pre>
+<h3>2. Content Metadata</h3>
+<pre><code class="language-markdown">Block Metadata:
+&gt; **Note**: This is an important note.
+&gt; 
+&gt; Additional information can be found in the documentation.
+
+&gt; **Warning**: This is a warning message.
+&gt; 
+&gt; Proceed with caution when implementing this feature.
+
+&gt; **Tip**: This is a helpful tip.
+&gt; 
+&gt; Consider this approach for better results.
+</code></pre>
+<h3>3. Code Metadata</h3>
+<pre><code class="language-markdown">Code Annotations:
+```javascript
+// @author Framework Steward
+// @version 1.0.0
+// @since 2026-02-01
+// @description CommonMark validation function
+function validateCommonMark(content) {
+  // Implementation here
+}
+</code></pre>
+<pre><code class="language-python">&quot;&quot;&quot;
+@file: commonmark_validator.py
+@author: Framework Steward
+@version: 1.0.0
+@since: 2026-02-01
+@description: CommonMark validation utilities
+&quot;&quot;&quot;
+</code></pre>
+<h2>Extension Validation</h2>
+<h3>1. Compatibility Testing</h3>
+<pre><code class="language-markdown">Validation Requirements:
+├── CommonMark core syntax MUST remain unchanged
+├── Extensions MUST not break existing CommonMark content
+├── Fallback behavior MUST be documented
+├── Cross-parser compatibility MUST be verified
+└── Semantic correctness MUST be maintained
+</code></pre>
+<h3>2. Testing Framework</h3>
+<pre><code class="language-markdown">Test Categories:
+├── Core CommonMark compliance tests
+├── Extension functionality tests
+├── Fallback behavior tests
+├── Cross-parser compatibility tests
+└── Semantic correctness tests
+</code></pre>
+<h3>3. Documentation Requirements</h3>
+<pre><code class="language-markdown">Documentation Standards:
+├── Each extension MUST have clear usage examples
+├── Fallback behavior MUST be documented
+├── Compatibility notes MUST be included
+├── Migration guides MUST be provided when needed
+└── Best practices MUST be documented
+</code></pre>
+<h2>Implementation Guidelines</h2>
+<h3>1. Parser Configuration</h3>
+<pre><code class="language-markdown">Parser Settings:
+{
+  &quot;commonmark&quot;: true,
+  &quot;extensions&quot;: {
+    &quot;framework-specific&quot;: true,
+    &quot;enhanced-tables&quot;: true,
+    &quot;task-lists&quot;: true,
+    &quot;metadata&quot;: true
+  },
+  &quot;fallback&quot;: {
+    &quot;strip-extensions&quot;: true,
+    &quot;preserve-content&quot;: true
+  }
+}
+</code></pre>
+<h3>2. Processing Pipeline</h3>
+<pre><code class="language-markdown">Processing Order:
+1. CommonMark parsing
+2. Extension processing
+3. Fallback handling
+4. Validation and verification
+5. Output generation
+</code></pre>
+<h3>3. Error Handling</h3>
+<pre><code class="language-markdown">Error Management:
+├── Extension errors MUST not break CommonMark parsing
+├── Fallback content MUST be provided for failed extensions
+├── Error messages MUST be clear and actionable
+├── Logging MUST include extension-specific information
+└── Recovery strategies MUST be documented
+</code></pre>
+<h2>Examples and Use Cases</h2>
+<h3>1. Framework Documentation</h3>
+<pre><code class="language-markdown"># [RULE] Framework Naming Convention
+
+[STATUS: APPROVED] [PRIORITY: HIGH]
+
+## Overview
+
+This rule defines the naming convention for framework components.
+
+## Requirements
+
+- All component names MUST follow PascalCase
+- File names MUST use kebab-case
+- Directory names MUST be descriptive and lowercase
+
+## Examples
+
+```javascript [EXAMPLE]
+// Correct naming
+const FrameworkComponent = () =&gt; {
+  // Implementation
+};
+</code></pre>
+<p>```bash [COMMAND]</p>
+<h1>File naming example</h1>
+<p>framework-component.md</p>
+<pre><code>
+## References
+
+- [COMPONENT: 20_convention]
+- [FILE: 01_markdown_convention.md]
+</code></pre>
+<h3>2. Technical Documentation</h3>
+<pre><code class="language-markdown"># API Documentation
+
+## Endpoint: /api/v1/users
+
+**Method**: GET
+**Authentication**: Required
+**Rate Limit**: 1000/hour
+
+### Parameters
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| page | integer | No | Page number |
+| limit | integer | No | Items per page |
+| filter | string | No | Filter criteria |
+
+### Response
+
+```json [EXAMPLE]
+{
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;John Doe&quot;,
+      &quot;email&quot;: &quot;john@example.com&quot;
+    }
+  ],
+  &quot;pagination&quot;: {
+    &quot;page&quot;: 1,
+    &quot;limit&quot;: 10,
+    &quot;total&quot;: 100
+  }
+}
+</code></pre>
+<h3>Error Handling</h3>
+<blockquote>
+<p><strong>Warning</strong>: Rate limit exceeded</p>
+<p>The API rate limit has been exceeded. Please wait before making additional requests.</p>
+<p><strong>Note</strong>: Authentication required</p>
+<p>All API endpoints require valid authentication tokens.</p>
+</blockquote>
+<pre><code>
+### 3. Validation Scripts
+```markdown
+# CommonMark Validation
+
+## Overview
+
+This script validates CommonMark compliance for framework documents.
+
+```bash [VALIDATION]
+#!/bin/bash
+# CommonMark validation script
+
+for file in *.md; do
+  echo &quot;Validating $file...&quot;
+  commonmark-validator &quot;$file&quot; || echo &quot;FAILED: $file&quot;
+done
+</code></pre>
+<h2>Usage</h2>
+<ol>
+<li>Install CommonMark validator</li>
+<li>Run validation script</li>
+<li>Review any failures</li>
+<li>Fix compliance issues</li>
+</ol>
+<h2>Requirements</h2>
+<ul>
+<li>CommonMark parser installed</li>
+<li>Framework extensions documented</li>
+<li>Fallback behavior implemented</li>
+</ul>
+<pre><code>
+## Maintenance and Updates
+
+### 1. Extension Lifecycle
+```markdown
+Extension Management:
+├── New extensions MUST be documented and tested
+├── Deprecated extensions MUST have migration paths
+├── Removed extensions MUST have clear deprecation notices
+├── Extension updates MUST maintain backward compatibility
+└── Extension removal MUST be planned and communicated
+</code></pre>
+<h3>2. Version Management</h3>
+<pre><code class="language-markdown">Version Control:
+├── Extension versions MUST be tracked
+├── Breaking changes MUST be clearly marked
+├── Migration guides MUST be provided for major changes
+├── Deprecation notices MUST be included in advance
+└── Compatibility matrices MUST be maintained
+</code></pre>
+<h3>3. Quality Assurance</h3>
+<pre><code class="language-markdown">QA Process:
+├── Regular extension functionality testing
+├── CommonMark compliance verification
+├── Cross-parser compatibility testing
+├── Performance impact assessment
+└── Documentation accuracy verification
+</code></pre>
+<h2>References and Resources</h2>
+<h3>CommonMark Resources</h3>
+<ul>
+<li><a href="https://spec.commonmark.org/">CommonMark Specification</a></li>
+<li><a href="https://spec.commonmark.org/dingus/">CommonMark Test Suite</a></li>
+<li><a href="https://github.com/commonmark/commonmark-spec/wiki/Markdown-Implementations">CommonMark Implementations</a></li>
+</ul>
+<h3>Framework Integration</h3>
+<ul>
+<li><a href="01_commonmark_standard.html">01_commonmark_standard.md</a> - CommonMark compliance requirements</li>
+<li><a href="03_validation_framework.html">03_validation_framework.md</a> - Validation requirements</li>
+<li><a href="04_toolchain_integration.html">04_toolchain_integration.md</a> - Tools and processors</li>
+</ul>
+<h3>Extension Development</h3>
+<ul>
+<li><a href="https://github.com/markdown-it/markdown-it">Markdown-it Extensions</a> - Extension development guide</li>
+<li><a href="https://talk.commonmark.org/c/extensions">CommonMark Extensions</a> - Community extension discussions</li>
+<li><a href="https://github.com/DavidAnson/markdownlint">Markdown Linting</a> - Linting rules and extensions</li>
+</ul>
+<hr />
+<p><strong>Framework</strong>: MODEL_for_framework<br />
+<strong>Framework Version</strong>: V1.0.0<br />
+<strong>Date</strong>: 2026-02-01  </p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.0</td>
+<td>2026-02-01</td>
+<td>Initial creation</td>
+<td>Framework Steward</td>
+<td>Define framework-specific extensions</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p><em>Generated on 2026-02-01 19:53:48 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

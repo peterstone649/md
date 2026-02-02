@@ -65,129 +65,39 @@
 <strong>Scope:</strong> All framework documents containing Wikimedia references</p>
 <h2>Rule Statement</h2>
 <p><strong>All references to Wikimedia Commons and Wikipedia resources MUST include proper attribution, licensing information, and direct links to source materials.</strong></p>
+<h2>Rule Requirements</h2>
+<ul>
+<li><strong>[R1]</strong>: All Wikimedia links include direct URLs to specific pages</li>
+<li><strong>[R2]</strong>: Attribution information is complete and accurate (creator name when available)</li>
+<li><strong>[R3]</strong>: License information is specified and correct (CC BY, CC BY-SA, CC0, etc.)</li>
+<li><strong>[R4]</strong>: Access dates are included and current (ISO format YYYY-MM-DD)</li>
+<li><strong>[R5]</strong>: Links are functional and accessible</li>
+<li><strong>[R6]</strong>: Alt text is provided for images</li>
+<li><strong>[R7]</strong>: Attribution format follows established patterns</li>
+</ul>
+<h2>Formal Statement</h2>
+<pre><code>∀wikimedia_ref (WikimediaReference(wikimedia_ref) ∧ FrameworkDocument(wikimedia_ref))
+    → (HasAttribution(wikimedia_ref) ∧ HasLicense(wikimedia_ref) ∧ HasAccessDate(wikimedia_ref))
+</code></pre>
 <h2>Rationale</h2>
-<p>Proper Wikimedia linking:
-- Ensures compliance with Creative Commons licensing requirements
-- Provides transparency about source materials
-- Enables proper attribution to original creators
-- Supports academic and research integrity
-- Facilitates verification of referenced information
-- Aligns with framework principles of transparency and accountability</p>
-<h2>Wikimedia Link Requirements</h2>
-<h3>Required Elements</h3>
-<p>Every Wikimedia reference MUST include:</p>
-<ol>
-<li><strong>Direct Link</strong> - Functional URL to the specific Wikimedia page</li>
-<li><strong>Attribution</strong> - Creator/artist name when available</li>
-<li><strong>License Information</strong> - Specific Creative Commons license</li>
-<li><strong>Access Date</strong> - When the resource was accessed</li>
-</ol>
-<h3>Link Format Pattern</h3>
-<pre><code class="language-markdown">[![Alt Text](link-to-image)](link-to-wikimedia-page)
-*Image by [Creator Name](link-to-creator-profile) / [License Name](link-to-license) via Wikimedia Commons*
-</code></pre>
-<h3>Complete Attribution Examples</h3>
-<p><strong>For Images:</strong></p>
-<pre><code class="language-markdown">[![Game Hammer Icon](https://game-icons.net/icons/ffffff/000000/gear-hammer/000000/64.png)](https://game-icons.net/1x1/lorc/gear-hammer.html)
-*Icon by [Lorc](https://game-icons.net/about.html#lorc) / [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) via Game-Icons.net*
-</code></pre>
-<p><strong>For Wikipedia Articles:</strong></p>
-<pre><code class="language-markdown">[Artificial Intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence) (WP)
-</code></pre>
-<p><strong>For Wikimedia Commons Files:</strong></p>
-<pre><code class="language-markdown">[Framework Architecture Diagram](https://commons.wikimedia.org/wiki/File:Example_diagram.svg)(WM)
-*Diagram by [Creator Name](https://commons.wikimedia.org/wiki/User:Username) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) via Wikimedia Commons*
-</code></pre>
-<h2>Attribution Standards</h2>
-<h3>License Identification</h3>
-<table>
-<thead>
-<tr>
-<th>License Code</th>
-<th>Full Name</th>
-<th>Attribution Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CC BY 3.0</td>
-<td>Creative Commons Attribution 3.0</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>CC BY-SA 4.0</td>
-<td>Creative Commons Attribution-ShareAlike 4.0</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>CC0</td>
-<td>Creative Commons Zero (Public Domain)</td>
-<td>Recommended</td>
-</tr>
-<tr>
-<td>Public Domain</td>
-<td>Public Domain</td>
-<td>Recommended</td>
-</tr>
-</tbody>
-</table>
-<h3>Creator Attribution</h3>
+<p>Proper Wikimedia linking ensures compliance with Creative Commons licensing requirements and supports academic and research integrity.</p>
+<h2>Uncertainty Declaration</h2>
+<p><em>If applicable: This rule acknowledges inherent uncertainties in external resource availability and licensing changes over time.</em></p>
+<h2>Integration with Other Framework Components</h2>
+<h3>Related Rules</h3>
 <ul>
-<li>Include creator name when available from Wikimedia metadata</li>
-<li>Link to creator's profile page when possible</li>
-<li>Use "Anonymous" or "Unknown" if creator information is not available</li>
-<li>Preserve original attribution chains for derivative works</li>
+<li><strong><a href="10_rule_for_link_OT_clickable.html">10_rule_for_link_OT_clickable.md</a></strong> - General clickable link requirements</li>
+<li><strong><a href="03_rule_for_active_voice.html">03_rule_for_active_voice.md</a></strong> - Attribution text should use active voice</li>
 </ul>
-<h3>Access Documentation</h3>
+<h3>Related Axioms</h3>
 <ul>
-<li>Include access date in ISO format (YYYY-MM-DD)</li>
-<li>Place access date in parentheses after the link</li>
-<li>Update access date when content is verified or refreshed</li>
+<li><strong><a href="../35_axiom/02_axiom_of_framework_validation_integrity.html">02_axiom_of_framework_validation_integrity.md</a></strong> - Validation includes external resource compliance</li>
+<li><strong><a href="../35_axiom/03_axiom_of_clarity_and_precision.html">03_axiom_of_clarity_and_precision.md</a></strong> - Clear attribution supports transparency</li>
 </ul>
-<h2>Implementation Guidelines</h2>
-<h3>Image Usage</h3>
-<ol>
-<li><strong>Select Appropriate License</strong> - Prefer CC BY-SA or CC0 for maximum compatibility</li>
-<li><strong>Download Original Resolution</strong> - Use highest quality available</li>
-<li><strong>Preserve Metadata</strong> - Keep EXIF data for attribution tracking</li>
-<li><strong>Create Alt Text</strong> - Descriptive text for accessibility</li>
-</ol>
-<h3>Content References</h3>
-<ol>
-<li><strong>Cite Specific Sections</strong> - Link to relevant article sections when possible</li>
-<li><strong>Include Context</strong> - Explain why the reference supports the framework content</li>
-<li><strong>Regular Verification</strong> - Check links periodically for continued availability</li>
-</ol>
-<h3>Framework Integration</h3>
-<ol>
-<li><strong>Consistent Placement</strong> - Place attributions immediately after referenced content</li>
-<li><strong>Visual Separation</strong> - Use italics or smaller text for attribution blocks</li>
-<li><strong>Grouping</strong> - Group multiple attributions from same source when appropriate</li>
-</ol>
-<h2>Validation Checklist</h2>
+<h3>Related Principles</h3>
 <ul>
-<li>[ ] All Wikimedia links include direct URLs</li>
-<li>[ ] Attribution information is complete and accurate</li>
-<li>[ ] License information is specified and correct</li>
-<li>[ ] Access dates are included and current</li>
-<li>[ ] Links are functional and accessible</li>
-<li>[ ] Alt text is provided for images</li>
-<li>[ ] Attribution format follows established patterns</li>
-</ul>
-<h2>Enforcement</h2>
-<ol>
-<li><strong>Content Creation:</strong> Include complete attribution during initial drafting</li>
-<li><strong>Review Process:</strong> Verify all Wikimedia references meet attribution requirements</li>
-<li><strong>Automated Checks:</strong> Tools can validate link syntax and presence of attribution elements</li>
-<li><strong>Regular Audits:</strong> Periodic review of all Wikimedia references for accuracy</li>
-</ol>
-<h2>References</h2>
-<ul>
-<li><a href="https://creativecommons.org/choose/">Creative Commons License Chooser</a></li>
-<li><a href="https://commons.wikimedia.org/wiki/Commons:Licensing">Wikimedia Commons Licensing</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Wikipedia:Citing_Wikipedia">Wikipedia Citation Guidelines</a></li>
-<li>Framework Writing Conventions (20_convention/03_convention_for_writing_style.md)</li>
-<li>Clickable Links Rule (12_rule/10_rule_for_clickable_links.md)</li>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.html">02_principle_transparency.md</a></strong> - Transparency requires proper attribution</li>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.html">03_principle_proportionality.md</a></strong> - Proportionality applies to attribution complexity</li>
 </ul>
 <p><strong>Rule Steward:</strong> Terminology Architects
 <strong>Approval Status:</strong> Framework Approved
@@ -225,7 +135,7 @@
 </tbody>
 </table>
         <footer>
-            <p>Generated on 2026-01-25 10:09:44 by MDToHTMLConverter v1.6.1</p>
+            <p><em>Generated on 2026-02-01 19:53:44 by MDToHTMLConverter v1.6.1</em></p>
         </footer>
 </body>
 </html>

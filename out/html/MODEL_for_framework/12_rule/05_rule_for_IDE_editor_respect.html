@@ -61,21 +61,41 @@
 </head>
 <body>
     <h1>IDE Editor Respect [RULE_FOR_MFW_IDE_EDITOR_RESPECT] <strong>[PRIO: HIGH]</strong></h1>
-<p><strong>Version: V1.0.1</strong> <strong>Status: APPROVED</strong> <strong>Date: 2026-01-23</strong>
-<strong>Scope:</strong> All AI extension-assisted file modifications (e.g. CLINE)</p>
 <p><em>Based on: <a href="../35_axiom/10_axiom_of_epistemological_uncertainty.html">10_axiom_of_epistemological_uncertainty.md</a></em></p>
 <h2>Rule Statement</h2>
 <p><strong>AI in an IDE must respect and preserve manual edits made directly in the editor. AI must not override user changes.</strong></p>
-<h2>Rule Details</h2>
+<h2>Rule Requirements</h2>
 <ul>
-<li><strong>Manual Edit Preservation</strong>: If user makes changes directly in editor, work with and preserve those changes</li>
-<li><strong>Selective Modification</strong>: Only modify specific parts requested while keeping manual edits intact</li>
-<li><strong>Override Prevention</strong>: Never replace entire files when user has made manual modifications</li>
-<li><strong>Collaboration Approach</strong>: Treat manual edits as authoritative and build upon them</li>
-<li><strong>Copy File Protection</strong>: Files ending in "copy.<extension>" are critical and MUST NOT receive updates from AI or its extensions</li>
+<li><strong>[R1]</strong>: If user makes changes directly in editor, work with and preserve those changes</li>
+<li><strong>[R2]</strong>: Only modify specific parts requested while keeping manual edits intact</li>
+<li><strong>[R3]</strong>: Never replace entire files when user has made manual modifications</li>
+<li><strong>[R4]</strong>: Treat manual edits as authoritative and build upon them</li>
+<li><strong>[R5]</strong>: Files ending in "copy.<extension>" are critical and MUST NOT receive updates from AI or its extensions</li>
 </ul>
+<h2>Formal Statement</h2>
+<pre><code>∀ai_system∀user_edit (AISystem(ai_system) ∧ UserEdit(user_edit))
+    → (PreserveEdit(ai_system, user_edit) ∧ SelectiveModification(ai_system, user_edit))
+</code></pre>
 <h2>Rationale</h2>
 <p>Ensures user control over their work while maintaining collaborative AI assistance capabilities.</p>
+<h2>Uncertainty Declaration</h2>
+<p><em>If applicable: This rule acknowledges inherent uncertainties in AI understanding of user intent and the need for human oversight in code modifications.</em></p>
+<h2>Integration with Other Framework Components</h2>
+<h3>Related Rules</h3>
+<ul>
+<li><strong><a href="01_rule_for_epistemological_uncertainty_acknowledgment.html">01_rule_for_epistemological_uncertainty_acknowledgment.md</a></strong> - AI uncertainty acknowledgment applies to IDE interactions</li>
+<li><strong><a href="03_rule_for_active_voice.html">03_rule_for_active_voice.md</a></strong> - IDE documentation should use active voice</li>
+</ul>
+<h3>Related Axioms</h3>
+<ul>
+<li><strong><a href="../35_axiom/10_axiom_of_epistemological_uncertainty.html">10_axiom_of_epistemological_uncertainty.md</a></strong> - Foundation for user control over AI actions</li>
+<li><strong><a href="../35_axiom/01_axiom_of_human_sovereignty.html">01_axiom_of_human_sovereignty.md</a></strong> - Human sovereignty over AI in development environments</li>
+</ul>
+<h3>Related Principles</h3>
+<ul>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/01_principle_human_sovereignty.html">01_principle_human_sovereignty.md</a></strong> - Human sovereignty in AI collaboration</li>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.html">02_principle_transparency.md</a></strong> - Transparency in AI code modifications</li>
+</ul>
 <p><strong>Rule Steward:</strong> Terminology Architects
 <strong>Approval Status:</strong> Framework Approved
 <strong>Effective Date:</strong> 2026-01-15
@@ -119,7 +139,7 @@
 </tbody>
 </table>
         <footer>
-            <p>Generated on 2026-01-25 10:09:44 by MDToHTMLConverter v1.6.1</p>
+            <p><em>Generated on 2026-02-01 19:53:44 by MDToHTMLConverter v1.6.1</em></p>
         </footer>
 </body>
 </html>

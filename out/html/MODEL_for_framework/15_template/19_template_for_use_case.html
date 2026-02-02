@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19_template_for_use_case</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Template for Use Case [TPL_FOR_MFW_USE_CASE] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>Version: V[VERSION]</strong> <strong>Status: [STATUS]</strong> <strong>Date: YYYY-MM-DD</strong></p>
+<h2>Use Case Overview</h2>
+<p><strong>Use Case Name:</strong> [USE_CASE_NAME]
+<strong>Use Case ID:</strong> [UC-XXX]
+<strong>Primary Actor:</strong> [PRIMARY_ACTOR]
+<strong>Secondary Actors:</strong> [SECONDARY_ACTORS]
+<strong>Preconditions:</strong> [PRECONDITIONS]
+<strong>Postconditions:</strong> [POSTCONDITIONS]
+<strong>Priority:</strong> [PRIORITY_LEVEL]
+<strong>Complexity:</strong> [COMPLEXITY_LEVEL]</p>
+<h2>Description</h2>
+<p><strong>Brief Description:</strong>
+[Provide a concise description of what this use case accomplishes and its business value]</p>
+<p><strong>Detailed Description:</strong>
+[Provide a detailed explanation of the use case, including the business context and objectives]</p>
+<h2>Flow of Events</h2>
+<h3>Main Success Scenario (Basic Flow)</h3>
+<ol>
+<li><strong>[Actor Action 1]</strong> - [Description of first actor action]</li>
+<li><strong>[System Response 1]</strong> - [Description of system response]</li>
+<li><strong>[Actor Action 2]</strong> - [Description of second actor action]</li>
+<li><strong>[System Response 2]</strong> - [Description of system response]</li>
+<li><strong>[Actor Action 3]</strong> - [Description of third actor action]</li>
+<li><strong>[System Response 3]</strong> - [Description of system response]</li>
+<li><strong>[Actor Action 4]</strong> - [Description of fourth actor action]</li>
+<li><strong>[System Response 4]</strong> - [Description of system response]</li>
+<li><strong>[Actor Action 5]</strong> - [Description of fifth actor action]</li>
+<li><strong>[System Response 5]</strong> - [Description of system response]</li>
+</ol>
+<h3>Alternative Flows</h3>
+<h4>Alternative Flow A: [DESCRIPTION_OF_ALTERNATIVE_A]</h4>
+<ul>
+<li><strong>Trigger:</strong> [When this alternative flow is triggered]</li>
+<li><strong>Steps:</strong></li>
+<li>[Alternative step 1]</li>
+<li>[Alternative step 2]</li>
+<li>[Return to main flow at step X]</li>
+</ul>
+<h4>Alternative Flow B: [DESCRIPTION_OF_ALTERNATIVE_B]</h4>
+<ul>
+<li><strong>Trigger:</strong> [When this alternative flow is triggered]</li>
+<li><strong>Steps:</strong></li>
+<li>[Alternative step 1]</li>
+<li>[Alternative step 2]</li>
+<li>[Alternative step 3]</li>
+<li>[Return to main flow at step X]</li>
+</ul>
+<h3>Exception Flows</h3>
+<h4>Exception Flow E1: [DESCRIPTION_OF_EXCEPTION_1]</h4>
+<ul>
+<li><strong>Trigger:</strong> [When this exception occurs]</li>
+<li><strong>Steps:</strong></li>
+<li>[Exception handling step 1]</li>
+<li>[Exception handling step 2]</li>
+<li>[Recovery or termination action]</li>
+</ul>
+<h4>Exception Flow E2: [DESCRIPTION_OF_EXCEPTION_2]</h4>
+<ul>
+<li><strong>Trigger:</strong> [When this exception occurs]</li>
+<li><strong>Steps:</strong></li>
+<li>[Exception handling step 1]</li>
+<li>[Exception handling step 2]</li>
+<li>[Recovery or termination action]</li>
+</ul>
+<h2>Business Rules</h2>
+<h3>Preconditions</h3>
+<ul>
+<li>[Business rule 1]</li>
+<li>[Business rule 2]</li>
+<li>[Business rule 3]</li>
+</ul>
+<h3>Postconditions</h3>
+<ul>
+<li>[Business rule 1]</li>
+<li>[Business rule 2]</li>
+<li>[Business rule 3]</li>
+</ul>
+<h3>Invariants</h3>
+<ul>
+<li>[Invariant 1]</li>
+<li>[Invariant 2]</li>
+<li>[Invariant 3]</li>
+</ul>
+<h2>Requirements Traceability</h2>
+<h3>Functional Requirements</h3>
+<ul>
+<li><strong>FR-XXX:</strong> [Description of functional requirement]</li>
+<li><strong>FR-XXX:</strong> [Description of functional requirement]</li>
+<li><strong>FR-XXX:</strong> [Description of functional requirement]</li>
+</ul>
+<h3>Non-Functional Requirements</h3>
+<ul>
+<li><strong>NFR-XXX:</strong> [Description of non-functional requirement]</li>
+<li><strong>NFR-XXX:</strong> [Description of non-functional requirement]</li>
+<li><strong>NFR-XXX:</strong> [Description of non-functional requirement]</li>
+</ul>
+<h2>Use Case Relationships</h2>
+<h3>Includes</h3>
+<ul>
+<li>[Use case that this use case includes]</li>
+</ul>
+<h3>Extends</h3>
+<ul>
+<li>[Use case that extends this use case]</li>
+</ul>
+<h3>Generalizations</h3>
+<ul>
+<li>[Parent use case if this is a specialization]</li>
+</ul>
+<h3>Dependencies</h3>
+<ul>
+<li>[Related use cases that must be completed first]</li>
+</ul>
+<h2>Data Requirements</h2>
+<h3>Input Data</h3>
+<ul>
+<li><strong>[Field Name 1]:</strong> [Description and validation rules]</li>
+<li><strong>[Field Name 2]:</strong> [Description and validation rules]</li>
+<li><strong>[Field Name 3]:</strong> [Description and validation rules]</li>
+</ul>
+<h3>Output Data</h3>
+<ul>
+<li><strong>[Output Name 1]:</strong> [Description and format]</li>
+<li><strong>[Output Name 2]:</strong> [Description and format]</li>
+<li><strong>[Output Name 3]:</strong> [Description and format]</li>
+</ul>
+<h2>User Interface Requirements</h2>
+<h3>Screen Mockups</h3>
+<p>[Include references to or descriptions of required user interface elements]</p>
+<h3>Navigation Flow</h3>
+<p>[Describe how users navigate through the use case]</p>
+<h2>Performance Requirements</h2>
+<ul>
+<li><strong>Response Time:</strong> [Maximum acceptable response time]</li>
+<li><strong>Throughput:</strong> [Expected number of transactions per time period]</li>
+<li><strong>Concurrency:</strong> [Number of users that can perform this use case simultaneously]</li>
+</ul>
+<h2>Security Requirements</h2>
+<ul>
+<li><strong>Authentication:</strong> [Authentication requirements]</li>
+<li><strong>Authorization:</strong> [Authorization requirements]</li>
+<li><strong>Data Protection:</strong> [Data protection and privacy requirements]</li>
+<li><strong>Audit Trail:</strong> [Audit requirements]</li>
+</ul>
+<h2>Testing Requirements</h2>
+<h3>Test Scenarios</h3>
+<ol>
+<li><strong>[Test Scenario 1]</strong> - [Description of test scenario]</li>
+<li><strong>[Test Scenario 2]</strong> - [Description of test scenario]</li>
+<li><strong>[Test Scenario 3]</strong> - [Description of test scenario]</li>
+</ol>
+<h3>Success Criteria</h3>
+<ul>
+<li>[Success criterion 1]</li>
+<li>[Success criterion 2]</li>
+<li>[Success criterion 3]</li>
+</ul>
+<h2>Assumptions</h2>
+<ul>
+<li>[Assumption 1]</li>
+<li>[Assumption 2]</li>
+<li>[Assumption 3]</li>
+</ul>
+<h2>Open Issues</h2>
+<ul>
+<li>[Issue 1]</li>
+<li>[Issue 2]</li>
+<li>[Issue 3]</li>
+</ul>
+<h2>Related Documents</h2>
+<ul>
+<li><strong>Rule:</strong> <a href="../../12_rule/04_rule_for_version_changelog_update.html">Changelog Update Rule</a></li>
+<li><strong>Principle:</strong> <a href="./path/to/principle.html">PRIN_...</a></li>
+<li><strong>Tool:</strong> <a href="../path/to/tool.py">tool_name.py</a></li>
+<li><strong>Requirements:</strong> [Requirements document reference]</li>
+<li><strong>Design:</strong> [Design document reference]</li>
+</ul>
+<p><strong>Rule Steward:</strong> [STEWARD]
+<strong>Approval Status:</strong> [STATUS]
+<strong>Effective Date:</strong> YYYY-MM-DD
+<strong>Review Cycle:</strong> [CYCLE]</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V0.1.0
+<strong>Date:</strong> 2026-01-23</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.1</td>
+<td>2026-01-23</td>
+<td>Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT</td>
+<td>Framework Admin</td>
+<td>Ensure framework-wide consistency</td>
+</tr>
+<tr>
+<td>V1.0.0</td>
+<td>YYYY-MM-DD</td>
+<td>Initial creation</td>
+<td>[Stakeholder]</td>
+<td>[Initial rationale]</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p><em>Generated on 2026-02-01 19:53:45 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

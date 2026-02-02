@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level04_plugin_convention</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Plugin Conventions [CONV_FOR_MFW_PLUGIN] <strong>[PRIO: HIGH]</strong></h1>
+<p><strong>We establish plugin conventions as a core convention that defines standardized patterns for creating, organizing, and integrating plugins within the MODEL_for_framework ecosystem.</strong></p>
+<p><strong>Objectives:</strong>
+1. <strong>Standardization</strong>: Define consistent plugin structure and naming
+2. <strong>Integration</strong>: Ensure seamless plugin integration with core framework
+3. <strong>Discoverability</strong>: Make plugins easily discoverable and understandable
+4. <strong>Maintainability</strong>: Support long-term plugin maintenance and evolution</p>
+<hr />
+<h2>Abstract</h2>
+<p><strong>[AI_LOCK]</strong>
+The Plugin Conventions establish standardized patterns for creating, organizing, and integrating plugins within the MODEL_for_framework ecosystem. These conventions ensure that all plugins follow consistent structural patterns, naming conventions, and integration protocols. This standardization enables seamless plugin discovery, installation, and usage while maintaining compatibility with the core framework architecture.
+<strong>[END_AI_LOCK]</strong></p>
+<hr />
+<h2>1. Scope and Applicability</h2>
+<h3>1.1 When to Apply</h3>
+<ul>
+<li>Creating new plugins for the framework</li>
+<li>Modifying existing plugin structure</li>
+<li>Integrating third-party plugins</li>
+<li>Documenting plugin functionality</li>
+</ul>
+<h3>1.2 Target Audience</h3>
+<ul>
+<li>Plugin developers</li>
+<li>Framework maintainers</li>
+<li>Plugin users</li>
+<li>Documentation writers</li>
+</ul>
+<hr />
+<h2>2. Core Definitions</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Definition</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plugin</strong></td>
+<td>Self-contained extension that adds functionality</td>
+<td>Feedback processing plugin</td>
+</tr>
+<tr>
+<td><strong>Convention</strong></td>
+<td>Standardized pattern or practice</td>
+<td>Naming, structure, integration</td>
+</tr>
+<tr>
+<td><strong>Ecosystem</strong></td>
+<td>Collection of plugins and framework</td>
+<td>MODEL_for_framework plugin ecosystem</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. Version Requirements</h2>
+<hr />
+<h2>4. Plugin Structure Conventions</h2>
+<h3>4.1 Directory Structure</h3>
+<pre><code>plugin_name/
+├── README.md                    # Plugin documentation entry
+├── 10_templates/               # Plugin templates
+│   ├── 10_template_*.md        # Template files
+│   └── ...
+├── 20_rules/                   # Plugin-specific rules
+│   ├── 10_rule_*.md           # Rule files
+│   └── ...
+├── 30_principles/              # Plugin principles
+│   ├── 10_principle_*.md      # Principle files
+│   └── ...
+├── 40_use_cases/               # Plugin use cases
+│   ├── 10_use_case_*.md       # Use case files
+│   └── ...
+├── 50_examples/                # Plugin examples
+│   ├── 10_example_*.md        # Example files
+│   └── ...
+├── 60_tests/                   # Plugin tests
+│   ├── 10_test_*.md           # Test files
+│   └── ...
+└── 99_appendix/                # Plugin appendix
+    ├── 10_glossary.md         # Plugin glossary
+    └── ...
+</code></pre>
+<h3>4.2 File Naming Conventions</h3>
+<table>
+<thead>
+<tr>
+<th>File Type</th>
+<th>Pattern</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plugin Directory</strong></td>
+<td><code>plugin_name/</code></td>
+<td><code>feedback_plugin/</code></td>
+</tr>
+<tr>
+<td><strong>Main Documentation</strong></td>
+<td><code>README.md</code></td>
+<td><code>README.md</code></td>
+</tr>
+<tr>
+<td><strong>Plugin Entry</strong></td>
+<td><code>index.md</code></td>
+<td><code>index.md</code></td>
+</tr>
+<tr>
+<td><strong>Templates</strong></td>
+<td><code>10_template_*.md</code></td>
+<td><code>10_template_feedback.md</code></td>
+</tr>
+<tr>
+<td><strong>Rules</strong></td>
+<td><code>20_rule_*.md</code></td>
+<td><code>20_rule_naming.md</code></td>
+</tr>
+<tr>
+<td><strong>Principles</strong></td>
+<td><code>30_principle_*.md</code></td>
+<td><code>30_principle_integration.md</code></td>
+</tr>
+<tr>
+<td><strong>Use Cases</strong></td>
+<td><code>40_use_case_*.md</code></td>
+<td><code>40_use_case_feedback.md</code></td>
+</tr>
+<tr>
+<td><strong>Examples</strong></td>
+<td><code>50_example_*.md</code></td>
+<td><code>50_example_simple.md</code></td>
+</tr>
+<tr>
+<td><strong>Tests</strong></td>
+<td><code>60_test_*.md</code></td>
+<td><code>60_test_functionality.md</code></td>
+</tr>
+<tr>
+<td><strong>Glossary</strong></td>
+<td><code>99_appendix/10_glossary.md</code></td>
+<td><code>99_appendix/10_glossary.md</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Plugin Integration Conventions</h2>
+<h3>5.1 Plugin Registration</h3>
+<ol>
+<li><strong>Plugin Directory</strong>: Create plugin in <code>MODEL_for_framework/00_overview/40_plugin/</code></li>
+<li><strong>Index Entry</strong>: Add plugin to main plugin index</li>
+<li><strong>Cross-References</strong>: Link to related framework components</li>
+<li><strong>Documentation</strong>: Provide comprehensive plugin documentation</li>
+</ol>
+<h3>5.2 Plugin Dependencies</h3>
+<ol>
+<li><strong>Framework Dependencies</strong>: Specify required framework components</li>
+<li><strong>Plugin Dependencies</strong>: Document dependencies on other plugins</li>
+<li><strong>External Dependencies</strong>: List any external tool requirements</li>
+<li><strong>Version Compatibility</strong>: Specify compatible framework versions</li>
+</ol>
+<hr />
+<h2>6. Plugin Documentation Standards</h2>
+<h3>6.1 README.md Structure</h3>
+<pre><code class="language-markdown"># Plugin Name [PLUGIN_FOR_MFW_*] **[PRIO: *]**
+
+**Brief description of plugin purpose and functionality.**
+
+**Objectives:**
+1. **Objective 1**: Clear, actionable objective
+2. **Objective 2**: Clear, actionable objective
+3. **Objective 3**: Clear, actionable objective
+
+---
+
+## Abstract
+
+**[AI_LOCK]**
+Detailed abstract explaining the plugin's purpose, scope, and value.
+**[END_AI_LOCK]**
+
+---
+
+## 1. Scope and Applicability
+
+### 1.1 When to Apply
+- Specific scenarios where plugin is applicable
+- Integration points with framework
+
+### 1.2 Target Audience
+- Primary users of the plugin
+- Secondary stakeholders
+
+---
+
+## 2. Core Definitions
+
+| Element | Definition | Example |
+|---------|------------|---------|
+| **Term** | Definition | Example usage |
+
+---
+
+## 3. Version Requirements
+
+---
+
+## 4. Plugin Features
+
+### 4.1 Feature 1
+Description and implementation details
+
+### 4.2 Feature 2
+Description and implementation details
+
+---
+
+## 5. Integration Guidelines
+
+### 5.1 Framework Integration
+How the plugin integrates with the core framework
+
+### 5.2 Plugin Integration
+How the plugin works with other plugins
+
+---
+
+## 6. Usage Examples
+
+### 6.1 Basic Usage
+Simple example of plugin usage
+
+### 6.2 Advanced Usage
+Complex example demonstrating advanced features
+
+---
+
+## 7. Configuration
+
+### 7.1 Basic Configuration
+Essential configuration options
+
+### 7.2 Advanced Configuration
+Advanced configuration and customization options
+
+---
+
+## 8. Best Practices
+
+### 8.1 Development Best Practices
+Guidelines for plugin development
+
+### 8.2 Usage Best Practices
+Guidelines for effective plugin usage
+
+---
+
+## 9. Troubleshooting
+
+### 9.1 Common Issues
+Known issues and solutions
+
+### 9.2 Support
+How to get help and report issues
+
+---
+
+## 10. Changelog
+
+| Version | Date | Changes | Stakeholder | Rationale/Motivation |
+|---------|------|---------|-------------|----------------------|
+| V0.1.0 | 2026-01-31 | Initial creation | Plugin Developer | Establish plugin structure |
+
+**Version History Guidelines:**
+- **Stakeholder**: Document the person or role responsible for the change
+- **Rationale/Motivation**: Explain why the change was made
+- **Traceability**: Each version entry links to a documented decision or request
+
+---
+
+**End of Plugin Documentation**
+
+---
+
+**Template Version:** V1.0
+**Template Reference:** [16_template_for_convention.md](../15_template/16_template_for_convention.md)
+**Date:** 2026-01-31
+**Framework:** MODEL_for_framework
+</code></pre>
+<hr />
+<h2>7. Plugin Testing Conventions</h2>
+<h3>7.1 Test Structure</h3>
+<ol>
+<li><strong>Unit Tests</strong>: Test individual plugin components</li>
+<li><strong>Integration Tests</strong>: Test plugin integration with framework</li>
+<li><strong>End-to-End Tests</strong>: Test complete plugin workflows</li>
+<li><strong>Regression Tests</strong>: Ensure plugin changes don't break existing functionality</li>
+</ol>
+<h3>7.2 Test Documentation</h3>
+<ol>
+<li><strong>Test Cases</strong>: Document all test scenarios</li>
+<li><strong>Test Results</strong>: Record test outcomes and metrics</li>
+<li><strong>Test Automation</strong>: Support automated testing where possible</li>
+<li><strong>Test Maintenance</strong>: Keep tests up-to-date with plugin changes</li>
+</ol>
+<hr />
+<h2>8. Plugin Maintenance</h2>
+<h3>8.1 Version Management</h3>
+<ol>
+<li><strong>Semantic Versioning</strong>: Use semantic versioning for plugin releases</li>
+<li><strong>Backward Compatibility</strong>: Maintain backward compatibility when possible</li>
+<li><strong>Deprecation Policy</strong>: Clearly document deprecated features</li>
+<li><strong>Migration Guides</strong>: Provide migration guides for major version changes</li>
+</ol>
+<h3>8.2 Documentation Maintenance</h3>
+<ol>
+<li><strong>Regular Updates</strong>: Keep documentation current with plugin changes</li>
+<li><strong>User Feedback</strong>: Incorporate user feedback into documentation</li>
+<li><strong>Example Updates</strong>: Update examples to reflect current best practices</li>
+<li><strong>Cross-Reference Maintenance</strong>: Keep cross-references current</li>
+</ol>
+<hr />
+<h2>9. Plugin Quality Standards</h2>
+<h3>9.1 Code Quality</h3>
+<ol>
+<li><strong>Consistency</strong>: Follow established coding conventions</li>
+<li><strong>Readability</strong>: Write clear, understandable code</li>
+<li><strong>Performance</strong>: Optimize for performance and efficiency</li>
+<li><strong>Security</strong>: Follow security best practices</li>
+</ol>
+<h3>9.2 Documentation Quality</h3>
+<ol>
+<li><strong>Completeness</strong>: Provide comprehensive documentation</li>
+<li><strong>Accuracy</strong>: Ensure documentation is accurate and current</li>
+<li><strong>Clarity</strong>: Write clear, concise documentation</li>
+<li><strong>Accessibility</strong>: Make documentation accessible to all users</li>
+</ol>
+<hr />
+<h2>10. Plugin Ecosystem Integration</h2>
+<h3>10.1 Plugin Discovery</h3>
+<ol>
+<li><strong>Plugin Registry</strong>: Maintain a registry of available plugins</li>
+<li><strong>Plugin Index</strong>: Provide searchable plugin index</li>
+<li><strong>Plugin Categories</strong>: Organize plugins by category and functionality</li>
+<li><strong>Plugin Ratings</strong>: Support user ratings and reviews</li>
+</ol>
+<h3>10.2 Plugin Distribution</h3>
+<ol>
+<li><strong>Distribution Channels</strong>: Provide multiple distribution channels</li>
+<li><strong>Installation Instructions</strong>: Clear installation and setup instructions</li>
+<li><strong>Dependency Management</strong>: Handle plugin dependencies automatically</li>
+<li><strong>Update Mechanisms</strong>: Support automatic plugin updates</li>
+</ol>
+<hr />
+<h2>11. Related Conventions and Documents</h2>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../15_template/16_template_for_convention.html">16_template_for_convention.md</a></td>
+<td>Template for plugin conventions</td>
+</tr>
+<tr>
+<td><a href="../20_convention/10_convention_for_file_naming.html">10_convention_for_file_naming.md</a></td>
+<td>File naming standards</td>
+</tr>
+<tr>
+<td><a href="../20_convention/17_convention_for_prefix_standards.html">17_convention_for_prefix_standards.md</a></td>
+<td>Prefix standards</td>
+</tr>
+<tr>
+<td><a href="../20_convention/">20_convention/</a></td>
+<td>Framework conventions</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>12. Implementation Notes</h2>
+<h3>12.1 Migration Path</h3>
+<p>N/A (Initial convention)</p>
+<h3>12.2 Validation Checklist</h3>
+<ul>
+<li>[ ] Plugin follows established directory structure</li>
+<li>[ ] Plugin uses consistent naming conventions</li>
+<li>[ ] Plugin integrates properly with framework</li>
+<li>[ ] Plugin includes comprehensive documentation</li>
+<li>[ ] Plugin includes appropriate tests</li>
+<li>[ ] Plugin follows quality standards</li>
+<li>[ ] Plugin supports ecosystem integration</li>
+</ul>
+<hr />
+<h2>13. Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Changes</th>
+<th>Stakeholder</th>
+<th>Rationale/Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V0.1.0</td>
+<td>2026-01-31</td>
+<td>Initial creation</td>
+<td>Framework Steward</td>
+<td>Establish plugin conventions for framework ecosystem</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version History Guidelines:</strong>
+- <strong>Stakeholder</strong>: Document the person or role responsible for the change
+- <strong>Rationale/Motivation</strong>: Explain why the change was made (e.g., "Added plugin structure guidelines based on ecosystem feedback")
+- <strong>Traceability</strong>: Each version entry links to a documented decision or request if this exists</p>
+<hr />
+<p><strong>End of Plugin Conventions</strong></p>
+<hr />
+<p><strong>Template Version:</strong> V1.0
+<strong>Template Reference:</strong> <a href="../15_template/16_template_for_convention.html">16_template_for_convention.md</a>
+<strong>Date:</strong> 2026-01-31
+<strong>Framework:</strong> MODEL_for_framework</p>
+        <footer>
+            <p><em>Generated on 2026-02-01 19:53:44 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>
