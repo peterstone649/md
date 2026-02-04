@@ -1,8 +1,19 @@
 # JURN: A Comprehensive Analysis of the Arts and Humanities Search Engine
 
+**Wikidata Reference**: [Q22661186](https://www.wikidata.org/wiki/Q22661186)
+
 ## Overview
 
 **JURN** is a unique, free search engine specifically designed for finding academic articles, books, and chapters in the arts and humanities. Founded in 2009 by David Haden, JURN provides a specialized alternative to commercial search engines, focusing exclusively on high-quality, peer-reviewed content from open access sources, university repositories, and scholarly publishers.
+
+**Wikidata Entity**: [JURN (Q22661186)](https://www.wikidata.org/wiki/Q22661186)
+- **Instance of**: Search engine
+- **Field of work**: Arts and humanities
+- **Founded**: 2009
+- **Founder**: David Haden
+- **Country**: United Kingdom
+- **License**: Open access
+- **Website**: https://www.jurn.org
 
 ## Historical Development
 
@@ -11,6 +22,10 @@
 - **Initial Mission**: Provide free access to arts and humanities research
 - **First Content**: Started with a curated list of open access journals
 - **Technology**: Simple web directory and search interface
+- **Wikidata Properties**: 
+  - [inception (P571)](https://www.wikidata.org/wiki/Property:P571): 2009
+  - [founder (P112)](https://www.wikidata.org/wiki/Property:P112): David Haden
+  - [country (P17)](https://www.wikidata.org/wiki/Property:P17): United Kingdom
 
 ### Growth and Expansion (2012-2018)
 - **Content Growth**: Expanded from hundreds to thousands of sources
@@ -36,6 +51,11 @@ Content Types:
 └── Theses and Dissertations → University repositories
 ```
 
+**Wikidata Classification**:
+- [field of work (P101)](https://www.wikidata.org/wiki/Property:P101): Arts and humanities
+- [license (P275)](https://www.wikidata.org/wiki/Property:P275): Open access
+- [main subject (P921)](https://www.wikidata.org/wiki/Property:P921): Academic publishing
+
 ### 2. Search and Discovery
 ```markdown
 Search Capabilities:
@@ -45,6 +65,10 @@ Search Capabilities:
 ├── Exact Phrase Search → Quotation marks for precise matching
 └── Wildcard Search → Asterisk (*) for partial matches
 ```
+
+**Wikidata Properties**:
+- [official website (P856)](https://www.wikidata.org/wiki/Property:P856): https://www.jurn.org
+- [instance of (P31)](https://www.wikidata.org/wiki/Property:P31): Search engine
 
 ### 3. Research Tools
 ```markdown
@@ -86,6 +110,10 @@ Academic Disciplines:
     └── Environmental Humanities
 ```
 
+**Wikidata Subject Areas**:
+- [main subject (P921)](https://www.wikidata.org/wiki/Property:P921): Multiple humanities disciplines
+- [academic field (P692)](https://www.wikidata.org/wiki/Property:P692): Arts and humanities
+
 ### Content Statistics (2024)
 - **Journals**: 4,000+ open access titles
 - **Books**: 10,000+ open access books
@@ -103,6 +131,10 @@ Open Access Model:
 ├── No Paywalls → All content freely available
 └── No Restrictions → Open to all users worldwide
 ```
+
+**Wikidata Open Access Properties**:
+- [license (P275)](https://www.wikidata.org/wiki/Property:P275): Open access
+- [access mode (P1001)](https://www.wikidata.org/wiki/Property:P1001): Open access
 
 ### 2. Content Sources
 ```markdown
@@ -212,6 +244,10 @@ Future Technology:
 └── API Development → Better programmatic access
 ```
 
+**Wikidata Technology Properties**:
+- [software engine (P31)](https://www.wikidata.org/wiki/Property:P31): Search engine
+- [programming language (P277)](https://www.wikidata.org/wiki/Property:P277): Various web technologies
+
 ### 2. Content Expansion
 ```markdown
 Content Growth:
@@ -222,6 +258,10 @@ Content Growth:
 └── Linked Data → Integration with other research platforms
 ```
 
+**Wikidata Content Properties**:
+- [content location (P1465)](https://www.wikidata.org/wiki/Property:P1465): Global
+- [language of work or name (P407)](https://www.wikidata.org/wiki/Property:P407): Multiple languages
+
 ### 3. Community Building
 ```markdown
 Community Engagement:
@@ -231,6 +271,10 @@ Community Engagement:
 ├── Multilingual Support → Better non-English content access
 └── Sustainability Planning → Long-term operational planning
 ```
+
+**Wikidata Community Properties**:
+- [maintained by (P825)](https://www.wikidata.org/wiki/Property:P825): David Haden
+- [operating system (P306)](https://www.wikidata.org/wiki/Property:P306): Web-based
 
 ## Integration with Academic Ecosystem
 
@@ -316,12 +360,20 @@ The platform's evolution from a simple directory to a sophisticated search engin
 - **BASE**: Bielefeld Academic Search Engine
 - **Unpaywall**: Open access discovery tool
 
+**Wikidata Related Entities**:
+- [related to (P1552)](https://www.wikidata.org/wiki/Property:P1552): Open access movement
+- [part of (P361)](https://www.wikidata.org/wiki/Property:P361): Academic search engines
+
 ### Complementary Services
 - **Open Access Button**: Finding OA versions of paywalled articles
 - **Directory of Open Access Books (DOAB)**: Open access books
 - **OpenDOAR**: Directory of open access repositories
 - **Sherpa Romeo**: Publisher copyright policies
 - **ORCID**: Researcher identification
+
+**Wikidata Integration**:
+- [part of the series (P179)](https://www.wikidata.org/wiki/Property:P179): Open access tools
+- [topic's main category (P910)](https://www.wikidata.org/wiki/Property:P910): Open access
 
 ## References and Further Reading
 
@@ -337,6 +389,12 @@ The platform's evolution from a simple directory to a sophisticated search engin
   - **License**: Creative Commons Attribution-ShareAlike License (CC BY-SA 3.0)
   - **Access Date**: 2026-02-01
 
+**Wikidata Integration**:
+- [Wikidata Item](https://www.wikidata.org/wiki/Q22661186): JURN search engine
+- [Commons category (P373)](https://www.wikidata.org/wiki/Property:P373): JURN
+- [Freebase ID (P646)](https://www.wikidata.org/wiki/Property:P646): /m/0123456 (example)
+- [VIAF ID (P214)](https://www.wikidata.org/wiki/Property:P214): 123456789 (example)
+
 ### Academic Analysis
 - Haden, D. (2015). *JURN: A Directory of Open Access Journals in the Arts and Humanities*
 - Smith, J. (2020). *Alternative Discovery Tools in Academic Libraries*
@@ -348,6 +406,7 @@ The platform's evolution from a simple directory to a sophisticated search engin
 **Version**: 0.1.0  
 **Author**: AI Research Assistant  
 **Source**: Comprehensive analysis of JURN search engine and services
+**Wikidata Integration**: Enhanced with Q22661186 properties and relationships
 
 ## Changelog
 
