@@ -55,9 +55,9 @@ see latest improvements ...
   ],
   "applicationCategory": "DeveloperApplication",
   "operatingSystem": "Cross-platform",
-  "softwareVersion": "1.0.0",
+  "softwareVersion": "1.8.0",
   "datePublished": "2026-01-16",
-  "dateModified": "2026-01-18",
+  "dateModified": "2026-02-04",
   "keywords": [
     "framework development",
     "systematic methodology",
@@ -127,6 +127,14 @@ see latest improvements ...
 **Contribute**: Follow the [Contribution Guide](CONTRIBUTING.md) and [Plugin for Contributors Welcome](MODEL_for_framework/80_plugin/plugin_for_contributors_welcome/README_contributors_welcome.md)
 
 **Use Tools**: Check out plugins in [`MODEL_for_framework/80_plugin/`](MODEL_for_framework/80_plugin/) and tools in [`MODEL_for_framework/90_tool/`](MODEL_for_framework/90_tool/)
+
+## 📋 **Version Changelog**
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|----------------|-------------|------------|
+| V1.8.0 | 2026-02-01 | Updated release badge and added latest release highlights: Advanced Plugin Architecture, Plugin Manifest System, Enhanced Converter System, Quality Assurance Framework, Documentation Standards | AI Framework Steward | Reflect latest framework enhancements and capabilities |
+| V1.5.0 | 2026-01-31 | Added comprehensive framework enhancements: terminology system, AI principles, security compliance, tool infrastructure | AI Framework Steward | Major framework foundation updates |
+| V1.0.0 | 2026-01-16 | Initial release with systematic framework development and AI-assisted methodologies | Peter Stone | Establish comprehensive framework foundation |
 
 ## Models
 
