@@ -7,7 +7,7 @@
 [![License: EUPL v1.2](https://img.shields.io/badge/License-EUPL%20v1.2-blue.svg)](https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12)
 [![GitHub issues](https://img.shields.io/github/issues/peterstone649/md.svg)](https://github.com/peterstone649/md/issues)
 [![GitHub stars](https://img.shields.io/github/stars/peterstone649/md.svg)](https://github.com/peterstone649/md/stargazers)
-[![Release Notes](https://img.shields.io/badge/Release_Notes-V1.5.0-blue.svg)](RELEASE_NOTES.md)
+[![Release Notes](https://img.shields.io/badge/Release_Notes-V1.8.0-blue.svg)](RELEASE_NOTES.md)
 
 **Systematic knowledge organization, AI-assisted methodologies, and collaborative framework development ecosystem.**
 
@@ -118,6 +118,16 @@ see latest improvements ...
 - **Research Institutions** - Epistemological frameworks and uncertainty management
 - **Open Science Communities** - Collaborative framework development and maintenance
 
+## 🚀 **Quick Start**
+
+**Explore the Framework**: Start with [`MODEL_for_framework/README.md`](MODEL_for_framework/README.md)
+
+**Join the Community**: Visit our [Discord channel](https://discord.com/channels/1467470120371879988/1467768773460230186) for support
+
+**Contribute**: Follow the [Contribution Guide](CONTRIBUTING.md) and [Plugin for Contributors Welcome](MODEL_for_framework/80_plugin/plugin_for_contributors_welcome/README_contributors_welcome.md)
+
+**Use Tools**: Check out plugins in [`MODEL_for_framework/80_plugin/`](MODEL_for_framework/80_plugin/) and tools in [`MODEL_for_framework/90_tool/`](MODEL_for_framework/90_tool/)
+
 ## Models
 
 - **MODEL_for_framework**: Located at [`md\MODEL_for_framework`](MODEL_for_framework/) - in ACTIVE status
@@ -203,6 +213,13 @@ The multilingual translation initiative significantly enhances the project's glo
 - **Clickable Links**: Applied comprehensive clickable link standards
 - **Cross-References**: Established seamless navigation between framework components
 - **Quality Standards**: 9-point checklists for term definition and integration quality
+
+### **Latest Release: V1.8.0 (February 1, 2026)** 🚀
+- **Advanced Plugin Architecture**: 5-tier complexity system (Simple, Basic, Intermediate, Advanced, Expert)
+- **Plugin Manifest System**: Comprehensive plugin metadata and configuration management
+- **Enhanced Converter System**: AI lock converter, index generator, and advanced markdown processing
+- **Quality Assurance Framework**: Complete test coverage with integration and edge case testing
+- **Documentation Standards**: Enhanced plugin and converter documentation with quality assurance
 
 ### **Recent Framework Enhancements (January 31, 2026)**
 - **Index Generator Implementation**: Created comprehensive index.md generation tool with full test suite
