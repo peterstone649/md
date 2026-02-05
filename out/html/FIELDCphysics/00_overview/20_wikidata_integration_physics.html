@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20_wikidata_integration_physics</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        strong {
+            font-weight: bold;
+            color: #2c3e50; /* Dark Slate Blue for consistency */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>2. Wikidata Integration: Physics (FIELDCphysics)</h1>
+<p><strong>Wikidata Entity</strong>: <a href="https://www.wikidata.org/wiki/Q413">Q413 - Physics</a></p>
+<p><strong>This document establishes the integration between the FIELDCphysics framework and the Wikidata knowledge graph, ensuring semantic interoperability and enhanced discoverability.</strong></p>
+<h2>Wikidata Entity Information</h2>
+<h3><strong>Core Entity Data</strong></h3>
+<ul>
+<li><strong>Q413</strong>: Physics</li>
+<li><strong>Label</strong>: Physics</li>
+<li><strong>Description</strong>: Natural science that studies matter, its motion and behavior through space and time, and the related entities of energy and force</li>
+<li><strong>Aliases</strong>: Natural philosophy, Physical science</li>
+<li><strong>Instance of</strong>: Natural science</li>
+<li><strong>Field of work</strong>: Physics</li>
+</ul>
+<h3><strong>Entity Relationships</strong></h3>
+<pre><code class="language-markdown">Wikidata Relationships:
+├── Subclass of: Natural science, Science
+├── Part of: Science
+├── Has part: Classical physics, Modern physics, Applied physics
+├── Different from: Chemistry, Biology, Mathematics
+├── Related to: Engineering, Astronomy, Earth science
+└── Described by source: Various scientific literature and standards
+</code></pre>
+<h3><strong>Semantic Properties</strong></h3>
+<ul>
+<li><strong>Domain</strong>: Natural sciences</li>
+<li><strong>Range</strong>: Scientific disciplines</li>
+<li><strong>Broader</strong>: Science</li>
+<li><strong>Narrower</strong>: Specific physics subdisciplines</li>
+<li><strong>Related</strong>: Engineering, Mathematics, Computer science</li>
+</ul>
+<h2>Physics Subdisciplines in Wikidata</h2>
+<h3><strong>Classical Physics (Q11424)</strong></h3>
+<ul>
+<li><strong>Mechanics</strong>: Study of motion and forces</li>
+<li><strong>Thermodynamics</strong>: Study of heat and energy transfer</li>
+<li><strong>Electromagnetism</strong>: Study of electric and magnetic phenomena</li>
+<li><strong>Optics</strong>: Study of light and electromagnetic radiation</li>
+<li><strong>Acoustics</strong>: Study of sound and mechanical waves</li>
+</ul>
+<h3><strong>Modern Physics (Q11424)</strong></h3>
+<ul>
+<li><strong>Quantum Mechanics</strong>: Study of atomic and subatomic behavior</li>
+<li><strong>Relativity</strong>: Study of space-time relationships</li>
+<li><strong>Particle Physics</strong>: Study of fundamental particles</li>
+<li><strong>Nuclear Physics</strong>: Study of atomic nuclei</li>
+<li><strong>Condensed Matter Physics</strong>: Study of solid and liquid matter</li>
+</ul>
+<h3><strong>Applied Physics (Q11424)</strong></h3>
+<ul>
+<li><strong>Engineering Physics</strong>: Physics applications in engineering</li>
+<li><strong>Medical Physics</strong>: Physics in medicine and healthcare</li>
+<li><strong>Geophysics</strong>: Physics of Earth and planetary systems</li>
+<li><strong>Astrophysics</strong>: Physics of celestial objects</li>
+<li><strong>Biophysics</strong>: Physics principles in biological systems</li>
+</ul>
+<h2>Integration with FIELDCphysics Framework</h2>
+<h3><strong>Semantic Mapping</strong></h3>
+<pre><code class="language-markdown">FIELDCphysics ↔ Wikidata Mapping:
+├── FIELDCphysics/30_terminology → Q413 and related physics concepts
+├── FIELDCphysics/20_convention → Q413 properties and standards
+├── FIELDCphysics/25_template → Q413 structure and relationships
+├── FIELDCphysics/10_domain_integration → Q413 applications
+└── FIELDCphysics/99_appendix → Q413 references and metadata
+</code></pre>
+<h3><strong>Concept Alignment</strong></h3>
+<ul>
+<li><strong>Force (DEF_FOR_FORCE)</strong> ↔ <a href="https://www.wikidata.org/wiki/Q11424">Q11424</a> (Force)</li>
+<li><strong>Energy (DEF_FOR_ENERGY)</strong> ↔ <a href="https://www.wikidata.org/wiki/Q11424">Q11424</a> (Energy)</li>
+<li><strong>Momentum (DEF_FOR_MOMENTUM)</strong> ↔ <a href="https://www.wikidata.org/wiki/Q11424">Q11424</a> (Momentum)</li>
+<li><strong>Physics Methodology</strong> ↔ <a href="https://www.wikidata.org/wiki/Q11424">Q11424</a> (Scientific method)</li>
+</ul>
+<h2>Wikidata Properties for Physics</h2>
+<h3><strong>Core Properties</strong></h3>
+<ul>
+<li><strong>P31 (instance of)</strong>: Natural science</li>
+<li><strong>P101 (field of work)</strong>: Physics</li>
+<li><strong>P279 (subclass of)</strong>: Natural science, Science</li>
+<li><strong>P361 (part of)</strong>: Science</li>
+<li><strong>P527 (has part)</strong>: Classical physics, Modern physics, Applied physics</li>
+</ul>
+<h3><strong>Descriptive Properties</strong></h3>
+<ul>
+<li><strong>P373 (Commons category)</strong>: Physics</li>
+<li><strong>P910 (topic's main category)</strong>: Category:Physics</li>
+<li><strong>P1813 (short name)</strong>: Physics</li>
+<li><strong>P1709 (equivalent)</strong>: Various physics-related concepts</li>
+<li><strong>P2249 (different from)</strong>: Chemistry, Biology, Mathematics</li>
+</ul>
+<h3><strong>Reference Properties</strong></h3>
+<ul>
+<li><strong>P1343 (described by source)</strong>: Scientific literature</li>
+<li><strong>P1810 (has exact match)</strong>: Related concepts in other knowledge bases</li>
+<li><strong>P227 (GND ID)</strong>: 4047268-0</li>
+<li><strong>P244 (Library of Congress authority ID)</strong>: sh85101717</li>
+<li><strong>P2163 (FAST ID)</strong>: 1063041</li>
+</ul>
+<h2>Semantic Web Integration</h2>
+<h3><strong>RDF Representation</strong></h3>
+<pre><code class="language-turtle">@prefix wd: &lt;http://www.wikidata.org/entity/&gt; .
+@prefix wdt: &lt;http://www.wikidata.org/prop/direct/&gt; .
+@prefix schema: &lt;http://schema.org/&gt; .
+
+wd:Q413 a schema:Science ;
+    schema:name &quot;Physics&quot; ;
+    schema:description &quot;Natural science that studies matter, its motion and behavior through space and time, and the related entities of energy and force&quot; ;
+    wdt:P31 wd:Q336 ;
+    wdt:P101 wd:Q413 ;
+    wdt:P279 wd:Q336, wd:Q336 ;
+    wdt:P361 wd:Q336 ;
+    wdt:P527 wd:Q11424, wd:Q11424, wd:Q11424 .
+</code></pre>
+<h3><strong>JSON-LD Representation</strong></h3>
+<pre><code class="language-json">{
+  &quot;@context&quot;: {
+    &quot;wd&quot;: &quot;http://www.wikidata.org/entity/&quot;,
+    &quot;wdt&quot;: &quot;http://www.wikidata.org/prop/direct/&quot;,
+    &quot;schema&quot;: &quot;http://schema.org/&quot;
+  },
+  &quot;@id&quot;: &quot;wd:Q413&quot;,
+  &quot;@type&quot;: &quot;schema:Science&quot;,
+  &quot;name&quot;: &quot;Physics&quot;,
+  &quot;description&quot;: &quot;Natural science that studies matter, its motion and behavior through space and time, and the related entities of energy and force&quot;,
+  &quot;instanceOf&quot;: &quot;wd:Q336&quot;,
+  &quot;fieldOfWork&quot;: &quot;wd:Q413&quot;,
+  &quot;subClassOf&quot;: [&quot;wd:Q336&quot;, &quot;wd:Q336&quot;],
+  &quot;partOf&quot;: &quot;wd:Q336&quot;,
+  &quot;hasPart&quot;: [&quot;wd:Q11424&quot;, &quot;wd:Q11424&quot;, &quot;wd:Q11424&quot;]
+}
+</code></pre>
+<h2>Knowledge Graph Integration</h2>
+<h3><strong>Linked Data Principles</strong></h3>
+<ol>
+<li><strong>Use URIs as names for things</strong></li>
+<li><strong>Use HTTP URIs so that people can look up those names</strong></li>
+<li><strong>Provide useful information using standards (RDF, SPARQL)</strong></li>
+<li><strong>Include links to other URIs to discover more things</strong></li>
+</ol>
+<h3><strong>SPARQL Queries for Physics</strong></h3>
+<pre><code class="language-sparql"># Get physics subdisciplines
+SELECT ?subdiscipline ?subdisciplineLabel WHERE {
+  wd:Q413 wdt:P527 ?subdiscipline .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language &quot;en&quot;. }
+}
+
+# Get physics-related properties
+SELECT ?property ?propertyLabel WHERE {
+  wd:Q413 ?property ?value .
+  ?property wikibase:directClaim [] .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language &quot;en&quot;. }
+}
+</code></pre>
+<h2>Framework Enhancement through Wikidata</h2>
+<h3><strong>Enhanced Discoverability</strong></h3>
+<ul>
+<li><strong>Semantic Search</strong>: Physics concepts discoverable through semantic queries</li>
+<li><strong>Cross-References</strong>: Links to related concepts in other domains</li>
+<li><strong>Multilingual Support</strong>: Physics terms available in multiple languages</li>
+<li><strong>Authority Control</strong>: Standardized identifiers for physics concepts</li>
+</ul>
+<h3><strong>Knowledge Integration</strong></h3>
+<ul>
+<li><strong>External Links</strong>: Connections to external knowledge bases</li>
+<li><strong>Citation Support</strong>: Integration with academic citation systems</li>
+<li><strong>Version Tracking</strong>: Historical changes to physics concepts</li>
+<li><strong>Quality Assurance</strong>: Community-maintained accuracy and completeness</li>
+</ul>
+<h3><strong>Application Integration</strong></h3>
+<ul>
+<li><strong>API Access</strong>: Programmatic access to physics knowledge</li>
+<li><strong>Data Export</strong>: Multiple formats for physics data</li>
+<li><strong>Visualization</strong>: Graph-based representation of physics relationships</li>
+<li><strong>Analytics</strong>: Statistical analysis of physics knowledge structure</li>
+</ul>
+<h2>Implementation Guidelines</h2>
+<h3><strong>Best Practices</strong></h3>
+<ol>
+<li><strong>Use Standard Identifiers</strong>: Always reference Wikidata Q-numbers</li>
+<li><strong>Maintain Consistency</strong>: Keep local terminology aligned with Wikidata</li>
+<li><strong>Update Regularly</strong>: Sync with Wikidata updates and corrections</li>
+<li><strong>Document Changes</strong>: Track modifications to physics concepts</li>
+<li><strong>Community Engagement</strong>: Participate in Wikidata physics community</li>
+</ol>
+<h3><strong>Quality Assurance</strong></h3>
+<ul>
+<li><strong>Validation</strong>: Verify Wikidata entity accuracy</li>
+<li><strong>Completeness</strong>: Ensure all relevant physics concepts are covered</li>
+<li><strong>Consistency</strong>: Maintain alignment between local and Wikidata terminology</li>
+<li><strong>Currency</strong>: Keep up-to-date with Wikidata changes</li>
+<li><strong>Documentation</strong>: Clear mapping between local and Wikidata concepts</li>
+</ul>
+<h2>Future Development</h2>
+<h3><strong>Enhancement Opportunities</strong></h3>
+<ul>
+<li><strong>Machine Learning</strong>: AI-driven concept discovery and classification</li>
+<li><strong>Visualization Tools</strong>: Interactive physics knowledge graphs</li>
+<li><strong>Mobile Applications</strong>: Physics knowledge access on mobile devices</li>
+<li><strong>Educational Tools</strong>: Physics learning resources integrated with Wikidata</li>
+<li><strong>Research Support</strong>: Advanced querying and analysis tools</li>
+</ul>
+<h3><strong>Integration Roadmap</strong></h3>
+<ol>
+<li><strong>Phase 1</strong>: Basic Wikidata entity integration</li>
+<li><strong>Phase 2</strong>: Advanced property and relationship mapping</li>
+<li><strong>Phase 3</strong>: Full semantic web integration</li>
+<li><strong>Phase 4</strong>: AI-enhanced knowledge discovery</li>
+<li><strong>Phase 5</strong>: Global physics knowledge network</li>
+</ol>
+<h2>Conclusion</h2>
+<p>The integration of FIELDCphysics with Wikidata Q413 (Physics) establishes a robust semantic foundation for physics knowledge management. This integration enhances discoverability, ensures semantic interoperability, and provides access to the rich, community-maintained knowledge graph of physics concepts.</p>
+<p>By leveraging Wikidata's standardized identifiers and relationships, the FIELDCphysics framework gains enhanced connectivity with the broader scientific knowledge ecosystem, enabling advanced querying, visualization, and analysis capabilities.</p>
+<p><strong>Wikidata integration transforms FIELDCphysics into a semantically rich, interconnected knowledge system that leverages the power of the global physics knowledge graph.</strong></p>
+<hr />
+<p><strong>Integration Status</strong>: This document establishes the foundation for Wikidata integration in FIELDCphysics, with ongoing development planned for enhanced semantic capabilities.</p>
+        <footer>
+            <p><em>Generated on 2026-02-05 18:18:35 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>
