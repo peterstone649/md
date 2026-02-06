@@ -1,0 +1,239 @@
+# [NUMBER]. [TERM_NAME] (DEF_FOR_[TERM_ABBREVIATION]) **[PRIO: [PRIORITY]]**
+
+*   **[TERM_NAME]:** [BRIEF_DEFINITION]
+*   **Description:** [DETAILED_DESCRIPTION]
+*   **Formal Definition:** [FORMAL_LOGICAL_DEFINITION]
+*   **Type Classification:** [CLASSIFICATION_TYPE]
+*   **Priority Level:** [PRIORITY_LEVEL]
+*   **Scientific Acceptance:** [ACCEPTANCE_LEVEL] ([ACCEPTANCE_DESCRIPTION])
+*   **Reference:** [PRIMARY_REFERENCES]
+*   **Key Theories:** [RELEVANT_THEORIES]
+*   **Context:** [CONTEXT_WITHIN_FRAMEWORK]
+
+**[Called:]** "[ALTERNATIVE_NAME_1]" or "[ALTERNATIVE_NAME_2]"
+- [DESCRIPTIVE_BULLET_1]
+- [DESCRIPTIVE_BULLET_2]
+- [DESCRIPTIVE_BULLET_3]
+- [DESCRIPTIVE_BULLET_4]
+- [DESCRIPTIVE_BULLET_5]
+
+## File Naming Convention
+
+**File Naming Standard:** Follow the framework's file naming convention: [`10_convention_for_file_naming.md`](../MODEL_for_framework/20_convention/10_convention_for_file_naming.md)
+
+**Standard Format:** `[NUMBER]_[TYPE]_[DESCRIPTIVE_NAME].md`
+
+**Examples:**
+- `06_term_verification.md` - For term definitions
+- `01_axiom_of_transitivity.md` - For axiom definitions
+- `02_theorem_of_completeness.md` - For theorem definitions
+
+**Key Rules:**
+- Use sequential numbering for ordering
+- Include type identifier (term, axiom, theorem, etc.)
+- Use descriptive, underscore-separated names
+- Maintain lowercase formatting
+
+## [SECTION_NAME_1]
+
+### **[SUBSECTION_NAME_1]**
+- **[SUBITEM_1]:** [DESCRIPTION_1]
+- **[SUBITEM_2]:** [DESCRIPTION_2]
+- **[SUBITEM_3]:** [DESCRIPTION_3]
+- **[SUBITEM_4]:** [DESCRIPTION_4]
+
+### **[SUBSECTION_NAME_2]**
+- **[SUBITEM_1]:** [DESCRIPTION_1]
+- **[SUBITEM_2]:** [DESCRIPTION_2]
+- **[SUBITEM_3]:** [DESCRIPTION_3]
+- **[SUBITEM_4]:** [DESCRIPTION_4]
+
+### **[SUBSECTION_NAME_3]**
+- **[SUBITEM_1]:** [DESCRIPTION_1]
+- **[SUBITEM_2]:** [DESCRIPTION_2]
+- **[SUBITEM_3]:** [DESCRIPTION_3]
+- **[SUBITEM_4]:** [DESCRIPTION_4]
+
+### **[SUBSECTION_NAME_4]**
+- **[SUBITEM_1]:** [DESCRIPTION_1]
+- **[SUBITEM_2]:** [DESCRIPTION_2]
+- **[SUBITEM_3]:** [DESCRIPTION_3]
+- **[SUBITEM_4]:** [DESCRIPTION_4]
+
+## [SECTION_NAME_2]
+
+### **[SUBSECTION_NAME_1]**
+- **[SUBITEM_1]:** [DESCRIPTION_1]
+- **[SUBITEM_2]:** [DESCRIPTION_2]
+- **[SUBITEM_3]:** [DESCRIPTION_3]
+- **[SUBITEM_4]:** [DESCRIPTION_4]
+
+### **[SUBSECTION_NAME_2]**
+- **[SUBITEM_1]:** [DESCRIPTION_1]
+- **[SUBITEM_2]:** [DESCRIPTION_2]
+- **[SUBITEM_3]:** [DESCRIPTION_3]
+- **[SUBITEM_4]:** [DESCRIPTION_4]
+
+### **[SUBSECTION_NAME_3]**
+- **[SUBITEM_1]:** [DESCRIPTION_1]
+- **[SUBITEM_2]:** [DESCRIPTION_2]
+- **[SUBITEM_3]:** [DESCRIPTION_3]
+- **[SUBITEM_4]:** [DESCRIPTION_4]
+
+### **[SUBSECTION_NAME_4]**
+- **[SUBITEM_1]:** [DESCRIPTION_1]
+- **[SUBITEM_2]:** [DESCRIPTION_2]
+- **[SUBITEM_3]:** [DESCRIPTION_3]
+- **[SUBITEM_4]:** [DESCRIPTION_4]
+
+## Integration with Framework Components
+
+### **[COMPONENT_RELATIONSHIP_1]**
+```
+[RELATIONSHIP_NAME] + [COMPONENT_NAME] = [RESULT]
+├── [RELATIONSHIP_NAME] provides → [PROVIDED_CAPABILITY]
+├── [COMPONENT_NAME] provides → [COMPONENT_CAPABILITY]
+├── Together enable → [COMBINED_OUTCOME]
+└── Result → [FINAL_RESULT]
+```
+
+### **[COMPONENT_RELATIONSHIP_2]**
+```
+[RELATIONSHIP_NAME] + [COMPONENT_NAME] = [RESULT]
+├── [RELATIONSHIP_NAME] establishes → [ESTABLISHED_ELEMENT]
+├── [COMPONENT_NAME] provides → [COMPONENT_CAPABILITY]
+├── Together create → [CREATED_OUTCOME]
+└── Result → [FINAL_RESULT]
+```
+
+### **[COMPONENT_RELATIONSHIP_3]**
+```
+[RELATIONSHIP_NAME] + [COMPONENT_NAME] = [RESULT]
+├── [RELATIONSHIP_NAME] enables → [ENABLED_CAPABILITY]
+├── [COMPONENT_NAME] provides → [COMPONENT_CAPABILITY]
+├── Together produce → [PRODUCED_OUTCOME]
+└── Result → [FINAL_RESULT]
+```
+
+## Practical Applications
+
+### **[APPLICATION_DOMAIN_1]**
+- **[USE_CASE_1]:** [DESCRIPTION_1]
+- **[USE_CASE_2]:** [DESCRIPTION_2]
+- **[USE_CASE_3]:** [DESCRIPTION_3]
+- **[USE_CASE_4]:** [DESCRIPTION_4]
+
+### **[APPLICATION_DOMAIN_2]**
+- **[USE_CASE_1]:** [DESCRIPTION_1]
+- **[USE_CASE_2]:** [DESCRIPTION_2]
+- **[USE_CASE_3]:** [DESCRIPTION_3]
+- **[USE_CASE_4]:** [DESCRIPTION_4]
+
+### **[APPLICATION_DOMAIN_3]**
+- **[USE_CASE_1]:** [DESCRIPTION_1]
+- **[USE_CASE_2]:** [DESCRIPTION_2]
+- **[USE_CASE_3]:** [DESCRIPTION_3]
+- **[USE_CASE_4]:** [DESCRIPTION_4]
+
+## [DOMAIN_SPECIFIC_CHALLENGES] Challenges and Solutions
+
+### **[CHALLENGE_1]**
+- **Challenge:** [CHALLENGE_DESCRIPTION]
+- **Solution:** [SOLUTION_DESCRIPTION]
+- **Implementation:** [IMPLEMENTATION_DETAILS]
+
+### **[CHALLENGE_2]**
+- **Challenge:** [CHALLENGE_DESCRIPTION]
+- **Solution:** [SOLUTION_DESCRIPTION]
+- **Implementation:** [IMPLEMENTATION_DETAILS]
+
+### **[CHALLENGE_3]**
+- **Challenge:** [CHALLENGE_DESCRIPTION]
+- **Solution:** [SOLUTION_DESCRIPTION]
+- **Implementation:** [IMPLEMENTATION_DETAILS]
+
+### **[CHALLENGE_4]**
+- **Challenge:** [CHALLENGE_DESCRIPTION]
+- **Solution:** [SOLUTION_DESCRIPTION]
+- **Implementation:** [IMPLEMENTATION_DETAILS]
+
+## Philosophical Integration
+
+### **[PHILOSOPHICAL_CONCEPT_1]**
+- **[SUBCONCEPT_1]:** [DESCRIPTION_1]
+- **[SUBCONCEPT_2]:** [DESCRIPTION_2]
+- **[SUBCONCEPT_3]:** [DESCRIPTION_3]
+- **[SUBCONCEPT_4]:** [DESCRIPTION_4]
+
+### **[PHILOSOPHICAL_CONCEPT_2]**
+- **[SUBCONCEPT_1]:** [DESCRIPTION_1]
+- **[SUBCONCEPT_2]:** [DESCRIPTION_2]
+- **[SUBCONCEPT_3]:** [DESCRIPTION_3]
+- **[SUBCONCEPT_4]:** [DESCRIPTION_4]
+
+## Ecological Integration
+
+### **[NATURAL_SYSTEMS]**
+```
+[NATURAL_SYSTEM_TYPE] demonstrate [CONCEPT] patterns:
+├── [PATTERN_1] → [DESCRIPTION_1]
+├── [PATTERN_2] → [DESCRIPTION_2]
+├── [PATTERN_3] → [DESCRIPTION_3]
+├── [PATTERN_4] → [DESCRIPTION_4]
+├── [PATTERN_5] → [DESCRIPTION_5]
+```
+
+### **[BIOLOGICAL_EXAMPLES]**
+- **[EXAMPLE_1]:** [DESCRIPTION_1]
+- **[EXAMPLE_2]:** [DESCRIPTION_2]
+- **[EXAMPLE_3]:** [DESCRIPTION_3]
+- **[EXAMPLE_4]:** [DESCRIPTION_4]
+- **[EXAMPLE_5]:** [DESCRIPTION_5]
+
+### **[DESIGN_APPLICATIONS]**
+- **[APPLICATION_1]:** [DESCRIPTION_1]
+- **[APPLICATION_2]:** [DESCRIPTION_2]
+- **[APPLICATION_3]:** [DESCRIPTION_3]
+- **[APPLICATION_4]:** [DESCRIPTION_4]
+- **[APPLICATION_5]:** [DESCRIPTION_5]
+
+## Conclusion
+
+[CONCEPT_NAME] represents [SIGNIFICANCE_STATEMENT].
+
+**[KEY_INSIGHT_STATEMENT]**
+
+## Confidence Assessment
+
+**Term Definition Confidence:** [CONFIDENCE_SCORE] ([CONFIDENCE_LEVEL])
+- **Rationale:** [RATIONALE_DESCRIPTION]
+- **Validation:** [VALIDATION_DESCRIPTION]
+- **Contextual Stability:** [STABILITY_DESCRIPTION]
+- **Practical Application:** [APPLICATION_DESCRIPTION]
+
+## Related Terms
+
+**Reference Terms:**
+- [[REFERENCE_TERM_1]]([FILE_LINK_1]) - [RELATIONSHIP_DESCRIPTION_1]
+- [[REFERENCE_TERM_2]]([FILE_LINK_2]) - [RELATIONSHIP_DESCRIPTION_2]
+- [[REFERENCE_TERM_3]]([FILE_LINK_3]) - [RELATIONSHIP_DESCRIPTION_3]
+
+**Prerequisite Terms:**
+- [[PREREQUISITE_TERM_1]]([FILE_LINK_1]) - [RELATIONSHIP_DESCRIPTION_1]
+- [[PREREQUISITE_TERM_2]]([FILE_LINK_2]) - [RELATIONSHIP_DESCRIPTION_2]
+- [[PREREQUISITE_TERM_3]]([FILE_LINK_3]) - [RELATIONSHIP_DESCRIPTION_3]
+
+**Related Terms:**
+- [[RELATED_TERM_1]]([FILE_LINK_1]) - [RELATIONSHIP_DESCRIPTION_1]
+- [[RELATED_TERM_2]]([FILE_LINK_2]) - [RELATIONSHIP_DESCRIPTION_2]
+- [[RELATED_TERM_3]]([FILE_LINK_3]) - [RELATIONSHIP_DESCRIPTION_3]
+
+**Dependent Terms:**
+- [[DEPENDENT_TERM_1]]([FILE_LINK_1]) - [RELATIONSHIP_DESCRIPTION_1]
+- [[DEPENDENT_TERM_2]]([FILE_LINK_2]) - [RELATIONSHIP_DESCRIPTION_2]
+- [[DEPENDENT_TERM_3]]([FILE_LINK_3]) - [RELATIONSHIP_DESCRIPTION_3]
+
+**See Also:**
+- [[SEE_ALSO_TERM_1]]([FILE_LINK_1]) - [RELATIONSHIP_DESCRIPTION_1]
+- [[SEE_ALSO_TERM_2]]([FILE_LINK_2]) - [RELATIONSHIP_DESCRIPTION_2]
+- [[SEE_ALSO_TERM_3]]([FILE_LINK_3]) - [RELATIONSHIP_DESCRIPTION_3]
