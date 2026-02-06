@@ -4,7 +4,7 @@
 
 **[Branch of Science (WD):]** [Q2465832](https://www.wikidata.org/wiki/Q2465832)
 
-**[Image:]** ![Branch of Science](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Tree_of_Science.svg/1200px-Tree_of_Science.svg.png)
+**[Image:]** ![Branches of Science](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Sciences.svg/1200px-Sciences.svg.png)
 
 **Scope:**
 - Defines branch of science as a specialized subdivision within the broader scientific enterprise
