@@ -1,4 +1,4 @@
-# Physics Overview (OVERVIEW_FOR_FIELDCPHYSICS) **[PRIO: HIGH]**
+# Physics Overview [OVERVIEW_FOR_FIELDCPHYSICS] **[PRIO: HIGH]**
 
 **Wikidata Reference**: [Q413 - Physics](https://www.wikidata.org/wiki/Q413)
 
