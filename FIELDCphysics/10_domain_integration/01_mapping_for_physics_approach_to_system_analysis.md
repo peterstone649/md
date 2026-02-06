@@ -1,4 +1,4 @@
-# 1. Mapping for Physics Approach to System Analysis (FIELDCphysics)
+# 1. Mapping for Physics Approach to System Analysis (MAP_FOR_FIELDCPHYSICS) **[PRIO: HIGH]**
 
 **This document establishes the mapping between physics principles and system analysis methodologies within the FIELDCphysics domain.**
 
@@ -143,3 +143,9 @@ Theoretical Physics Approaches:
 The physics approach to system analysis provides a powerful and rigorous framework for understanding and predicting the behavior of complex systems. By applying fundamental physical principles and mathematical methods, this approach enables comprehensive system analysis across diverse domains, from engineering and natural systems to social and computational systems.
 
 **Physics-based system analysis offers a universal, rigorous, and predictive framework for understanding complex systems through the application of fundamental physical principles and mathematical methods.**
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.0 | 2026-02-05 | Initial creation | Framework Steward | To establish the mapping between physics principles and system analysis methodologies within the FIELDCphysics domain. |

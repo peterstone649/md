@@ -1,4 +1,4 @@
-# Physics Overview (FIELDCphysics)
+# Physics Overview (OVERVIEW_FOR_FIELDCPHYSICS) **[PRIO: HIGH]**
 
 **Wikidata Reference**: [Q413 - Physics](https://www.wikidata.org/wiki/Q413)
 
@@ -130,7 +130,7 @@ Applied Physics Fields:
 - **Dark Matter**: Unseen mass in the universe
 - **Dark Energy**: Mysterious force accelerating cosmic expansion
 - **String Theory**: Unified theory of fundamental forces
-- **High-Energy Physics**: Particle accelerators and cosmic rays
+-- **High-Energy Physics**: Particle accelerators and cosmic rays
 
 ### **Interdisciplinary Research**
 - **Quantum Biology**: Quantum effects in biological systems
@@ -195,3 +195,9 @@ The FIELDCphysics framework builds upon this rich tradition, applying physics pr
 ---
 
 **Wikidata Integration**: This document is based on Wikidata entity Q413 (Physics) and integrates with the broader knowledge graph for enhanced discoverability and semantic relationships.
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.0 | 2026-02-05 | Initial creation | Framework Steward | To establish a comprehensive overview of physics as a scientific discipline within the FIELDCphysics framework. |

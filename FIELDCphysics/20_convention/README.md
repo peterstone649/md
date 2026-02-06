@@ -1,4 +1,4 @@
-# 20. Conventions Directory (FIELDCphysics)
+# 20. Conventions Directory (CONV_FOR_FIELDCPHYSICS) **[PRIO: MEDIUM]**
 
 **This directory contains conventions and standards specific to the FIELDCphysics domain, inheriting and adapting framework-wide conventions for physical sciences applications.**
 
@@ -108,3 +108,9 @@ The FIELDCphysics domain adapts framework conventions with physics-specific cons
 ---
 
 *This README establishes the connection between FIELDCphysics conventions and the master framework conventions, ensuring consistent standards while allowing domain-specific adaptations for physics content.*
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.0 | 2026-02-05 | Initial creation | Framework Steward | To establish the connection between FIELDCphysics conventions and the master framework conventions, ensuring consistent standards while allowing domain-specific adaptations for physics content. |

@@ -1,4 +1,4 @@
-# 2. Wikidata Integration: Physics (FIELDCphysics)
+# 2. Wikidata Integration: Physics (INTEGR_FOR_FIELDCPHYSICS) **[PRIO: MEDIUM]**
 
 **Wikidata Entity**: [Q413 - Physics](https://www.wikidata.org/wiki/Q413)
 
@@ -176,7 +176,7 @@ SELECT ?property ?propertyLabel WHERE {
 - **API Access**: Programmatic access to physics knowledge
 - **Data Export**: Multiple formats for physics data
 - **Visualization**: Graph-based representation of physics relationships
-- **Analytics**: Statistical analysis of physics knowledge structure
+-- **Analytics**: Statistical analysis of physics knowledge structure
 
 ## Implementation Guidelines
 
@@ -221,3 +221,9 @@ By leveraging Wikidata's standardized identifiers and relationships, the FIELDCp
 ---
 
 **Integration Status**: This document establishes the foundation for Wikidata integration in FIELDCphysics, with ongoing development planned for enhanced semantic capabilities.
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.0 | 2026-02-05 | Initial creation | Framework Steward | To establish semantic integration between FIELDCphysics and the Wikidata knowledge graph for enhanced discoverability and interoperability. |

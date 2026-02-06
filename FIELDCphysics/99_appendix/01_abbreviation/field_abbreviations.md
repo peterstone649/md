@@ -1,4 +1,4 @@
-# Physics Field Abbreviations (FIELDCphysics)
+# Physics Field Abbreviations (ABBREV_FOR_FIELDCPHYSICS) **[PRIO: LOW]**
 
 **This document contains abbreviations and acronyms specific to the physics domain within the FIELDCphysics framework.**
 
@@ -171,6 +171,11 @@
 - **Spinor**: Spinor field
 - **Gauge**: Gauge field
 - **Higgs**: Higgs field
+
+### **Field Classification Levels**
+- **C**: Core field (fundamental, foundational physics)
+- **M**: Main field (major branch of physics)
+- **S**: Specialized subfield (specific application area)
 
 ---
 

@@ -1,4 +1,4 @@
-# 1. Methodology: Physics Approach (FIELDCphysics)
+# 1. Methodology: Physics Approach (METH_FOR_FIELDCPHYSICS) **[PRIO: HIGH]**
 
 **Wikidata Reference**: [Q413 - Physics](https://www.wikidata.org/wiki/Q413)
 
@@ -191,3 +191,9 @@ The FIELDCphysics framework integrates these physics methodologies to provide po
 ---
 
 **Methodology Integration**: This document establishes the physics methodology framework that underlies all FIELDCphysics applications and analyses.
+
+## Changelog
+
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|----------------------|
+| V1.0.0 | 2026-02-05 | Initial creation | Framework Steward | To establish a clear and rigorous methodology for the physics-based analysis within the FIELDCphysics framework. |
