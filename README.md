@@ -21,75 +21,6 @@ see latest improvements ...
 >Visual Studio with CLINE and pure FREE models e.g. Grok 
 >sometimes also Antigravity in parallel e.g. translations (same filesys)
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareSourceCode",
-  "name": "MD Repository: Systematic Knowledge Organization & AI-Assisted Methodologies",
-  "description": "Comprehensive framework for systematic framework development, AI-human collaboration methodologies, and epistemological uncertainty management. Living documentation ecosystem with community-driven maintenance and AI assistance.",
-  "url": "https://github.com/peterstone649/md",
-  "codeRepository": "https://github.com/peterstone649/md",
-  "license": "https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12",
-  "programmingLanguage": ["Markdown", "Python", "JavaScript"],
-  "author": {
-    "@type": "Person",
-    "name": "Peter Stone",
-    "url": "https://github.com/peterstone649"
-  },
-  "maintainer": {
-    "@type": "Person",
-    "name": "Peter Stone",
-    "url": "https://github.com/peterstone649"
-  },
-  "contributor": {
-    "@type": "Organization",
-    "name": "Open Source Community"
-  },
-  "about": [
-    "Framework Development",
-    "Knowledge Organization",
-    "AI Methodologies",
-    "Systematic Approach",
-    "Epistemological Uncertainty",
-    "Collaborative Development"
-  ],
-  "applicationCategory": "DeveloperApplication",
-  "operatingSystem": "Cross-platform",
-  "softwareVersion": "1.8.0",
-  "datePublished": "2026-01-16",
-  "dateModified": "2026-02-04",
-  "keywords": [
-    "framework development",
-    "systematic methodology",
-    "knowledge organization",
-    "AI methodologies",
-    "epistemological uncertainty",
-    "collaborative development",
-    "methodological standardization",
-    "AI-human collaboration"
-  ],
-  "hasPart": [
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "MODEL_for_framework",
-      "description": "Core methodological framework for systematic framework development"
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "MODEL_for_STKHLD_AI_COLLAB",
-      "description": "Stakeholder-AI collaboration methodologies"
-    }
-  ],
-  "citation": [
-    {
-      "@type": "CreativeWork",
-      "name": "Framework Development Standards",
-      "description": "Transparency, Accountability, Quality, Ethics, Collaboration, Sustainability"
-    }
-  ]
-}
-</script>
-
 ## 🔍 **Keywords & Search Terms**
 
 **Primary Focus Areas:**
@@ -236,3 +167,76 @@ The multilingual translation initiative significantly enhances the project's glo
 - **Working Instructions Integration**: Added direct references to development workflow documentation
 - **Changelog System Enhancement**: Updated all components with comprehensive version tracking
 - **Tool Testing Infrastructure**: Implemented robust testing framework for converter tools
+
+## 📊 **Structured Data**
+
+This repository includes structured metadata for enhanced discoverability and machine readability:
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "MD Repository: Systematic Knowledge Organization & AI-Assisted Methodologies",
+  "description": "Comprehensive framework for systematic framework development, AI-human collaboration methodologies, and epistemological uncertainty management. Living documentation ecosystem with community-driven maintenance and AI assistance.",
+  "url": "https://github.com/peterstone649/md",
+  "codeRepository": "https://github.com/peterstone649/md",
+  "license": "https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12",
+  "programmingLanguage": ["Markdown", "Python", "JavaScript"],
+  "author": {
+    "@type": "Person",
+    "name": "Peter Stone",
+    "url": "https://github.com/peterstone649"
+  },
+  "maintainer": {
+    "@type": "Person",
+    "name": "Peter Stone",
+    "url": "https://github.com/peterstone649"
+  },
+  "contributor": {
+    "@type": "Organization",
+    "name": "Open Source Community"
+  },
+  "about": [
+    "Framework Development",
+    "Knowledge Organization",
+    "AI Methodologies",
+    "Systematic Approach",
+    "Epistemological Uncertainty",
+    "Collaborative Development"
+  ],
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Cross-platform",
+  "softwareVersion": "1.8.0",
+  "datePublished": "2026-01-16",
+  "dateModified": "2026-02-04",
+  "keywords": [
+    "framework development",
+    "systematic methodology",
+    "knowledge organization",
+    "AI methodologies",
+    "epistemological uncertainty",
+    "collaborative development",
+    "methodological standardization",
+    "AI-human collaboration"
+  ],
+  "hasPart": [
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "MODEL_for_framework",
+      "description": "Core methodological framework for systematic framework development"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "MODEL_for_STKHLD_AI_COLLAB",
+      "description": "Stakeholder-AI collaboration methodologies"
+    }
+  ],
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Framework Development Standards",
+      "description": "Transparency, Accountability, Quality, Ethics, Collaboration, Sustainability"
+    }
+  ]
+}
+</script>
