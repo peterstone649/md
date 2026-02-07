@@ -18,17 +18,19 @@ ased on the current AI Ethics books in your framework and the comprehensive stru
 
 ### __3. "Rebooting AI" by Gary Marcus and Ernest Davis (2019)__
 
+- __Status:__ ✅ **ADDED** - See BOOK/20_AI/Rebooting_AI/
 - __Why Add:__ Provides a critical technical perspective on current AI limitations
 - __Focus:__ Why current AI approaches are insufficient and what needs to change
 - __Value:__ Balances your social justice focus with technical critique
-- __Integration:__ Would provide a bridge between technical and ethical considerations
+- __Integration:__ Provides a bridge between technical and ethical considerations
 
 ### __4. "Artificial Intelligence: A Guide for Thinking Humans" by Melanie Mitchell (2019)__
 
+- __Status:__ ✅ **ADDED** - See BOOK/20_AI/Artificial_Intelligence_A_Guide_for_Thinking_Humans/
 - __Why Add:__ Offers accessible explanations of AI capabilities and limitations
 - __Focus:__ Demystifying AI hype and understanding real vs. perceived capabilities
 - __Value:__ Provides foundational knowledge that supports your ethical analyses
-- __Integration:__ Would serve as an excellent primer for understanding the technology behind the ethics
+- __Integration:__ Serves as an excellent primer for understanding the technology behind the ethics
 
 ## __Specialized Additions:__
 
@@ -46,10 +48,11 @@ ased on the current AI Ethics books in your framework and the comprehensive stru
 
 ### __7. "Artificial Intelligence: Foundations of Computational Agents" by David L. Poole and Alan K. Mackworth (2017)__
 
+- __Status:__ ✅ **ADDED** - See BOOK/20_AI/Artificial_Intelligence_Foundations_of_Computational_Agents/
 - __Why Add:__ Provides technical foundation for understanding AI systems
 - __Focus:__ Computational approaches to AI with ethical considerations
 - __Value:__ Bridges technical understanding with ethical analysis
-- __Integration:__ Would strengthen the technical foundation of your framework
+- __Integration:__ Strengthens the technical foundation of your framework
 
 ## __Emerging and Critical Perspectives:__
 
