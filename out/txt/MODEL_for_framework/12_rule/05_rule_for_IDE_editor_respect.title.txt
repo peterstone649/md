@@ -1,0 +1,15 @@
+# Extracted Titles from 05_rule_for_IDE_editor_respect.md
+# Generated on 2026-02-07 13:38:04
+# Source: E:\2025_11\md\MODEL_for_framework\12_rule\05_rule_for_IDE_editor_respect.md
+
+# IDE Editor Respect [RULE_FOR_MFW_IDE_EDITOR_RESPECT] **[PRIO: HIGH]**
+## Rule Statement
+## Rule Requirements
+## Formal Statement
+## Rationale
+## Uncertainty Declaration
+## Integration with Other Framework Components
+### Related Rules
+### Related Axioms
+### Related Principles
+## Changelog

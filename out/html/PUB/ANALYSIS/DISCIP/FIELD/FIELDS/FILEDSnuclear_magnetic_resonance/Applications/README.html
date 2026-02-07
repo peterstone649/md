@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        strong {
+            font-weight: bold;
+            color: #2c3e50; /* Dark Slate Blue for consistency */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nuclear Magnetic Resonance Applications</h1>
+<h2>Overview</h2>
+<p>This directory documents the extensive applications of Nuclear Magnetic Resonance (NMR) across multiple scientific disciplines. NMR's versatility stems from its ability to provide detailed information about molecular structure, dynamics, and environment without destructive sampling.</p>
+<h2>Analytical Chemistry Applications</h2>
+<h3>1. Molecular Structure Determination</h3>
+<h4>Organic Chemistry</h4>
+<ul>
+<li><strong>Structure Elucidation</strong>: Complete 3D structure determination of organic molecules</li>
+<li><strong>Stereochemistry</strong>: Determination of relative and absolute configuration</li>
+<li><strong>Conformational Analysis</strong>: Study of molecular conformations and flexibility</li>
+<li><strong>Reaction Intermediates</strong>: Identification and characterization of reactive species</li>
+</ul>
+<h4>Inorganic Chemistry</h4>
+<ul>
+<li><strong>Coordination Compounds</strong>: Metal-ligand bonding and geometry</li>
+<li><strong>Paramagnetic Complexes</strong>: Study of unpaired electron effects</li>
+<li><strong>Catalysis</strong>: Active site characterization and reaction mechanisms</li>
+<li><strong>Materials</strong>: Zeolites, metal-organic frameworks (MOFs)</li>
+</ul>
+<h3>2. Quantitative Analysis</h3>
+<h4>Concentration Determination</h4>
+<ul>
+<li><strong>Internal Standards</strong>: Accurate quantification using reference compounds</li>
+<li><strong>Integration</strong>: Peak area analysis for concentration ratios</li>
+<li><strong>Calibration Curves</strong>: Standard addition and external calibration methods</li>
+<li><strong>Limit of Detection</strong>: Typically 10⁻⁶ to 10⁻⁹ M for ^1H NMR</li>
+</ul>
+<h4>Purity Assessment</h4>
+<ul>
+<li><strong>Impurity Detection</strong>: Identification of minor components</li>
+<li><strong>Solvent Residuals</strong>: Quantification of residual solvents</li>
+<li><strong>Isotopic Enrichment</strong>: Measurement of isotopic labeling efficiency</li>
+<li><strong>Batch Consistency</strong>: Quality control in pharmaceutical production</li>
+</ul>
+<h3>3. Reaction Monitoring</h3>
+<h4>Real-Time Analysis</h4>
+<ul>
+<li><strong>In-Situ NMR</strong>: Direct observation of reactions in the NMR tube</li>
+<li><strong>Flow NMR</strong>: Continuous monitoring of flowing reaction mixtures</li>
+<li><strong>Stopped-Flow</strong>: Rapid mixing and observation of fast reactions</li>
+<li><strong>Temperature Control</strong>: Variable temperature studies</li>
+</ul>
+<h4>Kinetic Studies</h4>
+<ul>
+<li><strong>Rate Constants</strong>: Determination of reaction rates and mechanisms</li>
+<li><strong>Activation Parameters</strong>: Eyring plot analysis for ΔH‡ and ΔS‡</li>
+<li><strong>Catalytic Cycles</strong>: Observation of catalyst-substrate interactions</li>
+<li><strong>Equilibrium Constants</strong>: Measurement of reaction equilibria</li>
+</ul>
+<h3>4. Metabolomics and Bioanalysis</h3>
+<h4>Metabolite Profiling</h4>
+<ul>
+<li><strong>Biofluid Analysis</strong>: Urine, blood plasma, cerebrospinal fluid</li>
+<li><strong>Tissue Extracts</strong>: Cellular metabolite content</li>
+<li><strong>Cell Cultures</strong>: Metabolic flux analysis</li>
+<li><strong>Plant Extracts</strong>: Natural product identification</li>
+</ul>
+<h4>Quantitative Metabolomics</h4>
+<ul>
+<li><strong>Absolute Quantification</strong>: Using internal standards</li>
+<li><strong>Relative Quantification</strong>: Pattern recognition and statistical analysis</li>
+<li><strong>Metabolic Fingerprinting</strong>: Disease biomarker discovery</li>
+<li><strong>Pharmacometabolomics</strong>: Drug response prediction</li>
+</ul>
+<h2>Medical Applications (MRI)</h2>
+<h3>1. Anatomical Imaging</h3>
+<h4>High-Resolution Imaging</h4>
+<ul>
+<li><strong>Brain Anatomy</strong>: Detailed visualization of brain structures</li>
+<li><strong>Spinal Cord</strong>: Neural pathway imaging</li>
+<li><strong>Musculoskeletal</strong>: Joint, muscle, and bone marrow imaging</li>
+<li><strong>Abdominal Organs</strong>: Liver, kidney, pancreas visualization</li>
+</ul>
+<h4>Contrast Mechanisms</h4>
+<ul>
+<li><strong>T₁-Weighted</strong>: Anatomical detail with fat bright</li>
+<li><strong>T₂-Weighted</strong>: Pathological changes with fluid bright</li>
+<li><strong>Proton Density</strong>: Tissue characterization</li>
+<li><strong>Diffusion Weighted</strong>: Water molecule mobility</li>
+</ul>
+<h3>2. Functional MRI (fMRI)</h3>
+<h4>Brain Function Mapping</h4>
+<ul>
+<li><strong>Blood Oxygenation Level Dependent (BOLD)</strong>: Neural activity correlation</li>
+<li><strong>Task-Based fMRI</strong>: Specific cognitive function mapping</li>
+<li><strong>Resting-State fMRI</strong>: Default mode network analysis</li>
+<li><strong>Connectivity</strong>: Functional brain network mapping</li>
+</ul>
+<h4>Clinical Applications</h4>
+<ul>
+<li><strong>Pre-Surgical Planning</strong>: Tumor resection boundaries</li>
+<li><strong>Stroke Assessment</strong>: Ischemic penumbra identification</li>
+<li><strong>Neurodegenerative Diseases</strong>: Alzheimer's, Parkinson's progression</li>
+<li><strong>Psychiatric Disorders</strong>: Schizophrenia, depression biomarkers</li>
+</ul>
+<h3>3. Diffusion Imaging</h3>
+<h4>Diffusion Tensor Imaging (DTI)</h4>
+<ul>
+<li><strong>White Matter Tracts</strong>: Neural pathway visualization</li>
+<li><strong>Fractional Anisotropy</strong>: Tissue microstructure assessment</li>
+<li><strong>Mean Diffusivity</strong>: Cellular density and integrity</li>
+<li><strong>Tractography</strong>: 3D fiber tracking</li>
+</ul>
+<h4>Clinical Applications</h4>
+<ul>
+<li><strong>Stroke</strong>: Early ischemia detection</li>
+<li><strong>Tumor Characterization</strong>: Cellularity assessment</li>
+<li><strong>Multiple Sclerosis</strong>: Demyelination monitoring</li>
+<li><strong>Traumatic Brain Injury</strong>: Axonal injury detection</li>
+</ul>
+<h3>4. Magnetic Resonance Spectroscopy (MRS)</h3>
+<h4>Metabolic Profiling</h4>
+<ul>
+<li><strong>Brain Metabolites</strong>: NAA, creatine, choline, lactate</li>
+<li><strong>Tumor Metabolism</strong>: Choline elevation, NAA reduction</li>
+<li><strong>Liver Function</strong>: Lipid content, metabolite ratios</li>
+<li><strong>Muscle Metabolism</strong>: Energy metabolism assessment</li>
+</ul>
+<h4>Quantitative Analysis</h4>
+<ul>
+<li><strong>Absolute Quantification</strong>: Using water reference</li>
+<li><strong>Ratios</strong>: Metabolite concentration ratios</li>
+<li><strong>Spectral Fitting</strong>: Advanced analysis algorithms</li>
+<li><strong>Multi-Voxel</strong>: Chemical shift imaging</li>
+</ul>
+<h2>Materials Science Applications</h2>
+<h3>1. Polymer Characterization</h3>
+<h4>Molecular Weight and Distribution</h4>
+<ul>
+<li><strong>End-Group Analysis</strong>: Molecular weight determination</li>
+<li><strong>Branching</strong>: Branch point identification and quantification</li>
+<li><strong>Tacticity</strong>: Stereochemical arrangement analysis</li>
+<li><strong>Cross-Linking</strong>: Network structure characterization</li>
+</ul>
+<h4>Dynamics and Morphology</h4>
+<ul>
+<li><strong>Glass Transition</strong>: T_g determination and segmental motion</li>
+<li><strong>Crystallinity</strong>: Amorphous/crystalline phase analysis</li>
+<li><strong>Phase Separation</strong>: Microphase separation in block copolymers</li>
+<li><strong>Chain Mobility</strong>: Local and global molecular motion</li>
+</ul>
+<h3>2. Surface and Interface Analysis</h3>
+<h4>Adsorption Studies</h4>
+<ul>
+<li><strong>Surface Area</strong>: BET surface area measurement</li>
+<li><strong>Pore Size Distribution</strong>: Micropore and mesopore characterization</li>
+<li><strong>Surface Chemistry</strong>: Functional group identification</li>
+<li><strong>Adsorption Isotherms</strong>: Binding affinity and capacity</li>
+</ul>
+<h4>Catalysis</h4>
+<ul>
+<li><strong>Active Sites</strong>: Catalyst surface characterization</li>
+<li><strong>Reaction Mechanisms</strong>: In-situ reaction monitoring</li>
+<li><strong>Deactivation</strong>: Catalyst poisoning and regeneration</li>
+<li><strong>Support Effects</strong>: Metal-support interactions</li>
+</ul>
+<h3>3. Solid-State NMR</h3>
+<h4>Crystalline Materials</h4>
+<ul>
+<li><strong>Crystal Structure</strong>: Atomic-level structure determination</li>
+<li><strong>Polymorphism</strong>: Different crystalline forms</li>
+<li><strong>Defects</strong>: Point defects and disorder analysis</li>
+<li><strong>Phase Transitions</strong>: Structural changes with temperature/pressure</li>
+</ul>
+<h4>Amorphous Materials</h4>
+<ul>
+<li><strong>Local Structure</strong>: Short-range order analysis</li>
+<li><strong>Dynamics</strong>: Molecular motion in glasses</li>
+<li><strong>Interfaces</strong>: Surface and bulk property differences</li>
+<li><strong>Nanomaterials</strong>: Size and surface effects</li>
+</ul>
+<h3>4. Quality Control and Process Monitoring</h3>
+<h4>Industrial Applications</h4>
+<ul>
+<li><strong>Batch Consistency</strong>: Product quality verification</li>
+<li><strong>Contamination Detection</strong>: Impurity identification</li>
+<li><strong>Degradation Studies</strong>: Stability and shelf-life assessment</li>
+<li><strong>Process Optimization</strong>: Real-time reaction monitoring</li>
+</ul>
+<h4>Non-Destructive Testing</h4>
+<ul>
+<li><strong>Material Integrity</strong>: Internal defect detection</li>
+<li><strong>Coating Analysis</strong>: Thickness and uniformity</li>
+<li><strong>Composite Materials</strong>: Fiber-matrix interface characterization</li>
+<li><strong>Corrosion Monitoring</strong>: Material degradation assessment</li>
+</ul>
+<h2>Biochemistry and Structural Biology</h2>
+<h3>1. Protein Structure Determination</h3>
+<h4>Solution Structure</h4>
+<ul>
+<li><strong>Distance Restraints</strong>: NOE-derived interatomic distances</li>
+<li><strong>Dihedral Angles</strong>: J-coupling and chemical shift analysis</li>
+<li><strong>Orientation Restraints</strong>: Residual dipolar couplings</li>
+<li><strong>Structure Calculation</strong>: Computational structure determination</li>
+</ul>
+<h4>Dynamics and Flexibility</h4>
+<ul>
+<li><strong>Timescale Analysis</strong>: Fast (ps-ns) to slow (ms-s) motions</li>
+<li><strong>Order Parameters</strong>: Amplitude of motion quantification</li>
+<li><strong>Conformational Exchange</strong>: Multiple state populations</li>
+<li><strong>Ligand Binding</strong>: Binding kinetics and thermodynamics</li>
+</ul>
+<h3>2. Nucleic Acid Studies</h3>
+<h4>DNA/RNA Structure</h4>
+<ul>
+<li><strong>Secondary Structure</strong>: Helix formation and stability</li>
+<li><strong>Tertiary Structure</strong>: Folding and 3D architecture</li>
+<li><strong>Protein-Nucleic Acid Complexes</strong>: Binding interfaces</li>
+<li><strong>Drug Interactions</strong>: Small molecule binding studies</li>
+</ul>
+<h4>Dynamics</h4>
+<ul>
+<li><strong>Base Pair Opening</strong>: Hydrogen bond dynamics</li>
+<li><strong>Helix Flexibility</strong>: Bending and twisting motions</li>
+<li><strong>Conformational Changes</strong>: A-B-Z DNA transitions</li>
+<li><strong>Protein Recognition</strong>: Sequence-specific binding</li>
+</ul>
+<h3>3. Membrane Proteins</h3>
+<h4>Structure in Membranes</h4>
+<ul>
+<li><strong>Orientation</strong>: Membrane insertion and topology</li>
+<li><strong>Lipid Interactions</strong>: Protein-lipid binding sites</li>
+<li><strong>Detergent Effects</strong>: Mimicking membrane environment</li>
+<li><strong>Solid-State NMR</strong>: Native membrane studies</li>
+</ul>
+<h4>Function and Dynamics</h4>
+<ul>
+<li><strong>Channel Gating</strong>: Conformational changes during function</li>
+<li><strong>Signal Transduction</strong>: Receptor activation mechanisms</li>
+<li><strong>Transport</strong>: Substrate binding and translocation</li>
+<li><strong>Drug Binding</strong>: Pharmaceutical target characterization</li>
+</ul>
+<h3>4. Metabolism and Metabolic Engineering</h3>
+<h4>In-Cell NMR</h4>
+<ul>
+<li><strong>Intracellular Metabolites</strong>: Direct observation in living cells</li>
+<li><strong>Metabolic Flux</strong>: Real-time metabolic pathway analysis</li>
+<li><strong>Protein Folding</strong>: In-cell protein structure and dynamics</li>
+<li><strong>Cellular Environment</strong>: Crowding and viscosity effects</li>
+</ul>
+<h4>Isotope Tracing</h4>
+<ul>
+<li><strong>^13C Metabolic Flux Analysis</strong>: Carbon flow through pathways</li>
+<li><strong>^15N Labeling</strong>: Nitrogen metabolism studies</li>
+<li><strong>^2H Labeling</strong>: Hydrogen exchange and dynamics</li>
+<li><strong>Multi-Isotope</strong>: Complex metabolic network analysis</li>
+</ul>
+<h2>Emerging and Specialized Applications</h2>
+<h3>1. Hyperpolarized NMR</h3>
+<h4>Signal Enhancement</h4>
+<ul>
+<li><strong>Dissolution DNP</strong>: &gt;10,000x signal enhancement</li>
+<li><strong>Para-Hydrogen</strong>: PHIP and SABRE techniques</li>
+<li><strong>Spin Exchange</strong>: SEOP for noble gases</li>
+<li><strong>Applications</strong>: Real-time metabolic imaging</li>
+</ul>
+<h4>Medical Applications</h4>
+<ul>
+<li><strong>Cancer Metabolism</strong>: Real-time tumor metabolism</li>
+<li><strong>Cardiac Metabolism</strong>: Heart function assessment</li>
+<li><strong>Lung Imaging</strong>: Gas distribution and function</li>
+<li><strong>Neuroimaging</strong>: Brain metabolism studies</li>
+</ul>
+<h3>2. Benchtop and Portable NMR</h3>
+<h4>Low-Field Systems</h4>
+<ul>
+<li><strong>Process Control</strong>: Industrial quality assurance</li>
+<li><strong>Food Analysis</strong>: Fat, water, and composition analysis</li>
+<li><strong>Pharmaceutical</strong>: Tablet content and uniformity</li>
+<li><strong>Education</strong>: Teaching and demonstration</li>
+</ul>
+<h4>Field Applications</h4>
+<ul>
+<li><strong>Oil Industry</strong>: Downhole fluid analysis</li>
+<li><strong>Agriculture</strong>: Soil and crop analysis</li>
+<li><strong>Environmental</strong>: Field contamination assessment</li>
+<li><strong>Security</strong>: Explosive and drug detection</li>
+</ul>
+<h3>3. Quantum Computing and Sensing</h3>
+<h4>Quantum Bits (Qubits)</h4>
+<ul>
+<li><strong>Nuclear Spins</strong>: Long coherence times</li>
+<li><strong>Control</strong>: Precise manipulation with RF pulses</li>
+<li><strong>Readout</strong>: State detection and measurement</li>
+<li><strong>Entanglement</strong>: Multi-qubit operations</li>
+</ul>
+<h4>Quantum Sensing</h4>
+<ul>
+<li><strong>Magnetometry</strong>: Ultra-sensitive magnetic field detection</li>
+<li><strong>Thermometry</strong>: Nanoscale temperature measurement</li>
+<li><strong>Gyroscopy</strong>: Rotation sensing</li>
+<li><strong>Imaging</strong>: Nanoscale resolution imaging</li>
+</ul>
+<h3>4. In-Situ and Operando Studies</h3>
+<h4>Catalysis</h4>
+<ul>
+<li><strong>Reaction Intermediates</strong>: Direct observation of catalytic cycles</li>
+<li><strong>Surface Species</strong>: Active site characterization</li>
+<li><strong>Deactivation</strong>: Catalyst degradation mechanisms</li>
+<li><strong>Regeneration</strong>: Recovery processes</li>
+</ul>
+<h4>Batteries</h4>
+<ul>
+<li><strong>Electrolyte Dynamics</strong>: Ion transport and solvation</li>
+<li><strong>Electrode Processes</strong>: Charge transfer and phase changes</li>
+<li><strong>Degradation</strong>: Side reactions and capacity fade</li>
+<li><strong>Solid-Electrolyte Interface</strong>: SEI layer formation</li>
+</ul>
+<h2>Application-Specific Methodologies</h2>
+<h3>1. Multinuclear NMR</h3>
+<h4>^13C NMR</h4>
+<ul>
+<li><strong>Natural Abundance</strong>: Low sensitivity, requires enrichment</li>
+<li><strong>Decoupling</strong>: Simplification of complex spectra</li>
+<li><strong>DEPT</strong>: Carbon type differentiation</li>
+<li><strong>Applications</strong>: Organic structure, metabolic studies</li>
+</ul>
+<h4>^15N NMR</h4>
+<ul>
+<li><strong>Low Sensitivity</strong>: Requires isotopic enrichment</li>
+<li><strong>Protein Studies</strong>: Backbone and side chain analysis</li>
+<li><strong>Nucleic Acids</strong>: Base and backbone characterization</li>
+<li><strong>Applications</strong>: Biomolecular structure and dynamics</li>
+</ul>
+<h4>^31P NMR</h4>
+<ul>
+<li><strong>High Sensitivity</strong>: 100% natural abundance</li>
+<li><strong>Biological Applications</strong>: ATP, DNA, phospholipids</li>
+<li><strong>Materials</strong>: Phosphates, catalysts, polymers</li>
+<li><strong>In Vivo</strong>: Metabolic studies</li>
+</ul>
+<h3>2. Advanced Pulse Sequences</h3>
+<h4>Multi-Dimensional NMR</h4>
+<ul>
+<li><strong>2D NMR</strong>: Correlation spectroscopy (COSY, TOCSY)</li>
+<li><strong>3D/4D NMR</strong>: Protein structure determination</li>
+<li><strong>Heteronuclear</strong>: ^1H-^13C, ^1H-^15N correlations</li>
+<li><strong>Applications</strong>: Complex molecule analysis</li>
+</ul>
+<h4>Solid-State Techniques</h4>
+<ul>
+<li><strong>Magic Angle Spinning (MAS)</strong>: Anisotropy removal</li>
+<li><strong>Cross-Polarization (CP)</strong>: Sensitivity enhancement</li>
+<li><strong>Multiple Quantum</strong>: Dipolar coupling analysis</li>
+<li><strong>Applications</strong>: Materials, membrane proteins</li>
+</ul>
+<h3>3. Specialized Detection Methods</h3>
+<h4>Zero- to Ultralow-Field NMR</h4>
+<ul>
+<li><strong>Earth's Field</strong>: Portable, low-cost systems</li>
+<li><strong>SQUID Detection</strong>: Ultra-sensitive magnetometry</li>
+<li><strong>Applications</strong>: Geophysics, security screening</li>
+<li><strong>Advantages</strong>: No magnetic field requirements</li>
+</ul>
+<h4>Hyperpolarization Techniques</h4>
+<ul>
+<li><strong>Dynamic Nuclear Polarization (DNP)</strong>: Electron-nucleus polarization transfer</li>
+<li><strong>Para-Hydrogen Induced Polarization (PHIP)</strong>: Chemical reaction polarization</li>
+<li><strong>Spin Exchange Optical Pumping (SEOP)</strong>: Noble gas polarization</li>
+<li><strong>Applications</strong>: Medical imaging, sensitivity enhancement</li>
+</ul>
+<h2>Future Directions and Trends</h2>
+<h3>1. Integration with Other Techniques</h3>
+<ul>
+<li><strong>Hyphenated Methods</strong>: LC-NMR, GC-NMR</li>
+<li><strong>Correlative Microscopy</strong>: NMR with EM, AFM</li>
+<li><strong>Multi-Modal Imaging</strong>: MRI with PET, CT</li>
+<li><strong>Data Fusion</strong>: Combined analysis approaches</li>
+</ul>
+<h3>2. Automation and AI</h3>
+<ul>
+<li><strong>Automated Analysis</strong>: Machine learning for spectral interpretation</li>
+<li><strong>Structure Prediction</strong>: AI-assisted structure determination</li>
+<li><strong>Optimization</strong>: Automated parameter optimization</li>
+<li><strong>Quality Control</strong>: Real-time data analysis</li>
+</ul>
+<h3>3. Miniaturization and Portability</h3>
+<ul>
+<li><strong>Microcoils</strong>: Enhanced sensitivity for small samples</li>
+<li><strong>Lab-on-a-Chip</strong>: Integrated microfluidic NMR</li>
+<li><strong>Portable Systems</strong>: Field-deployable instruments</li>
+<li><strong>Point-of-Care</strong>: Clinical diagnostic applications</li>
+</ul>
+<h3>4. Quantum Technologies</h3>
+<ul>
+<li><strong>Quantum Sensors</strong>: NV centers in diamond</li>
+<li><strong>Quantum Computing</strong>: NMR-based quantum processors</li>
+<li><strong>Quantum Metrology</strong>: Precision measurement applications</li>
+<li><strong>Quantum Imaging</strong>: Beyond classical limits</li>
+</ul>
+<h2>References and Further Reading</h2>
+<h3>Textbooks</h3>
+<ol>
+<li><strong>"NMR Spectroscopy: Basic Principles, Concepts and Applications in Chemistry"</strong> - Harald Günther</li>
+<li><strong>"Protein NMR Spectroscopy: Principles and Practice"</strong> - John Cavanagh et al.</li>
+<li><strong>"Solid-State NMR: Basic Principles and Practice"</strong> - David C. Apperley et al.</li>
+</ol>
+<h3>Review Articles</h3>
+<ol>
+<li><strong>"Applications of NMR Spectroscopy in Drug Discovery"</strong> - Lepre et al. (2004)</li>
+<li><strong>"Metabolomics by NMR Spectroscopy"</strong> - Wishart (2019)</li>
+<li><strong>"Hyperpolarized NMR in Biomedicine"</strong> - Ardenkjær-Larsen et al. (2013)</li>
+</ol>
+<h3>Online Resources</h3>
+<ul>
+<li><strong>Biological Magnetic Resonance Data Bank (BMRB)</strong></li>
+<li><strong>NMR Wiki</strong>: Community-driven NMR knowledge base</li>
+<li><strong>Society of Magnetic Resonance</strong>: Application resources</li>
+</ul>
+<hr />
+<p><strong>Last Updated</strong>: February 2026
+<strong>Version</strong>: 1.0
+<strong>Maintainer</strong>: AI Framework Steward</p>
+        <footer>
+            <p><em>Generated on 2026-02-07 18:03:30 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

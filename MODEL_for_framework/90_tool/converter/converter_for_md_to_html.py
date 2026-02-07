@@ -23,6 +23,7 @@ CHANGELOG
 
 | Version | Date       | Changes | Stakeholder | Rationale/Motivation |
 |---------|------------|---------|-------------|----------------------|
+| V1.6.2  | 2026-02-07 | Implemented --include flag for explicit out folder inclusion and added directory exclusion logic | Framework Steward | Enable controlled inclusion of normally excluded directories while maintaining safety |
 | V1.6.1  | 2026-01-15 | Fixed syntax warning by making docstring a raw string | Framework Steward | Resolve Python syntax warning for invalid escape sequences in docstring table formatting |
 | V1.6.0  | 2026-01-14 | Added automatic image copying for SVG and other image files | Framework Steward | Ensure images are properly included in HTML output |
 | V1.5.0  | 2026-01-13 | Renamed file from md_to_html_converter.py to converter_for_md_to_html.py | Framework Steward | Align with framework naming conventions and improve consistency |
@@ -317,6 +318,30 @@ class Converter_for_Md_to_Html:
 </body>
 </html>"""
 
+def should_process_directory(dir_path, include_dirs):
+    """
+    Determines whether a directory should be processed during recursive conversion.
+    
+    Args:
+        dir_path (str): The absolute path to the directory
+        include_dirs (list): List of explicitly included directory paths
+    
+    Returns:
+        bool: True if directory should be processed, False otherwise
+    """
+    dir_name = os.path.basename(dir_path)
+    
+    # Always exclude 'out' directories unless explicitly included
+    if dir_name == 'out':
+        if include_dirs and any(os.path.samefile(dir_path, include_dir) for include_dir in include_dirs):
+            logging.info(f"Processing explicitly included 'out' directory: {dir_path}")
+            return True
+        else:
+            logging.info(f"Skipping excluded 'out' directory: {dir_path}")
+            return False
+    
+    return True
+
 def main():
     parser = argparse.ArgumentParser(
         description="Converts Markdown files to styled HTML with fixed output directory.",
@@ -333,6 +358,11 @@ def main():
         default=None,
         help="The project base path for calculating relative output paths. Defaults to PROJECT_BASE_PATH from .env file or 'E:\\2025_11\\_29'."
     )
+    parser.add_argument(
+        "--include",
+        action="append",
+        help="Explicitly include directories that would normally be excluded (e.g., 'out'). Can be used multiple times."
+    )
     args = parser.parse_args()
 
     if os.path.isdir(args.input_path):
@@ -341,7 +371,20 @@ def main():
             sys.exit(1)
 
         logging.info(f"Starting recursive conversion in directory: {args.input_path}")
-        for root, _, files in os.walk(args.input_path):
+        
+        # Normalize include paths for comparison
+        include_dirs = []
+        if args.include:
+            for include_path in args.include:
+                # Convert to absolute path for consistent comparison
+                abs_include = os.path.abspath(os.path.join(args.input_path, include_path))
+                include_dirs.append(abs_include)
+                logging.info(f"Explicitly including directory: {abs_include}")
+        
+        for root, dirs, files in os.walk(args.input_path):
+            # Filter out 'out' directories unless explicitly included
+            dirs[:] = [d for d in dirs if should_process_directory(os.path.join(root, d), include_dirs)]
+            
             for file in files:
                 if file.endswith((".md", ".markdown")):
                     input_file = os.path.join(root, file)

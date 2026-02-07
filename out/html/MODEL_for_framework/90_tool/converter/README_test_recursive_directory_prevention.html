@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README_test_recursive_directory_prevention</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        strong {
+            font-weight: bold;
+            color: #2c3e50; /* Dark Slate Blue for consistency */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Case: Recursive Directory Prevention</h1>
+<h2>Overview</h2>
+<p>This test case prevents the recursive creation of <code>out/html</code> directories in the Markdown to HTML converter.</p>
+<h2>Problem</h2>
+<p>The converter was potentially creating nested <code>out/html</code> directories when converting Markdown files to HTML, which could lead to:</p>
+<ul>
+<li>Inconsistent output directory structures</li>
+<li>Confusion about where HTML files are being generated</li>
+<li>Potential issues with deployment and file organization</li>
+</ul>
+<h2>Solution</h2>
+<p>The test case <code>test_recursive_directory_prevention.py</code> validates that:</p>
+<ol>
+<li><strong>Exactly one <code>out</code> directory</strong> exists in the output path</li>
+<li><strong>Exactly one <code>html</code> directory</strong> exists in the output path  </li>
+<li><strong>Correct order</strong>: <code>html</code> comes immediately after <code>out</code> in the path</li>
+<li><strong>No nesting</strong>: No additional <code>out</code> or <code>html</code> directories are created</li>
+<li><strong>Multiple conversions</strong>: Multiple file conversions maintain the same structure</li>
+<li><strong>Existing directories</strong>: Handles existing <code>out/html</code> directories correctly</li>
+</ol>
+<h2>Test Coverage</h2>
+<h3>Test Cases</h3>
+<ol>
+<li><strong><code>test_no_recursive_out_html_directories</code></strong></li>
+<li>Validates the basic directory structure</li>
+<li>Ensures exactly one <code>out</code> and one <code>html</code> directory</li>
+<li>
+<p>Verifies correct ordering</p>
+</li>
+<li>
+<p><strong><code>test_converter_creates_correct_directory_structure</code></strong></p>
+</li>
+<li>Tests actual file conversion</li>
+<li>Validates the complete conversion process</li>
+<li>
+<p>Checks that files are created in the correct location</p>
+</li>
+<li>
+<p><strong><code>test_multiple_conversions_same_structure</code></strong></p>
+</li>
+<li>Tests multiple file conversions</li>
+<li>Ensures consistent structure across multiple runs</li>
+<li>
+<p>Validates no nested directories are created</p>
+</li>
+<li>
+<p><strong><code>test_existing_out_html_directory_handling</code></strong></p>
+</li>
+<li>Tests behavior with pre-existing directories</li>
+<li>Ensures existing files are not overwritten</li>
+<li>Validates proper handling of existing structures</li>
+</ol>
+<h2>Usage</h2>
+<p>Run the test with:</p>
+<pre><code class="language-bash">python MODEL_for_framework/90_tool/converter/test_recursive_directory_prevention.py
+</code></pre>
+<h2>Expected Output</h2>
+<pre><code>Running tests to prevent recursive out/html directory creation...
+======================================================================
+test_converter_creates_correct_directory_structure (__main__.TestRecursiveDirectoryPrevention.test_converter_creates_correct_directory_structure)
+Test that converter creates the correct directory structure without nesting. ... ok
+test_existing_out_html_directory_handling (__main__.TestRecursiveDirectoryPrevention.test_existing_out_html_directory_handling)
+Test that converter handles existing out/html directories correctly. ... ok
+test_multiple_conversions_same_structure (__main__.TestRecursiveDirectoryPrevention.test_multiple_conversions_same_structure)
+Test that multiple conversions don't create nested directories. ... ok
+test_no_recursive_out_html_directories (__main__.TestRecursiveDirectoryPrevention.test_no_recursive_out_html_directories)
+Test that converter doesn't create nested out/html directories. ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.177s
+
+OK
+======================================================================
+All tests passed! Recursive out/html directory creation is prevented.
+</code></pre>
+<h2>Implementation Details</h2>
+<p>The test uses temporary directories to isolate test runs and ensure clean state. Each test:</p>
+<ol>
+<li>Creates a temporary project structure</li>
+<li>Runs the converter with various scenarios</li>
+<li>Validates the output directory structure</li>
+<li>Cleans up temporary files</li>
+</ol>
+<h2>Integration</h2>
+<p>This test should be run as part of the converter's test suite to ensure the directory structure remains consistent and prevents recursive directory creation issues.</p>
+        <footer>
+            <p><em>Generated on 2026-02-07 18:03:28 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

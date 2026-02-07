@@ -64,8 +64,9 @@
     </style>
 </head>
 <body>
-    <h1>Clickable Links [RULE_FOR_MFW_LINK_OT_CLICKABLE] <strong>[PRIO: HIGH]</strong></h1>
-<h2>Rule Statement</h2>
+    <h1>Rule for Clickable Links [RULE_FOR_MFW_LINK_OT_CLICKABLE] <strong>[PRIO: HIGH]</strong></h1>
+<p><em>Based on: <a href="../35_axiom/10_axiom_of_epistemological_uncertainty.html">10_axiom_of_epistemological_uncertainty.md</a></em></p>
+<h2>Rule Statement <strong>[STATUS: ACTIVE]</strong></h2>
 <p>All cross-references to framework documents SHOULD use clickable markdown links. Plain text file paths are NOT acceptable for internal navigation.</p>
 <h2>Rule Requirements</h2>
 <ul>
@@ -75,6 +76,11 @@
 <li><strong>[R4]</strong>: No broken or dead links</li>
 <li><strong>[R5]</strong>: Links work in markdown viewers and IDEs</li>
 </ul>
+<h2>Example</h2>
+<p>Here's an example of a proper clickable link:</p>
+<pre><code>[Epistemological Uncertainty Acknowledgment](01_rule_for_epistemological_uncertainty_acknowledgment.md)
+</code></pre>
+<p>This format provides clear navigation and maintains document integrity.</p>
 <h2>Formal Statement</h2>
 <pre><code>∀document∀reference (Document(document) ∧ Reference(reference) ∧ InternalReference(reference))
     → (ClickableLink(reference) ∧ FunctionalPath(reference))
@@ -99,13 +105,7 @@
 <li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.html">02_principle_transparency.md</a></strong> - Transparency requires accessible navigation</li>
 <li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.html">03_principle_proportionality.md</a></strong> - Proportionality applies to navigation complexity</li>
 </ul>
-<p><strong>Rule Steward:</strong> Framework Standards Committee
-<strong>Approval Status:</strong> Framework Approved
-<strong>Effective Date:</strong> 2026-01-09
-<strong>Review Cycle:</strong> Annual</p>
-<p><strong>Framework:</strong> MODEL_for_framework
-<strong>Framework Version:</strong> V1.0.0
-<strong>Date:</strong> 2026-01-09</p>
+<hr />
 <h2>Changelog</h2>
 <table>
 <thead>
@@ -118,6 +118,13 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>V1.0.2</td>
+<td>2026-02-07</td>
+<td>Added clickable link for "Based on" reference to 10_axiom_of_epistemological_uncertainty.md</td>
+<td>Framework Admin</td>
+<td>Ensure clickable link requirement compliance</td>
+</tr>
 <tr>
 <td>V1.0.1</td>
 <td>2026-01-23</td>
@@ -135,7 +142,7 @@
 </tbody>
 </table>
         <footer>
-            <p><em>Generated on 2026-02-05 18:18:37 by MDToHTMLConverter v1.6.1</em></p>
+            <p><em>Generated on 2026-02-07 18:03:26 by MDToHTMLConverter v1.6.1</em></p>
         </footer>
 </body>
 </html>

@@ -1,0 +1,16 @@
+# Extracted Titles from 10_rule_for_link_OT_clickable.md
+# Generated on 2026-02-07 13:38:04
+# Source: E:\2025_11\md\MODEL_for_framework\12_rule\10_rule_for_link_OT_clickable.md
+
+# Clickable Links [RULE_FOR_MFW_LINK_OT_CLICKABLE] **[PRIO: HIGH]**
+## Rule Statement
+## Rule Requirements
+## Example
+## Formal Statement
+## Rationale
+## Uncertainty Declaration
+## Integration with Other Framework Components
+### Related Rules
+### Related Axioms
+### Related Principles
+## Changelog

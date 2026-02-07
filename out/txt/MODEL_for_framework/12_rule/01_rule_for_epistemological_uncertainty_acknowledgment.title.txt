@@ -1,0 +1,15 @@
+# Extracted Titles from 01_rule_for_epistemological_uncertainty_acknowledgment.md
+# Generated on 2026-02-07 16:21:16
+# Source: 12_rule/01_rule_for_epistemological_uncertainty_acknowledgment.md
+
+# Rule for Epistemological Uncertainty Acknowledgment [RULE_FOR_MFW_EPISTEMOLOGICAL_ACKNOWLEDGMENT] **[PRIO: HIGHEST]**
+## Rule Statement
+## Rule Requirements
+## Formal Statement
+## Rationale
+## Uncertainty Declaration
+## Integration with Other Framework Components
+### Related Rules
+### Related Axioms
+### Related Principles
+## Changelog

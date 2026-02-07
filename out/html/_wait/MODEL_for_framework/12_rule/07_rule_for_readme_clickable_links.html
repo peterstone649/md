@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07_rule_for_readme_clickable_links</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        strong {
+            font-weight: bold;
+            color: #2c3e50; /* Dark Slate Blue for consistency */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>README Clickable Links [RULE_FOR_MFW_README_CLICKABLE_LINKS] <strong>[PRIO: HIGH]</strong></h1>
+<h2>Rule Statement</h2>
+<p>All README files within the framework MUST include clickable links for easy navigation to related resources, documentation, and external references.</p>
+<h2>Rule Requirements</h2>
+<ul>
+<li><strong>[R1]</strong>: Every README file includes clickable links in mandatory categories (Internal Documentation, External Resources, Implementation Links)</li>
+<li><strong>[R2]</strong>: All links use proper markdown format <code>[Link Text](URL)</code></li>
+<li><strong>[R3]</strong>: Link text is descriptive, concise, and actionable</li>
+<li><strong>[R4]</strong>: Links are organized into clearly labeled sections</li>
+<li><strong>[R5]</strong>: Links are regularly validated and maintained</li>
+<li><strong>[R6]</strong>: Framework-specific links include version and branch information</li>
+<li><strong>[R7]</strong>: External dependency links include license and security information</li>
+</ul>
+<h2>Formal Statement</h2>
+<pre><code>∀readme_file (ReadmeFile(readme_file) ∧ FrameworkDocument(readme_file))
+    → (HasClickableLinks(readme_file) ∧ OrganizedLinks(readme_file) ∧ ValidatedLinks(readme_file))
+</code></pre>
+<h2>Rationale</h2>
+<p>README files serve as primary entry points and must provide easy navigation to support users in understanding and implementing the framework.</p>
+<h2>Uncertainty Declaration</h2>
+<p><em>If applicable: This rule acknowledges inherent uncertainties in external link availability and the evolving nature of documentation resources.</em></p>
+<h2>Integration with Other Framework Components</h2>
+<h3>Related Rules</h3>
+<ul>
+<li><strong><a href="10_rule_for_link_OT_clickable.html">10_rule_for_link_OT_clickable.md</a></strong> - General clickable link requirements</li>
+<li><strong><a href="04_rule_for_version_changelog_update.html">04_rule_for_version_changelog_update.md</a></strong> - Link maintenance and version tracking</li>
+</ul>
+<h3>Related Axioms</h3>
+<ul>
+<li><strong><a href="../35_axiom/02_axiom_of_framework_validation_integrity.html">02_axiom_of_framework_validation_integrity.md</a></strong> - Validation includes link functionality</li>
+<li><strong><a href="../35_axiom/03_axiom_of_clarity_and_precision.html">03_axiom_of_clarity_and_precision.md</a></strong> - Clear navigation supports clarity requirements</li>
+</ul>
+<h3>Related Principles</h3>
+<ul>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.html">02_principle_transparency.md</a></strong> - Transparency requires accessible documentation</li>
+<li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.html">03_principle_proportionality.md</a></strong> - Proportionality applies to documentation complexity</li>
+</ul>
+<p><strong>Rule Steward:</strong> Framework Documentation Team
+<strong>Approval Status:</strong> Framework Approved
+<strong>Effective Date:</strong> 2026-01-25
+<strong>Review Cycle:</strong> Annual</p>
+<p><strong>Framework:</strong> MODEL_for_framework
+<strong>Framework Version:</strong> V1.0.0
+<strong>Date:</strong> 2026-01-25</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Change Content</th>
+<th>Stakeholders</th>
+<th>Motivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1.0.0</td>
+<td>2026-01-25</td>
+<td>Initial creation</td>
+<td>Framework Maintenance Team</td>
+<td>Establish comprehensive link requirements for README files</td>
+</tr>
+</tbody>
+</table>
+        <footer>
+            <p><em>Generated on 2026-02-07 18:03:33 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

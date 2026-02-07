@@ -1,0 +1,19 @@
+# Requirements for converter_for_md_to_html.py
+# 
+# This file lists the Python dependencies required for the Markdown to HTML converter
+# 
+# Dependencies:
+# - markdown: For converting Markdown to HTML
+# - python-dotenv: For loading environment variables from .env file
+# - yaml: For YAML processing (used in related converters)
+# 
+# Standard library modules (no installation required):
+# - os, sys, argparse, re, shutil, datetime, logging, pathlib, unittest, tempfile
+
+# Core dependencies
+markdown>=3.0.0
+python-dotenv>=0.10.0
+PyYAML>=5.0.0
+
+# Optional: For enhanced functionality
+# (No additional dependencies currently required)

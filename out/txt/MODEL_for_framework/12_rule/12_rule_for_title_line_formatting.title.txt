@@ -1,0 +1,32 @@
+# Extracted Titles from 12_rule_for_title_line_formatting.md
+# Generated on 2026-02-07 13:38:04
+# Source: E:\2025_11\md\MODEL_for_framework\12_rule\12_rule_for_title_line_formatting.md
+
+# Title Line Formatting [RULE_FOR_MFW_TITLE_FORMAT] **[PRIO: MEDIUM]**
+## Rule Statement
+## Rationale
+## Title Line Format Specification
+### Required Structure
+# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
+### Components Breakdown
+### Complete Format Example
+# Term [TERM_FOR_MFW_TERM] **[PRIO: HIGHEST]**
+### TYPE Component Examples
+## Framework Abbreviations
+### Core Framework Abbreviations
+### Priority Levels
+## Implementation Guidelines
+### Title Construction Process
+### Document Type Mapping
+## Validation Checklist
+## Common Issues and Corrections
+### Incorrect Abbreviation Format
+### Missing Priority
+### Wrong Header Level
+### Invalid Priority Code
+## Enforcement
+## Automation Support
+### Example Regex Pattern for Validation
+### Automated Processing
+## References
+## Changelog

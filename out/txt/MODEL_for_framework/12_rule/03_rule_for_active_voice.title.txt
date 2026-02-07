@@ -1,0 +1,15 @@
+# Extracted Titles from 03_rule_for_active_voice.md
+# Generated on 2026-02-07 16:21:25
+# Source: 12_rule/03_rule_for_active_voice.md
+
+# Rule for Active Voice [RULE_FOR_MFW_ACTIVE_VOICE] **[PRIO: HIGH]**
+## Rule Statement
+## Rule Requirements
+## Formal Statement
+## Rationale
+## Uncertainty Declaration
+## Integration with Other Framework Components
+### Related Rules
+### Related Axioms
+### Related Principles
+## Changelog

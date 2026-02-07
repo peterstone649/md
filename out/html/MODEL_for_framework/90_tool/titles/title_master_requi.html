@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title_master_requi</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        strong {
+            font-weight: bold;
+            color: #2c3e50; /* Dark Slate Blue for consistency */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Title Master Requirements</h1>
+<h2>Purpose</h2>
+<p>This document defines the requirements for comparing extracted title files against the title_master.md template to ensure consistency and completeness, including identification of additional titles found in extracted files.</p>
+<h2>Requirements</h2>
+<h3>R1: Template Comparison</h3>
+<p>The system MUST be able to compare generated title files (.title.txt) against the title_master.md template to verify:
+- All required sections are present
+- Section order matches the template
+- Section titles match exactly (case-sensitive)</p>
+<h3>R2: Required Sections Validation</h3>
+<p>The comparison MUST verify that all required sections from title_master.md are present in extracted titles:
+- Rule Statement
+- Rule Requirements
+- Formal Statement
+- Rationale
+- Uncertainty Declaration
+- Integration with Other Framework Components
+- Related Rules
+- Related Axioms
+- Related Principles
+- Changelog</p>
+<h3>R3: Section Order Validation</h3>
+<p>The comparison MUST ensure that sections appear in the correct order as defined in title_master.md.</p>
+<h3>R4: Missing Sections Detection</h3>
+<p>The system MUST identify and report any missing sections from the extracted titles compared to the template.</p>
+<h3>R5: Extra Sections Detection</h3>
+<p>The system MUST identify and report any sections present in extracted titles that are not in the template.</p>
+<h3>R6: Additional Titles Analysis</h3>
+<p>The system MUST provide detailed analysis of additional titles found, including:
+- Categorization of additional titles (metadata, implementation details, examples, etc.)
+- Frequency analysis of common additional titles across files
+- Impact assessment on template compliance</p>
+<h3>R7: Comparison Output Format</h3>
+<p>The comparison results MUST be output in a structured format that includes:
+- List of missing sections
+- List of extra sections with categorization
+- Overall compliance status (PASS/FAIL)
+- Detailed comparison report
+- Additional titles summary with categories</p>
+<h3>R8: Integration with Test Suite</h3>
+<p>The comparison functionality MUST be integrated into the existing test suite (test_extract_titles.py) as a new test method.</p>
+<h3>R9: Template Path Configuration</h3>
+<p>The system MUST allow configuration of the template file path (default: ../12_rule/title_master.md).</p>
+<h3>R10: Requirements Generation</h3>
+<p>The system MUST generate a requirements file (title_master_requi.md) that documents:
+- All additional titles found across all files
+- Categories of additional content
+- Recommendations for template updates or cleanup procedures</p>
+<h2>Implementation Requirements</h2>
+<h3>File Structure</h3>
+<pre><code>MODEL_for_framework/90_tool/titles/
+├── title_master_requi.md          # This requirements document (UPDATED)
+├── title_master.md               # Template file (in 12_rule directory)
+├── extract_titles.py             # Main extraction tool
+├── compare_titles.py             # Comparison tool (ENHANCED)
+├── run_tests.py                  # Test runner
+└── tests/
+    └── test_extract_titles.py    # Test suite (add comparison tests here)
+</code></pre>
+<h3>Test Method Signature</h3>
+<pre><code class="language-python">def test_title_template_compliance(self):
+    &quot;&quot;&quot;Test that extracted titles comply with title_master.md template&quot;&quot;&quot;
+    # Implementation details
+</code></pre>
+<h3>Comparison Algorithm</h3>
+<ol>
+<li>Parse title_master.md to extract expected sections</li>
+<li>Parse generated .title.txt files to extract actual sections</li>
+<li>Compare section lists for completeness and order</li>
+<li>Categorize additional titles found</li>
+<li>Generate compliance report with additional titles analysis</li>
+<li>Create requirements documentation</li>
+</ol>
+<h2>Additional Titles Found Analysis</h2>
+<h3>Metadata Titles (Found in all files)</h3>
+<ul>
+<li>"Generated on [date]" - Timestamp information</li>
+<li>"Extracted Titles from [filename]" - File identification headers</li>
+<li>"Source: [path]" - Source file paths</li>
+</ul>
+<h3>Implementation Details (Found in specific files)</h3>
+<ul>
+<li>"Components Breakdown"</li>
+<li>"Common Issues and Corrections"</li>
+<li>"Example Regex Pattern for Validation"</li>
+<li>"Validation Checklist"</li>
+<li>"Automation Support"</li>
+<li>"Implementation Guidelines"</li>
+<li>"Automated Processing"</li>
+<li>"Enforcement"</li>
+</ul>
+<h3>Content Examples (Found in specific files)</h3>
+<ul>
+<li>"TYPE Component Examples"</li>
+<li>"Complete Format Example"</li>
+<li>"Incorrect Abbreviation Format"</li>
+<li>"Missing Priority"</li>
+<li>"Invalid Priority Code"</li>
+<li>"Wrong Header Level"</li>
+</ul>
+<h3>Framework References (Found in specific files)</h3>
+<ul>
+<li>"Framework Abbreviations"</li>
+<li>"Document Type Mapping"</li>
+<li>"Core Framework Abbreviations"</li>
+<li>"Priority Levels"</li>
+<li>"Title Construction Process"</li>
+<li>"References"</li>
+</ul>
+<h3>File-Specific Additional Content</h3>
+<ul>
+<li><strong>04_rule_for_version_changelog_update.title.txt</strong>: "Example", "Related Conventions"</li>
+<li><strong>12_rule_for_title_line_formatting.title.txt</strong>: Extensive implementation details and validation content</li>
+</ul>
+<h2>Success Criteria</h2>
+<ul>
+<li>All required sections from template are detected in extracted titles</li>
+<li>Section order matches template exactly</li>
+<li>Missing and extra sections are clearly identified with categorization</li>
+<li>Additional titles are categorized and analyzed for impact</li>
+<li>Requirements file is automatically generated with comprehensive analysis</li>
+<li>Comparison runs as part of automated test suite</li>
+<li>Results are easily readable and actionable</li>
+</ul>
+<h2>Dependencies</h2>
+<ul>
+<li>Python 3.8+</li>
+<li>Existing extract_titles.py functionality</li>
+<li>Test framework (unittest)</li>
+<li>File parsing utilities</li>
+<li>Enhanced compare_titles.py with additional titles analysis</li>
+</ul>
+        <footer>
+            <p><em>Generated on 2026-02-07 18:03:28 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

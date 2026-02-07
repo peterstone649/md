@@ -1,0 +1,15 @@
+# Extracted Titles from 02_rule_for_ai_lock_protection.md
+# Generated on 2026-02-07 16:21:20
+# Source: 12_rule/02_rule_for_ai_lock_protection.md
+
+# Rule for AI_LOCK Content Protection [RULE_FOR_MFW_AI_LOCK_PROTECTION] **[PRIO: HIGHEST]**
+## Rule Statement
+## Rule Requirements
+## Formal Statement
+## Rationale
+## Uncertainty Declaration
+## Integration with Other Framework Components
+### Related Rules
+### Related Axioms
+### Related Principles
+## Changelog

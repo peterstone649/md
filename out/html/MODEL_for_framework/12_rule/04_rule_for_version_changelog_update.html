@@ -64,8 +64,9 @@
     </style>
 </head>
 <body>
-    <h1>Version Changelog Update [RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE] <strong>[PRIO: HIGH]</strong></h1>
-<h2>Rule Statement</h2>
+    <h1>Rule for Version Changelog Update [RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE] <strong>[PRIO: HIGH]</strong></h1>
+<p><em>Based on: <a href="../35_axiom/10_axiom_of_epistemological_uncertainty.html">10_axiom_of_epistemological_uncertainty.md</a></em></p>
+<h2>Rule Statement <strong>[STATUS: ACTIVE]</strong></h2>
 <p>All framework documents MUST maintain an accurate and complete version changelog with Stakeholder and Motivation columns for every version entry.</p>
 <h2>Rule Requirements</h2>
 <ul>
@@ -74,8 +75,18 @@
 <li><strong>[R3]</strong>: Date format is ISO 8601 (YYYY-MM-DD)</li>
 <li><strong>[R4]</strong>: Version format is V[major].[minor].[patch]</li>
 <li><strong>[R5]</strong>: No duplicate version entries permitted</li>
-<li><strong>[R6]</strong>: Rationale explains why change was made</li>
+<li><strong>[R6]</strong>: Motivation explains why change was made</li>
+<li><strong>[R7]</strong>: Section must be titled "Changelog" (not "Version History" or other variations)</li>
+<li><strong>[R8]</strong>: Changelog section must be positioned at the end of the document</li>
+<li><strong>[R9]</strong>: Ordering: highest version comes first and sequence is kept</li>
+<li><strong>[R10]</strong>: For code files, changelog MUST be in comments (not executable code)</li>
+<li><strong>[R11]</strong>: Code file changelog format: <code>## Changelog</code> followed by markdown table in comments</li>
 </ul>
+<h2>Example</h2>
+<p>Here's an example of a proper changelog entry:</p>
+<pre><code>| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+</code></pre>
+<p>This format provides clear traceability and decision rationale.</p>
 <h2>Formal Statement</h2>
 <pre><code>∀document (FrameworkDocument(document) → HasChangelog(document) ∧ CompleteChangelog(document))
 </code></pre>
@@ -89,6 +100,11 @@
 <li><strong><a href="01_rule_for_epistemological_uncertainty_acknowledgment.html">01_rule_for_epistemological_uncertainty_acknowledgment.md</a></strong> - Changelog documents uncertainty acknowledgments</li>
 <li><strong><a href="03_rule_for_active_voice.html">03_rule_for_active_voice.md</a></strong> - Changelog entries should use active voice</li>
 </ul>
+<h3>Related Conventions</h3>
+<ul>
+<li><strong><a href="../20_convention/01_convention_for_version.html">01_convention_for_version.md</a></strong> - Defines version format and numbering conventions</li>
+<li><strong><a href="../20_convention/02_convention_for_date.html">02_convention_for_date.md</a></strong> - Defines date format standards</li>
+</ul>
 <h3>Related Axioms</h3>
 <ul>
 <li><strong><a href="../35_axiom/02_axiom_of_framework_validation_integrity.html">02_axiom_of_framework_validation_integrity.md</a></strong> - Validation includes changelog completeness</li>
@@ -99,13 +115,7 @@
 <li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.html">02_principle_transparency.md</a></strong> - Transparency requires complete change documentation</li>
 <li><strong><a href="../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.html">03_principle_proportionality.md</a></strong> - Proportionality applies to change documentation</li>
 </ul>
-<p><strong>Rule Steward:</strong> Terminology Architects
-<strong>Approval Status:</strong> Framework Approved
-<strong>Effective Date:</strong> 2026-01-08
-<strong>Review Cycle:</strong> Annual</p>
-<p><strong>Framework:</strong> MODEL_for_framework
-<strong>Framework Version:</strong> V1.0.1
-<strong>Date:</strong> 2026-01-23</p>
+<hr />
 <h2>Changelog</h2>
 <table>
 <thead>
@@ -119,11 +129,18 @@
 </thead>
 <tbody>
 <tr>
+<td>V1.0.3</td>
+<td>2026-02-07</td>
+<td>Added Related Conventions section with clickable references to version and date convention files</td>
+<td>AI Framework Steward</td>
+<td>Ensure proper integration with foundational version and date format conventions</td>
+</tr>
+<tr>
 <td>V1.0.2</td>
 <td>2026-01-31</td>
-<td>Comprehensive framework updates: Added RELEASE_NOTES.md, enhanced README.md with clickable links, implemented index_generator.py with comprehensive testing, fixed Path object errors, adapted changelog from converter_for_md_to_html.py, updated US_MFR to US_MFW references, removed version lines from user stories, translated Spanish directory structure, added working instructions reference</td>
+<td>Small refine change: Updated working instructions reference and minor documentation improvements</td>
 <td>AI Framework Steward</td>
-<td>Major framework enhancement and standardization across all components</td>
+<td>Minor documentation refinement and instruction updates</td>
 </tr>
 <tr>
 <td>V1.0.1</td>
@@ -149,7 +166,7 @@
 </tbody>
 </table>
         <footer>
-            <p><em>Generated on 2026-02-05 18:18:37 by MDToHTMLConverter v1.6.1</em></p>
+            <p><em>Generated on 2026-02-07 18:03:25 by MDToHTMLConverter v1.6.1</em></p>
         </footer>
 </body>
 </html>
