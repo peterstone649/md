@@ -1,6 +1,8 @@
 # Version Changelog Update [RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE] **[PRIO: HIGH]**
 
 
+*Based on: [10_axiom_of_epistemological_uncertainty.md](../35_axiom/10_axiom_of_epistemological_uncertainty.md)*
+
 ## Rule Statement
 
 All framework documents MUST maintain an accurate and complete version changelog with Stakeholder and Motivation columns for every version entry.
@@ -12,7 +14,19 @@ All framework documents MUST maintain an accurate and complete version changelog
 - **[R3]**: Date format is ISO 8601 (YYYY-MM-DD)
 - **[R4]**: Version format is V[major].[minor].[patch]
 - **[R5]**: No duplicate version entries permitted
-- **[R6]**: Rationale explains why change was made
+- **[R6]**: Motivation explains why change was made
+- **[R7]**: Section must be titled "Changelog" (not "Version History" or other variations)
+- **[R8]**: Changelog section must be positioned at the end of the document
+- **[R9]**: Ordering: highest version comes first and sequence is kept
+
+## Example
+
+Here's an example of a proper changelog entry:
+```
+| V1.0.1 | 2026-01-23 | Updated title formatting and changed metadata headers per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
+```
+
+This format provides clear traceability and decision rationale.
 
 ## Formal Statement
 ```
@@ -41,14 +55,7 @@ A comprehensive changelog provides traceability, documents decision rationale, a
 - **[02_principle_transparency.md](../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.md)** - Transparency requires complete change documentation
 - **[03_principle_proportionality.md](../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md)** - Proportionality applies to change documentation
 
-**Rule Steward:** Terminology Architects
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-08
-**Review Cycle:** Annual
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V1.0.1
-**Date:** 2026-01-23
+**Status:** ACTIVE
 
 ## Changelog
 
