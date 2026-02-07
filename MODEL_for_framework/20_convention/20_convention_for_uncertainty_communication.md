@@ -1,4 +1,4 @@
-# Uncertainty Communication [CONV_FOR_MFW_UNCERTAINTY_COMMUNICATION] **[PRIO: HIGH]**
+# Convention for Uncertainty Communication [CONV_FOR_MFW_UNCERTAINTY_COMMUNICATION] **[PRIO: HIGH]**
 
 **Version: V0.1.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework statements, decisions, and outputs

@@ -1,4 +1,4 @@
-# Domain Integration Mapping: Framework Building and Maintenance **[MAPPING_MFW_BUILD_MAINTAIN]** **[PRIO: HIGH]**
+# Mapping for Domain Integration: Framework Building and Maintenance **[MAPPING_DI_MFW_BUILD_MAINTAIN]** **[PRIO: HIGH]**
 
 **Version: V1.0.0** **Date: 2026-01-10**
 

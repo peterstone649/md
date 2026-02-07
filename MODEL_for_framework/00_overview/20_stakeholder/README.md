@@ -1,4 +1,4 @@
-# Stakeholder Definitions [STAKEHOLDER_MFW_LIST] [PRIO: MEDIUM]
+# README MODEL_for_framework: Stakeholder List [STAKEHOLDER_MFW_LIST] [PRIO: MEDIUM]
 
 **Purpose:** This document provides a consolidated overview of the key stakeholders involved in the creation, maintenance, and application of the framework.
 
@@ -12,26 +12,20 @@ This section defines the primary stakeholders within the framework ecosystem. Th
 
 - **[📋 Index of Stakeholder Documentation](index.md)** - Complete overview of all stakeholder-related files
 - **[10_user/](10_user/)** - Framework consumers and users
-- **[20_developer/](20_developer/)** - Framework builders and maintainers
+- **[15_contributor/](15_contributor/)** - Contributors to the framework
+- **[20_analyst/](20_analyst/)** - Framework analysts
+- **[25_developer/](25_developer/)** - Framework builders and maintainers
 - **[30_integrator_for_AI/](30_integrator_for_AI/)** - AI integration specialists
+- **[35_maintainer/](35_maintainer/)** - Framework maintainers
 - **[40_implementer_for_domain/](40_implementer_for_domain/)** - Domain application experts
 - **[45_framework_steward/](45_framework_steward/)** - Framework integrity and long-term health
 - **[50_reviewer/](50_reviewer/)** - Quality and ethical oversight
 
+**Note:** This navigation reflects the actual folder structure present in the directory. Some folders may be placeholders or contain minimal content as the framework continues to develop.
+
 ### 📁 Directory Structure
 
-The stakeholder roles are organized into the following directories:
-
-```
-20_stakeholder/
-├── README.md                   # This document
-├── 10_user/                    # Consumers of the framework
-├── 20_developer/               # Builders of the framework
-├── 30_integrator_for_AI/       # Specialists for AI integration
-├── 40_implementer_for_domain/  # Specialists for domain application
-├── 45_framework_steward/       # Overseers of the framework's integrity
-└── 50_reviewer/                # Quality and ethical oversight
-```
+For a complete overview of the stakeholder directory structure, please refer to the [Index of Stakeholder Documentation](index.md).
 
 ---
 

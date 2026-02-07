@@ -1,4 +1,4 @@
-# Intellectual Property Rights [CONV_FOR_MFW_IPR] **[PRIO: HIGH]**
+# Convention for Intellectual Property Rights [CONV_FOR_MFW_IPR] **[PRIO: HIGH]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework documents, code, and derivative works

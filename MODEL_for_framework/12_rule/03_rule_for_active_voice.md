@@ -1,7 +1,7 @@
-# Active Voice [RULE_FOR_MFW_ACTIVE_VOICE] **[PRIO: HIGH]**
+# Rule for Active Voice [RULE_FOR_MFW_ACTIVE_VOICE] **[PRIO: HIGH]**
 
 
-## Rule Statement
+## Rule Statement **[STATUS: ACTIVE]**
 
 All framework documents SHOULD use active voice constructions. Avoid passive voice unless specifically required for emphasis or when the actor is genuinely unknown.
 
@@ -40,14 +40,7 @@ Active voice clarifies responsibility, improves readability, and aligns with fra
 - **[02_principle_transparency.md](../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.md)** - Transparency requires clear language
 - **[03_principle_proportionality.md](../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md)** - Proportionality applies to language complexity
 
-**Rule Steward:** Terminology Architects
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-08
-**Review Cycle:** Annual
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V1.0.1
-**Date:** 2026-01-23
+---
 
 ## Changelog
 

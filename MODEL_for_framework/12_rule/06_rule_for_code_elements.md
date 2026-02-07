@@ -1,9 +1,8 @@
-# Code Elements Naming Conventions [RULE_FOR_MFW_CODE] **[PRIO: HIGH]**
-
+# Rule for Code Elements Naming Conventions [RULE_FOR_MFW_CODE] **[PRIO: HIGH]**
 
 *Based on: Consistent naming improves code readability, maintainability, and framework cohesion*
 
-## Rule Statement
+## Rule Statement **[STATUS: ACTIVE]**
 
 **All code elements must follow language-specific naming conventions to ensure framework-wide uniformity and maintainability.**
 
@@ -46,20 +45,7 @@ Consistent naming conventions improve code readability, reduce cognitive load, a
 - **[02_principle_transparency.md](../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.md)** - Transparent naming supports code understanding
 - **[03_principle_proportionality.md](../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md)** - Proportionality applies to naming complexity
 
-**Rule Steward:** Framework Architects
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-24
-**Review Cycle:** Annual
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V1.0.0
-**Date:** 2026-01-24
-
-**Changelog:**
-
-| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
-|---------|------|---------|-------------|----------------------|
-| V1.0.0 | 2026-01-24 | Initial creation with comprehensive naming conventions | Framework Steward | Establish consistent naming standards across the framework |
+---
 
 ## Changelog
 

@@ -1,4 +1,4 @@
-# Scope-Limited Clickable Links Convention [CONV_FOR_MFW_SCOPE_LIMITED_LINKS] **[PRIO: HIGH]**
+# Convention for Scope-Limited Clickable Links [CONV_FOR_MFW_SCOPE_LIMITED_LINKS] **[PRIO: HIGH]**
 
 **Version: V1.0.0** **Status: APPROVED** **Date: 2026-01-26**
 **Scope:** All framework documentation with clickable links

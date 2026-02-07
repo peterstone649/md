@@ -1,4 +1,4 @@
-# Writing Style Conventions [CONV_FOR_MFW_WRITING_STYLE] **[PRIO: HIGH]**
+# Convention for Writing Style Conventions [CONV_FOR_MFW_WRITING_STYLE] **[PRIO: HIGH]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework documentation

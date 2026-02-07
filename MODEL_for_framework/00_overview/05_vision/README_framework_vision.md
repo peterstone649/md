@@ -1,4 +1,4 @@
-# MODEL_for_framework Vision: The Living Documentation Ecosystem [VISION_MFW]
+# Vision for MODEL_for_framework: The Living Documentation Ecosystem [VISION_FOR_MFW]
 
 ## Vision Statement
 
@@ -14,8 +14,8 @@ The framework must be "handy" above all else. A new user should be able to becom
 ### 2. AI Assistant Enablement
 The framework integrates AI assistants as speedy collaborative partners, enhancing human creativity and productivity while maintaining human oversight and control. AI capabilities are designed to augment rather than replace human expertise, providing intelligent suggestions, automation, and cognitive support throughout the documentation process. The folder system guides the AI into the right directions.
 
-### 3. Unbreakable Consistency
-The framework provides a strong, "opinionated" foundation based on templates, conventions, and principles. This ensures that all content within the ecosystem is consistent, predictable, and high-quality, regardless of who created it.
+### 3. High Consistency
+The framework provides a strong foundation based on templates, conventions, and principles. This enables that content within the ecosystem is consistent, pretty predictable, and good-quality. The related reviews can be automated.
 
 ### 4. High Extensibility
 The core framework remains lightweight and focused. All non-essential functionality is provided through a rich ecosystem of "pluggable extensions." Users can easily add or create their own plugins to meet their specific needs.
@@ -38,7 +38,7 @@ The core framework remains lightweight and focused. All non-essential functional
 
 ## Path to the Vision
 
-- **Phase 1: Solidify the Core:** Finalize the core principles, templates, and conventions.
+- **Phase 1: Solidify the Core:** Finalize the core principles, templates, and conventions. Introduce first automatic checks.
 - **Phase 2: Develop the Plugin Architecture:** Design and build a robust plugin system for seamless extension integration.
 - **Phase 3: Build Essential Plugins:** Create a default set of plugins for the most common use cases (e.g., Publishing, Validation, Search).
 - **Phase 4: Foster the Ecosystem:** Document the plugin architecture and encourage the community to build and share their own extensions.
@@ -47,6 +47,7 @@ The core framework remains lightweight and focused. All non-essential functional
 
 | Version | Date | Changes | Stakeholder | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V0.1.3 | 2026-02-07 | update | Framework Steward | more realism | refine |
 | V0.1.2 | 2026-01-13 | story update | Framework Steward | =>maintainer story | refine |
 | V0.1.1 | 2026-01-13 | paradigm update | Framework Steward | API=>plugin | refine |
 | V0.1.0 | 2026-01-09 | Initial creation | AI Framework Steward | Establish vision |

@@ -1,13 +1,8 @@
-# Formal Notation Convention [CONV_FOR_MFW_FORMAL_NOTATION] **[PRIO: HIGH]**
-
-**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
-**Scope:** All framework documents and derived frameworks
+# Convention for Formal Notation Convention [CONV_FOR_MFW_FORMAL_NOTATION] **[PRIO: HIGH]**
 
 ## Overview
 
 **Standardize formal notation across all framework documents for consistency, readability, and rigor.**
-
----
 
 ## Variable Naming Convention
 
@@ -133,21 +128,7 @@ Note:
 
 ### Exception Handling
 
-Derived frameworks should use their own abbreviation:
-- **MODEL_for_STKHLD_AI_COLLAB** → `MODELSHCOL`
-- **Ethosys** → `ESYS`
-- **FIELDCscience** → `FCSCI`
-
----
-
-**Rule Steward:** Notation Standards Committee
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-08
-**Review Cycle:** Annual
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V1.0.1
-**Date:** 2026-01-23
+Derived frameworks should use their own abbreviation.
 
 ## Changelog
 

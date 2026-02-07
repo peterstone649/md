@@ -1,9 +1,6 @@
-# 🌟 MODEL_for_framework - Nova Edition 🌟
+# 🌟 MODEL_for_framework - Phase 1 🌟
 
 **A Methodological Framework for Transformative Development and Visionary Documentation**
-
-> Disclaimer: this is what AI says ...
-> *"Not just a framework - a universe of innovation. Nova-infused methodology for quantum leaps in systematic development."*
 
 ## Overview
 
@@ -56,4 +53,4 @@ MODEL_for_framework/
 
 ## License
 
-See `00_overview/01_legal/01_copyright_notice.md`
+See [00_overview/01_legal/01_copyright_notice.md](00_overview/01_legal/01_copyright_notice.md)

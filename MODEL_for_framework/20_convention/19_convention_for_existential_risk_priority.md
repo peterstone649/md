@@ -1,4 +1,4 @@
-# Existential Risk Priority Convention [CONV_FOR_MFW_EXISTENTIAL_RISK] **[PRIO: MAXIMUM]**
+# Convention for Existential Risk Priority [CONV_FOR_MFW_EXISTENTIAL_RISK] **[PRIO: MAXIMUM]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** AI safety, existential risk, and civilization preservation contexts within the framework

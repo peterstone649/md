@@ -1,5 +1,7 @@
 # Template for Axiom [TPL_FOR_MFW_AXIOM] **[PRIO: HIGH]**
 
+## Template Statement  **[STATUS: ACTIVE]**
+
 *   **Axiom:** [AXIOM_STATEMENT]
 *   **Description:** [AXIOM_DESCRIPTION]
 *   **Formal Statement:** [FORMAL_LOGICAL_STATEMENT]

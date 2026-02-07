@@ -1,22 +1,6 @@
-# Version [CONV_FOR_MFW_VERSION] **[PRIO: HIGH]**
+# Convention for Version [CONV_FOR_MFW_VERSION] **[PRIO: HIGH]**
 
-**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
-
-**Integration Field:** MODEL_for_framework_ecosystem
-
-## Derivation Source
-
-Based on `.\SWmeth\20_convention\convention_for_version.md`
-Based on `..\20_convention\*.md'
-
-## Core Inheritance
-
-- Inherits fundamental versioning principles from SWmeth framework
-- Adapts semantic versioning for framework methodology criticality
-- Extends version tracking for methodology verification requirements
-- Maintains compatibility with document methodology foundations
-
-## Rationale
+## Convention statement
 
 Standardized versioning practices are essential for maintaining consistency, safety, and maintainability across the framework. This convention establishes:
 - Automated verification support through consistent version formats
@@ -25,13 +9,19 @@ Standardized versioning practices are essential for maintaining consistency, saf
 - Incremental improvement management
 - Clear migration paths for breaking changes
 
-## General Reference
+## Derivation Source
 
-This convention applies to all documents within the frameworks including conventions, templates, axioms, strategies, and tasks. All documents must follow these versioning practices to ensure systematic evolution and traceability.
+- [ ] TODO_FW: Bring back reference(s)  
+`.\SWmeth\20_convention\convention_for_version.md`
+`..\20_convention\*.md`
 
-## Abstract
+## Core Inheritance
 
-This convention establishes standardized versioning practices for the frameworks. It defines version number formats, semantic versioning guidelines, version documentation requirements, and change management procedures. The goal is to ensure consistency, traceability, and compatibility across all framework components throughout their lifecycle.
+- Inherits fundamental versioning principles from SWmeth framework
+- Adapts semantic versioning for framework methodology criticality
+- Extends version tracking for methodology verification requirements
+- Maintains compatibility with document methodology foundations
+
 
 ## 1. Scope and Applicability
 
@@ -57,7 +47,7 @@ This convention should be applied when:
 | **MAJOR Version** | First number indicating breaking changes | `1.x.x` |
 | **MINOR Version** | Second number indicating new features | `x.1.x` |
 | **PATCH Version** | Third number indicating bug fixes | `x.x.2` |
-| **Changelog** | Documented history of version changes | See Section 10 |
+| **Changelog** | Documented changes of versions | See Section 10 |
 | **Compatibility** | Degree of interoperability between versions | Full/Partial/None |
 
 ## 3. Version Requirements
@@ -103,7 +93,7 @@ All documents must include a changelog with the following columns:
 | **Rationale/Motivation** | Why the change was made |
 
 ### 4.2 Changelog Entry Guidelines
-- Include version history in changelog format
+- Include version in changelog format
 - Document breaking changes and migration paths
 - Specify minimum framework version requirements
 - Track deprecation notices for older versions
@@ -157,7 +147,7 @@ When documenting breaking changes, include:
 - **Guideline 7**: V0.x.x versions should not be used in production
 - **Guideline 8**: V1.0.0+ versions indicate stable, released documents
 - **Guideline 9**: Deprecation notices must include migration timelines
-- **Guideline 10**: Archived documents must maintain version history
+- **Guideline 10**: Archived documents must maintain changelog
 
 ## 7. Status and States
 
@@ -245,14 +235,6 @@ When updating to follow this convention:
 - [ ] Document status matches version progression
 - [ ] Related documents referenced where applicable
 
-**Rule Steward:** AI Framework Steward
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-09
-**Review Cycle:** Annual
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V1.0.1
-**Date:** 2026-01-23
 
 ## Changelog
 

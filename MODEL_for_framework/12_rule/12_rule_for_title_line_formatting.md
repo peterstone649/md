@@ -1,6 +1,6 @@
-# Title Line Formatting [RULE_FOR_MFW_TITLE_FORMAT] **[PRIO: MEDIUM]**
+# Rule for Title Line Formatting [RULE_FOR_MFW_TITLE_FORMAT] **[PRIO: MEDIUM]**
 
-## Rule Statement
+## Rule Statement **[STATUS: ACTIVE]**
 
 **All framework document title lines should follow the standardized format: # [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]****
 
@@ -146,14 +146,7 @@ The TYPE component indicates the document category e.g. can be:
 - Abbreviation Reference (99_appendix/abbreviation_reference.md)
 - Active Voice Rule (12_rule/03_rule_for_active_voice.md)
 
-**Rule Steward:** Terminology Architects
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-13
-**Review Cycle:** Annual
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V1.0.2
-**Date:** 2026-01-23
+---
 
 ## Changelog
 

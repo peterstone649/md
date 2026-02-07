@@ -1,7 +1,8 @@
-# Date Format [CONV_FOR_MFW_DATE] **[PRIO: HIGH]**
+# Convention for Date Format [CONV_FOR_MFW_DATE] **[PRIO: HIGH]** 
 
-**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
-**Scope:** All framework documentation, metadata, and version control
+## Convention statement **[STATUS: ACTIVE]**
+
+This convention establishes the mandatory YYYY-MM-DD date format for all framework components. It defines the ISO 8601 compliant date representation that ensures lexicographic sorting, machine readability, and international compatibility across all framework documents and systems.
 
 ## Derivation Source
 
@@ -18,13 +19,6 @@ Based on ISO 8601 international date standard and framework consistency requirem
 
 Consistent date formatting is essential for maintaining clarity, enabling proper sorting, and ensuring machine readability across all framework documents and systems. This convention establishes a standardized approach that prevents ambiguity and supports automated processing.
 
-## General Reference
-
-This convention applies to all dates in framework documents, metadata, version control, and system interfaces. All dates must follow the YYYY-MM-DD format to ensure consistency and proper functionality.
-
-## Abstract
-
-This convention establishes the mandatory YYYY-MM-DD date format for all framework components. It defines the ISO 8601 compliant date representation that ensures lexicographic sorting, machine readability, and international compatibility across all framework documents and systems.
 
 ## 1. Scope and Applicability
 
@@ -161,18 +155,12 @@ When adopting this convention:
 - [ ] User interfaces validate date input format
 - [ ] APIs document date format expectations
 
-**Rule Steward:** Framework Admin
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-09
-**Review Cycle:** Annual
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V1.0.1
-**Date:** 2026-01-23
+---
 
 ## Changelog
 
-| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
-|---------|------|---------|-------------|----------------------|
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|------------|
+| V1.0.2 | 2026-02-07 | Added STATUS: ACTIVE to convention statement title and adapted changelog format per RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE | Framework Admin | Apply version changelog update rule with current date |
 | V1.0.1 | 2026-01-23 | Updated title formatting and changed "Applies to" regions to "Scope" for consistency | Framework Admin | Ensure framework-wide consistency |
 | V1.0.0 | 2026-01-09 | Complete date format convention with ISO 8601 compliance | Framework Admin | Establish convention |

@@ -139,17 +139,17 @@ Terminology Foundation → Consistency Checks → Knowledge Integration
 
 ### **Supporting Framework Elements**
 
-#### **Legal Framework** **[ESSENTIAL]**
+#### **Legal Framework** **[RECOMMENDED]**
 - **Framework Role:** Establishes legal foundations and intellectual property standards
 - **Types:** Copyright notices, licensing frameworks, legal compliance
 - **Integration:** Provides legal protection and compliance framework for all fields
 
-#### **Cross-Field Integration** **[ESSENTIAL]**
+#### **Cross-Field Integration** **[RECOMMENDED]**
 - **Framework Role:** Enables systematic integration across diverse framework fields
 - **Types:** Mapping templates, integration methodologies, relationship frameworks
-- **Integration:** Facilitates consistent methodologies across FIELDCscience, FIELDCphilosophy, etc.
+- **Integration:** Facilitates consistent methodologies across DISCIPscience, DISCIPphilosophy, etc.
 
-#### **Evolutionary Mechanisms** **[ESSENTIAL]**
+#### **Evolutionary Mechanisms** **[OPTIONAL]**
 - **Framework Role:** Supports systematic framework evolution and adaptation
 - **Types:** Version control, change management, evolutionary frameworks
 - **Integration:** Enables framework adaptation to new requirements and domains
@@ -160,21 +160,21 @@ Terminology Foundation → Consistency Checks → Knowledge Integration
 
 ### **Cross-Field Relationships**
 
-#### **FIELDCscience Integration**
+#### **DISCIPscience Integration**
 ```
-MODEL_for_framework ↔ FIELDCscience:
-├── MODEL_for_framework → FIELDCscience (Scientific Methodology Foundation)
-├── MODEL_for_framework → FIELDCscience (Validation Framework Integration)
-├── MODEL_for_framework → FIELDCscience (Terminology Standardization)
-└── MODEL_for_framework → FIELDCscience (Evolutionary Development Support)
+MODEL_for_framework ↔ DISCIPscience:
+├── MODEL_for_framework → DISCIPscience (Scientific Methodology Foundation)
+├── MODEL_for_framework → DISCIPscience (Validation Framework Integration)
+├── MODEL_for_framework → DISCIPscience (Terminology Standardization)
+└── MODEL_for_framework → DISCIPscience (Evolutionary Development Support)
 ```
 
-#### **FIELDCphilosophy Integration**
+#### **DISCIPphilosophy Integration**
 ```
-MODEL_for_framework ↔ FIELDCphilosophy:
-├── MODEL_for_framework → FIELDCphilosophy (Conceptual Framework Foundation)
-├── MODEL_for_framework → FIELDCphilosophy (Logic and Reasoning Validation)
-└── MODEL_for_framework → FIELDCphilosophy (Philosophical Methodology Integration)
+MODEL_for_framework ↔ DISCIPphilosophy:
+├── MODEL_for_framework → DISCIPphilosophy (Conceptual Framework Foundation)
+├── MODEL_for_framework → DISCIPphilosophy (Logic and Reasoning Validation)
+└── MODEL_for_framework → DISCIPphilosophy (Philosophical Methodology Integration)
 ```
 
 ### **Domain Applications**

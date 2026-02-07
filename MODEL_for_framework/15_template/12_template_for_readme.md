@@ -1,5 +1,7 @@
 # Template for README [TPL_FOR_MFW_README] **[PRIO: HIGH]**
 
+## Template Statement  **[STATUS: ACTIVE]**
+
 **Framework Integration:** [FRAMEWORK_INTEGRATION_STATEMENT]
 
 ## Overview
@@ -18,21 +20,7 @@
 - **[CHARACTERISTIC_3]**
 - **[CHARACTERISTIC_4]**
 
-## Directory Structure
-
-```
-_[FRAMEWORK_LEVEL]/[FIELD_NAME]/
-├── README.md                           # This overview document
-├── [TEMPLATE_DIR]/                     # Template files for field content
-│   └── [TEMPLATE_FILE]                 # Standard template for [CONTENT_TYPE]
-├── [RULE_DIR]/                         # Field-specific rules and guidelines
-│   └── [RULE_FILE]                     # [RULE_DESCRIPTION]
-└── [CONTENT_DIR]/                      # Core field content
-    ├── [CONTENT_FILE_1]                # [CONTENT_1_DESCRIPTION]
-    ├── [CONTENT_FILE_2]                # [CONTENT_2_DESCRIPTION]
-    ├── [CONTENT_FILE_3]                # [CONTENT_3_DESCRIPTION]
-    └── [CONTENT_FILE_N]                # [CONTENT_N_DESCRIPTION]
-```
+/* clickable reference to index.md file */
 
 ## [CORE_FRAMEWORK_SECTION_NAME]
 

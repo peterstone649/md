@@ -1,4 +1,4 @@
-# Framework Integration Convention [CONV_FOR_MFW_INTEGRATION] **[PRIO: HIGH]**
+# Convention for Framework Integration Convention [CONV_FOR_MFW_INTEGRATION] **[PRIO: HIGH]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All axiom, term, strategy, and template documents in MODEL_for_framework

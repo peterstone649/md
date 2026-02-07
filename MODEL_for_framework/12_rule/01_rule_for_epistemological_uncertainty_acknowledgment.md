@@ -1,9 +1,8 @@
-# Epistemological Uncertainty Acknowledgment [RULE_FOR_MFW_EPISTEMOLOGICAL_ACKNOWLEDGMENT] **[PRIO: HIGHEST]**
-
+# Rule for Epistemological Uncertainty Acknowledgment [RULE_FOR_MFW_EPISTEMOLOGICAL_ACKNOWLEDGMENT] **[PRIO: HIGHEST]**
 
 *Based on: [10_axiom_of_epistemological_uncertainty.md](../35_axiom/10_axiom_of_epistemological_uncertainty.md)*
 
-## Rule Statement
+## Rule Statement **[STATUS: ACTIVE]**
 
 All stakeholders and AI systems MUST acknowledge the inherent uncertainty in all statements, claims, and outputs. No statement shall be treated as absolute, complete, or bias-free.
 
@@ -45,14 +44,7 @@ Ensures intellectual honesty and prevents overconfidence in statements and decis
 - **[02_principle_transparency.md](../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.md)** - Transparency requires uncertainty acknowledgment
 - **[03_principle_proportionality.md](../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md)** - Proportionality depends on uncertainty recognition
 
-**Rule Steward:** Terminology Architects
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-08
-**Review Cycle:** Annual
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V1.0.1
-**Date:** 2026-01-23
+**Status:** ACTIVE
 
 ## Changelog
 

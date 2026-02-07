@@ -151,7 +151,7 @@ The Title Extraction Tool extracts title lines (starting with #) from Markdown f
 - Must work with existing framework directory structure
 - Must follow established coding conventions and patterns
 
-## Version History
+## Changelog
 
 | Version | Date       | Change Content | Stakeholders | Motivation |
 |---------|------------|----------------|--------------|------------|

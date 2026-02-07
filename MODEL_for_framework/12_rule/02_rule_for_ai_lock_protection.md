@@ -1,7 +1,7 @@
-# AI_LOCK Content Protection [RULE_FOR_MFW_AI_LOCK_PROTECTION] **[PRIO: HIGHEST]**
+# Rule for AI_LOCK Content Protection [RULE_FOR_MFW_AI_LOCK_PROTECTION] **[PRIO: HIGHEST]**
 
 
-## Rule Statement
+## Rule Statement **[STATUS: ACTIVE]**
 
 AI systems MUST NOT modify, rephrase, rewrite, or alter any content enclosed within `[AI_LOCK]` and `[AI_UNLOCK]` markers. These markers designate protected content that represents the authoritative, human-authored intent and MUST remain unchanged.
 
@@ -41,14 +41,7 @@ The AI_LOCK mechanism protects human-authored intent and ensures semantic integr
 - **[01_principle_human_sovereignty.md](../MODEL_for_stakeholder_AI_collab/30_principle/01_principle_human_sovereignty.md)** - Human sovereignty over AI decisions
 - **[02_principle_transparency.md](../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.md)** - Transparency in AI-human collaboration
 
-**Rule Steward:** Terminology Architects
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-25
-**Review Cycle:** Annual
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V1.1.0
-**Date:** 2026-01-25
+---
 
 ## Changelog
 

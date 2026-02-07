@@ -1,8 +1,8 @@
 # Template for Rule [TPL_FOR_MFW_RULE] **[PRIO: HIGH]**
 
-## Rule Statement
+## Template Statement  **[STATUS: ACTIVE]**
 
-**Clear, concise statement of what this rule requires or prohibits.**
+Clear, concise statement of what this rule requires or prohibits.
 
 ## Rule Requirements
 
@@ -39,14 +39,9 @@ Brief explanation of why this rule exists and its benefits.
 ### Related Principles
 - **[principle_name.md](../path/to/principle.md)** - Description of relationship
 
-**Rule Steward:** [Role Title]
-**Approval Status:** [Status]
-**Effective Date:** YYYY-MM-DD
-**Review Cycle:** [Duration]
+**Status:** [Status]
 
-**Framework:** MODEL_for_framework
-**Framework Version:** V[VERSION]
-**Date:** YYYY-MM-DD
+**Template Status:** ACTIVE
 
 ## Changelog
 

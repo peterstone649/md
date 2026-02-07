@@ -1,4 +1,4 @@
-# Confidence Scoring Convention [CONV_FOR_MFW_CONFIDENCE_SCORING] **[PRIO: HIGH]**
+# Convention for Confidence Scoring Convention [CONV_FOR_MFW_CONFIDENCE_SCORING] **[PRIO: HIGH]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All axiom, term, and strategy documents in MODEL_for_framework

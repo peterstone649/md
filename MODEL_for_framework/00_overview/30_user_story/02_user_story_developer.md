@@ -1,11 +1,4 @@
-# User Story: Developer [US_MFW_DEVELOPER] [PRIO: HIGH]
-
-**Version: V1.0.0** **Date: 2026-01-09**
-
-**Story ID:** US_MFW_DEVELOPER
-**Stakeholder:** Developer
-
----
+# User Story: Developer 01 [US_MFW_DEVELOPER_01] [PRIO: HIGH]
 
 ## User Story
 
@@ -74,19 +67,6 @@ Developers are contributors who create new framework elements. They add new prin
    └── Document Rationale/Motivation
 ```
 
----
-
-## Related Framework Elements
-
-- **Templates**: `15_template/` directory
-- **Rules**: `12_rule/` directory
-- **Conventions**: `20_convention/` directory
-- **Principles**: `30_principle/` directory
-- **Active Voice Rule**: `12_rule/01_rule_for_active_voice.md`
-- **Clickable Links Rule**: `12_rule/02_rule_for_clickable_links.md`
-
----
-
 ## Developer Toolkit
 
 | Tool | Purpose | Location |
@@ -138,4 +118,5 @@ Developers are contributors who create new framework elements. They add new prin
 
 | Version | Date | Change Content | Stakeholders | Motivation |
 |---------|------|---------|-------------|----------------------|
+| V0.1.1 | 2026-02-07 | condense | Framework Maintenance Team | more easy |
 | V0.1.0 | 2026-01-24 | Initial creation | Framework Maintenance Team | Establish foundational structure |

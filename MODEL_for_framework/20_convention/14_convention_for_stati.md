@@ -1,4 +1,4 @@
-# Status Convention [CONV_FOR_MFW_STATUS] **[PRIO: HIGH]**
+# Convention for Status Convention [CONV_FOR_MFW_STATUS] **[PRIO: HIGH]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All task files, issue tracking, and project management documents in MODEL_for_framework
@@ -19,7 +19,7 @@
 | **PAUSED** | Work temporarily halted, may resume | Blocked by dependency or waiting |
 | **REVIEW** | Work complete, pending validation/approval | Awaiting feedback or approval |
 | **APPROVED** | Work reviewed and approved, ready for completion | Passed validation, awaiting finalization |
-| **DONE** | All work complete and validated | Final state - fully completed |
+| **ACTIVE** | All work complete and validated | Final state - fully completed |
 | **ARCHIVED** | Historical reference, no longer active | Old completed items |
 
 ---

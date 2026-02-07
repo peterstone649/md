@@ -1,7 +1,8 @@
-# Template for Template Minimal [TPL_FOR_MFW_TPL_OT_MIN] **[PRIO: HIGH]**
+# Template for Template of Type Minimal [TPL_FOR_MFW_TPL_OT_MIN] **[PRIO: HIGH]**
 
-**Template Scope:** MODEL_for_framework_ecosystem
-**We create templates that standardize documentation and ensure consistency across all framework components.**
+## Template Statement **[STATUS: ACTIVE]**
+
+We create templates that standardize documentation and ensure consistency across all framework components.
 
 **Benefits:**
 - Templates ensure consistent formatting across all documentation types
@@ -59,7 +60,7 @@
 
 *This meta-template establishes the methodology for creating all templates in the AI safety framework, ensuring consistency, quality, and maintainability across all documentation components.*
 
-**Status:** ACTIVE
+**Template Status:** ACTIVE
 
 ## Changelog
 | Version | Date | Change Content | Stakeholders | Rationale/Motivation |

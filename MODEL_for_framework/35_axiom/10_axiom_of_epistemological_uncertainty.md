@@ -1,6 +1,5 @@
 # Epistemological Uncertainty Axiom [AXIOM_FOR_MFW_EPISTEMOLOGICAL_UNCERTAINTY] **[PRIO: HIGH]**
 
-**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework components, communications, and decision-making processes
 
 *   **Axiom:** All human and AI statements possess intrinsic limitations and a degree of irreducible uncertainty, requiring systematic consideration of these imperfections in all communications, analyses, and decision-making processes.

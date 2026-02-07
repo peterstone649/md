@@ -1,4 +1,4 @@
-# Abbreviation Convention [CONV_FOR_MFW_ABBREVIATIONS] **[PRIO: HIGH]**
+# Convention for Abbreviations [CONV_FOR_MFW_ABBREVIATIONS] **[PRIO: HIGH]**
 
 **Scope:** All documents within the framework (conventions, templates, axioms, strategies, and tasks)
 

@@ -1,4 +1,4 @@
-# Todo Markers [CONV_FOR_MFW_TODO_MARKERS] **[PRIO: MEDIUM]**
+# Convention for Todo Markers [CONV_FOR_MFW_TODO_MARKERS] **[PRIO: MEDIUM]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All task files and project documentation

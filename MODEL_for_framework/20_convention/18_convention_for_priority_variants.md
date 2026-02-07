@@ -1,4 +1,4 @@
-# Priority Variants Convention [CONV_FOR_MFW_PRIORITY_VARIANTS] **[PRIO: HIGH]**
+# Convention for Priority Variants Convention [CONV_FOR_MFW_PRIORITY_VARIANTS] **[PRIO: HIGH]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All documents in MODEL_for_framework and derived frameworks

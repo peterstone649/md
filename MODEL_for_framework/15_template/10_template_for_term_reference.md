@@ -1,6 +1,8 @@
-# Term Reference [TPL_FOR_MFW_TERM_REF] **[PRIO: HIGH]**
+# Template for Term Reference [TPL_FOR_MFW_TERM_REF] **[PRIO: HIGH]**
 
-**We create term reference files that establish inheritance relationships between terminology across different frameworks, ensuring consistent term usage and clear cross-references.**
+## Template Statement  **[STATUS: ACTIVE]**
+
+We create term reference files that establish inheritance relationships between terminology across different frameworks, ensuring consistent term usage and clear cross-references.
 
 ## Scope
 
@@ -98,6 +100,10 @@ Based on the defect reference file (`_29/MODEL_for_framework/30_terminology/59_t
 *This template establishes the methodology for creating term reference files that extract and adapt terminology from source frameworks, ensuring clear inheritance relationships and consistent usage across framework layers.*
 
 **Status:** [Status]
+
+---
+
+**Template Status:** ACTIVE
 
 ## Changelog
 

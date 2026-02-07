@@ -1,9 +1,8 @@
-# IDE Editor Respect [RULE_FOR_MFW_IDE_EDITOR_RESPECT] **[PRIO: HIGH]**
-
+# Rule for IDE Editor Respect [RULE_FOR_MFW_IDE_EDITOR_RESPECT] **[PRIO: HIGH]**
 
 *Based on: [10_axiom_of_epistemological_uncertainty.md](../35_axiom/10_axiom_of_epistemological_uncertainty.md)*
 
-## Rule Statement
+## Rule Statement **[STATUS: ACTIVE]**
 
 **AI in an IDE must respect and preserve manual edits made directly in the editor. AI must not override user changes.**
 
@@ -43,14 +42,7 @@ Ensures user control over their work while maintaining collaborative AI assistan
 - **[01_principle_human_sovereignty.md](../MODEL_for_stakeholder_AI_collab/30_principle/01_principle_human_sovereignty.md)** - Human sovereignty in AI collaboration
 - **[02_principle_transparency.md](../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.md)** - Transparency in AI code modifications
 
-**Rule Steward:** Terminology Architects
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-15
-**Review Cycle:** Annual
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V1.0.1
-**Date:** 2026-01-23
+---
 
 ## Changelog
 

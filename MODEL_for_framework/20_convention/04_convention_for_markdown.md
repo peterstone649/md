@@ -1,4 +1,4 @@
-# Markdown Convention [CONVENTION_FOR_MFW_MARKDOWN] **[PRIO: HIGH]**
+# Convention for Markdown Convention [CONVENTION_FOR_MFW_MARKDOWN] **[PRIO: HIGH]**
 
 **Version: V1.0.0** **Status: APPROVED** **Date: 2026-02-01**
 

@@ -1,12 +1,8 @@
-# Wikimedia Links [RULE_FOR_MFW_WIKIMEDIA_LINKS] **[PRIO: MEDIUM]**
+# Rule for Wikimedia Links [RULE_FOR_MFW_WIKIMEDIA_LINKS] **[PRIO: MEDIUM]**
 
+## Rule Statement **[STATUS: ACTIVE]**
 
-**Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
-**Scope:** All framework documents containing Wikimedia references
-
-## Rule Statement
-
-**All references to Wikimedia Commons and Wikipedia resources MUST include proper attribution, licensing information, and direct links to source materials.**
+**In our framework all references to Wikimedia Commons and Wikipedia resources SHOULD include proper attribution, licensing information, and direct links to source materials.**
 
 ## Rule Requirements
 
@@ -46,14 +42,7 @@ Proper Wikimedia linking ensures compliance with Creative Commons licensing requ
 - **[02_principle_transparency.md](../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.md)** - Transparency requires proper attribution
 - **[03_principle_proportionality.md](../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md)** - Proportionality applies to attribution complexity
 
-**Rule Steward:** Terminology Architects
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-13
-**Review Cycle:** Annual
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V1.0.1
-**Date:** 2026-01-23
+---
 
 ## Changelog
 

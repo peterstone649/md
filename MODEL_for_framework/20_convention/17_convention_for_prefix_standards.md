@@ -1,4 +1,4 @@
-# Prefix Standards Convention [CONV_FOR_MFW_PREFIX_STANDARDS] **[PRIO: HIGH]**
+# Convention for Prefix Standards [CONV_FOR_MFW_PREFIX_STANDARDS] **[PRIO: HIGH]**
 
 **Version: V1.0.1** **Status: APPROVED** **Date: 2026-01-23**
 **Scope:** All framework ecosystem files and directories

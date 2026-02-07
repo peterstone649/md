@@ -1,7 +1,9 @@
-# Clickable Links [RULE_FOR_MFW_LINK_OT_CLICKABLE] **[PRIO: HIGH]**
+# Rule for Clickable Links [RULE_FOR_MFW_LINK_OT_CLICKABLE] **[PRIO: HIGH]**
 
 
-## Rule Statement
+*Based on: [10_axiom_of_epistemological_uncertainty.md](../35_axiom/10_axiom_of_epistemological_uncertainty.md)*
+
+## Rule Statement **[STATUS: ACTIVE]**
 
 All cross-references to framework documents SHOULD use clickable markdown links. Plain text file paths are NOT acceptable for internal navigation.
 
@@ -12,6 +14,15 @@ All cross-references to framework documents SHOULD use clickable markdown links.
 - **[R3]**: Relative paths are correct and functional
 - **[R4]**: No broken or dead links
 - **[R5]**: Links work in markdown viewers and IDEs
+
+## Example
+
+Here's an example of a proper clickable link:
+```
+[Epistemological Uncertainty Acknowledgment](01_rule_for_epistemological_uncertainty_acknowledgment.md)
+```
+
+This format provides clear navigation and maintains document integrity.
 
 ## Formal Statement
 ```
@@ -41,18 +52,12 @@ Clickable links enable direct navigation between related documents and reduce fr
 - **[02_principle_transparency.md](../MODEL_for_stakeholder_AI_collab/30_principle/02_principle_transparency.md)** - Transparency requires accessible navigation
 - **[03_principle_proportionality.md](../MODEL_for_stakeholder_AI_collab/30_principle/03_principle_proportionality.md)** - Proportionality applies to navigation complexity
 
-**Rule Steward:** Framework Standards Committee
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-09
-**Review Cycle:** Annual
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V1.0.0
-**Date:** 2026-01-09
+---
 
 ## Changelog
 
 | Version | Date | Change Content | Stakeholders | Rationale/Motivation |
 |---------|------|---------|-------------|----------------------|
+| V1.0.2 | 2026-02-07 | Added clickable link for "Based on" reference to 10_axiom_of_epistemological_uncertainty.md | Framework Admin | Ensure clickable link requirement compliance |
 | V1.0.1 | 2026-01-23 | Updated title formatting and placeholders per RULE_FOR_MFW_TITLE_FORMAT | Framework Admin | Ensure framework-wide consistency |
 | V1.0.0 | 2026-01-09 | Initial creation | AI Framework Admin | Establish rule |
