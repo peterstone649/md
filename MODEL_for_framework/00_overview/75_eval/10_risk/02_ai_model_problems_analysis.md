@@ -188,6 +188,7 @@ This document analyzes the critical problems and limitations of major AI models 
 - Model-specific documentation and research papers
 
 ## Changelog
+
 | Version | Date | Change Content | Stakeholders | Motivation |
 |---------|------|----------------|--------------|------------|
 | V1.0.0 | 2026-01-27 | Initial creation of AI model problems analysis | Framework AI Steward | Comprehensive analysis of AI model limitations for risk management |

@@ -1,0 +1,196 @@
+================================================================================
+TITLE TEMPLATE COMPLIANCE REPORT
+================================================================================
+
+SUMMARY:
+  Total files: 9
+  Compliant: 0
+  Errors: 0
+  Success rate: 0.0%
+
+------------------------------------------------------------
+FILE: E:\2025_11\md\out\txt\MODEL_for_framework\12_rule\01_rule_for_epistemological_uncertainty_acknowledgment.title.txt
+------------------------------------------------------------
+  STATUS: FAIL
+  Expected sections: 12
+  Extracted sections: 14
+  MISSING SECTIONS (2):
+    - Rule for <name_ot_hierarchical> [<name_ot_hierarchical_constant>] **[PRIO: <priority_ot_allowed>]**
+    - Rule Statement **[STATUS: <status_ot_allowed>]**
+  EXTRA SECTIONS (5):
+    - Generated on 2026-02-07 16:21:16
+    - Extracted Titles from 01_rule_for_epistemological_uncertainty_acknowledgment.md
+    - Rule Statement
+    - Source: 12_rule/01_rule_for_epistemological_uncertainty_acknowledgment.md
+    - Rule for Epistemological Uncertainty Acknowledgment [RULE_FOR_MFW_EPISTEMOLOGICAL_ACKNOWLEDGMENT] **[PRIO: HIGHEST]**
+  ORDER COMPLIANCE: PASS
+
+------------------------------------------------------------
+FILE: E:\2025_11\md\out\txt\MODEL_for_framework\12_rule\02_rule_for_ai_lock_protection.title.txt
+------------------------------------------------------------
+  STATUS: FAIL
+  Expected sections: 12
+  Extracted sections: 14
+  MISSING SECTIONS (2):
+    - Rule for <name_ot_hierarchical> [<name_ot_hierarchical_constant>] **[PRIO: <priority_ot_allowed>]**
+    - Rule Statement **[STATUS: <status_ot_allowed>]**
+  EXTRA SECTIONS (5):
+    - Rule Statement
+    - Source: 12_rule/02_rule_for_ai_lock_protection.md
+    - Extracted Titles from 02_rule_for_ai_lock_protection.md
+    - Rule for AI_LOCK Content Protection [RULE_FOR_MFW_AI_LOCK_PROTECTION] **[PRIO: HIGHEST]**
+    - Generated on 2026-02-07 16:21:20
+  ORDER COMPLIANCE: PASS
+
+------------------------------------------------------------
+FILE: E:\2025_11\md\out\txt\MODEL_for_framework\12_rule\03_rule_for_active_voice.title.txt
+------------------------------------------------------------
+  STATUS: FAIL
+  Expected sections: 12
+  Extracted sections: 14
+  MISSING SECTIONS (2):
+    - Rule for <name_ot_hierarchical> [<name_ot_hierarchical_constant>] **[PRIO: <priority_ot_allowed>]**
+    - Rule Statement **[STATUS: <status_ot_allowed>]**
+  EXTRA SECTIONS (5):
+    - Extracted Titles from 03_rule_for_active_voice.md
+    - Rule Statement
+    - Generated on 2026-02-07 16:21:25
+    - Rule for Active Voice [RULE_FOR_MFW_ACTIVE_VOICE] **[PRIO: HIGH]**
+    - Source: 12_rule/03_rule_for_active_voice.md
+  ORDER COMPLIANCE: PASS
+
+------------------------------------------------------------
+FILE: E:\2025_11\md\out\txt\MODEL_for_framework\12_rule\04_rule_for_version_changelog_update.title.txt
+------------------------------------------------------------
+  STATUS: FAIL
+  Expected sections: 12
+  Extracted sections: 16
+  MISSING SECTIONS (2):
+    - Rule for <name_ot_hierarchical> [<name_ot_hierarchical_constant>] **[PRIO: <priority_ot_allowed>]**
+    - Rule Statement **[STATUS: <status_ot_allowed>]**
+  EXTRA SECTIONS (7):
+    - Extracted Titles from 04_rule_for_version_changelog_update.md
+    - Related Conventions
+    - Rule Statement
+    - Example
+    - Version Changelog Update [RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE] **[PRIO: HIGH]**
+    - Source: E:\2025_11\md\MODEL_for_framework\12_rule\04_rule_for_version_changelog_update.md
+    - Generated on 2026-02-07 13:38:04
+  ORDER COMPLIANCE: PASS
+
+------------------------------------------------------------
+FILE: E:\2025_11\md\out\txt\MODEL_for_framework\12_rule\05_rule_for_IDE_editor_respect.title.txt
+------------------------------------------------------------
+  STATUS: FAIL
+  Expected sections: 12
+  Extracted sections: 14
+  MISSING SECTIONS (2):
+    - Rule for <name_ot_hierarchical> [<name_ot_hierarchical_constant>] **[PRIO: <priority_ot_allowed>]**
+    - Rule Statement **[STATUS: <status_ot_allowed>]**
+  EXTRA SECTIONS (5):
+    - Source: E:\2025_11\md\MODEL_for_framework\12_rule\05_rule_for_IDE_editor_respect.md
+    - IDE Editor Respect [RULE_FOR_MFW_IDE_EDITOR_RESPECT] **[PRIO: HIGH]**
+    - Rule Statement
+    - Generated on 2026-02-07 13:38:04
+    - Extracted Titles from 05_rule_for_IDE_editor_respect.md
+  ORDER COMPLIANCE: PASS
+
+------------------------------------------------------------
+FILE: E:\2025_11\md\out\txt\MODEL_for_framework\12_rule\06_rule_for_code_elements.title.txt
+------------------------------------------------------------
+  STATUS: FAIL
+  Expected sections: 12
+  Extracted sections: 14
+  MISSING SECTIONS (2):
+    - Rule for <name_ot_hierarchical> [<name_ot_hierarchical_constant>] **[PRIO: <priority_ot_allowed>]**
+    - Rule Statement **[STATUS: <status_ot_allowed>]**
+  EXTRA SECTIONS (5):
+    - Rule Statement
+    - Generated on 2026-02-07 13:38:04
+    - Code Elements Naming Conventions [RULE_FOR_MFW_CODE] **[PRIO: HIGH]**
+    - Extracted Titles from 06_rule_for_code_elements.md
+    - Source: E:\2025_11\md\MODEL_for_framework\12_rule\06_rule_for_code_elements.md
+  ORDER COMPLIANCE: PASS
+
+------------------------------------------------------------
+FILE: E:\2025_11\md\out\txt\MODEL_for_framework\12_rule\10_rule_for_link_OT_clickable.title.txt
+------------------------------------------------------------
+  STATUS: FAIL
+  Expected sections: 12
+  Extracted sections: 15
+  MISSING SECTIONS (2):
+    - Rule for <name_ot_hierarchical> [<name_ot_hierarchical_constant>] **[PRIO: <priority_ot_allowed>]**
+    - Rule Statement **[STATUS: <status_ot_allowed>]**
+  EXTRA SECTIONS (6):
+    - Rule Statement
+    - Example
+    - Generated on 2026-02-07 13:38:04
+    - Source: E:\2025_11\md\MODEL_for_framework\12_rule\10_rule_for_link_OT_clickable.md
+    - Extracted Titles from 10_rule_for_link_OT_clickable.md
+    - Clickable Links [RULE_FOR_MFW_LINK_OT_CLICKABLE] **[PRIO: HIGH]**
+  ORDER COMPLIANCE: PASS
+
+------------------------------------------------------------
+FILE: E:\2025_11\md\out\txt\MODEL_for_framework\12_rule\11_rule_for_link_OT_wikimedia.title.txt
+------------------------------------------------------------
+  STATUS: FAIL
+  Expected sections: 12
+  Extracted sections: 14
+  MISSING SECTIONS (2):
+    - Rule for <name_ot_hierarchical> [<name_ot_hierarchical_constant>] **[PRIO: <priority_ot_allowed>]**
+    - Rule Statement **[STATUS: <status_ot_allowed>]**
+  EXTRA SECTIONS (5):
+    - Rule Statement
+    - Source: E:\2025_11\md\MODEL_for_framework\12_rule\11_rule_for_link_OT_wikimedia.md
+    - Extracted Titles from 11_rule_for_link_OT_wikimedia.md
+    - Generated on 2026-02-07 13:38:04
+    - Wikimedia Links [RULE_FOR_MFW_WIKIMEDIA_LINKS] **[PRIO: MEDIUM]**
+  ORDER COMPLIANCE: PASS
+
+------------------------------------------------------------
+FILE: E:\2025_11\md\out\txt\MODEL_for_framework\12_rule\12_rule_for_title_line_formatting.title.txt
+------------------------------------------------------------
+  STATUS: FAIL
+  Expected sections: 12
+  Extracted sections: 31
+  MISSING SECTIONS (9):
+    - Related Principles
+    - Integration with Other Framework Components
+    - Formal Statement
+    - Rule for <name_ot_hierarchical> [<name_ot_hierarchical_constant>] **[PRIO: <priority_ot_allowed>]**
+    - Rule Statement **[STATUS: <status_ot_allowed>]**
+    - Uncertainty Declaration
+    - Rule Requirements
+    - Related Axioms
+    - Related Rules
+  EXTRA SECTIONS (29):
+    - Core Framework Abbreviations
+    - Priority Levels
+    - TYPE Component Examples
+    - Title Line Formatting [RULE_FOR_MFW_TITLE_FORMAT] **[PRIO: MEDIUM]**
+    - Title Construction Process
+    - [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
+    - Document Type Mapping
+    - Extracted Titles from 12_rule_for_title_line_formatting.md
+    - Invalid Priority Code
+    - Wrong Header Level
+    - Term [TERM_FOR_MFW_TERM] **[PRIO: HIGHEST]**
+    - Source: E:\2025_11\md\MODEL_for_framework\12_rule\12_rule_for_title_line_formatting.md
+    - Title Line Format Specification
+    - Incorrect Abbreviation Format
+    - Automated Processing
+    - Rule Statement
+    - References
+    - Automation Support
+    - Generated on 2026-02-07 13:38:04
+    - Example Regex Pattern for Validation
+    - Missing Priority
+    - Implementation Guidelines
+    - Validation Checklist
+    - Framework Abbreviations
+    - Complete Format Example
+    - Components Breakdown
+    - Enforcement
+    - Required Structure
+    - Common Issues and Corrections
+  ORDER COMPLIANCE: PASS

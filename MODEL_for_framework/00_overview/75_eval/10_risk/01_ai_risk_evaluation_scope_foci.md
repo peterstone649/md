@@ -1,7 +1,5 @@
 # Risk Evaluation Scope Foci [EVAL_FOR_MFW_RISK_SCOPE] **[PRIO: HIGH]**
 
-**Version: V1.0.0** **Status: DRAFT** **Date: 2026-01-26**
-
 ## Overview
 This document defines the critical scope foci for risk evaluation within the MODEL_for_framework. It addresses the inherent limitations and current problems associated with AI-generated content to ensure framework integrity and safety.
 
@@ -68,8 +66,10 @@ I have created a new document `MODEL_for_framework/45_eval/10_risk/01_risk_evalu
 
 These foci ensure that the framework's risk evaluation is grounded in the actual limitations of current AI technology as of 2025-2026.
 
+**Status:** ACTIVE
 
 ## Changelog
+
 | Version | Date | Change Content | Stakeholders | Motivation |
 |---------|------|---------|-------------|----------------------|
 | V1.0.0 | 2026-01-26 | Initial creation of risk scope foci | Framework AI Steward | Address AI output problems |
