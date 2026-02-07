@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_term_theorem</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        strong {
+            font-weight: bold;
+            color: #2c3e50; /* Dark Slate Blue for consistency */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>2. Theorem (DEF_FOR_THEOREM) <strong>[PRIO: HIGH]</strong></h1>
+<ul>
+<li><strong>Term:</strong> A mathematical statement that has been proven to be true using logical deduction from axioms and previously established theorems, representing a significant advancement in mathematical knowledge.</li>
+<li><strong>Description:</strong> Theorems are the cornerstone achievements of mathematical inquiry, representing propositions that have been rigorously demonstrated to be true through formal proof. They extend mathematical knowledge beyond basic axioms, providing deeper insights into mathematical structures and relationships.</li>
+<li><strong>Formal Definition:</strong> ∀T (Theorem(T) ↔ Proven(T) ∧ ∀A (Axiom(A) → DerivesFrom(T,A)) ∧ ∀T' (Theorem(T') ∧ T'≠T → DerivesFrom(T,T')))</li>
+<li><strong>Type Classification:</strong> Foundational/Mathematical (Proven Truth)</li>
+<li><strong>Priority Level:</strong> HIGH</li>
+<li><strong>Scientific Acceptance:</strong> High (Fundamental to all mathematical disciplines and logical reasoning).</li>
+<li><strong>Reference:</strong> <a href="https://en.wikipedia.org/wiki/Mathematical_proof">Mathematical Proof</a>, <a href="https://en.wikipedia.org/wiki/Theorem">Theorem</a></li>
+<li><strong>Key Theories:</strong> Proof Theory (Gentzen, Girard), Model Theory (Tarski), Reverse Mathematics (Friedman), Theorem Proving (Automated)</li>
+<li><strong>Context:</strong> Theorems serve as the building blocks of mathematical knowledge, each representing a verified truth that can be used as a foundation for further mathematical development. They transform conjectures into established facts through rigorous logical demonstration.</li>
+</ul>
+<h2>Theorem Characteristics</h2>
+<h3><strong>Fundamental Properties</strong></h3>
+<ul>
+<li><strong>Provability:</strong> Must be demonstrable through logical steps from accepted premises</li>
+<li><strong>Generality:</strong> Often applies to broad classes of mathematical objects</li>
+<li><strong>Significance:</strong> Represents important mathematical insight or relationship</li>
+<li><strong>Reliability:</strong> Once proven, becomes an immutable part of mathematical knowledge</li>
+</ul>
+<h3><strong>Theorem Types</strong></h3>
+<ul>
+<li><strong>Existence Theorems:</strong> Prove that certain mathematical objects exist</li>
+<li><strong>Uniqueness Theorems:</strong> Establish that objects are uniquely determined</li>
+<li><strong>Classification Theorems:</strong> Categorize objects into distinct classes</li>
+<li><strong>Equivalence Theorems:</strong> Show that different formulations are equivalent</li>
+</ul>
+<h3><strong>Theorem Structure</strong></h3>
+<ul>
+<li><strong>Hypothesis/Assumptions:</strong> Conditions under which the theorem holds</li>
+<li><strong>Conclusion:</strong> The main result being established</li>
+<li><strong>Proof:</strong> Logical demonstration of the result</li>
+<li><strong>Corollaries:</strong> Immediate consequences of the theorem</li>
+</ul>
+<h2>Proof Theory</h2>
+<h3><strong>Proof Methods</strong></h3>
+<ul>
+<li><strong>Direct Proof:</strong> Straightforward logical deduction from premises to conclusion</li>
+<li><strong>Proof by Contradiction:</strong> Assume negation and derive contradiction</li>
+<li><strong>Proof by Induction:</strong> Establish base case and inductive step</li>
+<li><strong>Proof by Construction:</strong> Build example satisfying required properties</li>
+</ul>
+<h3><strong>Proof Techniques</strong></h3>
+<ul>
+<li><strong>Mathematical Induction:</strong> Prove for base case and general case</li>
+<li><strong>Contrapositive Proof:</strong> Prove equivalent contrapositive statement</li>
+<li><strong>Case Analysis:</strong> Divide into exhaustive cases</li>
+<li><strong>Existence Proofs:</strong> Show object exists without explicit construction</li>
+</ul>
+<h2>Theorem Classification</h2>
+<h3><strong>By Importance</strong></h3>
+<ul>
+<li><strong>Fundamental Theorems:</strong> Foundational results (e.g., Pythagorean theorem)</li>
+<li><strong>Major Theorems:</strong> Significant advances in field (e.g., Fermat's Last Theorem)</li>
+<li><strong>Technical Theorems:</strong> Specialized results within subfields</li>
+<li><strong>Lemmas:</strong> Auxiliary results used in larger proofs</li>
+</ul>
+<h3><strong>By Scope</strong></h3>
+<ul>
+<li><strong>Local Theorems:</strong> Apply to specific mathematical structures</li>
+<li><strong>Global Theorems:</strong> Apply across broad mathematical domains</li>
+<li><strong>Universal Theorems:</strong> Apply to all mathematical systems</li>
+<li><strong>Conditional Theorems:</strong> Hold under specific assumptions</li>
+</ul>
+<h2>Integration with Mathematical Framework</h2>
+<h3><strong>Theorem Networks</strong></h3>
+<ul>
+<li><strong>Dependencies:</strong> Theorems that rely on other theorems</li>
+<li><strong>Independence:</strong> Theorems that don't require other unproven assumptions</li>
+<li><strong>Equivalences:</strong> Different theorems that prove the same result</li>
+<li><strong>Generalizations:</strong> Theorems that extend or generalize others</li>
+</ul>
+<h3><strong>Theorem Applications</strong></h3>
+<ul>
+<li><strong>Problem Solving:</strong> Using theorems to solve mathematical problems</li>
+<li><strong>Theory Building:</strong> Constructing mathematical theories from theorems</li>
+<li><strong>Verification:</strong> Using theorems to verify mathematical claims</li>
+<li><strong>Education:</strong> Teaching mathematical concepts through theorem understanding</li>
+</ul>
+<h2>Theorem Challenges</h2>
+<h3><strong>Proof Complexity</strong></h3>
+<ul>
+<li><strong>Length:</strong> Some proofs require thousands of steps</li>
+<li><strong>Depth:</strong> Nested logical arguments and case analyses</li>
+<li><strong>Abstraction:</strong> High levels of mathematical abstraction</li>
+<li><strong>Specialization:</strong> Domain-specific knowledge requirements</li>
+</ul>
+<h3><strong>Theorem Limitations</strong></h3>
+<ul>
+<li><strong>Context Dependence:</strong> Theorems hold within specific mathematical frameworks</li>
+<li><strong>Assumption Dependence:</strong> Validity depends on accepted axioms</li>
+<li><strong>Scope Limitations:</strong> May not apply outside stated conditions</li>
+<li><strong>Proof Gaps:</strong> Historical theorems with incomplete proofs</li>
+</ul>
+<h2>Famous Theorems and Their Impact</h2>
+<h3><strong>Foundational Theorems</strong></h3>
+<ul>
+<li><strong>Pythagorean Theorem:</strong> Relationship between sides of right triangle</li>
+<li><strong>Fundamental Theorem of Algebra:</strong> Every polynomial has a root</li>
+<li><strong>Fundamental Theorem of Arithmetic:</strong> Unique prime factorization</li>
+<li><strong>Fundamental Theorem of Calculus:</strong> Connection between differentiation and integration</li>
+</ul>
+<h3><strong>Modern Breakthroughs</strong></h3>
+<ul>
+<li><strong>Fermat's Last Theorem:</strong> Solved by Wiles (1994)</li>
+<li><strong>Four Color Theorem:</strong> Graph coloring result</li>
+<li><strong>Poincaré Conjecture:</strong> Solved by Perelman (2003)</li>
+<li><strong>Classification of Finite Simple Groups:</strong> Major group theory result</li>
+</ul>
+<h2>Mathematical Approach Integration</h2>
+<h3><strong>Theorem-Based Reasoning</strong></h3>
+<ul>
+<li><strong>Logical Structure:</strong> Building mathematical arguments on proven theorems</li>
+<li><strong>Knowledge Accumulation:</strong> Systematic growth of mathematical understanding</li>
+<li><strong>Verification Framework:</strong> Using theorems to validate mathematical claims</li>
+<li><strong>Problem Decomposition:</strong> Breaking complex problems using theorem-based approaches</li>
+</ul>
+<h3><strong>Theorem Applications in Problem Solving</strong></h3>
+<ul>
+<li><strong>Direct Application:</strong> Using theorems to solve specific problems</li>
+<li><strong>Analogy Reasoning:</strong> Applying theorem patterns to new situations</li>
+<li><strong>Generalization:</strong> Extending theorems to broader contexts</li>
+<li><strong>Specialization:</strong> Adapting theorems to specific cases</li>
+</ul>
+<h2>Conclusion</h2>
+<p>Theorems represent the verified achievements of mathematical inquiry, transforming conjectures into established truths through rigorous proof. They serve as the reliable foundation upon which further mathematical development is built, ensuring that mathematical knowledge accumulates systematically and reliably.</p>
+<p><strong>Theorems are the verified pillars of mathematical knowledge, each representing a conquest of human reason over mathematical complexity.</strong></p>
+        <footer>
+            <p><em>Generated on 2026-02-05 18:18:34 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

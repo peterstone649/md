@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template_for_term</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 2em;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50; /* Dark Slate Blue */
+        }
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1.1em; }
+        a {
+            color: #007bff; /* A nice, standard blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eef; /* Lighter than pre for inline */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #f8f9fa; /* A very light grey */
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #dee2e6; /* A light border */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc; /* Lighter grey border */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf4ff; /* Light Blue for table headers */
+            color: #2c3e50; /* Darker text for contrast */
+        }
+        strong {
+            font-weight: bold;
+            color: #2c3e50; /* Dark Slate Blue for consistency */
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>[NUMBER]. [TERM_NAME] (DEF_FOR_[TERM_ABBREVIATION]) <strong>[PRIO: [PRIORITY]]</strong></h1>
+<ul>
+<li><strong>[TERM_NAME]:</strong> [BRIEF_DEFINITION]</li>
+<li><strong>Description:</strong> [DETAILED_DESCRIPTION]</li>
+<li><strong>Formal Definition:</strong> [FORMAL_LOGICAL_DEFINITION]</li>
+<li><strong>Type Classification:</strong> [CLASSIFICATION_TYPE]</li>
+<li><strong>Priority Level:</strong> [PRIORITY_LEVEL]</li>
+<li><strong>Scientific Acceptance:</strong> [ACCEPTANCE_LEVEL] ([ACCEPTANCE_DESCRIPTION])</li>
+<li><strong>Reference:</strong> [PRIMARY_REFERENCES]</li>
+<li><strong>Key Theories:</strong> [RELEVANT_THEORIES]</li>
+<li><strong>Context:</strong> [CONTEXT_WITHIN_FRAMEWORK]</li>
+</ul>
+<p><strong>[Called:]</strong> "[ALTERNATIVE_NAME_1]" or "[ALTERNATIVE_NAME_2]"
+- [DESCRIPTIVE_BULLET_1]
+- [DESCRIPTIVE_BULLET_2]
+- [DESCRIPTIVE_BULLET_3]
+- [DESCRIPTIVE_BULLET_4]
+- [DESCRIPTIVE_BULLET_5]</p>
+<h2>File Naming Convention</h2>
+<p><strong>File Naming Standard:</strong> Follow the framework's file naming convention: <a href="../MODEL_for_framework/20_convention/10_convention_for_file_naming.html"><code>10_convention_for_file_naming.md</code></a></p>
+<p><strong>Standard Format:</strong> <code>[NUMBER]_[TYPE]_[DESCRIPTIVE_NAME].md</code></p>
+<p><strong>Examples:</strong>
+- <code>06_term_verification.md</code> - For term definitions
+- <code>01_axiom_of_transitivity.md</code> - For axiom definitions
+- <code>02_theorem_of_completeness.md</code> - For theorem definitions</p>
+<p><strong>Key Rules:</strong>
+- Use sequential numbering for ordering
+- Include type identifier (term, axiom, theorem, etc.)
+- Use descriptive, underscore-separated names
+- Maintain lowercase formatting</p>
+<h2>[SECTION_NAME_1]</h2>
+<h3><strong>[SUBSECTION_NAME_1]</strong></h3>
+<ul>
+<li><strong>[SUBITEM_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[SUBITEM_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[SUBITEM_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[SUBITEM_4]:</strong> [DESCRIPTION_4]</li>
+</ul>
+<h3><strong>[SUBSECTION_NAME_2]</strong></h3>
+<ul>
+<li><strong>[SUBITEM_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[SUBITEM_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[SUBITEM_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[SUBITEM_4]:</strong> [DESCRIPTION_4]</li>
+</ul>
+<h3><strong>[SUBSECTION_NAME_3]</strong></h3>
+<ul>
+<li><strong>[SUBITEM_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[SUBITEM_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[SUBITEM_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[SUBITEM_4]:</strong> [DESCRIPTION_4]</li>
+</ul>
+<h3><strong>[SUBSECTION_NAME_4]</strong></h3>
+<ul>
+<li><strong>[SUBITEM_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[SUBITEM_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[SUBITEM_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[SUBITEM_4]:</strong> [DESCRIPTION_4]</li>
+</ul>
+<h2>[SECTION_NAME_2]</h2>
+<h3><strong>[SUBSECTION_NAME_1]</strong></h3>
+<ul>
+<li><strong>[SUBITEM_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[SUBITEM_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[SUBITEM_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[SUBITEM_4]:</strong> [DESCRIPTION_4]</li>
+</ul>
+<h3><strong>[SUBSECTION_NAME_2]</strong></h3>
+<ul>
+<li><strong>[SUBITEM_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[SUBITEM_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[SUBITEM_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[SUBITEM_4]:</strong> [DESCRIPTION_4]</li>
+</ul>
+<h3><strong>[SUBSECTION_NAME_3]</strong></h3>
+<ul>
+<li><strong>[SUBITEM_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[SUBITEM_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[SUBITEM_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[SUBITEM_4]:</strong> [DESCRIPTION_4]</li>
+</ul>
+<h3><strong>[SUBSECTION_NAME_4]</strong></h3>
+<ul>
+<li><strong>[SUBITEM_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[SUBITEM_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[SUBITEM_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[SUBITEM_4]:</strong> [DESCRIPTION_4]</li>
+</ul>
+<h2>Integration with Framework Components</h2>
+<h3><strong>[COMPONENT_RELATIONSHIP_1]</strong></h3>
+<pre><code>[RELATIONSHIP_NAME] + [COMPONENT_NAME] = [RESULT]
+├── [RELATIONSHIP_NAME] provides → [PROVIDED_CAPABILITY]
+├── [COMPONENT_NAME] provides → [COMPONENT_CAPABILITY]
+├── Together enable → [COMBINED_OUTCOME]
+└── Result → [FINAL_RESULT]
+</code></pre>
+<h3><strong>[COMPONENT_RELATIONSHIP_2]</strong></h3>
+<pre><code>[RELATIONSHIP_NAME] + [COMPONENT_NAME] = [RESULT]
+├── [RELATIONSHIP_NAME] establishes → [ESTABLISHED_ELEMENT]
+├── [COMPONENT_NAME] provides → [COMPONENT_CAPABILITY]
+├── Together create → [CREATED_OUTCOME]
+└── Result → [FINAL_RESULT]
+</code></pre>
+<h3><strong>[COMPONENT_RELATIONSHIP_3]</strong></h3>
+<pre><code>[RELATIONSHIP_NAME] + [COMPONENT_NAME] = [RESULT]
+├── [RELATIONSHIP_NAME] enables → [ENABLED_CAPABILITY]
+├── [COMPONENT_NAME] provides → [COMPONENT_CAPABILITY]
+├── Together produce → [PRODUCED_OUTCOME]
+└── Result → [FINAL_RESULT]
+</code></pre>
+<h2>Practical Applications</h2>
+<h3><strong>[APPLICATION_DOMAIN_1]</strong></h3>
+<ul>
+<li><strong>[USE_CASE_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[USE_CASE_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[USE_CASE_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[USE_CASE_4]:</strong> [DESCRIPTION_4]</li>
+</ul>
+<h3><strong>[APPLICATION_DOMAIN_2]</strong></h3>
+<ul>
+<li><strong>[USE_CASE_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[USE_CASE_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[USE_CASE_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[USE_CASE_4]:</strong> [DESCRIPTION_4]</li>
+</ul>
+<h3><strong>[APPLICATION_DOMAIN_3]</strong></h3>
+<ul>
+<li><strong>[USE_CASE_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[USE_CASE_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[USE_CASE_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[USE_CASE_4]:</strong> [DESCRIPTION_4]</li>
+</ul>
+<h2>[DOMAIN_SPECIFIC_CHALLENGES] Challenges and Solutions</h2>
+<h3><strong>[CHALLENGE_1]</strong></h3>
+<ul>
+<li><strong>Challenge:</strong> [CHALLENGE_DESCRIPTION]</li>
+<li><strong>Solution:</strong> [SOLUTION_DESCRIPTION]</li>
+<li><strong>Implementation:</strong> [IMPLEMENTATION_DETAILS]</li>
+</ul>
+<h3><strong>[CHALLENGE_2]</strong></h3>
+<ul>
+<li><strong>Challenge:</strong> [CHALLENGE_DESCRIPTION]</li>
+<li><strong>Solution:</strong> [SOLUTION_DESCRIPTION]</li>
+<li><strong>Implementation:</strong> [IMPLEMENTATION_DETAILS]</li>
+</ul>
+<h3><strong>[CHALLENGE_3]</strong></h3>
+<ul>
+<li><strong>Challenge:</strong> [CHALLENGE_DESCRIPTION]</li>
+<li><strong>Solution:</strong> [SOLUTION_DESCRIPTION]</li>
+<li><strong>Implementation:</strong> [IMPLEMENTATION_DETAILS]</li>
+</ul>
+<h3><strong>[CHALLENGE_4]</strong></h3>
+<ul>
+<li><strong>Challenge:</strong> [CHALLENGE_DESCRIPTION]</li>
+<li><strong>Solution:</strong> [SOLUTION_DESCRIPTION]</li>
+<li><strong>Implementation:</strong> [IMPLEMENTATION_DETAILS]</li>
+</ul>
+<h2>Philosophical Integration</h2>
+<h3><strong>[PHILOSOPHICAL_CONCEPT_1]</strong></h3>
+<ul>
+<li><strong>[SUBCONCEPT_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[SUBCONCEPT_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[SUBCONCEPT_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[SUBCONCEPT_4]:</strong> [DESCRIPTION_4]</li>
+</ul>
+<h3><strong>[PHILOSOPHICAL_CONCEPT_2]</strong></h3>
+<ul>
+<li><strong>[SUBCONCEPT_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[SUBCONCEPT_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[SUBCONCEPT_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[SUBCONCEPT_4]:</strong> [DESCRIPTION_4]</li>
+</ul>
+<h2>Ecological Integration</h2>
+<h3><strong>[NATURAL_SYSTEMS]</strong></h3>
+<pre><code>[NATURAL_SYSTEM_TYPE] demonstrate [CONCEPT] patterns:
+├── [PATTERN_1] → [DESCRIPTION_1]
+├── [PATTERN_2] → [DESCRIPTION_2]
+├── [PATTERN_3] → [DESCRIPTION_3]
+├── [PATTERN_4] → [DESCRIPTION_4]
+├── [PATTERN_5] → [DESCRIPTION_5]
+</code></pre>
+<h3><strong>[BIOLOGICAL_EXAMPLES]</strong></h3>
+<ul>
+<li><strong>[EXAMPLE_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[EXAMPLE_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[EXAMPLE_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[EXAMPLE_4]:</strong> [DESCRIPTION_4]</li>
+<li><strong>[EXAMPLE_5]:</strong> [DESCRIPTION_5]</li>
+</ul>
+<h3><strong>[DESIGN_APPLICATIONS]</strong></h3>
+<ul>
+<li><strong>[APPLICATION_1]:</strong> [DESCRIPTION_1]</li>
+<li><strong>[APPLICATION_2]:</strong> [DESCRIPTION_2]</li>
+<li><strong>[APPLICATION_3]:</strong> [DESCRIPTION_3]</li>
+<li><strong>[APPLICATION_4]:</strong> [DESCRIPTION_4]</li>
+<li><strong>[APPLICATION_5]:</strong> [DESCRIPTION_5]</li>
+</ul>
+<h2>Conclusion</h2>
+<p>[CONCEPT_NAME] represents [SIGNIFICANCE_STATEMENT].</p>
+<p><strong>[KEY_INSIGHT_STATEMENT]</strong></p>
+<h2>Confidence Assessment</h2>
+<p><strong>Term Definition Confidence:</strong> [CONFIDENCE_SCORE] ([CONFIDENCE_LEVEL])
+- <strong>Rationale:</strong> [RATIONALE_DESCRIPTION]
+- <strong>Validation:</strong> [VALIDATION_DESCRIPTION]
+- <strong>Contextual Stability:</strong> [STABILITY_DESCRIPTION]
+- <strong>Practical Application:</strong> [APPLICATION_DESCRIPTION]</p>
+<h2>Related Terms</h2>
+<p><strong>Reference Terms:</strong>
+- <a href="[FILE_LINK_1]">[REFERENCE_TERM_1]</a> - [RELATIONSHIP_DESCRIPTION_1]
+- <a href="[FILE_LINK_2]">[REFERENCE_TERM_2]</a> - [RELATIONSHIP_DESCRIPTION_2]
+- <a href="[FILE_LINK_3]">[REFERENCE_TERM_3]</a> - [RELATIONSHIP_DESCRIPTION_3]</p>
+<p><strong>Prerequisite Terms:</strong>
+- <a href="[FILE_LINK_1]">[PREREQUISITE_TERM_1]</a> - [RELATIONSHIP_DESCRIPTION_1]
+- <a href="[FILE_LINK_2]">[PREREQUISITE_TERM_2]</a> - [RELATIONSHIP_DESCRIPTION_2]
+- <a href="[FILE_LINK_3]">[PREREQUISITE_TERM_3]</a> - [RELATIONSHIP_DESCRIPTION_3]</p>
+<p><strong>Related Terms:</strong>
+- <a href="[FILE_LINK_1]">[RELATED_TERM_1]</a> - [RELATIONSHIP_DESCRIPTION_1]
+- <a href="[FILE_LINK_2]">[RELATED_TERM_2]</a> - [RELATIONSHIP_DESCRIPTION_2]
+- <a href="[FILE_LINK_3]">[RELATED_TERM_3]</a> - [RELATIONSHIP_DESCRIPTION_3]</p>
+<p><strong>Dependent Terms:</strong>
+- <a href="[FILE_LINK_1]">[DEPENDENT_TERM_1]</a> - [RELATIONSHIP_DESCRIPTION_1]
+- <a href="[FILE_LINK_2]">[DEPENDENT_TERM_2]</a> - [RELATIONSHIP_DESCRIPTION_2]
+- <a href="[FILE_LINK_3]">[DEPENDENT_TERM_3]</a> - [RELATIONSHIP_DESCRIPTION_3]</p>
+<p><strong>See Also:</strong>
+- <a href="[FILE_LINK_1]">[SEE_ALSO_TERM_1]</a> - [RELATIONSHIP_DESCRIPTION_1]
+- <a href="[FILE_LINK_2]">[SEE_ALSO_TERM_2]</a> - [RELATIONSHIP_DESCRIPTION_2]
+- <a href="[FILE_LINK_3]">[SEE_ALSO_TERM_3]</a> - [RELATIONSHIP_DESCRIPTION_3]</p>
+        <footer>
+            <p><em>Generated on 2026-02-05 18:18:34 by MDToHTMLConverter v1.6.1</em></p>
+        </footer>
+</body>
+</html>

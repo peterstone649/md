@@ -15,6 +15,7 @@ This section defines the primary stakeholders within the framework ecosystem. Th
 - **[20_developer/](20_developer/)** - Framework builders and maintainers
 - **[30_integrator_for_AI/](30_integrator_for_AI/)** - AI integration specialists
 - **[40_implementer_for_domain/](40_implementer_for_domain/)** - Domain application experts
+- **[45_framework_steward/](45_framework_steward/)** - Framework integrity and long-term health
 - **[50_reviewer/](50_reviewer/)** - Quality and ethical oversight
 
 ### 📁 Directory Structure
@@ -28,6 +29,7 @@ The stakeholder roles are organized into the following directories:
 ├── 20_developer/               # Builders of the framework
 ├── 30_integrator_for_AI/       # Specialists for AI integration
 ├── 40_implementer_for_domain/  # Specialists for domain application
+├── 45_framework_steward/       # Overseers of the framework's integrity
 └── 50_reviewer/                # Quality and ethical oversight
 ```
 
@@ -78,7 +80,16 @@ The stakeholder roles are organized into the following directories:
     -   Ensuring the framework's application is compliant with industry regulations.
     -   Providing feedback on the framework's utility from a practical standpoint.
 
-### 5. Reviewer
+### 5. Framework Steward
+
+-   **Directory:** `45_framework_steward/`
+-   **Description:** The Framework Steward is a role responsible for overseeing the integrity and long-term health of the framework. This stakeholder was responsible for the latest changelog additions in version 1.9.0.
+-   **Core Activities:**
+    -   Monitoring the framework's evolution.
+    -   Ensuring the framework's principles are being upheld.
+    -   Guiding the framework's long-term strategy.
+
+### 6. Reviewer
 
 -   **Directory:** `50_reviewer/`
 -   **Description:** The Reviewer is responsible for quality and ethical oversight. They assess framework components and user-generated content to ensure they meet the required standards for accuracy, clarity, consistency, and ethical soundness. Reviewers act as a critical check to maintain the integrity and trustworthiness of the framework ecosystem.
@@ -98,7 +109,8 @@ The stakeholders collaborate in a continuous cycle:
 2.  **Users** consume the framework to do their work.
 3.  **AI Integrators** provide the tools for effective human-AI collaboration within the framework.
 4.  **Domain Implementers** adapt the framework for specific needs, creating new use cases.
-5.  **Reviewers** ensure that all outputs meet the required quality and ethical standards, providing feedback to all other stakeholders.
+5.  **Framework Stewards** guide the long-term strategy and integrity of the framework.
+6.  **Reviewers** ensure that all outputs meet the required quality and ethical standards, providing feedback to all other stakeholders.
 
 This collaborative process ensures the framework remains robust, relevant, and trustworthy.
 

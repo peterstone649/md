@@ -1,7 +1,8 @@
 # 🌟 MODEL_for_framework - Nova Edition 🌟
 
-**A Cosmic Methodological Framework for Transformative Development and Visionary Documentation**
+**A Methodological Framework for Transformative Development and Visionary Documentation**
 
+> Disclaimer: this is what AI says ...
 > *"Not just a framework - a universe of innovation. Nova-infused methodology for quantum leaps in systematic development."*
 
 ## Overview
@@ -16,6 +17,7 @@ For detailed information, see the [Detailed README](README_OT_detailed.md).
 - Convention standards for versioning, naming, and writing
 - Terminology framework with precise definitions
 - Built-in validation and quality assurance
+- Plugin integration 
 
 ## Quick Start
 

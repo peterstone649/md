@@ -24,7 +24,8 @@ This folder contains the following files and subdirectories:
 - [30_integrator_for_AI/](30_integrator_for_AI/)
 - [35_maintainer/](35_maintainer/)
 - [40_implementer_for_domain/](40_implementer_for_domain/)
+- [45_framework_steward/](45_framework_steward/)
 - [50_reviewer/](50_reviewer/)
 
 ---
-*Generated on 2026-02-01 11:11:43 by IndexGenerator v1.2.0*
+*Generated on 2026-02-05 20:15:00 by IndexGenerator v1.2.0*

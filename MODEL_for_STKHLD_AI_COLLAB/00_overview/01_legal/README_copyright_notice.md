@@ -1,10 +1,12 @@
-[https://model-stakeholder-ai-collab.com](https://model-stakeholder-ai-collab.com)[joinup.ec.europa.eu/collection/eupl/eupl-licence](https://joinup.ec.europa.eu/collection/eupl/eupl-licence)[joinup.ec.europa.eu/collection/eupl/eupl-text-11-12](https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12)# 📄 01. EUPL v1.2 License **[CN_EUPL_MODEL_SHCOL_AI_COLLAB]**
+License **[CN_EUPL_MODEL_STKHLD_AI_COLLAB]**
+
+[joinup.ec.europa.eu/collection/eupl/eupl-licence](https://joinup.ec.europa.eu/collection/eupl/eupl-licence)[joinup.ec.europa.eu/collection/eupl/eupl-text-11-12](https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12)# 📄 01. EUPL v1.2 
 
 ---
 
 ## 🏛️ Copyright Notice
 
-**© 2026 MODEL_for_stakeholder_AI_collab Team. Licensed under the EUPL v1.2.**
+**© 2026 MODEL_for_stakeholder_AI_collaboration Team. Licensed under the EUPL v1.2.**
 
 ---
 

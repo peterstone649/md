@@ -54,7 +54,7 @@ If you get stuck, our support team is just a message away. We typically respond 
 ```markdown
 # Erste Schritte mit MFW
 
-Willkommen beim Modell für Frameworks! Wir freuen uns über Ihr Interesse an unserem Framework.
+Willkommen beim Modell für Frameworks! Wir freuen uns über Ihr/Dein Interesse an unserem Framework.
 
 ## Schnelleinrichtung
 
