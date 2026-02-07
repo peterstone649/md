@@ -1,7 +1,5 @@
 # Template for README [TPL_FOR_MFW_README] **[PRIO: HIGH]**
 
-**Version: V[VERSION]** **Date: YYYY-MM-DD**
-
 **Framework Integration:** [FRAMEWORK_INTEGRATION_STATEMENT]
 
 ## Overview
@@ -226,14 +224,7 @@ _[FRAMEWORK_LEVEL]/[FIELD_NAME]/
 - [ ] Contact information is current
 - [ ] Inspirational quotes are relevant to field focus
 
-**Rule Steward:** [FRAMEWORK_STEWARD]
-**Approval Status:** [STATUS]
-**Effective Date:** YYYY-MM-DD
-**Review Cycle:** [CYCLE]
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V0.1.0
-**Date:** 2026-01-07
+**Status:** [STATUS]
 
 ## Changelog
 

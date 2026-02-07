@@ -1,7 +1,5 @@
 # Template for Axiom [TPL_FOR_MFW_AXIOM] **[PRIO: HIGH]**
 
-**Version: V[VERSION]** **Date: YYYY-MM-DD**
-
 *   **Axiom:** [AXIOM_STATEMENT]
 *   **Description:** [AXIOM_DESCRIPTION]
 *   **Formal Statement:** [FORMAL_LOGICAL_STATEMENT]
@@ -336,14 +334,7 @@ The Axiom of [AXIOM_NAME] establishes that [AXIOM_CORE_PRINCIPLE]. This axiom es
 
 **Reference:** [AXIOM_REFERENCE]
 
-**Rule Steward:** [STEWARD]
-**Approval Status:** [STATUS]
-**Effective Date:** YYYY-MM-DD
-**Review Cycle:** [CYCLE]
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V0.1.0
-**Date:** 2026-01-23
+**Status:** [STATUS]
 
 ## Changelog
 

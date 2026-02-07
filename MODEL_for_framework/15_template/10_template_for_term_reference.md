@@ -11,8 +11,6 @@
 ### Core Reference Structure:
 1. **Title with Reference**: `# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**`
 
-**Version: <Version>** **Date: YYYY-MM-DD**
-
 2. **Primary Source Declaration**: `**Primary Definition Source:** [SOURCE_PATH]`
 3. **Context-Specific Application**: Framework-specific usage and adaptations
 4. **Reference Relationship**: How the term inherits and extends from source
@@ -99,9 +97,7 @@ Based on the defect reference file (`_29/MODEL_for_framework/30_terminology/59_t
 
 *This template establishes the methodology for creating term reference files that extract and adapt terminology from source frameworks, ensuring clear inheritance relationships and consistent usage across framework layers.*
 
-**Framework:** MODEL_for_framework
-**Framework Version:** V0.1.0
-**Date:** 2026-01-23
+**Status:** [Status]
 
 ## Changelog
 

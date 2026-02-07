@@ -1,7 +1,5 @@
 # Template for Template Minimal [TPL_FOR_MFW_TPL_OT_MIN] **[PRIO: HIGH]**
 
-**Version: V1.0.2** **Status: ACTIVE** **Date: 2026-01-23**
-
 **Template Scope:** MODEL_for_framework_ecosystem
 **We create templates that standardize documentation and ensure consistency across all framework components.**
 
@@ -61,14 +59,7 @@
 
 *This meta-template establishes the methodology for creating all templates in the AI safety framework, ensuring consistency, quality, and maintainability across all documentation components.*
 
-**Rule Steward:** Framework Admin
-**Approval Status:** Framework Approved
-**Effective Date:** 2026-01-09
-**Review Cycle:** Annual
-
-**Framework:** MODEL_for_framework
-**Framework Version:** V1.0.2
-**Date:** 2026-01-23
+**Status:** ACTIVE
 
 ## Changelog
 | Version | Date | Change Content | Stakeholders | Rationale/Motivation |
