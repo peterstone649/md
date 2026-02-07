@@ -116,26 +116,38 @@ The portable magnetic resonance imaging (MRI) market represents a rapidly growin
    - Product: Swoop® Portable MRI System
    - Field Strength: 0.064T
    - Key Advantage: Point-of-care imaging, AI-powered image processing
+   - **Recent Development**: Optive AI software received FDA clearance (May 2025)
 
 2. **Siemens Healthineers**
    - Product: Magnetom Free.Max
    - Field Strength: 0.55T
    - Key Advantage: High-field portable imaging, established brand
+   - **Recent Development**: Launched MAGNETOM Flow platform with helium-independent cooling
 
 3. **GE Healthcare**
    - Product: Optima MR360
    - Field Strength: 0.55T
    - Key Advantage: Integration with existing healthcare systems
+   - **Recent Partnership**: Collaborating with Amazon Web Services on generative-AI radiology algorithms
 
 4. **Philips Healthcare**
    - Product: Ingenia Ambition X
    - Field Strength: 1.5T (compact design)
    - Key Advantage: High-field imaging in compact form
+   - **Recent Development**: Piloted UK's first helium-free MRI truck
 
 ### Emerging Players
 - **Aspect Imaging**: Specialized in preclinical and clinical portable MRI
 - **Fonar Corporation**: Pioneer in MRI technology with portable solutions
 - **Esaote SpA**: European manufacturer with portable MRI offerings
+- **Chipiron**: Developing SQUID-based ultra-low-field approaches targeting sub-USD 200,000 price points
+- **Voxelgrids Innovations Pvt. Ltd.**: Emerging player in portable MRI market
+- **PrizMed Imaging Solution**: New entrant in portable MRI space
+
+### Strategic Partnerships
+- **NVIDIA Partnerships**: GPU integration with Siemens and Hyperfine imaging pipelines
+- **Military/Disaster-Relief**: Agencies testing ruggedized designs for field deployment
+- **Venture Funding**: Significant investments in Hyperfine and Chipiron indicating strong investor confidence
 
 ## Market Challenges
 
