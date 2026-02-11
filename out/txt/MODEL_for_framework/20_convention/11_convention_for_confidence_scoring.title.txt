@@ -1,0 +1,14 @@
+# Extracted Titles from 11_convention_for_confidence_scoring.md
+# Generated on 2026-02-07 19:36:55 by extract_titles.py v1.0.0
+# Source: e:\2025_11\md\MODEL_for_framework\20_convention\11_convention_for_confidence_scoring.md
+
+# Convention for Confidence Scoring Convention [CONV_FOR_MFW_CONFIDENCE_SCORING] **[PRIO: HIGH]**
+## Overview
+## Confidence Score Scale
+## Confidence Assessment Criteria
+### For Axioms:
+### For Terms:
+### For Strategies:
+## Confidence Assessment Format
+## Differentiation Guidelines
+## Changelog

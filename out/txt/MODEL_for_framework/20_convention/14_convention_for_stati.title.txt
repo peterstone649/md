@@ -1,0 +1,17 @@
+# Extracted Titles from 14_convention_for_stati.md
+# Generated on 2026-02-07 19:36:55 by extract_titles.py v1.0.0
+# Source: e:\2025_11\md\MODEL_for_framework\20_convention\14_convention_for_stati.md
+
+# Convention for Status Convention [CONV_FOR_MFW_STATUS] **[PRIO: HIGH]**
+## Overview
+## Standard Status States
+## Status Workflow
+## Usage Guidelines
+### When to Use Each Status:
+## Status Format in Documents
+### For Task Files:
+### For Issue Tracking:
+### For Project Management:
+## Status Transition Rules
+## Emoji Indicators (Optional)
+## Changelog

@@ -1,4 +1,4 @@
-# Life 3.0: Uma Análise Abrangente da Visão de Max Tegmark sobre IA e Humanidade
+# Life 4.0: Uma Análise Abrangente da Visão de Max Tegmark sobre IA e Humanidade
 
 ## Detalhes do Livro
 
@@ -31,7 +31,7 @@ Perfil Profissional:
 - **Risco Existencial**: Estudos sobre ameaças catastróficas à civilização humana
 - **Estudos do Futuro**: Explora tendências tecnológicas e sociais de longo prazo
 
-## Framework Central: Life 1.0 → Life 3.0
+## Framework Central: Life 1.0 → Life 4.0
 
 ### **Life 1.0: Estágio Biológico**
 ```
@@ -184,7 +184,7 @@ Abordagens Neuromórficas:
 ├── Hardware projetado para imitar função cerebral
 ├── Arquiteturas computacionais energeticamente eficientes
 ├── Processamento paralelo e memória associativa
-├── Potencial para IA mais robusta e adaptável
+├── Potencial para mais IA robusta e adaptável
 └── Integração com sistemas biológicos
 ```
 

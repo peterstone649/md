@@ -36,6 +36,7 @@ CHANGELOG
 
 | Version | Date       | Change Content | Stakeholders | Motivation |
 |---------|------------|----------------|--------------|------------|
+| V1.2.2  | 2026-02-11 | Added single-file directory clickable links: Enhanced index generation to create direct clickable links when subdirectories contain only one file, improving navigation efficiency | Framework Steward | Improve user experience by providing direct access to single files in subdirectories |
 | V1.2.1  | 2026-02-01 | Applied version changelog update rule: Fixed parent folder link to use relative path instead of absolute path, ensuring proper navigation functionality | Framework Steward | Ensure changelog completeness and framework rule compliance for relative path navigation |
 | V1.2.0  | 2026-01-31 | Updated to use ManagerForDirOTBase for consistent output path creation | Framework Steward | Align with framework conventions and ensure consistent output directory structure |
 | V1.1.0  | 2026-01-31 | Added comprehensive changelog following framework conventions | Framework Steward | Align with framework documentation standards and provide clear version history |
@@ -136,11 +137,21 @@ This folder contains the following files and subdirectories:
         else:
             content += "No files in this directory.\n"
 
-        # Add subfolders list
+        # Add subfolders list with special handling for single-file directories
         content += "\n## Subdirectories\n\n"
         if subfolders:
             for subfolder in subfolders:
-                content += f"- [{subfolder.name}/]({subfolder.name}/)\n"
+                # Check if subfolder contains only one file
+                subfolder_files = list(subfolder.iterdir())
+                single_file = None
+                if len(subfolder_files) == 1 and subfolder_files[0].is_file():
+                    single_file = subfolder_files[0]
+                
+                if single_file:
+                    # Create clickable link directly to the single file
+                    content += f"- [{subfolder.name}/]({subfolder.name}/) → [{single_file.name}]({subfolder.name}/{single_file.name})\n"
+                else:
+                    content += f"- [{subfolder.name}/]({subfolder.name}/)\n"
         else:
             content += "No subdirectories.\n"
 
@@ -251,10 +262,20 @@ This folder contains the following files and subdirectories:
             content += "        <li>No files in this directory.</li>\n"
 
         content += "    </ul>\n\n    <h2>Subdirectories</h2>\n    <ul>\n"
-        # Add subfolders list
+        # Add subfolders list with special handling for single-file directories
         if subfolders:
             for subfolder in subfolders:
-                content += f"        <li><a href=\"{subfolder.name}/\">{subfolder.name}/</a></li>\n"
+                # Check if subfolder contains only one file
+                subfolder_files = list(subfolder.iterdir())
+                single_file = None
+                if len(subfolder_files) == 1 and subfolder_files[0].is_file():
+                    single_file = subfolder_files[0]
+                
+                if single_file:
+                    # Create clickable link directly to the single file
+                    content += f"        <li><a href=\"{subfolder.name}/\">{subfolder.name}/</a> → <a href=\"{subfolder.name}/{single_file.name}\">{single_file.name}</a></li>\n"
+                else:
+                    content += f"        <li><a href=\"{subfolder.name}/\">{subfolder.name}/</a></li>\n"
         else:
             content += "        <li>No subdirectories.</li>\n"
 

@@ -1,4 +1,4 @@
-# Quality Tracking Dashboard **[QUALITY_DASHBOARD]**
+# Quality Tracking via Dashboard **[QUALITY_DASHBOARD]**
 **Version: V0.1.0** **Date: 2026-01-08**
 
 **Framework Integration:** Quality tracking dashboard provides real-time monitoring and reporting of writing quality improvements across MODEL_for_framework documentation.

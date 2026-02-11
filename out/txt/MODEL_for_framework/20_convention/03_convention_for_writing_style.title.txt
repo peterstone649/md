@@ -1,0 +1,54 @@
+# Extracted Titles from 03_convention_for_writing_style.md
+# Generated on 2026-02-07 19:36:55 by extract_titles.py v1.0.0
+# Source: e:\2025_11\md\MODEL_for_framework\20_convention\03_convention_for_writing_style.md
+
+# Convention for Writing Style Conventions [CONV_FOR_MFW_WRITING_STYLE] **[PRIO: HIGH]**
+## Overview
+### **Core Purpose**
+### **Convention Characteristics**
+## Core Writing Principles
+### **Principle 1: Clarity Through Action**
+#### **Character-Action-Subject Strategy**
+#### **Active Voice Preference**
+### **Principle 2: Concision and Economy**
+#### **Omit Needless Words**
+#### **Nominalization Elimination**
+### **Principle 3: Coherence and Flow**
+#### **Old-to-New Information Flow**
+#### **Transitional Elements**
+### **Principle 4: Precision and Propriety**
+#### **Definite, Specific, Concrete Language**
+#### **Proper Case and Agreement**
+## Framework-Specific Writing Standards
+### **Philosophical Writing Conventions**
+#### **Theorem Presentations**
+#### **Axiom Descriptions**
+#### **Conceptual Definitions**
+### **Technical Documentation Standards**
+#### **Process Descriptions**
+#### **System Architecture**
+### **Quality Assurance Guidelines**
+#### **Clarity Checklist**
+#### **Coherence Validation**
+#### **Professional Standards**
+## Implementation Guidelines
+### **Application Phases**
+#### **Phase 1: Foundation (Immediate)**
+#### **Phase 2: Integration (Week 1-2)**
+#### **Phase 3: Mastery (Month 1-2)**
+### **Tools and Resources**
+#### **Writing Templates**
+#### **Quality Assurance**
+### **Training and Development**
+#### **Contributor Training**
+#### **Continuous Improvement**
+## Validation and Quality Assurance
+### **Writing Quality Metrics**
+### **Review Process**
+### **Continuous Monitoring**
+## Integration with Framework Components
+### **Cross-Reference Integration**
+### **Field-Specific Applications**
+## Conclusion
+## Key Principles Summary
+## Changelog

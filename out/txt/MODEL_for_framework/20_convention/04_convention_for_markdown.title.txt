@@ -1,0 +1,8 @@
+# Extracted Titles from 04_convention_for_markdown.md
+# Generated on 2026-02-07 19:36:55 by extract_titles.py v1.0.0
+# Source: e:\2025_11\md\MODEL_for_framework\20_convention\04_convention_for_markdown.md
+
+# Convention for Markdown Convention [CONVENTION_FOR_MFW_MARKDOWN] **[PRIO: HIGH]**
+## Quick Access
+## Action Required
+# New reference (current)

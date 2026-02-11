@@ -1,0 +1,28 @@
+# Extracted Titles from 15_convention_for_abbreviations.md
+# Generated on 2026-02-07 19:36:55 by extract_titles.py v1.0.0
+# Source: e:\2025_11\md\MODEL_for_framework\20_convention\15_convention_for_abbreviations.md
+
+# Convention for Abbreviations [CONV_FOR_MFW_ABBREVIATIONS] **[PRIO: HIGH]**
+## Rationale
+## 1. Scope and Applicability
+### 1.1 When to Apply
+### 1.2 Target Audience
+## 2. Core Definitions
+## 3. Version Requirements
+## 4. Rules and Guidelines
+### 4.1 Prefix-Based Abbreviations
+### 4.2 Status Abbreviations
+### 4.3 Document Type Abbreviations
+### 4.4 Field/Category Abbreviations
+### 4.5 Naming Convention Constants
+### 4.6 Validation Abbreviations
+## 5. Naming Conventions
+## 6. Status Workflow
+## 7. Examples
+### 7.1 Correct Usage
+### 7.2 Incorrect Usage
+## 8. Related Conventions
+## 9. Implementation
+### 9.1 Migration Path
+### 9.2 Validation Checklist
+## Changelog

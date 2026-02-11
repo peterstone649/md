@@ -1,0 +1,40 @@
+# Extracted Titles from 01_convention_for_version.md
+# Generated on 2026-02-07 19:36:55 by extract_titles.py v1.0.0
+# Source: e:\2025_11\md\MODEL_for_framework\20_convention\01_convention_for_version.md
+
+# Convention for Version [CONV_FOR_MFW_VERSION] **[PRIO: HIGH]**
+## Convention statement
+## Derivation Source
+## Core Inheritance
+## 1. Scope and Applicability
+### 1.1 When to Apply
+### 1.2 Target Audience
+## 2. Core Definitions
+## 3. Version Requirements
+### 3.1 Version Number
+### 3.2 Semantic Versioning Guidelines
+### 3.3 Version Number Progression
+### 3.4 Version Format Variations
+## 4. Version Documentation
+### 4.1 Changelog Requirements
+### 4.2 Changelog Entry Guidelines
+### 4.3 Breaking Changes Documentation
+### 4.4 Version Deprecation
+## 5. Naming Conventions
+## 6. Rules and Guidelines
+### 6.1 Version Number Rules
+### 6.2 Documentation Guidelines
+### 6.3 Status Transition Guidelines
+## 7. Status and States
+## 8. Examples
+### 8.1 Changelog Entry Examples
+### 8.2 Version Number Progression
+### 8.3 Breaking Change Documentation
+## Breaking Changes in V2.0.0
+### Change: Renamed "FIELDC" to "FIELD_CORE"
+## 9. Related Conventions and Documents
+## 10. Implementation Notes
+### 9.1 Migration Path
+### 9.2 Tooling Support
+### 9.3 Validation Checklist
+## Changelog

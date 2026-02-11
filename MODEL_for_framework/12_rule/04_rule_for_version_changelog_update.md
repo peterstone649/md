@@ -9,16 +9,15 @@ All framework documents MUST maintain an accurate and complete version changelog
 ## Rule Requirements
 
 - **[R1]**: Changelog section exists in document with all 5 required columns
-- **[R2]**: Entries in reverse chronological order (newest at top)
+- **[R2]**: Entries and versions in reverse chronological order (newest at top)
 - **[R3]**: Date format is ISO 8601 (YYYY-MM-DD)
 - **[R4]**: Version format is V[major].[minor].[patch]
 - **[R5]**: No duplicate version entries permitted
 - **[R6]**: Motivation explains why change was made
 - **[R7]**: Section must be titled "Changelog" (not "Version History" or other variations)
 - **[R8]**: Changelog section must be positioned at the end of the document
-- **[R9]**: Ordering: highest version comes first and sequence is kept
-- **[R10]**: For code files, changelog MUST be in comments (not executable code)
-- **[R11]**: Code file changelog format: `## Changelog` followed by markdown table in comments
+- **[R9]**: For code files, changelog MUST be in comments (not executable code)
+- **[R10]**: Code file changelog format: Do with multiline comment.  `## Changelog` followed by markdown table . 
 
 ## Example
 

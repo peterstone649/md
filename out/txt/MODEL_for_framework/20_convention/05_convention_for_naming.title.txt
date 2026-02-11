@@ -1,0 +1,9 @@
+# Extracted Titles from 05_convention_for_naming.md
+# Generated on 2026-02-07 19:36:55 by extract_titles.py v1.0.0
+# Source: e:\2025_11\md\MODEL_for_framework\20_convention\05_convention_for_naming.md
+
+# Convention for Naming [CONV_FOR_MFW_NAMING] **[PRIO: HIGH]**
+## Convention statement  **[STATUS: ACTIVE]**
+### **Components**
+### **Examples**
+## Changelog

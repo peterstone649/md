@@ -1,0 +1,22 @@
+# Extracted Titles from 20_convention_for_uncertainty_communication.md
+# Generated on 2026-02-07 19:36:55 by extract_titles.py v1.0.0
+# Source: e:\2025_11\md\MODEL_for_framework\20_convention\20_convention_for_uncertainty_communication.md
+
+# Convention for Uncertainty Communication [CONV_FOR_MFW_UNCERTAINTY_COMMUNICATION] **[PRIO: HIGH]**
+## Convention Statement
+## Uncertainty Communication Format
+### Standard Declaration Template
+### Example Usage
+## Uncertainty Declaration Requirements
+### For Human Stakeholders
+### For AI Systems
+## Verification Protocol
+### Before Finalizing Any Output
+### Confidence Threshold Matrix
+## Compliance Checklist
+## Consequences of Non-Compliance
+## Integration with Framework Components
+### Related Rules
+### Related Axioms
+### Related Principles (MODEL_for_stakeholder_AI_collab)
+## Changelog

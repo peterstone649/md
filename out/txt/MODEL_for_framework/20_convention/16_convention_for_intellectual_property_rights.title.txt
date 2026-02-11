@@ -1,0 +1,33 @@
+# Extracted Titles from 16_convention_for_intellectual_property_rights.md
+# Generated on 2026-02-07 19:36:55 by extract_titles.py v1.0.0
+# Source: e:\2025_11\md\MODEL_for_framework\20_convention\16_convention_for_intellectual_property_rights.md
+
+# Convention for Intellectual Property Rights [CONV_FOR_MFW_IPR] **[PRIO: HIGH]**
+## Derivation Source
+## Core Inheritance
+## Rationale
+## General Reference
+## Abstract
+## 1. Scope and Applicability
+### 1.1 When to Apply
+### 1.2 Target Audience
+## 2. Core Definitions
+## 3. Intellectual Property Rights
+### 3.1 Copyright Ownership
+### 3.2 License Framework
+### 3.3 Attribution Requirements
+## 4. Rules and Guidelines
+### 4.1 Copyright Protection Rules
+### 4.2 Licensing Guidelines
+### 4.3 Attribution Guidelines
+## 5. Naming Conventions
+## 6. Examples
+### 6.1 Correct Attribution
+### 6.2 License Declaration
+### 6.3 Derivative Work Attribution
+## 7. Related Conventions and Documents
+## 8. Implementation Notes
+### 8.1 Migration Path
+### 8.2 Tooling Support
+### 8.3 Validation Checklist
+## Changelog

@@ -75,7 +75,7 @@ see latest improvements ...
 ## Content Directories
 
 - **PUB/**: Published content including books, research, and documentation
-  - **PUB/BOOK/**: English AI research books and writing guides (Superintelligence, Life 3.0, Human Compatible, The Alignment Problem, Elements of Style, Style Toward Clarity and Grace)
+  - **[📚 Book Summaries](PUB/BOOK/README.md)**: English AI research books and writing guides (Superintelligence, Life 3.0, Human Compatible, The Alignment Problem, Elements of Style, Style Toward Clarity and Grace)
   - **PUB/BOOK/20_AI/10_AI_Ethics/**: AI ethics documentation and guidelines
 - **[transl/](transl/README.md)**: Multilingual translations directory with comprehensive coverage in 6 languages (fr, de, zh, es, ja, ru)
 - **transl_re/**: Back-translated content from Spanish to English for quality verification and multilingual workflow optimization

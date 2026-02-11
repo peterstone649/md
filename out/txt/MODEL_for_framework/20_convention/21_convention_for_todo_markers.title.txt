@@ -1,0 +1,52 @@
+# Extracted Titles from 21_convention_for_todo_markers.md
+# Generated on 2026-02-07 19:36:55 by extract_titles.py v1.0.0
+# Source: e:\2025_11\md\MODEL_for_framework\20_convention\21_convention_for_todo_markers.md
+
+# Convention for Todo Markers [CONV_FOR_MFW_TODO_MARKERS] **[PRIO: MEDIUM]**
+## Convention Statement
+## Rationale
+## Todo Marker Standards
+### Basic Format
+### Syntax Rules
+#### Unchecked Tasks
+#### Checked Tasks
+#### Nested Tasks
+## Implementation Guidelines
+### File Naming Convention
+### File Structure
+### Content Standards
+#### Task Descriptions
+#### Examples of Good Task Descriptions
+#### Examples of Poor Task Descriptions
+## Task Organization Patterns
+### Phase-Based Organization
+## Phase 1: Foundation (Weeks 1-4)
+## Phase 2: Implementation (Weeks 5-8)
+### Component-Based Organization
+## Authentication Module
+## User Management Module
+### Priority-Based Organization
+## High Priority (Must Complete)
+## Medium Priority (Should Complete)
+## Low Priority (Nice to Have)
+## Progress Tracking Guidelines
+### Update Frequency
+### Status Updates
+### Example Progress Update
+## Before
+## After
+## Quality Assurance
+### Validation Checklist
+### Review Process
+## Integration with Framework Tools
+### Git Integration
+### Progress Reporting
+## Exceptions and Special Cases
+### Conditional Tasks
+### Blocked Tasks
+### Deferred Tasks
+## Training and Adoption
+### New Team Member Onboarding
+### Continuous Improvement
+## References
+## Changelog

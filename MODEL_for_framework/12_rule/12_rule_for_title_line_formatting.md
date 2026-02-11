@@ -2,25 +2,26 @@
 
 ## Rule Statement **[STATUS: ACTIVE]**
 
-**All framework document title lines should follow the standardized format: # [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]****
+All framework document title lines MUST follow the standardized format:
+- Ensure consistent document identification across the framework
+- Provide clear priority indication for content organization
+- Enable automated processing and categorization
+- Support framework navigation and search functionality
+- Maintain professional presentation standards
 
-## Rationale
-
-Standardized title formatting:
-- Ensures consistent document identification across the framework
-- Provides clear priority indication for content organization
-- Enables automated processing and categorization
-- Supports framework navigation and search functionality
-- Maintains professional presentation standards
-
-## Title Line Format Specification
-
-### Required Structure
+All framework document title lines therefore MUST follow the standardized format:
 ```
 # [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
 ```
 
-### Components Breakdown
+### Title Line Format Specification
+
+#### Required Structure
+```
+# [DOCUMENT_TITLE_DESCRIPTIVE] [TYPE_FRAMEWORK_TITLE_ABBREV] **[PRIO: XXX]**
+```
+
+#### Components Breakdown
 
 | Component | Description | Example |
 |-----------|-------------|---------|
@@ -29,12 +30,12 @@ Standardized title formatting:
 | `[TYPE_FRAMEWORK_TITLE_ABBREV]` | Combined type and framework abbreviation | `[DEF_FOR_MFW_TERM]` |
 | `**[PRIO: XXX]**` | Priority level indicator | `**[PRIO: HIGHEST]**` |
 
-### Complete Format Example
+#### Complete Format Example
 ```markdown
-# Term [TERM_FOR_MFW_TERM] **[PRIO: HIGHEST]**
+# Convention for Date [CONV_FOR_MFW_DATE] **[PRIO: HIGH]**
 ```
 
-### TYPE Component Examples
+#### TYPE Component Examples
 
 The TYPE component indicates the document category e.g. can be:
 
@@ -67,7 +68,7 @@ The TYPE component indicates the document category e.g. can be:
 
 | Priority Code | Meaning | Color Coding |
 |---------------|---------|--------------|
-| **HIGHEST** | Critical framework components | 🔴 Red |
+| **CRITICAL** | Critical framework components | 🔴 Red |
 | **HIGH** | Important operational elements | 🟠 Orange |
 | **MEDIUM** | Standard framework elements | 🟡 Yellow |
 | **LOW** | Supplementary materials | 🟢 Green |
@@ -131,7 +132,7 @@ The TYPE component indicates the document category e.g. can be:
 
 ### Example Regex Pattern for Validation
 ```regex
-^# .+\[.*\]\s+\*\*\[PRIO:\s+(HIGHEST|HIGH|MEDIUM|LOW)\]\*\*$
+^# .+\[.*\]\s+\*\*\[PRIO:\s+(CRITICAL|HIGH|MEDIUM|LOW)\]\*\*$
 ```
 
 ### Automated Processing
@@ -150,8 +151,9 @@ The TYPE component indicates the document category e.g. can be:
 
 ## Changelog
 
-| Version | Date | Change Content | Stakeholders | Rationale/Motivation |
-|---------|------|---------|-------------|----------------------|
+| Version | Date | Change Content | Stakeholders | Motivation |
+|---------|------|---------|-------------|------------|
+| V1.0.3 | 2026-02-07 | Applied version and changelog update rule per RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE; updated Rule Statement to use active voice and proper format | AI Framework Steward | Ensure compliance with framework version and changelog standards |
 | V1.0.2 | 2026-01-23 | Updated metadata headers per RULE_FOR_MFW_TITLE_FORMAT; changed DEF to TERM in examples | Framework Admin | Ensure framework-wide consistency with terminology |
 | V1.0.1 | 2026-01-23 | Updated placeholders to [DOCUMENT_TITLE_DESCRIPTIVE] and [TYPE_FRAMEWORK_TITLE_ABBREV] (with underscores) | Framework Admin | Improve clarity and hierarchy |
 | V1.0.0 | 2026-01-09 | Initial creation | AI Framework Admin | Establish file |

@@ -1,0 +1,23 @@
+# Extracted Titles from task_16_convention_for_intellectual_property_rights.md
+# Generated on 2026-02-07 19:36:55 by extract_titles.py v1.0.0
+# Source: e:\2025_11\md\MODEL_for_framework\20_convention\task_16_convention_for_intellectual_property_rights.md
+
+# Task File for Template Validation
+## Summary
+## Validation Results
+### ❌ Issues Found (4)
+#### Critical Issues
+### 📋 Missing Elements (Priority Order)
+## 🚀 Tasks to Complete
+### Task 1: Fix section "Status and States"
+### Task 2: Fix section "Version Requirements"
+### Task 3: Fix status "APPROVED"
+### Task 4: Fix status "ARCHIVED"
+### Task 5: Fix status "DRAFT"
+### Task 6: Fix status "IN PROGRESS"
+### Task 7: Fix status "OPEN"
+### Task 8: Fix status "PAUSED"
+### Task 9: Fix status "REVIEW"
+### Task 10: Fix table "Status and States"
+## Reference
+## Changelog

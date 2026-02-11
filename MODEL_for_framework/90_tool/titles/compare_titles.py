@@ -19,7 +19,7 @@ from pathlib import Path
 from check_for_var_name import check_name
 
 # Version variable
-__version__ = "1.0.0"
+__version__ = "1.1.1"
 
 
 class TitleTemplateComparator:
@@ -405,6 +405,159 @@ class TitleTemplateComparator:
             report_lines.append("")
         
         return "\n".join(report_lines)
+    
+    def generate_compare_md(self, results: Dict[str, Dict]) -> str:
+        """
+        Generate a compare.md file in the same folder as the title_master file.
+        
+        Args:
+            results (Dict[str, Dict]): Comparison results
+            
+        Returns:
+            str: Path to the generated compare.md file
+        """
+        # Determine the directory for compare.md (same as title_master.md)
+        template_dir = os.path.dirname(os.path.abspath(self.template_path))
+        compare_file_path = os.path.join(template_dir, "compare.md")
+        
+        # Generate the content for compare.md
+        content_lines = []
+        content_lines.append("# Title Template Comparison Results")
+        content_lines.append("")
+        content_lines.append("This file contains the comparison results between extracted title files and the title_master.md template.")
+        content_lines.append("")
+        
+        # Summary section
+        total_files = len(results)
+        compliant_files = sum(1 for r in results.values() if r.get('overall_compliant', False))
+        error_files = sum(1 for r in results.values() if 'error' in r)
+        
+        content_lines.append("## Summary")
+        content_lines.append(f"- **Total files analyzed:** {total_files}")
+        content_lines.append(f"- **Compliant files:** {compliant_files}")
+        content_lines.append(f"- **Files with errors:** {error_files}")
+        content_lines.append(f"- **Success rate:** {(compliant_files/total_files*100):.1f}%" if total_files > 0 else "- **Success rate:** N/A")
+        content_lines.append("")
+        
+        # Missing sections section
+        content_lines.append("## Missing Sections")
+        content_lines.append("List of sections that are missing from extracted titles compared to the template:")
+        content_lines.append("")
+        
+        missing_sections_found = False
+        for file_path, result in results.items():
+            if 'error' in result:
+                continue
+            if result['missing_sections']:
+                missing_sections_found = True
+                relative_path = os.path.relpath(file_path, template_dir)
+                content_lines.append(f"### {relative_path}")
+                for section in result['missing_sections']:
+                    content_lines.append(f"- {section}")
+                content_lines.append("")
+        
+        if not missing_sections_found:
+            content_lines.append("No missing sections found across all files.")
+            content_lines.append("")
+        
+        # Extra sections section
+        content_lines.append("## Extra Sections")
+        content_lines.append("List of sections found in extracted titles that are not in the template:")
+        content_lines.append("")
+        
+        extra_sections_found = False
+        for file_path, result in results.items():
+            if 'error' in result:
+                continue
+            if result['extra_sections']:
+                extra_sections_found = True
+                relative_path = os.path.relpath(file_path, template_dir)
+                content_lines.append(f"### {relative_path}")
+                for section in result['extra_sections']:
+                    content_lines.append(f"- {section}")
+                content_lines.append("")
+        
+        if not extra_sections_found:
+            content_lines.append("No extra sections found across all files.")
+            content_lines.append("")
+        
+        # Compliance status section
+        content_lines.append("## Compliance Status")
+        content_lines.append("Overall compliance status for each file:")
+        content_lines.append("")
+        
+        for file_path, result in results.items():
+            if 'error' in result:
+                relative_path = os.path.relpath(file_path, template_dir)
+                content_lines.append(f"- **{relative_path}:** ERROR - {result['error']}")
+                continue
+                
+            status = "✅ PASS" if result['overall_compliant'] else "❌ FAIL"
+            relative_path = os.path.relpath(file_path, template_dir)
+            content_lines.append(f"- **{relative_path}:** {status}")
+        content_lines.append("")
+        
+        # Additional titles analysis section
+        if self.additional_titles_analysis:
+            analysis = self.additional_titles_analysis
+            content_lines.append("## Additional Titles Analysis")
+            content_lines.append("")
+            content_lines.append(f"**Total additional titles found:** {analysis['total_additional_titles']}")
+            content_lines.append(f"**Unique additional titles:** {analysis['unique_additional_titles']}")
+            content_lines.append(f"**Files analyzed:** {analysis['total_files_analyzed']}")
+            content_lines.append("")
+            
+            # Categorized additional titles
+            for category, titles in analysis['categories'].items():
+                if titles:  # Only include categories with content
+                    content_lines.append(f"### {category.replace('_', ' ').title()} Titles")
+                    content_lines.append(f"({len(titles)} instances found)")
+                    content_lines.append("")
+                    for title in sorted(set(titles)):
+                        frequency = analysis['frequency'].get(title, 0)
+                        content_lines.append(f"- **{title}** (found {frequency} times)")
+                    content_lines.append("")
+        
+        # Recommendations section
+        content_lines.append("## Recommendations")
+        content_lines.append("")
+        
+        # Generate recommendations based on analysis
+        recommendations = []
+        
+        if missing_sections_found:
+            recommendations.append("- Review missing sections and ensure all required sections are present in extracted titles")
+        
+        if extra_sections_found:
+            recommendations.append("- Evaluate extra sections to determine if they should be added to the template or removed from extracted titles")
+        
+        if self.additional_titles_analysis and self.additional_titles_analysis['unique_additional_titles'] > 0:
+            recommendations.append("- Consider updating the template to include commonly found additional titles")
+        
+        if not recommendations:
+            recommendations.append("- No specific recommendations - all files are compliant with the template")
+        
+        for rec in recommendations:
+            content_lines.append(rec)
+        content_lines.append("")
+        
+        # Footer
+        content_lines.append("---")
+        content_lines.append(f"*Generated on {self._get_current_timestamp()}*")
+        content_lines.append(f"*Template used: {os.path.basename(self.template_path)}*")
+        
+        # Write the compare.md file
+        content = "\n".join(content_lines)
+        with open(compare_file_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+        
+        self.logger.info(f"Generated compare.md file at: {compare_file_path}")
+        return compare_file_path
+    
+    def _get_current_timestamp(self) -> str:
+        """Get current timestamp in readable format."""
+        from datetime import datetime
+        return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 
 def main():
@@ -432,6 +585,10 @@ def main():
     else:
         results = comparator.compare_directory(args.path)
     
+    # Generate compare.md file
+    compare_md_path = comparator.generate_compare_md(results)
+    print(f"Generated compare.md file at: {compare_md_path}")
+    
     # Generate report
     report = comparator.generate_report(results)
     
@@ -453,5 +610,7 @@ if __name__ == "__main__":
 
 | Version | Date | Change Content | Stakeholders | Motivation |
 |---------|------|---------|-------------|------------|
+| V1.1.1 | 2026-02-07 | Applied version and changelog update rule per RULE_FOR_MFW_VERSION_CHANGELOG_UPDATE, updated version number and enhanced changelog format | AI Framework Steward | Ensure compliance with framework version and changelog standards |
+| V1.1.0 | 2026-02-07 | Added generate_compare_md method to create compare.md file in the same folder as title_master.md, including summary, missing sections, extra sections, compliance status, additional titles analysis, and recommendations | AI Framework Steward | Implement requirement R11 from title_master_requi.md to generate comprehensive comparison results in markdown format |
 | V1.0.0 | 2026-02-07 | Initial creation of compare_titles.py with TitleTemplateComparator class and integration of check_for_var_name import | AI Framework Steward | Establish foundational title comparison functionality with placeholder detection |
 """

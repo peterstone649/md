@@ -6,13 +6,6 @@ Extracts all title lines (starting with #) from Markdown files and saves them
 to corresponding .title.txt files in the out/txt directory with preserved folder structure.
 
 Based on the structure and patterns from converter_for_md_to_html.py
-
-CHANGELOG:
-| Version | Date       | Changes | Stakeholder | Rationale/Motivation |
-|---------|------------|---------|-------------|----------------------|
-| V1.0.2  | 2026-02-07 | Updated regex pattern to allow all heading levels (1...n) instead of limiting to 1-3 levels | AI Coder | Allow extraction of all markdown heading levels for comprehensive analysis |
-| V1.0.1  | 2026-02-07 | Fixed import issues and regex pattern to match all heading levels (1-6) | AI Coder | Ensure compatibility with test suite and extract all title levels |
-| V1.0.0  | 2026-02-07 | Initial creation | AI Coder | Extract title lines from Markdown files for analysis and indexing |
 """
 
 import os
@@ -159,7 +152,7 @@ class TitleExtractor:
             # Write titles to output file
             with open(output_path, 'w', encoding='utf-8') as f:
                 f.write(f"# Extracted Titles from {os.path.basename(input_file)}\n")
-                f.write(f"# Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+                f.write(f"# Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} by {os.path.basename(__file__)} v{__version__}\n")
                 f.write(f"# Source: {input_file}\n")
                 f.write("\n")
                 
@@ -265,3 +258,13 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
+CHANGELOG:
+| Version | Date       | Changes | Stakeholder | Rationale/Motivation |
+|---------|------------|---------|-------------|----------------------|
+| V1.0.3  | 2026-02-07 | Added comprehensive changelog section with proper version tracking and stakeholder documentation | AI Coder | Ensure framework compliance with version changelog update rule and provide complete change traceability |
+| V1.0.2  | 2026-02-07 | Updated regex pattern to allow all heading levels (1...n) instead of limiting to 1-3 levels | AI Coder | Allow extraction of all markdown heading levels for comprehensive analysis |
+| V1.0.1  | 2026-02-07 | Fixed import issues and regex pattern to match all heading levels (1-6) | AI Coder | Ensure compatibility with test suite and extract all title levels |
+| V1.0.0  | 2026-02-07 | Initial creation | AI Coder | Extract title lines from Markdown files for analysis and indexing |
+"""

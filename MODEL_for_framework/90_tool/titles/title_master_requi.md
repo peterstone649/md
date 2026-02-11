@@ -39,25 +39,33 @@ The system MUST provide detailed analysis of additional titles found, including:
 - Frequency analysis of common additional titles across files
 - Impact assessment on template compliance
 
-### R7: Comparison Output Format
-The comparison results MUST be output in a structured format that includes:
-- List of missing sections
-- List of extra sections with categorization
-- Overall compliance status (PASS/FAIL)
-- Detailed comparison report
-- Additional titles summary with categories
+### R7: Simplified Comparison Output Format
+The comparison results MUST be output in a simplified format that includes:
+- File-by-file comparison results
+- For each file: show OK if title fits template, show missing template title if gap exists
+- Process sequentially: compare title_master.md titles against extracted titles one by one
+- Continue until no titles remain in either the master template or the extracted titles
+- Clear indication of compliance status per file
 
-### R8: Integration with Test Suite
-The comparison functionality MUST be integrated into the existing test suite (test_extract_titles.py) as a new test method.
+### R8: File-by-File Processing
+The system MUST process files individually with the following logic:
+1. Start with first title from title_master.md
+2. Check if matching title exists in extracted .title.txt file
+3. If match found: mark as OK and proceed to next template title
+4. If no match found: display the missing template title
+5. Continue until all template titles are processed
+6. Report any remaining titles in extracted file as extra
 
 ### R9: Template Path Configuration
 The system MUST allow configuration of the template file path (default: ../12_rule/title_master.md).
 
-### R10: Requirements Generation
-The system MUST generate a requirements file (title_master_requi.md) that documents:
-- All additional titles found across all files
-- Categories of additional content
-- Recommendations for template updates or cleanup procedures
+### R10: Compare File Generation
+The system MUST create a compare.md file in the same folder as the input title_master file that contains:
+- Simple file-by-file comparison results
+- For each file: sequential comparison showing OK or missing template titles
+- No complex categorization or analysis
+- Clear pass/fail status per file
+- File path: [same directory as title_master.md]/compare.md
 
 ## Implementation Requirements
 
@@ -80,13 +88,16 @@ def test_title_template_compliance(self):
     # Implementation details
 ```
 
-### Comparison Algorithm
-1. Parse title_master.md to extract expected sections
+### Simplified Comparison Algorithm
+1. Parse title_master.md to extract expected sections in order
 2. Parse generated .title.txt files to extract actual sections
-3. Compare section lists for completeness and order
-4. Categorize additional titles found
-5. Generate compliance report with additional titles analysis
-6. Create requirements documentation
+3. For each file, process template titles sequentially:
+   - Compare first template title against extracted titles
+   - If match found: mark as OK, remove from both lists, continue
+   - If no match found: display missing template title, continue with next template title
+4. Continue until no titles remain in either template or extracted list
+5. Report any remaining titles as extra
+6. Generate simple compare.md file with file-by-file results
 
 ## Additional Titles Found Analysis
 
@@ -127,13 +138,12 @@ def test_title_template_compliance(self):
 
 ## Success Criteria
 
-- All required sections from template are detected in extracted titles
-- Section order matches template exactly
-- Missing and extra sections are clearly identified with categorization
-- Additional titles are categorized and analyzed for impact
-- Requirements file is automatically generated with comprehensive analysis
-- Comparison runs as part of automated test suite
+- File-by-file comparison shows clear OK/missing status for each template title
+- Sequential processing continues until no titles remain in either template or extracted file
+- Simple compare.md output without complex categorization or analysis
+- Clear pass/fail status per file
 - Results are easily readable and actionable
+- No complex additional titles analysis or categorization required
 
 ## Dependencies
 
